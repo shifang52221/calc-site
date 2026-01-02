@@ -1,0 +1,2112 @@
+{
+  "nav": {
+    "home": "Home",
+    "calculators": "Calculators",
+    "guides": "Guides",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "site": {
+    "name": "HomeDecorCalc",
+    "tagline": "Home improvement and home decor calculators and guides."
+  },
+  "home": {
+    "metaTitle": "Home improvement calculators",
+    "metaDescription": "Fast, privacy-friendly home improvement calculators with clear assumptions and practical estimates.",
+    "title": "HomeDecorCalc",
+    "subtitle": "Home improvement calculators built for clarity and speed.",
+    "allTitle": "All calculators",
+    "allDescription": "Explore every calculator, then share a link with your inputs.",
+    "viewAllCta": "View all",
+    "featuredTitle": "Featured calculators",
+    "featuredPaint": "Paint calculator",
+    "featuredPaintDesc": "Estimate paint needed and optional cost.",
+    "featuredWallpaperRolls": "Wallpaper rolls calculator",
+    "featuredWallpaperRollsDesc": "Estimate how many rolls you need and optional cost.",
+    "featuredFlooring": "Flooring calculator",
+    "featuredFlooringDesc": "Estimate flooring area and optional cost.",
+    "featuredTile": "Tile calculator",
+    "featuredTileDesc": "Estimate boxes of tile needed.",
+    "featuredTileGrout": "Tile grout calculator",
+    "featuredTileGroutDesc": "Estimate grout bags and cost.",
+    "featuredDrywall": "Drywall calculator",
+    "featuredDrywallDesc": "Estimate how many sheets you need.",
+    "featuredDrywallMudTape": "Drywall mud & tape calculator",
+    "featuredDrywallMudTapeDesc": "Estimate tape rolls and joint compound.",
+    "featuredConcrete": "Concrete calculator",
+    "featuredConcreteDesc": "Estimate cubic yards for a slab.",
+    "featuredConcreteBags": "Concrete bags calculator",
+    "featuredConcreteBagsDesc": "Estimate how many bags you need.",
+    "featuredStuds": "Studs calculator",
+    "featuredStudsDesc": "Estimate studs and plates for walls.",
+    "featuredBaseboardTrim": "Baseboard & trim calculator",
+    "featuredBaseboardTrimDesc": "Estimate linear feet and pieces needed.",
+    "featuredTopsoilBags": "Topsoil bags calculator",
+    "featuredTopsoilBagsDesc": "Estimate how many bags you need.",
+    "featuredMulch": "Mulch calculator",
+    "featuredMulchDesc": "Estimate cubic yards for mulch.",
+    "featuredRoofing": "Roofing calculator",
+    "featuredRoofingDesc": "Estimate shingles by bundles and squares.",
+    "featuredDeck": "Deck board calculator",
+    "featuredDeckDesc": "Estimate deck boards and optional cost.",
+    "featuredFence": "Fence calculator",
+    "featuredFenceDesc": "Estimate panels and posts for a fence line.",
+    "featuredGravel": "Gravel calculator",
+    "featuredGravelDesc": "Estimate cubic yards of gravel.",
+    "featuredGravelTons": "Gravel tons converter",
+    "featuredGravelTonsDesc": "Convert cubic yards to tons (and back).",
+    "featuredPaverBase": "Paver base calculator",
+    "featuredPaverBaseDesc": "Estimate base stone and bedding sand.",
+    "featuredSand": "Sand calculator",
+    "featuredSandDesc": "Estimate sand volume and weight.",
+    "featuredSoilMix": "Soil mix calculator",
+    "featuredSoilMixDesc": "Split compost, topsoil, and sand by ratio.",
+    "featuredAsphaltDriveway": "Asphalt driveway calculator",
+    "featuredAsphaltDrivewayDesc": "Estimate tons, volume, and truckloads.",
+    "featuredBoardFeet": "Board feet calculator",
+    "featuredBoardFeetDesc": "Estimate lumber volume and cost.",
+    "featuredMulchBags": "Mulch bags calculator",
+    "featuredMulchBagsDesc": "Estimate how many bags you need.",
+    "featuredTopsoil": "Topsoil calculator",
+    "featuredTopsoilDesc": "Estimate cubic yards of topsoil."
+  },
+  "calculatorsIndex": {
+    "metaTitle": "Calculators",
+    "metaDescription": "Browse our home improvement calculators.",
+    "title": "Calculators",
+    "searchLabel": "Search",
+    "searchPlaceholder": "Search calculators (e.g., paint, gravel, concrete)",
+    "categoriesLabel": "Categories",
+    "categoryAll": "All",
+    "categoryWallsFinishes": "Walls & finishes",
+    "categoryFloorsTile": "Floors & tile",
+    "categoryConcreteMasonry": "Concrete & masonry",
+    "categoryRoofingExterior": "Roofing & exterior",
+    "categoryLandscaping": "Landscaping",
+    "resultsCount": "{count} calculators",
+    "noResultsTitle": "No calculators found",
+    "noResultsBody": "Try a different search or category."
+  },
+  "calculatorsCategory": {
+    "metaTitle": "{category} calculators",
+    "metaDescription": "Browse calculators in {category} and related guides.",
+    "subtitle": "{count} calculators in this category.",
+    "intro": "Browse calculators and guides for {category}. Each calculator links to related guides and similar tools to help you plan faster.",
+    "relatedGuidesTitle": "Related guides",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Are these calculators accurate?",
+      "a1": "They are practical estimates based on your inputs and common assumptions. For critical projects, confirm with product specs or a professional.",
+      "q2": "Why do you recommend adding waste/overage?",
+      "a2": "Real projects include cuts, mistakes, uneven surfaces, and rounding to boxes/bundles. A small buffer prevents shortages and extra trips.",
+      "q3": "Can I share my result?",
+      "a3": "Yes. Most calculators support shareable links that keep your inputs so you can revisit or send the estimate to someone else."
+    },
+    "noGuidesYet": "More guides coming soon.",
+    "backToCalculators": "Back to calculators",
+    "browseAllGuides": "Browse all guides"
+  },
+  "guidesIndex": {
+    "metaTitle": "Guides",
+    "metaDescription": "Step-by-step home improvement guides with clear assumptions and practical tips.",
+    "title": "Guides",
+    "description": "Short, practical guides that explain the math behind common projects."
+  },
+  "guidesCards": {
+    "paintTitle": "How to estimate paint",
+    "paintDescription": "Coverage, coats, and what to measure before you buy.",
+    "paintCeilingTitle": "How much paint for a ceiling",
+    "paintCeilingDescription": "Ceiling area, realistic coverage, and common adjustments.",
+    "paintTrimTitle": "How much paint for trim",
+    "paintTrimDescription": "Doors, baseboards, and trim estimates without overbuying.",
+    "flooringTitle": "How to measure flooring",
+    "flooringDescription": "Room-by-room measuring and waste factors that matter.",
+    "flooringBoxesTitle": "How many boxes of flooring do I need?",
+    "flooringBoxesDescription": "Convert area to boxes and choose a waste factor.",
+    "tileTitle": "How to estimate tile",
+    "tileDescription": "Measure area, add waste, and convert to boxes.",
+    "tileWasteTitle": "Tile waste factor: how much extra to buy",
+    "tileWasteDescription": "When to use 10%, 15%, or more for overage.",
+    "drywallTitle": "How to estimate drywall",
+    "drywallDescription": "Square footage, sheet sizes, and a realistic waste factor.",
+    "drywallCeilingTitle": "How many drywall sheets for a ceiling",
+    "drywallCeilingDescription": "Ceiling area, sheet sizes, and seams.",
+    "concreteTitle": "How to estimate concrete",
+    "concreteDescription": "Volume basics, ordering tips, and common pitfalls.",
+    "mulchTitle": "How to estimate mulch",
+    "mulchDescription": "Bed area, depth, and converting to cubic yards.",
+    "mulchDepthTitle": "Mulch depth: 2 inches vs 3 inches",
+    "mulchDepthDescription": "How depth changes the total cubic yards.",
+    "roofingTitle": "How to estimate roofing shingles",
+    "roofingDescription": "Squares, bundles, and how to add waste.",
+    "roofingShedTitle": "How many shingles for a shed roof",
+    "roofingShedDescription": "A fast approach for small simple roofs.",
+    "deckTitle": "How to estimate deck boards",
+    "deckDescription": "Deck area, board coverage, and spacing basics.",
+    "fenceTitle": "How to estimate fence materials",
+    "fenceDescription": "Panels, posts, gates, and layout assumptions.",
+    "fencePostsTitle": "How many fence posts do I need?",
+    "fencePostsDescription": "Post spacing, corners, and gate posts explained.",
+    "gravelTitle": "How to estimate gravel",
+    "gravelDescription": "Area, depth, and volume conversions.",
+    "gravelTonsTitle": "Convert gravel yards to tons",
+    "gravelTonsDescription": "Density, material type, and supplier conversions.",
+    "topsoilTitle": "How to estimate topsoil",
+    "topsoilDescription": "Plan for grading, depth, and cubic yards.",
+    "topsoilLevelingTitle": "Topsoil for leveling a lawn",
+    "topsoilLevelingDescription": "Depth planning and a realistic buffer."
+  },
+  "guidesCommon": {
+    "useCalculatorCta": "Use the calculator",
+    "backToGuides": "← Back to guides"
+  },
+  "guidesRelated": {
+    "title": "Related",
+    "inCategory": "In {category}",
+    "calculatorsTitle": "Related calculators",
+    "guidesTitle": "Related guides",
+    "browseCategoryCalculators": "Browse this category →",
+    "browseAllGuides": "Browse all guides →",
+    "noGuidesYet": "More guides coming soon."
+  },
+  "calculatorsRelated": {
+    "title": "Related",
+    "inCategory": "In {category}",
+    "guidesTitle": "Related guides",
+    "calculatorsTitle": "Related calculators",
+    "browseCategoryCalculators": "Browse this category →",
+    "browseAllCalculators": "Browse all calculators →",
+    "browseAllGuides": "Browse all guides →",
+    "noGuidesYet": "More guides coming soon.",
+    "noCalculatorsYet": "More calculators coming soon."
+  },
+  "guidePaint": {
+    "metaTitle": "How to estimate paint",
+    "metaDescription": "Learn how to estimate paint for walls and ceilings, including coverage, coats, and common adjustments.",
+    "title": "How to estimate paint for a room",
+    "subtitle": "Measure correctly, apply a realistic coverage rate, and add a small buffer.",
+    "tldrTitle": "TL;DR",
+    "tldr": {
+      "t1": "Area × coats ÷ coverage = paint needed (then round up).",
+      "t2": "Coverage on the can is a starting point—texture and color changes reduce it.",
+      "t3": "Add a small buffer for touch-ups and waste (often 5–10%)."
+    },
+    "intro": {
+      "p1": "A good paint estimate comes down to two numbers: surface area to paint and coverage per gallon (or per liter). Add the number of coats, then include a small buffer for touch-ups and waste.",
+      "p2": "If you measure once and calculate once, you usually under-buy. This guide explains what to measure and why the coverage number on the can is only a starting point."
+    },
+    "stepsTitle": "Step-by-step: paint math",
+    "steps": {
+      "s1": "Measure wall area (length × height) for each wall and sum them.",
+      "s2": "Subtract large openings (doors, big windows) if you want a tighter estimate.",
+      "s3": "Decide coats (often 2 for new colors or big color changes).",
+      "s4": "Pick a realistic coverage rate based on wall texture and paint type.",
+      "s5": "Add 5–10% buffer, then round up to whole cans."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Textured walls and deep colors reduce coverage.",
+      "t2": "Ceilings and trim often use different paint and finish.",
+      "t3": "Primer can reduce coats, but it is not “free paint”.",
+      "t4": "Batch-mix cans (boxing) for consistent color across walls."
+    },
+    "mistakesTitle": "Common mistakes",
+    "mistakes": {
+      "m1": "Forgetting to multiply by coats (2 coats is common).",
+      "m2": "Using ideal label coverage for rough or porous surfaces.",
+      "m3": "Skipping a buffer and running short mid-project."
+    },
+    "ctaTitle": "Want the fast estimate?",
+    "ctaBody": "Use our paint calculator and share a link that keeps your inputs.",
+    "lastUpdated": "Last updated: Dec 2025",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Should I subtract windows and doors?",
+      "a1": "For small openings, the difference is usually within your buffer. Subtracting is useful for very large windows, many doors, or tight budgets.",
+      "q2": "Why is my result higher than the can label coverage?",
+      "a2": "Label coverage assumes ideal conditions. Texture, porosity, application method, and multiple coats all reduce real-world coverage.",
+      "q3": "How much extra paint should I buy?",
+      "a3": "A 5–10% buffer is common. If you need exact color matching later, buying an extra can from the same batch can save time."
+    }
+  },
+  "guideFlooring": {
+    "metaTitle": "How to measure flooring",
+    "metaDescription": "Learn how to measure flooring area room-by-room and choose a waste factor that fits the layout.",
+    "title": "How to measure flooring for a project",
+    "subtitle": "Room-by-room measuring plus the right waste factor prevents shortages.",
+    "intro": {
+      "p1": "Flooring estimates start with accurate area. The best approach is to measure each room separately, then add them together.",
+      "p2": "After area, the most important decision is your waste factor. Cutting patterns, diagonal installs, and small rooms can increase waste."
+    },
+    "measuringTitle": "Measuring checklist",
+    "measuring": {
+      "m1": "Measure length and width of each room (or break L-shapes into rectangles).",
+      "m2": "Sum all room areas for total square footage (or square meters).",
+      "m3": "Confirm product coverage per box and convert area to boxes.",
+      "m4": "Add a waste factor before you round up to whole boxes."
+    },
+    "wasteTitle": "Picking a waste factor",
+    "wasteBody": "A common range is 5–15%. Closer to 5% works for simple, square rooms with straight installs. Closer to 10–15% is safer for lots of cuts, angled layouts, or complex rooms.",
+    "ctaTitle": "Calculate boxes and cost",
+    "ctaBody": "Use the flooring calculator to estimate boxes and optional cost.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Why do I need a waste factor?",
+      "a1": "Cuts, offcuts, defects, and future repairs all require extra material beyond the exact measured area.",
+      "q2": "Should I include closets?",
+      "a2": "Yes—measure them like any other space. Small areas often increase cutting waste, so your waste factor matters more.",
+      "q3": "What if my rooms are not perfect rectangles?",
+      "a3": "Split the shape into rectangles, measure each piece, and add them. This is usually more accurate than guessing a single overall dimension."
+    }
+  },
+  "guideConcrete": {
+    "metaTitle": "How to estimate concrete",
+    "metaDescription": "Learn how to estimate concrete volume for slabs, including thickness, ordering buffer, and common mistakes.",
+    "title": "How to estimate concrete for a slab",
+    "subtitle": "Compute volume from area × thickness, then add a realistic ordering buffer.",
+    "intro": {
+      "p1": "Concrete is typically ordered by volume. For slabs, volume comes from the slab area multiplied by thickness, then converted into cubic yards or cubic meters.",
+      "p2": "Ordering too little can stall a pour. Ordering too much is usually cheaper than a second delivery. This guide focuses on safe, practical estimating."
+    },
+    "formulaTitle": "The basic formula",
+    "formulaBody": "Start with the slab dimensions, convert thickness into the same unit system, then compute volume and convert to the unit your supplier uses.",
+    "formula": {
+      "f1": "Area = length × width (or sum multiple rectangles).",
+      "f2": "Volume = area × thickness.",
+      "f3": "Convert volume to cubic yards or cubic meters for ordering."
+    },
+    "orderingTitle": "Ordering tips",
+    "ordering": {
+      "o1": "Confirm whether thickness is uniform or includes thickened edges.",
+      "o2": "Add an ordering buffer (often 5–10%) for uneven subgrade and spillage.",
+      "o3": "Ask about minimum load and short-load fees before you order.",
+      "o4": "Plan access and timing—late trucks can ruin finishing quality."
+    },
+    "ctaTitle": "Estimate volume quickly",
+    "ctaBody": "Use the concrete calculator to estimate cubic yards/meters and optional cost.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Do I need to add extra for rebar or mesh?",
+      "a1": "Steel reinforcement does not meaningfully change the concrete volume. The buffer is for site conditions and waste, not rebar.",
+      "q2": "What thickness should I use?",
+      "a2": "It depends on load and local requirements. Many sidewalks are around 4 inches, while driveways are often thicker. Check your project specs.",
+      "q3": "Why does ordering too little cause problems?",
+      "a3": "You risk cold joints or a second delivery that arrives too late, which can reduce strength and increase finishing issues."
+    }
+  },
+  "guideTile": {
+    "metaTitle": "How to estimate tile",
+    "metaDescription": "Learn how to estimate tile by measuring area, adding a waste factor, and converting to boxes.",
+    "title": "How to estimate tile for a floor or wall",
+    "subtitle": "Measure area, add a sensible waste factor, then round up to whole boxes.",
+    "intro": {
+      "p1": "Tile estimates are mostly math, but the two places people miss are waste and coverage per box. Even a simple room needs cuts, and different tile sizes cover different areas per box.",
+      "p2": "This guide shows a fast, reliable approach that works for floors, showers, and backsplashes."
+    },
+    "stepsTitle": "Step-by-step: tile math",
+    "steps": {
+      "s1": "Measure the tiled area (length × width for floors, or sum wall rectangles).",
+      "s2": "Subtract large openings only if they are truly untiled (e.g., a big window).",
+      "s3": "Choose a waste factor (often 10% for straight-lay, 15%+ for diagonal/complex layouts).",
+      "s4": "Convert total tile area to boxes using the product coverage per box.",
+      "s5": "Round up to whole boxes and consider extra for future repairs or dye-lot matching."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Small tiles and mosaics increase cut count; waste often goes up.",
+      "t2": "Patterned layouts (herringbone, diagonal) usually require more overage.",
+      "t3": "Don’t forget trim pieces, bullnose, and transitions if your design needs them.",
+      "t4": "Buy extra from the same batch to avoid color/size variation later."
+    },
+    "ctaTitle": "Want a quick box count?",
+    "ctaBody": "Use our tile calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How much waste should I add for tile?",
+      "a1": "10% is common for straightforward installs. Use 15% or more for diagonal patterns, lots of corners, or small rooms.",
+      "q2": "Should I subtract cabinets or vanities?",
+      "a2": "If they will permanently cover the area and you won’t tile underneath, subtract them. If you’re unsure, leave them in and rely on waste/overage.",
+      "q3": "Why do I need to round up to whole boxes?",
+      "a3": "Tile is sold by the box, and breakage or future repairs are much easier if you have spare pieces from the same batch."
+    }
+  },
+  "guideDrywall": {
+    "metaTitle": "How to estimate drywall",
+    "metaDescription": "Learn how to estimate drywall sheets by measuring square footage, choosing sheet sizes, and adding waste.",
+    "title": "How to estimate drywall sheets",
+    "subtitle": "Measure wall/ceiling area, pick a sheet size, then add waste and round up.",
+    "intro": {
+      "p1": "Drywall estimates start with total surface area, then you convert that area into sheet counts. The key decisions are sheet size (4×8 vs 4×12) and a realistic waste factor.",
+      "p2": "This guide gives a quick process for rooms, basements, and ceilings."
+    },
+    "stepsTitle": "Step-by-step: drywall math",
+    "steps": {
+      "s1": "Measure wall area (perimeter × height) and add ceiling area (length × width) if applicable.",
+      "s2": "Subtract big openings if you want a tighter estimate (doors, large windows).",
+      "s3": "Choose a drywall sheet size and compute coverage per sheet.",
+      "s4": "Add a waste factor (often 10%+, more for lots of corners or small cut pieces).",
+      "s5": "Round up to whole sheets and consider extra for mistakes or repairs."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Longer sheets reduce seams but can be harder to handle.",
+      "t2": "Ceilings are harder; adding extra is usually cheaper than a second trip.",
+      "t3": "Corner count and room complexity drive waste more than raw area.",
+      "t4": "If you’re matching existing thickness (e.g., 1/2\" vs 5/8\"), confirm before you buy."
+    },
+    "ctaTitle": "Want the fast sheet count?",
+    "ctaBody": "Use our drywall calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How many drywall sheets do I need for a room?",
+      "a1": "Measure total wall/ceiling area, divide by sheet coverage, add waste, then round up to whole sheets.",
+      "q2": "What waste factor should I use for drywall?",
+      "a2": "10% is common. Use more if you have lots of corners, soffits, or small sections that force extra cuts.",
+      "q3": "Should I subtract doors and windows?",
+      "a3": "You can for a tighter estimate, but many people skip it and let the waste factor cover the difference."
+    }
+  },
+  "guideMulch": {
+    "metaTitle": "How to estimate mulch",
+    "metaDescription": "Learn how to estimate mulch by measuring bed area, choosing depth, and converting to cubic yards.",
+    "title": "How to estimate mulch for garden beds",
+    "subtitle": "Area × depth gives volume; convert to cubic yards and round up.",
+    "intro": {
+      "p1": "Mulch is sold by volume, but you measure beds by area. The bridge is depth: a thin top-up needs far less than a fresh 3-inch layer.",
+      "p2": "This guide helps you measure beds quickly and choose a realistic depth for your goals."
+    },
+    "stepsTitle": "Step-by-step: mulch math",
+    "steps": {
+      "s1": "Measure bed area (rectangles, circles, or break irregular beds into shapes).",
+      "s2": "Choose a target depth (often 2–3 inches for many beds).",
+      "s3": "Convert area × depth to volume (cubic feet or cubic meters).",
+      "s4": "Convert volume to cubic yards if that’s how your supplier sells mulch.",
+      "s5": "Round up and consider extra if the bed has dips, slopes, or you’re topping up unevenly."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Depth matters more than people expect—double the depth doubles the volume.",
+      "t2": "Fresh mulch settles; add a little buffer.",
+      "t3": "Avoid piling mulch against tree trunks (“mulch volcano”).",
+      "t4": "If you’re re-mulching, measure how much old mulch you’ll remove or level first."
+    },
+    "ctaTitle": "Want the quick yardage estimate?",
+    "ctaBody": "Use our mulch calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How deep should mulch be?",
+      "a1": "Many beds use 2–3 inches. Thin top-ups may be 1 inch; weed suppression often needs more, depending on conditions.",
+      "q2": "How many cubic yards of mulch do I need?",
+      "a2": "Compute bed area × depth to get volume, then convert to cubic yards and round up.",
+      "q3": "Should I buy extra mulch?",
+      "a3": "A small buffer helps cover settling and uneven beds, and it reduces the chance of running short mid-project."
+    }
+  },
+  "guideRoofing": {
+    "metaTitle": "How to estimate roofing shingles",
+    "metaDescription": "Learn how to estimate shingles using squares and bundles, plus a realistic waste factor.",
+    "title": "How to estimate roofing shingles",
+    "subtitle": "Convert roof area to squares, then to bundles, and add waste for cuts and hips/valleys.",
+    "intro": {
+      "p1": "Roofing is usually sold in “squares” (100 sq ft). The basic estimate is roof surface area divided by 100, then converted to bundles based on the shingle product.",
+      "p2": "Waste depends heavily on roof complexity—valleys, hips, dormers, and cut-up layouts increase overage."
+    },
+    "stepsTitle": "Step-by-step: roofing math",
+    "steps": {
+      "s1": "Measure roof surface area (not just the house footprint).",
+      "s2": "Convert area to squares (sq ft ÷ 100).",
+      "s3": "Add a waste factor (often 10–15%+, more for complex roofs).",
+      "s4": "Convert squares to bundles using the product’s bundles-per-square.",
+      "s5": "Round up and include starter, ridge caps, and underlayment as separate line items."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Roof pitch increases surface area—don’t estimate from footprint alone.",
+      "t2": "Complex roofs need more waste than simple gables.",
+      "t3": "Bundles-per-square varies by shingle type and weight.",
+      "t4": "Order extras for repairs or future matching, especially for specialty colors."
+    },
+    "ctaTitle": "Want bundles and squares instantly?",
+    "ctaBody": "Use our roofing calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "What is a roofing square?",
+      "a1": "A roofing square is 100 square feet of roof coverage.",
+      "q2": "How many bundles are in a square?",
+      "a2": "Often 3 bundles per square for many asphalt shingles, but it varies—check the product specs.",
+      "q3": "How much waste should I add for roofing?",
+      "a3": "10–15% is common. Complex roofs with many valleys/hips may need more."
+    }
+  },
+  "guideDeck": {
+    "metaTitle": "How to estimate deck boards",
+    "metaDescription": "Learn how to estimate deck boards by measuring deck area and converting to board coverage and counts.",
+    "title": "How to estimate deck boards for a deck",
+    "subtitle": "Start with deck area, then convert to board coverage with spacing and waste.",
+    "intro": {
+      "p1": "Deck board estimates start with surface area, but board layout decisions matter: board width, spacing, and whether you’re picture-framing or running diagonal boards.",
+      "p2": "This guide helps you get a realistic board count and avoid shortages."
+    },
+    "stepsTitle": "Step-by-step: deck board math",
+    "steps": {
+      "s1": "Measure deck surface area (length × width, or sum rectangles).",
+      "s2": "Choose board width and spacing to calculate effective coverage.",
+      "s3": "Convert area to linear feet of decking, then to board counts by board length.",
+      "s4": "Add waste for cuts, layout, and mistakes (often 10%+).",
+      "s5": "Round up and verify edge details like picture-frame borders or stairs."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Diagonal layouts increase waste and cut time.",
+      "t2": "Don’t forget stairs, fascia, and picture-frame borders if your design includes them.",
+      "t3": "Board spacing affects total coverage—use the manufacturer’s guidance.",
+      "t4": "Mix board lengths to reduce waste when possible."
+    },
+    "ctaTitle": "Want a fast board estimate?",
+    "ctaBody": "Use our deck board calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How many deck boards do I need?",
+      "a1": "Estimate deck area, convert to board coverage with spacing, then add waste and round up.",
+      "q2": "Does spacing change the board count?",
+      "a2": "Yes. Larger gaps slightly reduce board count, but you should follow product guidance for drainage and expansion.",
+      "q3": "How much waste should I add for deck boards?",
+      "a3": "10% is common for straight layouts. Add more for diagonal patterns or lots of obstructions."
+    }
+  },
+  "guideFence": {
+    "metaTitle": "How to estimate fence materials",
+    "metaDescription": "Learn how to estimate fence panels and posts from total run length, spacing, and gate assumptions.",
+    "title": "How to estimate fence panels and posts",
+    "subtitle": "Use total fence length, panel width, and post spacing to estimate materials.",
+    "intro": {
+      "p1": "Fence estimates depend on layout assumptions: panel width, post spacing, and how you handle corners and gates. A quick plan on paper prevents ordering the wrong quantities.",
+      "p2": "This guide covers a straightforward approach for panel fences."
+    },
+    "stepsTitle": "Step-by-step: fence math",
+    "steps": {
+      "s1": "Measure total fence run length (sum each straight segment).",
+      "s2": "Choose panel width (common panels are 6 ft or 8 ft).",
+      "s3": "Compute panel count (length ÷ panel width), then round up for full coverage.",
+      "s4": "Estimate posts: one more post than panels for a straight run, plus extras for corners and gates.",
+      "s5": "Add gates, end posts, and hardware as separate line items."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Corners, ends, and gates usually require special posts and hardware.",
+      "t2": "Confirm local code or HOA rules before buying materials.",
+      "t3": "Slopes change how panels fit; stepped installs can affect counts.",
+      "t4": "Plan for waste and mistakes, especially if you’re cutting panels."
+    },
+    "ctaTitle": "Want panels and posts instantly?",
+    "ctaBody": "Use our fence calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How many fence panels do I need?",
+      "a1": "Divide total run length by panel width and round up, then adjust for gates and layout.",
+      "q2": "How many fence posts do I need?",
+      "a2": "For a straight run, it’s usually panels + 1. Add extra posts for corners, gates, and any breaks in the line.",
+      "q3": "Should I include a gate in the panel count?",
+      "a3": "Treat gates separately: subtract the gate opening from total run length, then compute panels for the remaining length."
+    }
+  },
+  "guideGravel": {
+    "metaTitle": "How to estimate gravel",
+    "metaDescription": "Learn how to estimate gravel by measuring area and depth, then converting to cubic yards.",
+    "title": "How to estimate gravel for a driveway or path",
+    "subtitle": "Area × depth gives volume; convert to cubic yards and account for compaction.",
+    "intro": {
+      "p1": "Gravel is typically ordered by volume (cubic yards). Your measurements are usually area and target depth, so the estimate is a volume conversion problem.",
+      "p2": "The two common mistakes are forgetting compaction and using the wrong depth."
+    },
+    "stepsTitle": "Step-by-step: gravel math",
+    "steps": {
+      "s1": "Measure the area to cover (length × width, or break irregular shapes into rectangles).",
+      "s2": "Choose a compacted depth target (often a few inches, depending on use).",
+      "s3": "Convert area × depth to volume (cubic feet or cubic meters).",
+      "s4": "Convert volume to cubic yards for ordering.",
+      "s5": "Add a buffer for compaction and uneven grade, then round up."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Base layers and top layers can have different depths—estimate them separately.",
+      "t2": "Compaction reduces volume; ordering slightly extra prevents shortages.",
+      "t3": "Edging and containment keep gravel from spreading.",
+      "t4": "Confirm the material type and density with your supplier if you’re converting to tons."
+    },
+    "ctaTitle": "Want the cubic yard estimate fast?",
+    "ctaBody": "Use our gravel calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How deep should gravel be for a driveway?",
+      "a1": "It depends on soil and use. Many driveways use a thicker compacted base with a thinner top layer. Estimate layers separately for better results.",
+      "q2": "Should I order gravel by tons or cubic yards?",
+      "a2": "Suppliers vary. Cubic yards are common; tons require density. If ordering by tons, confirm the supplier’s conversion for the specific material.",
+      "q3": "Do I need to account for compaction?",
+      "a3": "Yes. Compaction can reduce the installed height, so adding a small buffer helps ensure you don’t run short."
+    }
+  },
+  "guideTopsoil": {
+    "metaTitle": "How to estimate topsoil",
+    "metaDescription": "Learn how to estimate topsoil by measuring area and depth, then converting to cubic yards.",
+    "title": "How to estimate topsoil for a lawn or garden",
+    "subtitle": "Plan the area and depth you want, then convert to cubic yards and round up.",
+    "intro": {
+      "p1": "Topsoil is ordered by volume, but your plan is usually area and target depth. The estimate is straightforward once you decide how deep you want to spread soil.",
+      "p2": "For grading and leveling, you may need more than you think—low spots and settling add up."
+    },
+    "stepsTitle": "Step-by-step: topsoil math",
+    "steps": {
+      "s1": "Measure the area to cover (lawn section, garden bed, or fill area).",
+      "s2": "Choose a target depth (thin topdressing vs deeper leveling).",
+      "s3": "Convert area × depth to volume (cubic feet/meters).",
+      "s4": "Convert volume to cubic yards for ordering.",
+      "s5": "Add a buffer for uneven grade and settling, then round up."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Estimate thin topdressing separately from deeper fill or grading.",
+      "t2": "Soil settles; a small buffer prevents shortages.",
+      "t3": "Confirm whether you need screened topsoil for a smoother finish.",
+      "t4": "If you’re fixing drainage or slope, consider getting a grading plan before ordering."
+    },
+    "ctaTitle": "Want the cubic yard estimate fast?",
+    "ctaBody": "Use our topsoil calculator and share a link that keeps your inputs.",
+    "lastUpdated": "Last updated: Dec 2025",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How much topsoil do I need for a lawn?",
+      "a1": "Measure the lawn area and choose a target depth, then convert to cubic yards and round up.",
+      "q2": "How deep should topsoil be?",
+      "a2": "It depends on the project. Topdressing is often thin; building up grade or creating planting depth usually needs more. Pick a depth that matches your goal.",
+      "q3": "Should I buy extra topsoil?",
+      "a3": "A small buffer helps cover low spots and settling, and it reduces the chance of running short mid-project."
+    }
+  },
+  "guidePaintCeiling": {
+    "metaTitle": "How much paint do I need for a ceiling?",
+    "metaDescription": "Estimate ceiling paint by measuring area, choosing coverage and coats, then adding a small buffer.",
+    "title": "How much paint do I need for a ceiling?",
+    "subtitle": "Ceiling area × coats ÷ coverage, plus a small buffer for texture and cut-ins.",
+    "intro": {
+      "p1": "Ceilings often need more paint than you expect because texture and roller technique reduce real coverage.",
+      "p2": "Measure the ceiling area, pick a realistic coverage rate, decide coats, then round up to whole cans so you don’t run short mid-project."
+    },
+    "stepsTitle": "Step-by-step: ceiling paint estimate",
+    "steps": {
+      "s1": "Measure ceiling footprint (length × width) for each room and add them up.",
+      "s2": "Decide whether to treat soffits or tray ceilings as separate sections and include those areas.",
+      "s3": "Choose coats (often 1 for same-color repaints, 2 for big color changes or stained ceilings).",
+      "s4": "Use a realistic coverage rate (textured ceilings can cover less than the label).",
+      "s5": "Add 5–10% buffer, then round up to whole gallons/liters."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Popcorn and heavy texture usually need more paint—lean toward the higher buffer.",
+      "t2": "Cutting in around trim uses more paint than rolling; keep a little extra for edges and touch-ups.",
+      "t3": "Flat ceiling paint touches up differently than satin/eggshell—keep the same product for repairs.",
+      "t4": "If you’re using a sprayer, plan for overspray and equipment loss; a slightly larger buffer helps."
+    },
+    "ctaTitle": "Want the fast estimate?",
+    "ctaBody": "Use our paint calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Should I use the same coverage rate as walls?",
+      "a1": "Start with the product label, then adjust down for texture and application method. Ceilings often cover a bit less than smooth walls.",
+      "q2": "Do I subtract light fixtures or vents?",
+      "a2": "Usually no. The area is small and your buffer covers it. Subtract only if you want a very tight estimate and there are many large openings.",
+      "q3": "How do I estimate vaulted ceilings?",
+      "a3": "Measure the sloped surface area (not the floor footprint). If you can’t measure directly, break the ceiling into rectangles/triangles and add them up."
+    }
+  },
+  "guidePaintTrim": {
+    "metaTitle": "How much paint do I need for trim?",
+    "metaDescription": "Estimate trim paint by converting linear feet of baseboards and casings into area, then choosing coats and coverage.",
+    "title": "How much paint do I need for trim?",
+    "subtitle": "Trim is measured as length × face width; include doors and windows, then round up to quarts.",
+    "intro": {
+      "p1": "Trim paint estimates are different from walls because you’re usually painting narrow surfaces: baseboards, door/window casings, and sometimes doors.",
+      "p2": "The fastest way is to measure total linear feet, convert to square footage using an average face width, then apply coats and a small buffer."
+    },
+    "stepsTitle": "Step-by-step: trim paint estimate",
+    "steps": {
+      "s1": "Measure baseboards as total linear feet around each room (minus large openings if you want).",
+      "s2": "Add door and window casings (linear feet) if you’re painting them too.",
+      "s3": "Convert linear feet to area: linear feet × average face width (in feet).",
+      "s4": "Choose coats (often 2 for color changes or when using a primer + top coat).",
+      "s5": "Add 5–15% buffer for brush waste and touch-ups, then round up to whole quarts/gallons."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Trim paint often goes further than wall paint, but brush work increases waste—keep a buffer.",
+      "t2": "If you’re painting doors, estimate them separately (door area × coats).",
+      "t3": "Gloss and semi-gloss show imperfections; prep can take longer than painting.",
+      "t4": "Buy enough from the same product line and sheen to avoid mismatched touch-ups."
+    },
+    "ctaTitle": "Want the fast estimate?",
+    "ctaBody": "Use our paint calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How much paint do I need for baseboards only?",
+      "a1": "Measure total linear feet and multiply by the baseboard face height (in feet), then apply coats and a small buffer.",
+      "q2": "Do I need primer on trim?",
+      "a2": "It depends on the surface and color change. Bare wood, stains, and big color shifts often benefit from primer.",
+      "q3": "Should I buy quarts or gallons for trim?",
+      "a3": "Small trim jobs usually fit in quarts. If you’re painting trim throughout a home (and doors), gallons may be more cost-effective."
+    }
+  },
+  "guideFlooringBoxes": {
+    "metaTitle": "How many boxes of flooring do I need?",
+    "metaDescription": "Convert your floor area to boxes by adding waste, dividing by coverage per box, and rounding up.",
+    "title": "How many boxes of flooring do I need?",
+    "subtitle": "(Area + waste) ÷ coverage per box = boxes (rounded up).",
+    "intro": {
+      "p1": "Most flooring is sold by the box, and each box covers a specific area (square feet or square meters). The key is to add a realistic waste factor before converting to boxes.",
+      "p2": "Once you know your total area and the product’s coverage per box, the math is simple: divide and round up."
+    },
+    "stepsTitle": "Step-by-step: boxes estimate",
+    "steps": {
+      "s1": "Measure total floor area for all rooms (include closets if they’re getting the same flooring).",
+      "s2": "Choose a waste factor (often 5–10% for straight layouts; more for diagonal or complex cuts).",
+      "s3": "Multiply floor area by (1 + waste factor).",
+      "s4": "Divide by coverage per box from the product spec.",
+      "s5": "Round up to whole boxes (and consider an extra box for future repairs)."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Check that coverage per box matches your unit system (sq ft vs m²).",
+      "t2": "Stairs, patterns, and direction changes increase waste—plan higher overage.",
+      "t3": "Try to buy all boxes from the same dye lot/batch when possible.",
+      "t4": "If you’re mixing rooms later, keep one unopened box for repairs."
+    },
+    "ctaTitle": "Want the fast estimate?",
+    "ctaBody": "Use our flooring calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "What waste factor should I use?",
+      "a1": "Many straight layouts use 5–10%. Diagonal layouts, small rooms, and complex cuts often need more.",
+      "q2": "Do I include closets?",
+      "a2": "Include any area that will receive the same flooring. Exclude areas with a different product (tile, carpet, etc.).",
+      "q3": "Should I buy an extra box?",
+      "a3": "Often yes. It can save you later if a plank gets damaged or if the product is discontinued."
+    }
+  },
+  "guideTileWaste": {
+    "metaTitle": "Tile waste factor: how much extra to buy",
+    "metaDescription": "Choose a tile overage percentage based on layout, room complexity, and future repair needs.",
+    "title": "Tile waste factor: how much extra to buy",
+    "subtitle": "Waste depends on cuts, layout, and room complexity—plan overage before you order.",
+    "intro": {
+      "p1": "Tile projects almost always require extra material: cuts, breakage, pattern matching, and future repairs all add up.",
+      "p2": "A waste factor (overage) is the simplest way to avoid running short while still keeping costs under control."
+    },
+    "stepsTitle": "Step-by-step: pick a waste factor",
+    "steps": {
+      "s1": "Start with the tile area you need (including walls, floors, or backsplashes).",
+      "s2": "Consider layout: straight stack typically wastes less than diagonal or herringbone.",
+      "s3": "Consider room complexity: many corners, niches, or small rooms increase waste.",
+      "s4": "Pick a waste factor (commonly 10% for simple layouts; 15%+ for diagonal/patterns).",
+      "s5": "Round up to whole boxes, and consider adding an extra box for future repairs."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Large-format tiles can increase waste in small rooms due to cutoffs.",
+      "t2": "If you’re matching veins or patterns, plan higher overage.",
+      "t3": "Order all tile at once to reduce color variation between batches.",
+      "t4": "Save spare tiles after installation for replacements and repairs."
+    },
+    "ctaTitle": "Want the fast estimate?",
+    "ctaBody": "Use our tile calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Is 10% waste enough for tile?",
+      "a1": "Often yes for simple rooms with straight layouts. For diagonal layouts, patterns, or lots of obstacles, you may need 15% or more.",
+      "q2": "Should I buy extra tile for future repairs?",
+      "a2": "Yes if you can. It’s hard to match batch color later, and discontinued products are common.",
+      "q3": "Does tile size affect waste?",
+      "a3": "It can. Large tiles can waste more in small or irregular spaces, while smaller tiles can waste more if patterns require matching."
+    }
+  },
+  "guideDrywallCeiling": {
+    "metaTitle": "How many drywall sheets for a ceiling?",
+    "metaDescription": "Estimate drywall sheets for a ceiling by dividing ceiling area by sheet area, then adding a waste factor.",
+    "title": "How many drywall sheets for a ceiling?",
+    "subtitle": "Ceiling area ÷ sheet area, then round up and add waste for cutoffs and seams.",
+    "intro": {
+      "p1": "Ceilings are easiest to estimate by area, but sheet layout (8', 10', 12' sheets) can change how much waste you generate.",
+      "p2": "Start with ceiling square footage, then choose a sheet size and apply a waste factor for cutoffs and mistakes."
+    },
+    "stepsTitle": "Step-by-step: ceiling drywall estimate",
+    "steps": {
+      "s1": "Measure ceiling area (length × width) for each room and add them up.",
+      "s2": "Pick sheet size (e.g., 4×8, 4×10, 4×12) based on room size and handling.",
+      "s3": "Divide ceiling area by sheet area to get a base sheet count.",
+      "s4": "Add a waste factor (often 10–15% depending on layout and obstacles).",
+      "s5": "Round up to whole sheets and plan for extra around light boxes or irregular edges."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Longer sheets can reduce seams but are harder to handle—balance labor vs material efficiency.",
+      "t2": "Plan sheet orientation to reduce seams and avoid tiny strips.",
+      "t3": "Ceiling work is awkward; a little extra drywall can prevent delays.",
+      "t4": "Confirm local code requirements for thickness and type (regular vs moisture resistant)."
+    },
+    "ctaTitle": "Want the fast estimate?",
+    "ctaBody": "Use our drywall calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Is 10% waste enough for ceiling drywall?",
+      "a1": "Often yes for simple rectangles, but complex ceilings and many cutouts can need more. When in doubt, use 15%.",
+      "q2": "Should I use 5/8\" drywall on ceilings?",
+      "a2": "Some ceilings use thicker drywall for sag resistance or code reasons. Check your joist spacing and local requirements.",
+      "q3": "Does sheet size change the total number of sheets?",
+      "a3": "It can. Different layouts create different cutoff waste. Use a slightly higher waste factor if you aren’t planning a detailed layout."
+    }
+  },
+  "guideMulchDepth": {
+    "metaTitle": "Mulch depth: 2 inches vs 3 inches",
+    "metaDescription": "Understand how mulch depth changes total volume so you can choose 2\" or 3\" with confidence.",
+    "title": "Mulch depth: 2 inches vs 3 inches",
+    "subtitle": "Going from 2\" to 3\" is 50% more mulch—depth matters more than you think.",
+    "intro": {
+      "p1": "Mulch volume is driven by area and depth. Small depth changes can significantly change how many cubic yards you need.",
+      "p2": "If you’re deciding between 2 inches and 3 inches, the math is straightforward—and it can save you from overbuying."
+    },
+    "stepsTitle": "Step-by-step: depth math",
+    "steps": {
+      "s1": "Measure the bed area (square feet or square meters).",
+      "s2": "Choose a target depth (2\" for lighter coverage, 3\" for more weed suppression).",
+      "s3": "Convert depth to feet (2\" = 0.167 ft, 3\" = 0.25 ft) or meters.",
+      "s4": "Multiply area × depth to get volume (cubic feet/meters).",
+      "s5": "Convert to cubic yards and round up for settling and uneven beds."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "New mulch settles—ordering a little extra helps you hit your final depth.",
+      "t2": "Avoid piling mulch against tree trunks; keep a small gap to prevent rot.",
+      "t3": "If you’re refreshing existing mulch, you may only need a thin top-up layer.",
+      "t4": "Depth recommendations vary by plant type and climate—use local guidance when possible."
+    },
+    "ctaTitle": "Want the fast estimate?",
+    "ctaBody": "Use our mulch calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Is 2 inches of mulch enough?",
+      "a1": "Often yes for appearance and moisture retention. For better weed suppression, many beds use closer to 3 inches.",
+      "q2": "How much more mulch is 3 inches vs 2 inches?",
+      "a2": "About 50% more volume for the same area because 3 inches is 1.5× the depth of 2 inches.",
+      "q3": "Should I remove old mulch first?",
+      "a3": "Not always. If the old layer is thick or matted, removing some can help prevent excess buildup and drainage problems."
+    }
+  },
+  "guideRoofingShed": {
+    "metaTitle": "How many shingles for a shed roof?",
+    "metaDescription": "Estimate shingles for a shed roof by measuring roof area, converting to squares, then to bundles and adding waste.",
+    "title": "How many shingles for a shed roof?",
+    "subtitle": "Measure roof area, convert to squares, then to bundles—don’t forget waste and starter strips.",
+    "intro": {
+      "p1": "Shed roofs are usually simple, which makes shingle estimating easier than complex houses. The key is to estimate the actual roof surface area, not just the floor footprint.",
+      "p2": "Once you have roof area, convert to squares (100 sq ft) and then to bundles based on your shingle spec."
+    },
+    "stepsTitle": "Step-by-step: shed shingle estimate",
+    "steps": {
+      "s1": "Measure roof length and sloped width (or calculate slope-adjusted width from pitch).",
+      "s2": "Compute roof area (length × sloped width) for each roof plane and add them up.",
+      "s3": "Convert area to squares (sq ft ÷ 100).",
+      "s4": "Convert squares to bundles (often ~3 bundles per square; confirm your product).",
+      "s5": "Add waste (often 10% for simple roofs; more for many cuts) and round up."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Starter strips, ridge caps, and underlayment are separate materials—plan them alongside shingles.",
+      "t2": "Low-slope roofs may require special products or installation methods—check manufacturer requirements.",
+      "t3": "If the shed has overhangs, include them in your measurements.",
+      "t4": "Buy a little extra for repairs; matching later can be difficult."
+    },
+    "ctaTitle": "Want the fast estimate?",
+    "ctaBody": "Use our roofing calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How many bundles are in a square?",
+      "a1": "Many architectural shingles use about 3 bundles per square, but it varies by product. Always confirm on the packaging or spec sheet.",
+      "q2": "Do I estimate by footprint or roof surface area?",
+      "a2": "Use roof surface area. Pitch increases the surface area compared to the footprint.",
+      "q3": "How much waste should I add for a shed roof?",
+      "a3": "Simple rectangles often use around 10%. If you have many cuts or obstacles, add more."
+    }
+  },
+  "guideFencePosts": {
+    "metaTitle": "How many fence posts do I need?",
+    "metaDescription": "Estimate fence posts by counting corners and gates, then adding line posts based on spacing.",
+    "title": "How many fence posts do I need?",
+    "subtitle": "Count corners and gates first, then add line posts using your chosen spacing.",
+    "intro": {
+      "p1": "Fence posts are easy to undercount because corners, ends, and gates each need their own posts in addition to regular line posts.",
+      "p2": "Start with a simple plan: break the fence into straight runs, choose spacing, then count posts run by run."
+    },
+    "stepsTitle": "Step-by-step: post count",
+    "steps": {
+      "s1": "Draw your fence layout and break it into straight runs between corners/gates/ends.",
+      "s2": "Choose post spacing based on your fence style (often 6–8 ft on center).",
+      "s3": "For each run, compute line posts: (run length ÷ spacing), then round down and add posts appropriately for the ends.",
+      "s4": "Add corner posts (one per corner) and end posts (one per run end if not shared).",
+      "s5": "Add gate posts (often two; heavier gates may require stronger posts) and round up."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Corner and gate posts often need to be sturdier than line posts.",
+      "t2": "Measure spacing “on center” and confirm panel sizes if you’re using prebuilt panels.",
+      "t3": "If the fence follows a slope, you may need more posts due to stepped sections.",
+      "t4": "Check local frost depth and code for post hole depth and concrete footing requirements."
+    },
+    "ctaTitle": "Want the fast estimate?",
+    "ctaBody": "Use our fence calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "What spacing should I use for fence posts?",
+      "a1": "Common spacing is 6–8 feet on center, but it depends on panel size, wind load, and fence type.",
+      "q2": "Do corners share posts?",
+      "a2": "Corners generally use a dedicated corner post. Adjacent runs connect to it, so you don’t count separate end posts at that same point.",
+      "q3": "How do gates affect post count?",
+      "a3": "A gate usually needs two posts. Large or heavy gates may need larger posts or additional bracing."
+    }
+  },
+  "guideGravelTons": {
+    "metaTitle": "Convert gravel yards to tons",
+    "metaDescription": "Convert cubic yards of gravel to tons using density, then round up for supplier delivery quantities.",
+    "title": "Convert gravel yards to tons",
+    "subtitle": "Tons = cubic yards × density—confirm the density with your supplier.",
+    "intro": {
+      "p1": "Some suppliers sell gravel by cubic yards, others by tons. The conversion depends on material density, which varies by gravel type and moisture.",
+      "p2": "Use your cubic yard estimate, pick a realistic density (or ask your supplier), then multiply to get tons."
+    },
+    "stepsTitle": "Step-by-step: yards to tons",
+    "steps": {
+      "s1": "Estimate volume in cubic yards based on area and compacted depth.",
+      "s2": "Choose a density for your material (tons per cubic yard) from supplier info.",
+      "s3": "Multiply: tons = cubic yards × density.",
+      "s4": "Add a small buffer for compaction and uneven grade.",
+      "s5": "Round up to match supplier delivery increments (e.g., half-ton or full-ton)."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "Wet material can weigh more than dry material—supplier conversions are the best source.",
+      "t2": "Different products (pea gravel, crushed stone, base rock) can have different densities.",
+      "t3": "If you need exact tonnage for hauling limits, confirm density before ordering.",
+      "t4": "Order slightly extra to avoid a second delivery fee."
+    },
+    "ctaTitle": "Want the fast estimate?",
+    "ctaBody": "Use our gravel calculator and share a link that keeps your inputs.",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How many tons are in a cubic yard of gravel?",
+      "a1": "It depends on the material. Many gravels fall around 1.2–1.5 tons per cubic yard, but you should confirm with your supplier.",
+      "q2": "Why do supplier conversions differ?",
+      "a2": "Density varies by rock type, gradation, moisture, and how the material is measured. Suppliers often use their own tested conversion for each product.",
+      "q3": "Should I use compacted depth or loose depth?",
+      "a3": "Use compacted (installed) depth for your project target. Then add a small buffer to account for compaction and uneven grade."
+    }
+  },
+  "guideTopsoilLeveling": {
+    "metaTitle": "Topsoil for leveling a lawn",
+    "metaDescription": "Estimate topsoil for leveling by using an average depth, converting volume to cubic yards, then adding buffer for low spots.",
+    "title": "Topsoil for leveling a lawn",
+    "subtitle": "Use an average depth to estimate, then add extra for low spots and settling.",
+    "tldrTitle": "TL;DR",
+    "tldr": {
+      "t1": "Use average depth (thin overall + deeper low spots).",
+      "t2": "Convert volume to cubic yards, then round up to delivery quantities.",
+      "t3": "Add buffer for settling and any areas you plan to fill deeper."
+    },
+    "intro": {
+      "p1": "Lawn leveling usually means a thin layer over the whole area plus extra soil in low spots. That makes average depth the key assumption.",
+      "p2": "Pick a realistic average depth, convert to cubic yards, then add a buffer if you expect deeper fills in specific areas."
+    },
+    "stepsTitle": "Step-by-step: lawn leveling estimate",
+    "steps": {
+      "s1": "Measure the lawn area you’re leveling (exclude beds and hardscape).",
+      "s2": "Choose an average depth (thin topdressing vs deeper fill for low spots).",
+      "s3": "Convert area × depth to volume (cubic feet/meters).",
+      "s4": "Convert volume to cubic yards for ordering.",
+      "s5": "Add buffer for low spots and settling, then round up."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+      "t1": "For very uneven lawns, estimate topdressing and low-spot fill separately.",
+      "t2": "Soil settles after watering and rain—extra helps you finish without a second delivery.",
+      "t3": "A sand/soil blend can be easier to spread for leveling; confirm what’s recommended for your grass type.",
+      "t4": "Avoid burying grass too deeply at once—level in multiple thin passes if needed."
+    },
+    "mistakesTitle": "Common mistakes",
+    "mistakes": {
+      "m1": "Using maximum depth everywhere instead of an average depth.",
+      "m2": "Forgetting settling/compaction and ordering exactly the calculated number.",
+      "m3": "Trying to level too much in one pass and stressing the grass."
+    },
+    "ctaTitle": "Want the fast estimate?",
+    "ctaBody": "Use our topsoil calculator and share a link that keeps your inputs.",
+    "lastUpdated": "Last updated: Dec 2025",
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How deep should topsoil be for leveling?",
+      "a1": "Many leveling projects use a thin layer (around 1/4\"–1\") across most of the lawn, with deeper fill in low spots. Choose an average depth that matches your plan.",
+      "q2": "Should I use topsoil, sand, or a mix?",
+      "a2": "It depends on your lawn and goals. Many leveling jobs use a sand/soil mix for easier spreading. Local guidance can help you choose.",
+      "q3": "How much extra should I order?",
+      "a3": "Add a buffer if you have noticeable low spots or expect settling. Extra soil also helps avoid a second delivery."
+    }
+  },
+  "consent": {
+    "title": "Cookies & ads",
+    "body": "We use cookies to operate the site and, when ads are enabled, to measure and personalize advertising where permitted.",
+    "accept": "Accept all",
+    "reject": "Reject non-essential",
+    "preferences": "Cookie preferences"
+  },
+  "common": {
+    "reset": "Reset",
+    "copyLink": "Copy link",
+    "copied": "Copied",
+    "copyFailed": "Copy failed",
+    "unitsLabel": "Units",
+    "imperial": "Imperial",
+    "metric": "Metric"
+  },
+  "legal": {
+    "disclaimerTitle": "Disclaimer",
+    "disclaimer": "Results are estimates for informational purposes only. Always verify measurements and product specifications."
+  },
+  "privacyPage": {
+    "metaTitle": "Privacy Policy",
+    "metaDescription": "Learn how HomeDecorCalc handles data and cookies.",
+    "title": "Privacy Policy",
+    "intro": "This website is designed to work without requiring you to create an account. Calculator inputs are processed in your browser.",
+    "dataTitle": "What we collect",
+    "dataBody": "We do not require accounts. Calculator inputs stay in your browser. We may collect basic, aggregated usage data (such as page views) to understand demand and improve the site.",
+    "cookiesTitle": "Cookies",
+    "cookiesBody": "We use cookies only when needed for preferences (such as language, unit system, and cookie choices). You can manage preferences at any time.",
+    "adsTitle": "Advertising and cookies",
+    "adsBody": "If we display ads (for example, via Google AdSense), ads may use cookies or similar identifiers. Where required by law, we will ask for consent before serving personalized ads.",
+    "yourChoicesTitle": "Your choices",
+    "yourChoicesBody": "You can adjust consent via the cookie preferences button, disable cookies in your browser, and opt out of personalized ads where available.",
+    "contactTitle": "Contact",
+    "contactBody": "If you have privacy questions, contact us at shifang522221@gmail.com."
+  },
+  "termsPage": {
+    "metaTitle": "Terms of Service",
+    "metaDescription": "Terms and conditions for using HomeDecorCalc.",
+    "title": "Terms of Service",
+    "intro": "By using this website, you agree that any results are estimates for informational purposes only. You are responsible for verifying measurements and product specifications.",
+    "useTitle": "Acceptable use",
+    "useBody": "Do not misuse the service, attempt to disrupt it, or use it for unlawful activities.",
+    "warrantyTitle": "No warranty",
+    "warrantyBody": "The service is provided “as is” without warranties of any kind. We do not guarantee accuracy, availability, or suitability for your project.",
+    "liabilityTitle": "Limitation of liability",
+    "liabilityBody": "To the fullest extent permitted by law, we are not liable for any damages arising from your use of the service or reliance on the results.",
+    "changesTitle": "Changes",
+    "changesBody": "We may update these terms from time to time. Continued use of the site means you accept the updated terms."
+  },
+  "aboutPage": {
+    "metaTitle": "About",
+    "metaDescription": "About HomeDecorCalc and our approach to calculators.",
+    "title": "About",
+    "body": "HomeDecorCalc provides fast, privacy-friendly calculators and guides for common home improvement projects. We focus on clear assumptions and practical estimates.",
+    "principlesTitle": "Our principles",
+    "principles": {
+      "p1": "Clarity: show assumptions, units, and helpful defaults.",
+      "p2": "Speed: calculations run in your browser, with shareable links.",
+      "p3": "Privacy: no accounts, minimal data collection."
+    }
+  },
+  "contactPage": {
+    "metaTitle": "Contact",
+    "metaDescription": "Get in touch with HomeDecorCalc.",
+    "title": "Contact",
+    "intro": "For support, feedback, or corrections, email us and include a few details so we can help quickly.",
+    "emailLabel": "Email",
+    "email": "shifang522221@gmail.com",
+    "responseTime": "We typically respond within 2–3 business days.",
+    "whatToIncludeTitle": "To help us respond faster",
+    "whatToInclude": {
+      "i1": "The page link and what you expected vs. what you got.",
+      "i2": "Your measurements and units (and any assumptions like thickness or waste).",
+      "i3": "Optional: screenshots and your device/browser."
+    }
+  },
+  "paint": {
+    "metaTitle": "Paint Calculator (Walls)",
+    "metaDescription": "Estimate how many gallons of paint you need for a room, including coats, coverage, and optional cost.",
+    "title": "Paint Calculator",
+    "subtitle": "Estimate paint needed for walls. Adjust coats, coverage and a waste factor.",
+    "quickTitle": "Quick guide",
+    "quick": {
+      "t1": "Start with paintable area (or measure walls and subtract big openings).",
+      "t2": "Use a realistic coverage rate and number of coats.",
+      "t3": "Add a small buffer for touch-ups and roller/brush waste."
+    },
+    "howToMeasureTitle": "How to measure for paint",
+    "howToMeasure": {
+      "s1": "Find wall area (per wall width × height) and add them up.",
+      "s2": "Optionally subtract large windows/doors if you want a tighter estimate.",
+      "s3": "Choose coats and a coverage rate based on your paint and wall texture."
+    },
+    "assumptionsTitle": "Assumptions to double-check",
+    "assumptions": {
+      "a1": "Textured walls and color changes can reduce coverage.",
+      "a2": "Primer can reduce coats, but it doesn’t replace paint volume.",
+      "a3": "Ceilings and trim often need different paint and coverage assumptions."
+    },
+    "buyingTipsTitle": "Buying tips",
+    "buyingTips": {
+      "b1": "Buy enough from the same batch to avoid color variation.",
+      "b2": "Round up if you’ll do multiple coats or have a lot of cutting-in.",
+      "b3": "Keep a small amount labeled for future touch-ups."
+    },
+    "lastUpdated": "Last updated: Dec 2025",
+    "inputs": {
+      "areaSqFt": "Paintable wall area (sq ft)",
+      "areaM2": "Paintable wall area (m²)",
+      "coats": "Number of coats",
+      "coverage": "Coverage per gallon (sq ft)",
+      "coverageMetric": "Coverage per liter (m²)",
+      "waste": "Waste factor (%)",
+      "price": "Price per gallon (USD, optional)",
+      "priceMetric": "Price per liter (USD, optional)"
+    },
+    "results": {
+      "title": "Results",
+      "gallons": "Estimated gallons",
+      "liters": "Estimated liters",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How do I measure wall area?",
+      "a1": "Measure each wall’s width × height and subtract large openings (windows/doors) if you want a tighter estimate.",
+      "q2": "What coverage should I use?",
+      "a2": "Many interior paints cover around 300–400 sq ft per gallon per coat. Use the product label when possible.",
+      "q3": "Why include a waste factor?",
+      "a3": "Extra paint helps account for texture, roller loss and touch-ups."
+    }
+  },
+  "wallpaperRolls": {
+    "metaTitle": "Wallpaper Rolls Calculator",
+    "metaDescription": "Estimate how many wallpaper rolls you need based on wall area, openings, roll size, and waste, with optional cost.",
+    "title": "Wallpaper Rolls Calculator",
+    "subtitle": "Estimate rolls needed with a roll size preset, custom sizes, and a waste factor.",
+    "inputs": {
+      "areaSqFt": "Total wall area to cover (sq ft)",
+      "areaM2": "Total wall area to cover (m²)",
+      "openingsSqFt": "Openings to subtract (sq ft)",
+      "openingsM2": "Openings to subtract (m²)",
+      "openingsPlaceholder": "Optional (doors/windows)",
+      "waste": "Waste factor (%)",
+      "rollPreset": "Roll size preset",
+      "rollWidthIn": "Roll width (in)",
+      "rollLengthFt": "Roll length (ft)",
+      "rollWidthCm": "Roll width (cm)",
+      "rollLengthM": "Roll length (m)",
+      "pricePerRoll": "Price per roll (USD, optional)"
+    },
+    "rollPresets": {
+      "standard": "Standard (21 in × 33 ft)",
+      "extraWide": "Extra wide (27 in × 33 ft)",
+      "custom": "Custom"
+    },
+    "results": {
+      "title": "Results",
+      "subtitle": "Roll count is rounded up to whole rolls.",
+      "netAreaSqFt": "Net area after openings (sq ft)",
+      "netAreaM2": "Net area after openings (m²)",
+      "areaWithWasteSqFt": "Area with waste (sq ft)",
+      "areaWithWasteM2": "Area with waste (m²)",
+      "coveragePerRollSqFt": "Coverage per roll (sq ft)",
+      "coveragePerRollM2": "Coverage per roll (m²)",
+      "rolls": "Rolls needed",
+      "totalCoverageSqFt": "Total coverage (sq ft)",
+      "totalCoverageM2": "Total coverage (m²)",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Should I subtract doors and windows?",
+      "a1": "For a quick estimate, many people don’t subtract openings. If you want a tighter estimate, subtract large doors and windows here.",
+      "q2": "What waste factor should I use for wallpaper?",
+      "a2": "Waste varies by pattern matching, corners, and cuts. 10% is a common starting point; increase it for complex layouts or patterned wallpaper.",
+      "q3": "Why is the roll count rounded up?",
+      "a3": "You can only buy whole rolls, and extra helps cover mistakes and future repairs."
+    }
+  },
+  "flooring": {
+    "metaTitle": "Flooring Calculator",
+    "metaDescription": "Estimate flooring needed (sq ft), including a waste factor and optional cost.",
+    "title": "Flooring Calculator",
+    "subtitle": "Estimate flooring area with a waste factor. Add price per sq ft for cost.",
+    "inputs": {
+      "areaSqFt": "Floor area (sq ft)",
+      "areaM2": "Floor area (m²)",
+      "waste": "Waste factor (%)",
+      "price": "Price per sq ft (USD, optional)",
+      "priceMetric": "Price per m² (USD, optional)"
+    },
+    "results": {
+      "title": "Results",
+      "neededSqFt": "Estimated sq ft needed",
+      "neededM2": "Estimated m² needed",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "What waste factor should I use?",
+      "a1": "Many projects use 5–15% depending on pattern, cuts and room shape.",
+      "q2": "Do I need to subtract cabinets or closets?",
+      "a2": "Subtract areas that will not be covered if you want a tighter estimate.",
+      "q3": "Does this include underlayment?",
+      "a3": "No. This calculator estimates flooring area only."
+    }
+  },
+  "tile": {
+    "metaTitle": "Tile Calculator",
+    "metaDescription": "Estimate tile needed, including waste factor and optional boxes and cost.",
+    "title": "Tile Calculator",
+    "subtitle": "Estimate tile area and optional boxes based on coverage per box.",
+    "inputs": {
+      "areaSqFt": "Tiled area (sq ft)",
+      "areaM2": "Tiled area (m²)",
+      "waste": "Waste factor (%)",
+      "coveragePerBox": "Coverage per box (sq ft)",
+      "coveragePerBoxM2": "Coverage per box (m²)",
+      "pricePerBox": "Price per box (USD, optional)"
+    },
+    "results": {
+      "title": "Results",
+      "neededSqFt": "Estimated sq ft needed",
+      "neededM2": "Estimated m² needed",
+      "boxes": "Estimated boxes",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "What waste factor should I use for tile?",
+      "a1": "A common range is 10–15%, especially for diagonal layouts or many cuts.",
+      "q2": "How do I find coverage per box?",
+      "a2": "Use the product label or retailer listing; coverage depends on tile size and pieces per box.",
+      "q3": "Why are boxes rounded up?",
+      "a3": "You can only buy whole boxes, and extra helps with breakage and future repairs."
+    }
+  },
+  "drywall": {
+    "metaTitle": "Drywall Calculator",
+    "metaDescription": "Estimate drywall sheets needed based on area, sheet coverage, and waste factor.",
+    "title": "Drywall Calculator",
+    "subtitle": "Estimate drywall sheets. Adjust sheet coverage for 4×8, 4×10, or 4×12.",
+    "inputs": {
+      "areaSqFt": "Wall/ceiling area (sq ft)",
+      "areaM2": "Wall/ceiling area (m²)",
+      "waste": "Waste factor (%)",
+      "sheetCoverage": "Coverage per sheet (sq ft)",
+      "sheetCoverageM2": "Coverage per sheet (m²)",
+      "pricePerSheet": "Price per sheet (USD, optional)"
+    },
+    "results": {
+      "title": "Results",
+      "sheets": "Estimated sheets",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "What is a typical sheet size?",
+      "a1": "A 4×8 sheet is 32 sq ft. 4×10 is 40 sq ft and 4×12 is 48 sq ft.",
+      "q2": "What waste factor should I use?",
+      "a2": "10–15% is common depending on cuts and layout.",
+      "q3": "Does this include screws or joint compound?",
+      "a3": "No. This estimates sheets only."
+    }
+  },
+  "concrete": {
+    "metaTitle": "Concrete Calculator (Slab)",
+    "metaDescription": "Estimate concrete volume in cubic yards based on length, width, depth, and waste factor.",
+    "title": "Concrete Calculator",
+    "subtitle": "Estimate cubic yards for a slab. Add a waste factor and optional price per cubic yard.",
+    "inputs": {
+      "lengthFt": "Length (ft)",
+      "widthFt": "Width (ft)",
+      "depthIn": "Depth (in)",
+      "lengthM": "Length (m)",
+      "widthM": "Width (m)",
+      "depthCm": "Depth (cm)",
+      "waste": "Waste factor (%)",
+      "pricePerCubicYd": "Price per cubic yard (USD, optional)",
+      "pricePerCubicM": "Price per cubic meter (USD, optional)"
+    },
+    "results": {
+      "title": "Results",
+      "cubicYards": "Estimated cubic yards",
+      "cubicMeters": "Estimated cubic meters",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Why is concrete measured in cubic yards?",
+      "a1": "Ready-mix concrete is commonly sold by the cubic yard in the US.",
+      "q2": "What depth is common for a slab?",
+      "a2": "Many slabs use 4 inches, but requirements vary by project and load.",
+      "q3": "Should I add waste?",
+      "a3": "Yes—10% is common to account for spillage and uneven subgrade."
+    }
+  },
+  "mulch": {
+    "metaTitle": "Mulch Calculator",
+    "metaDescription": "Estimate mulch volume in cubic yards from area, depth, and waste factor.",
+    "title": "Mulch Calculator",
+    "subtitle": "Estimate cubic yards of mulch based on bed area and depth.",
+    "inputs": {
+      "areaSqFt": "Mulch bed area (sq ft)",
+      "depthIn": "Depth (in)",
+      "areaM2": "Mulch bed area (m²)",
+      "depthCm": "Depth (cm)",
+      "waste": "Waste factor (%)",
+      "pricePerCubicYd": "Price per cubic yard (USD, optional)",
+      "pricePerCubicM": "Price per cubic meter (USD, optional)"
+    },
+    "results": {
+      "title": "Results",
+      "cubicYards": "Estimated cubic yards",
+      "cubicMeters": "Estimated cubic meters",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "What mulch depth is typical?",
+      "a1": "Many beds use 2–4 inches. Follow plant and climate recommendations.",
+      "q2": "Why calculate in cubic yards?",
+      "a2": "Bulk mulch is often sold by the cubic yard.",
+      "q3": "Should I add waste?",
+      "a3": "A small buffer (5–10%) helps account for settling and uneven beds."
+    }
+  }
+  ,
+  "roofing": {
+    "metaTitle": "Roofing Calculator (Shingles)",
+    "metaDescription": "Estimate shingles needed using roof area, waste factor and bundle coverage. Includes optional cost.",
+    "title": "Roofing Calculator",
+    "subtitle": "Estimate shingles using squares and bundles. Adjust waste and bundle coverage.",
+    "inputs": {
+      "roofAreaSqFt": "Roof area (sq ft)",
+      "roofAreaM2": "Roof area (m²)",
+      "waste": "Waste factor (%)",
+      "coveragePerBundle": "Coverage per bundle (sq ft)",
+      "coveragePerBundleM2": "Coverage per bundle (m²)",
+      "pricePerBundle": "Price per bundle (USD, optional)"
+    },
+    "results": {
+      "title": "Results",
+      "squares": "Estimated squares (100 sq ft each)",
+      "areaM2": "Estimated area (m²)",
+      "bundles": "Estimated bundles",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "What is a roofing square?",
+      "a1": "A roofing square is 100 square feet of roof area.",
+      "q2": "How many bundles are in a square?",
+      "a2": "Often 3 bundles per square, but it depends on product and exposure. Use the label when possible.",
+      "q3": "Why add waste?",
+      "a3": "Cuts, valleys, hips and mistakes require extra shingles."
+    }
+  },
+  "deck": {
+    "metaTitle": "Deck Board Calculator",
+    "metaDescription": "Estimate deck boards needed based on deck size, board dimensions, gap and waste factor.",
+    "title": "Deck Board Calculator",
+    "subtitle": "Estimate deck boards. Adjust board width, gap, length and a waste factor.",
+    "inputs": {
+      "deckLengthFt": "Deck length (ft)",
+      "deckWidthFt": "Deck width (ft)",
+      "boardWidthIn": "Board width (in)",
+      "gapIn": "Gap (in)",
+      "boardLengthFt": "Board length (ft)",
+      "deckLengthM": "Deck length (m)",
+      "deckWidthM": "Deck width (m)",
+      "boardWidthCm": "Board width (cm)",
+      "gapCm": "Gap (cm)",
+      "boardLengthM": "Board length (m)",
+      "waste": "Waste factor (%)",
+      "pricePerBoard": "Price per board (USD, optional)"
+    },
+    "results": {
+      "title": "Results",
+      "boards": "Estimated boards",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Does this include joists or framing?",
+      "a1": "No. This calculator estimates decking boards only.",
+      "q2": "What board width should I use?",
+      "a2": "A common decking board is nominal 1×6 with an actual width around 5.5 inches.",
+      "q3": "What gap is typical?",
+      "a3": "Many decks use a small gap (e.g. 1/8 in) for drainage; follow your product guidance."
+    }
+  },
+  "fence": {
+    "metaTitle": "Fence Calculator",
+    "metaDescription": "Estimate fence panels and posts from length, spacing, panel width and waste factor.",
+    "title": "Fence Calculator",
+    "subtitle": "Estimate panels and posts for a straight fence line. Add a waste factor and optional costs.",
+    "inputs": {
+      "fenceLengthFt": "Fence length (ft)",
+      "postSpacingFt": "Post spacing (ft)",
+      "panelWidthFt": "Panel width (ft)",
+      "fenceLengthM": "Fence length (m)",
+      "postSpacingM": "Post spacing (m)",
+      "panelWidthM": "Panel width (m)",
+      "waste": "Waste factor (%)",
+      "pricePerPanel": "Price per panel (USD, optional)",
+      "pricePerPost": "Price per post (USD, optional)"
+    },
+    "results": {
+      "title": "Results",
+      "panels": "Estimated panels",
+      "posts": "Estimated posts",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How are posts estimated?",
+      "a1": "Posts are estimated using spacing along the length, plus one end post.",
+      "q2": "Do I need to adjust for corners or gates?",
+      "a2": "Yes—corners, ends and gates may add additional posts and hardware.",
+      "q3": "What spacing is common?",
+      "a3": "Many fence panels are 8 ft, with posts spaced accordingly. Follow local code and product specs."
+    }
+  },
+  "gravel": {
+    "metaTitle": "Gravel Calculator",
+    "metaDescription": "Estimate gravel volume in cubic yards from area, depth and waste factor, with optional cost.",
+    "title": "Gravel Calculator",
+    "subtitle": "Estimate cubic yards of gravel based on area and depth.",
+    "quickTitle": "Quick guide",
+    "quick": {
+      "t1": "Measure length × width (or total area) in feet or meters.",
+      "t2": "Use a realistic depth (many projects are 2–6 inches).",
+      "t3": "Add a small buffer for compaction and uneven base."
+    },
+    "howToMeasureTitle": "How to measure your area",
+    "howToMeasure": {
+      "s1": "For rectangles: area = length × width. For circles: area = π × r².",
+      "s2": "Break irregular shapes into rectangles, add them, and round up slightly.",
+      "s3": "Convert depth to feet (in ÷ 12) or meters (cm ÷ 100)."
+    },
+    "assumptionsTitle": "Assumptions to double-check",
+    "assumptions": {
+      "a1": "Depth is average depth after grading (low spots can increase volume).",
+      "a2": "Material type affects density; supplier conversions (yards ↔ tons) vary.",
+      "a3": "Compaction can reduce loose volume—buffers help avoid a second delivery."
+    },
+    "buyingTipsTitle": "Buying tips",
+    "buyingTips": {
+      "b1": "Confirm whether your supplier sells by yards, tons, or bags.",
+      "b2": "Ask for a recommended depth for your application (driveway, path, base).",
+      "b3": "Round up to delivery minimums and keep a small amount for touch-ups."
+    },
+    "lastUpdated": "Last updated: Dec 2025",
+    "inputs": {
+      "areaSqFt": "Area (sq ft)",
+      "depthIn": "Depth (in)",
+      "areaM2": "Area (m²)",
+      "depthCm": "Depth (cm)",
+      "waste": "Waste factor (%)",
+      "pricePerCubicYd": "Price per cubic yard (USD, optional)",
+      "pricePerCubicM": "Price per cubic meter (USD, optional)"
+    },
+    "results": {
+      "title": "Results",
+      "cubicYards": "Estimated cubic yards",
+      "cubicMeters": "Estimated cubic meters",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "What depth should I use for gravel?",
+      "a1": "Common depths vary by use (e.g., 2–4 inches). Choose based on your project.",
+      "q2": "Why cubic yards?",
+      "a2": "Bulk gravel is commonly sold by the cubic yard.",
+      "q3": "Should I add waste?",
+      "a3": "A buffer helps account for compaction and uneven base."
+    }
+  },
+  "sand": {
+    "metaTitle": "Sand Calculator",
+    "metaDescription": "Estimate sand volume in cubic yards or cubic meters, plus weight in tons, with optional cost.",
+    "title": "Sand Calculator",
+    "subtitle": "Estimate sand volume and weight based on area, depth, and density.",
+    "inputs": {
+      "areaSqFt": "Area (sq ft)",
+      "areaM2": "Area (m²)",
+      "depthIn": "Depth (in)",
+      "depthCm": "Depth (cm)",
+      "waste": "Waste factor (%)",
+      "densityPreset": "Density preset",
+      "densityLbPerYd3": "Density (lb per cubic yard)",
+      "densityKgPerM3": "Density (kg per cubic meter)",
+      "priceMode": "Price mode (optional)",
+      "pricePerCubicYd": "Price per cubic yard (USD, optional)",
+      "pricePerCubicM": "Price per cubic meter (USD, optional)",
+      "pricePerTon": "Price per ton (USD, optional)",
+      "pricePerTonne": "Price per tonne (USD, optional)",
+      "pricePlaceholderLabel": "Price (optional)"
+    },
+    "densityPresets": {
+      "dry": "Dry sand (approx.)",
+      "packed": "Packed sand (approx.)",
+      "wet": "Wet sand (approx.)",
+      "custom": "Custom"
+    },
+    "priceModes": {
+      "none": "No price",
+      "volume": "By volume",
+      "weight": "By weight"
+    },
+    "results": {
+      "title": "Results",
+      "cubicYards": "Estimated cubic yards",
+      "cubicMeters": "Estimated cubic meters",
+      "shortTons": "Estimated tons (US)",
+      "metricTonnes": "Estimated tonnes",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Should I buy sand by cubic yards or tons?",
+      "a1": "Both are common. If your supplier sells by tons, use a realistic density preset (dry/packed/wet) to convert volume to weight.",
+      "q2": "Why does sand weight vary?",
+      "a2": "Moisture content and compaction change density. Wet or packed sand can weigh more per cubic yard.",
+      "q3": "What waste factor should I use?",
+      "a3": "Many projects use 5-10% to cover compaction, uneven base, and small measuring errors."
+    }
+  },
+  "paverBase": {
+    "metaTitle": "Paver Base Calculator",
+    "metaDescription": "Estimate base stone and bedding sand for pavers using area, layer depths, density presets, and optional cost.",
+    "title": "Paver Base Calculator",
+    "subtitle": "Estimate base stone and bedding sand volume, weight, and optional cost.",
+    "inputs": {
+      "areaSqFt": "Area (sq ft)",
+      "areaM2": "Area (m²)",
+      "baseDepthIn": "Base stone depth (in)",
+      "baseDepthCm": "Base stone depth (cm)",
+      "sandDepthIn": "Bedding sand depth (in)",
+      "sandDepthCm": "Bedding sand depth (cm)",
+      "waste": "Waste factor (%)",
+      "baseDensityPreset": "Base density preset",
+      "baseDensityLbPerYd3": "Base density (lb per cubic yard)",
+      "baseDensityKgPerM3": "Base density (kg per cubic meter)",
+      "sandDensityPreset": "Sand density preset",
+      "sandDensityLbPerYd3": "Sand density (lb per cubic yard)",
+      "sandDensityKgPerM3": "Sand density (kg per cubic meter)",
+      "priceMode": "Price mode (optional)",
+      "basePricePerCubicYd": "Base price per cubic yard (USD, optional)",
+      "basePricePerCubicM": "Base price per cubic meter (USD, optional)",
+      "basePricePerTon": "Base price per ton (USD, optional)",
+      "basePricePerTonne": "Base price per tonne (USD, optional)",
+      "basePricePlaceholderLabel": "Base price (optional)",
+      "sandPricePerCubicYd": "Sand price per cubic yard (USD, optional)",
+      "sandPricePerCubicM": "Sand price per cubic meter (USD, optional)",
+      "sandPricePerTon": "Sand price per ton (USD, optional)",
+      "sandPricePerTonne": "Sand price per tonne (USD, optional)",
+      "sandPricePlaceholderLabel": "Sand price (optional)"
+    },
+    "densityPresets": {
+      "baseCrushedStone": "Crushed stone (approx.)",
+      "baseGravel": "Gravel (approx.)",
+      "sandDry": "Dry sand (approx.)",
+      "sandPacked": "Packed sand (approx.)",
+      "sandWet": "Wet sand (approx.)",
+      "custom": "Custom"
+    },
+    "priceModes": {
+      "none": "No price",
+      "volume": "By volume",
+      "weight": "By weight"
+    },
+    "results": {
+      "title": "Results",
+      "baseTitle": "Base stone",
+      "sandTitle": "Bedding sand",
+      "cubicYards": "Estimated cubic yards",
+      "cubicMeters": "Estimated cubic meters",
+      "shortTons": "Estimated tons (US)",
+      "metricTonnes": "Estimated tonnes",
+      "cost": "Estimated cost",
+      "totalCost": "Total estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How thick should a paver base be?",
+      "a1": "It depends on soil and use. Walkways and patios often use a few inches of compacted base; driveways usually need more. Follow local recommendations.",
+      "q2": "Is bedding sand the same as base stone?",
+      "a2": "No. Bedding sand is a thin leveling layer. The compacted base stone provides structure and drainage.",
+      "q3": "Should I add waste/overage?",
+      "a3": "Yes. Compaction, grading, and irregular edges can increase the amount you need. 5-10% is a common buffer."
+    }
+  },
+  "soilMix": {
+    "metaTitle": "Soil Mix Calculator",
+    "metaDescription": "Estimate total soil volume and split it into compost, topsoil, and sand using a mix ratio, with optional cost.",
+    "title": "Soil Mix Calculator",
+    "subtitle": "Estimate soil volume, choose a mix ratio, and get component breakdowns.",
+    "inputs": {
+      "areaSqFt": "Area (sq ft)",
+      "areaM2": "Area (m²)",
+      "depthIn": "Depth (in)",
+      "depthCm": "Depth (cm)",
+      "waste": "Waste factor (%)",
+      "preset": "Mix preset",
+      "compostPercent": "Compost (%)",
+      "topsoilPercent": "Topsoil (%)",
+      "sandPercent": "Sand (%)",
+      "pricesTitle": "Optional bulk prices",
+      "compostPricePerCubicYd": "Compost price per cubic yard (USD, optional)",
+      "compostPricePerCubicM": "Compost price per cubic meter (USD, optional)",
+      "topsoilPricePerCubicYd": "Topsoil price per cubic yard (USD, optional)",
+      "topsoilPricePerCubicM": "Topsoil price per cubic meter (USD, optional)",
+      "sandPricePerCubicYd": "Sand price per cubic yard (USD, optional)",
+      "sandPricePerCubicM": "Sand price per cubic meter (USD, optional)",
+      "pricesHint": "Tip: leave prices blank to hide cost. If you're using metric units, enter price per cubic meter."
+    },
+    "presets": {
+      "raisedBed5050": "Raised bed (50% compost / 50% topsoil)",
+      "garden3070": "Garden mix (30% compost / 70% topsoil)",
+      "leveling5050": "Leveling mix (50% sand / 50% topsoil)",
+      "custom": "Custom"
+    },
+    "results": {
+      "title": "Results",
+      "totalCubicYards": "Total (cubic yards)",
+      "totalCubicMeters": "Total (cubic meters)",
+      "componentsTitle": "Component breakdown",
+      "compost": "Compost",
+      "topsoil": "Topsoil",
+      "sand": "Sand",
+      "compostCost": "Compost cost",
+      "topsoilCost": "Topsoil cost",
+      "sandCost": "Sand cost",
+      "totalCost": "Total estimated cost",
+      "yd3": "yd³",
+      "m3": "m³"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Is 50/50 compost and topsoil a good mix?",
+      "a1": "It’s a common starting point for raised beds, but needs vary by plants and drainage. Adjust based on your soil and local advice.",
+      "q2": "Should I include sand in a soil mix?",
+      "a2": "Sometimes. Sand can improve drainage in specific situations, but too much can change texture. Use it intentionally for your project.",
+      "q3": "Why add a waste factor?",
+      "a3": "Soil can settle after watering and compaction, and it’s easy to under-measure. A small buffer helps you avoid shortages."
+    }
+  },
+  "asphaltDriveway": {
+    "metaTitle": "Asphalt Driveway Calculator",
+    "metaDescription": "Estimate asphalt quantity in cubic yards and tons from area and thickness, including truckloads and optional cost.",
+    "title": "Asphalt Driveway Calculator",
+    "subtitle": "Estimate asphalt volume, tons, truckloads, and optional cost.",
+    "inputs": {
+      "areaSqFt": "Area (sq ft)",
+      "areaM2": "Area (m²)",
+      "thicknessIn": "Thickness (in)",
+      "thicknessCm": "Thickness (cm)",
+      "waste": "Waste factor (%)",
+      "densityPreset": "Density preset",
+      "densityLbPerYd3": "Density (lb per cubic yard)",
+      "densityKgPerM3": "Density (kg per cubic meter)",
+      "truckCapacityTons": "Truck capacity (tons, optional)",
+      "truckCapacityTonnes": "Truck capacity (tonnes, optional)",
+      "pricePerTon": "Price per ton (USD, optional)",
+      "pricePerTonne": "Price per tonne (USD, optional)"
+    },
+    "densityPresets": {
+      "hotMix": "Hot mix asphalt (approx.)",
+      "warmMix": "Warm mix asphalt (approx.)",
+      "custom": "Custom"
+    },
+    "results": {
+      "title": "Results",
+      "cubicYards": "Estimated cubic yards",
+      "cubicMeters": "Estimated cubic meters",
+      "shortTons": "Estimated tons (US)",
+      "metricTonnes": "Estimated tonnes",
+      "truckloads": "Estimated truckloads",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How thick should an asphalt driveway be?",
+      "a1": "It depends on use and base conditions. Many residential driveways use multiple inches. Follow contractor and local recommendations.",
+      "q2": "Why does asphalt tonnage vary?",
+      "a2": "Density varies by mix design and compaction. Ask your supplier/contractor for a conversion if you need high accuracy.",
+      "q3": "Should I add waste/overage?",
+      "a3": "Yes. Tie-ins, irregular edges, and thickness variation can increase quantity. 5-10% is a common buffer."
+    }
+  },
+  "boardFeet": {
+    "metaTitle": "Board Feet Calculator",
+    "metaDescription": "Calculate board feet for lumber using thickness, width, length, quantity, and waste, with optional cost per board foot.",
+    "title": "Board Feet Calculator",
+    "subtitle": "Estimate lumber volume in board feet, plus cubic feet/meters, and optional cost.",
+    "inputs": {
+      "thicknessIn": "Thickness (in)",
+      "thicknessMm": "Thickness (mm)",
+      "widthIn": "Width (in)",
+      "widthCm": "Width (cm)",
+      "lengthFt": "Length (ft)",
+      "lengthM": "Length (m)",
+      "quantity": "Quantity (boards)",
+      "waste": "Waste factor (%)",
+      "pricePerBoardFoot": "Price per board foot (USD, optional)"
+    },
+    "results": {
+      "title": "Results",
+      "boardFeet": "Board feet",
+      "cubicFeet": "Cubic feet",
+      "cubicMeters": "Cubic meters",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "What is a board foot?",
+      "a1": "A board foot is a unit of lumber volume equal to a board 1 inch thick, 12 inches wide, and 12 inches long.",
+      "q2": "Should I use nominal or actual size?",
+      "a2": "Use actual dimensions for accuracy. Nominal sizes (like 2×6) are larger than the finished actual size.",
+      "q3": "Why add waste?",
+      "a3": "Waste helps cover defects, knots, cuts, and a few mistakes. 5-10% is common depending on the project."
+    }
+  },
+  "mulchBags": {
+    "metaTitle": "Mulch Bags Calculator",
+    "metaDescription": "Estimate how many bags of mulch you need from area, depth, waste, and bag size, with optional cost per bag.",
+    "title": "Mulch Bags Calculator",
+    "subtitle": "Estimate mulch volume and convert it to bags (2 cu ft, 3 cu ft, or custom).",
+    "inputs": {
+      "areaSqFt": "Area (sq ft)",
+      "areaM2": "Area (m²)",
+      "depthIn": "Depth (in)",
+      "depthCm": "Depth (cm)",
+      "waste": "Waste factor (%)",
+      "bagPreset": "Bag size preset",
+      "bagSizeCubicFeet": "Bag size (cubic feet)",
+      "bagSizeLiters": "Bag size (liters)",
+      "pricePerBag": "Price per bag (USD, optional)"
+    },
+    "bagPresets": {
+      "cuft15": "1.5 cu ft bag",
+      "cuft2": "2 cu ft bag",
+      "cuft3": "3 cu ft bag",
+      "custom": "Custom"
+    },
+    "results": {
+      "title": "Results",
+      "cubicYards": "Estimated cubic yards",
+      "cubicMeters": "Estimated cubic meters",
+      "cubicFeet": "Cubic feet",
+      "bags": "Estimated bags",
+      "cost": "Estimated cost",
+      "metricHint": "Note: bag sizes in liters vary by brand; always confirm the label volume."
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How many mulch bags do I need for 2 inches depth?",
+      "a1": "It depends on your area and bag size. Enter your area, set depth to 2 inches, choose your bag size, and round up.",
+      "q2": "What is the most common bag size?",
+      "a2": "Many stores sell 2 cu ft and 3 cu ft bags. Always confirm the bag label.",
+      "q3": "Should I add waste?",
+      "a3": "Yes. Mulch settles after spreading and watering, and beds are rarely perfectly flat. 5-10% is a common buffer."
+    }
+  },
+  "concreteBags": {
+    "metaTitle": "Concrete Bags Calculator",
+    "metaDescription": "Estimate how many bags of concrete you need from area, thickness, waste, and bag yield, with optional cost per bag.",
+    "title": "Concrete Bags Calculator",
+    "subtitle": "Estimate concrete volume and convert it to bags (80/60/50/40 lb or custom yield).",
+    "inputs": {
+      "areaSqFt": "Area (sq ft)",
+      "areaM2": "Area (m²)",
+      "thicknessIn": "Thickness (in)",
+      "thicknessCm": "Thickness (cm)",
+      "waste": "Waste factor (%)",
+      "bagPreset": "Bag size preset",
+      "bagYieldCubicFeet": "Bag yield (cubic feet per bag)",
+      "bagYieldLiters": "Bag yield (liters per bag)",
+      "pricePerBag": "Price per bag (USD, optional)"
+    },
+    "bagPresets": {
+      "lb80": "80 lb bag (approx.)",
+      "lb60": "60 lb bag (approx.)",
+      "lb50": "50 lb bag (approx.)",
+      "lb40": "40 lb bag (approx.)",
+      "custom": "Custom"
+    },
+    "results": {
+      "title": "Results",
+      "cubicYards": "Estimated cubic yards",
+      "cubicMeters": "Estimated cubic meters",
+      "cubicFeet": "Cubic feet",
+      "bags": "Estimated bags",
+      "cost": "Estimated cost",
+      "yieldNote": "Note: bag yield varies by product and water. For best accuracy, use the yield shown on your bag label."
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How many 80 lb bags of concrete do I need?",
+      "a1": "Enter your area and thickness, then choose 80 lb bags. The calculator converts volume to bags and rounds up.",
+      "q2": "Why do different bag sizes give different results?",
+      "a2": "Different bag weights have different yields (cubic feet per bag). Always confirm yield on the product label.",
+      "q3": "Should I add waste?",
+      "a3": "Yes. Spillage, uneven subgrade, and mixing losses can add up. 5-10% is a common buffer."
+    }
+  },
+  "studs": {
+    "metaTitle": "Studs Calculator (Wall Framing)",
+    "metaDescription": "Estimate the number of wall studs and plates from total wall length, stud spacing, openings, and waste, with optional cost.",
+    "title": "Studs Calculator",
+    "subtitle": "Estimate studs and plates for wall framing with openings and waste.",
+    "yes": "Yes",
+    "no": "No",
+    "inputs": {
+      "totalWallLengthFt": "Total wall length (ft)",
+      "totalWallLengthM": "Total wall length (m)",
+      "wallCount": "Number of walls (or runs)",
+      "waste": "Waste factor (%)",
+      "spacingPreset": "Stud spacing preset",
+      "spacingIn": "Stud spacing (in)",
+      "spacingCm": "Stud spacing (cm)",
+      "openingsTitle": "Openings (optional)",
+      "doors": "Door openings",
+      "windows": "Window openings",
+      "studsPerOpening": "Extra studs per opening",
+      "openingsHint": "Tip: a basic door/window opening often adds king + jack studs on both sides (4 studs). Adjust as needed.",
+      "platesTitle": "Plates",
+      "topPlates": "Top plates (count)",
+      "bottomPlate": "Include bottom plate",
+      "pricesTitle": "Optional prices",
+      "pricePerStud": "Price per stud (USD, optional)",
+      "pricePerPlateFt": "Plate price per linear foot (USD, optional)",
+      "pricesHint": "Leave prices blank to hide cost. Plate pricing varies by market—use your best estimate."
+    },
+    "spacingPresets": {
+      "sixteen": "16\" on center",
+      "twentyFour": "24\" on center",
+      "custom": "Custom"
+    },
+    "results": {
+      "title": "Results",
+      "studs": "Estimated studs (with waste)",
+      "studsBeforeWaste": "Studs (before waste)",
+      "platesLinearFeet": "Plate length (linear feet, with waste)",
+      "platesLinearFeetBeforeWaste": "Plate length (linear feet, before waste)",
+      "platesMeters": "Plate length (meters, with waste)",
+      "platesMetersBeforeWaste": "Plate length (meters, before waste)",
+      "cost": "Estimated cost",
+      "note": "Note: this is a planning estimate. Corners, T-walls, blocking, headers, and local code requirements can change real counts."
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How many studs do I need for a wall?",
+      "a1": "It depends on wall length, stud spacing, and openings. Enter total wall length and choose 16\" or 24\" spacing to get an estimate.",
+      "q2": "Do doors and windows add studs?",
+      "a2": "Yes. Openings typically add king/jack studs and headers. This calculator lets you add extra studs per opening as a simple estimate.",
+      "q3": "Is this accurate for load-bearing walls?",
+      "a3": "Use this as a planning estimate only. Always follow local code and engineering requirements for structural walls."
+    }
+  },
+  "baseboardTrim": {
+    "metaTitle": "Baseboard & Trim Calculator",
+    "metaDescription": "Estimate baseboard/trim length and pieces from wall length, doors, waste, and stock length, with optional cost.",
+    "title": "Baseboard & Trim Calculator",
+    "subtitle": "Estimate linear feet (or meters), pieces to buy, and optional cost.",
+    "inputs": {
+      "wallLengthFt": "Total wall length (ft)",
+      "wallLengthM": "Total wall length (m)",
+      "doors": "Door openings",
+      "doorWidthIn": "Door width (in)",
+      "doorWidthCm": "Door width (cm)",
+      "waste": "Waste factor (%)",
+      "pieceLengthFt": "Piece length (ft)",
+      "pieceLengthM": "Piece length (m)",
+      "pricesTitle": "Optional prices",
+      "pricePerLinearFt": "Price per linear foot (USD, optional)",
+      "pricePerPiece": "Price per piece (USD, optional)",
+      "pricesHint": "If both are provided, linear-foot price is used. Leave blank to hide cost."
+    },
+    "results": {
+      "title": "Results",
+      "linearFeet": "Estimated linear feet (with waste)",
+      "linearFeetBeforeWaste": "Linear feet (before waste)",
+      "meters": "Estimated meters (with waste)",
+      "metersBeforeWaste": "Meters (before waste)",
+      "pieces": "Estimated pieces",
+      "cost": "Estimated cost",
+      "note": "Note: corners, miter cuts, and out-of-square walls can increase waste. Buy a little extra if matching profile/color later matters."
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Do I subtract doors for baseboard?",
+      "a1": "Usually yes. Baseboard typically stops at the door casing, so subtracting door openings helps avoid overbuying.",
+      "q2": "What piece length should I choose?",
+      "a2": "Use the stock length you plan to buy (commonly 8 ft or 12 ft). The calculator rounds up to whole pieces.",
+      "q3": "How much waste should I add?",
+      "a3": "5-10% is common. Add more for lots of corners, complex rooms, or if you’re new to trim work."
+    }
+  },
+  "topsoilBags": {
+    "metaTitle": "Topsoil Bags Calculator",
+    "metaDescription": "Estimate how many bags of topsoil you need from area, depth, waste, and bag size, with optional cost per bag.",
+    "title": "Topsoil Bags Calculator",
+    "subtitle": "Estimate topsoil volume and convert it to bags (1/2/3 cu ft or custom).",
+    "inputs": {
+      "areaSqFt": "Area (sq ft)",
+      "areaM2": "Area (m²)",
+      "depthIn": "Depth (in)",
+      "depthCm": "Depth (cm)",
+      "waste": "Waste factor (%)",
+      "bagPreset": "Bag size preset",
+      "bagSizeCubicFeet": "Bag size (cubic feet)",
+      "bagSizeLiters": "Bag size (liters)",
+      "pricePerBag": "Price per bag (USD, optional)"
+    },
+    "bagPresets": {
+      "cuft1": "1 cu ft bag",
+      "cuft2": "2 cu ft bag",
+      "cuft3": "3 cu ft bag",
+      "custom": "Custom"
+    },
+    "results": {
+      "title": "Results",
+      "cubicYards": "Estimated cubic yards",
+      "cubicMeters": "Estimated cubic meters",
+      "cubicFeet": "Cubic feet",
+      "bags": "Estimated bags",
+      "cost": "Estimated cost",
+      "metricHint": "Note: bag sizes in liters vary by brand; always confirm the label volume."
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How many bags of topsoil do I need?",
+      "a1": "Enter your area and depth, pick your bag size, and the calculator will round up to whole bags.",
+      "q2": "What depth should I use?",
+      "a2": "It depends on the project (leveling vs planting). Use an average depth and consider adding waste for uneven spots.",
+      "q3": "Should I buy bagged or bulk topsoil?",
+      "a3": "Bagged topsoil is convenient for small projects. For larger volumes, bulk delivery can be cheaper."
+    }
+  },
+  "gravelTonsCalc": {
+    "metaTitle": "Gravel Yards to Tons Calculator",
+    "metaDescription": "Convert gravel volume (cubic yards/meters) to weight (tons/tonnes) using density presets, with optional cost.",
+    "title": "Gravel Yards ↔ Tons",
+    "subtitle": "Convert cubic yards to tons (or tons to yards) using density presets or custom density.",
+    "inputs": {
+      "mode": "Conversion mode",
+      "volumeYd3": "Volume (cubic yards)",
+      "volumeM3": "Volume (cubic meters)",
+      "weightTons": "Weight (tons, US)",
+      "weightTonnes": "Weight (tonnes)",
+      "densityPreset": "Density preset",
+      "densityLbPerYd3": "Density (lb per cubic yard)",
+      "densityKgPerM3": "Density (kg per cubic meter)",
+      "pricePerTon": "Price per ton (USD, optional)",
+      "pricePerTonne": "Price per tonne (USD, optional)"
+    },
+    "modes": {
+      "v2w": "Volume → Weight",
+      "w2v": "Weight → Volume"
+    },
+    "densityPresets": {
+      "peaGravel": "Pea gravel (approx.)",
+      "crushedStone": "Crushed stone (approx.)",
+      "baseRock": "Base rock (approx.)",
+      "custom": "Custom"
+    },
+    "results": {
+      "title": "Results",
+      "volumeYd3": "Volume (cubic yards)",
+      "volumeM3": "Volume (cubic meters)",
+      "weightTons": "Weight (tons, US)",
+      "weightTonnes": "Weight (tonnes)",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "Why does yards-to-tons conversion vary?",
+      "a1": "It depends on density, which changes with gravel type and moisture. Suppliers may use their own conversion.",
+      "q2": "Should I round up?",
+      "a2": "Usually yes. Delivery minimums and compaction can make you come up short if you order too tightly.",
+      "q3": "Should I use tons or tonnes?",
+      "a3": "In the US, suppliers often use short tons. In many other markets, metric tonnes are common. Use whatever your supplier quotes."
+    }
+  },
+  "tileGrout": {
+    "metaTitle": "Tile Grout Calculator",
+    "metaDescription": "Estimate grout needed from tile size, joint width/depth, and area, with optional bag count and cost.",
+    "title": "Tile Grout Calculator",
+    "subtitle": "Estimate grout amount and bags using tile size, joints, and area.",
+    "inputs": {
+      "areaSqFt": "Tiled area (sq ft)",
+      "areaM2": "Tiled area (m²)",
+      "tileLengthIn": "Tile length (in)",
+      "tileWidthIn": "Tile width (in)",
+      "tileLengthMm": "Tile length (mm)",
+      "tileWidthMm": "Tile width (mm)",
+      "jointWidthIn": "Joint width (in)",
+      "jointDepthIn": "Joint depth (in)",
+      "jointWidthMm": "Joint width (mm)",
+      "jointDepthMm": "Joint depth (mm)",
+      "waste": "Waste factor (%)",
+      "densityPreset": "Grout type / density preset",
+      "densityKgPerM3": "Density (kg per m³)",
+      "bagPreset": "Bag size preset",
+      "bagKg": "Bag size (kg)",
+      "pricePerBag": "Price per bag (USD, optional)"
+    },
+    "densityPresets": {
+      "sanded": "Sanded grout (approx.)",
+      "unsanded": "Unsanded grout (approx.)",
+      "epoxy": "Epoxy grout (approx.)",
+      "custom": "Custom"
+    },
+    "bagPresets": {
+      "lb25": "25 lb bag",
+      "lb10": "10 lb bag",
+      "kg5": "5 kg bag",
+      "custom": "Custom"
+    },
+    "results": {
+      "title": "Results",
+      "groutKg": "Grout (kg)",
+      "groutLb": "Grout (lb)",
+      "groutLiters": "Grout volume (liters)",
+      "bags": "Estimated bags",
+      "cost": "Estimated cost",
+      "note": "Note: this is an estimate. Product density and real-world coverage vary—check your grout bag label for yield guidance."
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "What joint width should I use?",
+      "a1": "Follow tile and spacing recommendations. Wider joints use more grout.",
+      "q2": "Is sanded or unsanded grout better?",
+      "a2": "It depends on joint width and tile type. Use the product guidelines for your application.",
+      "q3": "Should I add waste?",
+      "a3": "Yes. Spillage, cleanup, and uneven joints can increase usage. 5-10% is a common buffer."
+    }
+  },
+  "drywallMudTape": {
+    "metaTitle": "Drywall Mud & Tape Calculator",
+    "metaDescription": "Estimate drywall tape rolls and joint compound (mud) from area, sheet size, coats, and waste, with optional cost.",
+    "title": "Drywall Mud & Tape Calculator",
+    "subtitle": "Estimate seam length, tape rolls, and joint compound using adjustable assumptions.",
+    "inputs": {
+      "areaSqFt": "Drywall area to finish (sq ft)",
+      "areaM2": "Drywall area to finish (m²)",
+      "waste": "Waste factor (%)",
+      "sheetPreset": "Sheet size preset",
+      "sheetWidthFt": "Sheet width (ft)",
+      "sheetLengthFt": "Sheet length (ft)",
+      "sheetWidthM": "Sheet width (m)",
+      "sheetLengthM": "Sheet length (m)",
+      "tapeTitle": "Tape",
+      "rollLengthFt": "Roll length (ft)",
+      "rollLengthM": "Roll length (m)",
+      "pricePerRoll": "Price per roll (USD, optional)",
+      "compoundTitle": "Joint compound (mud)",
+      "coats": "Coats",
+      "jointWidthIn": "Average joint width (in)",
+      "avgThicknessIn": "Average thickness per coat (in)",
+      "featherFactor": "Feather factor (0-1)",
+      "bucketGallons": "Bucket size (gallons)",
+      "pricePerBucket": "Price per bucket (USD, optional)",
+      "compoundHint": "These assumptions vary by technique and product. Adjust them to match your plan and the label yield."
+    },
+    "sheetPresets": {
+      "s48": "4×8 sheet",
+      "s410": "4×10 sheet",
+      "s412": "4×12 sheet",
+      "custom": "Custom"
+    },
+    "results": {
+      "title": "Results",
+      "seamFeet": "Estimated seam length (ft)",
+      "seamMeters": "Estimated seam length (m)",
+      "tapeRolls": "Tape rolls",
+      "compoundGallons": "Joint compound (gallons)",
+      "compoundLiters": "Joint compound (liters)",
+      "compoundBuckets": "Buckets",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "How accurate is this mud and tape estimate?",
+      "a1": "It’s a planning estimate based on average seam density for a sheet size and your chosen assumptions. Corners and real layouts can change material needs.",
+      "q2": "Why does sheet size matter?",
+      "a2": "Larger sheets generally create fewer seams per square foot, which reduces tape and compound.",
+      "q3": "How many coats should I use?",
+      "a3": "Many finishing approaches use multiple coats. Choose what matches your plan and product recommendations."
+    }
+  },
+  "topsoil": {
+    "metaTitle": "Topsoil Calculator",
+    "metaDescription": "Estimate topsoil volume in cubic yards from area, depth and waste factor, with optional cost.",
+    "title": "Topsoil Calculator",
+    "subtitle": "Estimate cubic yards of topsoil based on area and depth.",
+    "quickTitle": "Quick guide",
+    "quick": {
+      "t1": "Measure total area and choose an average depth for the project.",
+      "t2": "Convert depth to feet or meters before calculating volume.",
+      "t3": "Add a small buffer for settling, grading, and uneven areas."
+    },
+    "howToMeasureTitle": "How to measure your area",
+    "howToMeasure": {
+      "s1": "For rectangles: area = length × width. For circles: area = π × r².",
+      "s2": "For lawns, measure sections and add them for total area.",
+      "s3": "Convert depth to feet (in ÷ 12) or meters (cm ÷ 100)."
+    },
+    "assumptionsTitle": "Assumptions to double-check",
+    "assumptions": {
+      "a1": "Use average depth—topdressing and leveling often vary across the area.",
+      "a2": "If you’re filling low spots, include extra volume for those areas.",
+      "a3": "Bulk topsoil may settle; a buffer prevents running short."
+    },
+    "buyingTipsTitle": "Buying tips",
+    "buyingTips": {
+      "b1": "Confirm whether you need screened topsoil for a smoother finish.",
+      "b2": "Round up to delivery minimums and keep a small amount for touch-ups.",
+      "b3": "If you add compost, adjust the mix ratio and volume accordingly."
+    },
+    "lastUpdated": "Last updated: Dec 2025",
+    "inputs": {
+      "areaSqFt": "Area (sq ft)",
+      "depthIn": "Depth (in)",
+      "areaM2": "Area (m²)",
+      "depthCm": "Depth (cm)",
+      "waste": "Waste factor (%)",
+      "pricePerCubicYd": "Price per cubic yard (USD, optional)",
+      "pricePerCubicM": "Price per cubic meter (USD, optional)"
+    },
+    "results": {
+      "title": "Results",
+      "cubicYards": "Estimated cubic yards",
+      "cubicMeters": "Estimated cubic meters",
+      "cost": "Estimated cost"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "What topsoil depth is typical?",
+      "a1": "It depends on the project. Many lawns use a thin layer; raised beds often use more.",
+      "q2": "Why cubic yards?",
+      "a2": "Bulk topsoil is commonly sold by the cubic yard.",
+      "q3": "Should I add waste?",
+      "a3": "A buffer helps account for settling and uneven areas."
+    }
+  }
+}

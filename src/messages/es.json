@@ -1,0 +1,2112 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "calculators": "Calculadoras",
+    "guides": "Guías",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "site": {
+    "name": "HomeDecorCalc",
+    "tagline": "Calculadoras y guías de mejoras del hogar y decoración."
+  },
+  "home": {
+    "metaTitle": "Calculadoras de mejoras del hogar",
+    "metaDescription": "Calculadoras rápidas y respetuosas con la privacidad, con supuestos claros y estimaciones prácticas.",
+    "title": "HomeDecorCalc",
+    "subtitle": "Calculadoras de mejoras del hogar pensadas para claridad y rapidez.",
+    "allTitle": "Todas las calculadoras",
+    "allDescription": "Explora cada calculadora y comparte un enlace con tus datos.",
+    "viewAllCta": "Ver todas",
+    "featuredTitle": "Calculadoras destacadas",
+    "featuredPaint": "Calculadora de pintura",
+    "featuredPaintDesc": "Estima pintura necesaria y costo opcional.",
+    "featuredWallpaperRolls": "Calculadora de rollos de papel tapiz",
+    "featuredWallpaperRollsDesc": "Estima cuántos rollos necesitas y el costo opcional.",
+    "featuredFlooring": "Calculadora de pisos",
+    "featuredFlooringDesc": "Estima área de piso y costo opcional.",
+    "featuredTile": "Calculadora de azulejos",
+    "featuredTileDesc": "Estima cajas de azulejos necesarias.",
+    "featuredTileGrout": "Calculadora de lechada",
+    "featuredTileGroutDesc": "Estima bolsas de lechada y costo.",
+    "featuredDrywall": "Calculadora de paneles de yeso",
+    "featuredDrywallDesc": "Estima cuántas placas necesitas.",
+    "featuredDrywallMudTape": "Calculadora de masilla y cinta",
+    "featuredDrywallMudTapeDesc": "Estima rollos de cinta y masilla.",
+    "featuredConcrete": "Calculadora de concreto",
+    "featuredConcreteDesc": "Estima yardas cúbicas para una losa.",
+    "featuredConcreteBags": "Calculadora de bolsas de concreto",
+    "featuredConcreteBagsDesc": "Estima cuántas bolsas necesitas.",
+    "featuredStuds": "Calculadora de montantes",
+    "featuredStudsDesc": "Estima montantes y soleras.",
+    "featuredBaseboardTrim": "Calculadora de zócalos y molduras",
+    "featuredBaseboardTrimDesc": "Estima metros lineales y piezas.",
+    "featuredTopsoilBags": "Calculadora de bolsas de tierra vegetal",
+    "featuredTopsoilBagsDesc": "Estima cuántas bolsas necesitas.",
+    "featuredMulch": "Calculadora de mantillo",
+    "featuredMulchDesc": "Estima yardas cúbicas de mantillo.",
+    "featuredRoofing": "Calculadora de techo",
+    "featuredRoofingDesc": "Estima tejas por bultos y 'squares'.",
+    "featuredDeck": "Calculadora de tablas para deck",
+    "featuredDeckDesc": "Estima tablas y costo opcional.",
+    "featuredFence": "Calculadora de cerca",
+    "featuredFenceDesc": "Estima paneles y postes.",
+    "featuredGravel": "Calculadora de grava",
+    "featuredGravelDesc": "Estima yardas cúbicas de grava.",
+    "featuredGravelTons": "Conversor de grava a toneladas",
+    "featuredGravelTonsDesc": "Convierte yardas cúbicas a toneladas.",
+    "featuredPaverBase": "Calculadora de base para adoquines",
+    "featuredPaverBaseDesc": "Estima piedra base y arena de cama.",
+    "featuredSand": "Calculadora de arena",
+    "featuredSandDesc": "Estima volumen y peso de arena.",
+    "featuredSoilMix": "Calculadora de mezcla de suelo",
+    "featuredSoilMixDesc": "Divide compost, tierra y arena por proporción.",
+    "featuredAsphaltDriveway": "Calculadora de asfalto para entrada",
+    "featuredAsphaltDrivewayDesc": "Estima toneladas, volumen y camiones.",
+    "featuredBoardFeet": "Calculadora de pies tablares",
+    "featuredBoardFeetDesc": "Estima volumen de madera y costo.",
+    "featuredMulchBags": "Calculadora de bolsas de mantillo",
+    "featuredMulchBagsDesc": "Estima cuántas bolsas necesitas.",
+    "featuredTopsoil": "Calculadora de tierra vegetal",
+    "featuredTopsoilDesc": "Estima yardas cúbicas de tierra vegetal."
+  },
+  "calculatorsIndex": {
+    "metaTitle": "Calculadoras",
+    "metaDescription": "Explora nuestras calculadoras de mejoras del hogar.",
+    "title": "Calculadoras",
+    "searchLabel": "Buscar",
+    "searchPlaceholder": "Buscar calculadoras (p. ej., pintura, grava, concreto)",
+    "categoriesLabel": "Categorías",
+    "categoryAll": "Todas",
+    "categoryWallsFinishes": "Paredes y acabados",
+    "categoryFloorsTile": "Pisos y azulejos",
+    "categoryConcreteMasonry": "Concreto y albañilería",
+    "categoryRoofingExterior": "Techos y exterior",
+    "categoryLandscaping": "Jardinería",
+    "resultsCount": "{count} calculadoras",
+    "noResultsTitle": "No se encontraron calculadoras",
+    "noResultsBody": "Prueba otra búsqueda o categoría."
+  },
+  "calculatorsCategory": {
+    "metaTitle": "Calculadoras de {category}",
+    "metaDescription": "Explora calculadoras en {category} y guías relacionadas.",
+    "subtitle": "{count} calculadoras en esta categoría.",
+    "intro": "Explora calculadoras y guías de {category}. Cada calculadora enlaza a guías relacionadas y herramientas similares.",
+    "relatedGuidesTitle": "Guías relacionadas",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Estas calculadoras son exactas?",
+      "a1": "Son estimaciones prácticas basadas en tus datos y supuestos comunes. Para proyectos críticos, confirma con especificaciones o un profesional.",
+      "q2": "¿Por qué recomiendan agregar desperdicio?",
+      "a2": "En proyectos reales hay cortes, errores, superficies irregulares y redondeo a cajas/bultos. Un margen pequeño evita quedarte corto.",
+      "q3": "¿Puedo compartir el resultado?",
+      "a3": "Sí. La mayoría de las calculadoras permiten enlaces que guardan tus datos para volver a ver o compartir la estimación."
+    },
+    "noGuidesYet": "Más guías próximamente.",
+    "backToCalculators": "Volver a calculadoras",
+    "browseAllGuides": "Ver todas las guías"
+  },
+  "guidesIndex": {
+    "metaTitle": "Guías",
+    "metaDescription": "Guías paso a paso con supuestos claros y consejos prácticos.",
+    "title": "Guías",
+    "description": "Guías cortas y prácticas que explican el cálculo detrás de proyectos comunes."
+  },
+  "guidesCards": {
+    "paintTitle": "Cómo estimar pintura",
+    "paintDescription": "Cobertura, manos y qué medir antes de comprar.",
+    "paintCeilingTitle": "¿Cuánta pintura para un techo?",
+    "paintCeilingDescription": "Área del techo, cobertura realista y ajustes comunes.",
+    "paintTrimTitle": "¿Cuánta pintura para molduras?",
+    "paintTrimDescription": "Puertas, zócalos y molduras sin comprar de más.",
+    "flooringTitle": "Cómo medir pisos",
+    "flooringDescription": "Medición por habitación y factores de desperdicio.",
+    "flooringBoxesTitle": "¿Cuántas cajas de piso necesito?",
+    "flooringBoxesDescription": "Convierte área a cajas y elige un desperdicio.",
+    "tileTitle": "Cómo estimar azulejos",
+    "tileDescription": "Mide el área, agrega desperdicio y convierte a cajas.",
+    "tileWasteTitle": "Desperdicio de azulejos: cuánto extra comprar",
+    "tileWasteDescription": "Cuándo usar 10%, 15% o más de margen.",
+    "drywallTitle": "Cómo estimar paneles de yeso",
+    "drywallDescription": "Área total, tamaños de hoja y desperdicio.",
+    "drywallCeilingTitle": "¿Cuántas placas de yeso para un techo?",
+    "drywallCeilingDescription": "Área, tamaños de hoja y juntas.",
+    "concreteTitle": "Cómo estimar concreto",
+    "concreteDescription": "Volumen, consejos al ordenar y errores comunes.",
+    "mulchTitle": "Cómo estimar mantillo",
+    "mulchDescription": "Área, profundidad y conversión a yardas cúbicas.",
+    "mulchDepthTitle": "Profundidad de mantillo: 2\" vs 3\"",
+    "mulchDepthDescription": "Cómo la profundidad cambia las yardas cúbicas.",
+    "roofingTitle": "Cómo estimar tejas",
+    "roofingDescription": "Squares, bultos y cómo agregar desperdicio.",
+    "roofingShedTitle": "¿Cuántas tejas para un techo de cobertizo?",
+    "roofingShedDescription": "Método rápido para techos pequeños y simples.",
+    "deckTitle": "Cómo estimar tablas de deck",
+    "deckDescription": "Área, cobertura por tabla y separación.",
+    "fenceTitle": "Cómo estimar materiales de cerca",
+    "fenceDescription": "Paneles, postes, portones y supuestos.",
+    "fencePostsTitle": "¿Cuántos postes de cerca necesito?",
+    "fencePostsDescription": "Separación, esquinas y postes para portones.",
+    "gravelTitle": "Cómo estimar grava",
+    "gravelDescription": "Área, profundidad y conversiones de volumen.",
+    "gravelTonsTitle": "Convertir yardas de grava a toneladas",
+    "gravelTonsDescription": "Densidad, tipo de material y conversiones del proveedor.",
+    "topsoilTitle": "Cómo estimar tierra vegetal",
+    "topsoilDescription": "Nivelación, profundidad y yardas cúbicas.",
+    "topsoilLevelingTitle": "Tierra vegetal para nivelar un césped",
+    "topsoilLevelingDescription": "Plan de profundidad y un margen realista."
+  },
+  "guidesCommon": {
+    "useCalculatorCta": "Usar la calculadora",
+    "backToGuides": "← Volver a guías"
+  },
+  "guidesRelated": {
+    "title": "Relacionado",
+    "inCategory": "En {category}",
+    "calculatorsTitle": "Calculadoras relacionadas",
+    "guidesTitle": "Guías relacionadas",
+    "browseCategoryCalculators": "Ver esta categoría →",
+    "browseAllGuides": "Ver todas las guías →",
+    "noGuidesYet": "Más guías próximamente."
+  },
+  "calculatorsRelated": {
+    "title": "Relacionado",
+    "inCategory": "En {category}",
+    "guidesTitle": "Guías relacionadas",
+    "calculatorsTitle": "Calculadoras relacionadas",
+    "browseCategoryCalculators": "Ver esta categoría →",
+    "browseAllCalculators": "Ver todas las calculadoras →",
+    "browseAllGuides": "Ver todas las guías →",
+    "noGuidesYet": "Más guías próximamente.",
+    "noCalculatorsYet": "Más calculadoras próximamente."
+  },
+  "guidePaint": {
+    "metaTitle": "Cómo estimar pintura",
+    "metaDescription": "Aprende a estimar pintura para paredes y techos, incluyendo cobertura, manos y ajustes comunes.",
+    "title": "Cómo estimar pintura para una habitación",
+    "subtitle": "Mide bien, usa una cobertura realista y agrega un pequeño margen.",
+    "tldrTitle": "En resumen",
+    "tldr": {
+      "t1": "Área × manos ÷ cobertura = pintura necesaria (luego redondea hacia arriba).",
+      "t2": "La cobertura del envase es un punto de partida—la textura y el color la reducen.",
+      "t3": "Agrega un margen para retoques y desperdicio (a menudo 5–10%)."
+    },
+    "intro": {
+      "p1": "Una buena estimación se basa en dos números: el área a pintar y la cobertura por galón (o por litro). Agrega la cantidad de manos y un margen para retoques y desperdicio.",
+      "p2": "Si mides una sola vez y calculas una sola vez, normalmente compras de menos. Esta guía explica qué medir y por qué la cobertura del envase es solo un punto de partida."
+    },
+    "stepsTitle": "Paso a paso: cálculo de pintura",
+    "steps": {
+      "s1": "Mide el área de paredes (largo × alto) de cada pared y suma todo.",
+      "s2": "Resta aberturas grandes (puertas, ventanas grandes) si quieres un resultado más ajustado.",
+      "s3": "Define las manos (a menudo 2 para colores nuevos o cambios fuertes).",
+      "s4": "Elige una cobertura realista según textura y tipo de pintura.",
+      "s5": "Agrega 5–10% de margen y redondea a latas enteras."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Paredes con textura y colores intensos reducen la cobertura.",
+      "t2": "Techos y molduras suelen usar otra pintura y acabado.",
+      "t3": "La imprimación puede reducir manos, pero no es “pintura gratis”.",
+      "t4": "Mezcla latas (boxing) para mantener el color uniforme."
+    },
+    "mistakesTitle": "Errores comunes",
+    "mistakes": {
+      "m1": "Olvidar multiplicar por manos (2 manos es común).",
+      "m2": "Usar la cobertura ideal del envase en paredes porosas o con textura.",
+      "m3": "No agregar margen y quedarte corto a mitad del trabajo."
+    },
+    "ctaTitle": "¿Quieres un estimado rápido?",
+    "ctaBody": "Usa la calculadora de pintura y comparte un enlace que conserve tus datos.",
+    "lastUpdated": "Última actualización: dic 2025",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Debo restar ventanas y puertas?",
+      "a1": "En aberturas pequeñas, la diferencia suele quedar dentro del margen. Restar ayuda si hay ventanas grandes, muchas puertas o presupuesto ajustado.",
+      "q2": "¿Por qué mi resultado es mayor que la cobertura indicada?",
+      "a2": "La cobertura del envase asume condiciones ideales. Textura, porosidad, método de aplicación y varias manos reducen la cobertura real.",
+      "q3": "¿Cuánta pintura extra debo comprar?",
+      "a3": "Un margen de 5–10% es común. Si necesitas igualar color luego, una lata extra del mismo lote puede ahorrar tiempo."
+    }
+  },
+  "guideFlooring": {
+    "metaTitle": "Cómo medir pisos",
+    "metaDescription": "Aprende a medir el área por habitación y a elegir un factor de desperdicio acorde al diseño.",
+    "title": "Cómo medir pisos para un proyecto",
+    "subtitle": "Medición por habitación y el desperdicio correcto evitan faltantes.",
+    "intro": {
+      "p1": "Las estimaciones de piso empiezan con un área precisa. Lo mejor es medir cada habitación por separado y luego sumar.",
+      "p2": "Después del área, la decisión más importante es el factor de desperdicio. Patrones de corte, instalación en diagonal y habitaciones pequeñas aumentan el desperdicio."
+    },
+    "measuringTitle": "Lista de medición",
+    "measuring": {
+      "m1": "Mide largo y ancho de cada habitación (o divide formas en L en rectángulos).",
+      "m2": "Suma las áreas para obtener el total en pies² (o m²).",
+      "m3": "Verifica la cobertura por caja y convierte el área a cajas.",
+      "m4": "Agrega desperdicio antes de redondear a cajas enteras."
+    },
+    "wasteTitle": "Elegir factor de desperdicio",
+    "wasteBody": "Un rango común es 5–15%. Cerca de 5% funciona en habitaciones simples con instalación recta. Cerca de 10–15% es más seguro con muchos cortes, diseños en ángulo o habitaciones complejas.",
+    "ctaTitle": "Calcula cajas y costo",
+    "ctaBody": "Usa la calculadora de pisos para estimar cajas y costo opcional.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Por qué necesito desperdicio?",
+      "a1": "Cortes, piezas defectuosas, recortes y reparaciones futuras requieren material extra además del área exacta.",
+      "q2": "¿Incluyo closets?",
+      "a2": "Sí. Mídelos como cualquier espacio. Las áreas pequeñas suelen aumentar el desperdicio, así que el factor importa más.",
+      "q3": "¿Y si las habitaciones no son rectángulos perfectos?",
+      "a3": "Divide la forma en rectángulos, mide cada parte y suma. Suele ser más preciso que adivinar una sola medida."
+    }
+  },
+  "guideConcrete": {
+    "metaTitle": "Cómo estimar concreto",
+    "metaDescription": "Aprende a estimar volumen de concreto para losas, con espesor, margen al ordenar y errores comunes.",
+    "title": "Cómo estimar concreto para una losa",
+    "subtitle": "Calcula volumen con área × espesor y agrega un margen realista.",
+    "intro": {
+      "p1": "El concreto normalmente se ordena por volumen. Para losas, el volumen es el área multiplicada por el espesor, convertido a yardas cúbicas o metros cúbicos.",
+      "p2": "Pedir de menos puede frenar el vaciado. Pedir un poco de más suele ser más barato que una segunda entrega. Esta guía se enfoca en un estimado práctico y seguro."
+    },
+    "formulaTitle": "La fórmula básica",
+    "formulaBody": "Usa dimensiones de la losa, convierte el espesor al mismo sistema, calcula el volumen y conviértelo a la unidad que usa tu proveedor.",
+    "formula": {
+      "f1": "Área = largo × ancho (o suma de rectángulos).",
+      "f2": "Volumen = área × espesor.",
+      "f3": "Convierte a yardas cúbicas o metros cúbicos para ordenar."
+    },
+    "orderingTitle": "Consejos al ordenar",
+    "ordering": {
+      "o1": "Confirma si el espesor es uniforme o hay bordes engrosados.",
+      "o2": "Agrega 5–10% de margen por subbase irregular y derrames.",
+      "o3": "Pregunta por carga mínima y cargos por carga pequeña.",
+      "o4": "Planifica acceso y tiempos: retrasos afectan el acabado."
+    },
+    "ctaTitle": "Estima volumen rápido",
+    "ctaBody": "Usa la calculadora de concreto para estimar yardas/metros cúbicos y costo opcional.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Debo agregar extra por varilla o malla?",
+      "a1": "El acero no cambia de forma relevante el volumen. El margen es por condiciones del sitio y desperdicio, no por refuerzo.",
+      "q2": "¿Qué espesor debo usar?",
+      "a2": "Depende de la carga y normas locales. Muchas aceras rondan 10 cm (4 in) y entradas suelen ser más gruesas. Revisa tus especificaciones.",
+      "q3": "¿Por qué pedir de menos causa problemas?",
+      "a3": "Puedes terminar con juntas frías o una segunda entrega tarde, lo que afecta resistencia y acabado."
+    }
+  },
+  "guideTile": {
+    "metaTitle": "Cómo estimar azulejos",
+    "metaDescription": "Aprende a estimar azulejos midiendo el área, agregando un porcentaje de desperdicio y convirtiendo a cajas.",
+    "title": "Cómo estimar azulejos para piso o pared",
+    "subtitle": "Mide el área, agrega desperdicio y redondea a cajas completas.",
+    "intro": {
+      "p1": "Los azulejos se estiman por área, pero se compran por caja. La clave es usar la cobertura por caja del producto y sumar un porcentaje de desperdicio por cortes y roturas.",
+      "p2": "Esta guía te da un método rápido para pisos, duchas y salpicaderos."
+    },
+    "stepsTitle": "Paso a paso: cálculo de azulejos",
+    "steps": {
+      "s1": "Mide el área a cubrir (largo × ancho o suma de rectángulos).",
+      "s2": "Resta huecos grandes solo si no se van a revestir (ventanas grandes, nichos).",
+      "s3": "Elige un desperdicio (10% recto; 15%+ en diagonal o diseños complejos).",
+      "s4": "Convierte el área total a cajas usando la cobertura por caja.",
+      "s5": "Redondea a cajas completas y considera comprar extra para reparaciones."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Diseños en diagonal o espiga aumentan cortes y desperdicio.",
+      "t2": "Mosaicos pequeños suelen requerir más margen.",
+      "t3": "No olvides piezas de remate, perfiles y transiciones si las necesitas.",
+      "t4": "Compra del mismo lote para evitar variaciones de tono y tamaño."
+    },
+    "ctaTitle": "¿Quieres el conteo de cajas rápido?",
+    "ctaBody": "Usa nuestra calculadora de azulejos y comparte un enlace con tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cuánto desperdicio debo agregar para azulejos?",
+      "a1": "10% es común en instalaciones sencillas. Usa 15% o más para diagonal, muchas esquinas o áreas pequeñas.",
+      "q2": "¿Debo restar gabinetes o muebles?",
+      "a2": "Si el área quedará cubierta permanentemente y no colocarás azulejo debajo, puedes restarla. Si tienes dudas, no la restes y confía en el margen.",
+      "q3": "¿Por qué debo redondear a cajas completas?",
+      "a3": "Los azulejos se venden por caja y siempre hay roturas o cortes. Además, tener sobrantes del mismo lote ayuda para reparaciones."
+    }
+  },
+  "guideDrywall": {
+    "metaTitle": "Cómo estimar paneles de yeso",
+    "metaDescription": "Aprende a estimar paneles de yeso midiendo el área total, eligiendo el tamaño de hoja y sumando desperdicio.",
+    "title": "Cómo estimar hojas de panel de yeso (drywall)",
+    "subtitle": "Calcula el área de paredes/techo, convierte a hojas y agrega desperdicio.",
+    "intro": {
+      "p1": "Para estimar paneles de yeso necesitas el área total de superficies y luego convertirla a hojas según el tamaño (por ejemplo, 1.22×2.44 m).",
+      "p2": "El desperdicio depende mucho de la forma del cuarto, esquinas y recortes."
+    },
+    "stepsTitle": "Paso a paso: cálculo de drywall",
+    "steps": {
+      "s1": "Calcula el área de paredes (perímetro × altura) y suma el techo si aplica.",
+      "s2": "Resta puertas/ventanas grandes si quieres un cálculo más ajustado.",
+      "s3": "Elige el tamaño de hoja y su cobertura.",
+      "s4": "Agrega desperdicio (10%+; más si hay muchas esquinas y recortes).",
+      "s5": "Redondea a hojas completas y considera algunas extra por errores."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Hojas más largas reducen juntas, pero son más difíciles de manejar.",
+      "t2": "En techos conviene un poco más de margen para evitar faltantes.",
+      "t3": "La complejidad del diseño suele aumentar el desperdicio más que el área.",
+      "t4": "Confirma el espesor requerido (por ejemplo 1/2\" vs 5/8\")."
+    },
+    "ctaTitle": "¿Quieres el conteo de hojas rápido?",
+    "ctaBody": "Usa nuestra calculadora de drywall y comparte un enlace con tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cuántas hojas de drywall necesito?",
+      "a1": "Área total ÷ cobertura por hoja, agrega desperdicio y redondea hacia arriba.",
+      "q2": "¿Qué porcentaje de desperdicio uso para drywall?",
+      "a2": "10% es común; usa más si hay muchos recortes, esquinas o piezas pequeñas.",
+      "q3": "¿Debo restar puertas y ventanas?",
+      "a3": "Puedes hacerlo para afinar, pero muchos lo omiten y dejan que el desperdicio cubra la diferencia."
+    }
+  },
+  "guideMulch": {
+    "metaTitle": "Cómo estimar mantillo",
+    "metaDescription": "Aprende a estimar mantillo midiendo el área del jardín, eligiendo profundidad y convirtiendo a yardas cúbicas.",
+    "title": "Cómo estimar mantillo para jardineras",
+    "subtitle": "Área × profundidad = volumen; convierte a yardas cúbicas y redondea.",
+    "intro": {
+      "p1": "El mantillo se compra por volumen, pero tú mides por área. La profundidad (en pulgadas o cm) es la pieza que conecta ambos.",
+      "p2": "Una capa nueva de 5–7 cm requiere mucho más material que un simple relleno superficial."
+    },
+    "stepsTitle": "Paso a paso: cálculo de mantillo",
+    "steps": {
+      "s1": "Mide el área de las camas (rectángulos, círculos o divide en formas simples).",
+      "s2": "Elige la profundidad objetivo (comúnmente 5–8 cm).",
+      "s3": "Convierte área × profundidad a volumen.",
+      "s4": "Convierte el volumen a yardas cúbicas si así vende tu proveedor.",
+      "s5": "Redondea hacia arriba y agrega un pequeño margen por asentamiento."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Duplicar la profundidad duplica el volumen: define primero el objetivo.",
+      "t2": "El mantillo se asienta con el tiempo; considera un pequeño extra.",
+      "t3": "Evita amontonar mantillo contra troncos (\"volcanes\").",
+      "t4": "Si vas a reponer, nivela el mantillo viejo antes de medir."
+    },
+    "ctaTitle": "¿Quieres el volumen rápido?",
+    "ctaBody": "Usa nuestra calculadora de mantillo y comparte un enlace con tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué profundidad de mantillo es recomendable?",
+      "a1": "Muchas camas usan 5–8 cm. Para un retoque, puede ser menos; para controlar malezas, puede ser más.",
+      "q2": "¿Cuántas yardas cúbicas de mantillo necesito?",
+      "a2": "Área × profundidad = volumen; convierte a yardas cúbicas y redondea hacia arriba.",
+      "q3": "¿Conviene comprar extra?",
+      "a3": "Un pequeño margen ayuda con asentamiento y zonas desparejas, y evita quedarte corto."
+    }
+  },
+  "guideRoofing": {
+    "metaTitle": "Cómo estimar tejas para techo",
+    "metaDescription": "Aprende a estimar tejas usando squares y bultos, más un porcentaje de desperdicio.",
+    "title": "Cómo estimar tejas (shingles)",
+    "subtitle": "Convierte el área del techo a squares y luego a bultos, sumando desperdicio.",
+    "intro": {
+      "p1": "En muchos lugares las tejas se estiman por “square” (100 ft²). Primero necesitas el área real del techo y luego convertirla a squares.",
+      "p2": "El desperdicio sube con valles, caderas, buhardillas y cortes."
+    },
+    "stepsTitle": "Paso a paso: cálculo de techo",
+    "steps": {
+      "s1": "Mide el área de superficie del techo (no solo la huella de la casa).",
+      "s2": "Convierte a squares (ft² ÷ 100).",
+      "s3": "Agrega desperdicio (10–15%+; más si el techo es complejo).",
+      "s4": "Convierte a bultos según el producto (bultos por square).",
+      "s5": "Redondea e incluye piezas de arranque y cumbrera por separado."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "La pendiente aumenta el área real del techo.",
+      "t2": "Los techos complejos requieren más desperdicio.",
+      "t3": "Los bultos por square varían: revisa la ficha del producto.",
+      "t4": "Considera extra para reparaciones o para igualar color en el futuro."
+    },
+    "ctaTitle": "¿Quieres squares y bultos al instante?",
+    "ctaBody": "Usa nuestra calculadora de techo y comparte un enlace con tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué es un “square” de techo?",
+      "a1": "Un square equivale a 100 pies cuadrados (ft²) de cobertura.",
+      "q2": "¿Cuántos bultos hay en un square?",
+      "a2": "A menudo 3, pero depende del tipo de teja. Verifica especificaciones.",
+      "q3": "¿Qué desperdicio debo considerar?",
+      "a3": "10–15% es común. Techos con muchos valles/caderas pueden requerir más."
+    }
+  },
+  "guideDeck": {
+    "metaTitle": "Cómo estimar tablas para deck",
+    "metaDescription": "Aprende a estimar tablas para deck midiendo el área y convirtiendo a cobertura y cantidad de tablas.",
+    "title": "Cómo estimar tablas para un deck",
+    "subtitle": "Parte del área del deck, ajusta por separación y suma desperdicio.",
+    "intro": {
+      "p1": "La estimación de tablas comienza con el área del deck, pero el ancho de tabla, la separación y el diseño (recto o diagonal) afectan la cantidad final.",
+      "p2": "Esta guía te ayuda a convertir área a cantidades realistas."
+    },
+    "stepsTitle": "Paso a paso: cálculo de tablas",
+    "steps": {
+      "s1": "Mide el área del deck (largo × ancho o suma de rectángulos).",
+      "s2": "Elige ancho de tabla y separación para estimar cobertura efectiva.",
+      "s3": "Convierte el área a pies/metros lineales de tabla y luego a número de tablas.",
+      "s4": "Agrega desperdicio (10%+; más si el diseño es diagonal).",
+      "s5": "Redondea y verifica detalles como bordes, escalones o marco perimetral."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Diseños diagonales generan más cortes y desperdicio.",
+      "t2": "No olvides escalones, fascia y remates si aplican.",
+      "t3": "La separación debe seguir recomendaciones del fabricante.",
+      "t4": "Combinar largos de tabla puede reducir desperdicio."
+    },
+    "ctaTitle": "¿Quieres una estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de deck y comparte un enlace con tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cuántas tablas necesito para un deck?",
+      "a1": "Convierte área a cobertura por tabla considerando separación, agrega desperdicio y redondea.",
+      "q2": "¿La separación cambia la cantidad?",
+      "a2": "Sí, pero suele ser un cambio pequeño. Sigue recomendaciones para drenaje y dilatación.",
+      "q3": "¿Qué desperdicio debo considerar?",
+      "a3": "10% es común en diseño recto; usa más si hay diagonales u obstáculos."
+    }
+  },
+  "guideFence": {
+    "metaTitle": "Cómo estimar materiales de cerca",
+    "metaDescription": "Aprende a estimar paneles y postes según longitud total, ancho de panel y supuestos de portones.",
+    "title": "Cómo estimar paneles y postes para una cerca",
+    "subtitle": "Usa la longitud total y el ancho de panel para calcular cantidades y redondear.",
+    "intro": {
+      "p1": "Para estimar una cerca necesitas la longitud total de tramos y asumir un ancho de panel. Los portones y esquinas cambian el conteo de postes.",
+      "p2": "Un croquis rápido reduce errores de compra."
+    },
+    "stepsTitle": "Paso a paso: cálculo de cerca",
+    "steps": {
+      "s1": "Mide la longitud total de la cerca (suma cada tramo).",
+      "s2": "Elige el ancho de panel (común 1.8 m o 2.4 m).",
+      "s3": "Calcula paneles (longitud ÷ ancho) y redondea hacia arriba.",
+      "s4": "Estima postes: normalmente paneles + 1 por tramo, más postes para esquinas y portones.",
+      "s5": "Agrega herrajes, postes terminales y portones como partidas separadas."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Esquinas y portones suelen requerir postes especiales y refuerzo.",
+      "t2": "Las pendientes afectan instalación y pueden cambiar el conteo.",
+      "t3": "Confirma reglas locales/HOA antes de comprar.",
+      "t4": "Considera desperdicio si cortarás paneles."
+    },
+    "ctaTitle": "¿Quieres paneles y postes al instante?",
+    "ctaBody": "Usa nuestra calculadora de cerca y comparte un enlace con tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cuántos paneles de cerca necesito?",
+      "a1": "Divide longitud total entre ancho de panel, redondea y ajusta por portones.",
+      "q2": "¿Cuántos postes necesito?",
+      "a2": "En un tramo recto suele ser paneles + 1. Suma postes extra por esquinas y portones.",
+      "q3": "¿Debo contar el portón como panel?",
+      "a3": "No. Trata el portón aparte: resta su abertura de la longitud y calcula paneles para el resto."
+    }
+  },
+  "guideGravel": {
+    "metaTitle": "Cómo estimar grava",
+    "metaDescription": "Aprende a estimar grava midiendo área y profundidad y convirtiendo a yardas cúbicas.",
+    "title": "Cómo estimar grava para entrada o camino",
+    "subtitle": "Área × profundidad = volumen; convierte a yardas cúbicas y agrega margen por compactación.",
+    "intro": {
+      "p1": "La grava se ordena por volumen. Con tu área y profundidad objetivo puedes convertir a yardas cúbicas para comprar.",
+      "p2": "Compactación y desniveles suelen causar faltantes si no agregas margen."
+    },
+    "stepsTitle": "Paso a paso: cálculo de grava",
+    "steps": {
+      "s1": "Mide el área (largo × ancho o divide en rectángulos).",
+      "s2": "Elige profundidad compactada objetivo.",
+      "s3": "Convierte área × profundidad a volumen.",
+      "s4": "Convierte a yardas cúbicas para ordenar.",
+      "s5": "Agrega un margen por compactación y redondea hacia arriba."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Estima base y capa superior por separado si tienen profundidades distintas.",
+      "t2": "La compactación reduce la altura instalada.",
+      "t3": "Bordes/contención ayudan a que la grava no se desplace.",
+      "t4": "Si compras por toneladas, confirma la densidad con tu proveedor."
+    },
+    "ctaTitle": "¿Quieres la estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de grava y comparte un enlace con tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué profundidad necesito para una entrada?",
+      "a1": "Depende del uso y el suelo. Muchas entradas usan una base más gruesa y una capa superior más delgada. Estima por capas.",
+      "q2": "¿Yardas cúbicas o toneladas?",
+      "a2": "Depende del proveedor. Toneladas requieren densidad; confirma la conversión del material específico.",
+      "q3": "¿Debo considerar compactación?",
+      "a3": "Sí. Un pequeño margen ayuda a evitar quedarte corto después de compactar."
+    }
+  },
+  "guideTopsoil": {
+    "metaTitle": "Cómo estimar tierra vegetal",
+    "metaDescription": "Aprende a estimar tierra vegetal midiendo área y profundidad y convirtiendo a yardas cúbicas.",
+    "title": "Cómo estimar tierra vegetal para césped o jardín",
+    "subtitle": "Define área y profundidad, convierte a yardas cúbicas y redondea.",
+    "intro": {
+      "p1": "La tierra vegetal se compra por volumen. Con el área y la profundidad deseada puedes convertir a yardas cúbicas para pedir.",
+      "p2": "En nivelación y rellenos, los puntos bajos y el asentamiento hacen que se necesite más material."
+    },
+    "stepsTitle": "Paso a paso: cálculo de tierra vegetal",
+    "steps": {
+      "s1": "Mide el área a cubrir (sección de césped o cama).",
+      "s2": "Elige profundidad objetivo (capa delgada vs relleno más profundo).",
+      "s3": "Convierte área × profundidad a volumen.",
+      "s4": "Convierte a yardas cúbicas para ordenar.",
+      "s5": "Agrega un margen por asentamiento y redondea hacia arriba."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Separa topdressing delgado de relleno/gradeo más profundo.",
+      "t2": "El suelo se asienta: un pequeño extra ayuda.",
+      "t3": "Confirma si necesitas tierra cernida para un acabado más fino.",
+      "t4": "Para drenaje o pendientes, considera un plan de nivelación antes de comprar."
+    },
+    "ctaTitle": "¿Quieres la estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de tierra vegetal y comparte un enlace con tus datos.",
+    "lastUpdated": "Última actualización: dic 2025",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cuánta tierra vegetal necesito?",
+      "a1": "Área × profundidad, convierte a yardas cúbicas y redondea hacia arriba.",
+      "q2": "¿Qué profundidad debo usar?",
+      "a2": "Depende del objetivo: topdressing es delgado; nivelación o plantación suelen requerir más.",
+      "q3": "¿Conviene comprar extra?",
+      "a3": "Sí, un margen cubre puntos bajos y asentamiento y reduce la posibilidad de quedarte corto."
+    }
+  },
+  "guidePaintCeiling": {
+    "metaTitle": "¿Cuánta pintura necesito para un techo?",
+    "metaDescription": "Estima pintura para techo midiendo el área, eligiendo cobertura y manos, y agregando un pequeño margen.",
+    "title": "¿Cuánta pintura necesito para un techo?",
+    "subtitle": "Área del techo × manos ÷ cobertura, más un margen por textura y recortes.",
+    "intro": {
+      "p1": "Los techos suelen requerir más pintura de lo que parece porque la textura y la técnica con el rodillo reducen la cobertura real.",
+      "p2": "Mide el área del techo, usa una cobertura realista, define cuántas manos darás y redondea a latas completas para no quedarte corto."
+    },
+    "stepsTitle": "Paso a paso: estimación para techo",
+    "steps": {
+      "s1": "Mide la huella del techo (largo × ancho) por habitación y suma todo.",
+      "s2": "Si hay plafones o techos en bandeja, trátalos como secciones separadas e incluye esas áreas.",
+      "s3": "Elige manos (a menudo 1 para repintar mismo color, 2 para cambios grandes o manchas).",
+      "s4": "Usa una cobertura realista (los techos texturizados cubren menos que lo indicado).",
+      "s5": "Agrega 5–10% de margen y redondea a galones/litros completos."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Textura fuerte o \"popcorn\" suele necesitar más pintura: usa un margen mayor.",
+      "t2": "Recortar alrededor de molduras consume más que rodillar; guarda un poco extra para bordes y retoques.",
+      "t3": "La pintura mate para techo se retoca distinto que satinada: conserva el mismo producto para reparaciones.",
+      "t4": "Si usas pistola, considera pérdida por equipo y sobrepulverización; un margen mayor ayuda."
+    },
+    "ctaTitle": "¿Quieres una estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de pintura y comparte un enlace que guarda tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Uso la misma cobertura que en paredes?",
+      "a1": "Empieza con la etiqueta y ajusta a la baja por textura y método de aplicación. Los techos suelen cubrir un poco menos que paredes lisas.",
+      "q2": "¿Resto lámparas o rejillas?",
+      "a2": "Normalmente no. El área es pequeña y el margen lo cubre. Resta solo si buscas una estimación muy ajustada.",
+      "q3": "¿Cómo estimo un techo inclinado?",
+      "a3": "Mide el área real inclinada (no la huella del piso). Divide en rectángulos/triángulos y suma."
+    }
+  },
+  "guidePaintTrim": {
+    "metaTitle": "¿Cuánta pintura necesito para molduras?",
+    "metaDescription": "Estima pintura para zócalos y marcos convirtiendo longitud en área y aplicando manos y cobertura.",
+    "title": "¿Cuánta pintura necesito para molduras?",
+    "subtitle": "Mide largo × ancho visible; incluye puertas y ventanas y redondea a cuartos.",
+    "intro": {
+      "p1": "Las molduras se estiman distinto a las paredes porque son superficies estrechas: zócalos, marcos de puertas/ventanas y, a veces, puertas.",
+      "p2": "Mide la longitud total, conviértela a área con un ancho visible promedio, aplica manos y agrega un pequeño margen."
+    },
+    "stepsTitle": "Paso a paso: estimación de molduras",
+    "steps": {
+      "s1": "Mide zócalos como longitud total por habitación (resta aberturas grandes si quieres).",
+      "s2": "Agrega marcos de puertas y ventanas si también los pintarás.",
+      "s3": "Convierte longitud a área: longitud × ancho visible promedio (en pies o metros).",
+      "s4": "Elige manos (a menudo 2 en cambios de color o si usas imprimación).",
+      "s5": "Agrega 5–15% de margen por brocha y retoques y redondea a cuartos/galones."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "La pintura para molduras puede rendir más, pero la brocha genera más desperdicio: conserva un margen.",
+      "t2": "Si pintas puertas, estímalas por separado (área de puerta × manos).",
+      "t3": "Brillo y semibrillo muestran imperfecciones: la preparación es clave.",
+      "t4": "Compra suficiente del mismo producto y acabado para evitar retoques desparejos."
+    },
+    "ctaTitle": "¿Quieres una estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de pintura y comparte un enlace que guarda tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cuánta pintura necesito solo para zócalos?",
+      "a1": "Mide la longitud total y multiplícala por la altura visible del zócalo; aplica manos y un margen pequeño.",
+      "q2": "¿Necesito imprimación en molduras?",
+      "a2": "Depende de la superficie y del cambio de color. Madera desnuda, manchas y cambios grandes suelen requerir imprimación.",
+      "q3": "¿Compro cuartos o galones para molduras?",
+      "a3": "Trabajos pequeños suelen caber en cuartos. Si pintas toda la casa (y puertas), un galón puede ser más rentable."
+    }
+  },
+  "guideFlooringBoxes": {
+    "metaTitle": "¿Cuántas cajas de piso necesito?",
+    "metaDescription": "Convierte el área a cajas agregando desperdicio, dividiendo por cobertura por caja y redondeando hacia arriba.",
+    "title": "¿Cuántas cajas de piso necesito?",
+    "subtitle": "(Área + desperdicio) ÷ cobertura por caja = cajas (redondear hacia arriba).",
+    "intro": {
+      "p1": "Muchos pisos se venden por caja y cada caja cubre un área específica. La clave es sumar un desperdicio realista antes de convertir a cajas.",
+      "p2": "Con el área total y la cobertura por caja, solo queda dividir y redondear."
+    },
+    "stepsTitle": "Paso a paso: cajas necesarias",
+    "steps": {
+      "s1": "Mide el área total de todas las habitaciones (incluye closets si van con el mismo piso).",
+      "s2": "Elige un desperdicio (a menudo 5–10% en patrón recto; más en diagonal o cortes complejos).",
+      "s3": "Multiplica el área por (1 + desperdicio).",
+      "s4": "Divide por la cobertura por caja según la ficha del producto.",
+      "s5": "Redondea a cajas completas (y considera una caja extra para reparaciones)."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Verifica unidades: cobertura por caja en ft² o m².",
+      "t2": "Escaleras y patrones complejos aumentan desperdicio: planifica más margen.",
+      "t3": "Compra todas las cajas del mismo lote cuando sea posible.",
+      "t4": "Guarda una caja sin abrir para reparaciones futuras."
+    },
+    "ctaTitle": "¿Quieres una estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de pisos y comparte un enlace que guarda tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué desperdicio debo usar?",
+      "a1": "Muchos patrones rectos usan 5–10%. Diagonal, habitaciones pequeñas y cortes complejos suelen necesitar más.",
+      "q2": "¿Incluyo closets?",
+      "a2": "Incluye cualquier área que llevará el mismo piso. Excluye áreas con otro material (azulejo, alfombra, etc.).",
+      "q3": "¿Conviene comprar una caja extra?",
+      "a3": "A menudo sí. Ayuda si se daña una tabla o si el producto se descontinúa."
+    }
+  },
+  "guideTileWaste": {
+    "metaTitle": "Desperdicio de azulejos: cuánto extra comprar",
+    "metaDescription": "Elige un porcentaje de margen según el diseño, la complejidad y posibles reparaciones futuras.",
+    "title": "Desperdicio de azulejos: cuánto extra comprar",
+    "subtitle": "Cortes, roturas y patrones: planifica margen antes de ordenar.",
+    "intro": {
+      "p1": "En azulejos casi siempre necesitas material extra: cortes, roturas, coincidencia de patrón y reparaciones futuras.",
+      "p2": "Un porcentaje de desperdicio (margen) evita quedarte corto sin disparar el costo."
+    },
+    "stepsTitle": "Paso a paso: elegir margen",
+    "steps": {
+      "s1": "Calcula el área a cubrir (piso, pared o backsplash).",
+      "s2": "Considera el diseño: recto desperdicia menos que diagonal o espiga.",
+      "s3": "Evalúa la complejidad: muchas esquinas, nichos o espacios pequeños aumentan desperdicio.",
+      "s4": "Elige margen (comúnmente 10% simple; 15%+ para diagonal/patrones).",
+      "s5": "Redondea a cajas completas y considera una caja extra para reparaciones."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Azulejo grande puede aumentar desperdicio en espacios pequeños por recortes.",
+      "t2": "Si necesitas alinear vetas o patrones, planifica más margen.",
+      "t3": "Ordena todo de una vez para minimizar variaciones de color por lote.",
+      "t4": "Guarda sobrantes para reemplazos."
+    },
+    "ctaTitle": "¿Quieres una estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de azulejos y comparte un enlace que guarda tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿10% es suficiente?",
+      "a1": "A menudo sí en diseños simples. En diagonal, patrones o muchas obstrucciones, puedes necesitar 15% o más.",
+      "q2": "¿Debo comprar extra para reparaciones?",
+      "a2": "Sí si puedes. Es difícil igualar el color del lote después y muchos productos se descontinúan.",
+      "q3": "¿El tamaño del azulejo afecta el desperdicio?",
+      "a3": "Puede afectar. Azulejos grandes desperdician más en espacios irregulares; patrones con azulejo pequeño también pueden incrementar margen."
+    }
+  },
+  "guideDrywallCeiling": {
+    "metaTitle": "¿Cuántas placas de yeso para un techo?",
+    "metaDescription": "Estima placas para techo dividiendo el área entre el área de la hoja y agregando un desperdicio.",
+    "title": "¿Cuántas placas de yeso para un techo?",
+    "subtitle": "Área del techo ÷ área de la hoja, luego redondea y agrega desperdicio por recortes y juntas.",
+    "intro": {
+      "p1": "En techos, el tamaño de la placa (4×8, 4×10, 4×12) influye en cuántas juntas y recortes tendrás.",
+      "p2": "Empieza con el área total, elige tamaño de hoja y agrega un margen por recortes y errores."
+    },
+    "stepsTitle": "Paso a paso: placas para techo",
+    "steps": {
+      "s1": "Mide el área del techo (largo × ancho) por habitación y suma todo.",
+      "s2": "Elige tamaño de placa (4×8, 4×10, 4×12) según el espacio y manejo.",
+      "s3": "Divide el área del techo entre el área de la placa para obtener una base.",
+      "s4": "Agrega desperdicio (a menudo 10–15% según cortes y obstáculos).",
+      "s5": "Redondea a placas completas y considera extra por cajas eléctricas o bordes irregulares."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Placas más largas reducen juntas pero son más difíciles de manejar.",
+      "t2": "Planifica orientación para minimizar juntas y tiras pequeñas.",
+      "t3": "Trabajar en techo es más lento: un poco extra evita retrasos.",
+      "t4": "Confirma espesor/tipo requerido por código (regular vs resistente a humedad)."
+    },
+    "ctaTitle": "¿Quieres una estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de paneles de yeso y comparte un enlace que guarda tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿10% de desperdicio es suficiente?",
+      "a1": "A menudo sí en rectángulos simples. En techos con muchos recortes, usa 15% para ir seguro.",
+      "q2": "¿Debo usar placa de 5/8\\\" en techos?",
+      "a2": "Depende del espaciamiento de vigas y del código local. Algunos techos usan 5/8\\\" para evitar pandeo.",
+      "q3": "¿El tamaño de placa cambia cuántas necesito?",
+      "a3": "Puede cambiar por el desperdicio de recortes. Si no harás un plano detallado, usa un margen un poco mayor."
+    }
+  },
+  "guideMulchDepth": {
+    "metaTitle": "Profundidad de mantillo: 2\\\" vs 3\\\"",
+    "metaDescription": "Entiende cómo la profundidad cambia el volumen total para elegir 2\\\" o 3\\\" con confianza.",
+    "title": "Profundidad de mantillo: 2\\\" vs 3\\\"",
+    "subtitle": "Pasar de 2\\\" a 3\\\" es 50% más mantillo: la profundidad importa.",
+    "intro": {
+      "p1": "El volumen de mantillo depende de área y profundidad. Cambios pequeños en profundidad pueden cambiar mucho las yardas cúbicas necesarias.",
+      "p2": "Si decides entre 2\\\" y 3\\\", la diferencia es fácil de calcular y puede evitar compras de más."
+    },
+    "stepsTitle": "Paso a paso: cálculo por profundidad",
+    "steps": {
+      "s1": "Mide el área del cantero (ft² o m²).",
+      "s2": "Elige profundidad objetivo (2\\\" para cobertura ligera, 3\\\" para más control de malezas).",
+      "s3": "Convierte la profundidad a pies (2\\\" = 0.167 ft, 3\\\" = 0.25 ft) o metros.",
+      "s4": "Multiplica área × profundidad para obtener volumen (ft³/m³).",
+      "s5": "Convierte a yardas cúbicas y redondea por asentamiento y camas desparejas."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "El mantillo se asienta: un poco extra ayuda a llegar a la profundidad final.",
+      "t2": "No apiles mantillo contra troncos; deja un pequeño espacio para evitar pudrición.",
+      "t3": "Para refrescar una cama existente, quizá solo necesites una capa fina.",
+      "t4": "Las recomendaciones varían por planta y clima: usa guía local si es posible."
+    },
+    "ctaTitle": "¿Quieres una estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de mantillo y comparte un enlace que guarda tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿2\\\" de mantillo es suficiente?",
+      "a1": "A menudo sí para estética y retención de humedad. Para mejor control de malezas, muchas camas usan cerca de 3\\\".",
+      "q2": "¿Cuánto más es 3\\\" vs 2\\\"?",
+      "a2": "Aproximadamente 50% más volumen en la misma área.",
+      "q3": "¿Debo retirar el mantillo viejo?",
+      "a3": "No siempre. Si está muy grueso o compactado, retirar parte puede ayudar a evitar acumulación excesiva."
+    }
+  },
+  "guideRoofingShed": {
+    "metaTitle": "¿Cuántas tejas para un techo de cobertizo?",
+    "metaDescription": "Estima tejas midiendo el área del techo, convirtiendo a squares y luego a bultos, y agregando desperdicio.",
+    "title": "¿Cuántas tejas para un techo de cobertizo?",
+    "subtitle": "Mide el área real, conviértela a squares y luego a bultos; no olvides desperdicio y tiras iniciales.",
+    "intro": {
+      "p1": "Los techos de cobertizo suelen ser simples, por lo que la estimación de tejas es más fácil que en casas complejas. Lo importante es estimar el área real del techo, no solo la huella del piso.",
+      "p2": "Con el área, conviertes a squares (100 ft²) y luego a bultos según la especificación de tu teja."
+    },
+    "stepsTitle": "Paso a paso: tejas para cobertizo",
+    "steps": {
+      "s1": "Mide el largo del techo y el ancho inclinado (o calcula el ajuste por pendiente).",
+      "s2": "Calcula el área del techo (largo × ancho inclinado) y suma si hay más de un plano.",
+      "s3": "Convierte a squares (ft² ÷ 100).",
+      "s4": "Convierte squares a bultos (a menudo ~3 bultos por square; confirma tu producto).",
+      "s5": "Agrega desperdicio (10% en techos simples; más si hay muchos cortes) y redondea."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Tiras iniciales, cumbrera y membrana son materiales aparte: planifícalos también.",
+      "t2": "Pendientes bajas pueden requerir productos/métodos especiales: revisa el fabricante.",
+      "t3": "Incluye aleros/voladizos en las medidas.",
+      "t4": "Compra un poco extra para reparaciones: igualar lote después puede ser difícil."
+    },
+    "ctaTitle": "¿Quieres una estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de techos y comparte un enlace que guarda tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cuántos bultos hay en un square?",
+      "a1": "Muchos productos usan ~3 bultos por square, pero varía. Confirma en la etiqueta o ficha técnica.",
+      "q2": "¿Estimo por huella o por área real del techo?",
+      "a2": "Por área real del techo. La pendiente aumenta el área frente a la huella.",
+      "q3": "¿Qué desperdicio uso en un techo de cobertizo?",
+      "a3": "Rectángulos simples suelen usar ~10%. Si hay muchos cortes u obstáculos, agrega más."
+    }
+  },
+  "guideFencePosts": {
+    "metaTitle": "¿Cuántos postes de cerca necesito?",
+    "metaDescription": "Estima postes contando esquinas y portones, y luego agregando postes de línea según separación.",
+    "title": "¿Cuántos postes de cerca necesito?",
+    "subtitle": "Cuenta primero esquinas y portones, luego añade postes de línea con tu separación.",
+    "intro": {
+      "p1": "Es común subestimar postes porque esquinas, extremos y portones requieren postes adicionales además de los postes de línea.",
+      "p2": "Haz un plano simple: divide la cerca en tramos rectos, elige separación y cuenta tramo por tramo."
+    },
+    "stepsTitle": "Paso a paso: número de postes",
+    "steps": {
+      "s1": "Dibuja el diseño y separa en tramos rectos entre esquinas/portones/extremos.",
+      "s2": "Elige separación según el tipo de cerca (a menudo 6–8 ft a centro).",
+      "s3": "Para cada tramo, calcula postes de línea según largo y separación.",
+      "s4": "Agrega postes de esquina y de extremo (cuando no se comparten).",
+      "s5": "Agrega postes para portón (normalmente dos; portones pesados requieren refuerzo) y redondea."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Esquinas y portones suelen necesitar postes más robustos que los de línea.",
+      "t2": "Confirma tamaños de panel si usas paneles prefabricados.",
+      "t3": "En pendientes puedes necesitar más postes por secciones escalonadas.",
+      "t4": "Revisa profundidad de heladas y código local para profundidad del hoyo y concreto."
+    },
+    "ctaTitle": "¿Quieres una estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de cercas y comparte un enlace que guarda tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué separación uso para postes?",
+      "a1": "Comúnmente 6–8 ft a centro, pero depende del panel, viento y tipo de cerca.",
+      "q2": "¿Las esquinas comparten postes?",
+      "a2": "Normalmente hay un poste de esquina dedicado y los tramos se conectan a él; no cuentes postes extra en ese mismo punto.",
+      "q3": "¿Cómo afectan los portones?",
+      "a3": "Un portón suele requerir dos postes. Portones grandes/pesados pueden requerir postes más grandes o refuerzo."
+    }
+  },
+  "guideGravelTons": {
+    "metaTitle": "Convertir yardas de grava a toneladas",
+    "metaDescription": "Convierte yardas cúbicas a toneladas usando densidad, luego redondea según el proveedor.",
+    "title": "Convertir yardas de grava a toneladas",
+    "subtitle": "Toneladas = yardas cúbicas × densidad; confirma la densidad con tu proveedor.",
+    "intro": {
+      "p1": "Algunos proveedores venden por yardas cúbicas y otros por toneladas. La conversión depende de la densidad, que cambia según el material y la humedad.",
+      "p2": "Toma tu volumen en yardas, elige una densidad (o pide la del proveedor) y multiplica para obtener toneladas."
+    },
+    "stepsTitle": "Paso a paso: yardas a toneladas",
+    "steps": {
+      "s1": "Estima el volumen en yardas cúbicas según área y profundidad compactada.",
+      "s2": "Elige una densidad (ton/yd³) según el material y el proveedor.",
+      "s3": "Multiplica: toneladas = yardas cúbicas × densidad.",
+      "s4": "Agrega un margen pequeño por compactación y desniveles.",
+      "s5": "Redondea según incrementos de entrega del proveedor."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Material húmedo puede pesar más: la conversión del proveedor es lo más confiable.",
+      "t2": "Diferentes productos tienen densidades distintas.",
+      "t3": "Si necesitas tonelaje exacto por límites de transporte, confirma densidad antes de ordenar.",
+      "t4": "Un poco extra puede evitar una segunda entrega."
+    },
+    "ctaTitle": "¿Quieres una estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de grava y comparte un enlace que guarda tus datos.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cuántas toneladas hay en una yarda cúbica?",
+      "a1": "Depende del material. Muchas gravas rondan 1.2–1.5 ton/yd³, pero confirma con tu proveedor.",
+      "q2": "¿Por qué varían las conversiones?",
+      "a2": "Por tipo de roca, granulometría, humedad y método de medición. Los proveedores suelen usar su conversión por producto.",
+      "q3": "¿Uso profundidad compactada o suelta?",
+      "a3": "Usa la profundidad instalada/compactada como objetivo y agrega un pequeño margen por compactación y desniveles."
+    }
+  },
+  "guideTopsoilLeveling": {
+    "metaTitle": "Tierra vegetal para nivelar un césped",
+    "metaDescription": "Estima tierra vegetal usando una profundidad promedio, convirtiendo a yardas cúbicas y agregando margen para zonas bajas.",
+    "title": "Tierra vegetal para nivelar un césped",
+    "subtitle": "Usa una profundidad promedio y agrega extra para zonas bajas y asentamiento.",
+    "tldrTitle": "En resumen",
+    "tldr": {
+      "t1": "Usa profundidad promedio (capa fina + relleno en zonas bajas).",
+      "t2": "Convierte a yardas cúbicas y redondea según el mínimo de entrega.",
+      "t3": "Agrega margen por asentamiento y por zonas que rellenarás más."
+    },
+    "intro": {
+      "p1": "Nivelar un césped suele ser una capa fina en toda el área más relleno adicional en zonas bajas. Por eso la profundidad promedio es el supuesto clave.",
+      "p2": "Elige una profundidad promedio realista, convierte a yardas cúbicas y agrega margen si esperas rellenos más profundos."
+    },
+    "stepsTitle": "Paso a paso: estimación para nivelar",
+    "steps": {
+      "s1": "Mide el área del césped que vas a nivelar (excluye canteros y superficies duras).",
+      "s2": "Elige profundidad promedio (capa fina vs relleno más profundo en zonas bajas).",
+      "s3": "Convierte área × profundidad a volumen (ft³/m³).",
+      "s4": "Convierte a yardas cúbicas para ordenar.",
+      "s5": "Agrega margen por zonas bajas y asentamiento y redondea."
+    },
+    "tipsTitle": "Consejos prácticos",
+    "tips": {
+      "t1": "Si está muy desparejo, estima capa fina y relleno de zonas bajas por separado.",
+      "t2": "El suelo se asienta con riego y lluvia: un poco extra ayuda a terminar.",
+      "t3": "Una mezcla de arena y tierra puede ser más fácil de esparcir para nivelar.",
+      "t4": "Evita enterrar el césped demasiado de una sola vez: haz varias pasadas finas."
+    },
+    "mistakesTitle": "Errores comunes",
+    "mistakes": {
+      "m1": "Usar la profundidad máxima en todo el césped en vez de un promedio.",
+      "m2": "No considerar asentamiento/compactación y pedir exactamente lo calculado.",
+      "m3": "Intentar nivelar demasiado en una sola pasada y estresar el césped."
+    },
+    "ctaTitle": "¿Quieres una estimación rápida?",
+    "ctaBody": "Usa nuestra calculadora de tierra vegetal y comparte un enlace que guarda tus datos.",
+    "lastUpdated": "Última actualización: dic 2025",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué profundidad usar para nivelar?",
+      "a1": "Muchos proyectos usan una capa fina (aprox. 1/4\\\"–1\\\") en la mayor parte y más en zonas bajas. Elige una profundidad promedio según tu plan.",
+      "q2": "¿Uso tierra, arena o mezcla?",
+      "a2": "Depende del césped y objetivo. Muchas nivelaciones usan mezcla arena/tierra por facilidad; la guía local puede ayudar.",
+      "q3": "¿Cuánto extra debo ordenar?",
+      "a3": "Agrega margen si hay zonas bajas notables o si esperas asentamiento. También reduce el riesgo de una segunda entrega."
+    }
+  },
+  "consent": {
+    "title": "Cookies y anuncios",
+    "body": "Usamos cookies para operar el sitio y, cuando los anuncios estén habilitados, para medir y personalizar publicidad donde esté permitido.",
+    "accept": "Aceptar todo",
+    "reject": "Rechazar no esenciales",
+    "preferences": "Preferencias de cookies"
+  },
+  "common": {
+    "reset": "Restablecer",
+    "copyLink": "Copiar enlace",
+    "copied": "Copiado",
+    "copyFailed": "Error al copiar",
+    "unitsLabel": "Unidades",
+    "imperial": "Imperial",
+    "metric": "Métrico"
+  },
+  "legal": {
+    "disclaimerTitle": "Aviso legal",
+    "disclaimer": "Los resultados son estimaciones solo con fines informativos. Verifica medidas y especificaciones del producto."
+  },
+  "privacyPage": {
+    "metaTitle": "Política de privacidad",
+    "metaDescription": "Cómo HomeDecorCalc maneja datos y cookies.",
+    "title": "Política de privacidad",
+    "intro": "Este sitio funciona sin necesidad de crear una cuenta. Las entradas de las calculadoras se procesan en tu navegador.",
+    "dataTitle": "Qué recopilamos",
+    "dataBody": "No pedimos cuentas. Las entradas de las calculadoras permanecen en tu navegador. Podemos recopilar datos básicos y agregados (por ejemplo, visitas a páginas) para entender la demanda y mejorar el sitio.",
+    "cookiesTitle": "Cookies",
+    "cookiesBody": "Usamos cookies solo cuando son necesarias para preferencias (como idioma, sistema de unidades y elecciones de cookies). Puedes administrarlas en cualquier momento.",
+    "adsTitle": "Publicidad y cookies",
+    "adsBody": "Si mostramos anuncios (por ejemplo, mediante Google AdSense), los anuncios pueden usar cookies o identificadores similares. Cuando la ley lo requiera, pediremos consentimiento antes de mostrar anuncios personalizados.",
+    "yourChoicesTitle": "Tus opciones",
+    "yourChoicesBody": "Puedes ajustar el consentimiento con el botón de preferencias de cookies, desactivar cookies en tu navegador y rechazar anuncios personalizados cuando esté disponible.",
+    "contactTitle": "Contacto",
+    "contactBody": "Si tienes preguntas sobre privacidad, escríbenos a shifang522221@gmail.com."
+  },
+  "termsPage": {
+    "metaTitle": "Términos del servicio",
+    "metaDescription": "Términos y condiciones para usar HomeDecorCalc.",
+    "title": "Términos del servicio",
+    "intro": "Al usar este sitio, aceptas que los resultados son estimaciones con fines informativos. Eres responsable de verificar medidas y especificaciones del producto.",
+    "useTitle": "Uso aceptable",
+    "useBody": "No abuses del servicio, no intentes interrumpirlo ni lo uses para actividades ilegales.",
+    "warrantyTitle": "Sin garantía",
+    "warrantyBody": "El servicio se ofrece “tal cual”, sin garantías. No garantizamos exactitud, disponibilidad ni adecuación para tu proyecto.",
+    "liabilityTitle": "Limitación de responsabilidad",
+    "liabilityBody": "En la medida máxima permitida por la ley, no nos hacemos responsables de daños derivados del uso del servicio o de la confianza en los resultados.",
+    "changesTitle": "Cambios",
+    "changesBody": "Podemos actualizar estos términos ocasionalmente. Si sigues usando el sitio, aceptas los términos actualizados."
+  },
+  "aboutPage": {
+    "metaTitle": "Acerca de",
+    "metaDescription": "Sobre HomeDecorCalc y nuestro enfoque.",
+    "title": "Acerca de",
+    "body": "HomeDecorCalc ofrece calculadoras y guías rápidas y respetuosas con la privacidad para proyectos comunes del hogar. Nos enfocamos en supuestos claros y estimaciones prácticas.",
+    "principlesTitle": "Nuestros principios",
+    "principles": {
+      "p1": "Claridad: supuestos, unidades y valores útiles por defecto.",
+      "p2": "Rapidez: cálculos en el navegador y enlaces para compartir.",
+      "p3": "Privacidad: sin cuentas y mínima recopilación de datos."
+    }
+  },
+  "contactPage": {
+    "metaTitle": "Contacto",
+    "metaDescription": "Ponte en contacto con HomeDecorCalc.",
+    "title": "Contacto",
+    "intro": "Para soporte, sugerencias o correcciones, escríbenos e incluye algunos detalles para ayudarte más rápido.",
+    "emailLabel": "Correo",
+    "email": "shifang522221@gmail.com",
+    "responseTime": "Normalmente respondemos en 2–3 días hábiles.",
+    "whatToIncludeTitle": "Para responder más rápido",
+    "whatToInclude": {
+      "i1": "El enlace de la página y qué esperabas vs. qué obtuviste.",
+      "i2": "Tus medidas y unidades (y supuestos como espesor o merma).",
+      "i3": "Opcional: capturas de pantalla y tu dispositivo/navegador."
+    }
+  },
+  "paint": {
+    "metaTitle": "Calculadora de pintura (paredes)",
+    "metaDescription": "Estima cuántos galones de pintura necesitas, incluyendo manos, cobertura y costo opcional.",
+    "title": "Calculadora de pintura",
+    "subtitle": "Estima pintura para paredes. Ajusta manos, cobertura y porcentaje de merma.",
+    "quickTitle": "Guía rápida",
+    "quick": {
+      "t1": "Comienza con el área pintable (o mide paredes y resta aperturas grandes).",
+      "t2": "Elige una cobertura realista y el número de manos.",
+      "t3": "Agrega un margen para retoques y desperdicio de rodillo/brocha."
+    },
+    "howToMeasureTitle": "Cómo medir para pintura",
+    "howToMeasure": {
+      "s1": "Calcula el área de paredes (ancho × alto por pared) y suma.",
+      "s2": "Opcional: resta ventanas/puertas grandes si quieres un cálculo más ajustado.",
+      "s3": "Elige manos y cobertura según tu pintura y textura de la pared."
+    },
+    "assumptionsTitle": "Supuestos a revisar",
+    "assumptions": {
+      "a1": "Textura y cambio de color pueden reducir la cobertura.",
+      "a2": "El primer puede reducir manos, pero no reemplaza el volumen de pintura.",
+      "a3": "Techos y molduras suelen usar otra pintura y supuestos de cobertura."
+    },
+    "buyingTipsTitle": "Consejos de compra",
+    "buyingTips": {
+      "b1": "Compra suficiente del mismo lote para evitar variación de color.",
+      "b2": "Redondea hacia arriba si harás varias manos o mucho recorte.",
+      "b3": "Guarda un poco etiquetado para retoques futuros."
+    },
+    "lastUpdated": "Última actualización: dic 2025",
+    "inputs": {
+      "areaSqFt": "Área pintable de paredes (pies²)",
+      "areaM2": "Área pintable de paredes (m²)",
+      "coats": "Número de manos",
+      "coverage": "Cobertura por galón (pies²)",
+      "coverageMetric": "Cobertura por litro (m²)",
+      "waste": "Merma (%)",
+      "price": "Precio por galón (USD, opcional)",
+      "priceMetric": "Precio por litro (USD, opcional)"
+    },
+    "results": {
+      "title": "Resultados",
+      "gallons": "Galones estimados",
+      "liters": "Litros estimados",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cómo mido el área de las paredes?",
+      "a1": "Mide el ancho × alto de cada pared y resta aberturas grandes (ventanas/puertas) si quieres una estimación más precisa.",
+      "q2": "¿Qué cobertura debo usar?",
+      "a2": "Muchas pinturas interiores cubren alrededor de 300–400 pies² por galón por mano. Usa la etiqueta del producto cuando sea posible.",
+      "q3": "¿Por qué incluir merma?",
+      "a3": "Ayuda a contemplar textura, pérdidas del rodillo y retoques."
+    }
+  },
+  "wallpaperRolls": {
+    "metaTitle": "Calculadora de rollos de papel tapiz",
+    "metaDescription": "Estima cuántos rollos de papel tapiz necesitas según el área, aberturas, tamaño del rollo y merma, con costo opcional.",
+    "title": "Calculadora de rollos de papel tapiz",
+    "subtitle": "Estima rollos con un tamaño predefinido o personalizado y un porcentaje de merma.",
+    "inputs": {
+      "areaSqFt": "Área total de paredes (pies²)",
+      "areaM2": "Área total de paredes (m²)",
+      "openingsSqFt": "Aberturas a restar (pies²)",
+      "openingsM2": "Aberturas a restar (m²)",
+      "openingsPlaceholder": "Opcional (puertas/ventanas)",
+      "waste": "Merma (%)",
+      "rollPreset": "Tamaño de rollo",
+      "rollWidthIn": "Ancho del rollo (in)",
+      "rollLengthFt": "Largo del rollo (ft)",
+      "rollWidthCm": "Ancho del rollo (cm)",
+      "rollLengthM": "Largo del rollo (m)",
+      "pricePerRoll": "Precio por rollo (USD, opcional)"
+    },
+    "rollPresets": {
+      "standard": "Estándar (21 in × 33 ft)",
+      "extraWide": "Extra ancho (27 in × 33 ft)",
+      "custom": "Personalizado"
+    },
+    "results": {
+      "title": "Resultados",
+      "subtitle": "El número de rollos se redondea hacia arriba.",
+      "netAreaSqFt": "Área neta tras aberturas (pies²)",
+      "netAreaM2": "Área neta tras aberturas (m²)",
+      "areaWithWasteSqFt": "Área con merma (pies²)",
+      "areaWithWasteM2": "Área con merma (m²)",
+      "coveragePerRollSqFt": "Cobertura por rollo (pies²)",
+      "coveragePerRollM2": "Cobertura por rollo (m²)",
+      "rolls": "Rollos necesarios",
+      "totalCoverageSqFt": "Cobertura total (pies²)",
+      "totalCoverageM2": "Cobertura total (m²)",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Debo restar puertas y ventanas?",
+      "a1": "Para un cálculo rápido, muchas personas no restan aberturas. Si quieres una estimación más ajustada, resta puertas y ventanas grandes aquí.",
+      "q2": "¿Qué merma debo usar para papel tapiz?",
+      "a2": "La merma varía por el patrón, esquinas y cortes. 10% es un buen punto de partida; aumenta para patrones complejos.",
+      "q3": "¿Por qué se redondea hacia arriba?",
+      "a3": "Solo se pueden comprar rollos completos, y el extra ayuda ante errores y reparaciones futuras."
+    }
+  },
+  "flooring": {
+    "metaTitle": "Calculadora de pisos",
+    "metaDescription": "Estima el piso necesario (pies²), incluyendo merma y costo opcional.",
+    "title": "Calculadora de pisos",
+    "subtitle": "Estima el área de piso con merma. Agrega precio por pie² para costo.",
+    "inputs": {
+      "areaSqFt": "Área de piso (pies²)",
+      "areaM2": "Área de piso (m²)",
+      "waste": "Merma (%)",
+      "price": "Precio por pie² (USD, opcional)",
+      "priceMetric": "Precio por m² (USD, opcional)"
+    },
+    "results": {
+      "title": "Resultados",
+      "neededSqFt": "Pies² estimados necesarios",
+      "neededM2": "m² estimados necesarios",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué merma debo usar?",
+      "a1": "Muchos proyectos usan 5–15% según el patrón, cortes y forma del cuarto.",
+      "q2": "¿Debo restar armarios o clósets?",
+      "a2": "Resta áreas que no se cubrirán si quieres una estimación más precisa.",
+      "q3": "¿Incluye bajo piso (underlayment)?",
+      "a3": "No. Esta calculadora estima solo el área de piso."
+    }
+  },
+  "tile": {
+    "metaTitle": "Calculadora de azulejos",
+    "metaDescription": "Estima azulejos necesarios, con merma y cajas/costo opcionales.",
+    "title": "Calculadora de azulejos",
+    "subtitle": "Estima área y cajas según la cobertura por caja.",
+    "inputs": {
+      "areaSqFt": "Área a cubrir (pies²)",
+      "areaM2": "\u00c1rea a cubrir (m\u00b2)",
+      "waste": "Merma (%)",
+      "coveragePerBox": "Cobertura por caja (pies²)",
+      "coveragePerBoxM2": "Cobertura por caja (m\u00b2)",
+      "pricePerBox": "Precio por caja (USD, opcional)"
+    },
+    "results": {
+      "title": "Resultados",
+      "neededSqFt": "Pies² estimados necesarios",
+      "neededM2": "m² estimados necesarios",
+      "boxes": "Cajas estimadas",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué merma es típica para azulejos?",
+      "a1": "Un rango común es 10–15%, especialmente en diagonal o con muchos cortes.",
+      "q2": "¿Dónde encuentro la cobertura por caja?",
+      "a2": "En la etiqueta o la ficha del producto; depende del tamaño y piezas por caja.",
+      "q3": "¿Por qué las cajas se redondean hacia arriba?",
+      "a3": "Solo se compran cajas completas y el extra ayuda por roturas y reparaciones."
+    }
+  },
+  "drywall": {
+    "metaTitle": "Calculadora de paneles de yeso",
+    "metaDescription": "Estima placas necesarias según área, cobertura por placa y merma.",
+    "title": "Calculadora de paneles de yeso",
+    "subtitle": "Estima placas. Ajusta cobertura para 4×8, 4×10 o 4×12.",
+    "inputs": {
+      "areaSqFt": "Área de pared/techo (pies²)",
+      "areaM2": "\u00c1rea de pared/techo (m\u00b2)",
+      "waste": "Merma (%)",
+      "sheetCoverage": "Cobertura por placa (pies²)",
+      "sheetCoverageM2": "Cobertura por placa (m\u00b2)",
+      "pricePerSheet": "Precio por placa (USD, opcional)"
+    },
+    "results": {
+      "title": "Resultados",
+      "sheets": "Placas estimadas",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué tamaño de placa es común?",
+      "a1": "4×8 son 32 pies². 4×10 son 40 pies² y 4×12 son 48 pies².",
+      "q2": "¿Qué merma debo usar?",
+      "a2": "10–15% es común según cortes y diseño.",
+      "q3": "¿Incluye tornillos o masilla?",
+      "a3": "No. Solo estima placas."
+    }
+  },
+  "concrete": {
+    "metaTitle": "Calculadora de concreto (losa)",
+    "metaDescription": "Estima volumen de concreto en yardas cúbicas según largo, ancho, espesor y merma.",
+    "title": "Calculadora de concreto",
+    "subtitle": "Estima yardas cúbicas para una losa. Agrega merma y precio opcional por yarda.",
+    "inputs": {
+      "lengthFt": "Largo (ft)",
+      "widthFt": "Ancho (ft)",
+      "depthIn": "Espesor (in)",
+      "lengthM": "Largo (m)",
+      "widthM": "Ancho (m)",
+      "depthCm": "Espesor (cm)",
+      "waste": "Merma (%)",
+      "pricePerCubicYd": "Precio por yarda cúbica (USD, opcional)",
+      "pricePerCubicM": "Precio por metro cúbico (USD, opcional)"
+    },
+    "results": {
+      "title": "Resultados",
+      "cubicYards": "Yardas cúbicas estimadas",
+      "cubicMeters": "Metros cúbicos estimados",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Por qué se usa yarda cúbica?",
+      "a1": "En EE. UU. el concreto premezclado se vende comúnmente por yarda cúbica.",
+      "q2": "¿Qué espesor es común en una losa?",
+      "a2": "Muchas losas usan 4 pulgadas, pero depende del proyecto y carga.",
+      "q3": "¿Debo agregar merma?",
+      "a3": "Sí—10% es común por derrames y base irregular."
+    }
+  },
+  "mulch": {
+    "metaTitle": "Calculadora de mantillo",
+    "metaDescription": "Estima volumen de mantillo en yardas cúbicas a partir de área, profundidad y merma.",
+    "title": "Calculadora de mantillo",
+    "subtitle": "Estima yardas cúbicas según el área y la profundidad.",
+    "inputs": {
+      "areaSqFt": "Área del macizo (pies²)",
+      "depthIn": "Profundidad (in)",
+      "areaM2": "\u00c1rea del macizo (m\u00b2)",
+      "depthCm": "Profundidad (cm)",
+      "waste": "Merma (%)",
+      "pricePerCubicYd": "Precio por yarda cúbica (USD, opcional)",
+      "pricePerCubicM": "Precio por metro cúbico (USD, opcional)"
+    },
+    "results": {
+      "title": "Resultados",
+      "cubicYards": "Yardas cúbicas estimadas",
+      "cubicMeters": "Metros cúbicos estimados",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué profundidad es típica?",
+      "a1": "Muchos macizos usan 2–4 pulgadas. Considera plantas y clima.",
+      "q2": "¿Por qué calcular en yardas cúbicas?",
+      "a2": "El mantillo a granel suele venderse por yarda cúbica.",
+      "q3": "¿Debo agregar merma?",
+      "a3": "Un margen de 5–10% ayuda por asentamiento y camas irregulares."
+    }
+  }
+  ,
+  "roofing": {
+    "metaTitle": "Calculadora de techo (tejas)",
+    "metaDescription": "Estima tejas necesarias usando área, merma y cobertura por bulto. Incluye costo opcional.",
+    "title": "Calculadora de techo",
+    "subtitle": "Estima tejas usando 'squares' y bultos. Ajusta merma y cobertura.",
+    "inputs": {
+      "roofAreaSqFt": "Área del techo (pies²)",
+      "roofAreaM2": "\u00c1rea del techo (m\u00b2)",
+      "waste": "Merma (%)",
+      "coveragePerBundle": "Cobertura por bulto (pies²)",
+      "coveragePerBundleM2": "Cobertura por bulto (m\u00b2)",
+      "pricePerBundle": "Precio por bulto (USD, opcional)"
+    },
+    "results": {
+      "title": "Resultados",
+      "squares": "'Squares' estimados (100 pies² cada uno)",
+      "areaM2": "\u00c1rea estimada (m\u00b2)",
+      "bundles": "Bultos estimados",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué es un 'square' de techo?",
+      "a1": "Un 'square' equivale a 100 pies² de superficie de techo.",
+      "q2": "¿Cuántos bultos hay en un 'square'?",
+      "a2": "A menudo 3 bultos, pero depende del producto. Usa la etiqueta cuando sea posible.",
+      "q3": "¿Por qué agregar merma?",
+      "a3": "Cortes, limahoyas y errores requieren tejas extra."
+    }
+  },
+  "deck": {
+    "metaTitle": "Calculadora de tablas para deck",
+    "metaDescription": "Estima tablas necesarias según tamaño, dimensiones, separación y merma.",
+    "title": "Calculadora de tablas para deck",
+    "subtitle": "Estima tablas. Ajusta ancho, separación, largo y merma.",
+    "inputs": {
+      "deckLengthFt": "Largo (ft)",
+      "deckWidthFt": "Ancho (ft)",
+      "boardWidthIn": "Ancho de tabla (in)",
+      "gapIn": "Separación (in)",
+      "boardLengthFt": "Largo de tabla (ft)",
+      "deckLengthM": "Largo (m)",
+      "deckWidthM": "Ancho (m)",
+      "boardWidthCm": "Ancho de tabla (cm)",
+      "gapCm": "Separación (cm)",
+      "boardLengthM": "Largo de tabla (m)",
+      "waste": "Merma (%)",
+      "pricePerBoard": "Precio por tabla (USD, opcional)"
+    },
+    "results": {
+      "title": "Resultados",
+      "boards": "Tablas estimadas",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Incluye viguetas o estructura?",
+      "a1": "No. Solo estima tablas de cubierta.",
+      "q2": "¿Qué ancho debo usar?",
+      "a2": "Es común una tabla nominal 1×6 con ancho real cerca de 5.5 pulgadas.",
+      "q3": "¿Qué separación es típica?",
+      "a3": "Muchos decks usan una separación pequeña (p. ej. 1/8 in). Sigue la guía del producto."
+    }
+  },
+  "fence": {
+    "metaTitle": "Calculadora de cerca",
+    "metaDescription": "Estima paneles y postes según longitud, separación, ancho de panel y merma.",
+    "title": "Calculadora de cerca",
+    "subtitle": "Estima paneles y postes para una línea recta. Agrega merma y costos opcionales.",
+    "inputs": {
+      "fenceLengthFt": "Longitud (ft)",
+      "postSpacingFt": "Separación de postes (ft)",
+      "panelWidthFt": "Ancho de panel (ft)",
+      "fenceLengthM": "Longitud (m)",
+      "postSpacingM": "Separación de postes (m)",
+      "panelWidthM": "Ancho de panel (m)",
+      "waste": "Merma (%)",
+      "pricePerPanel": "Precio por panel (USD, opcional)",
+      "pricePerPost": "Precio por poste (USD, opcional)"
+    },
+    "results": {
+      "title": "Resultados",
+      "panels": "Paneles estimados",
+      "posts": "Postes estimados",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cómo se estiman los postes?",
+      "a1": "Se estima según la separación a lo largo, más un poste final.",
+      "q2": "¿Debo ajustar por esquinas o portones?",
+      "a2": "Sí—esquinas, extremos y portones pueden requerir postes y herrajes adicionales.",
+      "q3": "¿Qué separación es común?",
+      "a3": "Muchos paneles son de 8 ft y los postes se colocan acorde. Sigue código local y especificaciones."
+    }
+  },
+  "gravel": {
+    "metaTitle": "Calculadora de grava",
+    "metaDescription": "Estima volumen de grava en yardas cúbicas a partir de área, profundidad y merma, con costo opcional.",
+    "title": "Calculadora de grava",
+    "subtitle": "Estima yardas cúbicas de grava según área y profundidad.",
+    "quickTitle": "Guía rápida",
+    "quick": {
+      "t1": "Mide largo × ancho (o el área total) en pies o metros.",
+      "t2": "Usa una profundidad realista (muchos proyectos son 2–6 pulgadas).",
+      "t3": "Agrega un pequeño margen por compactación y base irregular."
+    },
+    "howToMeasureTitle": "Cómo medir el área",
+    "howToMeasure": {
+      "s1": "Rectángulos: área = largo × ancho. Círculos: área = π × r².",
+      "s2": "Divide formas irregulares en rectángulos, suma y redondea un poco hacia arriba.",
+      "s3": "Convierte la profundidad a pies (in ÷ 12) o a metros (cm ÷ 100)."
+    },
+    "assumptionsTitle": "Supuestos a revisar",
+    "assumptions": {
+      "a1": "La profundidad es un promedio después de nivelar (los puntos bajos aumentan el volumen).",
+      "a2": "El tipo de material cambia la densidad; la conversión (yardas ↔ toneladas) varía por proveedor.",
+      "a3": "La compactación reduce el volumen suelto—un margen evita un segundo envío."
+    },
+    "buyingTipsTitle": "Consejos de compra",
+    "buyingTips": {
+      "b1": "Confirma si el proveedor vende por yardas, toneladas o sacos.",
+      "b2": "Pregunta la profundidad recomendada según uso (entrada, sendero, base).",
+      "b3": "Redondea según mínimos de entrega y guarda un poco para retoques."
+    },
+    "lastUpdated": "Última actualización: dic 2025",
+    "inputs": {
+      "areaSqFt": "Área (pies²)",
+      "depthIn": "Profundidad (in)",
+      "areaM2": "\u00c1rea (m\u00b2)",
+      "depthCm": "Profundidad (cm)",
+      "waste": "Merma (%)",
+      "pricePerCubicYd": "Precio por yarda cúbica (USD, opcional)",
+      "pricePerCubicM": "Precio por metro cúbico (USD, opcional)"
+    },
+    "results": {
+      "title": "Resultados",
+      "cubicYards": "Yardas cúbicas estimadas",
+      "cubicMeters": "Metros cúbicos estimados",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué profundidad debo usar?",
+      "a1": "Depende del uso (p. ej. 2–4 pulgadas). Elige según tu proyecto.",
+      "q2": "¿Por qué yardas cúbicas?",
+      "a2": "La grava a granel suele venderse por yarda cúbica.",
+      "q3": "¿Debo agregar merma?",
+      "a3": "Un margen ayuda por compactación y base irregular."
+    }
+  },
+  "sand": {
+    "metaTitle": "Calculadora de arena",
+    "metaDescription": "Estima el volumen de arena (yardas cúbicas o metros cúbicos) y el peso (toneladas), con costo opcional.",
+    "title": "Calculadora de arena",
+    "subtitle": "Estima volumen y peso de arena según área, profundidad y densidad.",
+    "inputs": {
+      "areaSqFt": "Área (ft²)",
+      "areaM2": "Área (m²)",
+      "depthIn": "Profundidad (in)",
+      "depthCm": "Profundidad (cm)",
+      "waste": "Margen (%)",
+      "densityPreset": "Preajuste de densidad",
+      "densityLbPerYd3": "Densidad (lb por yarda cúbica)",
+      "densityKgPerM3": "Densidad (kg por metro cúbico)",
+      "priceMode": "Modo de precio (opcional)",
+      "pricePerCubicYd": "Precio por yarda cúbica (USD, opcional)",
+      "pricePerCubicM": "Precio por metro cúbico (USD, opcional)",
+      "pricePerTon": "Precio por tonelada (USD, opcional)",
+      "pricePerTonne": "Precio por tonelada métrica (USD, opcional)",
+      "pricePlaceholderLabel": "Precio (opcional)"
+    },
+    "densityPresets": {
+      "dry": "Arena seca (aprox.)",
+      "packed": "Arena compactada (aprox.)",
+      "wet": "Arena húmeda (aprox.)",
+      "custom": "Personalizada"
+    },
+    "priceModes": {
+      "none": "Sin precio",
+      "volume": "Por volumen",
+      "weight": "Por peso"
+    },
+    "results": {
+      "title": "Resultados",
+      "cubicYards": "Yardas cúbicas estimadas",
+      "cubicMeters": "Metros cúbicos estimados",
+      "shortTons": "Toneladas (EE. UU.) estimadas",
+      "metricTonnes": "Toneladas métricas estimadas",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Conviene comprar arena por yardas cúbicas o por toneladas?",
+      "a1": "Ambas opciones son comunes. Si compras por toneladas, usa un preajuste de densidad realista (seca/compactada/húmeda).",
+      "q2": "¿Por qué varía el peso de la arena?",
+      "a2": "La humedad y la compactación cambian la densidad. La arena húmeda o compactada pesa más por yarda cúbica.",
+      "q3": "¿Qué margen de desperdicio debería usar?",
+      "a3": "A menudo se usa 5-10% para cubrir compactación, base irregular y pequeños errores de medición."
+    }
+  },
+  "paverBase": {
+    "metaTitle": "Calculadora de base para adoquines",
+    "metaDescription": "Estima piedra base y arena de cama para adoquines según área, espesores, densidad y costo opcional.",
+    "title": "Calculadora de base para adoquines",
+    "subtitle": "Estima volumen, peso y costo opcional de la base y la arena.",
+    "inputs": {
+      "areaSqFt": "Área (ft²)",
+      "areaM2": "Área (m²)",
+      "baseDepthIn": "Espesor de base (in)",
+      "baseDepthCm": "Espesor de base (cm)",
+      "sandDepthIn": "Espesor de arena (in)",
+      "sandDepthCm": "Espesor de arena (cm)",
+      "waste": "Margen (%)",
+      "baseDensityPreset": "Preajuste de densidad (base)",
+      "baseDensityLbPerYd3": "Densidad base (lb por yarda cúbica)",
+      "baseDensityKgPerM3": "Densidad base (kg por metro cúbico)",
+      "sandDensityPreset": "Preajuste de densidad (arena)",
+      "sandDensityLbPerYd3": "Densidad arena (lb por yarda cúbica)",
+      "sandDensityKgPerM3": "Densidad arena (kg por metro cúbico)",
+      "priceMode": "Modo de precio (opcional)",
+      "basePricePerCubicYd": "Precio base por yarda cúbica (USD, opcional)",
+      "basePricePerCubicM": "Precio base por metro cúbico (USD, opcional)",
+      "basePricePerTon": "Precio base por tonelada (USD, opcional)",
+      "basePricePerTonne": "Precio base por tonelada métrica (USD, opcional)",
+      "basePricePlaceholderLabel": "Precio de base (opcional)",
+      "sandPricePerCubicYd": "Precio de arena por yarda cúbica (USD, opcional)",
+      "sandPricePerCubicM": "Precio de arena por metro cúbico (USD, opcional)",
+      "sandPricePerTon": "Precio de arena por tonelada (USD, opcional)",
+      "sandPricePerTonne": "Precio de arena por tonelada métrica (USD, opcional)",
+      "sandPricePlaceholderLabel": "Precio de arena (opcional)"
+    },
+    "densityPresets": {
+      "baseCrushedStone": "Piedra triturada (aprox.)",
+      "baseGravel": "Grava (aprox.)",
+      "sandDry": "Arena seca (aprox.)",
+      "sandPacked": "Arena compactada (aprox.)",
+      "sandWet": "Arena húmeda (aprox.)",
+      "custom": "Personalizada"
+    },
+    "priceModes": {
+      "none": "Sin precio",
+      "volume": "Por volumen",
+      "weight": "Por peso"
+    },
+    "results": {
+      "title": "Resultados",
+      "baseTitle": "Piedra base",
+      "sandTitle": "Arena de cama",
+      "cubicYards": "Yardas cúbicas estimadas",
+      "cubicMeters": "Metros cúbicos estimados",
+      "shortTons": "Toneladas (EE. UU.) estimadas",
+      "metricTonnes": "Toneladas métricas estimadas",
+      "cost": "Costo estimado",
+      "totalCost": "Costo total estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué espesor debe tener la base para adoquines?",
+      "a1": "Depende del suelo y del uso. Pasillos y patios suelen requerir varias pulgadas de base compactada; entradas de autos normalmente más. Sigue recomendaciones locales.",
+      "q2": "¿La arena de cama es lo mismo que la piedra base?",
+      "a2": "No. La arena de cama es una capa delgada para nivelar. La piedra base compactada aporta estructura y drenaje.",
+      "q3": "¿Debo agregar margen?",
+      "a3": "Sí. La compactación, el nivelado y los bordes irregulares pueden aumentar la cantidad necesaria. 5-10% es un margen común."
+    }
+  },
+  "soilMix": {
+    "metaTitle": "Calculadora de mezcla de suelo",
+    "metaDescription": "Estima el volumen total de suelo y divídelo en compost, tierra vegetal y arena según una proporción, con costo opcional.",
+    "title": "Calculadora de mezcla de suelo",
+    "subtitle": "Estima volumen, elige una proporción y obtén el desglose por componentes.",
+    "inputs": {
+      "areaSqFt": "Área (ft²)",
+      "areaM2": "Área (m²)",
+      "depthIn": "Profundidad (in)",
+      "depthCm": "Profundidad (cm)",
+      "waste": "Margen (%)",
+      "preset": "Preajuste de mezcla",
+      "compostPercent": "Compost (%)",
+      "topsoilPercent": "Tierra vegetal (%)",
+      "sandPercent": "Arena (%)",
+      "pricesTitle": "Precios a granel (opcional)",
+      "compostPricePerCubicYd": "Precio de compost por yarda cúbica (USD, opcional)",
+      "compostPricePerCubicM": "Precio de compost por metro cúbico (USD, opcional)",
+      "topsoilPricePerCubicYd": "Precio de tierra vegetal por yarda cúbica (USD, opcional)",
+      "topsoilPricePerCubicM": "Precio de tierra vegetal por metro cúbico (USD, opcional)",
+      "sandPricePerCubicYd": "Precio de arena por yarda cúbica (USD, opcional)",
+      "sandPricePerCubicM": "Precio de arena por metro cúbico (USD, opcional)",
+      "pricesHint": "Consejo: deja los precios en blanco para ocultar el costo. En unidades métricas, ingresa precio por metro cúbico."
+    },
+    "presets": {
+      "raisedBed5050": "Cama elevada (50% compost / 50% tierra vegetal)",
+      "garden3070": "Mezcla de jardín (30% compost / 70% tierra vegetal)",
+      "leveling5050": "Mezcla de nivelación (50% arena / 50% tierra vegetal)",
+      "custom": "Personalizada"
+    },
+    "results": {
+      "title": "Resultados",
+      "totalCubicYards": "Total (yardas cúbicas)",
+      "totalCubicMeters": "Total (metros cúbicos)",
+      "componentsTitle": "Desglose por componentes",
+      "compost": "Compost",
+      "topsoil": "Tierra vegetal",
+      "sand": "Arena",
+      "compostCost": "Costo de compost",
+      "topsoilCost": "Costo de tierra vegetal",
+      "sandCost": "Costo de arena",
+      "totalCost": "Costo total estimado",
+      "yd3": "yd³",
+      "m3": "m³"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Es buena una mezcla 50/50 de compost y tierra vegetal?",
+      "a1": "Es un punto de partida común para camas elevadas, pero depende de las plantas y el drenaje. Ajusta según tu suelo y recomendaciones locales.",
+      "q2": "¿Debo incluir arena en una mezcla de suelo?",
+      "a2": "A veces. La arena puede mejorar el drenaje en casos específicos, pero demasiada cambia la textura. Úsala con intención.",
+      "q3": "¿Por qué agregar margen?",
+      "a3": "El suelo se asienta tras riego/compactación y es fácil subestimar. Un pequeño margen evita quedarte corto."
+    }
+  },
+  "asphaltDriveway": {
+    "metaTitle": "Calculadora de asfalto para entrada",
+    "metaDescription": "Estima cantidad de asfalto en yardas cúbicas y toneladas según área y espesor, incluyendo camiones y costo opcional.",
+    "title": "Calculadora de asfalto para entrada",
+    "subtitle": "Estima volumen, toneladas, camiones y costo opcional.",
+    "inputs": {
+      "areaSqFt": "Área (ft²)",
+      "areaM2": "Área (m²)",
+      "thicknessIn": "Espesor (in)",
+      "thicknessCm": "Espesor (cm)",
+      "waste": "Margen (%)",
+      "densityPreset": "Preajuste de densidad",
+      "densityLbPerYd3": "Densidad (lb por yarda cúbica)",
+      "densityKgPerM3": "Densidad (kg por metro cúbico)",
+      "truckCapacityTons": "Capacidad del camión (toneladas, opcional)",
+      "truckCapacityTonnes": "Capacidad del camión (toneladas métricas, opcional)",
+      "pricePerTon": "Precio por tonelada (USD, opcional)",
+      "pricePerTonne": "Precio por tonelada métrica (USD, opcional)"
+    },
+    "densityPresets": {
+      "hotMix": "Asfalto en caliente (aprox.)",
+      "warmMix": "Asfalto templado (aprox.)",
+      "custom": "Personalizada"
+    },
+    "results": {
+      "title": "Resultados",
+      "cubicYards": "Yardas cúbicas estimadas",
+      "cubicMeters": "Metros cúbicos estimados",
+      "shortTons": "Toneladas (EE. UU.) estimadas",
+      "metricTonnes": "Toneladas métricas estimadas",
+      "truckloads": "Camiones estimados",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué espesor debe tener una entrada de asfalto?",
+      "a1": "Depende del uso y de la base. Muchas entradas residenciales usan varias pulgadas. Sigue recomendaciones locales y del contratista.",
+      "q2": "¿Por qué varía el tonelaje del asfalto?",
+      "a2": "La densidad cambia según la mezcla y la compactación. Para mayor precisión, pide la conversión a tu proveedor/contratista.",
+      "q3": "¿Debo agregar margen?",
+      "a3": "Sí. Uniones, bordes irregulares y variación de espesor pueden aumentar la cantidad. 5-10% es un margen común."
+    }
+  },
+  "boardFeet": {
+    "metaTitle": "Calculadora de pies tablares",
+    "metaDescription": "Calcula pies tablares para madera usando grosor, ancho, largo, cantidad y margen, con costo opcional por pie tablar.",
+    "title": "Calculadora de pies tablares",
+    "subtitle": "Estima volumen de madera (pies tablares), pies cúbicos/metros cúbicos y costo opcional.",
+    "inputs": {
+      "thicknessIn": "Grosor (in)",
+      "thicknessMm": "Grosor (mm)",
+      "widthIn": "Ancho (in)",
+      "widthCm": "Ancho (cm)",
+      "lengthFt": "Largo (ft)",
+      "lengthM": "Largo (m)",
+      "quantity": "Cantidad (tablas)",
+      "waste": "Margen (%)",
+      "pricePerBoardFoot": "Precio por pie tablar (USD, opcional)"
+    },
+    "results": {
+      "title": "Resultados",
+      "boardFeet": "Pies tablares",
+      "cubicFeet": "Pies cúbicos",
+      "cubicMeters": "Metros cúbicos",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué es un pie tablar?",
+      "a1": "Un pie tablar es una unidad de volumen de madera equivalente a una tabla de 1 pulgada de grosor, 12 pulgadas de ancho y 12 pulgadas de largo.",
+      "q2": "¿Debo usar medida nominal o real?",
+      "a2": "Usa dimensiones reales para mayor precisión. Las medidas nominales (como 2×6) son mayores que el tamaño real.",
+      "q3": "¿Por qué agregar margen?",
+      "a3": "El margen cubre defectos, nudos, cortes y errores. 5-10% es común según el proyecto."
+    }
+  },
+  "mulchBags": {
+    "metaTitle": "Calculadora de bolsas de mantillo",
+    "metaDescription": "Estima cuántas bolsas de mantillo necesitas según área, profundidad, margen y tamaño de bolsa, con costo opcional por bolsa.",
+    "title": "Calculadora de bolsas de mantillo",
+    "subtitle": "Estima volumen de mantillo y conviértelo a bolsas (2 ft³, 3 ft³ o personalizado).",
+    "inputs": {
+      "areaSqFt": "Área (ft²)",
+      "areaM2": "Área (m²)",
+      "depthIn": "Profundidad (in)",
+      "depthCm": "Profundidad (cm)",
+      "waste": "Margen (%)",
+      "bagPreset": "Preajuste de tamaño de bolsa",
+      "bagSizeCubicFeet": "Tamaño de bolsa (pies cúbicos)",
+      "bagSizeLiters": "Tamaño de bolsa (litros)",
+      "pricePerBag": "Precio por bolsa (USD, opcional)"
+    },
+    "bagPresets": {
+      "cuft15": "Bolsa de 1,5 ft³",
+      "cuft2": "Bolsa de 2 ft³",
+      "cuft3": "Bolsa de 3 ft³",
+      "custom": "Personalizada"
+    },
+    "results": {
+      "title": "Resultados",
+      "cubicYards": "Yardas cúbicas estimadas",
+      "cubicMeters": "Metros cúbicos estimados",
+      "cubicFeet": "Pies cúbicos",
+      "bags": "Bolsas estimadas",
+      "cost": "Costo estimado",
+      "metricHint": "Nota: los tamaños en litros varían por marca; confirma siempre el volumen en la etiqueta."
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cuántas bolsas necesito para 2 pulgadas de espesor?",
+      "a1": "Depende del área y del tamaño de bolsa. Ingresa el área, pon 2 pulgadas, elige el tamaño y redondea hacia arriba.",
+      "q2": "¿Cuál es el tamaño de bolsa más común?",
+      "a2": "Muchos comercios venden bolsas de 2 ft³ y 3 ft³. Confirma la etiqueta.",
+      "q3": "¿Debo agregar margen?",
+      "a3": "Sí. El mantillo se asienta tras esparcir y regar, y las camas no son perfectamente planas. 5-10% es común."
+    }
+  },
+  "concreteBags": {
+    "metaTitle": "Calculadora de bolsas de concreto",
+    "metaDescription": "Estima cuántas bolsas de concreto necesitas según área, espesor, margen y rendimiento por bolsa, con costo opcional por bolsa.",
+    "title": "Calculadora de bolsas de concreto",
+    "subtitle": "Estima volumen de concreto y conviértelo a bolsas (80/60/50/40 lb o rendimiento personalizado).",
+    "inputs": {
+      "areaSqFt": "Área (ft²)",
+      "areaM2": "Área (m²)",
+      "thicknessIn": "Espesor (in)",
+      "thicknessCm": "Espesor (cm)",
+      "waste": "Margen (%)",
+      "bagPreset": "Preajuste de bolsa",
+      "bagYieldCubicFeet": "Rendimiento (pies cúbicos por bolsa)",
+      "bagYieldLiters": "Rendimiento (litros por bolsa)",
+      "pricePerBag": "Precio por bolsa (USD, opcional)"
+    },
+    "bagPresets": {
+      "lb80": "Bolsa de 80 lb (aprox.)",
+      "lb60": "Bolsa de 60 lb (aprox.)",
+      "lb50": "Bolsa de 50 lb (aprox.)",
+      "lb40": "Bolsa de 40 lb (aprox.)",
+      "custom": "Personalizada"
+    },
+    "results": {
+      "title": "Resultados",
+      "cubicYards": "Yardas cúbicas estimadas",
+      "cubicMeters": "Metros cúbicos estimados",
+      "cubicFeet": "Pies cúbicos",
+      "bags": "Bolsas estimadas",
+      "cost": "Costo estimado",
+      "yieldNote": "Nota: el rendimiento por bolsa varía por producto y agua. Para mayor precisión, usa el rendimiento de la etiqueta."
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cuántas bolsas de 80 lb necesito?",
+      "a1": "Ingresa el área y el espesor, luego elige bolsas de 80 lb. La calculadora convierte el volumen a bolsas y redondea hacia arriba.",
+      "q2": "¿Por qué cambia el resultado según el tamaño de bolsa?",
+      "a2": "Cada peso tiene un rendimiento distinto (pies cúbicos por bolsa). Confirma el rendimiento en la etiqueta del producto.",
+      "q3": "¿Debo agregar margen?",
+      "a3": "Sí. Derrames, base irregular y pérdidas al mezclar pueden sumar. 5-10% es un margen común."
+    }
+  },
+  "studs": {
+    "metaTitle": "Calculadora de montantes (estructura de pared)",
+    "metaDescription": "Estima montantes y soleras según longitud total de pared, separación, aberturas y margen, con costo opcional.",
+    "title": "Calculadora de montantes",
+    "subtitle": "Estima montantes y soleras para enmarcado de paredes con aberturas y margen.",
+    "yes": "Sí",
+    "no": "No",
+    "inputs": {
+      "totalWallLengthFt": "Longitud total de pared (ft)",
+      "totalWallLengthM": "Longitud total de pared (m)",
+      "wallCount": "Número de paredes (o tramos)",
+      "waste": "Margen (%)",
+      "spacingPreset": "Preajuste de separación",
+      "spacingIn": "Separación de montantes (in)",
+      "spacingCm": "Separación de montantes (cm)",
+      "openingsTitle": "Aberturas (opcional)",
+      "doors": "Puertas",
+      "windows": "Ventanas",
+      "studsPerOpening": "Montantes extra por abertura",
+      "openingsHint": "Consejo: una abertura básica suele agregar montantes king + jack a ambos lados (4 montantes). Ajusta según tu caso.",
+      "platesTitle": "Soleras",
+      "topPlates": "Soleras superiores (cantidad)",
+      "bottomPlate": "Incluir solera inferior",
+      "pricesTitle": "Precios (opcional)",
+      "pricePerStud": "Precio por montante (USD, opcional)",
+      "pricePerPlateFt": "Precio de solera por pie lineal (USD, opcional)",
+      "pricesHint": "Deja los precios en blanco para ocultar el costo. El precio de soleras varía—usa tu mejor estimación."
+    },
+    "spacingPresets": {
+      "sixteen": "16\" (centro a centro)",
+      "twentyFour": "24\" (centro a centro)",
+      "custom": "Personalizada"
+    },
+    "results": {
+      "title": "Resultados",
+      "studs": "Montantes estimados (con margen)",
+      "studsBeforeWaste": "Montantes (sin margen)",
+      "platesLinearFeet": "Soleras (pies lineales, con margen)",
+      "platesLinearFeetBeforeWaste": "Soleras (pies lineales, sin margen)",
+      "platesMeters": "Soleras (metros, con margen)",
+      "platesMetersBeforeWaste": "Soleras (metros, sin margen)",
+      "cost": "Costo estimado",
+      "note": "Nota: es una estimación para planificar. Esquinas, uniones en T, bloqueos, dinteles y el código local pueden cambiar los totales reales."
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cuántos montantes necesito para una pared?",
+      "a1": "Depende de la longitud, la separación y las aberturas. Ingresa la longitud total y elige 16\" o 24\" para obtener una estimación.",
+      "q2": "¿Las puertas y ventanas agregan montantes?",
+      "a2": "Sí. Las aberturas suelen requerir montantes king/jack y dinteles. Aquí puedes añadir montantes extra por abertura como estimación simple.",
+      "q3": "¿Sirve para paredes estructurales?",
+      "a3": "Úsalo solo como estimación. Sigue el código local y requisitos de ingeniería para muros portantes."
+    }
+  },
+  "baseboardTrim": {
+    "metaTitle": "Calculadora de zócalos y molduras",
+    "metaDescription": "Estima zócalos/molduras según longitud de pared, puertas, margen y largo de pieza, con costo opcional.",
+    "title": "Calculadora de zócalos y molduras",
+    "subtitle": "Estima longitud lineal (o metros), piezas a comprar y costo opcional.",
+    "inputs": {
+      "wallLengthFt": "Longitud total de pared (ft)",
+      "wallLengthM": "Longitud total de pared (m)",
+      "doors": "Puertas",
+      "doorWidthIn": "Ancho de puerta (in)",
+      "doorWidthCm": "Ancho de puerta (cm)",
+      "waste": "Margen (%)",
+      "pieceLengthFt": "Largo de pieza (ft)",
+      "pieceLengthM": "Largo de pieza (m)",
+      "pricesTitle": "Precios (opcional)",
+      "pricePerLinearFt": "Precio por pie lineal (USD, opcional)",
+      "pricePerPiece": "Precio por pieza (USD, opcional)",
+      "pricesHint": "Si ingresas ambos, se usa el precio por pie lineal. Deja en blanco para ocultar el costo."
+    },
+    "results": {
+      "title": "Resultados",
+      "linearFeet": "Pies lineales estimados (con margen)",
+      "linearFeetBeforeWaste": "Pies lineales (sin margen)",
+      "meters": "Metros estimados (con margen)",
+      "metersBeforeWaste": "Metros (sin margen)",
+      "pieces": "Piezas estimadas",
+      "cost": "Costo estimado",
+      "note": "Nota: esquinas, cortes a inglete y paredes fuera de escuadra pueden aumentar el margen. Compra un poco más si luego necesitas igualar perfil/color."
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Debo restar las puertas para el zócalo?",
+      "a1": "Normalmente sí. El zócalo suele terminar en el marco de la puerta, así que restar aberturas ayuda a no comprar de más.",
+      "q2": "¿Qué largo de pieza debo usar?",
+      "a2": "Usa el largo que planeas comprar (por ejemplo 8 ft o 12 ft). La calculadora redondea a piezas completas.",
+      "q3": "¿Cuánto margen debo agregar?",
+      "a3": "5-10% es común. Agrega más si hay muchas esquinas, habitaciones complejas o si eres principiante."
+    }
+  },
+  "topsoilBags": {
+    "metaTitle": "Calculadora de bolsas de tierra vegetal",
+    "metaDescription": "Estima cuántas bolsas de tierra vegetal necesitas según área, profundidad, margen y tamaño de bolsa, con costo opcional por bolsa.",
+    "title": "Calculadora de bolsas de tierra vegetal",
+    "subtitle": "Estima volumen de tierra vegetal y conviértelo a bolsas (1/2/3 ft³ o personalizado).",
+    "inputs": {
+      "areaSqFt": "Área (ft²)",
+      "areaM2": "Área (m²)",
+      "depthIn": "Profundidad (in)",
+      "depthCm": "Profundidad (cm)",
+      "waste": "Margen (%)",
+      "bagPreset": "Preajuste de tamaño de bolsa",
+      "bagSizeCubicFeet": "Tamaño de bolsa (pies cúbicos)",
+      "bagSizeLiters": "Tamaño de bolsa (litros)",
+      "pricePerBag": "Precio por bolsa (USD, opcional)"
+    },
+    "bagPresets": {
+      "cuft1": "Bolsa de 1 ft³",
+      "cuft2": "Bolsa de 2 ft³",
+      "cuft3": "Bolsa de 3 ft³",
+      "custom": "Personalizada"
+    },
+    "results": {
+      "title": "Resultados",
+      "cubicYards": "Yardas cúbicas estimadas",
+      "cubicMeters": "Metros cúbicos estimados",
+      "cubicFeet": "Pies cúbicos",
+      "bags": "Bolsas estimadas",
+      "cost": "Costo estimado",
+      "metricHint": "Nota: los tamaños en litros varían por marca; confirma siempre el volumen en la etiqueta."
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Cuántas bolsas de tierra vegetal necesito?",
+      "a1": "Ingresa el área y la profundidad, elige el tamaño de bolsa y la calculadora redondeará a bolsas completas.",
+      "q2": "¿Qué profundidad debo usar?",
+      "a2": "Depende del proyecto (nivelación vs plantación). Usa una profundidad promedio y considera margen para zonas irregulares.",
+      "q3": "¿Conviene comprar en bolsas o a granel?",
+      "a3": "Las bolsas son prácticas para proyectos pequeños. Para volúmenes grandes, la entrega a granel puede ser más económica."
+    }
+  },
+  "gravelTonsCalc": {
+    "metaTitle": "Calculadora de yardas a toneladas (grava)",
+    "metaDescription": "Convierte volumen de grava (yardas/metres cúbicos) a peso (toneladas) usando densidad, con costo opcional.",
+    "title": "Yardas ↔ Toneladas (grava)",
+    "subtitle": "Convierte yardas cúbicas a toneladas (o toneladas a yardas) con densidad predefinida o personalizada.",
+    "inputs": {
+      "mode": "Modo de conversión",
+      "volumeYd3": "Volumen (yardas cúbicas)",
+      "volumeM3": "Volumen (metros cúbicos)",
+      "weightTons": "Peso (toneladas EE. UU.)",
+      "weightTonnes": "Peso (toneladas métricas)",
+      "densityPreset": "Preajuste de densidad",
+      "densityLbPerYd3": "Densidad (lb por yarda cúbica)",
+      "densityKgPerM3": "Densidad (kg por metro cúbico)",
+      "pricePerTon": "Precio por tonelada (USD, opcional)",
+      "pricePerTonne": "Precio por tonelada métrica (USD, opcional)"
+    },
+    "modes": {
+      "v2w": "Volumen → Peso",
+      "w2v": "Peso → Volumen"
+    },
+    "densityPresets": {
+      "peaGravel": "Grava redonda (aprox.)",
+      "crushedStone": "Piedra triturada (aprox.)",
+      "baseRock": "Base granular (aprox.)",
+      "custom": "Personalizada"
+    },
+    "results": {
+      "title": "Resultados",
+      "volumeYd3": "Volumen (yardas cúbicas)",
+      "volumeM3": "Volumen (metros cúbicos)",
+      "weightTons": "Peso (toneladas EE. UU.)",
+      "weightTonnes": "Peso (toneladas métricas)",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Por qué varía la conversión de yardas a toneladas?",
+      "a1": "Depende de la densidad, que cambia según el tipo de grava y la humedad. Los proveedores pueden usar su propia conversión.",
+      "q2": "¿Debo redondear hacia arriba?",
+      "a2": "Normalmente sí. Mínimos de entrega y compactación pueden hacer que falte material si compras muy justo.",
+      "q3": "¿Uso toneladas o toneladas métricas?",
+      "a3": "En EE. UU. se usan toneladas cortas; en otros mercados son comunes las toneladas métricas. Usa lo que cotice tu proveedor."
+    }
+  },
+  "tileGrout": {
+    "metaTitle": "Calculadora de lechada para azulejos",
+    "metaDescription": "Estima lechada según tamaño de azulejo, ancho/profundidad de junta y área, con bolsas y costo opcional.",
+    "title": "Calculadora de lechada",
+    "subtitle": "Estima cantidad de lechada y bolsas según tamaño de azulejo y juntas.",
+    "inputs": {
+      "areaSqFt": "Área (ft²)",
+      "areaM2": "Área (m²)",
+      "tileLengthIn": "Largo de azulejo (in)",
+      "tileWidthIn": "Ancho de azulejo (in)",
+      "tileLengthMm": "Largo de azulejo (mm)",
+      "tileWidthMm": "Ancho de azulejo (mm)",
+      "jointWidthIn": "Ancho de junta (in)",
+      "jointDepthIn": "Profundidad de junta (in)",
+      "jointWidthMm": "Ancho de junta (mm)",
+      "jointDepthMm": "Profundidad de junta (mm)",
+      "waste": "Margen (%)",
+      "densityPreset": "Tipo / densidad",
+      "densityKgPerM3": "Densidad (kg por m³)",
+      "bagPreset": "Preajuste de bolsa",
+      "bagKg": "Tamaño de bolsa (kg)",
+      "pricePerBag": "Precio por bolsa (USD, opcional)"
+    },
+    "densityPresets": {
+      "sanded": "Lechada con arena (aprox.)",
+      "unsanded": "Lechada sin arena (aprox.)",
+      "epoxy": "Lechada epoxi (aprox.)",
+      "custom": "Personalizada"
+    },
+    "bagPresets": {
+      "lb25": "Bolsa de 25 lb",
+      "lb10": "Bolsa de 10 lb",
+      "kg5": "Bolsa de 5 kg",
+      "custom": "Personalizada"
+    },
+    "results": {
+      "title": "Resultados",
+      "groutKg": "Lechada (kg)",
+      "groutLb": "Lechada (lb)",
+      "groutLiters": "Volumen (litros)",
+      "bags": "Bolsas estimadas",
+      "cost": "Costo estimado",
+      "note": "Nota: es una estimación. La densidad y el rendimiento varían—revisa la etiqueta de tu producto."
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué ancho de junta debo usar?",
+      "a1": "Sigue recomendaciones del azulejo y separadores. Juntas más anchas consumen más lechada.",
+      "q2": "¿Conviene lechada con arena o sin arena?",
+      "a2": "Depende del ancho de junta y del tipo de azulejo. Usa las guías del producto para tu aplicación.",
+      "q3": "¿Debo agregar margen?",
+      "a3": "Sí. Derrames, limpieza y juntas irregulares pueden aumentar el consumo. 5-10% es común."
+    }
+  },
+  "drywallMudTape": {
+    "metaTitle": "Calculadora de masilla y cinta (drywall)",
+    "metaDescription": "Estima rollos de cinta y masilla (joint compound) según área, tamaño de placa, capas y margen, con costo opcional.",
+    "title": "Calculadora de masilla y cinta",
+    "subtitle": "Estima longitud de juntas, rollos de cinta y masilla con supuestos ajustables.",
+    "inputs": {
+      "areaSqFt": "Área a terminar (ft²)",
+      "areaM2": "Área a terminar (m²)",
+      "waste": "Margen (%)",
+      "sheetPreset": "Preajuste de placa",
+      "sheetWidthFt": "Ancho de placa (ft)",
+      "sheetLengthFt": "Largo de placa (ft)",
+      "sheetWidthM": "Ancho de placa (m)",
+      "sheetLengthM": "Largo de placa (m)",
+      "tapeTitle": "Cinta",
+      "rollLengthFt": "Largo del rollo (ft)",
+      "rollLengthM": "Largo del rollo (m)",
+      "pricePerRoll": "Precio por rollo (USD, opcional)",
+      "compoundTitle": "Masilla (joint compound)",
+      "coats": "Capas",
+      "jointWidthIn": "Ancho promedio de junta (in)",
+      "avgThicknessIn": "Espesor promedio por capa (in)",
+      "featherFactor": "Factor de difuminado (0-1)",
+      "bucketGallons": "Tamaño del balde (galones)",
+      "pricePerBucket": "Precio por balde (USD, opcional)",
+      "compoundHint": "Estos supuestos varían por técnica y producto. Ajústalos según tu plan y el rendimiento de la etiqueta."
+    },
+    "sheetPresets": {
+      "s48": "Placa 4×8",
+      "s410": "Placa 4×10",
+      "s412": "Placa 4×12",
+      "custom": "Personalizada"
+    },
+    "results": {
+      "title": "Resultados",
+      "seamFeet": "Longitud de juntas (ft)",
+      "seamMeters": "Longitud de juntas (m)",
+      "tapeRolls": "Rollos de cinta",
+      "compoundGallons": "Masilla (galones)",
+      "compoundLiters": "Masilla (litros)",
+      "compoundBuckets": "Baldes",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué tan preciso es este cálculo?",
+      "a1": "Es una estimación para planificar basada en densidad promedio de juntas y tus supuestos. Esquinas y diseño real pueden cambiar el consumo.",
+      "q2": "¿Por qué importa el tamaño de placa?",
+      "a2": "Placas más grandes suelen generar menos juntas por área, reduciendo cinta y masilla.",
+      "q3": "¿Cuántas capas debo usar?",
+      "a3": "Muchos acabados usan varias capas. Elige lo que coincida con tu plan y recomendaciones del producto."
+    }
+  },
+  "topsoil": {
+    "metaTitle": "Calculadora de tierra vegetal",
+    "metaDescription": "Estima volumen de tierra vegetal en yardas cúbicas a partir de área, profundidad y merma, con costo opcional.",
+    "title": "Calculadora de tierra vegetal",
+    "subtitle": "Estima yardas cúbicas de tierra vegetal según área y profundidad.",
+    "quickTitle": "Guía rápida",
+    "quick": {
+      "t1": "Mide el área total y elige una profundidad promedio para el proyecto.",
+      "t2": "Convierte la profundidad a pies o metros antes de calcular el volumen.",
+      "t3": "Agrega un pequeño margen por asentamiento, nivelación y áreas irregulares."
+    },
+    "howToMeasureTitle": "Cómo medir el área",
+    "howToMeasure": {
+      "s1": "Rectángulos: área = largo × ancho. Círculos: área = π × r².",
+      "s2": "Para césped, mide por secciones y suma para el total.",
+      "s3": "Convierte la profundidad a pies (in ÷ 12) o a metros (cm ÷ 100)."
+    },
+    "assumptionsTitle": "Supuestos a revisar",
+    "assumptions": {
+      "a1": "Usa profundidad promedio—la nivelación puede variar en distintas zonas.",
+      "a2": "Si rellenas puntos bajos, incluye volumen extra para esas áreas.",
+      "a3": "La tierra a granel puede asentarse; un margen ayuda a no quedarte corto."
+    },
+    "buyingTipsTitle": "Consejos de compra",
+    "buyingTips": {
+      "b1": "Confirma si necesitas tierra tamizada para un acabado más fino.",
+      "b2": "Redondea según mínimos de entrega y guarda un poco para retoques.",
+      "b3": "Si añades composta, ajusta la proporción de mezcla y el volumen."
+    },
+    "lastUpdated": "Última actualización: dic 2025",
+    "inputs": {
+      "areaSqFt": "Área (pies²)",
+      "depthIn": "Profundidad (in)",
+      "areaM2": "\u00c1rea (m\u00b2)",
+      "depthCm": "Profundidad (cm)",
+      "waste": "Merma (%)",
+      "pricePerCubicYd": "Precio por yarda cúbica (USD, opcional)",
+      "pricePerCubicM": "Precio por metro cúbico (USD, opcional)"
+    },
+    "results": {
+      "title": "Resultados",
+      "cubicYards": "Yardas cúbicas estimadas",
+      "cubicMeters": "Metros cúbicos estimados",
+      "cost": "Costo estimado"
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "q1": "¿Qué profundidad es típica?",
+      "a1": "Depende del proyecto. Para césped suele ser una capa delgada; en camas elevadas se usa más.",
+      "q2": "¿Por qué yardas cúbicas?",
+      "a2": "La tierra a granel suele venderse por yarda cúbica.",
+      "q3": "¿Debo agregar merma?",
+      "a3": "Un margen ayuda por asentamiento y áreas irregulares."
+    }
+  }
+}
