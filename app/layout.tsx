@@ -6,6 +6,7 @@ import "./globals.css";
 import { getSiteUrl, SITE_NAME } from "@/lib/site";
 import { ADSENSE_CLIENT } from "@/lib/adsense";
 import { AdSenseScript } from "@/components/AdSenseScript";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,12 +56,15 @@ export default async function RootLayout({
     process.env.NEXT_PUBLIC_PLAUSIBLE_SRC?.trim() ||
     "https://plausible.io/js/script.js";
   const adsenseClient = ADSENSE_CLIENT;
+  const gaMeasurementId =
+    process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || null;
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AdSenseScript clientId={adsenseClient} />
+        <GoogleAnalytics measurementId={gaMeasurementId} />
         {plausibleDomain ? (
           <Script
             defer
