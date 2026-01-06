@@ -12,16 +12,6 @@ export async function generateMetadata({
   const locale = normalizeLocale(rawLocale);
   setRequestLocale(locale);
 
-  if (locale !== "en") {
-    return {
-      robots: {
-        index: false,
-        follow: true,
-        googleBot: { index: false, follow: true },
-      },
-    };
-  }
-
   return {};
 }
 
@@ -32,4 +22,3 @@ export default function GuidesLayout({
 }) {
   return children;
 }
-

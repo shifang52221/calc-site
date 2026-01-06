@@ -19,20 +19,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       `${baseUrl}${routes.terms(locale)}`,
       `${baseUrl}${routes.about(locale)}`,
       `${baseUrl}${routes.contact(locale)}`,
+      `${baseUrl}${routes.calculators(locale)}`,
+      `${baseUrl}${routes.guides(locale)}`,
+      ...CALCULATOR_CATEGORIES.map(
+        (category) =>
+          `${baseUrl}${routes.calculatorsCategory(locale, category.id)}`,
+      ),
+      ...CALCULATORS.map((calculator) => `${baseUrl}${calculator.href(locale)}`),
+      ...GUIDE_DEFINITIONS.map((guide) => `${baseUrl}${guide.href(locale)}`),
     ];
-
-    if (locale === "en") {
-      urls.push(
-        `${baseUrl}${routes.calculators(locale)}`,
-        `${baseUrl}${routes.guides(locale)}`,
-        ...CALCULATOR_CATEGORIES.map(
-          (category) =>
-            `${baseUrl}${routes.calculatorsCategory(locale, category.id)}`,
-        ),
-        ...CALCULATORS.map((calculator) => `${baseUrl}${calculator.href(locale)}`),
-        ...GUIDE_DEFINITIONS.map((guide) => `${baseUrl}${guide.href(locale)}`),
-      );
-    }
 
     for (const url of urls) {
       entries.push({ url: url.replace(/\/+$/, ""), lastModified: now });
