@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { routes } from "@/lib/routes";
 import type { Locale } from "@/i18n/routing";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { LogoMark } from "@/components/Logo";
 
 export function SiteHeader({ locale }: { locale: Locale }) {
   const t = useTranslations("nav");
@@ -15,8 +16,9 @@ export function SiteHeader({ locale }: { locale: Locale }) {
         <div className="flex items-center gap-4">
           <Link
             href={routes.home(locale)}
-            className="shrink-0 whitespace-nowrap text-sm font-semibold text-zinc-900 dark:text-zinc-100"
+            className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap text-sm font-semibold text-zinc-900 dark:text-zinc-100"
           >
+            <LogoMark className="h-6 w-6" />
             {site("name")}
           </Link>
           <nav className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">

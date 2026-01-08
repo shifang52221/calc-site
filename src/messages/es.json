@@ -33,6 +33,8 @@
     "featuredTileGroutDesc": "Estima bolsas de lechada y costo.",
     "featuredDrywall": "Calculadora de paneles de yeso",
     "featuredDrywallDesc": "Estima cuántas placas necesitas.",
+    "featuredDrywallTexture": "Calculadora de textura en drywall",
+    "featuredDrywallTextureDesc": "Estima material de textura.",
     "featuredDrywallMudTape": "Calculadora de masilla y cinta",
     "featuredDrywallMudTapeDesc": "Estima rollos de cinta y masilla.",
     "featuredConcrete": "Calculadora de concreto",
@@ -51,6 +53,8 @@
     "featuredRoofingDesc": "Estima tejas por bultos y 'squares'.",
     "featuredDeck": "Calculadora de tablas para deck",
     "featuredDeckDesc": "Estima tablas y costo opcional.",
+    "featuredDeckMud": "Calculadora de deck mud",
+    "featuredDeckMudDesc": "Estima mortero seco (deck mud) por área y espesor.",
     "featuredFence": "Calculadora de cerca",
     "featuredFenceDesc": "Estima paneles y postes.",
     "featuredGravel": "Calculadora de grava",
@@ -1197,6 +1201,48 @@
       "a3": "Solo se compran cajas completas y el extra ayuda por roturas y reparaciones."
     }
   },
+  "deckMud": {
+    "metaTitle": "Calculadora de Deck Mud (Mortero Seco)",
+    "metaDescription": "Estima deck mud (mortero seco) según área, espesor, desperdicio/overage y proporción arena-cemento.",
+    "title": "Calculadora de Deck Mud",
+    "subtitle": "Estima mortero seco (deck mud) por área y espesor. Ajusta desperdicio y proporción.",
+    "inputs": {
+      "areaSqFt": "Área (ft2)",
+      "areaM2": "Área (m2)",
+      "thicknessIn": "Espesor (in)",
+      "thicknessCm": "Espesor (cm)",
+      "waste": "Desperdicio/overage (%)",
+      "mix": "Proporción (preajuste)",
+      "ratioTitle": "Arena : cemento",
+      "sandParts": "Arena (partes)",
+      "cementParts": "Cemento (partes)",
+      "ratioHint": "Proporciones comunes: 5:1 o 4:1 por volumen. Sigue la práctica local y la ficha del producto."
+    },
+    "mixPresets": {
+      "fiveToOne": "5:1 (común)",
+      "fourToOne": "4:1 (más fuerte)",
+      "custom": "Personalizado"
+    },
+    "results": {
+      "title": "Resultados",
+      "totalFt3": "Volumen total (ft3)",
+      "totalM3": "Volumen total (m3)",
+      "sandFt3": "Arena (ft3)",
+      "sandM3": "Arena (m3)",
+      "cementFt3": "Cemento (ft3)",
+      "cementM3": "Cemento (m3)",
+      "cementBags": "Bolsas de cemento (94 lb, aprox)"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "¿Qué es deck mud?",
+      "a1": "Deck mud (mortero seco) es una mezcla de arena y cemento usada para camas de mortero, a menudo en duchas y bajo baldosas.",
+      "q2": "¿Qué espesor debo usar?",
+      "a2": "Depende del proyecto. Si hay pendiente, el espesor no es uniforme: usa un promedio para estimar.",
+      "q3": "¿Qué proporción debo usar?",
+      "a3": "Muchas mezclas usan 5:1 arena:cemento por volumen. Sigue la ficha del producto y la práctica local."
+    }
+  },
   "drywall": {
     "metaTitle": "Calculadora de paneles de yeso",
     "metaDescription": "Estima placas necesarias según área, cobertura por placa y merma.",
@@ -1223,6 +1269,35 @@
       "a2": "10–15% es común según cortes y diseño.",
       "q3": "¿Incluye tornillos o masilla?",
       "a3": "No. Solo estima placas."
+    }
+  },
+  "drywallTexture": {
+    "metaTitle": "Calculadora de Textura en Drywall",
+    "metaDescription": "Estima la textura (bolsas) según área, manos, cobertura y merma.",
+    "title": "Calculadora de Textura en Drywall",
+    "subtitle": "Estima material de textura. Ajusta manos, cobertura por bolsa y merma.",
+    "inputs": {
+      "areaSqFt": "Área (ft2)",
+      "areaM2": "Área (m2)",
+      "coats": "Manos/pasas",
+      "waste": "Merma (%)",
+      "coveragePerBagSqFt": "Cobertura por bolsa (ft2)",
+      "coveragePerBagM2": "Cobertura por bolsa (m2)"
+    },
+    "results": {
+      "title": "Resultados",
+      "bags": "Bolsas estimadas",
+      "neededSqFt": "Cobertura total necesaria (ft2)",
+      "neededM2": "Cobertura total necesaria (m2)"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "¿Cómo estimo la textura?",
+      "a1": "Multiplica el área por las manos, divide por la cobertura por bolsa, agrega merma y redondea hacia arriba.",
+      "q2": "¿Qué cobertura debo usar?",
+      "a2": "Usa la etiqueta del producto. La cobertura varía por tipo de textura y método de aplicación.",
+      "q3": "¿Cuánta merma agrego?",
+      "a3": "5–15% es común. Rociado, lijado y práctica pueden aumentar la merma."
     }
   },
   "concrete": {

@@ -33,6 +33,8 @@
     "featuredTileGroutDesc": "估算填縫劑袋數與成本。",
     "featuredDrywall": "石膏板用量計算",
     "featuredDrywallDesc": "估算需要多少片石膏板。",
+    "featuredDrywallTexture": "石膏板紋理用量計算",
+    "featuredDrywallTextureDesc": "估算紋理材料用量。",
     "featuredDrywallMudTape": "批土/紙帶計算",
     "featuredDrywallMudTapeDesc": "估算紙帶與批土用量。",
     "featuredConcrete": "混凝土用量計算",
@@ -51,6 +53,8 @@
     "featuredRoofingDesc": "估算屋瓦綑數與 squares。",
     "featuredDeck": "露台板材計算",
     "featuredDeckDesc": "估算露台板材片數與可選費用。",
+    "featuredDeckMud": "Deck mud 計算",
+    "featuredDeckMudDesc": "依面積與厚度估算乾硬砂漿（deck mud）。",
     "featuredFence": "圍籬用量計算",
     "featuredFenceDesc": "估算圍籬板與立柱數量。",
     "featuredGravel": "碎石用量計算",
@@ -908,6 +912,48 @@
       "a3": "磁磚通常以整箱販售，多買一些也利於破損與日後維修。"
     }
   },
+  "deckMud": {
+    "metaTitle": "Deck Mud 計算器（乾硬砂漿）",
+    "metaDescription": "依面積、厚度、預留耗損（overage）與砂：水泥比例，估算 deck mud（乾硬砂漿）用量。",
+    "title": "Deck Mud 計算器",
+    "subtitle": "依面積與厚度估算乾硬砂漿（deck mud）。可調整耗損與配比。",
+    "inputs": {
+      "areaSqFt": "面積 (ft2)",
+      "areaM2": "面積 (m2)",
+      "thicknessIn": "厚度 (in)",
+      "thicknessCm": "厚度 (cm)",
+      "waste": "耗損/預留 (%)",
+      "mix": "配比預設",
+      "ratioTitle": "砂 : 水泥",
+      "sandParts": "砂（份）",
+      "cementParts": "水泥（份）",
+      "ratioHint": "常見配比為 5:1 或 4:1（體積比）。請依在地做法與產品建議調整。"
+    },
+    "mixPresets": {
+      "fiveToOne": "5:1（常見）",
+      "fourToOne": "4:1（較高強度）",
+      "custom": "自訂"
+    },
+    "results": {
+      "title": "結果",
+      "totalFt3": "總體積 (ft3)",
+      "totalM3": "總體積 (m3)",
+      "sandFt3": "砂 (ft3)",
+      "sandM3": "砂 (m3)",
+      "cementFt3": "水泥 (ft3)",
+      "cementM3": "水泥 (m3)",
+      "cementBags": "水泥袋數（94 lb，約）"
+    },
+    "faqTitle": "FAQ",
+    "faq": {
+      "q1": "什麼是 deck mud？",
+      "a1": "Deck mud（乾硬砂漿、dry pack mortar）是砂與水泥的拌合料，常用於淋浴底盤或磁磚下的砂漿層。",
+      "q2": "厚度要用多少？",
+      "a2": "視工程而定。若有坡度，厚度不均，建議用平均厚度來估算。",
+      "q3": "配比要用多少？",
+      "a3": "很多做法採用 5:1（砂：水泥，體積比）。請依產品建議與在地做法為準。"
+    }
+  },
   "drywall": {
     "metaTitle": "石膏板用量計算",
     "metaDescription": "依面積、每片覆蓋率與損耗比例估算石膏板片數。",
@@ -934,6 +980,35 @@
       "a2": "依裁切與排版不同，常見約 10–15%。",
       "q3": "包含螺絲或批土嗎？",
       "a3": "不包含，本計算僅估算板材片數。"
+    }
+  },
+  "drywallTexture": {
+    "metaTitle": "石膏板紋理用量計算",
+    "metaDescription": "依面積、層數、每袋覆蓋率與損耗比例，估算石膏板紋理材料（袋數）。",
+    "title": "石膏板紋理用量計算",
+    "subtitle": "估算紋理材料袋數。可調整層數、每袋覆蓋率與損耗比例。",
+    "inputs": {
+      "areaSqFt": "紋理面積 (ft2)",
+      "areaM2": "紋理面積 (m2)",
+      "coats": "層數/遍數",
+      "waste": "損耗比例 (%)",
+      "coveragePerBagSqFt": "每袋覆蓋率 (ft2)",
+      "coveragePerBagM2": "每袋覆蓋率 (m2)"
+    },
+    "results": {
+      "title": "結果",
+      "bags": "預估袋數",
+      "neededSqFt": "總覆蓋需求 (ft2)",
+      "neededM2": "總覆蓋需求 (m2)"
+    },
+    "faqTitle": "常見問題",
+    "faq": {
+      "q1": "怎麼估算紋理材料？",
+      "a1": "用面積 × 層數，除以每袋覆蓋率，加上損耗後再進位到整袋。",
+      "q2": "每袋覆蓋率要用多少？",
+      "a2": "以你購買的產品標示為準。不同紋理種類與施工方式，覆蓋率差異很大。",
+      "q3": "損耗要加多少？",
+      "a3": "常見 5–15%。噴塗、打磨、初學練習與清理都可能增加損耗。"
     }
   },
   "concrete": {

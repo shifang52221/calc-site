@@ -12,6 +12,8 @@ export type CalculatorCardKey =
   | "featuredTileDesc"
   | "featuredDrywall"
   | "featuredDrywallDesc"
+  | "featuredDrywallTexture"
+  | "featuredDrywallTextureDesc"
   | "featuredConcrete"
   | "featuredConcreteDesc"
   | "featuredMulch"
@@ -20,6 +22,8 @@ export type CalculatorCardKey =
   | "featuredRoofingDesc"
   | "featuredDeck"
   | "featuredDeckDesc"
+  | "featuredDeckMud"
+  | "featuredDeckMudDesc"
   | "featuredFence"
   | "featuredFenceDesc"
   | "featuredGravel"
@@ -59,10 +63,12 @@ export type CalculatorId =
   | "flooring"
   | "tile"
   | "drywall"
+  | "drywallTexture"
   | "concrete"
   | "mulch"
   | "roofing"
   | "deck"
+  | "deckMud"
   | "fence"
   | "gravel"
   | "paverBase"
@@ -164,6 +170,14 @@ export const CALCULATORS: CalculatorDefinition[] = [
     tags: ["drywall", "sheets", "walls", "ceiling", "area"],
   },
   {
+    id: "drywallTexture",
+    href: routes.drywallTexture,
+    titleKey: "featuredDrywallTexture",
+    descriptionKey: "featuredDrywallTextureDesc",
+    categoryId: "walls-finishes",
+    tags: ["drywall texture", "texture", "joint compound", "bags", "coverage"],
+  },
+  {
     id: "drywallMudTape",
     href: routes.drywallMudTape,
     titleKey: "featuredDrywallMudTape",
@@ -226,6 +240,22 @@ export const CALCULATORS: CalculatorDefinition[] = [
     descriptionKey: "featuredDeckDesc",
     categoryId: "roofing-exterior",
     tags: ["deck", "boards", "joists", "lumber", "linear feet"],
+  },
+  {
+    id: "deckMud",
+    href: routes.deckMud,
+    titleKey: "featuredDeckMud",
+    descriptionKey: "featuredDeckMudDesc",
+    categoryId: "floors-tile",
+    tags: [
+      "deck mud",
+      "dry pack mortar",
+      "mortar bed",
+      "shower pan",
+      "sand",
+      "portland cement",
+      "square feet",
+    ],
   },
   {
     id: "fence",

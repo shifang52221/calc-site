@@ -54,12 +54,16 @@ export const routes = {
   tile: (locale: Locale) => `/${locale}/calculators/home-improvement/tile`,
   drywall: (locale: Locale) =>
     `/${locale}/calculators/home-improvement/drywall`,
+  drywallTexture: (locale: Locale) =>
+    `/${locale}/calculators/home-improvement/drywall-texture`,
   concrete: (locale: Locale) =>
     `/${locale}/calculators/home-improvement/concrete`,
   mulch: (locale: Locale) => `/${locale}/calculators/home-improvement/mulch`,
   roofing: (locale: Locale) =>
     `/${locale}/calculators/home-improvement/roofing`,
   deck: (locale: Locale) => `/${locale}/calculators/home-improvement/deck`,
+  deckMud: (locale: Locale) =>
+    `/${locale}/calculators/home-improvement/deck-mud`,
   fence: (locale: Locale) => `/${locale}/calculators/home-improvement/fence`,
   gravel: (locale: Locale) =>
     `/${locale}/calculators/home-improvement/gravel`,

@@ -195,11 +195,37 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       ],
       lastUpdated: "Last updated: Dec 2025",
     },
+    drywallTexture: {
+      quick: [
+        "Measure total wall/ceiling area you want to texture.",
+        "Choose coats/passes (some textures take multiple applications).",
+        "Use the product label for coverage per bag and add waste (often 5-15%).",
+      ],
+      howToMeasureTitle: "How to measure for drywall texture",
+      howToMeasureSteps: [
+        "Measure total area (sq ft or m²) to be textured.",
+        "Decide how many coats/passes you expect for your chosen texture.",
+        "Divide (area × coats) by coverage per bag, then round up and add a buffer.",
+      ],
+      assumptionsTitle: "Assumptions to double-check",
+      assumptions: [
+        "Coverage varies by texture type (knockdown, orange peel, skip trowel) and application method.",
+        "Spraying and sanding can increase waste—beginners often need more material.",
+        "Treat this as a planning estimate and confirm with the exact product label.",
+      ],
+      buyingTipsTitle: "Buying tips",
+      buyingTips: [
+        "Buy enough from the same product line so color/texture matches if you patch later.",
+        "Round up—running short mid-room can make blending difficult.",
+        "If you’re new, plan extra waste for practice and cleanup.",
+      ],
+      lastUpdated: "Last updated: Jan 2026",
+    },
     fence: {
       quick: [
         "Measure total fence length and confirm panel width and post spacing.",
         "Corners, ends, and gates usually require extra posts and hardware.",
-        "Add waste/buffer for layout changes and cut panels (often 5–10%).",
+        "Add waste/buffer for layout changes, cut panels, and pickets/boards if applicable (often 5-10%).",
       ],
       howToMeasureTitle: "How to measure your fence line",
       howToMeasureSteps: [
@@ -405,9 +431,9 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
     },
     paint: {
       quick: [
-        "Start with paintable area (or measure walls and subtract big openings).",
-        "Use a realistic coverage rate and number of coats.",
-        "Add a small buffer for touch-ups and roller/brush waste.",
+        "Start with paintable wall area (square feet/meters), or measure walls and subtract big openings.",
+        "Choose a realistic coverage rate and number of coats (texture and color changes matter).",
+        "Add a small buffer for touch-ups, roller/brush waste, and future repairs.",
       ],
       howToMeasureTitle: "How to measure for paint",
       howToMeasureSteps: [
@@ -483,7 +509,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
     },
     tile: {
       quick: [
-        "Measure area, then add a waste factor (often 10%+).",
+        "Measure tiled area, then add overage (waste factor) — often 10%+.",
         "Convert to boxes using the product’s coverage per box.",
         "Round up to whole boxes and keep a few tiles for repairs.",
       ],
@@ -506,6 +532,32 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Keep a few spare tiles after installation for future repairs.",
       ],
       lastUpdated: "Last updated: Dec 2025",
+    },
+    deckMud: {
+      quick: [
+        "Measure your deck mud area (square feet) and average thickness (inches).",
+        "Add waste/overage for uneven subfloor, mixing loss, and cleanup (often 5–15%).",
+        "Use a common dry pack mortar ratio (often 5:1 sand to cement) and round up.",
+      ],
+      howToMeasureTitle: "How to measure for deck mud",
+      howToMeasureSteps: [
+        "Measure the footprint you’ll fill (e.g., shower pan) and total the area.",
+        "Estimate average thickness: thin edges and thicker slopes change volume.",
+        "Convert area × thickness to volume, then split volume by your sand:cement ratio.",
+      ],
+      assumptionsTitle: "Assumptions to double-check",
+      assumptions: [
+        "Deck mud (dry pack mortar) is mixed by volume ratios; products and techniques vary.",
+        "Cement bag volume varies by brand; treat bag counts as planning estimates.",
+        "If your bed is sloped (typical for showers), thickness is not uniform—use an average.",
+      ],
+      buyingTipsTitle: "Buying tips",
+      buyingTips: [
+        "Buy extra sand so you can keep a consistent mix while you work.",
+        "Round up cement bags—running short mid-bed can ruin the mix consistency.",
+        "Confirm whether you’re using masonry sand vs play sand per local practice.",
+      ],
+      lastUpdated: "Last updated: Jan 2026",
     },
     asphaltDriveway: {
       quick: [
