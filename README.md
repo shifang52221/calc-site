@@ -35,9 +35,8 @@ Set `NEXT_PUBLIC_CONTACT_EMAIL=support@homedecorcalc.com` to show a domain-based
 
 AdSense is wired up with manual ad slots (to protect UX/CLS). It is disabled unless you set an AdSense client id.
 
-For privacy/consent, the AdSense script only loads after the visitor accepts cookies.
-
 - Set `NEXT_PUBLIC_ADSENSE_CLIENT=ca-pub-xxxxxxxxxxxxxxxx`
+- Set `ADSENSE_PUBLISHER_ID=pub-xxxxxxxxxxxxxxxx` so `/ads.txt` outputs your record
 - Provide slot ids as needed:
   - Home: `NEXT_PUBLIC_ADSENSE_SLOT_HOME_TOP=1234567890`
   - Calculators: `NEXT_PUBLIC_ADSENSE_SLOT_CALC_AFTER_RESULT=1234567890`

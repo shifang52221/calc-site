@@ -5,7 +5,6 @@ import { cookies } from "next/headers";
 import "./globals.css";
 import { getSiteUrl, SITE_NAME } from "@/lib/site";
 import { ADSENSE_CLIENT } from "@/lib/adsense";
-import { AdSenseScript } from "@/components/AdSenseScript";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
 const geistSans = Geist({
@@ -60,10 +59,21 @@ export default async function RootLayout({
     process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || null;
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        {adsenseClient ? (
+          <Script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(
+              adsenseClient,
+            )}`}
+            crossOrigin="anonymous"
+            strategy="beforeInteractive"
+          />
+        ) : null}
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AdSenseScript clientId={adsenseClient} />
         <GoogleAnalytics measurementId={gaMeasurementId} />
         {plausibleDomain ? (
           <Script
