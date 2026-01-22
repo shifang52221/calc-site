@@ -8,11 +8,12 @@ import { GUIDE_DEFINITIONS } from "@/lib/guidesCatalog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
+  const locales = routing.locales.filter((l) => l === "en");
 
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
 
-  for (const locale of routing.locales) {
+  for (const locale of locales) {
     const urls: string[] = [
       `${baseUrl}${routes.home(locale)}`,
       `${baseUrl}${routes.privacy(locale)}`,
