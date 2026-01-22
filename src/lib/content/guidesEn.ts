@@ -98,11 +98,13 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     paragraphs: [
       "Drywall estimates are driven by sheet layout and seams. Larger sheets reduce seams but may be harder to handle and transport.",
       "Many corners, soffits, and odd shapes increase waste because more pieces are cut and fewer offcuts are reusable.",
+      "If you’re doing ceilings, plan for lifts or extra help—handling choices often matter more than the last sheet in the estimate.",
     ],
     bullets: [
       "Consider 4×8 vs 4×10/4×12 sheets (handling vs fewer seams).",
       "Plan for corner bead, screws, tape, and compound as separate materials.",
       "Fire-rated areas may require specific board types and thicknesses.",
+      "If sound control matters, confirm whether you need insulation, resilient channels, or specialty board.",
     ],
   },
   "drywall-ceiling": {
@@ -134,11 +136,13 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     paragraphs: [
       "Deck material takeoffs vary a lot by design. Before you price boards and joists, confirm your framing plan: joist spacing, cantilevers, beam placement, and any stair/railing details.",
       "If your deck surface uses a diagonal pattern or picture frame border, your cut waste usually increases. For composite decking, also check manufacturer rules for gapping, overhang, and fastener spacing.",
+      "Also think through drainage and ventilation under the deck. These details don’t change the board count, but they can affect framing choices and long-term durability.",
     ],
     bullets: [
       "Double-check joist spacing (commonly 12\"/16\" OC depending on material and span).",
       "Confirm whether boards run perpendicular to joists or at an angle (waste changes).",
       "Plan extra for stairs, blocking, and rim details if your design includes them.",
+      "Budget for hidden fasteners, trim boards, and fascia (they’re often separate SKUs).",
     ],
   },
   fence: {
@@ -170,11 +174,13 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     paragraphs: [
       "Gravel is often purchased by weight (tons) but planned by volume (cubic yards). Density varies with material type, moisture, and compaction, so conversions differ between suppliers.",
       "Depth is the biggest swing factor—small depth changes across a large driveway or path can change tonnage a lot.",
+      "If you’re building a driveway, you may need multiple layers (base + top). Treat them as separate materials and depth targets.",
     ],
     bullets: [
       "Ask your supplier for their yards↔tons conversion for the specific gravel.",
       "Plan extra for compaction and edge irregularities.",
       "Consider base layers separately if you’re building up a driveway.",
+      "If drainage is an issue, correct grading before adding material—otherwise you may chase low spots forever.",
     ],
   },
   "gravel-tons": {
@@ -182,11 +188,13 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     paragraphs: [
       "Tons calculations are only as good as the density assumption. Different gravel mixes (crushed stone, pea gravel, base) can vary enough to change your order size.",
       "If you have delivery minimums, it’s often better to round up to a clean order size than to risk running short mid-project.",
+      "When in doubt, use your supplier’s density for the exact product—they see the same conversion every day and it’s usually more reliable than a generic chart.",
     ],
     bullets: [
       "Use a supplier-provided density when possible.",
       "Round up near delivery minimums.",
       "Plan for compaction—loose thickness is not final thickness.",
+      "Keep extra material for touch-ups after the first few rains and compaction.",
     ],
   },
   mulch: {
@@ -194,11 +202,13 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     paragraphs: [
       "Mulch estimates depend on the depth you end up with after raking and leveling. Irregular bed edges and existing plantings can change the effective area.",
       "If you’re refreshing mulch, consider whether you’re topping off an existing layer or removing old mulch first—your depth target changes.",
+      "For weed suppression, most people need more depth than they expect. For plant health, keep mulch away from stems and trunks and avoid piling it too deep around crowns.",
     ],
     bullets: [
       "Keep mulch away from trunks and stems.",
       "Expect settling after rain/watering.",
       "Plan extra for awkward shapes and edges.",
+      "If color consistency matters, buy enough at once—batches can vary.",
     ],
   },
   "mulch-depth": {
