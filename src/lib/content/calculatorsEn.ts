@@ -212,6 +212,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       deepDive: [
         "Larger sheets usually mean fewer seams (less finishing) but can be harder to handle and transport, especially on ceilings.",
         "Projects with many small sections and angles typically need more waste because offcuts are harder to reuse.",
+        "If you’re hanging ceilings, choose sheet size based on handling (lifts, help, access) as much as math—fewer seams isn’t worth a dangerous install.",
       ],
       howToMeasureTitle: "How to measure for drywall",
       howToMeasureSteps: [
@@ -230,6 +231,13 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Confirm thickness (1/2\" vs 5/8\") and moisture resistance for bathrooms.",
         "Plan waste based on layout complexity and the number of openings.",
         "Consider delivery and where sheets can be staged safely (they’re heavy).",
+        "If you’re optimizing finishing time, larger sheets can reduce seams—if you can handle them.",
+      ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Forgetting ceiling area (or underestimating it on vaulted ceilings).",
+        "Ignoring finishing materials—tape, compound, screws, and corner bead add up quickly.",
+        "Choosing sheet sizes that are impractical to install (leading to extra cuts and waste).",
       ],
       lastUpdated: "Last updated: Dec 2025",
     },
@@ -354,6 +362,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       deepDive: [
         "Room shape, plank direction, and obstacles can change waste far more than small area measurement errors. Many closets and small rooms often push waste higher.",
         "Always use the exact product’s coverage per box and round up—partial boxes usually aren’t sold.",
+        "If the product might be discontinued or hard to match later, buying a little extra now can be cheaper than a future color/texture mismatch.",
       ],
       howToMeasureTitle: "How to measure flooring area",
       howToMeasureSteps: [
@@ -372,6 +381,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "If your layout is complex, use a higher waste factor.",
         "Round up to whole boxes and keep 1–2 boxes for future repairs.",
         "Confirm underlayment, transitions, and trims—these are separate materials.",
+        "Check whether your product lists “nominal” vs “actual” coverage per box; always follow the label.",
       ],
       commonMistakesTitle: "Common mistakes to avoid",
       commonMistakes: [
@@ -391,6 +401,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       deepDive: [
         "Gravel is planned by volume but often purchased by weight. Density varies by product type and moisture, so conversions differ between suppliers.",
         "Depth is the biggest swing factor—confirm whether your depth is loose depth or compacted depth and add a buffer for uneven base.",
+        "If you’re building a driveway or base layer, depth recommendations vary—use your local supplier’s guidance for your specific aggregate and use case.",
       ],
       howToMeasureTitle: "How to measure your area",
       howToMeasureSteps: [
@@ -465,6 +476,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       deepDive: [
         "Mulch estimates depend on the depth you end up with after raking and leveling. Irregular bed edges and existing plantings can change effective area.",
         "If you’re refreshing mulch, consider whether you’re topping off an existing layer or removing old mulch first—your depth target changes.",
+        "Color fade and settling mean “one yard” can look different after a few weeks—plan a little extra if you want consistent appearance across beds.",
       ],
       howToMeasureTitle: "How to measure mulch coverage",
       howToMeasureSteps: [
@@ -608,6 +620,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       deepDive: [
         "Most paint estimates assume a smooth, previously painted wall. Fresh drywall, heavy texture, porous surfaces, and big color changes can all reduce coverage and increase the number of coats.",
         "If you’re switching sheen (e.g., flat to satin) or painting over patches, plan extra for touch-ups and the “extra coat you didn’t expect.”",
+        "Treat primer as its own step: it can improve coverage and durability, but it still requires material and time—especially on repairs and raw drywall.",
       ],
       howToMeasureTitle: "How to measure for paint",
       howToMeasureSteps: [
@@ -620,6 +633,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Textured walls and color changes can reduce coverage.",
         "Primer can reduce coats, but it doesn’t replace paint volume.",
         "Ceilings and trim often need different paint and coverage assumptions.",
+        "Cut-in work (edges, corners, trim lines) increases time and waste even if area math is correct.",
       ],
       buyingTipsTitle: "Buying tips",
       buyingTips: [
@@ -632,6 +646,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Using footprint area instead of wall area (walls are usually much larger than the floor).",
         "Forgetting additional coats for deep colors, stains, or dramatic color changes.",
         "Not budgeting for trim/ceiling paint separately when it’s a different product.",
+        "Ignoring primer on patched or stained areas (it can cause flashing and uneven finish).",
       ],
       lastUpdated: "Last updated: Dec 2025",
     },
@@ -682,6 +697,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       deepDive: [
         "Roofing is sold by surface area, not footprint. A steeper pitch increases the true surface area you’ll shingle, even if the house footprint stays the same.",
         "If you’re estimating from the ground, double-check whether your inputs represent footprint dimensions or slope dimensions; mixing them is the most common source of big errors.",
+        "Complex roofs also increase waste and labor. Even if area is the same, valleys, hips, and dormers can change how many bundles you actually need.",
       ],
       howToMeasureTitle: "How to measure roof area",
       howToMeasureSteps: [
@@ -694,6 +710,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Bundles per square vary by shingle type—confirm with the product label.",
         "Starter, ridge caps, and underlayment are separate material needs.",
         "Roof pitch affects true surface area vs footprint area.",
+        "If local code requires ice & water shield or special underlayment, budget it separately.",
       ],
       buyingTipsTitle: "Buying tips",
       buyingTips: [
@@ -706,6 +723,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Forgetting waste for valleys/hips, dormers, and lots of cuts on complex roofs.",
         "Ignoring starter strips and ridge caps (they’re separate materials from field shingles).",
         "Assuming every shingle is “3 bundles per square”—it varies by product.",
+        "Estimating from footprint only (without accounting for pitch and actual roof planes).",
       ],
       lastUpdated: "Last updated: Dec 2025",
     },
