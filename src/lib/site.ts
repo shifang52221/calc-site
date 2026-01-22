@@ -4,7 +4,7 @@ export const SITE_NAME = "HomeDecorCalc";
 
 export function getSiteUrl() {
   const url = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL;
-  if (!url) return "https://homedecorcalc.com";
+  if (!url) return "https://www.homedecorcalc.com";
   return url.replace(/\/+$/, "");
 }
 
