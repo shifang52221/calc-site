@@ -1,0 +1,2 @@
+# ads.txt for HomeDecorCalc
+google.com, pub-8677561632094995, DIRECT, f08c47fec0942fa0
