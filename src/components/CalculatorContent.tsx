@@ -28,6 +28,17 @@ export function CalculatorContent({
             <li key={item}>{item}</li>
           ))}
         </ul>
+
+        {content.deepDiveTitle && content.deepDive?.length ? (
+          <div className="mt-4 grid gap-2">
+            <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+              {content.deepDiveTitle}
+            </h3>
+            {content.deepDive.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
+          </div>
+        ) : null}
       </section>
     );
   }
@@ -67,10 +78,22 @@ export function CalculatorContent({
         </ul>
       </div>
 
+      {content.commonMistakesTitle && content.commonMistakes?.length ? (
+        <div>
+          <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+            {content.commonMistakesTitle}
+          </h2>
+          <ul className="mt-3 grid list-disc gap-2 pl-5">
+            {content.commonMistakes.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
       <div className="text-xs text-zinc-500 dark:text-zinc-400">
         {content.lastUpdated}
       </div>
     </section>
   );
 }
-

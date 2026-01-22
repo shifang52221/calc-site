@@ -7,6 +7,7 @@ import { routes } from "@/lib/routes";
 import { getAlternates, getLocalizedUrl } from "@/lib/seo";
 import { faqJsonLd, breadcrumbJsonLd } from "@/lib/structuredData";
 import { GuideRelatedSection } from "@/components/GuideRelatedSection";
+import { GuideExtraContent } from "@/components/GuideExtraContent";
 import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
 
@@ -103,6 +104,8 @@ export default async function ConcreteGuidePage({
           <li>{t("ordering.o4")}</li>
         </ul>
       </section>
+
+      <GuideExtraContent locale={locale} guideId="concrete" />
 
       <section className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">

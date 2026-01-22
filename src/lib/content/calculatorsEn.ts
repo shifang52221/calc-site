@@ -1,13 +1,17 @@
-import type { CalculatorId } from "@/lib/calculatorsCatalog";
+﻿import type { CalculatorId } from "@/lib/calculatorsCatalog";
 
 export type CalculatorContentBlock = {
   quick: string[];
+  deepDiveTitle?: string;
+  deepDive?: string[];
   howToMeasureTitle: string;
   howToMeasureSteps: string[];
   assumptionsTitle: string;
   assumptions: string[];
   buyingTipsTitle: string;
   buyingTips: string[];
+  commonMistakesTitle?: string;
+  commonMistakes?: string[];
   lastUpdated: string;
 };
 
@@ -18,6 +22,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Measure slab length × width and confirm the thickness (inches or cm).",
         "Use finished (installed) dimensions, not forms that will be trimmed.",
         "Add a buffer for over-excavation, spillage, and uneven subgrade (often 5–10%).",
+      ],
+      deepDiveTitle: "Why thickness drives cost",
+      deepDive: [
+        "Concrete volume is area × thickness, so small thickness changes can add up fast on larger slabs. When you’re near a delivery minimum, rounding and buffers can affect price more than the raw math.",
+        "If your pour includes thickened edges, grade beams, or footings, estimate those separately and add them to the slab volume for a more reliable order.",
       ],
       howToMeasureTitle: "How to measure your slab",
       howToMeasureSteps: [
@@ -37,6 +46,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Plan a little extra for waste and wheelbarrow/pump line loss if applicable.",
         "Round up to delivery minimums and consider timing so you can place it continuously.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using form dimensions instead of finished dimensions (or forgetting to subtract voids).",
+        "Forgetting thickened edges/footings when they’re part of the same pour.",
+        "Ordering with no buffer for subgrade variation—ordering short is usually the most expensive outcome.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     concreteBags: {
@@ -44,6 +59,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Estimate concrete volume from area and thickness (slabs, pads, small pours).",
         "Choose a bag size (80/60/50/40 lb) to convert volume to bags and round up.",
         "Add a small buffer for spillage and uneven subgrade (often 5-10%).",
+      ],
+      deepDiveTitle: "Bag yields vary (use the label)",
+      deepDive: [
+        "Bagged concrete is sold by weight, but what you need is volume. The key number is yield (cubic feet per bag), and it varies by brand, mix type, and how much water you add.",
+        "For larger pours, ready-mix often becomes cheaper and more consistent than mixing many bags—your time and fatigue are real costs.",
       ],
       howToMeasureTitle: "How to estimate concrete bags",
       howToMeasureSteps: [
@@ -63,6 +83,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Buy extra if you need continuous placement (you don't want to run short mid-pour).",
         "Plan mixing time, help, and tools—bagged concrete is labor-intensive.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Assuming all 80 lb bags have the same yield—always check the label.",
+        "Forgetting that thickness is an average (low spots can add a lot of volume).",
+        "Underestimating how long it takes to mix and place many bags before they start setting.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     studs: {
@@ -70,6 +96,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Start with total wall length and choose a stud spacing (16\" or 24\" on center are common).",
         "Add openings (doors/windows) because headers and king/jack studs add extra lumber.",
         "Add a waste factor for bad studs, cut-offs, and layout changes (often 5-10%).",
+      ],
+      deepDiveTitle: "Framing varies by corners and openings",
+      deepDive: [
+        "Stud counts are not just length ÷ spacing. Corners, T-walls, and openings add extra studs, and some layouts use 3-stud corners or extra blocking depending on practice and code.",
+        "Use this as a planning estimate, then adjust after you finalize door/window locations and any structural requirements.",
       ],
       howToMeasureTitle: "How to estimate studs",
       howToMeasureSteps: [
@@ -89,6 +120,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Buy a few extra studs to cover warping and defects.",
         "If you're pricing plates, confirm whether you're buying by linear foot or by full boards.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Ignoring openings and corners (they can add more studs than spacing math suggests).",
+        "Forgetting top/bottom plates and blocking when budgeting lumber.",
+        "Not accounting for bad/warped studs—especially on longer walls.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     baseboardTrim: {
@@ -96,6 +133,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Start with total wall perimeter and subtract door openings.",
         "Choose a standard piece length (often 8 ft or 12 ft) to estimate how many pieces to buy.",
         "Add waste for miter cuts, corners, and defects (often 5-10%).",
+      ],
+      deepDiveTitle: "Corners drive waste",
+      deepDive: [
+        "Baseboard ordering is mostly linear feet, but the number of corners and joints determines how much cutting waste you generate.",
+        "Buying a little extra from the same run can save time if you need a repair later and want the profile to match.",
       ],
       howToMeasureTitle: "How to estimate baseboard and trim",
       howToMeasureSteps: [
@@ -115,6 +157,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "If you plan to paint, primed MDF is common; for stain, choose matching species.",
         "Check return policy for special-order profiles before buying extra.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Forgetting to subtract door openings (baseboard typically stops at casing).",
+        "Underestimating waste on many corners and angled cuts.",
+        "Not planning for caulk/filler/paint (the trim itself is only part of the job).",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     deck: {
@@ -122,6 +170,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Confirm board width (actual, not nominal) and the gap you plan to leave.",
         "Measure deck length and width using finished dimensions.",
         "Add waste for cuts and odd layouts (often 5–10%).",
+      ],
+      deepDiveTitle: "Board direction changes the math",
+      deepDive: [
+        "Decking is easier to estimate when you know board direction and whether you’re adding borders or stairs. Straight installs often waste less than diagonal patterns.",
+        "This calculator focuses on deck boards; framing (joists/beams/posts) and hardware should be estimated separately.",
       ],
       howToMeasureTitle: "How to measure your deck",
       howToMeasureSteps: [
@@ -141,6 +194,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Round up if you have stairs or many cuts, and keep a few spare boards.",
         "If matching color later matters, buy extra from the same batch when possible.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using rough framing dimensions instead of finished deck dimensions.",
+        "Not increasing waste for stairs, borders, or diagonal layouts.",
+        "Forgetting fasteners and hardware when budgeting.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     drywall: {
@@ -148,6 +207,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Measure total wall/ceiling area, then pick sheet size (4×8, 4×10, 4×12).",
         "Add waste for cuts, outlets, and breakage (often 10–15%).",
         "Round up to whole sheets—partial sheets are not practical.",
+      ],
+      deepDiveTitle: "Sheet size changes seam count",
+      deepDive: [
+        "Larger sheets usually mean fewer seams (less finishing) but can be harder to handle and transport, especially on ceilings.",
+        "Projects with many small sections and angles typically need more waste because offcuts are harder to reuse.",
       ],
       howToMeasureTitle: "How to measure for drywall",
       howToMeasureSteps: [
@@ -175,6 +239,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Estimate seam length from area and sheet size, then convert to tape rolls.",
         "Compound usage varies by technique and product—use this as a planning estimate and confirm bag/bucket yields.",
       ],
+      deepDiveTitle: "Seams and coats drive usage",
+      deepDive: [
+        "Tape and compound needs depend on seam length, corners, and how many coats you apply. Larger sheets can reduce seams, but real layouts (corners, openings, soffits) still add finishing work.",
+        "Compound yield varies by product type and technique, so treat this as a planning estimate and confirm with the label on the exact product you’ll buy.",
+      ],
       howToMeasureTitle: "How to estimate mud and tape",
       howToMeasureSteps: [
         "Start with total drywall area you plan to finish (sq ft or m²).",
@@ -193,6 +262,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "If you're new, mix smaller batches to reduce waste and keep workability consistent.",
         "Check the bucket/bag label for yield and recommended coverage per coat.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Underestimating corners and repairs—tape usage is not just flat seams.",
+        "Buying too little compound when you need multiple coats and feathering.",
+        "Ignoring product differences (setting-type vs premix yields and behavior differ).",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     drywallTexture: {
@@ -200,6 +275,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Measure total wall/ceiling area you want to texture.",
         "Choose coats/passes (some textures take multiple applications).",
         "Use the product label for coverage per bag and add waste (often 5-15%).",
+      ],
+      deepDiveTitle: "Coverage depends on texture type",
+      deepDive: [
+        "Texture coverage varies a lot by the finish (knockdown, orange peel, skip trowel) and by application method (spray vs hand). Beginners usually waste more during setup and cleanup.",
+        "If you need multiple passes or heavier build, multiply your area accordingly before converting to bags.",
       ],
       howToMeasureTitle: "How to measure for drywall texture",
       howToMeasureSteps: [
@@ -219,6 +299,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Round up—running short mid-room can make blending difficult.",
         "If you’re new, plan extra waste for practice and cleanup.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Assuming one bag covers the same area for every texture type.",
+        "Not accounting for multiple coats/passes when the finish requires it.",
+        "Running short mid-room, which can make matching texture difficult.",
+      ],
       lastUpdated: "Last updated: Jan 2026",
     },
     fence: {
@@ -226,6 +312,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Measure total fence length and confirm panel width and post spacing.",
         "Corners, ends, and gates usually require extra posts and hardware.",
         "Add waste/buffer for layout changes, cut panels, and pickets/boards if applicable (often 5-10%).",
+      ],
+      deepDiveTitle: "Gates and corners change counts",
+      deepDive: [
+        "Fence projects rarely behave like a simple straight run. Corners, ends, and gates usually need extra posts and hardware, and slopes may require stepped or racked sections.",
+        "Use this as a planning estimate, then adjust after you sketch your layout and confirm post spacing and local depth requirements.",
       ],
       howToMeasureTitle: "How to measure your fence line",
       howToMeasureSteps: [
@@ -245,6 +336,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Plan for gate hardware and additional posts for corners/ends.",
         "Order a little extra for damaged pieces and future repairs.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Counting posts as length ÷ spacing without adding corners, ends, and gates.",
+        "Ignoring slope and terrain changes that require different sections or extra waste.",
+        "Forgetting concrete and hardware (they’re often separate cost drivers).",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     flooring: {
@@ -252,6 +349,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Measure each room (length × width) and add them for total area.",
         "Choose a waste factor based on layout (often 5–15%).",
         "Convert area to boxes using the product’s coverage per box.",
+      ],
+      deepDiveTitle: "Waste is the real swing factor",
+      deepDive: [
+        "Room shape, plank direction, and obstacles can change waste far more than small area measurement errors. Many closets and small rooms often push waste higher.",
+        "Always use the exact product’s coverage per box and round up—partial boxes usually aren’t sold.",
       ],
       howToMeasureTitle: "How to measure flooring area",
       howToMeasureSteps: [
@@ -271,6 +373,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Round up to whole boxes and keep 1–2 boxes for future repairs.",
         "Confirm underlayment, transitions, and trims—these are separate materials.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using a low waste factor on complex layouts or diagonal installs.",
+        "Not rounding up to whole boxes (leading to shortages mid-install).",
+        "Forgetting underlayment, transitions, and trim in the budget.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     gravel: {
@@ -279,16 +387,21 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Use a realistic depth (many projects are 2–6 inches).",
         "Add a small buffer for compaction and uneven base.",
       ],
+      deepDiveTitle: "Depth and compaction matter",
+      deepDive: [
+        "Gravel is planned by volume but often purchased by weight. Density varies by product type and moisture, so conversions differ between suppliers.",
+        "Depth is the biggest swing factor—confirm whether your depth is loose depth or compacted depth and add a buffer for uneven base.",
+      ],
       howToMeasureTitle: "How to measure your area",
       howToMeasureSteps: [
-        "For rectangles: area = length × width. For circles: area = π × r².",
+        "For rectangles: area = length × width. For circles: area = π × r^2.",
         "Break irregular shapes into rectangles, add them, and round up slightly.",
         "Convert depth to feet (in ÷ 12) or meters (cm ÷ 100).",
       ],
       assumptionsTitle: "Assumptions to double-check",
       assumptions: [
         "Depth is average depth after grading (low spots can increase volume).",
-        "Material type affects density; supplier conversions (yards ↔ tons) vary.",
+        "Material type affects density; supplier conversions (yards → tons) vary.",
         "Compaction can reduce loose volume—buffers help avoid a second delivery.",
       ],
       buyingTipsTitle: "Buying tips",
@@ -297,6 +410,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Ask for a recommended depth for your application (driveway, path, base).",
         "Round up to delivery minimums and keep a small amount for touch-ups.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using loose depth when you need compacted depth (or vice versa).",
+        "Assuming one universal density for all gravel types.",
+        "Forgetting base prep—soft subgrade can consume more material than expected.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     gravelTons: {
@@ -304,6 +423,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Suppliers often sell gravel by tons, but homeowners estimate by area and volume (cubic yards).",
         "The conversion depends on density, which varies by gravel type and moisture.",
         "Use a density preset or ask your supplier for their yards-to-tons conversion.",
+      ],
+      deepDiveTitle: "Conversions vary by supplier",
+      deepDive: [
+        "A yards-to-tons conversion is only as good as the density assumption. Different gravel mixes can vary enough to change your order size.",
+        "If you’re close to delivery minimums, rounding up to a clean order size is usually cheaper than needing a second load.",
       ],
       howToMeasureTitle: "How to convert yards to tons",
       howToMeasureSteps: [
@@ -323,6 +447,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Confirm whether you're buying the same product (pea gravel vs crushed stone vs base rock).",
         "Include a small buffer for compaction and uneven base.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using a generic density that doesn’t match your supplier’s product.",
+        "Mixing short tons and metric tonnes without noticing.",
+        "Ordering with no buffer for compaction and uneven base.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     mulch: {
@@ -330,6 +460,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Measure your beds’ area and pick a target depth (often 2–4 inches).",
         "Convert depth to feet/meters before volume math.",
         "Add a small buffer for settling and uneven beds.",
+      ],
+      deepDiveTitle: "Depth targets depend on the goal",
+      deepDive: [
+        "Mulch estimates depend on the depth you end up with after raking and leveling. Irregular bed edges and existing plantings can change effective area.",
+        "If you’re refreshing mulch, consider whether you’re topping off an existing layer or removing old mulch first—your depth target changes.",
       ],
       howToMeasureTitle: "How to measure mulch coverage",
       howToMeasureSteps: [
@@ -349,6 +484,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Don’t pile mulch against tree trunks (avoid “mulch volcano”).",
         "Order a little extra for touch-ups and areas you may expand later.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using an unrealistic depth (too thin for weed suppression or too thick around plants).",
+        "Forgetting settling—mulch can look thinner after rain and raking.",
+        "Not accounting for irregular bed edges and obstacles that change effective area.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     mulchBags: {
@@ -356,6 +497,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Most bagged mulch is sold by cubic feet (like 2 cu ft or 3 cu ft per bag).",
         "Estimate total mulch volume from area and depth, then convert to bags and round up.",
         "Add a small buffer for settling and uneven beds (often 5-10%).",
+      ],
+      deepDiveTitle: "Bag size is the key input",
+      deepDive: [
+        "Mulch bags are labeled by volume (cubic feet or liters). Converting your bed volume to the same unit is the fastest way to get a reliable bag count.",
+        "Because mulch settles after spreading and raking, a small buffer is usually cheaper than running short and mismatching color later.",
       ],
       howToMeasureTitle: "How to estimate mulch bags",
       howToMeasureSteps: [
@@ -374,6 +520,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Check bag size (cu ft or liters) and coverage claims on the label.",
         "If you're matching color, buy enough from the same batch when possible.",
         "Keep a few extra bags for seasonal top-ups and areas you expand later.",
+      ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using the wrong bag size (2 cu ft vs 3 cu ft makes a big difference).",
+        "Forgetting settling and uneven beds when choosing depth.",
+        "Buying in multiple batches when color consistency matters.",
       ],
       lastUpdated: "Last updated: Dec 2025",
     },
@@ -401,6 +553,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Round up to delivery minimums and keep a little extra for touch-ups.",
         "If you are leveling, plan for low spots and uneven existing grade.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using a single depth when the surface has low spots that need more fill.",
+        "Mixing up loose depth and final compacted depth.",
+        "Not confirming the sand type required for your project (play vs masonry vs bedding).",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     paverBase: {
@@ -408,6 +566,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "A paver base usually has two layers: compacted base stone + a thin bedding sand layer.",
         "Use finished (installed) area and average depths for each layer.",
         "Add a buffer for compaction, uneven subgrade, and edge cuts (often 5-10%).",
+      ],
+      deepDiveTitle: "Separate base stone vs bedding sand",
+      deepDive: [
+        "Most paver systems use a compacted base stone layer plus a thin bedding sand layer. These layers have different thickness targets and different materials.",
+        "Compaction reduces loose thickness, so plan extra material and confirm recommended depths for your soil and use case (walkway vs driveway).",
       ],
       howToMeasureTitle: "How to measure for paver base",
       howToMeasureSteps: [
@@ -427,6 +590,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Round up to delivery minimums and plan access for a dump/pallet drop.",
         "If you have low spots, plan extra base stone to build grade before sand.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using bedding sand as a thick leveling layer instead of fixing the base.",
+        "Not accounting for compaction (ordering only the final thickness).",
+        "Skipping edging/slope planning, which can change effective area and depth.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     paint: {
@@ -434,6 +603,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Start with paintable wall area (square feet/meters), or measure walls and subtract big openings.",
         "Choose a realistic coverage rate and number of coats (texture and color changes matter).",
         "Add a small buffer for touch-ups, roller/brush waste, and future repairs.",
+      ],
+      deepDiveTitle: "Coverage depends on surface and color",
+      deepDive: [
+        "Most paint estimates assume a smooth, previously painted wall. Fresh drywall, heavy texture, porous surfaces, and big color changes can all reduce coverage and increase the number of coats.",
+        "If you’re switching sheen (e.g., flat to satin) or painting over patches, plan extra for touch-ups and the “extra coat you didn’t expect.”",
       ],
       howToMeasureTitle: "How to measure for paint",
       howToMeasureSteps: [
@@ -453,6 +627,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Round up if you’ll do multiple coats or have a lot of cutting-in.",
         "Keep a small amount labeled for future touch-ups.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using footprint area instead of wall area (walls are usually much larger than the floor).",
+        "Forgetting additional coats for deep colors, stains, or dramatic color changes.",
+        "Not budgeting for trim/ceiling paint separately when it’s a different product.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     wallpaperRolls: {
@@ -460,6 +640,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Start with total wall area you plan to cover (square feet or square meters).",
         "Subtract large openings if you want a tighter estimate, then add a waste factor.",
         "Use a roll size preset or enter your roll width and length to estimate coverage.",
+      ],
+      deepDiveTitle: "Patterns often require extra rolls",
+      deepDive: [
+        "Wallpaper is sold by roll coverage, but real installs often need extra for pattern matching, trimming, and miscuts.",
+        "If your wallpaper has a repeat, the usable length per strip can drop, which increases rolls more than area math suggests.",
       ],
       howToMeasureTitle: "How to measure for wallpaper",
       howToMeasureSteps: [
@@ -479,6 +664,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "If you’re using patterned wallpaper, plan a higher waste factor for matching.",
         "Check whether your product is sold as single vs double rolls and use the correct coverage.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Ignoring pattern repeat and relying on pure area coverage.",
+        "Mixing single vs double rolls when comparing products.",
+        "Ordering from multiple dye lots when color consistency matters.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     roofing: {
@@ -486,6 +677,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Start with roof area, then add waste for valleys/hips and cut shingles.",
         "Convert to squares (100 sq ft) and then to bundles.",
         "Round up—running short mid-roof is expensive.",
+      ],
+      deepDiveTitle: "Roof pitch changes the math",
+      deepDive: [
+        "Roofing is sold by surface area, not footprint. A steeper pitch increases the true surface area you’ll shingle, even if the house footprint stays the same.",
+        "If you’re estimating from the ground, double-check whether your inputs represent footprint dimensions or slope dimensions; mixing them is the most common source of big errors.",
       ],
       howToMeasureTitle: "How to measure roof area",
       howToMeasureSteps: [
@@ -505,6 +701,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Order extra for cuts and future repairs (same color/batch if possible).",
         "Consider delivery placement and weather windows before ordering.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Forgetting waste for valleys/hips, dormers, and lots of cuts on complex roofs.",
+        "Ignoring starter strips and ridge caps (they’re separate materials from field shingles).",
+        "Assuming every shingle is “3 bundles per square”—it varies by product.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     tile: {
@@ -512,6 +714,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Measure tiled area, then add overage (waste factor) — often 10%+.",
         "Convert to boxes using the product’s coverage per box.",
         "Round up to whole boxes and keep a few tiles for repairs.",
+      ],
+      deepDiveTitle: "Why waste factor matters",
+      deepDive: [
+        "Tile waste isn’t just broken pieces—it’s also the cuts required around edges, corners, and obstacles. Diagonal layouts, patterns, and small formats usually increase waste.",
+        "If you need tiles from the same dye lot, buying the right overage up front can save you from mismatched repairs later.",
       ],
       howToMeasureTitle: "How to measure for tile",
       howToMeasureSteps: [
@@ -531,6 +738,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Round up your waste factor for complex layouts or many corners.",
         "Keep a few spare tiles after installation for future repairs.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using a low waste factor on complex layouts (diagonal, herringbone, many corners).",
+        "Forgetting to estimate mosaics/borders separately when they have different box coverage.",
+        "Not keeping spare tiles for future repairs (same lot if possible).",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     deckMud: {
@@ -538,6 +751,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Measure your deck mud area (square feet) and average thickness (inches).",
         "Add waste/overage for uneven subfloor, mixing loss, and cleanup (often 5–15%).",
         "Use a common dry pack mortar ratio (often 5:1 sand to cement) and round up.",
+      ],
+      deepDiveTitle: "What deck mud is (and what it isn’t)",
+      deepDive: [
+        "Deck mud (dry pack mortar) is a sand-and-cement mix that’s packed and screeded to a flat plane. It’s commonly used for shower pans, tile underlayment, and patching low areas where you need a firm, slopeable bed.",
+        "It’s not the same as thinset, self-leveling underlayment, or concrete. The right product depends on what you’re building and the thickness range you need; follow the tile system manufacturer’s instructions.",
       ],
       howToMeasureTitle: "How to measure for deck mud",
       howToMeasureSteps: [
@@ -557,6 +775,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Round up cement bags—running short mid-bed can ruin the mix consistency.",
         "Confirm whether you’re using masonry sand vs play sand per local practice.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Underestimating average thickness on sloped beds (perimeter and drain thickness both matter).",
+        "Mixing too wet, which can reduce pack strength and make screeding harder.",
+        "Switching sand types mid-job, which changes workability and consistency.",
+      ],
       lastUpdated: "Last updated: Jan 2026",
     },
     asphaltDriveway: {
@@ -564,6 +788,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Measure total driveway area and choose an installed thickness.",
         "Asphalt is commonly ordered by weight (tons). Density varies by mix and compaction.",
         "Add a buffer for edge irregularities, tie-ins, and thickness variation (often 5-10%).",
+      ],
+      deepDiveTitle: "Asphalt thickness is after compaction",
+      deepDive: [
+        "Asphalt is typically ordered by weight, but projects are planned by area and thickness. Confirm whether your thickness target is compacted thickness and whether the job uses multiple lifts.",
+        "Density varies by mix and compaction, so your contractor or supplier’s conversion is usually more reliable than generic presets.",
       ],
       howToMeasureTitle: "How to estimate asphalt quantity",
       howToMeasureSteps: [
@@ -583,6 +812,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Plan delivery timing—hot mix has a limited working time.",
         "Consider minimum loads and access for a dump truck to reduce handling costs.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using loose thickness instead of compacted thickness when converting to tons.",
+        "Ignoring edge buildup and tie-ins that increase real quantity.",
+        "Not rounding up to minimum loads and then needing a second delivery.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     boardFeet: {
@@ -590,6 +825,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Board feet is a lumber volume unit used for pricing and ordering.",
         "Use actual thickness/width (not nominal) for the most accurate estimate.",
         "Add waste for knots, defects, and cuts (often 5-10%).",
+      ],
+      deepDiveTitle: "Nominal vs actual size matters",
+      deepDive: [
+        "Board feet is a volume unit, so thickness and width must be in inches and length in feet. Using nominal sizes instead of actual dimensions can distort estimates.",
+        "If you’re pricing hardwood or finish lumber, plan extra for defects, cutoffs, and grain matching.",
       ],
       howToMeasureTitle: "How board feet works",
       howToMeasureSteps: [
@@ -609,6 +849,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "For finish work, consider adding extra for grain matching and defects.",
         "Round up to whole boards and keep a little extra for future repairs.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Mixing up inches and feet in the formula (divide by 12 at the end).",
+        "Using nominal sizes when the seller prices by actual dimensions.",
+        "Not adding waste for defects and cutoffs, especially for finish work.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     soilMix: {
@@ -616,6 +862,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Start by estimating the total soil volume (area x depth) and add a small buffer.",
         "Pick a simple mix ratio (e.g., 50/50 compost + topsoil) and adjust for your plants and drainage.",
         "If you're buying in bulk, confirm whether your supplier sells by cubic yards or cubic meters.",
+      ],
+      deepDiveTitle: "Mix ratios are a starting point",
+      deepDive: [
+        "Soil mixes are about structure and drainage, not just volume. A simple ratio (like 50/50 compost and topsoil) is a starting point—your plants, climate, and container/bed depth may need different blends.",
+        "If you’re buying in bulk, confirm whether the supplier sells by cubic yards or cubic meters and whether the material is screened.",
       ],
       howToMeasureTitle: "How to estimate total soil volume",
       howToMeasureSteps: [
@@ -635,6 +886,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "If drainage is an issue, consider adding sand or other drainage-friendly amendments.",
         "Order a little extra for topping off after the first few waterings.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using a deep fill mix when you only need a thin topdressing (or vice versa).",
+        "Forgetting settling—beds often drop after the first few waterings.",
+        "Assuming all compost/topsoil products behave the same; quality varies widely.",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     topsoilBags: {
@@ -642,6 +899,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Bagged topsoil is typically sold by cubic feet (or liters) per bag.",
         "Estimate total volume from area and depth, then convert to bags and round up.",
         "Add a small buffer for settling and uneven ground (often 5-10%).",
+      ],
+      deepDiveTitle: "Bulk is often cheaper at volume",
+      deepDive: [
+        "Bagged topsoil is convenient for small projects, but for larger volumes bulk delivery is usually cheaper per cubic yard and saves a lot of handling time.",
+        "Depth is the biggest swing factor—measure multiple spots and use an average so you don’t over- or under-order.",
       ],
       howToMeasureTitle: "How to estimate topsoil bags",
       howToMeasureSteps: [
@@ -661,6 +923,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Buy a little extra for top-offs after watering and settling.",
         "If you need consistent texture, buy the same brand/batch when possible.",
       ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using the wrong bag size or mixing units (liters vs cubic feet).",
+        "Underestimating settling and low spots when choosing depth.",
+        "Ordering bagged soil for a bulk-sized project (time and cost add up).",
+      ],
       lastUpdated: "Last updated: Dec 2025",
     },
     tileGrout: {
@@ -668,6 +936,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Grout use depends on tile size, joint width, and joint depth.",
         "Smaller tiles and wider joints use more grout per square foot.",
         "Always round up to whole bags and keep a little extra for repairs.",
+      ],
+      deepDiveTitle: "Joint width and tile size drive grout",
+      deepDive: [
+        "Grout usage depends heavily on joint width and tile size. Small tiles and wider joints create more linear footage of joints per square foot, which increases grout consumption.",
+        "Product yields vary by brand and grout type (sanded/unsanded/epoxy), so use the label of the exact grout you plan to buy when possible.",
       ],
       howToMeasureTitle: "How to estimate grout",
       howToMeasureSteps: [
@@ -686,6 +959,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Choose sanded vs unsanded based on joint width and product recommendations.",
         "Mix small batches if you're new to grouting to reduce waste.",
         "If color matching matters, buy enough from the same lot when possible.",
+      ],
+      commonMistakesTitle: "Common mistakes to avoid",
+      commonMistakes: [
+        "Using a joint width different from your install plan (it changes grout volume quickly).",
+        "Ignoring textured/irregular tile edges that increase grout usage.",
+        "Not buying enough from the same lot when color matching matters.",
       ],
       lastUpdated: "Last updated: Dec 2025",
     },
