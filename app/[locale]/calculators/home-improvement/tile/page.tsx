@@ -8,6 +8,7 @@ import { CalculatorRelatedSection } from "@/components/CalculatorRelatedSection"
 import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
 import { CalculatorContent } from "@/components/CalculatorContent";
+import { CalculatorSeoJsonLd } from "@/components/CalculatorSeoJsonLd";
 
 export async function generateMetadata({
   params,
@@ -23,18 +24,6 @@ export async function generateMetadata({
     title: t("metaTitle"),
     description: t("metaDescription"),
     alternates: getAlternates(locale, "/calculators/home-improvement/tile"),
-  };
-}
-
-function faqJsonLd(faq: { q: string; a: string }[]) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faq.map((item) => ({
-      "@type": "Question",
-      name: item.q,
-      acceptedAnswer: { "@type": "Answer", text: item.a },
-    })),
   };
 }
 
@@ -57,9 +46,12 @@ export default async function TilePage({
 
   return (
     <div className="grid gap-8">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faq)) }}
+      <CalculatorSeoJsonLd
+        locale={locale}
+        pathname="/calculators/home-improvement/tile"
+        title={t("metaTitle")}
+        description={t("metaDescription")}
+        faq={faq}
       />
 
       <div className="grid gap-2">

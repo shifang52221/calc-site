@@ -7,10 +7,8 @@ import { getAlternates } from "@/lib/seo";
 import { CalculatorRelatedSection } from "@/components/CalculatorRelatedSection";
 import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
-import { breadcrumbJsonLd, faqJsonLd } from "@/lib/structuredData";
-import { getSiteUrl } from "@/lib/site";
-import { routes } from "@/lib/routes";
 import { CalculatorContent } from "@/components/CalculatorContent";
+import { CalculatorSeoJsonLd } from "@/components/CalculatorSeoJsonLd";
 
 export async function generateMetadata({
   params,
@@ -45,28 +43,15 @@ export default async function TopsoilPage({
     { q: t("faq.q2"), a: t("faq.a2") },
     { q: t("faq.q3"), a: t("faq.a3") },
   ];
-  const nav = await getTranslations("nav");
-  const baseUrl = getSiteUrl();
-  const breadcrumbItems = [
-    { name: nav("home"), url: `${baseUrl}${routes.home(locale)}` },
-    { name: nav("calculators"), url: `${baseUrl}${routes.calculators(locale)}` },
-    {
-      name: t("title"),
-      url: `${baseUrl}${routes.topsoil(locale)}`,
-    },
-  ];
 
   return (
     <div className="grid gap-8">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faq)) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbJsonLd(breadcrumbItems)),
-        }}
+      <CalculatorSeoJsonLd
+        locale={locale}
+        pathname="/calculators/home-improvement/topsoil"
+        title={t("metaTitle")}
+        description={t("metaDescription")}
+        faq={faq}
       />
 
       <div className="grid gap-2">

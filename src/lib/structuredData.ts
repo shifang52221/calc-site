@@ -23,3 +23,52 @@ export function breadcrumbJsonLd(items: Array<{ name: string; url: string }>) {
   };
 }
 
+export function webApplicationJsonLd({
+  name,
+  description,
+  url,
+  inLanguage,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  inLanguage: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name,
+    description,
+    url,
+    inLanguage,
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "All",
+    isAccessibleForFree: true,
+  };
+}
+
+export function articleJsonLd({
+  headline,
+  description,
+  url,
+  inLanguage,
+  publisherName,
+}: {
+  headline: string;
+  description: string;
+  url: string;
+  inLanguage: string;
+  publisherName: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline,
+    description,
+    url,
+    inLanguage,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    author: { "@type": "Organization", name: publisherName },
+    publisher: { "@type": "Organization", name: publisherName },
+  };
+}

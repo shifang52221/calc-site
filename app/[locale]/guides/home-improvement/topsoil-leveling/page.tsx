@@ -4,12 +4,12 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { normalizeLocale } from "@/i18n/locale";
 import { routes } from "@/lib/routes";
-import { getAlternates, getLocalizedUrl } from "@/lib/seo";
-import { faqJsonLd, breadcrumbJsonLd } from "@/lib/structuredData";
+import { getAlternates } from "@/lib/seo";
 import { GuideRelatedSection } from "@/components/GuideRelatedSection";
 import { GuideExtraContent } from "@/components/GuideExtraContent";
 import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
+import { GuideSeoJsonLd } from "@/components/GuideSeoJsonLd";
 
 export async function generateMetadata({
   params,
@@ -41,8 +41,6 @@ export default async function TopsoilLevelingGuidePage({
   setRequestLocale(locale);
   const t = await getTranslations("guideTopsoilLeveling");
   const common = await getTranslations("guidesCommon");
-  const nav = await getTranslations("nav");
-  const cards = await getTranslations("guidesCards");
 
   const faq = [
     { q: t("faq.q1"), a: t("faq.a1") },
@@ -50,26 +48,14 @@ export default async function TopsoilLevelingGuidePage({
     { q: t("faq.q3"), a: t("faq.a3") },
   ];
 
-  const breadcrumbs = [
-    { name: nav("home"), url: getLocalizedUrl(locale, "") },
-    { name: nav("guides"), url: getLocalizedUrl(locale, "/guides") },
-    {
-      name: cards("topsoilLevelingTitle"),
-      url: getLocalizedUrl(locale, "/guides/home-improvement/topsoil-leveling"),
-    },
-  ];
-
   return (
     <div className="mx-auto grid max-w-3xl gap-8">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbJsonLd(breadcrumbs)),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faq)) }}
+      <GuideSeoJsonLd
+        locale={locale}
+        pathname="/guides/home-improvement/topsoil-leveling"
+        title={t("metaTitle")}
+        description={t("metaDescription")}
+        faq={faq}
       />
 
       <div className="grid gap-2">
