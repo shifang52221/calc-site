@@ -15,16 +15,18 @@ export function getLocalizedUrl(locale: Locale, pathname: string) {
 }
 
 export function getAlternates(locale: Locale, pathname: string) {
+  const indexedLocales: readonly Locale[] = [routing.defaultLocale];
+  const canonicalLocale = routing.defaultLocale;
+
   const languages: Record<string, string> = {};
-  for (const l of routing.locales) {
+  for (const l of indexedLocales) {
     languages[l] = getLocalizedUrl(l, pathname);
   }
 
-  languages["x-default"] = getLocalizedUrl(routing.defaultLocale, pathname);
+  languages["x-default"] = getLocalizedUrl(canonicalLocale, pathname);
 
   return {
-    canonical: getLocalizedUrl(locale, pathname),
+    canonical: getLocalizedUrl(canonicalLocale, pathname),
     languages,
   };
 }
-
