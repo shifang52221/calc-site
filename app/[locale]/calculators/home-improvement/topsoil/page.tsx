@@ -44,6 +44,25 @@ export default async function TopsoilPage({
     { q: t("faq.q3"), a: t("faq.a3") },
   ];
 
+  const depthReference =
+    locale === "en"
+      ? {
+          title: "Topsoil depth quick reference (per 100 sq ft)",
+          rows: [
+            { depth: '1"', volume: "0.31 cu yd" },
+            { depth: '2"', volume: "0.62 cu yd" },
+            { depth: '3"', volume: "0.93 cu yd" },
+            { depth: '4"', volume: "1.23 cu yd" },
+            { depth: '6"', volume: "1.85 cu yd" },
+          ],
+          bullets: [
+            "Rule of thumb: 1 cubic yard covers about 324 sq ft at 1 inch depth.",
+            "For leveling, measure multiple spots and use an average thickness (low areas can add volume fast).",
+            "Topsoil quality varies by supplier; screened topsoil spreads easier and more evenly.",
+          ],
+        }
+      : null;
+
   return (
     <div className="grid gap-8">
       <CalculatorSeoJsonLd
@@ -66,6 +85,40 @@ export default async function TopsoilPage({
       <AdSlot slot={ADSENSE_SLOTS.calculatorAfterResult} />
 
       <CalculatorContent locale={locale} calculatorId="topsoil" variant="after" />
+
+      {depthReference ? (
+        <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+          <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+            {depthReference.title}
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[460px] border-collapse text-left">
+              <thead>
+                <tr className="border-b border-zinc-200 dark:border-zinc-800">
+                  <th className="py-2 pr-3 font-semibold">Depth</th>
+                  <th className="py-2 pr-3 font-semibold">Topsoil volume</th>
+                </tr>
+              </thead>
+              <tbody>
+                {depthReference.rows.map((row) => (
+                  <tr
+                    key={row.depth}
+                    className="border-b border-zinc-100 last:border-0 dark:border-zinc-900"
+                  >
+                    <td className="py-2 pr-3">{row.depth}</td>
+                    <td className="py-2 pr-3">{row.volume}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <ul className="grid list-disc gap-2 pl-5">
+            {depthReference.bullets.map((b) => (
+              <li key={b}>{b}</li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
 
       <section className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
         <h2 className="text-base font-semibold">{t("faqTitle")}</h2>

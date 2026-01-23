@@ -44,6 +44,22 @@ export default async function PaintPage({
     { q: t("faq.q3"), a: t("faq.a3") },
   ];
 
+  const coverageReference =
+    locale === "en"
+      ? {
+          title: "Paint coverage quick reference",
+          rows: [
+            { product: "Wall paint (typical)", coverage: "350-400 sq ft per gallon (per coat)" },
+            { product: "Primer (typical)", coverage: "250-400 sq ft per gallon (per coat)" },
+          ],
+          bullets: [
+            "Always prefer the exact product label coverage if you have it.",
+            "Texture, porosity, and big color changes can reduce coverage and increase coats.",
+            "Treat ceilings and trim as separate line items if they use different products.",
+          ],
+        }
+      : null;
+
   return (
     <div className="grid gap-8">
       <CalculatorSeoJsonLd
@@ -66,6 +82,40 @@ export default async function PaintPage({
       <AdSlot slot={ADSENSE_SLOTS.calculatorAfterResult} />
 
       <CalculatorContent locale={locale} calculatorId="paint" variant="after" />
+
+      {coverageReference ? (
+        <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+          <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+            {coverageReference.title}
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[520px] border-collapse text-left">
+              <thead>
+                <tr className="border-b border-zinc-200 dark:border-zinc-800">
+                  <th className="py-2 pr-3 font-semibold">Product</th>
+                  <th className="py-2 pr-3 font-semibold">Typical coverage</th>
+                </tr>
+              </thead>
+              <tbody>
+                {coverageReference.rows.map((row) => (
+                  <tr
+                    key={row.product}
+                    className="border-b border-zinc-100 last:border-0 dark:border-zinc-900"
+                  >
+                    <td className="py-2 pr-3">{row.product}</td>
+                    <td className="py-2 pr-3">{row.coverage}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <ul className="grid list-disc gap-2 pl-5">
+            {coverageReference.bullets.map((b) => (
+              <li key={b}>{b}</li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
 
       <section className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
         <h2 className="text-base font-semibold">{t("faqTitle")}</h2>

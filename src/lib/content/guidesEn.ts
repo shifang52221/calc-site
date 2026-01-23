@@ -124,11 +124,13 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     paragraphs: [
       "Ready-mix ordering is more than volume. Suppliers will ask about strength (PSI/MPa), slump, aggregate size, and whether you want fiber or admixtures. These choices can affect both cost and placement.",
       "If you’re doing a continuous pour, it’s usually safer to order a little extra than to risk coming up short. Finishing and curing conditions matter too—plan for timing, temperature, and access.",
+      "If your pour includes thickened edges, steps, or separate footings, estimate those parts separately and add them. Small geometry omissions are a common reason people come up short.",
     ],
     bullets: [
       "Confirm minimum load/delivery fees and how partial yards are billed.",
       "If you have footings/thickened edges, estimate them separately and add them in.",
       "Have a placement plan (wheelbarrow, chute access, or pump).",
+      "Confirm how the truck can access the forms and where washout will go.",
     ],
   },
   deck: {
@@ -228,11 +230,13 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     paragraphs: [
       "Roofing is typically priced in squares and bundles, but the real-world order depends on waste, ridge caps, starter strips, and underlayment. Complex roofs can require much more waste than simple gables.",
       "If you’re converting from footprint measurements, be careful: roof pitch increases surface area. Mixing footprint dimensions with slope dimensions is a common source of big errors.",
+      "Many material lists also miss accessories: ridge vent, drip edge, flashing, nails, and ice & water shield can be required by code or best practice depending on climate and roof details.",
     ],
     bullets: [
       "Account for ridge caps, starter, and underlayment separately.",
       "Use a higher waste factor for valleys/hips and lots of penetrations.",
       "Confirm bundles per square for your specific shingle.",
+      "If you have a low slope, confirm whether shingles are allowed or if you need a different system.",
     ],
   },
   "roofing-shed": {
@@ -264,11 +268,13 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     paragraphs: [
       "For leveling lawns, the biggest swing factor is average depth. A small change in depth across a large area can change yardage a lot, so it helps to take several depth checks and average them.",
       "If you’re topdressing over grass, you may want multiple light applications rather than one thick layer. That often improves coverage uniformity and reduces the risk of smothering grass.",
+      "If you are filling low spots, pre-mark the area and feather the edges. A sharp edge makes mowing and drainage worse, even if the final height is correct.",
     ],
     bullets: [
       "Measure a few spots for depth; don’t rely on a single low point.",
       "Plan extra for settling/compaction after watering and rolling.",
       "If mixing compost and topsoil, estimate each component separately.",
+      "Keep heavy equipment off wet soil; compaction can undo leveling work.",
     ],
   },
 };

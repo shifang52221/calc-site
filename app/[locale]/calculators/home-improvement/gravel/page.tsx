@@ -44,6 +44,23 @@ export default async function GravelPage({
     { q: t("faq.q3"), a: t("faq.a3") },
   ];
 
+  const conversionReference =
+    locale === "en"
+      ? {
+          title: "Gravel quick reference (yards to tons)",
+          rows: [
+            { material: "Crushed stone / gravel (typical range)", tonsPerYd3: "1.2-1.5 tons/yd³" },
+            { material: "Pea gravel (typical range)", tonsPerYd3: "1.2-1.4 tons/yd³" },
+            { material: "Base rock / road base (typical range)", tonsPerYd3: "1.3-1.6 tons/yd³" },
+          ],
+          bullets: [
+            "Density varies by product and moisture; ask your supplier for their exact conversion.",
+            "Compaction reduces loose volume, so a buffer is usually cheaper than a second delivery.",
+            "If you are doing layers (base + top), estimate and order them separately.",
+          ],
+        }
+      : null;
+
   return (
     <div className="grid gap-8">
       <CalculatorSeoJsonLd
@@ -66,6 +83,40 @@ export default async function GravelPage({
       <AdSlot slot={ADSENSE_SLOTS.calculatorAfterResult} />
 
       <CalculatorContent locale={locale} calculatorId="gravel" variant="after" />
+
+      {conversionReference ? (
+        <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+          <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+            {conversionReference.title}
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[560px] border-collapse text-left">
+              <thead>
+                <tr className="border-b border-zinc-200 dark:border-zinc-800">
+                  <th className="py-2 pr-3 font-semibold">Material</th>
+                  <th className="py-2 pr-3 font-semibold">Typical conversion</th>
+                </tr>
+              </thead>
+              <tbody>
+                {conversionReference.rows.map((row) => (
+                  <tr
+                    key={row.material}
+                    className="border-b border-zinc-100 last:border-0 dark:border-zinc-900"
+                  >
+                    <td className="py-2 pr-3">{row.material}</td>
+                    <td className="py-2 pr-3">{row.tonsPerYd3}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <ul className="grid list-disc gap-2 pl-5">
+            {conversionReference.bullets.map((b) => (
+              <li key={b}>{b}</li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
 
       <section className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
         <h2 className="text-base font-semibold">{t("faqTitle")}</h2>

@@ -19,26 +19,26 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
   {
     concrete: {
       quick: [
-        "Measure slab length × width and confirm the thickness (inches or cm).",
+        "Measure slab length x width and confirm the thickness (inches or cm).",
         "Use finished (installed) dimensions, not forms that will be trimmed.",
-        "Add a buffer for over-excavation, spillage, and uneven subgrade (often 5–10%).",
+        "Add a buffer for over-excavation, spillage, and uneven subgrade (often 5-10%).",
       ],
       deepDiveTitle: "Why thickness drives cost",
       deepDive: [
-        "Concrete volume is area × thickness, so small thickness changes can add up fast on larger slabs. When you’re near a delivery minimum, rounding and buffers can affect price more than the raw math.",
+        "Concrete volume is area x thickness, so small thickness changes can add up fast on larger slabs. When you're near a delivery minimum, rounding and buffers can affect price more than the raw math.",
         "If your pour includes thickened edges, grade beams, or footings, estimate those separately and add them to the slab volume for a more reliable order.",
       ],
       howToMeasureTitle: "How to measure your slab",
       howToMeasureSteps: [
         "Split complex shapes into rectangles and add their areas.",
-        "Convert thickness to feet (in ÷ 12) or meters (cm ÷ 100) before volume math.",
+        "Convert thickness to feet (in / 12) or meters (cm / 100) before volume math.",
         "If edges are thickened or there are footings, estimate those separately.",
       ],
       assumptionsTitle: "Assumptions to double-check",
       assumptions: [
         "Thickness is average thickness across the whole pour (high/low spots change volume).",
         "Concrete is ordered by volume (cubic yards/meters); suppliers may have minimums.",
-        "Ordering short can stop a pour—buffers are usually cheaper than a second delivery.",
+        "Ordering short can stop a pour; buffers are usually cheaper than a second delivery.",
       ],
       buyingTipsTitle: "Ordering tips",
       buyingTips: [
@@ -49,8 +49,8 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       commonMistakesTitle: "Common mistakes to avoid",
       commonMistakes: [
         "Using form dimensions instead of finished dimensions (or forgetting to subtract voids).",
-        "Forgetting thickened edges/footings when they’re part of the same pour.",
-        "Ordering with no buffer for subgrade variation—ordering short is usually the most expensive outcome.",
+        "Forgetting thickened edges/footings when they're part of the same pour.",
+        "Ordering with no buffer for subgrade variation; ordering short is usually the most expensive outcome.",
       ],
       lastUpdated: "Last updated: Dec 2025",
     },
@@ -414,27 +414,27 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
     },
     gravel: {
       quick: [
-        "Measure length × width (or total area) in feet or meters.",
-        "Use a realistic depth (many projects are 2–6 inches).",
+        "Measure length x width (or total area) in feet or meters.",
+        "Use a realistic depth (many projects are 2-6 inches).",
         "Add a small buffer for compaction and uneven base.",
       ],
       deepDiveTitle: "Depth and compaction matter",
       deepDive: [
         "Gravel is planned by volume but often purchased by weight. Density varies by product type and moisture, so conversions differ between suppliers.",
-        "Depth is the biggest swing factor—confirm whether your depth is loose depth or compacted depth and add a buffer for uneven base.",
-        "If you’re building a driveway or base layer, depth recommendations vary—use your local supplier’s guidance for your specific aggregate and use case.",
+        "Depth is the biggest swing factor; confirm whether your depth is loose depth or compacted depth and add a buffer for uneven base.",
+        "If you're building a driveway or base layer, depth recommendations vary; use your local supplier's guidance for your specific aggregate and use case.",
       ],
       howToMeasureTitle: "How to measure your area",
       howToMeasureSteps: [
-        "For rectangles: area = length × width. For circles: area = π × r^2.",
+        "For rectangles: area = length x width. For circles: area = pi x r^2.",
         "Break irregular shapes into rectangles, add them, and round up slightly.",
-        "Convert depth to feet (in ÷ 12) or meters (cm ÷ 100).",
+        "Convert depth to feet (in / 12) or meters (cm / 100).",
       ],
       assumptionsTitle: "Assumptions to double-check",
       assumptions: [
         "Depth is average depth after grading (low spots can increase volume).",
-        "Material type affects density; supplier conversions (yards → tons) vary.",
-        "Compaction can reduce loose volume—buffers help avoid a second delivery.",
+        "Material type affects density; supplier conversions (yards -> tons) vary.",
+        "Compaction can reduce loose volume; buffers help avoid a second delivery.",
       ],
       buyingTipsTitle: "Buying tips",
       buyingTips: [
@@ -446,7 +446,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       commonMistakes: [
         "Using loose depth when you need compacted depth (or vice versa).",
         "Assuming one universal density for all gravel types.",
-        "Forgetting base prep—soft subgrade can consume more material than expected.",
+        "Forgetting base prep; soft subgrade can consume more material than expected.",
       ],
       lastUpdated: "Last updated: Dec 2025",
     },
@@ -493,23 +493,23 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
     },
     mulch: {
       quick: [
-        "Measure your beds’ area and pick a target depth (often 2–4 inches).",
+        "Measure your bed area and pick a target depth (often 2-4 inches).",
         "Convert depth to feet/meters before volume math.",
         "Add a small buffer for settling and uneven beds.",
       ],
       deepDiveTitle: "Depth targets depend on the goal",
       deepDive: [
         "Mulch estimates depend on the depth you end up with after raking and leveling. Irregular bed edges and existing plantings can change effective area.",
-        "If you’re refreshing mulch, consider whether you’re topping off an existing layer or removing old mulch first—your depth target changes.",
-        "Color fade and settling mean “one yard” can look different after a few weeks—plan a little extra if you want consistent appearance across beds.",
-        "If you’re using mulch for weed control, depth matters more than most people expect—too thin looks fine on day one, then weeds pop quickly.",
+        "If you're refreshing mulch, consider whether you're topping off an existing layer or removing old mulch first; your depth target changes.",
+        "Color fade and settling mean \"one yard\" can look different after a few weeks; plan a little extra if you want consistent appearance across beds.",
+        "If you're using mulch for weed control, depth matters more than most people expect; too thin looks fine on day one, then weeds pop quickly.",
       ],
       howToMeasureTitle: "How to measure mulch coverage",
       howToMeasureSteps: [
-        "Measure each bed (length × width), add them for total area.",
-        "Exclude hardscape and established groundcover you won’t cover.",
+        "Measure each bed (length x width), add them for total area.",
+        "Exclude hardscape and established groundcover you won't cover.",
         "Choose a depth based on your goal (appearance vs weed suppression).",
-        "For irregular shapes, over-measure slightly instead of trying to be perfect—waste is usually cheaper than a second trip.",
+        "For irregular shapes, over-measure slightly instead of trying to be perfect; waste is usually cheaper than a second trip.",
       ],
       assumptionsTitle: "Assumptions to double-check",
       assumptions: [
@@ -521,16 +521,16 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       buyingTipsTitle: "Buying tips",
       buyingTips: [
         "Confirm bag size or bulk yard coverage with your supplier.",
-        "Don’t pile mulch against tree trunks (avoid “mulch volcano”).",
+        "Don't pile mulch against tree trunks (avoid \"mulch volcano\").",
         "Order a little extra for touch-ups and areas you may expand later.",
-        "If color matching matters, buy enough at once—bags/lots can vary between shipments.",
+        "If color matching matters, buy enough at once; bags/lots can vary between shipments.",
       ],
       commonMistakesTitle: "Common mistakes to avoid",
       commonMistakes: [
         "Using an unrealistic depth (too thin for weed suppression or too thick around plants).",
-        "Forgetting settling—mulch can look thinner after rain and raking.",
+        "Forgetting settling; mulch can look thinner after rain and raking.",
         "Not accounting for irregular bed edges and obstacles that change effective area.",
-        "Putting mulch over weeds without prep (many weeds will grow right through if you don’t clear first).",
+        "Putting mulch over weeds without prep (many weeds will grow right through if you don't clear first).",
       ],
       lastUpdated: "Last updated: Dec 2025",
     },
