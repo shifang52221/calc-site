@@ -44,6 +44,15 @@ export default async function DeckMudPage({
     { q: t("faq.q3"), a: t("faq.a3") },
   ];
 
+  const coverageRows =
+    locale === "en"
+      ? [0.5, 0.75, 1, 1.25, 1.5, 2, 2.5, 3].map((thicknessIn) => ({
+          thicknessIn,
+          sqFtPerCuFt: 12 / thicknessIn,
+          sqFtPerCuYd: 324 / thicknessIn,
+        }))
+      : null;
+
   return (
     <div className="grid gap-8">
       <CalculatorSeoJsonLd
@@ -66,6 +75,57 @@ export default async function DeckMudPage({
       <AdSlot slot={ADSENSE_SLOTS.calculatorAfterResult} />
 
       <CalculatorContent locale={locale} calculatorId="deckMud" variant="after" />
+
+      {coverageRows ? (
+        <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+          <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+            Deck mud coverage chart (quick reference)
+          </h2>
+          <p>
+            Coverage is based on simple volume math (before waste): 1 cu ft covers{" "}
+            {`12 ÷ thickness(in)`} sq ft, and 1 cu yd (27 cu ft) covers{" "}
+            {`324 ÷ thickness(in)`} sq ft.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[520px] border-collapse text-left">
+              <thead>
+                <tr className="border-b border-zinc-200 dark:border-zinc-800">
+                  <th className="py-2 pr-3 font-semibold">Thickness</th>
+                  <th className="py-2 pr-3 font-semibold">
+                    Coverage per 1 cu ft
+                  </th>
+                  <th className="py-2 pr-3 font-semibold">
+                    Coverage per 1 cu yd
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {coverageRows.map((row) => (
+                  <tr
+                    key={row.thicknessIn}
+                    className="border-b border-zinc-100 last:border-0 dark:border-zinc-900"
+                  >
+                    <td className="py-2 pr-3">
+                      {row.thicknessIn}
+                      &quot;
+                    </td>
+                    <td className="py-2 pr-3">
+                      {row.sqFtPerCuFt.toFixed(1)} sq ft
+                    </td>
+                    <td className="py-2 pr-3">
+                      {row.sqFtPerCuYd.toFixed(0)} sq ft
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-zinc-500 dark:text-zinc-400">
+            Tip: If you’re building a shower slope, use the average of perimeter
+            thickness and drain thickness, then add a buffer for waste and cleanup.
+          </p>
+        </section>
+      ) : null}
 
       <section className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
         <h2 className="text-base font-semibold">{t("faqTitle")}</h2>
