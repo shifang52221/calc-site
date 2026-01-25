@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 
 import { normalizeLocale } from "@/i18n/locale";
@@ -8,6 +8,7 @@ import { getAlternates, getLocalizedUrl } from "@/lib/seo";
 import { routes } from "@/lib/routes";
 import { SITE_NAME } from "@/lib/site";
 import { RESOURCE_ARTICLES_EN } from "@/lib/content/resourcesEn";
+import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/structuredData";
 
@@ -24,13 +25,14 @@ export async function generateMetadata({
   const locale = normalizeLocale(rawLocale);
   setRequestLocale(locale);
 
-  const article = getArticle(slug);
+  const redirected = RESOURCE_REDIRECTS_EN[slug];
+  const article = getArticle(redirected ?? slug);
   if (!article) return {};
 
   return {
     title: `${article.title} | ${SITE_NAME}`,
     description: article.description,
-    alternates: getAlternates(locale, `/resources/${slug}`),
+    alternates: getAlternates(locale, `/resources/${redirected ?? slug}`),
   };
 }
 
@@ -42,6 +44,11 @@ export default async function ResourceArticlePage({
   const { locale: rawLocale, slug } = await params;
   const locale = normalizeLocale(rawLocale);
   setRequestLocale(locale);
+
+  const redirected = RESOURCE_REDIRECTS_EN[slug];
+  if (redirected) {
+    permanentRedirect(getLocalizedUrl(locale, `/resources/${redirected}`));
+  }
 
   const article = getArticle(slug);
   if (!article) return notFound();

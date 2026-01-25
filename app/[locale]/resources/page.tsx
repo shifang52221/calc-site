@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { normalizeLocale } from "@/i18n/locale";
 import { getAlternates } from "@/lib/seo";
 import { RESOURCE_ARTICLES_EN } from "@/lib/content/resourcesEn";
+import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 
 export async function generateMetadata({
   params,
@@ -45,7 +46,9 @@ export default async function ResourcesIndexPage({
       </section>
 
       <div className="grid gap-3">
-        {RESOURCE_ARTICLES_EN.map((article) => (
+        {RESOURCE_ARTICLES_EN.filter(
+          (article) => !RESOURCE_REDIRECTS_EN[article.slug],
+        ).map((article) => (
           <Link
             key={article.slug}
             href={`/${locale}/resources/${article.slug}`}

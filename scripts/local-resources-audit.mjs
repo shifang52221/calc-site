@@ -69,6 +69,28 @@ async function main() {
   const top = Number(args.get("top") ?? 30);
   const min = Number(args.get("min") ?? 0);
 
+  const redirectsArg = args.get("redirects");
+  const defaultRedirectsPath = path.resolve(
+    process.cwd(),
+    path.join("docs", "resources-redirects.json"),
+  );
+  const redirectsPath =
+    redirectsArg === "false"
+      ? null
+      : path.resolve(
+          process.cwd(),
+          redirectsArg ? String(redirectsArg) : defaultRedirectsPath,
+        );
+
+  let redirects = null;
+  try {
+    if (redirectsPath && fs.existsSync(redirectsPath)) {
+      redirects = JSON.parse(fs.readFileSync(redirectsPath, "utf8"));
+    }
+  } catch {
+    redirects = null;
+  }
+
   const filePath = path.resolve(process.cwd(), relPath);
   const text = fs.readFileSync(filePath, "utf8");
 
@@ -78,6 +100,7 @@ async function main() {
       slug,
       estimatedWords: estimateWordCountFromBlock(block),
     }))
+    .filter((r) => !(redirects && redirects[r.slug]))
     .sort((a, b) => a.estimatedWords - b.estimatedWords);
 
   const thin = min > 0 ? scored.filter((r) => r.estimatedWords < min) : scored;
@@ -88,6 +111,15 @@ async function main() {
         file: relPath.replace(/\\/g, "/"),
         articles: blocks.length,
         thresholds: min > 0 ? { minWords: min } : undefined,
+        redirects: redirects
+          ? {
+              enabled: true,
+              file: path
+                .relative(process.cwd(), redirectsPath)
+                .replace(/\\/g, "/"),
+              excludedCount: Object.keys(redirects).length,
+            }
+          : { enabled: false },
         thinCount: thin.length,
         topLowest: thin.slice(0, top),
       },

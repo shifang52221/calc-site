@@ -9,6 +9,7 @@ import { CALCULATOR_CARDS } from "@/lib/calculatorsCatalog";
 import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
 import { RESOURCE_ARTICLES_EN } from "@/lib/content/resourcesEn";
+import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 import { SITE_NAME } from "@/lib/site";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
 import { organizationJsonLd, webSiteJsonLd } from "@/lib/structuredData";
@@ -42,7 +43,15 @@ export default async function HomePage({
   const nav = await getTranslations("nav");
 
   const featuredResources =
-    locale === "en" ? RESOURCE_ARTICLES_EN.slice(0, 6) : [];
+    locale === "en"
+      ? RESOURCE_ARTICLES_EN.filter(
+          (article) =>
+            !Object.prototype.hasOwnProperty.call(
+              RESOURCE_REDIRECTS_EN,
+              article.slug,
+            ),
+        ).slice(0, 6)
+      : [];
   const homeUrl = getLocalizedUrl(locale, "");
 
   return (

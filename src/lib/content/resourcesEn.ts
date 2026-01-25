@@ -109,6 +109,13 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "A planning range like 350–400 sq ft per gallon is fine for first-pass budgeting, but the label on the exact product wins. Coverage can drop when you have heavy texture, porous walls, or lots of cut-in work (edges, corners, and trim lines).",
           "Trim and doors can have different coverage than walls because profiles add surface area and prep can change how paint lays down. Treat trim and doors as separate line items if you want a reliable plan.",
         ],
+        bullets: [
+          "Fresh drywall, patches, and other porous surfaces often need primer and usually reduce coverage.",
+          "Heavy texture and rough surfaces reduce coverage compared to smooth walls.",
+          "Big color changes and deep colors often require extra coats for an even finish.",
+          "Ceilings take more cut-in work around fixtures and edges, so add a buffer (often 5–10%) and round up to whole cans.",
+          "Textured ceilings and stained areas benefit from stain-blocking primer before finish paint.",
+        ],
       },
       {
         heading: "Sheen selection (practical guidance)",
@@ -3225,10 +3232,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Trim profiles add surface area, so linear feet alone can under-estimate. Estimating trim separately (and keeping a touch-up buffer) makes your plan more reliable than mixing it into wall area.",
         ],
       },
+      {
+        heading: "Trim area from linear feet (simple method)",
+        paragraphs: [
+          "A simple estimating shortcut is: trim area (sq ft) = total linear feet × average face width (in feet). Example: 300 ft of baseboard at 3.5 in face width is 300 × (3.5/12) ≈ 87.5 sq ft per coat.",
+        ],
+        bullets: [
+          "Door and window casings add more area than most people expect.",
+          "Glossy trim needs better prep (clean + scuff sand) and often primer for reliable adhesion.",
+        ],
+      },
     ],
     related: [
       { label: "Paint calculator", href: "/en/calculators/home-improvement/paint" },
-      { label: "Trim area from linear feet", href: "/en/resources/trim-paint-area-from-linear-feet" },
+      { label: "Primer vs paint: when to prime", href: "/en/resources/primer-vs-paint-when-to-prime" },
       { label: "Baseboard waste tips", href: "/en/resources/baseboard-trim-waste-tips" },
     ],
   },

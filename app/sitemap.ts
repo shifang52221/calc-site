@@ -6,6 +6,7 @@ import { routes } from "@/lib/routes";
 import { CALCULATOR_CATEGORIES, CALCULATORS } from "@/lib/calculatorsCatalog";
 import { GUIDE_DEFINITIONS } from "@/lib/guidesCatalog";
 import { RESOURCE_ARTICLES_EN } from "@/lib/content/resourcesEn";
+import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
@@ -13,6 +14,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
+  const resourceArticles = RESOURCE_ARTICLES_EN.filter(
+    (article) =>
+      !Object.prototype.hasOwnProperty.call(RESOURCE_REDIRECTS_EN, article.slug),
+  );
 
   for (const locale of locales) {
     const urls: string[] = [
@@ -32,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       ),
       ...CALCULATORS.map((calculator) => `${baseUrl}${calculator.href(locale)}`),
       ...GUIDE_DEFINITIONS.map((guide) => `${baseUrl}${guide.href(locale)}`),
-      ...RESOURCE_ARTICLES_EN.map(
+      ...resourceArticles.map(
         (article) => `${baseUrl}${routes.resources(locale)}/${article.slug}`,
       ),
     ];
