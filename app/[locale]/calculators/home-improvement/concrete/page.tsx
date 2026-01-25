@@ -9,6 +9,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
 import { CalculatorContent } from "@/components/CalculatorContent";
 import { CalculatorSeoJsonLd } from "@/components/CalculatorSeoJsonLd";
+import { CalculatorReferenceSection } from "@/components/CalculatorReferenceSection";
 
 export async function generateMetadata({
   params,
@@ -44,24 +45,6 @@ export default async function ConcretePage({
     { q: t("faq.q3"), a: t("faq.a3") },
   ];
 
-  const quickReference =
-    locale === "en"
-      ? {
-          title: "Concrete quick reference (per 100 sq ft)",
-          rows: [
-            { thickness: '3" (0.25 ft)', volume: "0.93 cu yd" },
-            { thickness: '4" (0.33 ft)', volume: "1.23 cu yd" },
-            { thickness: '5" (0.42 ft)', volume: "1.54 cu yd" },
-            { thickness: '6" (0.50 ft)', volume: "1.85 cu yd" },
-          ],
-          bullets: [
-            "1 cubic yard = 27 cubic feet.",
-            "Add a buffer for uneven subgrade, spillage, and rounding (often 5-10%).",
-            "If you have thickened edges, grade beams, or footings, estimate those separately and add them.",
-          ],
-        }
-      : null;
-
   return (
     <div className="grid gap-8">
       <CalculatorSeoJsonLd
@@ -85,39 +68,7 @@ export default async function ConcretePage({
 
       <CalculatorContent locale={locale} calculatorId="concrete" variant="after" />
 
-      {quickReference ? (
-        <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
-          <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
-            {quickReference.title}
-          </h2>
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[460px] border-collapse text-left">
-              <thead>
-                <tr className="border-b border-zinc-200 dark:border-zinc-800">
-                  <th className="py-2 pr-3 font-semibold">Slab thickness</th>
-                  <th className="py-2 pr-3 font-semibold">Concrete volume</th>
-                </tr>
-              </thead>
-              <tbody>
-                {quickReference.rows.map((row) => (
-                  <tr
-                    key={row.thickness}
-                    className="border-b border-zinc-100 last:border-0 dark:border-zinc-900"
-                  >
-                    <td className="py-2 pr-3">{row.thickness}</td>
-                    <td className="py-2 pr-3">{row.volume}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <ul className="grid list-disc gap-2 pl-5">
-            {quickReference.bullets.map((b) => (
-              <li key={b}>{b}</li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
+      <CalculatorReferenceSection locale={locale} calculatorId="concrete" />
 
       <section className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
         <h2 className="text-base font-semibold">{t("faqTitle")}</h2>

@@ -9,6 +9,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
 import { CalculatorContent } from "@/components/CalculatorContent";
 import { CalculatorSeoJsonLd } from "@/components/CalculatorSeoJsonLd";
+import { CalculatorReferenceSection } from "@/components/CalculatorReferenceSection";
 
 export async function generateMetadata({
   params,
@@ -77,6 +78,8 @@ export default async function WallpaperRollsPage({
         calculatorId="wallpaperRolls"
         variant="after"
       />
+
+      <CalculatorReferenceSection locale={locale} calculatorId="wallpaperRolls" />
 
       <section className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
         <h2 className="text-base font-semibold">{t("faqTitle")}</h2>
