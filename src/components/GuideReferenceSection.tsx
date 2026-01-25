@@ -20,6 +20,59 @@ type GuideReferenceBlock = {
 };
 
 const REFERENCES_EN: Partial<Record<GuideId, GuideReferenceBlock>> = {
+  deck: {
+    title: "Decking estimate checklist (quick)",
+    intro:
+      "Deck projects run over budget when board direction, gaps, and stairs aren’t planned up front. Use this checklist before you buy materials.",
+    bullets: [
+      "Confirm board direction and whether you’re adding borders/picture framing (more waste).",
+      "Use actual board width (not nominal) and decide on a gap—both change coverage.",
+      "Estimate stairs and landings separately; they can add board count quickly.",
+    ],
+    calculatorHref: routes.deck,
+    related: [
+      { label: "Board gap & coverage", href: "/en/resources/deck-board-gap-and-coverage" },
+      { label: "Diagonal layout waste", href: "/en/resources/deck-diagonal-waste-guide" },
+    ],
+  },
+  fence: {
+    title: "Fence estimating checklist (panels vs pickets)",
+    intro:
+      "Fence materials are sold differently depending on system type. Decide whether you’re building with panels or pickets before you estimate.",
+    bullets: [
+      "Panel fences are often sized by section length (6 ft/8 ft); pickets are counted individually.",
+      "Corners, ends, and gates require extra posts and hardware that aren’t in simple run-length math.",
+      "Confirm local requirements for post depth (frost line) and spacing.",
+    ],
+    calculatorHref: routes.fence,
+    related: [
+      { label: "Panel vs picket estimate", href: "/en/resources/fence-panel-vs-picket-estimate" },
+      { label: "Post hole concrete guide", href: "/en/resources/fence-post-hole-concrete-guide" },
+    ],
+  },
+  "fence-posts": {
+    title: "Fence posts: spacing and corner rules",
+    intro:
+      "Post count is not just length ÷ spacing. Corners, ends, and gates create “extra” posts that should be planned explicitly.",
+    table: {
+      columns: ["Spacing (typical)", "When used", "Reminder"],
+      rows: [
+        ["6 ft", "Common for 6 ft panels", "Match the panel system length"],
+        ["8 ft", "Common for 8 ft panels", "Longer spans need straighter runs"],
+        ["Custom", "Picket fences", "Pickets still need posts at fixed spacing"],
+      ],
+    },
+    bullets: [
+      "Add posts for corners, ends, and each gate opening (often extra bracing too).",
+      "Slopes can require stepping/racking, which changes layout and post planning.",
+      "Depth matters: post length changes with fence height and embedment.",
+    ],
+    calculatorHref: routes.fence,
+    related: [
+      { label: "Fence post hole concrete", href: "/en/resources/fence-post-hole-concrete-guide" },
+      { label: "Panel vs picket estimating", href: "/en/resources/fence-panel-vs-picket-estimate" },
+    ],
+  },
   paint: {
     title: "Paint planning quick reference",
     intro:
@@ -170,6 +223,21 @@ const REFERENCES_EN: Partial<Record<GuideId, GuideReferenceBlock>> = {
       { label: "Squares and bundles explained", href: "/en/resources/roofing-squares-and-bundles-explained" },
     ],
   },
+  "roofing-shed": {
+    title: "Small roof (shed) checklist",
+    intro:
+      "Small roofs are simple, but rounding and accessories are a bigger share of the total. Don’t estimate only shingles.",
+    bullets: [
+      "Confirm roof pitch and surface area (footprint is not surface area).",
+      "Order accessories: underlayment, drip edge, starter, ridge cap, and nails.",
+      "Round up to whole bundles; keep extras for repairs (batch matching matters).",
+    ],
+    calculatorHref: routes.roofing,
+    related: [
+      { label: "Roof pitch multiplier", href: "/en/resources/roof-pitch-area-multiplier" },
+      { label: "Starter & ridge cap", href: "/en/resources/roofing-starter-and-ridge-cap" },
+    ],
+  },
   gravel: {
     title: "Gravel layers & compaction notes",
     intro:
@@ -185,6 +253,21 @@ const REFERENCES_EN: Partial<Record<GuideId, GuideReferenceBlock>> = {
       { label: "Tons conversion notes", href: "/en/guides/home-improvement/gravel-tons" },
     ],
   },
+  "gravel-tons": {
+    title: "Yards to tons: avoid conversion mistakes",
+    intro:
+      "Tons depend on density. The safest approach is to use your supplier’s conversion for the exact product you’re buying.",
+    bullets: [
+      "Ask whether they use short tons (US) or metric tonnes.",
+      "Moisture and product type change density; generic charts are only a starting point.",
+      "Round up near delivery minimums to avoid a second load fee.",
+    ],
+    calculatorHref: routes.gravelTons,
+    related: [
+      { label: "Yards-to-tons guide", href: "/en/resources/gravel-yards-to-tons-guide" },
+      { label: "Tons vs tonnes", href: "/en/resources/gravel-tons-vs-tonnes" },
+    ],
+  },
   mulch: {
     title: "Mulch depth & safety checklist",
     intro:
@@ -198,6 +281,21 @@ const REFERENCES_EN: Partial<Record<GuideId, GuideReferenceBlock>> = {
     related: [
       { label: "Mulch calculator", href: "/en/calculators/home-improvement/mulch" },
       { label: "Mulch depth guide", href: "/en/guides/home-improvement/mulch-depth" },
+    ],
+  },
+  "mulch-depth": {
+    title: "Mulch depth quick rules",
+    intro:
+      "Depth targets depend on goal and plant health. Use these rules to choose a depth before you calculate volume.",
+    bullets: [
+      "Beds commonly use 2–4 inches; too thin won’t suppress weeds well.",
+      "Keep mulch away from trunks and stems; avoid “mulch volcanoes”.",
+      "Depth settles after rain/watering—plan a small buffer if appearance matters.",
+    ],
+    calculatorHref: routes.mulch,
+    related: [
+      { label: "Mulch coverage chart", href: "/en/resources/mulch-coverage-chart" },
+      { label: "1/2/3 inch depth reference", href: "/en/resources/mulch-depth-1-2-3-inches" },
     ],
   },
   topsoil: {
@@ -231,6 +329,51 @@ const REFERENCES_EN: Partial<Record<GuideId, GuideReferenceBlock>> = {
       { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
       { label: "Topsoil coverage chart", href: "/en/resources/topsoil-coverage-chart" },
       { label: "Feathering guide", href: "/en/resources/topsoil-leveling-feathering-guide" },
+    ],
+  },
+  "paint-ceiling": {
+    title: "Ceiling paint: cut-in & coverage notes",
+    intro:
+      "Ceilings often need more cut-in work than expected. Treat cut-in, repairs, and stains as separate risk factors, not just area math.",
+    bullets: [
+      "Textured ceilings usually reduce coverage and can require extra paint.",
+      "Stains often require stain-blocking primer before paint.",
+      "Plan extra for cut-in around edges and fixtures; it increases waste and time.",
+    ],
+    calculatorHref: routes.paint,
+    related: [
+      { label: "Cut-in buffer tips", href: "/en/resources/ceiling-paint-cut-in-buffer" },
+      { label: "Paint coverage per gallon", href: "/en/resources/paint-coverage-per-gallon-guide" },
+    ],
+  },
+  "paint-trim": {
+    title: "Trim paint: area and prep checklist",
+    intro:
+      "Trim painting is often limited by prep, not gallons. Estimate trim separately and plan for sanding/cleaning/primer when needed.",
+    bullets: [
+      "If existing trim is glossy, scuff sand and clean before painting (adhesion risk).",
+      "Trim profiles add surface area; linear feet alone can under-estimate material.",
+      "Plan for 1–2 coats and keep extra for future touch-ups.",
+    ],
+    calculatorHref: routes.paint,
+    related: [
+      { label: "Trim area from linear feet", href: "/en/resources/trim-paint-area-from-linear-feet" },
+      { label: "Baseboard waste tips", href: "/en/resources/baseboard-trim-waste-tips" },
+    ],
+  },
+  "drywall-ceiling": {
+    title: "Ceiling drywall thickness (quick)",
+    intro:
+      "Ceilings can sag if thickness doesn’t match framing spacing. Confirm spacing and choose an appropriate board type.",
+    bullets: [
+      "For 16\" on center, 1/2\" is common; for 24\" on center, 5/8\" is common (verify local code/manufacturer guidance).",
+      "Sag-resistant 1/2\" boards exist and can be a good compromise.",
+      "Handling matters: fewer seams isn’t worth unsafe overhead lifting.",
+    ],
+    calculatorHref: routes.drywall,
+    related: [
+      { label: "Ceiling thickness guide", href: "/en/resources/drywall-ceiling-thickness-guide" },
+      { label: "Sheet sizes reference", href: "/en/resources/drywall-sheet-sizes-4x8-4x10-4x12" },
     ],
   },
 };
