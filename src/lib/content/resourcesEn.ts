@@ -529,9 +529,33 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Rule of thumb (fast mental math)",
+        paragraphs: [
+          "A useful shortcut: 100 sq ft at 1 inch depth is about 0.31 cubic yards. Scale that by depth. For example, 250 sq ft at 2 inches is 0.62 cu yd per 100 sq ft x 2.5 = about 1.55 cu yd.",
+          "This is for planning and ordering. Real jobs need a buffer because lawns are not perfectly flat and material compacts and settles.",
+        ],
+      },
+      {
         heading: "Leveling tip that prevents over-ordering",
         paragraphs: [
           "Do not measure depth from only the lowest spot. Take multiple depth checks and use an average thickness across the area. A single low spot can make you over-order by a lot.",
+        ],
+      },
+      {
+        heading: "When to add extra (common real-world drivers)",
+        bullets: [
+          "If you are filling low spots, the average depth is often higher than it looks from one location.",
+          "If you plan to rake and feather edges, your “coverage area” expands beyond the obvious low spot.",
+          "If you will compact or roll, plan for settlement (especially on thicker fills).",
+          "If you have clay soil or poor drainage, check grading plans before adding significant thickness.",
+        ],
+      },
+      {
+        heading: "Practical ordering checklist",
+        bullets: [
+          "Confirm whether your supplier sells by cubic yard, ton, or bag (do not mix units).",
+          "If sold by tons, use supplier-specific conversion (moisture and product type change density).",
+          "Order in whole increments you can handle: bags, half-yard, or full-yard deliveries depending on access.",
         ],
       },
     ],
@@ -561,6 +585,37 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Why ceilings are different from walls",
         paragraphs: [
           "Ceilings are more sensitive to sag and lighting. Even if 1/2 inch board is allowed, many people choose 5/8 inch on ceilings for stiffness and a flatter finished look under raking light.",
+          "Ceilings also tend to carry more long-term load from insulation or attic air movement effects. Small deflection can show up later as waves or seams that are harder to hide once everything is painted.",
+        ],
+      },
+      {
+        heading: "How to choose between 1/2 and 5/8 (decision checklist)",
+        bullets: [
+          'If framing is 24" on center, 5/8" is a common safer choice for sag resistance.',
+          "If the ceiling will be under strong directional light (large windows, long hallways), stiffer board usually looks flatter.",
+          "If you are working alone or access is difficult, 1/2 inch may be easier to handle safely—but use proper support and confirm it meets the product span guidance.",
+          "In garages or assemblies where fire resistance matters, local requirements may influence product choice (confirm locally).",
+        ],
+      },
+      {
+        heading: "Layout planning (seams matter as much as sheet count)",
+        paragraphs: [
+          "For ceilings, the goal is usually fewer seams in the most visible areas. Longer sheets can reduce butt joints, but only if you can install them safely and accurately.",
+          "A good planning approach is to sketch your ceiling, mark lighting features and the main view direction, then choose a layout that keeps joints away from the most noticeable sight lines.",
+        ],
+        bullets: [
+          "Prefer fewer butt joints; long butt seams can telegraph under light.",
+          "Avoid lining up ceiling butt joints in a straight line across the room when possible.",
+          "If you must patch or break sheets, keep seams away from prominent fixtures and skylights.",
+        ],
+      },
+      {
+        heading: "Common mistakes that lead to sag or cracking",
+        bullets: [
+          "Using the wrong thickness for wide framing spacing.",
+          "Inadequate fastening pattern or missed framing members.",
+          "Skipping proper joint treatment at changes in plane or where framing moves.",
+          "Overloading the ceiling with storage or hanging loads not designed for drywall.",
         ],
       },
       {
@@ -1030,11 +1085,32 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Texture type changes material fast",
+        paragraphs: [
+          "Texture is not one product: knockdown, orange peel, skip trowel, and heavy stomp patterns can use very different amounts of material for the same wall area.",
+          "Spray texture can seem efficient, but overspray, practice time, and equipment cleanup are where extra material disappears.",
+        ],
+      },
+      {
+        heading: "Coats and rework (where waste comes from)",
+        bullets: [
+          "Second coats can be close to a full coat if the first coat is light or if you need a consistent finish.",
+          "Repairs and patches often need extra blending area (you texture beyond the patch).",
+          "Sanding and knockdown changes how much material stays on the wall.",
+        ],
+      },
+      {
         heading: "Planning tips",
         bullets: [
           "If you are new, plan extra for practice and cleanup.",
           "Spraying and sanding can increase waste.",
           "Round up; matching texture mid-wall can be difficult if you run short.",
+        ],
+      },
+      {
+        heading: "Practical workflow tip (keeps estimates reliable)",
+        paragraphs: [
+          "Do a small test wall or a large scrap board first. Measure how much material you used, then scale up. Even a quick test run can tell you whether you need one coat or two and whether your tool setup is wasting material.",
         ],
       },
     ],
@@ -1187,6 +1263,19 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "How to use the multiplier",
+        paragraphs: [
+          "Use the multiplier to convert footprint (horizontal) area into roof surface area. For a simple gable roof, you can often estimate roof area as footprint area x pitch multiplier, then add waste based on complexity.",
+          "If your roof has multiple planes with different pitches, apply the multiplier per plane for a more accurate estimate.",
+        ],
+      },
+      {
+        heading: "Worked example (simple planning)",
+        paragraphs: [
+          "If a roof footprint is 1,600 sq ft and the pitch is 6/12, the roof surface area is about 1,600 x 1.12 = 1,792 sq ft before waste and details like valleys and dormers.",
+        ],
+      },
+      {
         heading: "Common mistake",
         bullets: [
           "Do not estimate shingles from footprint area alone. Roofing is sold by surface area of roof planes.",
@@ -1218,10 +1307,25 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "What actually drives waste",
+        bullets: [
+          "Valleys, hips, and ridges create cut patterns and starter waste.",
+          "Dormers and penetrations increase cut-up and flashing details.",
+          "Shingle style and exposure can change how much reuse you get from offcuts.",
+          "Bundle rounding (and minimum order quantities) adds “paper waste” even if cuts are efficient.",
+        ],
+      },
+      {
         heading: "Accessories are separate",
         bullets: [
           "Starter, ridge caps, underlayment, flashing, drip edge, and nails are separate line items.",
           "Confirm bundles-per-square for your exact shingle product.",
+        ],
+      },
+      {
+        heading: "Practical planning tip",
+        paragraphs: [
+          "Estimate field shingles from roof surface area, apply a waste factor, then convert to squares/bundles using the product packaging. Treat starter and ridge caps as separate estimates based on product guidance and ridge length.",
         ],
       },
     ],
@@ -1249,11 +1353,24 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Why patterns increase waste",
+        paragraphs: [
+          "Patterns increase waste because more tiles become “angle cut” pieces that cannot be reused elsewhere. Herringbone and other repeating patterns also force more alignment cuts at edges and around penetrations.",
+          "Large format tile can add waste because breakage risk and cut difficulty go up. Even if the math says a lower waste factor, experience often says to plan more for handling and mistakes.",
+        ],
+      },
+      {
         heading: "When to increase waste",
         bullets: [
           "Many corners, niches, or penetrations (plumbing, vents).",
           "Large format tile (harder cuts; more breakage risk).",
           "If matching later is hard (dye lots), buying enough now matters.",
+        ],
+      },
+      {
+        heading: "Buying tip",
+        paragraphs: [
+          "Use box coverage from the label, add waste for the layout, then round up to whole boxes. Keep a few spares for future repairs if the tile style might be discontinued.",
         ],
       },
     ],
@@ -1336,6 +1453,21 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Why diagonal layouts waste more",
+        paragraphs: [
+          "A diagonal layout creates angled end cuts on almost every board, and many of those offcuts are too short (or the wrong angle) to reuse elsewhere.",
+          "Waste increases further when you add picture framing, borders, or stair stringers because each feature changes cut patterns and reduces reuse.",
+        ],
+      },
+      {
+        heading: "How to choose a safer buffer",
+        bullets: [
+          "If your deck is a simple rectangle, start in the 10-15% range for diagonal.",
+          "If you have many cut interruptions (posts, stairs, borders), increase buffer to reduce mid-project shortages.",
+          "If color matching matters (some composite products), buying enough up front is safer than topping up later.",
+        ],
+      },
+      {
         heading: "When to increase",
         bullets: [
           "Many stairs, borders, and blocking details.",
@@ -1361,6 +1493,28 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Corners (2-stud vs 3-stud corners).",
           "T-intersections and backing/blocking needs.",
           "Door/window openings with king/jack studs and header support.",
+        ],
+      },
+      {
+        heading: "What the simple calculator gives you (and what it does not)",
+        paragraphs: [
+          "A spacing calculator is good at estimating “field studs” along straight wall runs. That is the baseline. Real framing uses additional studs where loads transfer, where drywall needs backing, and where openings need structural support.",
+          "Because those details vary by layout and local practice, the most reliable approach is: calculate the baseline, then add explicit allowances for corners and each opening.",
+        ],
+      },
+      {
+        heading: "A simple add-on method (easy to apply)",
+        bullets: [
+          "Add a corner allowance per corner (based on your corner detail).",
+          "Add an opening allowance per window/door (king/jack studs, header support, and possible cripples).",
+          "Add blocking/backing allowance for cabinets, handrails, or fixtures if you know they are required.",
+        ],
+      },
+      {
+        heading: "Worked example (quick mental planning)",
+        paragraphs: [
+          "Suppose your baseline estimate is 50 studs for the straight runs. If your layout has 4 corners and 3 openings (2 windows and 1 door), you might add an allowance for corners plus an allowance for each opening. The exact number depends on the framing detail, but the important point is that openings and corners can change the total more than people expect in small rooms.",
+          "If you are pricing lumber, these “details studs” are also where cut waste increases, because short pieces and header supports create offcuts.",
         ],
       },
       {
@@ -1418,6 +1572,21 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Direction changes where the cuts land",
+        paragraphs: [
+          "Plank direction determines which walls require the most end cuts and which areas produce unusable offcuts. In a long, narrow space, running planks the long way can reduce the number of short end pieces. In complex layouts, direction can move waste from one area to another.",
+          "If you are installing through multiple connected rooms, transitions and doorways can also force cut patterns that increase waste beyond a simple rectangle estimate.",
+        ],
+      },
+      {
+        heading: "How to estimate waste more reliably",
+        bullets: [
+          "Start with a baseline waste factor for a simple rectangle (straight layout).",
+          "Add extra waste for each additional room, closet, or hallway because offcuts are harder to reuse.",
+          "Increase waste if the product requires strict staggering rules or if you need consistent color/lot matching.",
+        ],
+      },
+      {
         heading: "Practical rule of thumb",
         paragraphs: [
           "Start with a reasonable waste factor, then increase it if the layout is complex or if you need strict color/lot matching.",
@@ -1442,6 +1611,21 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Boxes are sold as whole cartons; partial cartons are not practical.",
           "Running short mid-install can force mismatched lots and delays.",
           "Keeping a small spare amount is useful for future repairs.",
+        ],
+      },
+      {
+        heading: "A simple rounding method (reliable buying plan)",
+        bullets: [
+          "Convert your measured area into the product unit (sq ft or sq m).",
+          "Apply a realistic waste factor (layout drives waste more than people expect).",
+          "Divide by box coverage from the product label and round up to whole boxes.",
+        ],
+      },
+      {
+        heading: "Worked example (quick planning)",
+        paragraphs: [
+          "If your floor is 420 sq ft and you plan 10% waste, budget 462 sq ft. If a box covers 20 sq ft, you need 462/20 = 23.1 boxes, so you buy 24 boxes.",
+          "That last box is not “waste” in most projects—it's insurance against breakage, cuts, and future repairs.",
         ],
       },
       {
@@ -1470,11 +1654,24 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Pattern repeat can be a bigger driver than height",
+        paragraphs: [
+          "If the wallpaper has a repeat, you lose usable length per strip because you need to align the pattern. The larger the repeat, the more “waste length” per strip.",
+          "For reliable planning, use the manufacturer strips-per-roll guidance when available, because it accounts for common repeats and roll length assumptions.",
+        ],
+      },
+      {
         heading: "When to increase rolls",
         bullets: [
           "Large pattern repeat (more trimming to align).",
           "Many windows/doors and corners (more separate strips).",
           "If you may need repairs later, matching lot/batch matters.",
+        ],
+      },
+      {
+        heading: "Practical tip",
+        paragraphs: [
+          "Measure wall height carefully (including crown molding decisions). A small height difference can change how many full strips fit in a roll.",
         ],
       },
     ],
@@ -1501,10 +1698,23 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Why bedding sand should stay thin",
+        paragraphs: [
+          "Bedding sand is a leveling and setting layer for pavers, not a structural layer. Thick sand can shift, wash out, or create uneven settlement—especially if the base below is not properly graded and compacted.",
+          "If you need to correct grade or solve drainage problems, do it in the base layer. Using sand to fix base issues usually creates a short-term “looks good” result that fails later.",
+        ],
+      },
+      {
         heading: "Common mistake",
         bullets: [
           "Do not use bedding sand to fix a bad base. Fix grade and compaction first.",
           "Compaction changes thickness; plan accordingly.",
+        ],
+      },
+      {
+        heading: "Estimating tip (treat layers separately)",
+        paragraphs: [
+          "Estimate base stone and bedding sand as separate materials. Base depth is measured in inches but ordered in cubic yards or tons; sand is usually a thinner layer with different density and delivery needs.",
         ],
       },
     ],
@@ -1531,10 +1741,24 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "How to adjust the mix (simple rules)",
+        bullets: [
+          "If the bed stays wet or drains poorly, increase aeration/structure (not just compost).",
+          "If the mix dries too fast, increase water-holding materials and plan mulching/topdressing.",
+          "If compost is very fresh or very fine, reduce the percentage and add structure so the bed does not slump.",
+        ],
+      },
+      {
         heading: "Avoid over-amending",
         bullets: [
           "Too much compost can reduce structure in some soils.",
           "If drainage is poor, address structure (aeration) not just fertility.",
+        ],
+      },
+      {
+        heading: "Practical planning tip",
+        paragraphs: [
+          "Treat soil as a “base mix” and plan to topdress later. Beds settle over time, and adding a thin layer of compost or topsoil is often easier than trying to build the perfect mix on day one.",
         ],
       },
     ],
@@ -1558,9 +1782,24 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "What feathering looks like in practice",
+        paragraphs: [
+          "Instead of dumping soil into a low spot with a sharp edge, you spread the transition out so the thickness tapers gradually. This makes it easier to rake flat and avoids creating a “lip” that catches water or a mower wheel.",
+          "A simple mental model: most low spots are not a uniform depth across their area. They are deeper in the center and taper toward the edges—so your estimate should be based on an average thickness, not the deepest point.",
+        ],
+      },
+      {
         heading: "Depth planning tip",
         paragraphs: [
           "Take multiple depth checks and use an average thickness. One low spot can inflate your order if you treat it as the whole area depth.",
+        ],
+      },
+      {
+        heading: "Practical checklist",
+        bullets: [
+          "Mark the low area and the feathering zone (it is usually bigger than the low spot).",
+          "Measure several depths, average them, then add a small buffer for settling.",
+          "Water lightly and re-check after settling; some projects need a second light top-up.",
         ],
       },
     ],
@@ -1612,9 +1851,24 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Base vs top layer roles (what each layer does)",
+        paragraphs: [
+          "Base material is chosen for compaction and stability. It locks together and supports loads. Top layer material is chosen for finish appearance, drainage behavior, and how it feels under foot or tires.",
+          "Because these materials differ, their density and coverage-by-ton can differ too. That is why you should estimate and order them separately.",
+        ],
+      },
+      {
         heading: "Ordering tip",
         paragraphs: [
           "If your supplier sells by tons, use their conversion for each product separately. Density varies by material type and moisture.",
+        ],
+      },
+      {
+        heading: "Practical checklist",
+        bullets: [
+          "Confirm base depth target for your use case (walkway vs driveway).",
+          "Confirm top layer depth target and whether it will be compacted.",
+          "Order a small buffer for edge containment and grade corrections.",
         ],
       },
     ],
@@ -1634,6 +1888,30 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Why it matters",
         paragraphs: [
           "Many slabs include thickened edges or footings. If you ignore them, you can come up short even if the slab volume is correct.",
+          "This is a common under-order because thickened edges are “out of sight” once you think in terms of a simple slab thickness. Treat them as a separate volume line item.",
+        ],
+      },
+      {
+        heading: "Basic math (separate it into shapes)",
+        bullets: [
+          "Slab volume = area x slab thickness.",
+          "Thickened edge volume = edge length x thickened width x (thickened depth - slab thickness).",
+          "If you have multiple thickened zones, calculate each one and add them.",
+        ],
+      },
+      {
+        heading: "Worked example (quick planning)",
+        paragraphs: [
+          "If you have a 12 ft x 20 ft slab at 4 inches thick, the slab volume is 240 sq ft x (4/12) ft ~ 80 cu ft (~ 2.96 cu yd).",
+          "If all four edges are thickened to 12 inches deep and 12 inches wide, the extra thickened portion is perimeter (64 ft) x 1 ft x (12/12 - 4/12) ft ~ 42.7 cu ft (~ 1.58 cu yd). That is a large add-on compared to the slab alone.",
+        ],
+      },
+      {
+        heading: "Field tips that improve reliability",
+        bullets: [
+          "Confirm whether thickened dimensions are measured before or after excavation shaping (contractor plans can differ).",
+          "If subgrade varies, add a small buffer for low spots and spillage.",
+          "If you are ordering ready-mix, confirm minimum order and truck access; delivery constraints can matter more than small volume precision.",
         ],
       },
       {
@@ -1666,9 +1944,25 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Base is a separate scope (and a separate estimate)",
+        paragraphs: [
+          "Driveway projects often fail because the base is treated as an afterthought. Base depth, compaction, and drainage determine long-term performance more than a small change in asphalt thickness.",
+          "For estimating, treat base work as its own line item: excavation, base gravel volume, compaction, and (sometimes) geotextile or drainage details.",
+        ],
+      },
+      {
         heading: "Planning tip",
         paragraphs: [
           "Estimate base gravel (area x depth) separately from asphalt. Treat them as separate materials and deliveries.",
+        ],
+      },
+      {
+        heading: "Common drivers of “extra base”",
+        bullets: [
+          "Soft spots or pumping subgrade that must be removed and rebuilt.",
+          "Drainage corrections (regrading, adding swales, fixing low areas).",
+          "Widening the driveway or correcting edge breakdown.",
+          "Heavy vehicles or frequent turning loads that require stronger support.",
         ],
       },
     ],
@@ -1806,6 +2100,36 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "What “deck mud” is (and what it is not)",
+        paragraphs: [
+          "Deck mud (also called dry pack) is intentionally low-water and packable. The goal is a stable, shaped bed that can be compacted and screeded to flat or to slope.",
+          "Because it is drier than many other mixes, it behaves differently: water content, sand type, and mixing consistency matter more than people expect.",
+        ],
+      },
+      {
+        heading: "Water content (the most common failure point)",
+        paragraphs: [
+          "A useful mental model: deck mud should hold together when squeezed, but it should not ooze water. Too wet makes it harder to pack and can weaken the bed; too dry makes it crumbly and difficult to finish.",
+          "If you are mixing multiple batches, the goal is repeatability. Small differences between batches can show up as soft spots or finish texture changes.",
+        ],
+        bullets: [
+          "Measure water consistently (do not guess per batch).",
+          "Mix thoroughly before adding more water; dry pockets create weak areas.",
+          "Do a squeeze test each batch to keep consistency similar.",
+        ],
+      },
+      {
+        heading: "Batch planning (avoid mixing surprises)",
+        paragraphs: [
+          "Before you start, estimate total volume so you can plan the number of batches and the time window. If you run short mid-bed, you risk a cold joint or a consistency change that affects finish quality.",
+        ],
+        bullets: [
+          "Stage sand and cement where they are easy to access.",
+          "Use a consistent bucket or container for volume ratios.",
+          "If you are unsure, mix a small test batch and verify workability before committing to the full job.",
+        ],
+      },
+      {
         heading: "Practical reminder",
         bullets: [
           "Use the right sand type per local practice and product guidance.",
@@ -1863,10 +2187,25 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Why this mix-up is expensive",
+        paragraphs: [
+          "If your supplier quotes in tonnes and you budget in short tons (or the reverse), your total delivered weight can be off by about 10%. On material orders, that can mean running short or overpaying.",
+          "The confusion often happens when a quote says “ton” but does not specify which one. Always confirm the unit in writing before you order.",
+        ],
+      },
+      {
+        heading: "Worked example (10-ton order)",
+        paragraphs: [
+          "If you order 10 short tons, that is 20,000 lb. If you order 10 metric tonnes, that is about 22,046 lb. The difference is about 2,046 lb—roughly one extra short ton of material.",
+          "If you are converting from volume (cubic yards) to weight, density assumptions usually add even more uncertainty. That is why supplier-specific conversions matter.",
+        ],
+      },
+      {
         heading: "Practical tip",
         bullets: [
           "Confirm the unit your supplier uses (tons vs tonnes).",
           "Use the supplier density conversion for your specific product.",
+          "If you need a quick check: 1 metric tonne ~ 1.102 short tons.",
         ],
       },
     ],
@@ -1916,6 +2255,25 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Quick conversion",
         paragraphs: [
           "1 cubic foot is about 28.3 liters. If a bag is labeled in liters, divide liters by 28.3 to get cubic feet.",
+        ],
+      },
+      {
+        heading: "Quick reference table",
+        table: {
+          columns: ["Liters", "Cubic feet (approx.)", "Common note"],
+          rows: [
+            ["25 L", "0.88 cu ft", "Small bag"],
+            ["40 L", "1.41 cu ft", "Common bag size"],
+            ["50 L", "1.77 cu ft", "Common bag size"],
+            ["60 L", "2.12 cu ft", "Large bag"],
+          ],
+        },
+      },
+      {
+        heading: "Worked example (bag count)",
+        paragraphs: [
+          "If you need 18 cubic feet of soil and your bag is 40 L, that bag is about 1.41 cu ft. 18 / 1.41 = 12.8, so you buy 13 bags (and usually a small buffer if leveling or filling).",
+          "If the project is large, compare bag totals to bulk volume. 1 cubic yard is 27 cubic feet, so bags add up quickly.",
         ],
       },
       {
@@ -1971,6 +2329,24 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Panels: count panels and posts; spacing is usually fixed by panel width.",
           "Pickets: count pickets by spacing; waste increases on slopes and corners.",
           "Gates and corners add posts beyond simple runs.",
+        ],
+      },
+      {
+        heading: "Panel estimating (fast and reliable)",
+        paragraphs: [
+          "With panels, most of the estimate is: number of panels + number of posts + number of gates. Panel width usually determines post spacing, and the install is less sensitive to picket spacing decisions.",
+          "Even with panels, sloped terrain and stepped installs can require extra planning around end conditions and cut panels.",
+        ],
+      },
+      {
+        heading: "Picket estimating (spacing drives the count)",
+        paragraphs: [
+          "With pickets, the count depends on picket width and the gap you choose. Small spacing changes add up across long runs. You also have more cut waste on slopes, corners, and around gates.",
+        ],
+        bullets: [
+          "Decide whether pickets butt together or have a gap (and how much).",
+          "Confirm whether you will overlap pickets (privacy styles change math).",
+          "Plan extra pickets for cuts at the ends of runs and for stepped sections.",
         ],
       },
       {
@@ -2055,6 +2431,37 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Strength selection (PSI/MPa) — what to clarify",
+        paragraphs: [
+          "Strength is not just a number: it affects cost, finishing window, and sometimes minimum cement content. When you hear a strength target, confirm whether it is a code minimum, a contractor preference, or a requirement for a specific use case.",
+          "If you are unsure what to order, your supplier can usually recommend a standard mix for your application—but you should still confirm any local requirements for structural work.",
+        ],
+        bullets: [
+          "Confirm whether the job is structural or non-structural (slabs, footings, piers, etc.).",
+          "Ask if air-entrainment is recommended for freeze/thaw exposure in your area.",
+          "Confirm the maximum aggregate size if you have tight reinforcement spacing or small forms.",
+        ],
+      },
+      {
+        heading: "Slump (workability) — why it changes placement",
+        paragraphs: [
+          "Slump is a quick way to describe how workable the concrete is. Higher slump can make placement easier in some situations, but too much water can reduce performance and cause finishing issues.",
+          "If you need easier placement, it is often better to use the right admixture plan than to add water on site. Discuss this before the truck arrives.",
+        ],
+      },
+      {
+        heading: "Fiber, reinforcement, and cracking (what to expect)",
+        paragraphs: [
+          "Fiber can help with plastic shrinkage cracking and handling, but it is not automatically a replacement for reinforcement. Crack control depends on joints, thickness, base condition, curing, and reinforcement strategy.",
+          "The most common planning miss is ignoring joints and curing. Even a great mix can crack if joints are wrong or if the surface dries too fast.",
+        ],
+        bullets: [
+          "Plan control joints and spacing before you pour (layout matters).",
+          "Plan curing method and timing (especially in hot, windy, or dry conditions).",
+          "Confirm reinforcement requirements for the project; local practice varies.",
+        ],
+      },
+      {
         heading: "Reminder",
         paragraphs: [
           "Mix selection affects cost and placement. For critical work, follow code and supplier guidance rather than generic assumptions.",
@@ -2106,6 +2513,26 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Walls typically need bottom plates and (often) double top plates.",
           "Corners and openings can increase blocking and plate needs.",
           "Lumber comes in standard lengths; plan cut waste.",
+        ],
+      },
+      {
+        heading: "Quick estimating method",
+        paragraphs: [
+          "A simple starting point: take total wall length and multiply by the number of plate runs you need. A common wall uses one bottom plate and two top plates (three total runs), but details vary by project and local practice.",
+          "After you have total plate linear feet, convert to stick counts based on the lengths you plan to buy (8 ft, 10 ft, 12 ft, 16 ft), then add a buffer for cuts and splices.",
+        ],
+        bullets: [
+          "Plate LF = wall LF x number of plate runs.",
+          "Stick count = plate LF / stick length, rounded up.",
+          "Add buffer for waste, especially with short wall segments and many openings.",
+        ],
+      },
+      {
+        heading: "Common misses (plates are not just straight runs)",
+        bullets: [
+          "Splices: plates must break over studs and require overlap planning.",
+          "Openings: some layouts need extra short plate pieces and blocking.",
+          "Corners and T-walls can require extra backing depending on your framing detail.",
         ],
       },
       {
@@ -2162,6 +2589,33 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Leveling compound for uneven subfloors (separate estimate).",
         ],
       },
+      {
+        heading: "How to choose the right underlayment (quick decision path)",
+        paragraphs: [
+          "Underlayment choice depends on the flooring type and what is underneath it. Start with the flooring manufacturer's requirements (they can affect warranty), then match the subfloor conditions (moisture, flatness, and sound).",
+        ],
+        bullets: [
+          "Concrete slab: moisture management is often the first priority (barrier requirements vary by product).",
+          "Wood subfloor: flatness and squeak reduction can matter more than vapor management.",
+          "Condos: sound control requirements can drive underlayment thickness and type.",
+          "Radiant heat: confirm temperature limits and approved underlayment types.",
+        ],
+      },
+      {
+        heading: "Common misses (why projects run long)",
+        bullets: [
+          "Acclimation time and room conditions (temperature/humidity) before install.",
+          "Adhesives/fasteners for specific systems (glue-down, nail-down, floating).",
+          "Moisture test or primer requirements for slab installs (product dependent).",
+          "Extra material for stairs, thresholds, and closets even when the main room math is correct.",
+        ],
+      },
+      {
+        heading: "Practical planning tip",
+        paragraphs: [
+          "Treat underlayment as its own line item with its own coverage rate. Some products are sold by roll/sheet coverage and have overlap waste—so plan a small buffer even when the floor area is exact.",
+        ],
+      },
     ],
     related: [
       { label: "Flooring calculator", href: "/en/calculators/home-improvement/flooring" },
@@ -2179,6 +2633,21 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Key idea",
         paragraphs: [
           "Tonnage scales with thickness. A 3-inch layer is 50% more material than a 2-inch layer for the same area (before compaction and waste).",
+        ],
+      },
+      {
+        heading: "Compacted thickness vs loose thickness (confirm this)",
+        paragraphs: [
+          "Asphalt is typically specified by compacted thickness, but the material is placed and then compacted. If you compare quotes, make sure everyone is talking about the same thickness definition.",
+          "If the spec is “2 inches compacted,” the placed thickness will be higher before rolling. That is normal—and it affects material quantities and trucking.",
+        ],
+      },
+      {
+        heading: "When 3 inches is more than just “50% more”",
+        bullets: [
+          "If your base is weak or holds water, thicker asphalt does not fix the root cause (base and drainage dominate).",
+          "If the driveway takes heavier vehicles, thicker asphalt is often paired with base upgrades.",
+          "If the job requires multiple lifts (layers), waste and logistics can increase.",
         ],
       },
       {
@@ -2207,6 +2676,30 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Fresh drywall and patched areas (reduces flashing).",
           "Stains and problem surfaces (use stain-blocking primer as needed).",
           "Big color changes (can reduce topcoat count).",
+          "Glossy surfaces (improves adhesion when properly prepared).",
+          "Raw or porous surfaces (helps even out absorption).",
+        ],
+      },
+      {
+        heading: "Primer vs extra paint coats (how to decide)",
+        paragraphs: [
+          "If the main problem is absorption or adhesion, primer is often the cleaner solution. If the surface is sound but coverage is difficult (big color change), primer can still help—but so can simply planning an extra finish coat.",
+          "A practical approach: identify your “problem surfaces” first (patches, stains, glossy trim), then decide whether to spot-prime or full-prime.",
+        ],
+        table: {
+          columns: ["Situation", "Common plan", "Why"],
+          rows: [
+            ["Patches/new drywall", "Prime + 2 coats", "Reduces flashing and uneven sheen"],
+            ["Stains (water/smoke/tannin)", "Stain-block primer + coats", "Prevents bleed-through"],
+            ["Glossy trim", "Scuff/sand + bonding primer", "Improves adhesion"],
+            ["Same-color repaint", "1-2 coats", "Primer often unnecessary"],
+          ],
+        },
+      },
+      {
+        heading: "Planning and buying tip",
+        paragraphs: [
+          "For estimating, treat primer as its own product with its own coverage rate and coat count. If you plan primer but only budget paint gallons, you will underbuy.",
         ],
       },
       {
