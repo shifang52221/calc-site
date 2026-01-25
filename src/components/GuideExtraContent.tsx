@@ -1,6 +1,9 @@
+import Link from "next/link";
+
 import type { Locale } from "@/i18n/routing";
 import type { GuideId } from "@/lib/guidesCatalog";
 import { GUIDE_EXTRA_CONTENT_EN } from "@/lib/content/guidesEn";
+import { routes } from "@/lib/routes";
 
 export function GuideExtraContent({
   locale,
@@ -31,7 +34,21 @@ export function GuideExtraContent({
           ))}
         </ul>
       ) : null}
+      <div className="text-xs text-zinc-500 dark:text-zinc-400">
+        <Link
+          href={routes.methodology(locale)}
+          className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+        >
+          Methodology
+        </Link>
+        {" · "}
+        <Link
+          href={routes.resources(locale)}
+          className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+        >
+          Resources
+        </Link>
+      </div>
     </section>
   );
 }
-

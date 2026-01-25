@@ -3,10 +3,56 @@
     "home": "Inicio",
     "calculators": "Calculadoras",
     "guides": "Guías",
+    "resources": "Recursos",
+    "methodology": "Metodología",
     "privacy": "Privacidad",
     "terms": "Términos",
     "about": "Acerca de",
     "contact": "Contacto"
+  },
+  "resourcesIndex": {
+    "metaTitle": "Recursos",
+    "metaDescription": "Tablas rápidas y notas prácticas para estimaciones comunes de mejoras del hogar.",
+    "title": "Recursos",
+    "subtitle": "Tablas, listas y notas prácticas.",
+    "intro": "Estos recursos explican el “por qué” detrás de estimaciones comunes: tablas rápidas, reglas simples y recordatorios para evitar comprar de menos."
+  },
+  "methodologyPage": {
+    "metaTitle": "Metodología | HomeDecorCalc",
+    "metaDescription": "Cómo funcionan nuestras calculadoras: unidades, redondeo, desperdicio y supuestos.",
+    "title": "Metodología",
+    "subtitle": "Cómo pensamos las estimaciones: unidades claras, supuestos transparentes y márgenes prácticos.",
+    "whatWeDoTitle": "Qué hacemos (y qué no)",
+    "whatWeDo": {
+      "p1": "Nuestras calculadoras son herramientas de planificación. Convierten tus medidas en una estimación práctica usando fórmulas comunes y supuestos razonables.",
+      "p2": "No sustituyen el código local, las especificaciones del fabricante ni un presupuesto profesional en proyectos críticos."
+    },
+    "unitsTitle": "Unidades y conversiones",
+    "units": {
+      "u1": "Mantenemos las fórmulas consistentes: área × espesor = volumen, y convertimos unidades antes de multiplicar.",
+      "u2": "Cuando los proveedores venden en unidades distintas (yardas vs toneladas, cajas vs m²), damos una conversión orientativa y recomendamos confirmar la etiqueta o el proveedor.",
+      "u3": "Si tu proyecto varía en espesor o mezcla medidas (por ejemplo, techos), usa un espesor promedio y mide más de un punto."
+    },
+    "roundingTitle": "Redondeo y mínimos",
+    "rounding": {
+      "r1": "Muchos materiales se compran en unidades enteras (placas, sacos, cajas). Redondeamos hacia arriba porque no se pueden comprar fracciones.",
+      "r2": "Quedarse corto suele costar más que un pequeño margen.",
+      "r3": "Si hay mínimos de entrega o carga, redondea a un tamaño de pedido razonable."
+    },
+    "wasteTitle": "Desperdicio (sobrante)",
+    "waste": {
+      "p1": "El desperdicio no son solo errores. Incluye cortes, piezas sobrantes, roturas, pérdidas de mezcla, superficies irregulares y redondeo.",
+      "w1": "Proyectos simples suelen desperdiciar menos que formas complejas o patrones.",
+      "w2": "Diseños diagonales, muchas esquinas y penetraciones suelen aumentar el desperdicio.",
+      "w3": "Si es difícil igualar después (lotes de color), comprar suficiente al inicio es más seguro."
+    },
+    "sourcesTitle": "Supuestos y fuentes",
+    "sources": {
+      "p1": "Usamos fórmulas comunes de la industria (conversiones de área/volumen y convenciones de empaque).",
+      "p2": "Para mayor precisión, usa la cobertura exacta de la etiqueta y las instrucciones del fabricante y proveedor."
+    },
+    "contactTitle": "Comentarios",
+    "contactBody": "Si un supuesto no coincide con tu región o producto, contáctanos con el producto y el contexto. Mejoramos continuamente."
   },
   "site": {
     "name": "HomeDecorCalc",

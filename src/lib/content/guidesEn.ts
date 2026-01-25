@@ -1,4 +1,4 @@
-import type { GuideId } from "@/lib/guidesCatalog";
+﻿import type { GuideId } from "@/lib/guidesCatalog";
 
 export type GuideExtraContentBlock = {
   title: string;
@@ -278,3 +278,4 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     ],
   },
 };
+

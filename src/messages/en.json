@@ -3,10 +3,56 @@
     "home": "Home",
     "calculators": "Calculators",
     "guides": "Guides",
+    "resources": "Resources",
+    "methodology": "Methodology",
     "privacy": "Privacy",
     "terms": "Terms",
     "about": "About",
     "contact": "Contact"
+  },
+  "resourcesIndex": {
+    "metaTitle": "Resources",
+    "metaDescription": "Quick reference charts and practical notes for common home improvement estimates.",
+    "title": "Resources",
+    "subtitle": "Quick reference charts, checklists, and practical planning notes.",
+    "intro": "These short resources explain the “why” behind common estimates: quick charts, simple rules of thumb, and reminders that prevent under-ordering."
+  },
+  "methodologyPage": {
+    "metaTitle": "Methodology | HomeDecorCalc",
+    "metaDescription": "How our calculators work: units, rounding, waste factors, and assumptions.",
+    "title": "Methodology",
+    "subtitle": "How we think about estimates: clear units, transparent assumptions, and practical buffers.",
+    "whatWeDoTitle": "What we do (and what we don’t)",
+    "whatWeDo": {
+      "p1": "Our calculators are planning tools. They convert your measurements into a practical material estimate using common formulas and reasonable assumptions.",
+      "p2": "They are not a substitute for local code, manufacturer specifications, or a professional takeoff for critical projects."
+    },
+    "unitsTitle": "Units and conversions",
+    "units": {
+      "u1": "We keep formulas consistent: area × thickness = volume, and we convert units before multiplying.",
+      "u2": "When suppliers sell in different units (yards vs tons, boxes vs sq ft), we provide a planning conversion and recommend confirming your exact product label or supplier conversion.",
+      "u3": "If your project mixes footprint and slope dimensions (roofing) or varies in thickness (sloped beds), use average thickness and measure more than one point."
+    },
+    "roundingTitle": "Rounding and minimums",
+    "rounding": {
+      "r1": "Many materials are purchased in whole units (sheets, bags, boxes, bundles). We round up because partial units aren’t practical to buy.",
+      "r2": "Running short mid-project often costs more than a small buffer (extra trips, mismatched dye lots, cold joints).",
+      "r3": "If your supplier has minimum delivery charges or minimum load sizes, round to the nearest sensible order size."
+    },
+    "wasteTitle": "Waste (overage) factors",
+    "waste": {
+      "p1": "Waste is not just mistakes. It includes cuts, offcuts you can’t reuse, breakage, mixing loss, uneven subgrade, and rounding to whole purchase units.",
+      "w1": "Simple rectangular projects usually waste less than complex shapes and patterns.",
+      "w2": "Diagonal layouts, many corners, and many penetrations typically increase waste.",
+      "w3": "If matching later is difficult (tile dye lots, paint batches), buying enough up front is usually safer."
+    },
+    "sourcesTitle": "Assumptions and sources",
+    "sources": {
+      "p1": "We use common industry formulas (area/volume conversions, packaging conventions like roofing squares, and typical coverage ranges).",
+      "p2": "For best accuracy, always prefer the exact product label coverage, manufacturer installation requirements, and your supplier’s conversions for the specific material you’re buying."
+    },
+    "contactTitle": "Feedback",
+    "contactBody": "If you find an assumption that doesn’t match your region or product, contact us and include the product and context. We continuously improve the calculators."
   },
   "site": {
     "name": "HomeDecorCalc",

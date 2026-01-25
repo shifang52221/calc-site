@@ -1,6 +1,9 @@
+import Link from "next/link";
+
 import type { Locale } from "@/i18n/routing";
 import type { CalculatorId } from "@/lib/calculatorsCatalog";
 import { CALCULATOR_CONTENT_EN } from "@/lib/content/calculatorsEn";
+import { routes } from "@/lib/routes";
 
 export function CalculatorContent({
   locale,
@@ -39,6 +42,22 @@ export function CalculatorContent({
             ))}
           </div>
         ) : null}
+
+        <div className="mt-4 text-xs text-zinc-500 dark:text-zinc-400">
+          <Link
+            href={routes.methodology(locale)}
+            className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+          >
+            Methodology
+          </Link>
+          {" · "}
+          <Link
+            href={routes.resources(locale)}
+            className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+          >
+            Resources
+          </Link>
+        </div>
       </section>
     );
   }
@@ -93,6 +112,22 @@ export function CalculatorContent({
 
       <div className="text-xs text-zinc-500 dark:text-zinc-400">
         {content.lastUpdated}
+      </div>
+
+      <div className="text-xs text-zinc-500 dark:text-zinc-400">
+        <Link
+          href={routes.methodology(locale)}
+          className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+        >
+          Methodology
+        </Link>
+        {" · "}
+        <Link
+          href={routes.resources(locale)}
+          className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+        >
+          Resources
+        </Link>
       </div>
     </section>
   );

@@ -34,6 +34,12 @@ export function SiteHeader({ locale }: { locale: Locale }) {
             >
               {t("guides")}
             </Link>
+            <Link
+              href={routes.resources(locale)}
+              className="whitespace-nowrap text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100"
+            >
+              {t("resources")}
+            </Link>
           </nav>
         </div>
         <div className="sm:self-auto">

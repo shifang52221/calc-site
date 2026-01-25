@@ -11,6 +11,8 @@ export const routes = {
   calculatorsCategory: (locale: Locale, categoryId: string) =>
     `/${locale}/calculators/${categoryId}`,
   guides: (locale: Locale) => `/${locale}/guides`,
+  resources: (locale: Locale) => `/${locale}/resources`,
+  methodology: (locale: Locale) => `/${locale}/methodology`,
   guidePaint: (locale: Locale) => `/${locale}/guides/home-improvement/paint`,
   guidePaintCeiling: (locale: Locale) =>
     `/${locale}/guides/home-improvement/paint-ceiling`,
