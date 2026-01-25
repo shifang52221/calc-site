@@ -10,6 +10,7 @@ import { GuideExtraContent } from "@/components/GuideExtraContent";
 import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
 import { GuideSeoJsonLd } from "@/components/GuideSeoJsonLd";
+import { GuideReferenceSection } from "@/components/GuideReferenceSection";
 
 export async function generateMetadata({
   params,
@@ -91,6 +92,8 @@ export default async function TileWasteGuidePage({
       </section>
 
       <GuideExtraContent locale={locale} guideId="tile-waste" />
+
+      <GuideReferenceSection locale={locale} guideId="tile-waste" />
 
       <section className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
