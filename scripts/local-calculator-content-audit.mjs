@@ -179,6 +179,45 @@ function estimateWordCountFromBlock(block) {
   return totalWords;
 }
 
+function safeReadJson(filePath) {
+  try {
+    if (!fs.existsSync(filePath)) return null;
+    const raw = fs.readFileSync(filePath, "utf8");
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+function mean(nums) {
+  if (!nums.length) return 0;
+  return nums.reduce((a, b) => a + b, 0) / nums.length;
+}
+
+function stddev(nums) {
+  if (nums.length < 2) return 0;
+  const m = mean(nums);
+  const v = nums.reduce((a, b) => a + (b - m) ** 2, 0) / nums.length;
+  return Math.sqrt(v);
+}
+
+function buildHistogram(nums) {
+  const bins = [
+    { label: "<500", min: -Infinity, max: 499 },
+    { label: "500-699", min: 500, max: 699 },
+    { label: "700-899", min: 700, max: 899 },
+    { label: "900-1099", min: 900, max: 1099 },
+    { label: "1100-1299", min: 1100, max: 1299 },
+    { label: "1300+", min: 1300, max: Infinity },
+  ];
+  const out = Object.fromEntries(bins.map((b) => [b.label, 0]));
+  for (const n of nums) {
+    const b = bins.find((x) => n >= x.min && n <= x.max);
+    if (b) out[b.label]++;
+  }
+  return out;
+}
+
 async function main() {
   const args = new Map();
   for (const arg of process.argv.slice(2)) {
@@ -195,6 +234,20 @@ async function main() {
   const filePath = path.resolve(process.cwd(), file);
   const text = fs.readFileSync(filePath, "utf8");
 
+  const variantsArg = args.get("variants");
+  const defaultVariantsPath = path.resolve(
+    process.cwd(),
+    path.join("docs", "calculator-content-variants.json"),
+  );
+  const variantsPath =
+    variantsArg === "false"
+      ? null
+      : path.resolve(
+          process.cwd(),
+          variantsArg ? String(variantsArg) : defaultVariantsPath,
+        );
+  const variants = variantsPath ? safeReadJson(variantsPath) : null;
+
   const blocks = scanObjectBlocks(text);
   const results = blocks.map(({ id, block }) => {
     const wordEstimate = estimateWordCountFromBlock(block);
@@ -209,7 +262,37 @@ async function main() {
     const missing = Object.entries(lens)
       .filter(([, v]) => v == null)
       .map(([k]) => k);
-    return { id, wordEstimate, lens, missing };
+
+    let target = null;
+    if (variants) {
+      const defaultTarget = variants.default ?? null;
+      const byId = (variants.byId && variants.byId[id]) || null;
+      const tier =
+        byId && byId.tier && variants.tiers && variants.tiers[byId.tier]
+          ? variants.tiers[byId.tier]
+          : null;
+      const targetMinWords =
+        (tier && tier.targetMinWords) ||
+        (byId && byId.targetMinWords) ||
+        (defaultTarget && defaultTarget.targetMinWords) ||
+        null;
+      const targetMaxWords =
+        (tier && tier.targetMaxWords) ||
+        (byId && byId.targetMaxWords) ||
+        (defaultTarget && defaultTarget.targetMaxWords) ||
+        null;
+      const mustInclude = (byId && byId.mustInclude) || [];
+      if (targetMinWords || targetMaxWords || mustInclude.length) {
+        target = {
+          tier: (byId && byId.tier) || null,
+          targetMinWords,
+          targetMaxWords,
+          mustInclude,
+        };
+      }
+    }
+
+    return { id, wordEstimate, lens, missing, target };
   });
 
   const thin = results
@@ -222,12 +305,62 @@ async function main() {
     .sort((a, b) => a.id.localeCompare(b.id))
     .slice(0, top);
 
+  const estimates = results.map((r) => r.wordEstimate);
+  const stats = {
+    mean: Math.round(mean(estimates) * 10) / 10,
+    stddev: Math.round(stddev(estimates) * 10) / 10,
+    min: Math.min(...estimates),
+    max: Math.max(...estimates),
+    histogram: buildHistogram(estimates),
+  };
+
+  const targetable = results.filter((r) => r.target && r.target.targetMinWords);
+  const belowTarget = targetable
+    .filter((r) => r.target && r.wordEstimate < r.target.targetMinWords)
+    .sort(
+      (a, b) =>
+        a.wordEstimate - (a.target?.targetMinWords ?? 0) -
+        (b.wordEstimate - (b.target?.targetMinWords ?? 0)),
+    )
+    .slice(0, top);
+  const aboveTarget = results
+    .filter((r) => r.target && r.target.targetMaxWords != null)
+    .filter((r) => r.target && r.wordEstimate > r.target.targetMaxWords)
+    .sort(
+      (a, b) =>
+        (b.wordEstimate - (b.target?.targetMaxWords ?? 0)) -
+        (a.wordEstimate - (a.target?.targetMaxWords ?? 0)),
+    )
+    .slice(0, top);
+
   console.log(
     JSON.stringify(
       {
         file: file.replace(/\\/g, "/"),
         calculators: results.length,
         thresholds: { minWords },
+        thinCount: results.filter((r) => r.wordEstimate < minWords).length,
+        missingCount: results.filter((r) => r.missing.length).length,
+        wordStats: stats,
+        variants: variants
+          ? {
+              enabled: true,
+              file: path
+                .relative(process.cwd(), variantsPath)
+                .replace(/\\/g, "/"),
+              belowTargetCount: targetable.filter(
+                (r) => r.target && r.wordEstimate < r.target.targetMinWords,
+              ).length,
+              aboveTargetCount: results.filter(
+                (r) =>
+                  r.target &&
+                  r.target.targetMaxWords != null &&
+                  r.wordEstimate > r.target.targetMaxWords,
+              ).length,
+              belowTargetTop: belowTarget,
+              aboveTargetTop: aboveTarget,
+            }
+          : { enabled: false },
         thinTop: thin,
         missingArraysTop: incomplete,
       },
@@ -241,4 +374,3 @@ main().catch((err) => {
   console.error(err);
   process.exitCode = 1;
 });
-

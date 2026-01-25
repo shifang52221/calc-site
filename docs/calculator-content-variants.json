@@ -1,0 +1,42 @@
+{
+  "default": {
+    "targetMinWords": 800,
+    "targetMaxWords": 1100,
+    "notes": "Default B-tier target. This is not a hard rule; it's an anti-template guideline."
+  },
+  "tiers": {
+    "A": { "targetMinWords": 550, "targetMaxWords": 800 },
+    "B": { "targetMinWords": 800, "targetMaxWords": 1100 },
+    "C": { "targetMinWords": 1100, "targetMaxWords": 1600 }
+  },
+  "byId": {
+    "concrete": { "tier": "C", "mustInclude": ["workedExample", "rebarOrFiberNotes"] },
+    "concreteBags": { "tier": "B", "mustInclude": ["workedExample", "bagYieldNotes"] },
+    "studs": { "tier": "B", "mustInclude": ["openingsAndCornersNotes"] },
+    "baseboardTrim": { "tier": "B", "mustInclude": ["cutPlanOrJointStrategy"] },
+    "deck": { "tier": "C", "mustInclude": ["layoutWasteDrivers", "fastenerSystemNotes"] },
+    "drywall": { "tier": "C", "mustInclude": ["sheetingStrategy", "wasteDrivers"] },
+    "drywallMudTape": { "tier": "B", "mustInclude": ["jointTypesOrCoatsNotes"] },
+    "drywallTexture": { "tier": "B", "mustInclude": ["textureTypesNotes"] },
+    "fence": { "tier": "B", "mustInclude": ["postSpacingOrGatesNotes"] },
+    "flooring": { "tier": "C", "mustInclude": ["stairsOrTransitionsNotes"] },
+    "gravel": { "tier": "B", "mustInclude": ["baseVsTopLayerNotes"] },
+    "gravelTons": { "tier": "B", "mustInclude": ["densityOrSupplierConversionNotes"] },
+    "mulch": { "tier": "B", "mustInclude": ["depthPurposeNotes"] },
+    "mulchBags": { "tier": "A", "mustInclude": ["bagUnitsConversionNotes"] },
+    "sand": { "tier": "B", "mustInclude": ["sandTypeNotes"] },
+    "paverBase": { "tier": "C", "mustInclude": ["baseVsBeddingVsJointSand"] },
+    "paint": { "tier": "C", "mustInclude": ["coverageAssumptions", "coatStrategy"] },
+    "wallpaperRolls": { "tier": "B", "mustInclude": ["patternRepeatNotes"] },
+    "roofing": { "tier": "C", "mustInclude": ["pitchMultiplierNotes", "accessoriesListNotes"] },
+    "tile": { "tier": "C", "mustInclude": ["wetAreaNotes", "layoutWasteNotes"] },
+    "deckMud": { "tier": "B", "mustInclude": ["slopeOrThicknessNotes"] },
+    "asphaltDriveway": { "tier": "B", "mustInclude": ["liftsAndCompactionNotes", "basePrepNotes"] },
+    "boardFeet": { "tier": "B", "mustInclude": ["quartersSystemNotes"] },
+    "soilMix": { "tier": "B", "mustInclude": ["mixRatioNotes"] },
+    "topsoilBags": { "tier": "A", "mustInclude": ["bulkVsBagsNotes"] },
+    "tileGrout": { "tier": "A", "mustInclude": ["jointWidthDepthNotes", "cleanupTimingNotes"] },
+    "topsoil": { "tier": "B", "mustInclude": ["levelingAndAverageDepthNotes"] }
+  }
+}
+

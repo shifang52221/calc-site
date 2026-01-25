@@ -78,15 +78,18 @@ async function main() {
       slug,
       estimatedWords: estimateWordCountFromBlock(block),
     }))
-    .filter((r) => r.estimatedWords >= min)
     .sort((a, b) => a.estimatedWords - b.estimatedWords);
+
+  const thin = min > 0 ? scored.filter((r) => r.estimatedWords < min) : scored;
 
   console.log(
     JSON.stringify(
       {
         file: relPath.replace(/\\/g, "/"),
         articles: blocks.length,
-        topLowest: scored.slice(0, top),
+        thresholds: min > 0 ? { minWords: min } : undefined,
+        thinCount: thin.length,
+        topLowest: thin.slice(0, top),
       },
       null,
       2,
@@ -98,4 +101,3 @@ main().catch((err) => {
   console.error(err);
   process.exitCode = 1;
 });
-
