@@ -7,7 +7,10 @@ import { routing } from "./src/i18n/routing";
 const intlMiddleware = createMiddleware(routing);
 
 function getCanonicalHost() {
-  const raw = process.env.NEXT_PUBLIC_SITE_URL || process.env.SITE_URL;
+  const raw =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    process.env.SITE_URL ||
+    "https://homedecorcalc.com";
   if (!raw) return null;
   try {
     return new URL(raw).host;
