@@ -47,6 +47,39 @@ export function webApplicationJsonLd({
   };
 }
 
+export function webSiteJsonLd({
+  name,
+  url,
+  inLanguage,
+}: {
+  name: string;
+  url: string;
+  inLanguage: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name,
+    url,
+    inLanguage,
+  };
+}
+
+export function organizationJsonLd({
+  name,
+  url,
+}: {
+  name: string;
+  url: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name,
+    url,
+  };
+}
+
 export function articleJsonLd({
   headline,
   description,

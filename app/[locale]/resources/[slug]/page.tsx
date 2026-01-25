@@ -158,14 +158,24 @@ export default async function ResourceArticlePage({
         >
           Back to resources
         </Link>
-        <Link
-          href={routes.methodology(locale)}
-          className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
-        >
-          Methodology
-        </Link>
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+          <Link
+            href={routes.methodology(locale)}
+            className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+          >
+            Methodology
+          </Link>
+          <span className="hidden text-zinc-400 dark:text-zinc-600 sm:inline">
+            ·
+          </span>
+          <Link
+            href={routes.editorialPolicy(locale)}
+            className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+          >
+            Editorial policy
+          </Link>
+        </div>
       </div>
     </div>
   );
 }
-
