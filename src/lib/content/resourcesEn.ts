@@ -67,6 +67,297 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
   },
   {
+    slug: "paint-planning-complete-guide",
+    title: "Paint planning complete guide (coats, primer, sheen, and prep)",
+    description:
+      "A practical paint planning guide that explains coats, primer decisions, sheen selection, and the measurements that make paint estimates reliable.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Start with the right measurement (wall area, not floor area)",
+        paragraphs: [
+          "Most under-estimates happen because people use floor area or rough room size. Paint is driven by wall surface area (and sometimes ceilings and trim). Measure each wall width × height and add them. If you want a tighter estimate, subtract large windows and doors, but many people keep them in and treat it as waste/buffer.",
+          "If you are painting multiple rooms, treat each room as its own line item first. That makes it easier to choose different coats or products (for example, one room might need stain-blocking primer while another does not).",
+        ],
+      },
+      {
+        heading: "How many coats do you really need?",
+        paragraphs: [
+          "Coat count depends on color change, sheen, surface condition, and the quality of the paint. A typical interior repaint often lands at 2 finish coats. Dramatic color changes, porous surfaces, and heavy texture can push you to 3 coats.",
+          "If you are unsure, do a small test area using the exact paint. You will learn quickly whether 2 coats covers or whether you need a primer step (or an extra finish coat).",
+        ],
+        table: {
+          columns: ["Scenario", "Common plan", "Why"],
+          rows: [
+            ["Same-color repaint on smooth walls", "1–2 finish coats", "Touch-up and uniformity"],
+            ["Big color change (dark to light or vice versa)", "Primer + 2 coats", "Hides previous color faster"],
+            ["Fresh drywall / patches", "Primer + 2 coats", "Prevents flashing and uneven sheen"],
+            ["Heavy texture / porous walls", "2–3 coats", "Lower coverage, more absorption"],
+          ],
+        },
+      },
+      {
+        heading: "Primer vs paint: when priming saves money",
+        paragraphs: [
+          "Primer is not a universal requirement, but it often makes the finish more predictable. Priming is most valuable on patched drywall, stained areas, very porous walls, glossy surfaces, and big color changes where coverage is difficult.",
+          "If you skip primer when you should not, you often pay for it later with extra coats, uneven sheen, or paint failure. That is why accurate estimating is more than area math: it is also product planning.",
+        ],
+      },
+      {
+        heading: "Coverage rates: product label beats averages",
+        paragraphs: [
+          "A planning range like 350–400 sq ft per gallon is fine for first-pass budgeting, but the label on the exact product wins. Coverage can drop when you have heavy texture, porous walls, or lots of cut-in work (edges, corners, and trim lines).",
+          "Trim and doors can have different coverage than walls because profiles add surface area and prep can change how paint lays down. Treat trim and doors as separate line items if you want a reliable plan.",
+        ],
+      },
+      {
+        heading: "Sheen selection (practical guidance)",
+        paragraphs: [
+          "Sheen affects appearance and touch-up behavior. Higher sheen can highlight wall defects but is more washable. Lower sheen hides defects but can scuff more easily. If you are changing sheen, plan for more prep and sometimes primer, especially if you are painting over glossy surfaces.",
+        ],
+        table: {
+          columns: ["Sheen", "Typical use", "Tradeoff"],
+          rows: [
+            ["Flat / matte", "Ceilings, low-traffic walls", "Hides defects, less washable"],
+            ["Eggshell", "Most interior walls", "Good balance for durability"],
+            ["Satin", "Kitchens, baths, higher traffic", "More washable, shows defects more"],
+            ["Semi-gloss", "Trim, doors", "Durable, highlights brush marks"],
+          ],
+        },
+      },
+      {
+        heading: "Buffering and buying: the real-world rules",
+        bullets: [
+          "Separate walls, ceilings, and trim if products or coat counts differ.",
+          "Round up near thresholds and keep labeled touch-up paint for future repairs.",
+          "If matching later matters, buy enough from the same batch when possible.",
+          "Plan extra time and minor waste for cut-in work and cleanup.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Paint calculator", href: "/en/calculators/home-improvement/paint" },
+      { label: "Paint guide", href: "/en/guides/home-improvement/paint" },
+      { label: "Primer vs paint: when to prime", href: "/en/resources/primer-vs-paint-when-to-prime" },
+    ],
+  },
+  {
+    slug: "roofing-materials-checklist-and-estimate",
+    title: "Roofing materials checklist (what you forget when estimating)",
+    description:
+      "A practical checklist for roofing orders: squares, bundles, waste, and the accessory items that often get missed in basic estimates.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Squares, bundles, and why the label matters",
+        paragraphs: [
+          "A roofing square is 100 sq ft of roof surface area. Many shingles are packaged so that a certain number of bundles covers one square, but the exact number varies by product. Always confirm on the wrapper or product spec sheet.",
+          "If you estimate bundles using a generic assumption and it is wrong for your shingle, your order can be off by several bundles even when the square count is correct.",
+        ],
+      },
+      {
+        heading: "Waste factors (typical starting points)",
+        paragraphs: [
+          "Waste depends heavily on roof complexity. Even with the same surface area, a roof with valleys, hips, dormers, and many penetrations will require more cuts and thus more waste.",
+        ],
+        table: {
+          columns: ["Roof complexity", "Common waste", "Why it increases"],
+          rows: [
+            ["Simple gable", "10–15%", "Fewer cuts and valleys"],
+            ["Typical mixed roof", "15–20%", "More edges and penetrations"],
+            ["Complex roof", "20–25%+", "Valleys, dormers, many cuts"],
+          ],
+        },
+      },
+      {
+        heading: "Accessory checklist (often missed)",
+        bullets: [
+          "Starter strips",
+          "Ridge cap shingles (or ridge cap system)",
+          "Underlayment (felt or synthetic)",
+          "Ice & water shield (where required by code/climate)",
+          "Drip edge",
+          "Step flashing / chimney flashing / valley flashing (project dependent)",
+          "Roof vents / ridge vent components",
+          "Nails and sealants",
+        ],
+      },
+      {
+        heading: "Pitch and measurement: footprint is not roof area",
+        paragraphs: [
+          "Roof surface area is larger than footprint area on pitched roofs. If you are estimating from the ground, apply a pitch multiplier or measure each plane. The most common big error is mixing footprint dimensions with slope dimensions.",
+          "If you are unsure, use the roof pitch multiplier approach as a planning estimate and confirm with a roofer or by measuring planes.",
+        ],
+      },
+      {
+        heading: "Buying strategy (avoid shortages and mismatches)",
+        bullets: [
+          "Round up to whole bundles and keep a small number of extras for repairs.",
+          "Buy all shingles and ridge cap from the same batch when possible to reduce color mismatch risk.",
+          "Plan delivery placement and weather windows; storage and staging affect damage and waste.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Roofing calculator", href: "/en/calculators/home-improvement/roofing" },
+      { label: "Roofing guide", href: "/en/guides/home-improvement/roofing" },
+      { label: "Roof pitch multiplier", href: "/en/resources/roof-pitch-area-multiplier" },
+      { label: "Starter & ridge cap", href: "/en/resources/roofing-starter-and-ridge-cap" },
+    ],
+  },
+  {
+    slug: "gravel-driveway-layering-and-compaction",
+    title: "Gravel driveway layering and compaction (base vs top)",
+    description:
+      "A practical guide to estimating gravel by layers: base vs surface, compaction, drainage, and supplier ton conversions.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Think in layers (base and top are not the same)",
+        paragraphs: [
+          "Many gravel projects fail because a single depth is used for the whole build. Driveways and bases commonly use multiple layers with different thickness targets and sometimes different materials.",
+          "A simple approach is to estimate each layer separately (base layer, then top layer). That helps you order the right products and prevents mixing base material with surface material.",
+        ],
+      },
+      {
+        heading: "Compaction: loose depth vs final depth",
+        paragraphs: [
+          "Compaction reduces loose thickness. If you want 4 inches final compacted depth, you may need to place more than 4 inches loose. The exact factor depends on material and compaction effort, but a buffer is usually cheaper than a second delivery.",
+        ],
+      },
+      {
+        heading: "How to estimate volume (and when tons matter)",
+        paragraphs: [
+          "Start with area and average thickness to get volume. If your supplier sells by tons, convert using the supplier's density for the exact product. Generic charts are a starting point, not a guarantee.",
+        ],
+        table: {
+          columns: ["Product type", "Typical ton/yd³ range", "Reminder"],
+          rows: [
+            ["Crushed stone / base", "1.3–1.6", "Moisture changes density"],
+            ["Pea gravel", "1.2–1.4", "Round stones behave differently"],
+            ["Road base", "1.3–1.6", "Often compacts well"],
+          ],
+        },
+      },
+      {
+        heading: "Drainage and edge containment (why math is not enough)",
+        paragraphs: [
+          "If water sits on the driveway, repeated top-ups are common. Correct grading and drainage first. Edge containment and a stable base reduce migration and potholes, which is often more important than a perfect yardage estimate.",
+        ],
+      },
+      {
+        heading: "Practical ordering checklist",
+        bullets: [
+          "Measure multiple depth checks and use an average thickness.",
+          "Estimate base and top layers separately (often different products).",
+          "Ask your supplier for the exact yd³↔tons conversion for your product.",
+          "Plan a buffer for compaction and edge irregularities.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Gravel calculator", href: "/en/calculators/home-improvement/gravel" },
+      { label: "Gravel guide", href: "/en/guides/home-improvement/gravel" },
+      { label: "Yards to tons guide", href: "/en/resources/gravel-yards-to-tons-guide" },
+      { label: "Base vs top layer", href: "/en/resources/gravel-base-vs-top-layer" },
+    ],
+  },
+  {
+    slug: "topsoil-leveling-step-by-step-guide",
+    title: "Topsoil leveling step-by-step (how to avoid over-ordering)",
+    description:
+      "A step-by-step guide to leveling with topsoil: measuring average depth, feathering edges, settling, and planning touch-ups.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why leveling estimates go wrong",
+        paragraphs: [
+          "The biggest mistake is using the lowest spot as the depth for the entire lawn. A single low area can inflate your order dramatically if you treat it as the whole project depth.",
+          "Instead, estimate an average depth for the full area and then add extra only for the low zones that truly need more material.",
+        ],
+      },
+      {
+        heading: "Step 1: map highs and lows",
+        paragraphs: [
+          "Use string lines, a long straightedge, or a level to identify high and low areas. Mark low zones separately so you can treat them as targeted fill instead of spreading the same depth everywhere.",
+        ],
+      },
+      {
+        heading: "Step 2: choose an average spread depth",
+        paragraphs: [
+          "Pick a realistic average depth you will spread across the whole area (for example, 1 inch topdressing). Then calculate extra volume for low areas as separate rectangles with their own average depth.",
+        ],
+      },
+      {
+        heading: "Step 3: feather edges (this changes volume)",
+        paragraphs: [
+          "Feathering is how you avoid sharp transitions that become bumps after settling. Feathering also consumes material, which is why leveling projects almost always need a buffer beyond the pure average-depth math.",
+        ],
+      },
+      {
+        heading: "Step 4: settle and plan touch-ups",
+        bullets: [
+          "Water and lightly roll if appropriate for your project; expect settling.",
+          "Plan a small touch-up pass after the first rain or watering cycle.",
+          "Keep a small amount of soil for minor low spots that appear after settling.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
+      { label: "Topsoil leveling guide", href: "/en/guides/home-improvement/topsoil-leveling" },
+      { label: "Feathering guide", href: "/en/resources/topsoil-leveling-feathering-guide" },
+      { label: "Topsoil coverage chart", href: "/en/resources/topsoil-coverage-chart" },
+    ],
+  },
+  {
+    slug: "flooring-installation-planning-and-moisture",
+    title: "Flooring installation planning (moisture, acclimation, and underlayment)",
+    description:
+      "A practical flooring planning guide: waste, moisture checks, acclimation, underlayment selection, and the non-area items that cause project delays.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why flooring projects fail (it is not the square footage)",
+        paragraphs: [
+          "Flooring projects often go wrong due to moisture, subfloor flatness, and missing transition/trim planning. Area math matters, but it is rarely the only driver of cost or delays.",
+        ],
+      },
+      {
+        heading: "Acclimation and moisture checks",
+        paragraphs: [
+          "Many products require acclimation and moisture limits before install. If you skip this, you risk cupping, gaps, or failure later. Follow the product instructions and confirm your subfloor conditions before you buy everything.",
+        ],
+      },
+      {
+        heading: "Underlayment: match the system",
+        paragraphs: [
+          "Underlayment choice depends on floor type (LVP, laminate, engineered wood), subfloor type, and whether you need moisture barrier or sound control. Do not assume one underlayment fits all products.",
+        ],
+      },
+      {
+        heading: "Waste and box rounding (real-world rules)",
+        bullets: [
+          "Pick a waste factor that matches layout complexity (diagonal installs cost more).",
+          "Use label coverage per box and round up to whole boxes.",
+          "Keep 1–2 boxes for future repairs if matching later matters.",
+        ],
+      },
+      {
+        heading: "Transitions, trims, and stairs",
+        paragraphs: [
+          "Transitions and trims are often forgotten line items. If you have stairs, estimate treads and risers separately. If you have doorways or mixed floor heights, plan transitions early because they can limit product choices.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Flooring calculator", href: "/en/calculators/home-improvement/flooring" },
+      { label: "Flooring guide", href: "/en/guides/home-improvement/flooring" },
+      { label: "Underlayment checklist", href: "/en/resources/flooring-underlayment-checklist" },
+      { label: "Flooring boxes rounding", href: "/en/resources/flooring-boxes-rounding" },
+    ],
+  },
+  {
     slug: "roofing-squares-and-bundles-explained",
     title: "Roofing squares and bundles explained",
     description:
