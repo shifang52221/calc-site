@@ -2221,5 +2221,206 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
       { label: "Paint planning notes", href: "/en/guides/home-improvement/paint" },
     ],
   },
+  {
+    slug: "tile-project-planning-guide",
+    title: "Tile project planning guide (layout, overage, and materials list)",
+    description:
+      "A practical tile planning guide: how to choose an overage factor, avoid box-coverage mistakes, and build a complete materials list.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Start with layout (layout drives waste)",
+        paragraphs: [
+          "Tile waste is mostly layout and cuts, not broken tiles. Straight layouts in open rectangles typically waste less than diagonal layouts, herringbone, or projects with many corners, niches, and penetrations.",
+          "If appearance matters, plan to buy enough from a consistent dye lot. That usually means choosing a realistic overage upfront instead of trying to top up later.",
+        ],
+        table: {
+          columns: ["Install type", "Typical overage", "Notes"],
+          rows: [
+            ["Straight floor layout", "10%", "Increase for many corners"],
+            ["Diagonal / patterns", "15–20%", "More cuts and waste"],
+            ["Walls with niches/penetrations", "15–25%", "Small cuts are hard to reuse"],
+            ["Large format tile", "10–15%", "Fewer pieces but breakage risk matters"],
+          ],
+        },
+      },
+      {
+        heading: "Box coverage: the label always wins",
+        paragraphs: [
+          "Do not compute box coverage from tile size alone. Packaging varies by product, thickness, and pieces per carton. Use the label’s sq ft/sq m coverage per box and round up to whole boxes.",
+          "If you are mixing field tile with mosaics, borders, or trim pieces, estimate those separately. Their coverage and waste behavior differ from field tile.",
+        ],
+      },
+      {
+        heading: "A complete materials list (avoid the “tile only” estimate)",
+        bullets: [
+          "Thinset/mortar (type depends on tile, substrate, and environment)",
+          "Grout (type and joint width change usage)",
+          "Waterproofing (for wet areas) and/or uncoupling membrane (project dependent)",
+          "Backer board / substrate prep materials (as needed)",
+          "Trim pieces, transitions, and movement joints",
+          "Spacers, leveling system, and sealant/caulk (at changes of plane)",
+        ],
+      },
+      {
+        heading: "Practical buying rules",
+        bullets: [
+          "Round up: one extra box is cheaper than a lot mismatch mid-project.",
+          "Keep spares for future repairs (especially for discontinued styles).",
+          "If tile may be back-ordered, buy everything at once and store it safely.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Tile calculator", href: "/en/calculators/home-improvement/tile" },
+      { label: "Tile guide", href: "/en/guides/home-improvement/tile" },
+      { label: "Tile waste percentage guide", href: "/en/resources/tile-waste-percentage-guide" },
+      { label: "Tile box coverage checklist", href: "/en/resources/tile-box-coverage-checklist" },
+    ],
+  },
+  {
+    slug: "drywall-materials-and-finishing-guide",
+    title: "Drywall materials and finishing guide (sheets, seams, mud, and tape)",
+    description:
+      "A practical drywall planning guide: choosing sheet sizes, understanding finishing levels, and estimating seams, tape, and compound realistically.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Sheet sizing: fewer seams vs handling",
+        paragraphs: [
+          "Larger sheets reduce seams, which can reduce finishing time, but handling and safety matter—especially for ceilings. Choose a sheet size you can safely install and transport.",
+        ],
+        table: {
+          columns: ["Sheet size", "Coverage", "Tradeoff"],
+          rows: [
+            ["4×8", "32 sq ft", "Easier handling, more seams"],
+            ["4×10", "40 sq ft", "Fewer seams, needs clearance"],
+            ["4×12", "48 sq ft", "Fewest seams, heavy/awkward"],
+          ],
+        },
+      },
+      {
+        heading: "Finishing level changes material usage",
+        paragraphs: [
+          "Higher finish levels generally mean more compound, more coats, and more sanding. Texture can hide imperfections but still uses material and time.",
+          "If you are planning for Level 4–5 smooth walls, assume more compound and time than a basic garage finish.",
+        ],
+      },
+      {
+        heading: "Seams, corners, and repairs (why area alone is not enough)",
+        paragraphs: [
+          "Seam length is driven by layout. Corners, soffits, and repairs add tape and compound but do not always show up in area math. If the room is complex, increase your waste and buffer.",
+          "If you want a reliable purchase plan, estimate seams/tape separately using a mud-and-tape estimate, then add a buffer for corners and patches.",
+        ],
+      },
+      {
+        heading: "Practical buying checklist",
+        bullets: [
+          "Drywall sheets (type and thickness for the room)",
+          "Screws / fasteners (type depends on framing)",
+          "Tape (paper or mesh)",
+          "Joint compound (setting type vs premix)",
+          "Corner bead and accessories (as needed)",
+          "Sanding supplies, primer, and paint (finishing schedule)",
+        ],
+      },
+    ],
+    related: [
+      { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
+      { label: "Drywall guide", href: "/en/guides/home-improvement/drywall" },
+      { label: "Mud and tape estimating", href: "/en/resources/drywall-mud-and-tape-estimating" },
+      { label: "Drywall finish levels", href: "/en/resources/drywall-finish-levels-0-5" },
+    ],
+  },
+  {
+    slug: "deck-planning-materials-and-layout-guide",
+    title: "Deck planning guide (layout, gaps, stairs, and materials list)",
+    description:
+      "A practical deck planning guide: board direction, gapping, diagonal waste, stairs, and the material items people forget.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Board direction and borders change waste",
+        paragraphs: [
+          "Deck board direction affects both board count and waste. Straight installs on simple rectangles usually waste less than diagonal layouts. Picture-frame borders, stairs, and landings add complexity and often increase waste.",
+        ],
+      },
+      {
+        heading: "Gaps and actual board width affect coverage",
+        paragraphs: [
+          "Coverage depends on actual board width (not nominal) and the gap you leave. Composite and wood often have different recommended gapping rules—follow the product guidance.",
+          "If you are comparing materials, use the same assumptions (board width and gap) or the estimates won’t be comparable.",
+        ],
+      },
+      {
+        heading: "Stairs: estimate as a separate line item",
+        paragraphs: [
+          "Stairs can add board count quickly. Treat steps and landings separately rather than hoping the main deck waste covers them. If you are planning a border or diagonal pattern, expect more waste on stairs.",
+        ],
+      },
+      {
+        heading: "Materials list (beyond deck boards)",
+        bullets: [
+          "Fasteners/clips (product-specific)",
+          "Flashing and waterproofing details (where needed)",
+          "Joists/beams/posts and hardware (separate framing estimate)",
+          "Railing materials and hardware",
+          "Stair stringers and connectors (if applicable)",
+        ],
+      },
+    ],
+    related: [
+      { label: "Deck calculator", href: "/en/calculators/home-improvement/deck" },
+      { label: "Deck guide", href: "/en/guides/home-improvement/deck" },
+      { label: "Board gap and coverage", href: "/en/resources/deck-board-gap-and-coverage" },
+      { label: "Diagonal waste guide", href: "/en/resources/deck-diagonal-waste-guide" },
+    ],
+  },
+  {
+    slug: "fence-planning-posts-gates-and-materials-guide",
+    title: "Fence planning guide (posts, gates, and materials checklist)",
+    description:
+      "A practical fence planning guide: panels vs pickets, post spacing, gates and corners, and the material items most estimates miss.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Decide panel vs picket before you estimate",
+        paragraphs: [
+          "Panel fences are often estimated by sections (6 ft/8 ft panels). Picket fences are estimated by picket count and rail length. The math and the shopping list are different, so pick the system first.",
+        ],
+      },
+      {
+        heading: "Posts are not just length ÷ spacing",
+        paragraphs: [
+          "Corners, ends, and gates require extra posts and often extra bracing. If you do not plan these explicitly, you will under-buy posts and concrete.",
+          "Post depth is driven by fence height and local frost line guidance. Depth affects post length and concrete needs.",
+        ],
+      },
+      {
+        heading: "Gates: plan hardware and clearances",
+        bullets: [
+          "Gate posts often need to be stronger or deeper (project dependent).",
+          "Hardware (hinges, latches) is a separate line item.",
+          "Slope and terrain can require adjustments in panel stepping or racking.",
+        ],
+      },
+      {
+        heading: "Material checklist (common misses)",
+        bullets: [
+          "Posts, panels/pickets, rails, and fasteners",
+          "Concrete for post holes (or alternative footing system)",
+          "Gate hardware and bracing",
+          "Caps, trim, and finishing/stain (if applicable)",
+          "Extra boards for damage and future repairs",
+        ],
+      },
+    ],
+    related: [
+      { label: "Fence calculator", href: "/en/calculators/home-improvement/fence" },
+      { label: "Fence guide", href: "/en/guides/home-improvement/fence" },
+      { label: "Panel vs picket estimate", href: "/en/resources/fence-panel-vs-picket-estimate" },
+      { label: "Post hole concrete guide", href: "/en/resources/fence-post-hole-concrete-guide" },
+    ],
+  },
 ];
 
