@@ -5,6 +5,7 @@
     "guides": "Guías",
     "resources": "Recursos",
     "methodology": "Metodología",
+    "editorialPolicy": "Política editorial",
     "privacy": "Privacidad",
     "terms": "Términos",
     "about": "Acerca de",
@@ -53,6 +54,33 @@
     },
     "contactTitle": "Comentarios",
     "contactBody": "Si un supuesto no coincide con tu región o producto, contáctanos con el producto y el contexto. Mejoramos continuamente."
+  },
+  "editorialPolicyPage": {
+    "metaTitle": "Política editorial | HomeDecorCalc",
+    "metaDescription": "Cómo creamos y actualizamos el contenido, y cómo solicitar correcciones.",
+    "title": "Política editorial",
+    "subtitle": "Estándares de calidad, actualizaciones y correcciones.",
+    "qualityTitle": "Estándares de calidad",
+    "quality": {
+      "q1": "Cada calculadora explica unidades, supuestos y redondeo.",
+      "q2": "Priorizamos consejos prácticos y originales.",
+      "q3": "Evitamos copiar otros sitios.",
+      "q4": "Mejoramos según preguntas reales."
+    },
+    "updatesTitle": "Actualizaciones",
+    "updates": {
+      "p1": "Actualizamos cuando cambian fórmulas o encontramos mejoras.",
+      "u1": "Las páginas importantes muestran 'Última actualización'.",
+      "u2": "Puedes ajustar valores predeterminados.",
+      "u3": "Confirma con el código local y especificaciones."
+    },
+    "correctionsTitle": "Correcciones",
+    "corrections": {
+      "p1": "Envía la URL y el problema por correo.",
+      "p2": "Priorizamos seguridad y grandes diferencias."
+    },
+    "disclaimerTitle": "Aviso",
+    "disclaimerBody": "Contenido informativo para planificación. No es asesoramiento profesional."
   },
   "site": {
     "name": "HomeDecorCalc",

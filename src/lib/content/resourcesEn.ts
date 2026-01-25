@@ -561,5 +561,223 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
       { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
     ],
   },
+  {
+    slug: "tile-grout-coverage-guide",
+    title: "Tile grout coverage guide (what changes the bag count)",
+    description:
+      "A practical grout guide: what drives grout usage, how joint size changes the estimate, and what people forget.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "What drives grout usage",
+        bullets: [
+          "Tile size: smaller tiles have more grout lines per square foot.",
+          "Joint width: wider joints use more grout.",
+          "Joint depth: thicker tile and deeper joints increase usage.",
+          "Waste: mixing loss, cleanup, and rounding to whole bags.",
+        ],
+      },
+      {
+        heading: "Rule of thumb (planning only)",
+        paragraphs: [
+          "If you do not have the product bag yield chart, use your grout calculator and add a buffer. Real coverage varies by brand, sanded vs unsanded, and technique.",
+        ],
+      },
+      {
+        heading: "Common misses",
+        bullets: [
+          "Sanded vs unsanded (and epoxy) grout are different products with different behavior.",
+          "Movement joints and caulk are not grout.",
+          "Extra grout is useful for future repairs, but matching later can be difficult.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Tile grout calculator", href: "/en/calculators/home-improvement/tile-grout" },
+      { label: "Tile calculator", href: "/en/calculators/home-improvement/tile" },
+    ],
+  },
+  {
+    slug: "sand-density-and-weight-guide",
+    title: "Sand density and weight guide (yards, tons, and compaction)",
+    description:
+      "Why sand density varies, how to convert volume to weight, and what to confirm with your supplier.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why density varies",
+        paragraphs: [
+          "Sand density changes by moisture and sand type (masonry, concrete, play sand), and compaction. That is why one generic conversion can be wrong for your supplier.",
+        ],
+      },
+      {
+        heading: "Typical planning ranges (loose)",
+        table: {
+          columns: ["Material (typical)", "Approx. lb per cubic yard", "Notes"],
+          rows: [
+            ["Dry sand", "2400-2800", "Varies by moisture and gradation"],
+            ["Damp sand", "2700-3200", "Heavier due to moisture"],
+          ],
+        },
+      },
+      {
+        heading: "Best practice",
+        bullets: [
+          "Use the supplier conversion for the exact sand you are buying.",
+          "If you are bedding pavers, confirm bedding sand type and typical compacted thickness.",
+          "Order a small buffer for grading and cleanup, and round to delivery minimums.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Sand calculator", href: "/en/calculators/home-improvement/sand" },
+      { label: "Paver base calculator", href: "/en/calculators/home-improvement/paver-base" },
+    ],
+  },
+  {
+    slug: "concrete-bag-yield-guide",
+    title: "Concrete bag yield guide (how many bags per cubic foot?)",
+    description:
+      "How to estimate concrete bags: why yield matters, common bag sizes, and when ready-mix is a better option.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Yield is the key number",
+        paragraphs: [
+          "Bagged concrete is sold by weight, but you need volume. The label yield (cubic feet per bag) varies by product and brand, so it is more reliable than generic charts.",
+        ],
+      },
+      {
+        heading: "Rule of thumb (use the label when possible)",
+        bullets: [
+          "80 lb bags often yield around 0.6 cu ft (varies by product).",
+          "60 lb bags often yield around 0.45 cu ft (varies by product).",
+          "50 lb bags often yield around 0.375 cu ft (varies by product).",
+        ],
+      },
+      {
+        heading: "When to consider ready-mix",
+        bullets: [
+          "Large pours take many bags and a lot of labor time.",
+          "Consistency is easier with ready-mix.",
+          "Ordering short can stop a pour; buffers are usually cheaper than a second delivery.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Concrete bags calculator", href: "/en/calculators/home-improvement/concrete-bags" },
+      { label: "Concrete calculator", href: "/en/calculators/home-improvement/concrete" },
+    ],
+  },
+  {
+    slug: "mulch-bag-coverage-guide",
+    title: "Mulch bag coverage guide (how many bags do you need?)",
+    description:
+      "How to plan bagged mulch: bag sizes, how depth changes coverage, and why settling matters.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Bag size is the first check",
+        paragraphs: [
+          "Bagged mulch is sold by volume (often 2 cu ft or 3 cu ft). Convert your bed volume to cubic feet, then divide by bag size and round up.",
+        ],
+      },
+      {
+        heading: "Planning notes",
+        bullets: [
+          "Mulch settles after spreading and watering. A small buffer helps.",
+          "If color matching matters, buy enough at once.",
+          "Avoid piling mulch against trunks (keep it away from bark).",
+        ],
+      },
+    ],
+    related: [
+      { label: "Mulch bags calculator", href: "/en/calculators/home-improvement/mulch-bags" },
+      { label: "Mulch calculator (bulk)", href: "/en/calculators/home-improvement/mulch" },
+    ],
+  },
+  {
+    slug: "topsoil-bag-coverage-guide",
+    title: "Topsoil bag coverage guide (bags to cubic yards)",
+    description:
+      "How to convert bagged topsoil to total volume, and when bulk delivery is a better buy.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Bag sizes vary",
+        paragraphs: [
+          "Topsoil bags are commonly sold by cubic feet or liters. Convert everything to one unit (cubic feet or cubic yards), then round up to whole bags.",
+        ],
+      },
+      {
+        heading: "When bulk is better",
+        bullets: [
+          "Large projects can require many bags and a lot of carrying time.",
+          "Bulk topsoil is usually cheaper per unit, but quality varies by supplier.",
+          "If leveling, measure multiple depth checks and use an average thickness.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Topsoil bags calculator", href: "/en/calculators/home-improvement/topsoil-bags" },
+      { label: "Topsoil calculator (bulk)", href: "/en/calculators/home-improvement/topsoil" },
+    ],
+  },
+  {
+    slug: "drywall-texture-coverage-guide",
+    title: "Drywall texture coverage guide (bags, coats, and waste)",
+    description:
+      "A practical drywall texture guide: why coverage varies, how coats change material, and what increases waste.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why coverage varies",
+        bullets: [
+          "Texture type and tool (spray vs hopper vs trowel).",
+          "Surface porosity and primer.",
+          "Coat count and finish level expectations.",
+        ],
+      },
+      {
+        heading: "Planning tips",
+        bullets: [
+          "If you are new, plan extra for practice and cleanup.",
+          "Spraying and sanding can increase waste.",
+          "Round up; matching texture mid-wall can be difficult if you run short.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Drywall texture calculator", href: "/en/calculators/home-improvement/drywall-texture" },
+      { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
+    ],
+  },
+  {
+    slug: "fence-post-hole-concrete-guide",
+    title: "Fence post hole concrete guide (depth, diameter, and layout)",
+    description:
+      "How to plan fence posts: why corners/gates add posts, what affects hole size, and how concrete volume adds up.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why post count is not just length / spacing",
+        bullets: [
+          "Corners, ends, and gates add posts beyond simple spacing math.",
+          "Gate posts often need heavier posts and more concrete.",
+          "Sloped terrain and stepped panels can change layout and spacing.",
+        ],
+      },
+      {
+        heading: "Concrete planning notes",
+        paragraphs: [
+          "Concrete volume depends on hole diameter and depth. Local frost depth and soil conditions can change requirements, so confirm local practice and code.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Fence calculator", href: "/en/calculators/home-improvement/fence" },
+      { label: "Fence posts guide", href: "/en/guides/home-improvement/fence-posts" },
+    ],
+  },
 ];
 

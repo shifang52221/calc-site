@@ -5,10 +5,38 @@
     "guides": "指南",
     "resources": "資源",
     "methodology": "方法論",
+    "editorialPolicy": "編輯政策",
     "privacy": "隱私權",
     "terms": "條款",
     "about": "關於",
     "contact": "聯絡"
+  },
+  "editorialPolicyPage": {
+    "metaTitle": "編輯政策 | HomeDecorCalc",
+    "metaDescription": "我們如何撰寫與更新內容，以及如何回報與更正。",
+    "title": "編輯政策",
+    "subtitle": "內容如何產出：品質標準、更新方式與更正流程。",
+    "qualityTitle": "品質標準",
+    "quality": {
+      "q1": "每個計算器都說明單位、假設與進位方式。",
+      "q2": "以實作為主：如何量測、該加多少緩衝、常見遺漏。",
+      "q3": "避免複製貼上其他網站，優先提供清楚且原創的解釋。",
+      "q4": "依據使用者問題與搜尋意圖持續改進。"
+    },
+    "updatesTitle": "更新",
+    "updates": {
+      "p1": "當公式、包裝慣例或更好的說明方式出現時，我們會更新內容。",
+      "u1": "重要頁面會標示「最後更新」。",
+      "u2": "預設值可能會調整以符合常見作法，但你可自行修改。",
+      "u3": "重要工程請以當地法規與產品規格為準。"
+    },
+    "correctionsTitle": "更正",
+    "corrections": {
+      "p1": "若你發現問題，請附上頁面連結與你認為錯誤之處（如有產品或地區差異請一併說明）。",
+      "p2": "我們會優先處理與安全、法規、或材料/成本差異較大的更正。"
+    },
+    "disclaimerTitle": "聲明",
+    "disclaimerBody": "本內容僅供規劃估算參考，非專業建議。請以產品文件、當地法規與合格專業人士意見為準。"
   },
   "resourcesIndex": {
     "metaTitle": "資源",

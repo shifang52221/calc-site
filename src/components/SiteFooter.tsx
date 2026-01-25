@@ -21,6 +21,14 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           <Link href={routes.methodology(locale)} className="hover:text-zinc-900">
             {t("methodology")}
           </Link>
+          {locale === "en" ? (
+            <Link
+              href={routes.editorialPolicy(locale)}
+              className="hover:text-zinc-900"
+            >
+              {t("editorialPolicy")}
+            </Link>
+          ) : null}
           <Link href={routes.privacy(locale)} className="hover:text-zinc-900">
             {t("privacy")}
           </Link>

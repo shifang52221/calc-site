@@ -51,7 +51,7 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
       >
         <span className="whitespace-nowrap">{getLocaleLabel(locale)}</span>
         <span aria-hidden="true" className="text-zinc-500 dark:text-zinc-400">
-          ▾
+          ▼
         </span>
       </button>
 
@@ -82,3 +82,4 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
     </div>
   );
 }
+

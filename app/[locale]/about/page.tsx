@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { normalizeLocale } from "@/i18n/locale";
 import { getAlternates } from "@/lib/seo";
+import { routes } from "@/lib/routes";
 
 export async function generateMetadata({
   params,
@@ -30,13 +32,19 @@ export default async function AboutPage({
   const locale = normalizeLocale(rawLocale);
   setRequestLocale(locale);
   const t = await getTranslations("aboutPage");
+  const nav = await getTranslations("nav");
+
+  const bodyParagraphs =
+    locale === "en" ? [t("body.p1"), t("body.p2")] : [t("body")];
 
   return (
     <div className="mx-auto grid max-w-3xl gap-6">
       <h1 className="text-2xl font-semibold">{t("title")}</h1>
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
-        <p>{t("body")}</p>
+        {bodyParagraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
       </section>
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
@@ -49,6 +57,44 @@ export default async function AboutPage({
           <li>{t("principles.p3")}</li>
         </ul>
       </section>
+
+      {locale === "en" ? (
+        <>
+          <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+            <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+              {t("howItWorksTitle")}
+            </h2>
+            <p>{t("howItWorksBody")}</p>
+            <div className="flex flex-wrap gap-3 text-sm">
+              <Link
+                href={routes.methodology(locale)}
+                className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+              >
+                {nav("methodology")}
+              </Link>
+              <Link
+                href={routes.resources(locale)}
+                className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+              >
+                {nav("resources")}
+              </Link>
+              <Link
+                href={routes.editorialPolicy(locale)}
+                className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+              >
+                {nav("editorialPolicy")}
+              </Link>
+            </div>
+          </section>
+
+          <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+            <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+              {t("fundingTitle")}
+            </h2>
+            <p>{t("fundingBody")}</p>
+          </section>
+        </>
+      ) : null}
     </div>
   );
 }

@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       `${baseUrl}${routes.guides(locale)}`,
       `${baseUrl}${routes.resources(locale)}`,
       `${baseUrl}${routes.methodology(locale)}`,
+      `${baseUrl}${routes.editorialPolicy(locale)}`,
       ...CALCULATOR_CATEGORIES.map(
         (category) =>
           `${baseUrl}${routes.calculatorsCategory(locale, category.id)}`,
