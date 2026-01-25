@@ -2422,5 +2422,322 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
       { label: "Post hole concrete guide", href: "/en/resources/fence-post-hole-concrete-guide" },
     ],
   },
+  {
+    slug: "tile-grout-selection-and-coverage-guide",
+    title: "Tile grout guide (sanded vs unsanded, joint width, and coverage)",
+    description:
+      "A practical grout guide: choosing grout type, sizing joints, and understanding why coverage changes with tile size and joint width.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Grout type: sanded vs unsanded vs specialty",
+        paragraphs: [
+          "Grout choice depends on joint width, tile type, and the environment. Traditional cement grouts are common, but specialty and epoxy grouts can be worth it for stain resistance in high-use areas.",
+          "Always follow the grout manufacturer's rules for your joint width and tile type. The goal is durable joints and consistent color, not just the cheapest bag.",
+        ],
+        table: {
+          columns: ["Type", "Common use", "Tradeoff"],
+          rows: [
+            ["Unsanded", "Narrow joints and some polished tiles", "Can be smoother, but not for every width"],
+            ["Sanded", "Wider joints / many floor installs", "Stronger for wider joints, texture varies"],
+            ["Epoxy/specialty", "Wet areas / stain resistance priority", "More expensive; different working time"],
+          ],
+        },
+      },
+      {
+        heading: "Why grout coverage varies so much",
+        paragraphs: [
+          "Grout usage is driven by total joint volume, not tile surface area. Smaller tiles create more linear feet of joints per square foot. Wider joints and deeper joints also increase volume.",
+          "For reliable planning, use product yield charts (or a grout calculator) and keep your inputs consistent: tile length/width, joint width, and an average joint depth.",
+        ],
+      },
+      {
+        heading: "Practical rules for estimating grout",
+        bullets: [
+          "Confirm tile size and the joint width you will actually install (not what you hope to install).",
+          "Estimate mosaics separately; small pieces increase joint footage dramatically.",
+          "Round up to whole bags and keep a small amount for touch-ups and repairs.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        bullets: [
+          "Using a “generic coverage” number that does not match your tile size and joint width.",
+          "Changing joint width mid-project and wondering why you ran short.",
+          "Over-washing or delaying cleanup, which can cause rework and extra grout usage.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Tile grout calculator", href: "/en/calculators/home-improvement/tile-grout" },
+      { label: "Tile grout coverage guide", href: "/en/resources/tile-grout-coverage-guide" },
+      { label: "Sanded vs unsanded", href: "/en/resources/tile-grout-sanded-vs-unsanded" },
+    ],
+  },
+  {
+    slug: "tile-waterproofing-and-membranes-guide",
+    title: "Tile waterproofing and membranes (what’s required vs optional)",
+    description:
+      "A practical guide to waterproofing choices in tile projects: showers, wet rooms, membranes, and why prep affects long-term durability.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Waterproofing is a system, not a product",
+        paragraphs: [
+          "Most tile failures are water-management failures: water gets behind tile and reaches materials that cannot handle it. Waterproofing should be designed as a system (substrate + membrane + seams + penetrations).",
+          "Requirements vary by local code and by manufacturer system. If you are using a branded system, follow that system’s instructions end-to-end.",
+        ],
+      },
+      {
+        heading: "Common membrane types (high level)",
+        table: {
+          columns: ["Type", "Common use", "Notes"],
+          rows: [
+            ["Sheet membrane", "Showers/wet areas", "Consistent thickness; seams must be treated correctly"],
+            ["Liquid-applied membrane", "Walls/floors in wet areas", "Coverage depends on thickness; needs cure time"],
+            ["Uncoupling membrane", "Floors", "Helps manage movement; not always waterproof by itself"],
+          ],
+        },
+      },
+      {
+        heading: "Planning checklist (before you buy tile)",
+        bullets: [
+          "Decide wet-area level (shower vs backsplash vs dry floor).",
+          "Confirm substrate (cement board vs foam board vs drywall where allowed).",
+          "List penetrations (valves, niches, benches) and plan sealing details.",
+          "Choose thinset/mortar type that matches membrane/tile requirements.",
+        ],
+      },
+      {
+        heading: "Why “just add more sealant” is not waterproofing",
+        paragraphs: [
+          "Caulk and grout are not a waterproofing plan. They help with surface management and movement joints, but they do not replace a proper membrane and substrate prep in wet areas.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Tile planning guide", href: "/en/resources/tile-project-planning-guide" },
+      { label: "Tile guide", href: "/en/guides/home-improvement/tile" },
+    ],
+  },
+  {
+    slug: "drywall-board-types-fire-moisture-and-sound",
+    title: "Drywall board types (regular, moisture-resistant, fire-rated, sound)",
+    description:
+      "A practical guide to drywall types: where regular board is fine, when you need moisture/fire-rated board, and how that affects planning.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Common drywall board types (quick overview)",
+        table: {
+          columns: ["Type", "Typical use", "Reminder"],
+          rows: [
+            ["Regular drywall", "Most dry interior rooms", "Match thickness to framing and local code"],
+            ["Moisture-resistant", "Bathrooms/laundry (non-shower areas)", "Not a substitute for waterproofing"],
+            ["Fire-rated (Type X)", "Garages/required assemblies", "Follow local code requirements"],
+            ["Sag-resistant / ceiling board", "Ceilings", "Helps reduce sag on wider spans"],
+          ],
+        },
+      },
+      {
+        heading: "Where people choose the wrong board",
+        bullets: [
+          "Using regular board in high-moisture areas without proper prep.",
+          "Assuming moisture-resistant board makes a shower waterproof.",
+          "Ignoring required fire-rated assemblies in garages or shared walls.",
+        ],
+      },
+      {
+        heading: "Planning impact",
+        paragraphs: [
+          "Board type decisions don’t usually change sheet counts, but they do affect cost, availability, and handling. If ceilings and walls use different thickness or type, estimate them as separate line items so you don’t under-buy the specialty board.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
+      { label: "Ceiling thickness guide", href: "/en/resources/drywall-ceiling-thickness-guide" },
+      { label: "Finish levels 0–5", href: "/en/resources/drywall-finish-levels-0-5" },
+    ],
+  },
+  {
+    slug: "deck-framing-checklist-joists-beams-posts",
+    title: "Deck framing checklist (joists, beams, posts, and hardware)",
+    description:
+      "A planning checklist for deck framing: what to confirm before you buy lumber and hardware, and why framing is a separate estimate from deck boards.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Deck boards are not the framing estimate",
+        paragraphs: [
+          "A deck board estimate covers surface boards. Framing includes joists, beams, posts, connectors, and fasteners. Framing needs depend on span, spacing, and local requirements, so it should be estimated as a separate list.",
+        ],
+      },
+      {
+        heading: "Checklist: the framing decisions that change materials",
+        bullets: [
+          "Joist spacing (often 12/16/24\" on center depending on decking and code)",
+          "Beam layout and spans (affects beam size and post count)",
+          "Ledger vs freestanding design (changes hardware and flashing needs)",
+          "Railing and stair loads (adds blocking and connectors)",
+        ],
+      },
+      {
+        heading: "Hardware items people forget",
+        bullets: [
+          "Joist hangers and hanger nails/screws",
+          "Post bases, brackets, and anchor hardware",
+          "Ledger flashing and waterproofing details",
+          "Structural screws/bolts where required",
+        ],
+      },
+    ],
+    related: [
+      { label: "Deck calculator", href: "/en/calculators/home-improvement/deck" },
+      { label: "Deck planning guide", href: "/en/resources/deck-planning-materials-and-layout-guide" },
+    ],
+  },
+  {
+    slug: "fence-gate-planning-hardware-and-sag",
+    title: "Fence gate planning (hardware, sag, and post bracing)",
+    description:
+      "A practical guide to fence gates: why gates sag, how to plan posts and bracing, and which hardware decisions affect long-term performance.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why gates sag (and what fixes it)",
+        paragraphs: [
+          "Gates sag when posts move, hardware is undersized, or the gate frame isn’t braced for weight. Planning the gate post and bracing is often more important than the pickets or panels.",
+        ],
+      },
+      {
+        heading: "Gate planning checklist",
+        bullets: [
+          "Confirm opening width and desired clearance (slope and ground changes matter).",
+          "Plan stronger gate posts and deeper footings where needed.",
+          "Choose hinges and latches rated for the gate weight and material.",
+          "Use diagonal bracing or a gate kit appropriate for your design.",
+        ],
+      },
+      {
+        heading: "Hardware items to list separately",
+        bullets: ["Hinges", "Latch/lock", "Drop rod (for double gates)", "Fasteners and braces"],
+      },
+    ],
+    related: [
+      { label: "Fence calculator", href: "/en/calculators/home-improvement/fence" },
+      { label: "Fence posts guide", href: "/en/guides/home-improvement/fence-posts" },
+      { label: "Post hole concrete guide", href: "/en/resources/fence-post-hole-concrete-guide" },
+    ],
+  },
+  {
+    slug: "gravel-drainage-and-edge-containment-guide",
+    title: "Gravel drainage and edge containment (how to reduce ruts and potholes)",
+    description:
+      "A practical guide for gravel longevity: drainage, grading, and edge containment—why you can’t fix a failing base with repeated top-ups.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Drainage first: water causes most gravel failures",
+        paragraphs: [
+          "If water sits on the surface or softens the base, gravel moves and ruts form. Fixing drainage and slope usually matters more than adding more stone.",
+        ],
+      },
+      {
+        heading: "Edge containment and migration",
+        paragraphs: [
+          "Without containment, gravel migrates outward and thins. Edging and a stable base reduce long-term maintenance and keep depth consistent.",
+        ],
+      },
+      {
+        heading: "Practical checklist",
+        bullets: [
+          "Confirm slope and where water should go (not into the driveway).",
+          "Separate base and top layers and compact each layer properly.",
+          "Use edge containment where migration is likely.",
+          "Plan periodic touch-ups, but don’t use touch-ups to solve drainage problems.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Gravel layering guide", href: "/en/resources/gravel-driveway-layering-and-compaction" },
+      { label: "Gravel calculator", href: "/en/calculators/home-improvement/gravel" },
+      { label: "Base vs top layer", href: "/en/resources/gravel-base-vs-top-layer" },
+    ],
+  },
+  {
+    slug: "topsoil-vs-compost-blends-for-lawns-and-beds",
+    title: "Topsoil vs compost blends (lawns vs garden beds)",
+    description:
+      "A practical guide to topsoil and compost blends: when to use straight topsoil, when blends help, and how to plan mix ratios without overdoing organics.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Topsoil and compost do different jobs",
+        paragraphs: [
+          "Topsoil is often used for fill and leveling. Compost is used to improve organic matter and structure. A blend can be useful, but the right mix depends on whether you’re building a lawn surface or a garden bed.",
+        ],
+      },
+      {
+        heading: "Lawns vs beds (practical guidance)",
+        table: {
+          columns: ["Project", "Common approach", "Reminder"],
+          rows: [
+            ["Lawn topdressing", "Mostly topsoil + light compost", "Too much compost can cause settling/softness"],
+            ["Leveling", "Topsoil for fill + targeted compost", "Measure average depth and add buffer for feathering"],
+            ["Garden beds", "Topsoil + compost blend", "Adjust for plant needs and existing soil"],
+          ],
+        },
+      },
+      {
+        heading: "Ordering checklist",
+        bullets: [
+          "Decide total depth and measure multiple points for an average.",
+          "If blending, track mix ratio (topsoil vs compost) as separate volumes.",
+          "Plan a buffer for settling and feathering edges.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
+      { label: "Topsoil leveling guide", href: "/en/guides/home-improvement/topsoil-leveling" },
+      { label: "Topsoil coverage chart", href: "/en/resources/topsoil-coverage-chart" },
+    ],
+  },
+  {
+    slug: "paint-trim-enamel-selection-and-prep",
+    title: "Trim paint guide (enamel selection, prep, and a durable finish)",
+    description:
+      "A practical trim guide: enamel choices, prep for glossy trim, and how to plan coats and touch-ups for long-term durability.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Trim is a different product than wall paint",
+        paragraphs: [
+          "Trim paint is typically an enamel designed for durability and cleanability. It behaves differently than wall paint and is more sensitive to prep quality.",
+        ],
+      },
+      {
+        heading: "Prep checklist (the difference between durable and peeling)",
+        bullets: [
+          "Clean (remove grease and residue)",
+          "Scuff sand (especially over glossy surfaces)",
+          "Spot prime where needed (repairs, stains, bare wood)",
+          "Choose the right sheen (satin/semi-gloss are common)",
+        ],
+      },
+      {
+        heading: "Estimating trim separately",
+        paragraphs: [
+          "Trim profiles add surface area, so linear feet alone can under-estimate. Estimating trim separately (and keeping a touch-up buffer) makes your plan more reliable than mixing it into wall area.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Paint calculator", href: "/en/calculators/home-improvement/paint" },
+      { label: "Trim area from linear feet", href: "/en/resources/trim-paint-area-from-linear-feet" },
+      { label: "Baseboard waste tips", href: "/en/resources/baseboard-trim-waste-tips" },
+    ],
+  },
 ];
 
