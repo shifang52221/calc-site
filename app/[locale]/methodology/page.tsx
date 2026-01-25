@@ -21,13 +21,6 @@ export async function generateMetadata({
     title: t("metaTitle"),
     description: t("metaDescription"),
     alternates: getAlternates(locale, "/methodology"),
-    robots:
-      locale === "en"
-        ? undefined
-        : {
-            index: false,
-            follow: true,
-          },
   };
 }
 
@@ -124,4 +117,3 @@ export default async function MethodologyPage({
     </div>
   );
 }
-

@@ -11,21 +11,6 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  if (locale === "en") return {};
-  return {
-    robots: {
-      index: false,
-      follow: true,
-    },
-  };
-}
-
 export default async function LocaleLayout({
   children,
   params,

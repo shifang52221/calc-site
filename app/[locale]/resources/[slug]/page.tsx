@@ -31,13 +31,6 @@ export async function generateMetadata({
     title: `${article.title} | ${SITE_NAME}`,
     description: article.description,
     alternates: getAlternates(locale, `/resources/${slug}`),
-    robots:
-      locale === "en"
-        ? undefined
-        : {
-            index: false,
-            follow: true,
-          },
   };
 }
 

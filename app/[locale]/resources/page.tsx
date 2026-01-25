@@ -20,13 +20,6 @@ export async function generateMetadata({
     title: t("metaTitle"),
     description: t("metaDescription"),
     alternates: getAlternates(locale, "/resources"),
-    robots:
-      locale === "en"
-        ? undefined
-        : {
-            index: false,
-            follow: true,
-          },
   };
 }
 
@@ -70,4 +63,3 @@ export default async function ResourcesIndexPage({
     </div>
   );
 }
-

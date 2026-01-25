@@ -21,13 +21,6 @@ export async function generateMetadata({
     title: t("metaTitle"),
     description: t("metaDescription"),
     alternates: getAlternates(locale, "/editorial-policy"),
-    robots:
-      locale === "en"
-        ? undefined
-        : {
-            index: false,
-            follow: true,
-          },
   };
 }
 
@@ -106,4 +99,3 @@ export default async function EditorialPolicyPage({
     </div>
   );
 }
-

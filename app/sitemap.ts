@@ -9,7 +9,7 @@ import { RESOURCE_ARTICLES_EN } from "@/lib/content/resourcesEn";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
-  const locales = routing.locales.filter((l) => l === "en");
+  const locales = routing.locales;
 
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];

@@ -58,7 +58,7 @@ function getLocalCounts(repoRoot) {
 
   const staticCount = 10;
 
-  const total =
+  const perLocaleTotal =
     staticCount +
     categoriesCount +
     (calculatorsCount ?? 0) +
@@ -71,7 +71,7 @@ function getLocalCounts(repoRoot) {
     calculatorsCount,
     guidesCount,
     resourcesCount,
-    total,
+    perLocaleTotal,
   };
 }
 
@@ -138,7 +138,8 @@ async function main() {
   const live = args.has("--live");
 
   const counts = getLocalCounts(repoRoot);
-  console.log("Local sitemap expectation (EN only):");
+  const indexedLocales = ["en", "es", "zh-TW"];
+  console.log(`Local sitemap expectation (${indexedLocales.join(", ")}):`);
   console.log(
     JSON.stringify(
       {
@@ -147,7 +148,8 @@ async function main() {
         calculators: counts.calculatorsCount,
         guides: counts.guidesCount,
         resources: counts.resourcesCount,
-        totalExpectedLocs: counts.total,
+        perLocaleExpectedLocs: counts.perLocaleTotal,
+        totalExpectedLocs: counts.perLocaleTotal * indexedLocales.length,
       },
       null,
       2,
@@ -176,7 +178,6 @@ async function main() {
   const xmlText = await fetchText(sitemapUrl);
   const locs = parseSitemapLocs(xmlText);
   const unique = new Set(locs);
-  const nonEn = locs.filter((u) => !u.includes("/en"));
   console.log("\nLive sitemap check:");
   console.log(
     JSON.stringify(
@@ -184,7 +185,6 @@ async function main() {
         sitemapUrl,
         locs: locs.length,
         unique: unique.size,
-        nonEnLocs: nonEn.length,
       },
       null,
       2,
