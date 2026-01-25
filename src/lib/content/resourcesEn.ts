@@ -779,5 +779,1156 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
       { label: "Fence posts guide", href: "/en/guides/home-improvement/fence-posts" },
     ],
   },
+  {
+    slug: "drywall-sheet-sizes-4x8-4x10-4x12",
+    title: "Drywall sheet sizes (4x8 vs 4x10 vs 4x12)",
+    description:
+      "How sheet size affects seams, handling, and waste for walls and ceilings.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Quick comparison",
+        table: {
+          columns: ["Sheet size", "Area", "Typical use"],
+          rows: [
+            ["4x8", "32 sq ft", "Most common; easiest handling"],
+            ["4x10", "40 sq ft", "Fewer seams; harder transport/handling"],
+            ["4x12", "48 sq ft", "Fewest seams; ceilings with lift/help"],
+          ],
+        },
+      },
+      {
+        heading: "Why bigger is not always better",
+        bullets: [
+          "Fewer seams can reduce finishing time, but bigger sheets increase risk and require more space and help.",
+          "Ceilings prioritize safety. If handling is hard, smaller sheets can be the better choice even if seam count increases.",
+          "Complex layouts often waste more regardless of sheet size.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
+      { label: "Ceiling drywall thickness guide", href: "/en/resources/drywall-ceiling-thickness-guide" },
+    ],
+  },
+  {
+    slug: "drywall-sheets-for-room-size",
+    title: "How many drywall sheets do I need? (room size examples)",
+    description:
+      "A few practical drywall sheet examples for common room sizes, plus what changes the count.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Example planning table (walls only)",
+        paragraphs: [
+          "These examples assume a simple rectangular room and do not subtract openings. Add a waste factor and round up to whole sheets.",
+        ],
+        table: {
+          columns: ["Room size", "Wall height", "Wall area (approx.)"],
+          rows: [
+            ["10x10 ft", "8 ft", "320 sq ft"],
+            ["12x12 ft", "8 ft", "384 sq ft"],
+            ["12x16 ft", "8 ft", "448 sq ft"],
+          ],
+        },
+      },
+      {
+        heading: "What changes the number fast",
+        bullets: [
+          "Ceilings (add ceiling area = length x width).",
+          "Many small walls/corners increase waste (offcuts are harder to reuse).",
+          "Tall walls and stairwells can require different sheet planning and more waste.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
+      { label: "Drywall guide", href: "/en/guides/home-improvement/drywall" },
+    ],
+  },
+  {
+    slug: "drywall-waste-factor-guide",
+    title: "Drywall waste factor guide (how much extra to buy?)",
+    description:
+      "A practical drywall waste guide: common ranges and when to increase overage.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Common ranges (rule of thumb)",
+        table: {
+          columns: ["Project type", "Typical waste", "Notes"],
+          rows: [
+            ["Large simple rooms", "8-12%", "Better reuse of offcuts"],
+            ["Many small rooms", "12-18%", "More corners and short runs"],
+            ["Ceilings / tricky access", "12-20%", "Handling decisions add cuts"],
+          ],
+        },
+      },
+      {
+        heading: "Why waste is not just mistakes",
+        paragraphs: [
+          "Waste includes cutouts, breakage, and offcuts that cannot be reused. It also includes rounding to whole sheets and layout decisions that change seam placement.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
+      { label: "Methodology", href: "/en/methodology" },
+    ],
+  },
+  {
+    slug: "roof-pitch-area-multiplier",
+    title: "Roof pitch area multiplier (quick reference)",
+    description:
+      "How roof pitch increases surface area vs footprint, with common multipliers.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Common multipliers (planning)",
+        table: {
+          columns: ["Pitch", "Multiplier (approx.)", "Meaning"],
+          rows: [
+            ["4/12", "1.05", "About 5% more area than footprint"],
+            ["6/12", "1.12", "About 12% more"],
+            ["8/12", "1.20", "About 20% more"],
+            ["10/12", "1.30", "About 30% more"],
+          ],
+        },
+      },
+      {
+        heading: "Common mistake",
+        bullets: [
+          "Do not estimate shingles from footprint area alone. Roofing is sold by surface area of roof planes.",
+          "Complex roofs need extra waste beyond pitch (valleys/hips/dormers).",
+        ],
+      },
+    ],
+    related: [
+      { label: "Roofing calculator", href: "/en/calculators/home-improvement/roofing" },
+      { label: "Roofing squares and bundles explained", href: "/en/resources/roofing-squares-and-bundles-explained" },
+    ],
+  },
+  {
+    slug: "roofing-waste-factor-guide",
+    title: "Roofing waste factor guide (valleys, hips, dormers)",
+    description:
+      "How to pick a roofing waste factor based on roof complexity and cut patterns.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Typical waste ranges (rule of thumb)",
+        table: {
+          columns: ["Roof type", "Typical waste", "Notes"],
+          rows: [
+            ["Simple gable", "8-12%", "Few cuts"],
+            ["Hips / valleys", "12-18%", "More cuts and starter waste"],
+            ["Many dormers / complex", "15-25%+", "High cut-up factor"],
+          ],
+        },
+      },
+      {
+        heading: "Accessories are separate",
+        bullets: [
+          "Starter, ridge caps, underlayment, flashing, drip edge, and nails are separate line items.",
+          "Confirm bundles-per-square for your exact shingle product.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Roofing calculator", href: "/en/calculators/home-improvement/roofing" },
+      { label: "Roofing guide", href: "/en/guides/home-improvement/roofing" },
+    ],
+  },
+  {
+    slug: "tile-layout-pattern-waste",
+    title: "Tile pattern waste (straight vs diagonal vs herringbone)",
+    description:
+      "Why tile patterns change waste and how to choose a safer overage percentage.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Waste by layout (planning)",
+        table: {
+          columns: ["Layout", "Typical waste", "Notes"],
+          rows: [
+            ["Straight lay", "7-10%", "Simple rooms"],
+            ["Diagonal", "12-15%", "More offcuts"],
+            ["Herringbone / complex", "15-20%+", "High cut-up factor"],
+          ],
+        },
+      },
+      {
+        heading: "When to increase waste",
+        bullets: [
+          "Many corners, niches, or penetrations (plumbing, vents).",
+          "Large format tile (harder cuts; more breakage risk).",
+          "If matching later is hard (dye lots), buying enough now matters.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Tile calculator", href: "/en/calculators/home-improvement/tile" },
+      { label: "Tile waste percentage guide", href: "/en/resources/tile-waste-percentage-guide" },
+    ],
+  },
+  {
+    slug: "tile-box-coverage-checklist",
+    title: "Tile box coverage checklist (avoid the #1 mistake)",
+    description:
+      "How to use box coverage correctly and avoid mixing units and packaging assumptions.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Checklist",
+        bullets: [
+          "Use the label coverage per box (sq ft or m2), not tile dimensions alone.",
+          "Round up to whole boxes (partial boxes are not practical to buy).",
+          "Add overage based on layout complexity before converting to boxes.",
+          "If you need trim pieces, mosaics, or borders, estimate them separately.",
+        ],
+      },
+      {
+        heading: "Why this matters",
+        paragraphs: [
+          "Two tiles with the same size can have different coverage per box because pieces-per-carton differ. Label coverage is the reliable number.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Tile calculator", href: "/en/calculators/home-improvement/tile" },
+      { label: "Tile waste guide", href: "/en/guides/home-improvement/tile-waste" },
+    ],
+  },
+  {
+    slug: "deck-board-gap-and-coverage",
+    title: "Deck board gap and coverage (how spacing changes board count)",
+    description:
+      "How board width and gapping affect coverage and why 'actual' width matters.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "What changes coverage",
+        bullets: [
+          "Actual board width (nominal sizes are larger than actual).",
+          "Gap spacing (especially for composites) changes coverage slightly across wide decks.",
+          "Picture framing and diagonal layouts increase waste.",
+        ],
+      },
+      {
+        heading: "Practical advice",
+        paragraphs: [
+          "For accurate planning, confirm your product's actual width and recommended gap. Then add waste for cuts and keep a few spare boards for future repairs.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Deck board calculator", href: "/en/calculators/home-improvement/deck" },
+      { label: "Deck guide", href: "/en/guides/home-improvement/deck" },
+    ],
+  },
+  {
+    slug: "deck-diagonal-waste-guide",
+    title: "Diagonal deck board waste guide (how much extra?)",
+    description:
+      "Why diagonal deck layouts waste more material and how to pick a safer buffer.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Rule of thumb waste ranges",
+        table: {
+          columns: ["Layout", "Typical waste", "Notes"],
+          rows: [
+            ["Straight", "5-10%", "Fewer angle cuts"],
+            ["Diagonal", "10-15%", "More cutoffs"],
+            ["Picture frame + diagonal", "12-20%", "Miter waste adds up"],
+          ],
+        },
+      },
+      {
+        heading: "When to increase",
+        bullets: [
+          "Many stairs, borders, and blocking details.",
+          "If you need consistent color later, buying extra up front is safer.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Deck board calculator", href: "/en/calculators/home-improvement/deck" },
+      { label: "Baseboard and trim waste tips", href: "/en/resources/baseboard-trim-waste-tips" },
+    ],
+  },
+  {
+    slug: "studs-corners-and-openings-guide",
+    title: "Studs: corners and openings (why simple spacing math fails)",
+    description:
+      "A practical framing note: corners, T-walls, and openings add studs beyond length/spacing.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Where extra studs come from",
+        bullets: [
+          "Corners (2-stud vs 3-stud corners).",
+          "T-intersections and backing/blocking needs.",
+          "Door/window openings with king/jack studs and header support.",
+        ],
+      },
+      {
+        heading: "Planning tip",
+        paragraphs: [
+          "Use your calculator result as a baseline, then add a buffer for corners, openings, and blocking based on your layout. Local practice and code vary.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Studs calculator", href: "/en/calculators/home-improvement/studs" },
+      { label: "Stud spacing guide", href: "/en/resources/stud-spacing-16-vs-24-on-center" },
+    ],
+  },
+  {
+    slug: "baseboard-linear-feet-to-pieces",
+    title: "Baseboard: linear feet to pieces (why piece length matters)",
+    description:
+      "How to convert total trim length into pieces and avoid running short due to cut planning.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Quick planning idea",
+        paragraphs: [
+          "Even if your total linear feet are correct, you can still run short if you do not plan how those feet break into pieces around corners and doors.",
+        ],
+      },
+      {
+        heading: "Checklist",
+        bullets: [
+          "Confirm piece length (8 ft, 12 ft, 16 ft).",
+          "Count corners and short runs that create unusable offcuts.",
+          "Add a buffer for miter waste and out-of-square cuts.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Baseboard & trim calculator", href: "/en/calculators/home-improvement/baseboard-trim" },
+      { label: "Baseboard waste tips", href: "/en/resources/baseboard-trim-waste-tips" },
+    ],
+  },
+  {
+    slug: "flooring-direction-waste",
+    title: "Flooring direction and waste (why plank direction changes the math)",
+    description:
+      "How plank direction and room shape impact waste and box count planning.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "What increases waste",
+        bullets: [
+          "Diagonal layouts or many small rooms/closets.",
+          "Hallways and narrow runs that create offcuts.",
+          "Patterned installs or strict seam rules from the manufacturer.",
+        ],
+      },
+      {
+        heading: "Practical rule of thumb",
+        paragraphs: [
+          "Start with a reasonable waste factor, then increase it if the layout is complex or if you need strict color/lot matching.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Flooring calculator", href: "/en/calculators/home-improvement/flooring" },
+      { label: "Flooring boxes guide", href: "/en/guides/home-improvement/flooring-boxes" },
+    ],
+  },
+  {
+    slug: "flooring-boxes-rounding",
+    title: "Flooring boxes rounding (why you should round up)",
+    description:
+      "Why flooring is purchased in whole boxes and how to round safely without wasting money.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why rounding matters",
+        bullets: [
+          "Boxes are sold as whole cartons; partial cartons are not practical.",
+          "Running short mid-install can force mismatched lots and delays.",
+          "Keeping a small spare amount is useful for future repairs.",
+        ],
+      },
+      {
+        heading: "Practical advice",
+        paragraphs: [
+          "Use the exact product's box coverage from the label, apply waste, then round up to whole boxes.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Flooring calculator", href: "/en/calculators/home-improvement/flooring" },
+      { label: "Flooring boxes guide", href: "/en/guides/home-improvement/flooring-boxes" },
+    ],
+  },
+  {
+    slug: "wallpaper-rolls-by-wall-height",
+    title: "Wallpaper rolls by wall height (why tall walls need more)",
+    description:
+      "Why wall height changes strips-per-roll and how pattern repeat increases waste.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why height changes rolls",
+        paragraphs: [
+          "Wallpaper is cut into full-height strips. Taller walls reduce how many strips you get per roll, especially with pattern repeat and trimming.",
+        ],
+      },
+      {
+        heading: "When to increase rolls",
+        bullets: [
+          "Large pattern repeat (more trimming to align).",
+          "Many windows/doors and corners (more separate strips).",
+          "If you may need repairs later, matching lot/batch matters.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Wallpaper rolls calculator", href: "/en/calculators/home-improvement/wallpaper-rolls" },
+      { label: "Pattern repeat and waste", href: "/en/resources/wallpaper-pattern-repeat-waste" },
+    ],
+  },
+  {
+    slug: "paver-bedding-sand-thickness",
+    title: "Paver bedding sand thickness (how much is typical?)",
+    description:
+      "Bedding sand thickness basics and why it should not be used as a leveling layer.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Typical thickness (planning)",
+        table: {
+          columns: ["Layer", "Typical thickness", "Notes"],
+          rows: [
+            ["Compacted base", "4-12 in", "Depends on use case and soil"],
+            ["Bedding sand", "1 in (approx.)", "Not a thick leveling layer"],
+          ],
+        },
+      },
+      {
+        heading: "Common mistake",
+        bullets: [
+          "Do not use bedding sand to fix a bad base. Fix grade and compaction first.",
+          "Compaction changes thickness; plan accordingly.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Paver base calculator", href: "/en/calculators/home-improvement/paver-base" },
+      { label: "Paver base depth guide", href: "/en/resources/paver-base-depth-guide" },
+    ],
+  },
+  {
+    slug: "soil-mix-ratio-for-raised-beds",
+    title: "Soil mix ratio for raised beds (starting points)",
+    description:
+      "Practical starting ratios for raised beds and what to adjust for drainage and fertility.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Common starting mixes",
+        table: {
+          columns: ["Mix (by volume)", "Good for", "Note"],
+          rows: [
+            ["50% compost + 50% topsoil", "General beds", "Simple starting point"],
+            ["40% topsoil + 40% compost + 20% aeration", "Better drainage", "Adjust for climate"],
+          ],
+        },
+      },
+      {
+        heading: "Avoid over-amending",
+        bullets: [
+          "Too much compost can reduce structure in some soils.",
+          "If drainage is poor, address structure (aeration) not just fertility.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Soil mix calculator", href: "/en/calculators/home-improvement/soil-mix" },
+      { label: "Topsoil coverage chart", href: "/en/resources/topsoil-coverage-chart" },
+    ],
+  },
+  {
+    slug: "topsoil-leveling-feathering-guide",
+    title: "Topsoil leveling feathering guide (avoid sharp edges)",
+    description:
+      "Why you should feather edges when leveling low spots and how to plan depth.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why feathering matters",
+        bullets: [
+          "Sharp edges create mowing problems and poor drainage transitions.",
+          "Feathering spreads the thickness change over distance, improving finish and water flow.",
+        ],
+      },
+      {
+        heading: "Depth planning tip",
+        paragraphs: [
+          "Take multiple depth checks and use an average thickness. One low spot can inflate your order if you treat it as the whole area depth.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
+      { label: "Topsoil leveling guide", href: "/en/guides/home-improvement/topsoil-leveling" },
+    ],
+  },
+  {
+    slug: "mulch-depth-1-2-3-inches",
+    title: "Mulch depth 1 vs 2 vs 3 inches (what changes?)",
+    description:
+      "How mulch depth changes volume and why 'just a little deeper' doubles material fast.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Depth changes volume linearly",
+        paragraphs: [
+          "If you double depth, you double volume. This matters because beds are often larger than people think once you include edges and irregular shapes.",
+        ],
+      },
+      {
+        heading: "Practical note",
+        bullets: [
+          "Many beds use 2-3 inches; thin top-ups can be 1 inch.",
+          "Keep mulch away from trunks and stems.",
+          "Plan extra for settling after watering.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Mulch calculator", href: "/en/calculators/home-improvement/mulch" },
+      { label: "Mulch coverage chart", href: "/en/resources/mulch-coverage-chart" },
+    ],
+  },
+  {
+    slug: "gravel-base-vs-top-layer",
+    title: "Gravel base vs top layer (estimate layers separately)",
+    description:
+      "Why base gravel and top gravel often differ and how estimating them separately improves accuracy.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why separate layers",
+        bullets: [
+          "Base layers often use different aggregate (fines, compaction behavior).",
+          "Depth targets differ by use case and soil conditions.",
+          "Mixing products can cause drainage and stability problems.",
+        ],
+      },
+      {
+        heading: "Ordering tip",
+        paragraphs: [
+          "If your supplier sells by tons, use their conversion for each product separately. Density varies by material type and moisture.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Gravel calculator", href: "/en/calculators/home-improvement/gravel" },
+      { label: "Gravel yards to tons guide", href: "/en/resources/gravel-yards-to-tons-guide" },
+    ],
+  },
+  {
+    slug: "concrete-thickened-edge-volume",
+    title: "Concrete thickened edge volume (common omission)",
+    description:
+      "How thickened edges and footings can add meaningful volume beyond slab math.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why it matters",
+        paragraphs: [
+          "Many slabs include thickened edges or footings. If you ignore them, you can come up short even if the slab volume is correct.",
+        ],
+      },
+      {
+        heading: "Planning steps",
+        bullets: [
+          "Estimate slab volume from area and thickness.",
+          "Estimate thickened edges/footings separately (length x width x depth) and add them.",
+          "Add a buffer for uneven subgrade and spillage.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Concrete calculator", href: "/en/calculators/home-improvement/concrete" },
+      { label: "Concrete guide", href: "/en/guides/home-improvement/concrete" },
+    ],
+  },
+  {
+    slug: "asphalt-driveway-base-layer-guide",
+    title: "Asphalt driveway base layer guide (gravel matters)",
+    description:
+      "Why a driveway base layer can cost more than asphalt and how to plan base separately.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why base matters",
+        bullets: [
+          "Soft subgrade consumes gravel and leads to future cracking.",
+          "Drainage and grade fixes often matter more than small asphalt thickness changes.",
+          "Rebuilds usually require separate base material estimates.",
+        ],
+      },
+      {
+        heading: "Planning tip",
+        paragraphs: [
+          "Estimate base gravel (area x depth) separately from asphalt. Treat them as separate materials and deliveries.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Asphalt driveway calculator", href: "/en/calculators/home-improvement/asphalt-driveway" },
+      { label: "Gravel calculator", href: "/en/calculators/home-improvement/gravel" },
+    ],
+  },
+  {
+    slug: "paint-coverage-per-gallon-guide",
+    title: "Paint coverage per gallon guide (why it varies)",
+    description:
+      "Why paint coverage changes with surface, texture, and color, and how to plan coats and buffer.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "What changes coverage most",
+        bullets: [
+          "Fresh drywall and porous surfaces usually need more paint (and often primer).",
+          "Heavy texture reduces coverage compared to smooth walls.",
+          "Big color changes and dark colors often need extra coats.",
+        ],
+      },
+      {
+        heading: "Practical planning",
+        paragraphs: [
+          "Prefer the product label coverage when you have it. Then add a small buffer for touch-ups and roller/brush waste and round up to whole cans.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Paint calculator", href: "/en/calculators/home-improvement/paint" },
+      { label: "Paint guide", href: "/en/guides/home-improvement/paint" },
+    ],
+  },
+  {
+    slug: "ceiling-paint-cut-in-buffer",
+    title: "Ceiling paint cut-in buffer (why ceilings take more time and paint)",
+    description:
+      "Why cut-ins, fixtures, and texture reduce ceiling paint coverage, plus practical buffer tips.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why ceilings burn paint",
+        bullets: [
+          "Edges and cut-ins around fixtures add waste and time even if area math is correct.",
+          "Textured ceilings reduce coverage and require more paint.",
+          "Touch-ups can flash under lighting if product/sheens differ.",
+        ],
+      },
+      {
+        heading: "Practical tips",
+        bullets: [
+          "Plan a small buffer (often 5-10%) and keep the same product for touch-ups.",
+          "If stains exist, use a stain-blocking primer first.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Paint ceiling guide", href: "/en/guides/home-improvement/paint-ceiling" },
+      { label: "Paint calculator", href: "/en/calculators/home-improvement/paint" },
+    ],
+  },
+  {
+    slug: "trim-paint-area-from-linear-feet",
+    title: "Trim paint area from linear feet (simple method)",
+    description:
+      "How to convert baseboard/casing length into paintable area using face width.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Simple formula",
+        paragraphs: [
+          "Trim area (sq ft) = total linear feet x average face width (in feet). Example: 300 ft of baseboard at 3.5 in face width is 300 x (3.5/12) ≈ 87.5 sq ft per coat.",
+        ],
+      },
+      {
+        heading: "Common misses",
+        bullets: [
+          "Door/window casings add more area than people expect.",
+          "Prep and primer matter more on glossy trim than on walls.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Paint trim guide", href: "/en/guides/home-improvement/paint-trim" },
+      { label: "Baseboard & trim calculator", href: "/en/calculators/home-improvement/baseboard-trim" },
+    ],
+  },
+  {
+    slug: "drywall-finish-levels-0-5",
+    title: "Drywall finish levels (Level 0 to Level 5) and material impact",
+    description:
+      "How finish level affects mud usage and why higher levels require more compound and sanding.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Quick overview",
+        table: {
+          columns: ["Finish level", "Typical use", "Material impact"],
+          rows: [
+            ["Level 2", "Garages/utility", "Lower compound use"],
+            ["Level 4", "Most painted walls", "More coats and sanding"],
+            ["Level 5", "Critical lighting/smooth", "Highest compound use"],
+          ],
+        },
+      },
+      {
+        heading: "Planning note",
+        paragraphs: [
+          "If you target a higher finish level, plan more joint compound and time than a basic finish. Texture and paint can hide some imperfections, but lighting can expose them.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Drywall mud & tape calculator", href: "/en/calculators/home-improvement/drywall-mud-tape" },
+      { label: "Drywall guide", href: "/en/guides/home-improvement/drywall" },
+    ],
+  },
+  {
+    slug: "deck-mud-mix-ratio-guide",
+    title: "Deck mud mix ratio guide (sand-to-cement)",
+    description:
+      "A practical deck mud note: common ratios, what changes workability, and why consistency matters.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Common ratios (by volume)",
+        table: {
+          columns: ["Ratio", "Use note", "Reminder"],
+          rows: [
+            ["5:1 sand:cement", "Common starting point", "Follow system guidance"],
+            ["4:1 sand:cement", "Sometimes for higher strength", "Workability changes"],
+          ],
+        },
+      },
+      {
+        heading: "Practical reminder",
+        bullets: [
+          "Use the right sand type per local practice and product guidance.",
+          "Consistency matters: running short mid-bed can change mix behavior and finish.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Deck mud calculator", href: "/en/calculators/home-improvement/deck-mud" },
+      { label: "Deck mud coverage chart", href: "/en/resources/deck-mud-coverage-chart" },
+    ],
+  },
+  {
+    slug: "concrete-cure-vs-dry-time",
+    title: "Concrete cure vs dry time (planning checklist)",
+    description:
+      "A practical planning note: curing vs drying, and why timing matters more than most people expect.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Cure vs dry",
+        paragraphs: [
+          "Curing is the strength-gain process; drying is moisture leaving the slab. Concrete can feel dry on top before it reaches useful strength, and it can take longer to dry for some finishes.",
+        ],
+      },
+      {
+        heading: "Planning checklist",
+        bullets: [
+          "Follow product guidance for sealers, coatings, and flooring install timing.",
+          "Protect the slab from early drying and weather if recommended by your mix/conditions.",
+          "For critical work, confirm with your contractor/supplier.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Concrete calculator", href: "/en/calculators/home-improvement/concrete" },
+      { label: "Concrete guide", href: "/en/guides/home-improvement/concrete" },
+    ],
+  },
+  {
+    slug: "gravel-tons-vs-tonnes",
+    title: "Gravel tons vs tonnes (avoid unit mix-ups)",
+    description:
+      "How short tons and metric tonnes differ and why unit mix-ups change your order.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Quick conversion",
+        table: {
+          columns: ["Unit", "Equals", "Note"],
+          rows: [
+            ["1 short ton (US)", "2000 lb", "Common in the US"],
+            ["1 metric tonne", "2204.62 lb", "Common outside the US"],
+          ],
+        },
+      },
+      {
+        heading: "Practical tip",
+        bullets: [
+          "Confirm the unit your supplier uses (tons vs tonnes).",
+          "Use the supplier density conversion for your specific product.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Gravel tons converter", href: "/en/calculators/home-improvement/gravel-tons" },
+      { label: "Gravel yards to tons guide", href: "/en/resources/gravel-yards-to-tons-guide" },
+    ],
+  },
+  {
+    slug: "mulch-bag-sizes-2-vs-3-cu-ft",
+    title: "Mulch bag sizes (2 vs 3 cu ft) and why it changes bag count",
+    description:
+      "A quick planning note: bag size is the biggest input for bagged mulch estimates.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Typical bag sizes",
+        table: {
+          columns: ["Bag size", "Volume", "Notes"],
+          rows: [
+            ["2 cu ft", "2 cubic feet", "Very common"],
+            ["3 cu ft", "3 cubic feet", "Fewer bags, heavier"],
+          ],
+        },
+      },
+      {
+        heading: "Practical tip",
+        bullets: [
+          "Convert your bed volume to cubic feet, divide by bag size, then round up.",
+          "Buy enough in one batch if color matching matters.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Mulch bags calculator", href: "/en/calculators/home-improvement/mulch-bags" },
+      { label: "Mulch bag coverage guide", href: "/en/resources/mulch-bag-coverage-guide" },
+    ],
+  },
+  {
+    slug: "topsoil-bag-liters-to-cubic-feet",
+    title: "Topsoil bag liters to cubic feet (quick conversion)",
+    description:
+      "How to convert liters to cubic feet for bagged soil estimates and avoid unit confusion.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Quick conversion",
+        paragraphs: [
+          "1 cubic foot is about 28.3 liters. If a bag is labeled in liters, divide liters by 28.3 to get cubic feet.",
+        ],
+      },
+      {
+        heading: "Why it matters",
+        bullets: [
+          "Some regions label bags in liters, others in cubic feet.",
+          "Mixing units is a common reason bag counts are off by a lot.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Topsoil bags calculator", href: "/en/calculators/home-improvement/topsoil-bags" },
+      { label: "Topsoil bag coverage guide", href: "/en/resources/topsoil-bag-coverage-guide" },
+    ],
+  },
+  {
+    slug: "sand-bedding-vs-leveling",
+    title: "Sand: bedding vs leveling (why base matters)",
+    description:
+      "Why sand should not be used as a thick leveling layer for pavers and how base prep affects estimates.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Key idea",
+        bullets: [
+          "Sand is typically a thin bedding layer, not a structural leveling layer.",
+          "Base stone and compaction control stability and drainage.",
+          "If you need to correct grade, fix base depth and compaction first.",
+        ],
+      },
+      {
+        heading: "Planning tip",
+        paragraphs: [
+          "Estimate base stone and bedding sand separately. Do not compensate for a weak base by adding more sand.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Paver base calculator", href: "/en/calculators/home-improvement/paver-base" },
+      { label: "Sand calculator", href: "/en/calculators/home-improvement/sand" },
+    ],
+  },
+  {
+    slug: "fence-panel-vs-picket-estimate",
+    title: "Fence estimate: panels vs pickets (what changes)",
+    description:
+      "How fence style changes counting: prebuilt panels vs pickets, spacing, and waste planning.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "What changes between styles",
+        bullets: [
+          "Panels: count panels and posts; spacing is usually fixed by panel width.",
+          "Pickets: count pickets by spacing; waste increases on slopes and corners.",
+          "Gates and corners add posts beyond simple runs.",
+        ],
+      },
+      {
+        heading: "Planning tip",
+        paragraphs: [
+          "Decide style first. Panel math and picket math differ, and switching late can invalidate your estimate.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Fence calculator", href: "/en/calculators/home-improvement/fence" },
+      { label: "Fence posts guide", href: "/en/guides/home-improvement/fence-posts" },
+    ],
+  },
+  {
+    slug: "tile-grout-sanded-vs-unsanded",
+    title: "Tile grout: sanded vs unsanded (quick choice guide)",
+    description:
+      "A simple grout choice guide: what changes between sanded and unsanded and what to confirm on the bag.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Quick guide",
+        bullets: [
+          "Product choice depends on joint width and tile type; follow the bag and manufacturer guidance.",
+          "Some projects use specialty grouts (epoxy, urethane) with different handling and coverage.",
+          "Movement joints use caulk/sealant, not grout.",
+        ],
+      },
+      {
+        heading: "Planning note",
+        paragraphs: [
+          "Coverage varies by product. If you need a tighter estimate, use the exact bag yield chart for your chosen grout.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Tile grout calculator", href: "/en/calculators/home-improvement/tile-grout" },
+      { label: "Tile grout coverage guide", href: "/en/resources/tile-grout-coverage-guide" },
+    ],
+  },
+  {
+    slug: "roofing-starter-and-ridge-cap",
+    title: "Roofing starter strip and ridge cap (common misses)",
+    description:
+      "Why starter and ridge caps are separate from field shingles and how they affect ordering.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "What people forget",
+        bullets: [
+          "Starter strip coverage and ridge cap coverage are separate line items.",
+          "Some ridge caps are cut from shingles; others are a dedicated product.",
+          "Underlayment and flashing are also separate materials.",
+        ],
+      },
+      {
+        heading: "Practical advice",
+        paragraphs: [
+          "Use your roofing calculator for field shingles, then add starter and ridge caps based on the product guidance and your ridge length.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Roofing calculator", href: "/en/calculators/home-improvement/roofing" },
+      { label: "Roofing guide", href: "/en/guides/home-improvement/roofing" },
+    ],
+  },
+  {
+    slug: "concrete-psi-and-mix-choice",
+    title: "Concrete PSI and mix choice (planning note)",
+    description:
+      "A practical checklist for ready-mix: PSI/MPa, slump, fiber, and admixtures that affect cost and performance.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "What suppliers ask",
+        bullets: [
+          "Strength (PSI/MPa) and aggregate size.",
+          "Slump (workability) and whether you need fiber.",
+          "Admixtures (accelerator/retarder) based on weather and timing.",
+        ],
+      },
+      {
+        heading: "Reminder",
+        paragraphs: [
+          "Mix selection affects cost and placement. For critical work, follow code and supplier guidance rather than generic assumptions.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Concrete guide", href: "/en/guides/home-improvement/concrete" },
+      { label: "Concrete calculator", href: "/en/calculators/home-improvement/concrete" },
+    ],
+  },
+  {
+    slug: "deck-mud-slope-per-foot",
+    title: "Deck mud slope per foot (shower pan planning)",
+    description:
+      "A practical slope note for deck mud: why average thickness matters when you build slope.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why average thickness matters",
+        paragraphs: [
+          "A sloped bed is thicker at the perimeter than at the drain. Estimate volume using average thickness (measure high and low points, then average).",
+        ],
+      },
+      {
+        heading: "Planning checklist",
+        bullets: [
+          "Confirm waterproofing system and drain type first; they determine build-up.",
+          "Measure perimeter and drain thickness and average them for estimating.",
+          "Round up to avoid running short mid-bed.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Deck mud calculator", href: "/en/calculators/home-improvement/deck-mud" },
+      { label: "Deck mud coverage chart", href: "/en/resources/deck-mud-coverage-chart" },
+    ],
+  },
+  {
+    slug: "stud-plates-lumber-planning",
+    title: "Stud plates lumber planning (top/bottom plates)",
+    description:
+      "A practical framing note: plates are often underestimated and are purchased in standard lengths.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Why plates add up",
+        bullets: [
+          "Walls typically need bottom plates and (often) double top plates.",
+          "Corners and openings can increase blocking and plate needs.",
+          "Lumber comes in standard lengths; plan cut waste.",
+        ],
+      },
+      {
+        heading: "Planning tip",
+        paragraphs: [
+          "Use your studs calculator for a baseline, then confirm plate rules and lengths based on local practice and code.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Studs calculator", href: "/en/calculators/home-improvement/studs" },
+      { label: "Studs corners and openings guide", href: "/en/resources/studs-corners-and-openings-guide" },
+    ],
+  },
+  {
+    slug: "wallpaper-openings-subtract-or-not",
+    title: "Wallpaper openings: subtract or not? (practical answer)",
+    description:
+      "When subtracting doors/windows helps and when it does not because waste dominates.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Practical rule",
+        bullets: [
+          "For quick estimates, many people do not subtract openings and rely on a waste factor.",
+          "If you want a tighter estimate, subtract large openings, but keep a realistic waste factor for corners and pattern matching.",
+        ],
+      },
+      {
+        heading: "Pattern repeat matters",
+        paragraphs: [
+          "If the wallpaper has a repeat, usable length per roll drops. Manufacturer strips-per-roll guidance is often the safest method.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Wallpaper rolls calculator", href: "/en/calculators/home-improvement/wallpaper-rolls" },
+      { label: "Pattern repeat and waste", href: "/en/resources/wallpaper-pattern-repeat-waste" },
+    ],
+  },
+  {
+    slug: "flooring-underlayment-checklist",
+    title: "Flooring underlayment checklist (common misses)",
+    description:
+      "A simple checklist of materials people forget when estimating flooring.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Checklist",
+        bullets: [
+          "Underlayment or vapor barrier (product and subfloor dependent).",
+          "Transitions, reducers, and stair noses.",
+          "Baseboard/shoe molding and quarter round as needed.",
+          "Leveling compound for uneven subfloors (separate estimate).",
+        ],
+      },
+    ],
+    related: [
+      { label: "Flooring calculator", href: "/en/calculators/home-improvement/flooring" },
+      { label: "Flooring guide", href: "/en/guides/home-improvement/flooring" },
+    ],
+  },
+  {
+    slug: "asphalt-thickness-2-vs-3-inches",
+    title: "Asphalt thickness 2 vs 3 inches (why tonnage jumps)",
+    description:
+      "A quick planning note: asphalt tonnage scales with thickness, and base condition matters.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "Key idea",
+        paragraphs: [
+          "Tonnage scales with thickness. A 3-inch layer is 50% more material than a 2-inch layer for the same area (before compaction and waste).",
+        ],
+      },
+      {
+        heading: "Planning note",
+        bullets: [
+          "Confirm whether thickness is compacted thickness.",
+          "Estimate base separately for rebuilds (often the bigger driver).",
+        ],
+      },
+    ],
+    related: [
+      { label: "Asphalt driveway calculator", href: "/en/calculators/home-improvement/asphalt-driveway" },
+      { label: "Asphalt tons guide", href: "/en/resources/asphalt-driveway-tons-guide" },
+    ],
+  },
+  {
+    slug: "primer-vs-paint-when-to-prime",
+    title: "Primer vs paint (when to prime for better coverage)",
+    description:
+      "A practical note: primer can improve coverage and adhesion, but it is a separate material step.",
+    lastUpdated: "Last updated: Jan 2026",
+    sections: [
+      {
+        heading: "When primer helps",
+        bullets: [
+          "Fresh drywall and patched areas (reduces flashing).",
+          "Stains and problem surfaces (use stain-blocking primer as needed).",
+          "Big color changes (can reduce topcoat count).",
+        ],
+      },
+      {
+        heading: "Reminder",
+        paragraphs: [
+          "Primer does not replace paint volume. Plan primer and paint separately if you want a reliable purchase plan.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Paint calculator", href: "/en/calculators/home-improvement/paint" },
+      { label: "Paint planning notes", href: "/en/guides/home-improvement/paint" },
+    ],
+  },
 ];
 
