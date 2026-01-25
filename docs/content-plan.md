@@ -61,9 +61,11 @@ Avoid short “micro resources”. If a resource exists, it should feel like a r
 Run these locally before pushing:
 
 - Calculator content completeness + rough “content size” check:
-  - `node scripts/local-calculator-content-audit.mjs`
+  - `node scripts/local-calculator-content-audit.mjs --minWords=500`
 - Resources “thin content” finder (rough estimate):
-  - `node scripts/local-resources-audit.mjs --top=30`
+  - `node scripts/local-resources-audit.mjs --min=400 --top=30`
+
+Or run the combined check (recommended):
+- `npm run content:check`
 
 The audits are intentionally simple. They’re there to prevent regressions and to generate a “next pages to improve” list.
-

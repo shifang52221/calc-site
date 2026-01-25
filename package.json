@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "content:check:calc": "node scripts/local-calculator-content-audit.mjs --minWords=500 --top=20",
+    "content:check:resources": "node scripts/local-resources-audit.mjs --min=400 --top=30",
+    "content:check": "npm run content:check:calc && npm run content:check:resources && npm run build"
   },
   "dependencies": {
     "next": "16.1.1",
