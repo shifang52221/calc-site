@@ -1,0 +1,20 @@
+{
+  "default": {
+    "applyDefaultToAll": false,
+    "targetMinWords": 600,
+    "targetMaxWords": 1100,
+    "notes": "Guide pages should stand alone. This is an anti-thin-content guideline, not a rule to pad."
+  },
+  "tiers": {
+    "A": { "targetMinWords": 450, "targetMaxWords": 800 },
+    "B": { "targetMinWords": 600, "targetMaxWords": 1100 },
+    "C": { "targetMinWords": 900, "targetMaxWords": 1600 }
+  },
+  "byId": {
+    "guideRoofing": { "tier": "B" },
+    "guideFlooring": { "tier": "B" },
+    "guideDeck": { "tier": "B" },
+    "guideMulch": { "tier": "B" },
+    "guideConcrete": { "tier": "B" }
+  }
+}
