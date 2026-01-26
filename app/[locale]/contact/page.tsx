@@ -33,7 +33,7 @@ export default async function ContactPage({
   const t = await getTranslations("contactPage");
   const contactEmail = getContactEmail() ?? t("email");
   const introParagraphs = [t("intro.p1"), t("intro.p2")];
-  const noteParagraphs = [t("note.p1"), t("note.p2")];
+  const noteParagraphs = [t("note.p1"), t("note.p2"), t("note.p3")];
 
   return (
     <div className="mx-auto grid max-w-3xl gap-6">
@@ -67,6 +67,7 @@ export default async function ContactPage({
           <li>{t("beforeYouEmail.b2")}</li>
           <li>{t("beforeYouEmail.b3")}</li>
           <li>{t("beforeYouEmail.b4")}</li>
+          <li>{t("beforeYouEmail.b5")}</li>
         </ul>
         {noteParagraphs.map((p) => (
           <p key={p}>{p}</p>

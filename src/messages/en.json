@@ -1291,7 +1291,8 @@
     "limitationsTitle": "Accuracy & limitations",
     "limitations": {
       "p1": "Estimates can’t capture every jobsite condition. Packaging varies, materials settle, waste differs by layout, and local code requirements change by region.",
-      "p2": "Use calculator results as a starting point, then confirm with your product label, supplier conversions, and installation requirements."
+      "p2": "Use calculator results as a starting point, then confirm with your product label, supplier conversions, and installation requirements.",
+      "p3": "If an assumption doesn’t match what you’re seeing locally, contact us with the product label and context so we can improve the page."
     },
     "howItWorksTitle": "How it works",
     "howItWorksBody": "Every calculator includes notes about units, rounding, and common waste factors. Resources and methodology pages explain the logic behind typical estimates.",
@@ -1311,11 +1312,13 @@
     "b1": "Check units first (feet vs inches, sq ft vs m²). Most issues are unit mix-ups.",
     "b2": "If you used a default waste factor, try adjusting it to match your layout complexity.",
     "b3": "For bag/box materials, confirm the yield/coverage on your specific product label.",
-    "b4": "If something looks wrong, include a shareable link so we can reproduce it."
+    "b4": "If something looks wrong, include a shareable link so we can reproduce it.",
+    "b5": "If you have them, include photos or links for packaging and coverage details."
   },
   "note": {
     "p1": "We don’t provide professional engineering, legal, or contractor services.",
-    "p2": "For urgent or safety-critical work, consult a qualified local professional."
+    "p2": "For urgent or safety-critical work, consult a qualified local professional.",
+    "p3": "For general planning questions, we can point you to the most relevant calculator or guide."
   },
   "emailLabel": "Email",
   "email": "shifang522221@gmail.com",

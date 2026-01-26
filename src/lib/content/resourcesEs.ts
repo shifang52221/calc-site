@@ -1123,6 +1123,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Si compras por partes (compost/topsoil/aireación), usa el mismo recipiente para medir volúmenes y evita mezclar materiales muy finos. Una mezcla demasiado “polvosa” puede compactarse y drenar peor.",
         ],
       },
+      {
+        heading: "Detalle práctico",
+        paragraphs: [
+          "Si tu compost viene muy húmedo o muy fino, considera bajar el porcentaje en la primera mezcla. Siempre puedes enmendar después, pero corregir una cama que drena mal es más difícil.",
+        ],
+      },
     ],
     related: [
       { label: "Calculadora de mezcla de suelo", href: "/calculators/home-improvement/soil-mix" },
@@ -1167,6 +1173,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Riega ligeramente y vuelve a revisar después de asentarse.",
           "Guarda un poco para retoques tras la primera lluvia.",
           "En rellenos profundos, puede requerir varias pasadas o resiembra (según caso).",
+        ],
+      },
+      {
+        heading: "Tip para el césped",
+        paragraphs: [
+          "En topdressing, esparce en capas finas y cepilla/rastrea para que el pasto respire. Es mejor hacer dos pasadas delgadas que una gruesa.",
         ],
       },
     ],
@@ -1269,6 +1281,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Trata el primer como producto separado con su propia cobertura y manos. Primer no “reemplaza” galones de pintura; se suma al plan.",
         ],
       },
+      {
+        heading: "Nota de manchas y taninos",
+        paragraphs: [
+          "Para manchas de agua/humo o taninos en madera, usa un primer bloqueador (stain-block) adecuado y respeta tiempos de secado. En esos casos, una mano extra de pintura no suele resolver el problema.",
+        ],
+      },
     ],
     related: [
       { label: "Calculadora de pintura", href: "/calculators/home-improvement/paint" },
@@ -1318,6 +1336,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
         heading: "Tip para un acabado durable",
         paragraphs: [
           "Respeta el tiempo de curado del esmalte: puede “secar” rápido al tacto, pero tarda más en endurecer. Evita limpieza agresiva o golpes en los primeros días.",
+        ],
+      },
+      {
+        heading: "Detalle de preparación",
+        paragraphs: [
+          "En molduras con brillo, el lijado y limpieza suelen importar más que agregar otra mano. Si la superficie está contaminada (grasa/silicona), la adherencia puede fallar aunque uses buen esmalte.",
         ],
       },
     ],
@@ -1691,6 +1715,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
         heading: "Detalle que sube el pedido",
         paragraphs: [
           "Suma un margen por recortes arriba/abajo y por paredes fuera de plomo. En casas antiguas, unos centímetros extra por tira pueden cambiar tiras por rollo.",
+        ],
+      },
+      {
+        heading: "Tip de instalación",
+        paragraphs: [
+          "Cuenta tiras y rollos pensando en paredes individuales. Si una pared requiere empalmes, la altura útil por rollo baja y el desperdicio sube (sobre todo con repeat).",
         ],
       },
     ],

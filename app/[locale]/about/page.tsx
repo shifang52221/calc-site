@@ -75,6 +75,7 @@ export default async function AboutPage({
         </h2>
         <p>{t("limitations.p1")}</p>
         <p>{t("limitations.p2")}</p>
+        <p>{t("limitations.p3")}</p>
       </section>
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">

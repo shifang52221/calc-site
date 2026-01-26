@@ -1291,7 +1291,8 @@
     "limitationsTitle": "Precisión y límites",
     "limitations": {
       "p1": "Ningún estimado refleja todas las condiciones: empaques cambian, materiales se asientan, la merma varía por diseño y la normativa depende de la región.",
-      "p2": "Usa el resultado como punto de partida y confirma con la etiqueta del producto, conversiones del proveedor e instrucciones de instalación."
+      "p2": "Usa el resultado como punto de partida y confirma con la etiqueta del producto, conversiones del proveedor e instrucciones de instalación.",
+      "p3": "Si un supuesto no coincide con tu zona o producto, escríbenos con el contexto y la etiqueta para mejorar la página."
     },
     "howItWorksTitle": "Cómo funciona",
     "howItWorksBody": "Cada calculadora incluye notas sobre unidades, redondeo y desperdicio. Las páginas de recursos y metodología explican la lógica detrás de los estimados.",
@@ -1311,11 +1312,13 @@
       "b1": "Revisa unidades (pies vs pulgadas, sq ft vs m²). Muchos errores vienen de mezclar unidades.",
       "b2": "Ajusta la merma según tu diseño: patrones, muchos cortes o formas irregulares requieren más.",
       "b3": "En materiales por bolsa/caja, confirma rendimiento/cobertura en tu etiqueta específica.",
-      "b4": "Si algo no cuadra, incluye un enlace compartible para que podamos reproducirlo."
+      "b4": "Si algo no cuadra, incluye un enlace compartible para que podamos reproducirlo.",
+      "b5": "Si puedes, adjunta fotos o enlaces del empaque y la cobertura/rendimiento."
     },
     "note": {
       "p1": "No ofrecemos servicios profesionales de ingeniería, legales ni de contratista.",
-      "p2": "Para trabajos urgentes o críticos de seguridad, consulta a un profesional local calificado."
+      "p2": "Para trabajos urgentes o críticos de seguridad, consulta a un profesional local calificado.",
+      "p3": "Para dudas de planificación, te ayudamos a ubicar la calculadora o guía más adecuada."
     },
     "emailLabel": "Correo",
     "email": "shifang522221@gmail.com",
