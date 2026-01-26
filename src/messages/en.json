@@ -1385,7 +1385,7 @@
   "title": "Contact",
   "intro": {
     "p1": "For support, feedback, or corrections, email us and include a few details so we can help quickly.",
-    "p2": "We read every message. If the issue is about a specific calculator, include your inputs, the result you expected, and your browser/device when possible."
+    "p2": "We read every message. If the issue is about a specific calculator, include your inputs, the result you expected, and your browser/device when possible, plus a screenshot if you can."
   },
   "beforeYouEmailTitle": "Before you email",
   "beforeYouEmail": {
