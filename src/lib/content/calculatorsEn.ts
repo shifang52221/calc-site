@@ -271,6 +271,14 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Fastener system is not just hardware. Hidden fasteners can require grooved boards and starter clips, and spacing rules can vary by product.",
         "If you need a breaker board to hide end joints, it can improve the look but adds boards and increases cuts—plan it as a deliberate design choice.",
         "A reliable estimate separates the job into field boards, borders, stairs, and fascia. The surface area number is only the first step.",
+        "Layout waste drivers (quick check): diagonal boards, picture framing, curved edges, many post notches, and lots of short runs all increase offcuts you can’t reuse. If your deck is cut-heavy, treat 5% as too low and plan closer to 10%+ (project dependent).",
+        "Fastener system notes: hidden fasteners often require grooved boards, starter clips, and specific edge boards for picture frames. Face-screwed systems may need color-matched screws and can change your gap spacing and final coverage.",
+        "Joist spacing interacts with decking material choice. Composite products often require tighter joist spacing, especially for diagonal installs; that doesn’t change board count, but it can change total cost and the “material list” you need to plan.",
+        "Worked example mindset: if a 12' x 16' deck uses boards running the 16' direction, you may choose 16' boards to avoid end joints. If you run boards the 12' direction and add a picture-frame border, you may need extra boards for the border plus more waste from miter cuts and blocking (project dependent).",
+        "Temperature affects composite gapping. Many composite products have different end-gap recommendations depending on install temperature; that can change how many full boards you can use and how much trimming waste you generate (project dependent).",
+        "If you plan fascia wraps, stair skirts, or rim boards, treat them as separate coverage lines. These items can consume many boards even when the deck surface is modest, especially on tall decks.",
+        "Seam strategy matters: if you can’t span a run with full-length boards, plan how end joints will be staggered and whether you’ll use a breaker board. A good seam plan can reduce waste and improve appearance compared to “cut as you go.”",
+        "End-gap and butt-joint details matter on composites. Many products require specific end-gap spacing and special fasteners near ends; plan those constraints before you optimize for “perfect” board lengths (project dependent).",
       ],
       howToMeasureTitle: "How to measure your deck",
       howToMeasureSteps: [
@@ -281,6 +289,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Mark any cutouts for posts or obstructions; more cutouts usually means higher waste.",
         "Choose board direction and where end joints will land; this affects both waste and whether you need breaker boards.",
         "Estimate stairs separately: count treads/risers and confirm whether you’ll use full-width boards, tread boards, or a nosing system.",
+        "Measure fascia and stair skirt lengths separately if you plan to cover them; these are linear-foot items and can consume many boards even when deck area is small.",
       ],
       assumptionsTitle: "Assumptions to double-check",
       assumptions: [
@@ -290,6 +299,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Composite products often have specific gapping and fastening systems that affect usable coverage and cost.",
         "Fascia, rim boards, and skirting are not included; estimate those separately if your design uses them.",
         "If you need to match an existing deck, product availability and color match can be harder than the math—plan extra boards for repairs.",
+        "Board gaps can be seasonal and product-specific (composite vs wood). Use the product guidance so your coverage assumptions match the real install.",
       ],
       buyingTipsTitle: "Buying tips",
       buyingTips: [
@@ -335,6 +345,13 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Openings do not reduce sheet count linearly. Cutting around windows and doors creates offcuts that are often the wrong shape to reuse, so many people keep openings in the area math and rely on waste to cover it.",
         "If your goal is sound reduction, sag resistance, or fire rating, the right board and assembly details matter more than the exact sheet count. Treat those requirements as constraints first, then do the quantity math.",
         "Worked example: a 12' x 16' ceiling is 192 sq ft. Using 4' x 12' sheets (48 sq ft) is 4 sheets before waste; using 4' x 8' sheets (32 sq ft) is 6 sheets before waste. The larger sheets may reduce seams, but only if you can safely lift and hang them.",
+        "Sheeting strategy notes: plan sheet orientation (horizontal vs vertical) and seam placement so butt joints land where they’re easiest to finish (and not all in one line). Fewer seams and better seam placement often reduce compound and sanding more than any small change in sheet count.",
+        "Waste drivers notes: complex rooms, stairwells, angled ceilings, many openings, and lots of small wall segments create odd offcuts that can’t be reused. Those layouts usually need higher waste than an open rectangle even at the same total area.",
+        "If you’re doing high-finish work, flatness matters. Large-format tile walls and glossy paint highlight uneven seams, so you may spend more time (and compound) to get a flat surface even when sheet quantity is unchanged (project dependent).",
+        "Avoid seam traps: try not to land butt joints at eye level in high-visibility areas (hallways, near windows). Placing tapered joints where possible can make finishing easier and reduce rework.",
+        "Four corners rule of thumb: avoid having four sheet corners meet at one point. Stagger seams when possible; it usually reduces cracking risk and makes finishing easier (project dependent).",
+        "Ceilings usually go first. Hanging ceilings before walls can simplify edge support and reduce the chance you end up with a thin ceiling strip that’s hard to fasten and finish.",
+        "Storage is part of quality. Keep sheets flat and dry so edges don’t swell or crumble. Damaged edges and warped sheets create more waste and more seam finishing work than most people expect.",
       ],
       howToMeasureTitle: "How to measure for drywall",
       howToMeasureSteps: [
@@ -344,6 +361,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Round up to whole sheets and add extra for odd angles, stairwells, and many openings.",
         "If you are using different board types (1/2\" vs 5/8\", regular vs moisture-resistant), split the estimate by surface so you do not accidentally buy the wrong mix.",
         "If you expect many patches (old houses, uneven framing), add extra waste because you will lose sheets to test cuts and repairs.",
+        "Choose a sheeting strategy: for many walls, horizontal hanging reduces seam count and finishing time; for tall walls or stairwells, vertical sheets may be practical (project dependent).",
       ],
       assumptionsTitle: "Assumptions to double-check",
       assumptions: [
@@ -354,6 +372,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Vaulted ceilings increase true surface area compared to footprint; measure the actual slope area if possible.",
         "If your framing is out of square, you will generate more offcuts and waste than a perfect-rectangle plan suggests.",
         "If you are applying multiple layers (sound/fire assemblies), estimate each layer separately; sheet count doubles even though the room size is the same.",
+        "Sheeting strategy and waste drivers vary by room geometry. If the space is cut-heavy (many corners/angles), raise the waste factor and plan extra time for layout and finishing.",
       ],
       buyingTipsTitle: "Buying tips",
       buyingTips: [
@@ -1012,6 +1031,13 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Worked example: a 12' x 14' room with 8' ceilings has wall perimeter 52'. Wall area ≈ 52 x 8 = 416 sq ft. Subtract a 20 sq ft door and a 30 sq ft window for a tighter estimate → 366 sq ft. Two coats at 350 sq ft/gal is ~2.1 gallons; with a buffer and cut-in waste, many people buy 3 gallons or 2 gallons + a quart for touch-ups.",
         "Time and waste scale with edges. Lots of trim, corners, and cut-ins may not change square footage much, but it can increase paint waste and the number of times you reload the brush/roller.",
         "Prep can save paint. Cleaning, sanding glossy surfaces, patching, and caulking reduce failures and rework. Skipping prep often costs more paint later than you saved up front.",
+        "Coverage assumptions: smooth walls can align with the label coverage, but porous patches, fresh drywall, and heavy textures often need more product. Use a conservative coverage rate if you’re unsure, or test a small area with the exact paint and roller nap you’ll use.",
+        "Coat strategy: decide where to spot-prime vs full-prime, and decide whether a tinted primer or gray primer makes sense for big color changes (project dependent). A good coat strategy often reduces the total number of finish coats needed for an even look.",
+        "Ceiling strategy: ceilings often get fewer shadows to hide defects, so uneven coverage can show. If you’re repainting a stained or water-marked ceiling, plan primer and an extra finish coat rather than hoping one coat will cover.",
+        "Trim and doors are their own estimate. Enamel trim paints often have different coverage and cure time than wall paint, and door edges can consume more paint than you expect when you do both faces and the edge profiles.",
+        "Sheen strategy: higher sheen usually shows surface defects and lap marks more. If you want a smooth semi-gloss on trim, spend more effort on sanding/filling and use the right tool (brush + mini-roller) rather than trying to solve it with extra coats.",
+        "If you are painting kitchens and baths, cleaning and degreasing is part of the material plan. A strong cleaner and the right primer can prevent adhesion failure and save you from repainting later.",
+        "If you are spraying, overspray and masking can increase material use even when coverage is fast. For many rooms, rolling walls and brushing cut-ins wastes less paint and is easier to control.",
       ],
       howToMeasureTitle: "How to measure for paint",
       howToMeasureSteps: [
@@ -1031,6 +1057,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Repaints over glossy surfaces often need prep and primer; skipping prep can cause failures that waste more paint later.",
         "Spraying can increase overspray and waste even if it speeds up coverage; rollers typically waste less paint.",
         "Porous repairs (fresh joint compound, patch spackle) can flash through paint if not primed, creating the illusion you need more coats.",
+        "Coverage rates on labels assume ideal conditions; if you are painting over repairs, stains, or high-contrast colors, plan a lower coverage rate and/or an extra coat for a consistent finish.",
       ],
       buyingTipsTitle: "Buying tips",
       buyingTips: [
@@ -1041,6 +1068,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Choose the right roller nap for your wall texture; the wrong nap can reduce coverage and leave a poor finish.",
         "If color accuracy matters, buy a sample first and check it in your lighting before purchasing gallons.",
         "If you have multiple rooms, buy enough at once so sheen and tint are consistent across rooms and touch-ups later.",
+        "If you are painting trim/doors/cabinets, budget the correct paint type (enamel) and consider buying a small extra for touch-ups after full cure (nicks happen).",
       ],
       commonMistakesTitle: "Common mistakes to avoid",
       commonMistakes: [
@@ -1135,6 +1163,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Ridge caps and starters are separate products for many shingle systems. Ridge length and eave/rake length can matter as much as roof squares when you build the accessory list.",
         "If you are re-roofing, plan for tear-off, disposal, and sheathing repairs. Those costs can exceed the difference between one or two extra bundles.",
         "Worked example approach: estimate roof squares, then build an accessory checklist (starter, ridge, underlayment, ice & water, drip edge, flashing). Many 'short' projects fail because the accessories were not ordered, not because the shingle bundle count was off.",
+        "Pitch multiplier notes (quick reference): 4/12 is about 1.054, 6/12 is about 1.118, 8/12 is about 1.202. If you’re estimating from footprint, even a moderate pitch can add a meaningful amount of area before waste.",
+        "Accessories list notes (high-level checklist): starter strips, ridge caps or ridge vent, underlayment (felt/synthetic), ice & water shield (eaves/valleys as required), drip edge, valley flashing (open metal valleys if used), step flashing for walls, pipe boots, vents, nails, sealant, and any new decking/sheathing you might replace.",
+        "Ridge cap coverage varies by product. Some systems use dedicated ridge cap shingles or accessory packs with their own coverage per bundle; do not assume ridge cap uses the same coverage as field shingles.",
+        "Valleys and penetrations are where details matter. Even if your square footage math is correct, missing flashing, boots, or ice & water coverage is a common cause of leaks and failed inspections (project dependent).",
+        "Ice & water planning: many regions require it at eaves and sometimes in valleys. That material is usually purchased by roll coverage and needs overlaps—measure linear footage (eaves/valleys) so you can budget it separately from roof squares.",
+        "Ventilation planning: ridge vents, intake vents, and any powered vents are separate line items. If you change ridge cap style or add ridge vent, it can change accessory counts even if shingle squares stay the same (project dependent).",
       ],
       howToMeasureTitle: "How to measure roof area",
       howToMeasureSteps: [
@@ -1144,6 +1178,8 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "If you only have footprint dimensions, apply a pitch multiplier to estimate surface area before converting to squares.",
         "If your roof has multiple pitches or additions, measure each section separately and apply the correct pitch multiplier per section.",
         "Convert total square feet to squares (divide by 100), then convert squares to bundles using the product label.",
+        "Measure ridge length separately if you want a ridge cap estimate; ridge cap is not the same as field shingles for many products.",
+        "Measure eave/rake edge lengths if you want starter strips and drip edge quantities; those items are driven by linear feet, not roof squares.",
       ],
       assumptionsTitle: "Assumptions to double-check",
       assumptions: [
@@ -1154,6 +1190,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Ventilation and flashing details vary by roof design; confirm your accessory list for your specific roof.",
         "Some shingles are not '3 bundles per square' (architectural, premium, and specialty products vary). Do not assume a universal bundle factor.",
         "If you are layering over an existing roof (where allowed), fastener length and ventilation strategy can change, even if your area math is unchanged.",
+        "Ridge cap, starter strips, and ridge ventilation products have their own coverage and counts; use the label or supplier takeoff rather than guessing from roof squares.",
       ],
       buyingTipsTitle: "Buying tips",
       buyingTips: [
@@ -1164,6 +1201,8 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Ask your supplier what accessories match your shingle line (starter strips, ridge caps, hip/ridge ventilation). Compatibility can matter for warranty and performance.",
         "If your climate freezes, verify ice & water shield requirements and plan enough coverage at eaves and valleys.",
         "Confirm nail type and count guidance for your shingle and local wind requirements; fasteners are a small cost but a common failure point.",
+        "If you’re close to a whole-bundle threshold, round up. One extra bundle is cheaper than delaying a crew or risking mismatched repairs later.",
+        "If the roof has walls meeting the roof (chimneys, dormers, sidewalls), list step flashing and counterflashing needs early; these details can drive both cost and schedule.",
       ],
       commonMistakesTitle: "Common mistakes to avoid",
       commonMistakes: [
@@ -1174,6 +1213,8 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Forgetting drip edge, flashing, and ventilation materials (often required and not optional).",
         "Ordering only shingles and then getting delayed because you are missing underlayment, ice & water, or flashing on install day.",
         "Underestimating safety and access needs (steep pitch, multiple stories). The safest plan can influence material handling and waste.",
+        "Forgetting pipe boots and small flashing details (they’re inexpensive but can stop a job or cause leaks).",
+        "Mixing accessory systems across brands without confirming compatibility (project dependent).",
       ],
       lastUpdated: "Last updated: Dec 2025",
     },
