@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { normalizeLocale } from "@/i18n/locale";
+import { routes } from "@/lib/routes";
 import { getAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -30,6 +32,7 @@ export default async function PrivacyPage({
   const locale = normalizeLocale(rawLocale);
   setRequestLocale(locale);
   const t = await getTranslations("privacyPage");
+  const nav = await getTranslations("nav");
 
   const introParagraphs = [t("intro.p1"), t("intro.p2")];
   const dataParagraphs = [t("dataBody.p1"), t("dataBody.p2")];
@@ -81,6 +84,36 @@ export default async function PrivacyPage({
         </h2>
         <p>{t("contactBody")}</p>
       </section>
+
+      <div className="text-xs text-zinc-500 dark:text-zinc-400">
+        <Link
+          href={routes.contact(locale)}
+          className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+        >
+          {nav("contact")}
+        </Link>
+        {" · "}
+        <Link
+          href={routes.terms(locale)}
+          className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+        >
+          {nav("terms")}
+        </Link>
+        {" · "}
+        <Link
+          href={routes.methodology(locale)}
+          className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+        >
+          {nav("methodology")}
+        </Link>
+        {" · "}
+        <Link
+          href={routes.editorialPolicy(locale)}
+          className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+        >
+          {nav("editorialPolicy")}
+        </Link>
+      </div>
     </div>
   );
 }

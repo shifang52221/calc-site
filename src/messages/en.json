@@ -1277,7 +1277,7 @@
   "title": "Privacy Policy",
   "intro": {
     "p1": "HomeDecorCalc is designed to work without an account. Most calculator inputs are processed in your browser and are not sent to our servers.",
-    "p2": "We use limited analytics and operational logs to keep the site reliable and improve content. This policy explains what we collect and the choices you have."
+    "p2": "We use limited analytics and operational logs to keep the site reliable and improve content. We keep these signals minimal, avoid collecting calculator inputs, and use them to fix errors and prioritize updates. This policy explains what we collect and the choices you have."
   },
   "dataTitle": "What we collect",
   "dataBody": {
@@ -1353,7 +1353,7 @@
     "body": {
       "p1": "HomeDecorCalc provides fast, privacy-friendly calculators and short guides for common home improvement projects.",
       "p2": "We focus on clear assumptions, practical defaults, and explanations that help you measure and buy materials with confidence.",
-      "p3": "Each page aims to answer the practical questions: what to measure, what to round up, and what to double-check before you buy."
+      "p3": "Each page aims to answer the practical questions: what to measure, what to round up, and what to double-check before you buy. We publish supporting resources and update pages as packaging and conventions change."
     },
     "whatYouGetTitle": "What you’ll find here",
     "whatYouGet": {
@@ -1385,7 +1385,7 @@
   "title": "Contact",
   "intro": {
     "p1": "For support, feedback, or corrections, email us and include a few details so we can help quickly.",
-    "p2": "We read every message. If the issue is about a specific calculator, include your inputs and the result you expected."
+    "p2": "We read every message. If the issue is about a specific calculator, include your inputs, the result you expected, and your browser/device when possible."
   },
   "beforeYouEmailTitle": "Before you email",
   "beforeYouEmail": {
