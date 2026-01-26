@@ -626,9 +626,9 @@
   }
  },
  "guideRoofing": {
-  "metaTitle": "How to estimate roofing shingles",
-  "metaDescription": "Learn how to estimate shingles using squares and bundles, plus a realistic waste factor.",
-  "title": "How to estimate roofing shingles",
+  "metaTitle": "How to calculate roof shingles",
+  "metaDescription": "Learn how to calculate roof shingles using squares and bundles, plus a realistic waste factor.",
+  "title": "How to calculate roof shingles",
   "subtitle": "Convert roof area to squares, then to bundles, and add waste for cuts and hips/valleys.",
   "intro": {
       "p1": "Roofing is usually sold in \"squares\" (100 sq ft). The basic estimate is roof surface area divided by 100, then converted to bundles based on the shingle product. The key is using true roof surface area (pitch increases area), not just the house footprint.",
@@ -955,7 +955,7 @@
   }
  },
  "guideTileWaste": {
-  "metaTitle": "Tile waste factor: how much extra to buy",
+  "metaTitle": "Tile overage (waste factor): how much extra to buy",
   "metaDescription": "Choose a tile overage percentage based on layout, room complexity, and future repair needs.",
   "title": "Tile waste factor: how much extra to buy",
   "subtitle": "Waste depends on cuts, layout, and room complexity-plan overage before you order.",
@@ -1000,7 +1000,7 @@
  },
  "guideDrywallCeiling": {
   "metaTitle": "How many drywall sheets for a ceiling?",
-  "metaDescription": "Estimate drywall sheets for a ceiling by dividing ceiling area by sheet area, then adding a waste factor.",
+  "metaDescription": "Estimate drywall sheets for a ceiling by dividing ceiling area by sheet area, then adding a waste factor. Includes notes on ceiling drywall thickness (1/2\" vs 5/8\").",
   "title": "How many drywall sheets for a ceiling?",
   "subtitle": "Ceiling area / sheet area, then round up and add waste for cutoffs and seams.",
   "intro": {
@@ -1028,8 +1028,8 @@
   "faq": {
    "q1": "Is 10% waste enough for ceiling drywall?",
    "a1": "Often yes for simple rectangular rooms with few cutouts, especially if you plan sheet layout. If the ceiling has many lights/vents, angled edges, tray details, or lots of small sections, 15% is a safer starting point. The more cutouts and offcuts you create, the harder it is to reuse scraps effectively (project dependent).",
-   "q2": "Should I use 5/8\" drywall on ceilings?",
-   "a2": "Sometimes. Thicker drywall can resist sag on wider joist spacing and may be required for certain fire-rated assemblies. The right choice depends on joist spacing, the framing type, and local requirements. If you are matching existing conditions, confirm what is already installed so transitions stay flush (project dependent).",
+   "q2": "What size drywall (sheetrock) for a ceiling: 1/2\" or 5/8\"?",
+   "a2": "It depends on joist spacing, sag resistance needs, and local code. Many ceilings use 1/2\" in common conditions, while 5/8\" is often used for better sag resistance and some fire-rated assemblies. If you're matching existing construction, confirm what is already installed so transitions stay flush (project dependent).",
    "q3": "Does sheet size change the total number of sheets?",
    "a3": "Yes. Different sheet sizes create different seam locations and different cutoff patterns, which changes how much waste you generate. If you are not planning a detailed layout, use a slightly higher waste factor to cover cutoff risk, especially in rooms where ceiling dimensions do not divide neatly into 4-foot widths."
   }
@@ -1553,7 +1553,7 @@
  },
  "tile": {
   "metaTitle": "Tile Calculator (Boxes, Overage & Waste)",
-  "metaDescription": "Estimate tile needed with overage (waste factor), boxes, and optional cost.",
+  "metaDescription": "Tile overage calculator: estimate tile needed with overage (waste factor), boxes, and optional cost.",
   "title": "Tile Calculator",
   "subtitle": "Estimate tile area and boxes with overage (waste factor) and optional cost.",
   "inputs": {
@@ -1583,7 +1583,7 @@
  },
  "deckMud": {
   "metaTitle": "Deck Mud Calculator (Dry Pack Mortar)",
-  "metaDescription": "Estimate deck mud (dry pack mortar) needed from area, thickness, waste/overage, and sand-to-cement ratio.",
+  "metaDescription": "Estimate deck mud (dry pack mortar) needed from area, thickness, waste/overage, and sand-to-cement ratio. Includes a quick deck mud coverage chart in square feet.",
   "title": "Deck Mud Calculator",
   "subtitle": "Estimate dry pack mortar (deck mud) by square feet and thickness. Adjust waste and mix ratio.",
   "inputs": {
@@ -1617,17 +1617,17 @@
   "faq": {
    "q1": "What is deck mud?",
    "a1": "Deck mud (dry pack mortar) is a sand-and-cement mix used for mortar beds, often for shower pans and tile underlayment.",
-   "q2": "What thickness should I use?",
-   "a2": "It depends on the project. If the bed is sloped, thickness is not uniform-use an average thickness for estimating.",
-   "q3": "What mix ratio should I use?",
-   "a3": "Many mixes use 5:1 sand-to-cement by volume. Follow your product guidance and local practice."
+   "q2": "How do I calculate deck mud coverage (sq ft)?",
+   "a2": "Deck mud is a volume estimate: volume (cu ft) = area (sq ft) x thickness (in) / 12. If the bed is sloped (common for showers), thickness is not uniform-use an average thickness, then add a buffer for waste and cleanup.",
+   "q3": "What mix ratio should I use for deck mud (dry pack)?",
+   "a3": "Many mixes use 5:1 sand-to-cement by volume as a starting point, but systems vary. Follow your waterproofing/drain system guidance and local practice for minimum thickness and mix requirements (project dependent)."
   }
  },
  "drywall": {
-  "metaTitle": "Drywall Sheet Calculator",
-  "metaDescription": "Estimate drywall sheets needed based on area, sheet coverage, and waste factor.",
+  "metaTitle": "Drywall Sheet Calculator (Sheetrock)",
+  "metaDescription": "Estimate how many drywall sheets (sheetrock) you need from area, sheet size, and a waste factor.",
   "title": "Drywall Sheet Calculator",
-  "subtitle": "Estimate drywall sheets. Adjust sheet coverage for 4x8, 4x10, or 4x12.",
+  "subtitle": "Estimate how many drywall sheets you need. Adjust sheet coverage for 4x8, 4x10, or 4x12.",
   "inputs": {
    "areaSqFt": "Wall/ceiling area (sq ft)",
    "areaM2": "Wall/ceiling area (m²)",
@@ -1643,8 +1643,8 @@
   },
   "faqTitle": "FAQ",
   "faq": {
-   "q1": "What is a typical sheet size?",
-   "a1": "A 4x8 sheet is 32 sq ft. 4x10 is 40 sq ft and 4x12 is 48 sq ft.",
+   "q1": "How many drywall sheets (sheetrock) do I need?",
+   "a1": "Start with total wall/ceiling area, divide by sheet coverage (32, 40, or 48 sq ft), then add a waste factor and round up to whole sheets.",
    "q2": "What waste factor should I use?",
    "a2": "10-15% is common depending on cuts and layout.",
    "q3": "Does this include screws or joint compound?",
@@ -1744,8 +1744,8 @@
  }
  ,
  "roofing": {
-  "metaTitle": "Roofing Calculator (Shingles)",
-  "metaDescription": "Estimate shingles needed using roof area, waste factor and bundle coverage. Includes optional cost.",
+  "metaTitle": "Roof Shingle Calculator (Bundles & Squares)",
+  "metaDescription": "Shingle bundle calculator: estimate shingles from roof area, waste factor and coverage per bundle, with optional cost.",
   "title": "Roofing Calculator",
   "subtitle": "Estimate shingles using squares and bundles. Adjust waste and bundle coverage.",
   "inputs": {
@@ -1767,15 +1767,15 @@
   "faq": {
    "q1": "What is a roofing square?",
    "a1": "A roofing square is 100 square feet of roof area.",
-   "q2": "How many bundles are in a square?",
-   "a2": "Often 3 bundles per square, but it depends on product and exposure. Use the label when possible.",
+   "q2": "How many bundles are in a square (100 sq ft)?",
+   "a2": "Often about 3 bundles per square, but it depends on product type and exposure. Use the packaging/spec sheet for your exact shingles.",
    "q3": "Why add waste?",
    "a3": "Cuts, valleys, hips and mistakes require extra shingles."
   }
  },
  "deck": {
-  "metaTitle": "Deck Board Calculator",
-  "metaDescription": "Estimate deck boards needed based on deck size, board dimensions, gap and waste factor.",
+  "metaTitle": "Deck Board Calculator (Deck Estimator)",
+  "metaDescription": "Deck estimator: estimate deck boards needed based on deck size, board dimensions, gap, board length and a waste factor.",
   "title": "Deck Board Calculator",
   "subtitle": "Estimate deck boards. Adjust board width, gap, length and a waste factor.",
   "inputs": {
@@ -1799,17 +1799,17 @@
   },
   "faqTitle": "FAQ",
   "faq": {
-   "q1": "Does this include joists or framing?",
-   "a1": "No. This calculator estimates decking boards only.",
-   "q2": "What board width should I use?",
-   "a2": "A common decking board is nominal 1x6 with an actual width around 5.5 inches.",
-   "q3": "What gap is typical?",
-   "a3": "Many decks use a small gap (e.g. 1/8 in) for drainage; follow your product guidance."
+   "q1": "Does this deck calculator include joists or framing?",
+   "a1": "No. This deck board calculator estimates decking boards only; framing (joists, beams, posts) is a separate estimate.",
+   "q2": "How do I estimate deck boards more accurately?",
+   "a2": "Board length choice and seam layout affect waste. If you have a picture-frame border, diagonal layout, lots of notches around posts, or stairs, use a higher waste factor and treat those features as separate line items when possible.",
+   "q3": "What gap and waste factor are typical?",
+   "a3": "Many decks use a small gap (often around 1/8 in) for drainage and expansion. Waste is often 5-10% for simple rectangles and higher for diagonal layouts, borders, lots of cuts, or stairs (project dependent)."
   }
  },
  "fence": {
   "metaTitle": "Fence Calculator (Panels & Posts)",
-  "metaDescription": "Estimate fence panels and posts from length, spacing, panel width, and a waste factor.",
+  "metaDescription": "Fence calculator: estimate fence panels and posts from length, spacing, panel width, and a waste factor. Adjust for corners and gates.",
   "title": "Fence Calculator (Panels & Posts)",
   "subtitle": "Estimate panels and posts for a straight fence line. Adjust waste and optional costs.",
   "inputs": {
@@ -1831,10 +1831,10 @@
   },
   "faqTitle": "FAQ",
   "faq": {
-   "q1": "How are posts estimated?",
-   "a1": "Posts are estimated using spacing along the length, plus one end post.",
+   "q1": "How are fence posts estimated?",
+   "a1": "Posts are estimated using your spacing along the length, plus an end post. Real projects usually need extra posts for corners, ends, and both sides of each gate.",
    "q2": "Do I need to adjust for corners or gates?",
-   "a2": "Yes-corners, ends and gates may add additional posts and hardware.",
+   "a2": "Yes-corners, ends and gates may add additional posts and hardware, and gate posts may need to be stronger depending on gate size and wind load (project dependent).",
    "q3": "What spacing is common?",
    "a3": "Many fence panels are 8 ft, with posts spaced accordingly. Follow local code and product specs."
   }
@@ -2510,8 +2510,8 @@
   }
  },
  "topsoil": {
-  "metaTitle": "Topsoil Calculator",
-  "metaDescription": "Estimate topsoil volume in cubic yards from area, depth and waste factor, with optional cost.",
+  "metaTitle": "Topsoil Calculator (Cubic Yards)",
+  "metaDescription": "Topsoil calculator in cubic yards: estimate topsoil volume from area, depth and waste factor, with optional cost.",
   "title": "Topsoil Calculator",
   "subtitle": "Estimate cubic yards of topsoil based on area and depth.",
   "quickTitle": "Quick guide",
@@ -2558,8 +2558,8 @@
   "faq": {
    "q1": "What topsoil depth is typical?",
    "a1": "It depends on the project. Many lawns use a thin layer; raised beds often use more.",
-   "q2": "Why cubic yards?",
-   "a2": "Bulk topsoil is commonly sold by the cubic yard.",
+   "q2": "Why cubic yards (yd³)?",
+   "a2": "Bulk topsoil is commonly sold by the cubic yard. Convert area and average depth to cubic feet, then divide by 27 to get cubic yards (yd³).",
    "q3": "Should I add waste?",
    "a3": "A buffer helps account for settling and uneven areas."
   }

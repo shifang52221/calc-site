@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
@@ -9,6 +10,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
 import { CalculatorContent } from "@/components/CalculatorContent";
 import { CalculatorSeoJsonLd } from "@/components/CalculatorSeoJsonLd";
+import { routes } from "@/lib/routes";
 
 export async function generateMetadata({
   params,
@@ -123,6 +125,29 @@ export default async function DeckMudPage({
           <p className="text-xs text-zinc-500 dark:text-zinc-400">
             Tip: If you’re building a shower slope, use the average of perimeter
             thickness and drain thickness, then add a buffer for waste and cleanup.
+          </p>
+          <p className="text-xs text-zinc-500 dark:text-zinc-400">
+            See also:{" "}
+            <Link
+              href={`${routes.resources(locale)}/deck-mud-coverage-chart`}
+              className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+            >
+              Deck mud coverage chart
+            </Link>
+            {" · "}
+            <Link
+              href={`${routes.resources(locale)}/deck-mud-mix-ratio-guide`}
+              className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+            >
+              Mix ratio guide
+            </Link>
+            {" · "}
+            <Link
+              href={`${routes.resources(locale)}/deck-mud-slope-per-foot`}
+              className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+            >
+              Slope per foot
+            </Link>
           </p>
         </section>
       ) : null}
