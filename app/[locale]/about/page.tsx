@@ -34,8 +34,7 @@ export default async function AboutPage({
   const t = await getTranslations("aboutPage");
   const nav = await getTranslations("nav");
 
-  const bodyParagraphs =
-    locale === "en" ? [t("body.p1"), t("body.p2")] : [t("body")];
+  const bodyParagraphs = [t("body.p1"), t("body.p2"), t("body.p3")];
 
   return (
     <div className="mx-auto grid max-w-3xl gap-6">
@@ -58,43 +57,39 @@ export default async function AboutPage({
         </ul>
       </section>
 
-      {locale === "en" ? (
-        <>
-          <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
-            <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
-              {t("howItWorksTitle")}
-            </h2>
-            <p>{t("howItWorksBody")}</p>
-            <div className="flex flex-wrap gap-3 text-sm">
-              <Link
-                href={routes.methodology(locale)}
-                className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
-              >
-                {nav("methodology")}
-              </Link>
-              <Link
-                href={routes.resources(locale)}
-                className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
-              >
-                {nav("resources")}
-              </Link>
-              <Link
-                href={routes.editorialPolicy(locale)}
-                className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
-              >
-                {nav("editorialPolicy")}
-              </Link>
-            </div>
-          </section>
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("howItWorksTitle")}
+        </h2>
+        <p>{t("howItWorksBody")}</p>
+        <div className="flex flex-wrap gap-3 text-sm">
+          <Link
+            href={routes.methodology(locale)}
+            className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+          >
+            {nav("methodology")}
+          </Link>
+          <Link
+            href={routes.resources(locale)}
+            className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+          >
+            {nav("resources")}
+          </Link>
+          <Link
+            href={routes.editorialPolicy(locale)}
+            className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+          >
+            {nav("editorialPolicy")}
+          </Link>
+        </div>
+      </section>
 
-          <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
-            <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
-              {t("fundingTitle")}
-            </h2>
-            <p>{t("fundingBody")}</p>
-          </section>
-        </>
-      ) : null}
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("fundingTitle")}
+        </h2>
+        <p>{t("fundingBody")}</p>
+      </section>
     </div>
   );
 }

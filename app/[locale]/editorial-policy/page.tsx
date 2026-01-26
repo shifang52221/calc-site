@@ -84,10 +84,40 @@ export default async function EditorialPolicyPage({
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
         <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("howWeBuildTitle")}
+        </h2>
+        <p>{t("howWeBuild.p1")}</p>
+        <p>{t("howWeBuild.p2")}</p>
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
           {t("correctionsTitle")}
         </h2>
         <p>{t("corrections.p1")}</p>
         <p>{t("corrections.p2")}</p>
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("independenceTitle")}
+        </h2>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t("independence.i1")}</li>
+          <li>{t("independence.i2")}</li>
+          <li>{t("independence.i3")}</li>
+        </ul>
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("sourcesTitle")}
+        </h2>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t("sources.s1")}</li>
+          <li>{t("sources.s2")}</li>
+          <li>{t("sources.s3")}</li>
+        </ul>
       </section>
 
       <section className="grid gap-2 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">

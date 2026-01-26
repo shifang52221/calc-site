@@ -25,7 +25,7 @@
     "editorialPolicyLink": "Política editorial"
   },
   "methodologyPage": {
-    "metaTitle": "Metodología | HomeDecorCalc",
+    "metaTitle": "Metodología",
     "metaDescription": "Cómo funcionan nuestras calculadoras: unidades, redondeo, desperdicio y supuestos.",
     "title": "Metodología",
     "subtitle": "Cómo pensamos las estimaciones: unidades claras, supuestos transparentes y márgenes prácticos.",
@@ -62,31 +62,48 @@
     "contactBody": "Si un supuesto no coincide con tu región o producto, contáctanos con el producto y el contexto. Mejoramos continuamente."
   },
   "editorialPolicyPage": {
-    "metaTitle": "Política editorial | HomeDecorCalc",
+    "metaTitle": "Política editorial",
     "metaDescription": "Cómo creamos y actualizamos el contenido, y cómo solicitar correcciones.",
     "title": "Política editorial",
-    "subtitle": "Estándares de calidad, actualizaciones y correcciones.",
+    "subtitle": "Cómo publicamos notas y guías: estándares de calidad, actualizaciones y correcciones.",
     "qualityTitle": "Estándares de calidad",
     "quality": {
       "q1": "Cada calculadora explica unidades, supuestos y redondeo.",
-      "q2": "Priorizamos consejos prácticos y originales.",
-      "q3": "Evitamos copiar otros sitios.",
-      "q4": "Mejoramos según preguntas reales."
+      "q2": "Preferimos ayuda práctica (cómo medir, qué redondear, errores comunes) en lugar de relleno genérico.",
+      "q3": "Evitamos copiar otros sitios y priorizamos explicaciones claras que coincidan con la lógica de la calculadora.",
+      "q4": "Mejoramos las páginas según preguntas reales y la intención de búsqueda."
     },
     "updatesTitle": "Actualizaciones",
     "updates": {
-      "p1": "Actualizamos cuando cambian fórmulas o encontramos mejoras.",
+      "p1": "Actualizamos el contenido cuando cambian fórmulas, convenciones de empaque o encontramos una forma más clara de explicar supuestos.",
       "u1": "Las páginas importantes muestran 'Última actualización'.",
       "u2": "Puedes ajustar valores predeterminados.",
       "u3": "Confirma con el código local y especificaciones."
     },
+    "howWeBuildTitle": "Cómo se crean las calculadoras",
+    "howWeBuild": {
+      "p1": "Partimos de fórmulas habituales (por ejemplo, área × espesor = volumen), rangos de cobertura y unidades de compra (bolsas, cajas, paquetes).",
+      "p2": "Antes de publicar, validamos con ejemplos y comprobamos que el resultado coincide con cómo se compra el material (unidades enteras, mínimos y redondeos)."
+    },
     "correctionsTitle": "Correcciones",
     "corrections": {
-      "p1": "Envía la URL y el problema por correo.",
-      "p2": "Priorizamos seguridad y grandes diferencias."
+      "p1": "Envíanos un correo con la URL y lo que crees que está mal, incluyendo el producto o contexto local si aplica.",
+      "p2": "Priorizamos correcciones que afecten seguridad, cumplimiento o grandes diferencias de material/costo."
     },
-    "disclaimerTitle": "Aviso",
-    "disclaimerBody": "Contenido informativo para planificación. No es asesoramiento profesional."
+    "independenceTitle": "Publicidad e independencia editorial",
+    "independence": {
+      "i1": "Los anuncios pueden ayudar a financiar el sitio, pero los anunciantes no revisan ni aprueban la lógica ni el contenido.",
+      "i2": "Los valores por defecto son escenarios comunes de planificación. No recomendamos marcas ni proveedores.",
+      "i3": "Si en el futuro añadimos contenido patrocinado, se indicará claramente."
+    },
+    "sourcesTitle": "Fuentes y supuestos",
+    "sources": {
+      "s1": "Etiquetas del fabricante (cobertura, rendimiento y requisitos de instalación).",
+      "s2": "Convenciones comunes del oficio (cuadrados de techo, tamaños de placas, rendimiento de bolsas y factores de desperdicio).",
+      "s3": "Las normas y conversiones varían por región y proveedor; confirma para tu proyecto."
+    },
+    "disclaimerTitle": "Aviso legal",
+    "disclaimerBody": "Nuestro contenido es informativo y sirve para planificar. No es asesoramiento profesional. Valida supuestos con documentación del producto, normativa local y profesionales cuando sea necesario."
   },
   "site": {
     "name": "HomeDecorCalc",
@@ -178,6 +195,118 @@
     "metaDescription": "Explora calculadoras en {category} y guías relacionadas.",
     "subtitle": "{count} calculadoras en esta categoría.",
     "intro": "Explora calculadoras y guías de {category}. Cada calculadora enlaza a guías relacionadas y herramientas similares.",
+    "categories": {
+      "walls-finishes": {
+        "title": "Consejos para {category}",
+        "overview": "Estas calculadoras ayudan a estimar pintura, drywall, papel tapiz y otros acabados. Lo importante es medir bien la superficie, usar coberturas realistas y redondear a unidades de compra.",
+        "measuringTitle": "Qué medir",
+        "measuring": {
+          "m1": "Paredes: ancho × alto por pared y suma; resta aberturas grandes solo si quieres un estimado más ajustado.",
+          "m2": "Drywall: define el tamaño de placa y considera recortes, esquinas y perforaciones.",
+          "m3": "Pintura/papel: define manos, textura y (en papel tapiz) la repetición del patrón."
+        },
+        "defaultsTitle": "Referencias útiles",
+        "defaults": {
+          "d1": "Empieza con 5–10% de merma y aumenta si hay muchos cortes, reparaciones o cambios de color.",
+          "d2": "Usa la etiqueta del producto para cobertura/rendimiento cuando sea posible.",
+          "d3": "Redondea hacia arriba a galones/rollos/placas completos para no quedarte corto."
+        },
+        "mistakesTitle": "Errores comunes",
+        "mistakes": {
+          "c1": "Olvidar molduras, techos o una segunda mano al presupuestar.",
+          "c2": "Mezclar unidades (pies vs pulgadas) o ignorar dimensiones de rollo/placa.",
+          "c3": "No guardar un poco de material para retoques o reparaciones futuras."
+        }
+      },
+      "floors-tile": {
+        "title": "Consejos para {category}",
+        "overview": "En pisos y azulejos, lo clave es el área correcta, una merma realista y convertir a lo que realmente compras (cajas, sacos, rollos).",
+        "measuringTitle": "Qué medir",
+        "measuring": {
+          "m1": "Mide área por habitación (largo × ancho) y suma; mide aparte closets y entrantes.",
+          "m2": "En azulejo, define tamaño y patrón (recto, diagonal, escalonado) porque cambian los cortes.",
+          "m3": "Para lechada/adhesivos, confirma cobertura en la bolsa/caja y el ancho de junta o espesor."
+        },
+        "defaultsTitle": "Referencias útiles",
+        "defaults": {
+          "d1": "10% extra suele funcionar; usa 15%+ para diagonal, muchos rincones o muchas piezas pequeñas.",
+          "d2": "Redondea a cajas completas y, si puedes, mantén el mismo lote.",
+          "d3": "Considera extra para roturas y futuras reparaciones, sobre todo en modelos discontinuados."
+        },
+        "mistakesTitle": "Errores comunes",
+        "mistakes": {
+          "c1": "Olvidar closets/nichos o usar un área neta cuando necesitas el área total.",
+          "c2": "No sumar merma por patrones, bordes o diseños complejos.",
+          "c3": "Ignorar materiales auxiliares (underlayment, adhesivo, transiciones)."
+        }
+      },
+      "concrete-masonry": {
+        "title": "Consejos para {category}",
+        "overview": "Concreto y albañilería dependen de volumen, espesor correcto y la unidad de pedido (yardas, toneladas o bolsas).",
+        "measuringTitle": "Qué medir",
+        "measuring": {
+          "m1": "Losas/zapatas: largo × ancho × espesor; convierte pulgadas a pies antes de multiplicar.",
+          "m2": "En mezclas por bolsa, confirma el rendimiento por bolsa y el tipo de trabajo (losa, postes, reparaciones).",
+          "m3": "Si el espesor varía, usa un promedio y mide más de un punto."
+        },
+        "defaultsTitle": "Referencias útiles",
+        "defaults": {
+          "d1": "Agrega 5–10% por irregularidades, derrames y acabado.",
+          "d2": "Redondea a bolsas enteras o cargas completas; quedarte corto en un colado sale caro.",
+          "d3": "Refuerzo, base y requisitos locales se verifican aparte del volumen."
+        },
+        "mistakesTitle": "Errores comunes",
+        "mistakes": {
+          "c1": "Inconsistencias de unidades (pulgadas vs pies, m³ vs litros).",
+          "c2": "Ignorar cambios de espesor, compactación o base.",
+          "c3": "Asumir que todas las bolsas rinden igual sin revisar el producto."
+        }
+      },
+      "roofing-exterior": {
+        "title": "Consejos para {category}",
+        "overview": "En techos, la pendiente importa. Una buena medición y la merma correcta evita faltantes y lotes distintos de tejas.",
+        "measuringTitle": "Qué medir",
+        "measuring": {
+          "m1": "Mide el área en planta y aplica un factor de pendiente para obtener el área real del techo.",
+          "m2": "Confirma el empaque (bultos por 'square') y mínimos de pedido.",
+          "m3": "Considera caderas, valles, buhardillas y cumbrera que aumentan cortes y merma."
+        },
+        "defaultsTitle": "Referencias útiles",
+        "defaults": {
+          "d1": "Aumenta la merma en techos complejos; techos simples desperdician menos.",
+          "d2": "Redondea a bultos completos y considera extra para arranque y cumbrera.",
+          "d3": "Normativa local para underlayment, tapajuntas y ventilación se verifica aparte."
+        },
+        "mistakesTitle": "Errores comunes",
+        "mistakes": {
+          "c1": "Usar el área en planta sin ajustar por pendiente.",
+          "c2": "Olvidar materiales auxiliares (underlayment, goterón, tapajuntas, clavos).",
+          "c3": "No planificar consistencia de lote al comprar tejas."
+        }
+      },
+      "landscaping": {
+        "title": "Consejos para {category}",
+        "overview": "En jardinería, los materiales suelen pedirse por volumen o peso. Elige una profundidad promedio y convierte a la unidad que vende tu proveedor.",
+        "measuringTitle": "Qué medir",
+        "measuring": {
+          "m1": "Mide el área y define una profundidad realista (mulch, grava, tierra).",
+          "m2": "Si la profundidad varía, usa un promedio y mide más de un punto.",
+          "m3": "Confirma si tu proveedor vende por yarda cúbica, tonelada o bolsa y usa la conversión correcta."
+        },
+        "defaultsTitle": "Referencias útiles",
+        "defaults": {
+          "d1": "Considera asentamiento y compactación: el material suele bajar un poco después de instalar.",
+          "d2": "Redondea a tamaños de pedido prácticos y revisa mínimos de entrega.",
+          "d3": "Un pequeño extra ayuda con zonas bajas y retoques."
+        },
+        "mistakesTitle": "Errores comunes",
+        "mistakes": {
+          "c1": "Convertir volumen ↔ peso sin usar la densidad correcta del material.",
+          "c2": "Olvidar bordes, pendientes o formas irregulares.",
+          "c3": "Suponer que bolsas y material a granel cubren lo mismo sin revisar la etiqueta."
+        }
+      }
+    },
     "relatedGuidesTitle": "Guías relacionadas",
     "faqTitle": "Preguntas frecuentes",
     "faq": {
@@ -1066,49 +1195,90 @@
     "metaTitle": "Política de privacidad",
     "metaDescription": "Cómo HomeDecorCalc maneja datos y cookies.",
     "title": "Política de privacidad",
-    "intro": "Este sitio funciona sin necesidad de crear una cuenta. Las entradas de las calculadoras se procesan en tu navegador.",
+    "intro": {
+      "p1": "HomeDecorCalc funciona sin cuenta. La mayoría de los datos que introduces se procesan en tu navegador y no se envían a nuestros servidores.",
+      "p2": "Usamos analítica limitada y registros operativos para mantener el sitio y mejorar el contenido. Esta política explica qué recopilamos y tus opciones."
+    },
     "dataTitle": "Qué recopilamos",
-    "dataBody": "No pedimos cuentas. Las entradas de las calculadoras permanecen en tu navegador. Podemos recopilar datos básicos y agregados (por ejemplo, visitas a páginas) para entender la demanda y mejorar el sitio.",
+    "dataBody": {
+      "p1": "No requerimos cuentas ni pedimos tu nombre, dirección o teléfono para usar las calculadoras.",
+      "p2": "Podemos recopilar datos técnicos agregados (vistas de página, región aproximada, tipo de dispositivo y métricas de rendimiento) para entender la demanda y mejorar el sitio."
+    },
     "cookiesTitle": "Cookies",
-    "cookiesBody": "Usamos cookies solo cuando son necesarias para preferencias (como idioma, sistema de unidades y elecciones de cookies). Puedes administrarlas en cualquier momento.",
+    "cookiesBody": {
+      "p1": "Usamos cookies cuando son necesarias para preferencias (idioma y sistema de unidades) y para recordar tus elecciones de cookies.",
+      "p2": "Puedes borrar cookies en tu navegador o cambiar el consentimiento en cualquier momento desde el control de preferencias."
+    },
     "adsTitle": "Publicidad y cookies",
-    "adsBody": "Si mostramos anuncios (por ejemplo, mediante Google AdSense), los anuncios pueden usar cookies o identificadores similares. Cuando la ley lo requiera, pediremos consentimiento antes de mostrar anuncios personalizados.",
+    "adsBody": {
+      "p1": "Si mostramos anuncios (por ejemplo, mediante Google AdSense), los proveedores pueden usar cookies o identificadores similares para medir rendimiento y mostrar anuncios relevantes.",
+      "p2": "Cuando sea necesario, pedimos consentimiento antes de cargar scripts de publicidad. Puedes elegir solo cookies esenciales y seguir usando las calculadoras."
+    },
     "yourChoicesTitle": "Tus opciones",
-    "yourChoicesBody": "Puedes ajustar el consentimiento con el botón de preferencias de cookies, desactivar cookies en tu navegador y rechazar anuncios personalizados cuando esté disponible.",
+    "yourChoicesBody": {
+      "p1": "Usa el botón de preferencias de cookies para cambiar entre solo esenciales y todas las cookies.",
+      "p2": "También puedes controlar cookies en tu navegador y revisar la configuración de anuncios de Google para gestionar personalización."
+    },
     "contactTitle": "Contacto",
-    "contactBody": "Si tienes preguntas sobre privacidad, escríbenos a shifang522221@gmail.com."
+    "contactBody": "Si tienes preguntas sobre privacidad, escríbenos a shifang522221@gmail.com e incluye la URL de la página."
   },
   "termsPage": {
     "metaTitle": "Términos del servicio",
     "metaDescription": "Términos y condiciones para usar HomeDecorCalc.",
     "title": "Términos del servicio",
-    "intro": "Al usar este sitio, aceptas que los resultados son estimaciones con fines informativos. Eres responsable de verificar medidas y especificaciones del producto.",
+    "intro": {
+      "p1": "HomeDecorCalc ofrece estimaciones para planificar. Los resultados dependen de tus medidas, unidades y supuestos como desperdicio y redondeo.",
+      "p2": "Al usar el sitio, aceptas usar los resultados bajo tu propio riesgo y verificar medidas, normativa local y especificaciones del producto."
+    },
     "useTitle": "Uso aceptable",
-    "useBody": "No abuses del servicio, no intentes interrumpirlo ni lo uses para actividades ilegales.",
+    "useBody": {
+      "p1": "Puedes usar las calculadoras para planificación personal o comercial.",
+      "p2": "No abuses del servicio, no intentes interrumpirlo, no lo raspes de forma excesiva ni lo uses para actividades ilegales."
+    },
     "warrantyTitle": "Sin garantía",
-    "warrantyBody": "El servicio se ofrece “tal cual”, sin garantías. No garantizamos exactitud, disponibilidad ni adecuación para tu proyecto.",
+    "warrantyBody": {
+      "p1": "El servicio se ofrece “tal cual” y puede cambiar con el tiempo.",
+      "p2": "No garantizamos exactitud, disponibilidad ni adecuación para un proyecto en particular."
+    },
     "liabilityTitle": "Limitación de responsabilidad",
-    "liabilityBody": "En la medida máxima permitida por la ley, no nos hacemos responsables de daños derivados del uso del servicio o de la confianza en los resultados.",
+    "liabilityBody": {
+      "p1": "En la medida máxima permitida por la ley, no nos hacemos responsables de daños indirectos, incidentales o consecuentes derivados del uso del servicio.",
+      "p2": "Si se determina alguna responsabilidad, nuestro total se limita al monto que pagaste por usar el servicio (normalmente $0)."
+    },
     "changesTitle": "Cambios",
-    "changesBody": "Podemos actualizar estos términos ocasionalmente. Si sigues usando el sitio, aceptas los términos actualizados."
+    "changesBody": {
+      "p1": "Podemos actualizar estos términos para reflejar cambios del servicio o requisitos legales.",
+      "p2": "Si sigues usando el sitio después de que los cambios entren en vigor, aceptas los términos actualizados."
+    }
   },
   "aboutPage": {
     "metaTitle": "Acerca de",
-    "metaDescription": "Sobre HomeDecorCalc y nuestro enfoque.",
+    "metaDescription": "Acerca de HomeDecorCalc y nuestro enfoque de calculadoras.",
     "title": "Acerca de",
-    "body": "HomeDecorCalc ofrece calculadoras y guías rápidas y respetuosas con la privacidad para proyectos comunes del hogar. Nos enfocamos en supuestos claros y estimaciones prácticas.",
+    "body": {
+      "p1": "HomeDecorCalc ofrece calculadoras rápidas y guías cortas para proyectos comunes de mejora del hogar.",
+      "p2": "Priorizamos supuestos claros, valores por defecto prácticos y explicaciones que te ayuden a medir y comprar con confianza.",
+      "p3": "Cada página intenta resolver lo práctico: qué medir, qué redondear y qué revisar antes de comprar."
+    },
     "principlesTitle": "Nuestros principios",
     "principles": {
       "p1": "Claridad: supuestos, unidades y valores útiles por defecto.",
       "p2": "Rapidez: cálculos en el navegador y enlaces para compartir.",
       "p3": "Privacidad: sin cuentas y mínima recopilación de datos."
-    }
+    },
+    "howItWorksTitle": "Cómo funciona",
+    "howItWorksBody": "Cada calculadora incluye notas sobre unidades, redondeo y desperdicio. Las páginas de recursos y metodología explican la lógica detrás de los estimados.",
+    "fundingTitle": "Cómo financiamos el sitio",
+    "fundingBody": "Podemos mostrar anuncios para cubrir hosting y mantenimiento. Los anuncios no deberían impedir el uso de las calculadoras."
   },
   "contactPage": {
     "metaTitle": "Contacto",
     "metaDescription": "Ponte en contacto con HomeDecorCalc.",
     "title": "Contacto",
-    "intro": "Para soporte, sugerencias o correcciones, escríbenos e incluye algunos detalles para ayudarte más rápido.",
+    "intro": {
+      "p1": "Para soporte, sugerencias o correcciones, escríbenos e incluye algunos detalles para ayudarte más rápido.",
+      "p2": "Si es sobre una calculadora, incluye tus entradas y el resultado que esperabas."
+    },
     "emailLabel": "Correo",
     "email": "shifang522221@gmail.com",
     "responseTime": "Normalmente respondemos en 2–3 días hábiles.",
@@ -1116,7 +1286,16 @@
     "whatToInclude": {
       "i1": "El enlace de la página y qué esperabas vs. qué obtuviste.",
       "i2": "Tus medidas y unidades (y supuestos como espesor o merma).",
-      "i3": "Opcional: capturas de pantalla y tu dispositivo/navegador."
+      "i3": "El tipo de material (y etiqueta o enlace del producto si lo tienes).",
+      "i4": "Tu región si la normativa o las conversiones del proveedor son distintas.",
+      "i5": "Opcional: capturas de pantalla y tu dispositivo/navegador."
+    },
+    "topicsTitle": "Temas comunes",
+    "topics": {
+      "t1": "Dudas de calculadoras (unidades, redondeo, desperdicio y supuestos).",
+      "t2": "Reportes de errores (entradas rotas, enlaces incorrectos o problemas de diseño).",
+      "t3": "Correcciones de contenido (coberturas, empaques o pasos faltantes).",
+      "t4": "Comentarios generales sobre cómo mejorar el sitio."
     }
   },
   "paint": {

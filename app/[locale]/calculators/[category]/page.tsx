@@ -85,6 +85,9 @@ export default async function CalculatorsCategoryPage({
   );
   const guides = GUIDE_DEFINITIONS.filter((item) => item.categoryId === category.id);
 
+  const categoryKey = `categories.${category.id}` as const;
+  const categoryTitle = index(category.titleKey);
+
   const faq = [
     { q: t("faq.q1"), a: t("faq.a1") },
     { q: t("faq.q2"), a: t("faq.a2") },
@@ -127,6 +130,55 @@ export default async function CalculatorsCategoryPage({
           </Link>
         ))}
       </div>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t(`${categoryKey}.title`, { category: categoryTitle })}
+        </h2>
+        <p>{t(`${categoryKey}.overview`)}</p>
+
+        <h3 className="mt-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+          {t(`${categoryKey}.measuringTitle`)}
+        </h3>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t(`${categoryKey}.measuring.m1`)}</li>
+          <li>{t(`${categoryKey}.measuring.m2`)}</li>
+          <li>{t(`${categoryKey}.measuring.m3`)}</li>
+        </ul>
+
+        <h3 className="mt-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+          {t(`${categoryKey}.defaultsTitle`)}
+        </h3>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t(`${categoryKey}.defaults.d1`)}</li>
+          <li>{t(`${categoryKey}.defaults.d2`)}</li>
+          <li>{t(`${categoryKey}.defaults.d3`)}</li>
+        </ul>
+
+        <h3 className="mt-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+          {t(`${categoryKey}.mistakesTitle`)}
+        </h3>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t(`${categoryKey}.mistakes.c1`)}</li>
+          <li>{t(`${categoryKey}.mistakes.c2`)}</li>
+          <li>{t(`${categoryKey}.mistakes.c3`)}</li>
+        </ul>
+
+        <div className="flex flex-wrap gap-3 text-sm">
+          <Link
+            href={routes.methodology(locale)}
+            className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+          >
+            {nav("methodology")}
+          </Link>
+          <Link
+            href={routes.resources(locale)}
+            className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+          >
+            {nav("resources")}
+          </Link>
+        </div>
+      </section>
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">
         <h2 className="text-base font-semibold">{t("relatedGuidesTitle")}</h2>

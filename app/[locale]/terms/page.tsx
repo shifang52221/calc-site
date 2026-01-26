@@ -31,27 +31,43 @@ export default async function TermsPage({
   setRequestLocale(locale);
   const t = await getTranslations("termsPage");
 
+  const introParagraphs = [t("intro.p1"), t("intro.p2")];
+  const useParagraphs = [t("useBody.p1"), t("useBody.p2")];
+  const warrantyParagraphs = [t("warrantyBody.p1"), t("warrantyBody.p2")];
+  const liabilityParagraphs = [t("liabilityBody.p1"), t("liabilityBody.p2")];
+  const changesParagraphs = [t("changesBody.p1"), t("changesBody.p2")];
+
   return (
     <div className="mx-auto grid max-w-3xl gap-6">
       <h1 className="text-2xl font-semibold">{t("title")}</h1>
       <div className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
-        <p>{t("intro")}</p>
+        {introParagraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
         <h2 className="mt-2 text-base font-semibold text-zinc-900 dark:text-zinc-100">
           {t("useTitle")}
         </h2>
-        <p>{t("useBody")}</p>
+        {useParagraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
         <h2 className="mt-2 text-base font-semibold text-zinc-900 dark:text-zinc-100">
           {t("warrantyTitle")}
         </h2>
-        <p>{t("warrantyBody")}</p>
+        {warrantyParagraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
         <h2 className="mt-2 text-base font-semibold text-zinc-900 dark:text-zinc-100">
           {t("liabilityTitle")}
         </h2>
-        <p>{t("liabilityBody")}</p>
+        {liabilityParagraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
         <h2 className="mt-2 text-base font-semibold text-zinc-900 dark:text-zinc-100">
           {t("changesTitle")}
         </h2>
-        <p>{t("changesBody")}</p>
+        {changesParagraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
       </div>
     </div>
   );

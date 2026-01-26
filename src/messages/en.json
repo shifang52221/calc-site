@@ -12,7 +12,7 @@
     "contact": "Contact"
   },
   "editorialPolicyPage": {
-    "metaTitle": "Editorial policy | HomeDecorCalc",
+    "metaTitle": "Editorial policy",
     "metaDescription": "How we create and update calculator content, and how to request corrections.",
     "title": "Editorial policy",
     "subtitle": "How we publish calculator notes and guides: quality standards, updates, and corrections.",
@@ -30,10 +30,27 @@
       "u2": "We may adjust default values to reflect common practice, but you can override inputs.",
       "u3": "For critical projects, always confirm with local code and product specs."
     },
+    "howWeBuildTitle": "How calculators are built",
+    "howWeBuild": {
+      "p1": "We start with common takeoff formulas (like area × thickness = volume), typical coverage ranges, and packaging conventions (bags, boxes, bundles).",
+      "p2": "Before publishing, we sanity-check results with sample inputs and make sure outputs match how materials are actually purchased (whole units, minimums, and rounding up)."
+    },
     "correctionsTitle": "Corrections",
     "corrections": {
       "p1": "If you spot an issue, email us with the page URL and what you believe is wrong, including your product or local context if relevant.",
       "p2": "We prioritize corrections that affect safety, code compliance, or large material/cost differences."
+    },
+    "independenceTitle": "Advertising & editorial independence",
+    "independence": {
+      "i1": "Ads may help fund hosting and ongoing maintenance, but advertisers do not review or approve calculator logic or content.",
+      "i2": "Defaults are chosen for common planning scenarios. We do not recommend specific brands or suppliers.",
+      "i3": "If we add sponsored content in the future, it will be clearly labeled."
+    },
+    "sourcesTitle": "Sources and assumptions",
+    "sources": {
+      "s1": "Manufacturer labels for coverage, yield, and installation constraints.",
+      "s2": "Common trade conventions (roofing squares, sheet sizes, concrete bag yields, and typical waste factors).",
+      "s3": "Local codes and supplier rules vary, so confirm requirements for your specific project."
     },
     "disclaimerTitle": "Disclaimer",
     "disclaimerBody": "Our content is informational and intended for planning. It is not professional advice. Validate assumptions with product documentation, local code, and qualified professionals when needed."
@@ -51,8 +68,8 @@
   "methodologyLink": "Methodology",
   "editorialPolicyLink": "Editorial policy"
  },
- "methodologyPage": {
-  "metaTitle": "Methodology | HomeDecorCalc",
+  "methodologyPage": {
+  "metaTitle": "Methodology",
   "metaDescription": "How our calculators work: units, rounding, waste factors, and assumptions.",
   "title": "Methodology",
   "subtitle": "How we think about estimates: clear units, transparent assumptions, and practical buffers.",
@@ -178,6 +195,118 @@
   "metaDescription": "Browse calculators in {category} and related guides.",
   "subtitle": "{count} calculators in this category.",
   "intro": "Browse calculators and guides for {category}. Each calculator links to related guides and similar tools to help you plan faster.",
+  "categories": {
+    "walls-finishes": {
+      "title": "Planning tips for {category}",
+      "overview": "Use these calculators to estimate paint, drywall, wallpaper, and similar finish materials. The goal is to measure the right surfaces, choose realistic coverage, and round up to whole purchase units.",
+      "measuringTitle": "What to measure",
+      "measuring": {
+        "m1": "Walls: measure width × height for each wall and sum totals; subtract large openings only if you want a tighter estimate.",
+        "m2": "Drywall: choose the sheet size you’ll buy and consider ceilings vs walls, corners, and cutouts.",
+        "m3": "Paint/wallpaper: decide coats and account for texture, repairs, and (for wallpaper) pattern repeat."
+      },
+      "defaultsTitle": "Useful defaults",
+      "defaults": {
+        "d1": "Start with 5–10% waste and increase it for complex layouts, many cutouts, or big color changes.",
+        "d2": "Use the product label for coverage and yield when possible; deep colors and textured walls often need more.",
+        "d3": "Round up to full gallons/rolls/sheets so you don’t run short mid-job."
+      },
+      "mistakesTitle": "Common misses",
+      "mistakes": {
+        "c1": "Forgetting trim, ceilings, or a second coat when budgeting materials.",
+        "c2": "Mixing units (feet vs inches) or ignoring sheet/roll dimensions.",
+        "c3": "Not keeping a small amount for touch-ups or future repairs."
+      }
+    },
+    "floors-tile": {
+      "title": "Planning tips for {category}",
+      "overview": "Flooring and tile projects are mostly about accurate area, realistic waste, and converting to the units you actually buy (boxes, bags, rolls).",
+      "measuringTitle": "What to measure",
+      "measuring": {
+        "m1": "Measure room area (length × width) and sum rooms; measure separately for closets and alcoves.",
+        "m2": "For tile, note tile size, layout direction, and whether you’re tiling walls, floors, or both.",
+        "m3": "For grout/underlayment, confirm coverage on the bag/box and your joint width or thickness."
+      },
+      "defaultsTitle": "Useful defaults",
+      "defaults": {
+        "d1": "A 10% overage is common; use 15%+ for diagonal patterns, many corners, or lots of cuts.",
+        "d2": "Round up to full boxes and keep dye lots consistent when possible.",
+        "d3": "Plan extra for breakage and future repairs, especially for discontinued styles."
+      },
+      "mistakesTitle": "Common misses",
+      "mistakes": {
+        "c1": "Using net area when you really need gross area (or forgetting closets and niches).",
+        "c2": "Not adding waste for patterns, borders, or staggered layouts.",
+        "c3": "Ignoring accessory materials like underlayment, thinset, and transitions."
+      }
+    },
+    "concrete-masonry": {
+      "title": "Planning tips for {category}",
+      "overview": "Concrete and masonry estimates depend on accurate volume, correct thickness, and the unit you’re ordering (yards, tons, or bags).",
+      "measuringTitle": "What to measure",
+      "measuring": {
+        "m1": "Slabs/footings: length × width × thickness; convert inches to feet before multiplying.",
+        "m2": "For bag mixes, confirm the yield per bag and whether you’re mixing for a slab, posts, or repairs.",
+        "m3": "If the base varies, use an average thickness and measure more than one point."
+      },
+      "defaultsTitle": "Useful defaults",
+      "defaults": {
+        "d1": "Add a small buffer (5–10%) for uneven forms, spillage, and finishing.",
+        "d2": "Round up to whole bags or whole loads; running short during a pour is expensive.",
+        "d3": "Confirm reinforcement, base depth, and local requirements separately from the volume estimate."
+      },
+      "mistakesTitle": "Common misses",
+      "mistakes": {
+        "c1": "Forgetting to convert units consistently (inches vs feet, m³ vs liters).",
+        "c2": "Ignoring base, compaction, or thickness changes across the area.",
+        "c3": "Assuming bag yield is the same across products or mix types."
+      }
+    },
+    "roofing-exterior": {
+      "title": "Planning tips for {category}",
+      "overview": "Roofing estimates depend on slope. A good measurement plus the right waste factor prevents shortages and mismatched shingle batches.",
+      "measuringTitle": "What to measure",
+      "measuring": {
+        "m1": "Measure roof footprint area, then apply a pitch/slope factor to get surface area.",
+        "m2": "Confirm how your shingles are packaged (bundles per square) and any minimum order sizes.",
+        "m3": "Account for hips, valleys, dormers, and ridge caps that add cuts and waste."
+      },
+      "defaultsTitle": "Useful defaults",
+      "defaults": {
+        "d1": "Use a higher waste factor for complex roofs; simple rectangles typically waste less.",
+        "d2": "Round up to full bundles and consider extra for starter strips and ridge caps.",
+        "d3": "Confirm local code requirements for underlayment, flashing, and ventilation separately."
+      },
+      "mistakesTitle": "Common misses",
+      "mistakes": {
+        "c1": "Using footprint area without adjusting for roof pitch.",
+        "c2": "Forgetting accessory materials (underlayment, drip edge, flashing, nails).",
+        "c3": "Not planning for batch consistency when buying shingles."
+      }
+    },
+    "landscaping": {
+      "title": "Planning tips for {category}",
+      "overview": "Landscaping materials are usually ordered by volume or weight. The key is choosing an average depth and converting to the unit your supplier sells.",
+      "measuringTitle": "What to measure",
+      "measuring": {
+        "m1": "Measure bed or area dimensions and choose a realistic depth (mulch, gravel, topsoil).",
+        "m2": "If the depth varies, use an average and measure more than one spot.",
+        "m3": "Confirm whether your supplier prices by cubic yard, ton, or bag, and use the right conversion."
+      },
+      "defaultsTitle": "Useful defaults",
+      "defaults": {
+        "d1": "Plan for settling and compaction—many materials end up slightly lower after installation.",
+        "d2": "Round up to practical order sizes and consider delivery minimums.",
+        "d3": "For soil and mulch, a small buffer helps with low spots and touch-ups."
+      },
+      "mistakesTitle": "Common misses",
+      "mistakes": {
+        "c1": "Mixing volume and weight conversions without using the correct density.",
+        "c2": "Forgetting to account for edging, slopes, or irregular shapes.",
+        "c3": "Assuming bags and bulk have the same coverage without checking the label."
+      }
+    }
+  },
   "relatedGuidesTitle": "Related guides",
   "faqTitle": "FAQ",
   "faq": {
@@ -1066,31 +1195,61 @@
   "metaTitle": "Privacy Policy",
   "metaDescription": "Learn how HomeDecorCalc handles data and cookies.",
   "title": "Privacy Policy",
-  "intro": "This website is designed to work without requiring you to create an account. Calculator inputs are processed in your browser.",
+  "intro": {
+    "p1": "HomeDecorCalc is designed to work without an account. Most calculator inputs are processed in your browser and are not sent to our servers.",
+    "p2": "We use limited analytics and operational logs to keep the site reliable and improve content. This policy explains what we collect and the choices you have."
+  },
   "dataTitle": "What we collect",
-  "dataBody": "We do not require accounts. Calculator inputs stay in your browser. We may collect basic, aggregated usage data (such as page views) to understand demand and improve the site.",
+  "dataBody": {
+    "p1": "We do not require accounts, and we do not ask for your name, address, or phone number to use calculators.",
+    "p2": "We may collect aggregated technical data (such as page views, approximate region, device type, and performance metrics) to understand demand and improve the site."
+  },
   "cookiesTitle": "Cookies",
-  "cookiesBody": "We use cookies only when needed for preferences (such as language, unit system, and cookie choices). You can manage preferences at any time.",
+  "cookiesBody": {
+    "p1": "We use cookies when needed for preferences (like language and unit system) and for remembering your cookie choices.",
+    "p2": "You can clear cookies in your browser or change consent at any time using the cookie preferences control."
+  },
   "adsTitle": "Advertising and cookies",
-  "adsBody": "If we display ads (for example, via Google AdSense), ads may use cookies or similar identifiers. Where required by law, we will ask for consent before serving personalized ads.",
+  "adsBody": {
+    "p1": "If we display ads (for example, via Google AdSense), ad providers may use cookies or similar identifiers to measure performance and show relevant ads.",
+    "p2": "Where required, we ask for consent before loading advertising scripts. You can choose essential-only consent and still use the calculators."
+  },
   "yourChoicesTitle": "Your choices",
-  "yourChoicesBody": "You can adjust consent via the cookie preferences button, disable cookies in your browser, and opt out of personalized ads where available.",
+  "yourChoicesBody": {
+    "p1": "Use the cookie preferences button to switch between essential-only and all cookies.",
+    "p2": "You can also control cookies in your browser and review Google's ad settings to manage personalization."
+  },
   "contactTitle": "Contact",
-  "contactBody": "If you have privacy questions, contact us at shifang522221@gmail.com."
+  "contactBody": "If you have privacy questions, email us at shifang522221@gmail.com and include the page URL you were viewing."
  },
  "termsPage": {
   "metaTitle": "Terms of Service",
   "metaDescription": "Terms and conditions for using HomeDecorCalc.",
   "title": "Terms of Service",
-  "intro": "By using this website, you agree that any results are estimates for informational purposes only. You are responsible for verifying measurements and product specifications.",
+  "intro": {
+    "p1": "HomeDecorCalc provides planning estimates. Results depend on your measurements, selected units, and assumptions like waste and rounding.",
+    "p2": "By using the site, you agree to use results at your own risk and to verify measurements, local codes, and product specifications."
+  },
   "useTitle": "Acceptable use",
-  "useBody": "Do not misuse the service, attempt to disrupt it, or use it for unlawful activities.",
+  "useBody": {
+    "p1": "You may use the calculators for personal and commercial planning.",
+    "p2": "Do not misuse the service, attempt to disrupt it, scrape it excessively, or use it for unlawful activities."
+  },
   "warrantyTitle": "No warranty",
-  "warrantyBody": "The service is provided \"as is\" without warranties of any kind. We do not guarantee accuracy, availability, or suitability for your project.",
+  "warrantyBody": {
+    "p1": "The service is provided \"as is\" and may change over time.",
+    "p2": "We do not guarantee accuracy, availability, or suitability for any particular project."
+  },
   "liabilityTitle": "Limitation of liability",
-  "liabilityBody": "To the fullest extent permitted by law, we are not liable for any damages arising from your use of the service or reliance on the results.",
+  "liabilityBody": {
+    "p1": "To the fullest extent permitted by law, we are not liable for indirect, incidental, or consequential damages arising from your use of the service.",
+    "p2": "If liability is found, our total liability is limited to the amount you paid to use the service (which is typically $0)."
+  },
   "changesTitle": "Changes",
-  "changesBody": "We may update these terms from time to time. Continued use of the site means you accept the updated terms."
+  "changesBody": {
+    "p1": "We may update these terms to reflect changes to the service or legal requirements.",
+    "p2": "Continued use of the site after changes become effective means you accept the updated terms."
+  }
  },
   "aboutPage": {
     "metaTitle": "About",
@@ -1098,7 +1257,8 @@
     "title": "About",
     "body": {
       "p1": "HomeDecorCalc provides fast, privacy-friendly calculators and short guides for common home improvement projects.",
-      "p2": "We focus on clear assumptions, practical defaults, and explanations that help you measure and buy materials with confidence."
+      "p2": "We focus on clear assumptions, practical defaults, and explanations that help you measure and buy materials with confidence.",
+      "p3": "Each page aims to answer the practical questions: what to measure, what to round up, and what to double-check before you buy."
     },
     "principlesTitle": "Our principles",
     "principles": {
@@ -1115,7 +1275,10 @@
   "metaTitle": "Contact",
   "metaDescription": "Get in touch with HomeDecorCalc.",
   "title": "Contact",
-  "intro": "For support, feedback, or corrections, email us and include a few details so we can help quickly.",
+  "intro": {
+    "p1": "For support, feedback, or corrections, email us and include a few details so we can help quickly.",
+    "p2": "We read every message. If the issue is about a specific calculator, include your inputs and the result you expected."
+  },
   "emailLabel": "Email",
   "email": "shifang522221@gmail.com",
   "responseTime": "We typically respond within 2-3 business days.",
@@ -1123,7 +1286,16 @@
   "whatToInclude": {
    "i1": "The page link and what you expected vs. what you got.",
    "i2": "Your measurements and units (and any assumptions like thickness or waste).",
-   "i3": "Optional: screenshots and your device/browser."
+   "i3": "The material type (and product label or listing link if you have one).",
+   "i4": "Your region if local codes, packaging, or supplier conversions differ.",
+   "i5": "Optional: screenshots and your device/browser."
+  },
+  "topicsTitle": "Common topics",
+  "topics": {
+    "t1": "Calculator questions (units, rounding, waste, and assumptions).",
+    "t2": "Bug reports (broken inputs, wrong links, or layout issues).",
+    "t3": "Content corrections (coverage rates, packaging conventions, or missing steps).",
+    "t4": "General feedback on what would make the site more useful."
   }
  },
  "paint": {
