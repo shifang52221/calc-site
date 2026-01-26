@@ -1681,8 +1681,8 @@
   }
  },
  "concrete": {
-  "metaTitle": "Concrete Calculator (Slab)",
-  "metaDescription": "Estimate concrete volume in cubic yards based on length, width, depth, and waste factor.",
+  "metaTitle": "Concrete Calculator (Cubic Yards for a Slab)",
+  "metaDescription": "Estimate slab concrete in cubic yards/meters from length, width, and thickness, then add an ordering buffer.",
   "title": "Concrete Calculator",
   "subtitle": "Estimate cubic yards for a slab. Add a waste factor and optional price per cubic yard.",
   "inputs": {
@@ -1704,17 +1704,17 @@
   },
   "faqTitle": "FAQ",
   "faq": {
-   "q1": "Why is concrete measured in cubic yards?",
-   "a1": "Ready-mix concrete is commonly sold by the cubic yard in the US.",
-   "q2": "What depth is common for a slab?",
-   "a2": "Many slabs use 4 inches, but requirements vary by project and load.",
-   "q3": "Should I add waste?",
-   "a3": "Yes-10% is common to account for spillage and uneven subgrade."
+   "q1": "How do I calculate cubic yards of concrete for a slab?",
+   "a1": "Convert thickness to feet, then cubic feet = length (ft) x width (ft) x thickness (ft). Cubic yards = cubic feet / 27. Example: 10 ft x 10 ft x 4\" is about 1.23 yd³ before waste (project dependent).",
+   "q2": "What thickness is typical for a concrete slab?",
+   "a2": "Many patios and walkways use around 4 inches, while driveways and heavier loads often use more. Your base prep, rebar/mesh design, and local requirements can change thickness (project dependent).",
+   "q3": "How much extra concrete should I order?",
+   "a3": "Many projects add 5-10% to cover uneven subgrade, spillage, and finishing losses. Also consider delivery minimums: coming up short can be more expensive than a small overage."
   }
  },
  "mulch": {
-  "metaTitle": "Mulch Calculator",
-  "metaDescription": "Estimate mulch volume in cubic yards from area, depth, and waste factor.",
+  "metaTitle": "Mulch Calculator (Cubic Yards)",
+  "metaDescription": "Estimate mulch volume in cubic yards/meters from bed area and depth, with a buffer for settling and uneven spots.",
   "title": "Mulch Calculator",
   "subtitle": "Estimate cubic yards of mulch based on bed area and depth.",
   "inputs": {
@@ -1736,10 +1736,10 @@
   "faq": {
    "q1": "What mulch depth is typical?",
    "a1": "Many beds use 2-4 inches. Follow plant and climate recommendations.",
-   "q2": "Why calculate in cubic yards?",
-   "a2": "Bulk mulch is often sold by the cubic yard.",
-   "q3": "Should I add waste?",
-   "a3": "A small buffer (5-10%) helps account for settling and uneven beds."
+   "q2": "How do I calculate cubic yards of mulch?",
+   "a2": "Cubic yards = area (sq ft) x depth (in) / 324. Example: 500 sq ft at 3\" depth is about 4.63 yd³ before waste. If you're ordering in bulk, round up to match delivery minimums (project dependent).",
+   "q3": "Should I add extra mulch?",
+   "a3": "Usually yes. Mulch settles after spreading and watering, and bed edges/low spots use more material than a perfectly flat rectangle. 5-10% is a common buffer."
   }
  }
  ,
@@ -1840,8 +1840,8 @@
   }
  },
  "gravel": {
-  "metaTitle": "Gravel Calculator",
-  "metaDescription": "Estimate gravel volume in cubic yards from area, depth and waste factor, with optional cost.",
+  "metaTitle": "Gravel Calculator (Cubic Yards)",
+  "metaDescription": "Estimate gravel (crushed stone) in cubic yards from area, depth, and waste, with optional cost.",
   "title": "Gravel Calculator",
   "subtitle": "Estimate cubic yards of gravel based on area and depth.",
   "quickTitle": "Quick guide",
@@ -1886,17 +1886,17 @@
   },
   "faqTitle": "FAQ",
   "faq": {
-   "q1": "What depth should I use for gravel?",
-   "a1": "Common depths vary by use (e.g., 2-4 inches). Choose based on your project.",
-   "q2": "Why cubic yards?",
-   "a2": "Bulk gravel is commonly sold by the cubic yard.",
-   "q3": "Should I add waste?",
-   "a3": "A buffer helps account for compaction and uneven base."
+   "q1": "What gravel depth should I use?",
+   "a1": "It depends on the application. Many paths and beds use a few inches, while driveways and base layers often need more depth and proper compaction. Use an average finished depth and follow local/supplier recommendations (project dependent).",
+   "q2": "How do I calculate cubic yards of gravel?",
+   "a2": "Cubic yards = area (sq ft) x depth (in) / 324. For irregular shapes, break the area into rectangles, add them up, then use the same formula and round up slightly.",
+   "q3": "How much extra gravel should I order?",
+   "a3": "A small buffer helps cover compaction, grading variation, and delivery minimums. If you have lots of edges, transitions, or low spots, consider a higher buffer (project dependent)."
   }
  },
  "sand": {
-  "metaTitle": "Sand Calculator",
-  "metaDescription": "Estimate sand volume in cubic yards or cubic meters, plus weight in tons, with optional cost.",
+  "metaTitle": "Sand Calculator (Yards & Tons)",
+  "metaDescription": "Estimate sand volume in cubic yards/meters and convert to tons/tonnes using density presets, with optional cost.",
   "title": "Sand Calculator",
   "subtitle": "Estimate sand volume and weight based on area, depth, and density.",
   "inputs": {
@@ -1941,11 +1941,11 @@
    "q2": "Why does sand weight vary?",
    "a2": "Moisture content and compaction change density. Wet or packed sand can weigh more per cubic yard.",
    "q3": "What waste factor should I use?",
-   "a3": "Many projects use 5-10% to cover compaction, uneven base, and small measuring errors."
+   "a3": "Many projects use 5-10% to cover compaction, uneven base, and small measuring errors. If you're filling low spots or working with irregular edges, use a higher buffer (project dependent)."
   }
  },
  "paverBase": {
-  "metaTitle": "Paver Base Calculator",
+  "metaTitle": "Paver Base Calculator (Base Stone & Bedding Sand)",
   "metaDescription": "Estimate base stone and bedding sand for pavers using area, layer depths, density presets, and optional cost.",
   "title": "Paver Base Calculator",
   "subtitle": "Estimate base stone and bedding sand volume, weight, and optional cost.",
@@ -2002,7 +2002,7 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How thick should a paver base be?",
-   "a1": "It depends on soil and use. Walkways and patios often use a few inches of compacted base; driveways usually need more. Follow local recommendations.",
+   "a1": "It depends on soil and use. Walkways and patios often use roughly 4-6\" of compacted base, while driveways often use more. Bedding sand is usually a thin leveling layer (often around 1\"). Follow local recommendations and compact in lifts (project dependent).",
    "q2": "Is bedding sand the same as base stone?",
    "a2": "No. Bedding sand is a thin leveling layer. The compacted base stone provides structure and drainage.",
    "q3": "Should I add waste/overage?",
@@ -2010,8 +2010,8 @@
   }
  },
  "soilMix": {
-  "metaTitle": "Soil Mix Calculator",
-  "metaDescription": "Estimate total soil volume and split it into compost, topsoil, and sand using a mix ratio, with optional cost.",
+  "metaTitle": "Soil Mix Calculator (Compost/Topsoil/Sand Ratio)",
+  "metaDescription": "Estimate total soil volume and split it into compost, topsoil, and sand using a mix ratio for raised beds or leveling, with optional cost.",
   "title": "Soil Mix Calculator",
   "subtitle": "Estimate soil volume, choose a mix ratio, and get component breakdowns.",
   "inputs": {
@@ -2057,9 +2057,9 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Is 50/50 compost and topsoil a good mix?",
-   "a1": "It's a common starting point for raised beds, but needs vary by plants and drainage. Adjust based on your soil and local advice.",
+   "a1": "It's a common starting point for raised beds because it balances organic matter with structure, but ideal mixes vary by plants, climate, and drainage. Use it as a baseline, then adjust based on how your soil holds water and how your plants respond (project dependent).",
    "q2": "Should I include sand in a soil mix?",
-   "a2": "Sometimes. Sand can improve drainage in specific situations, but too much can change texture. Use it intentionally for your project.",
+   "a2": "Sometimes. Sand is often used in leveling mixes and in certain drainage-focused blends, but adding sand to the wrong native soil can create an undesirable texture. Use sand intentionally (for a specific purpose) and follow local guidance for your plants and soil type (project dependent).",
    "q3": "Why add a waste factor?",
    "a3": "Soil can settle after watering and compaction, and it's easy to under-measure. A small buffer helps you avoid shortages."
   }
@@ -2141,7 +2141,7 @@
   }
  },
  "mulchBags": {
-  "metaTitle": "Mulch Bags Calculator",
+  "metaTitle": "Mulch Bags Calculator (2 cu ft, 3 cu ft)",
   "metaDescription": "Estimate how many bags of mulch you need from area, depth, waste, and bag size, with optional cost per bag.",
   "title": "Mulch Bags Calculator",
   "subtitle": "Estimate mulch volume and convert it to bags (2 cu ft, 3 cu ft, or custom).",
@@ -2174,7 +2174,7 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How many mulch bags do I need for 2 inches depth?",
-   "a1": "It depends on your area and bag size. Enter your area, set depth to 2 inches, choose your bag size, and round up.",
+   "a1": "It depends on your area and bag size. A shortcut is: coverage per bag (sq ft) = bag volume (cu ft) / (depth in / 12). For example, a 2 cu ft bag covers about 12 sq ft at 2\" depth (about 8 sq ft at 3\"); a 3 cu ft bag covers about 18 sq ft at 2\" (about 12 sq ft at 3\"). Enter your exact area/depth and round up.",
    "q2": "What is the most common bag size?",
    "a2": "Many stores sell 2 cu ft and 3 cu ft bags. Always confirm the bag label.",
    "q3": "Should I add waste?",
@@ -2182,8 +2182,8 @@
   }
  },
  "concreteBags": {
-  "metaTitle": "Concrete Bags Calculator",
-  "metaDescription": "Estimate how many bags of concrete you need from area, thickness, waste, and bag yield, with optional cost per bag.",
+  "metaTitle": "Concrete Bags Calculator (80 lb, 60 lb, 50 lb)",
+  "metaDescription": "Estimate how many bags of concrete you need from area and thickness, then adjust for waste and bag yield, with optional cost.",
   "title": "Concrete Bags Calculator",
   "subtitle": "Estimate concrete volume and convert it to bags (80/60/50/40 lb or custom yield).",
   "inputs": {
@@ -2216,7 +2216,7 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How many 80 lb bags of concrete do I need?",
-   "a1": "Enter your area and thickness, then choose 80 lb bags. The calculator converts volume to bags and rounds up.",
+   "a1": "Enter your area and thickness, then choose 80 lb bags. The calculator converts volume to bags using the yield per bag and rounds up. Example: a 10 ft x 10 ft slab at 4\" is about 33.3 cu ft; if your 80 lb bag yields ~0.6 cu ft, that's ~56 bags before waste (check your bag label).",
    "q2": "Why do different bag sizes give different results?",
    "a2": "Different bag weights have different yields (cubic feet per bag). Always confirm yield on the product label.",
    "q3": "Should I add waste?",
@@ -2317,8 +2317,8 @@
   }
  },
  "topsoilBags": {
-  "metaTitle": "Topsoil Bags Calculator",
-  "metaDescription": "Estimate how many bags of topsoil you need from area, depth, waste, and bag size, with optional cost per bag.",
+  "metaTitle": "Topsoil Bags Calculator (Cubic Feet)",
+  "metaDescription": "Estimate how many bags of topsoil you need from area, depth, and bag volume (cubic feet/liters), with optional cost.",
   "title": "Topsoil Bags Calculator",
   "subtitle": "Estimate topsoil volume and convert it to bags (1/2/3 cu ft or custom).",
   "inputs": {
@@ -2350,7 +2350,7 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How many bags of topsoil do I need?",
-   "a1": "Enter your area and depth, pick your bag size, and the calculator will round up to whole bags.",
+   "a1": "Enter your area and average depth, pick your bag size, and the calculator will round up to whole bags. A helpful conversion: 1 cubic yard = 27 cubic feet, so a 2 cu ft bag is about 0.074 yd³ (label volume varies by brand).",
    "q2": "What depth should I use?",
    "a2": "It depends on the project (leveling vs planting). Use an average depth and consider adding waste for uneven spots.",
    "q3": "Should I buy bagged or bulk topsoil?",
@@ -2358,8 +2358,8 @@
   }
  },
  "gravelTonsCalc": {
-  "metaTitle": "Gravel Yards to Tons Calculator",
-  "metaDescription": "Convert gravel volume (cubic yards/meters) to weight (tons/tonnes) using density presets, with optional cost.",
+  "metaTitle": "Gravel Yards to Tons Calculator (Density-Based)",
+  "metaDescription": "Convert gravel volume (cubic yards/meters) to weight (tons/tonnes) using density presets (pea gravel/crushed stone), with optional cost.",
   "title": "Gravel Yards <-> Tons",
   "subtitle": "Convert cubic yards to tons (or tons to yards) using density presets or custom density.",
   "inputs": {
@@ -2395,7 +2395,7 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Why does yards-to-tons conversion vary?",
-   "a1": "It depends on density, which changes with gravel type and moisture. Suppliers may use their own conversion.",
+   "a1": "It depends on density, which changes with gravel type, moisture, and compaction. As a rough idea, many gravels fall in the ~1.3-1.6 tons per cubic yard range, but your supplier may use a different conversion (project dependent).",
    "q2": "Should I round up?",
    "a2": "Usually yes. Delivery minimums and compaction can make you come up short if you order too tightly.",
    "q3": "Should I use tons or tonnes?",
