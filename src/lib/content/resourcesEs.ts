@@ -320,6 +320,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Instalar recubrimientos antes de cumplir límites de humedad (fallas de adhesión).",
         ],
       },
+      {
+        heading: "Nota rápida",
+        paragraphs: [
+          "Si vas a instalar un recubrimiento (epoxi, vinílico, madera, adhesivos), trata el secado como un hito separado del curado: confirma límites de humedad del producto y planifica pruebas con tiempo.",
+        ],
+      },
     ],
     related: [
       { label: "Calculadora de concreto", href: "/calculators/home-improvement/concrete" },
@@ -428,6 +434,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Planifica pendiente con espesor promedio (borde alto y bajo).",
         ],
       },
+      {
+        heading: "Detalle que evita problemas",
+        paragraphs: [
+          "No mezcles más de lo que puedas colocar y compactar en una tanda. Si el material empieza a endurecer antes de compactar, pierde densidad y el acabado puede quedar frágil.",
+        ],
+      },
     ],
     related: [
       { label: "Calculadora de deck mud", href: "/calculators/home-improvement/deck-mud" },
@@ -476,6 +488,16 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Barandal y escaleras (bloqueos y conectores extra).",
         ],
       },
+      {
+        heading: "Checklist rápido antes de comprar",
+        bullets: [
+          "Define material (madera/compuesto), ancho real y separación recomendada por el fabricante.",
+          "Decide patrón (recto/diagonal) y si habrá marco, descansos o escaleras (afectan desperdicio).",
+          "Confirma alturas y número de escalones; si necesitas barandal, planifica herrajes extra.",
+          "Elige sistema de fijación (tornillos, clips ocultos) y compra un margen.",
+          "Si hay ledger contra muro, revisa flashing y separación del suelo para drenaje.",
+        ],
+      },
     ],
     related: [
       { label: "Calculadora de deck", href: "/calculators/home-improvement/deck" },
@@ -515,6 +537,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Resistente a humedad no reemplaza impermeabilización en ducha.",
           "Para cielos con 24\" OC, 5/8\" suele ayudar contra pandeo (revisa código/producto).",
           "Las esquinas y butt joints suelen consumir más compuesto para “desaparecer”.",
+        ],
+      },
+      {
+        heading: "Nota de acabado",
+        paragraphs: [
+          "Si vas a usar luz rasante, pintura brillante o un acabado muy liso, planifica más preparación (y más compuesto). Imperfecciones pequeñas que no se notan con pintura mate suelen aparecer después.",
         ],
       },
     ],
@@ -746,6 +774,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Ordena un margen y redondea a mínimos de entrega.",
         ],
       },
+      {
+        heading: "Tip de compra",
+        paragraphs: [
+          "Cuando el proveedor vende por tonelada, pide la densidad o conversión para esa arena específica. La humedad puede cambiar el peso y los mínimos de entrega suelen obligar a redondear.",
+        ],
+      },
     ],
     related: [
       { label: "Calculadora de arena", href: "/calculators/home-improvement/sand" },
@@ -792,6 +826,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "No compactar por capas (o compactar solo arriba).",
           "Ignorar drenaje y saturar la base.",
           "No instalar borde (edge restraint) y ver que los adoquines se abren.",
+        ],
+      },
+      {
+        heading: "Detalle de compactación",
+        paragraphs: [
+          "La base se compacta por capas (lifts). Para una base gruesa, compactar en una sola capa suele dejar zonas blandas. Planifica el espesor final como “compactado”, no como material suelto recién extendido.",
         ],
       },
     ],
@@ -847,6 +887,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
             ["60 L", "2.12 ft³", "Bolsa grande"],
           ],
         },
+      },
+      {
+        heading: "Pequeño extra que vale la pena",
+        paragraphs: [
+          "En nivelaciones, guardar una parte para retoques suele ahorrar tiempo: después de lluvia y riego, aparecen zonas bajas. Comprar un poco más del mismo material evita diferencias de textura.",
+        ],
       },
     ],
     related: [
@@ -1071,6 +1117,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "1) Volumen de la cama (largo × ancho × profundidad). 2) Convierte a ft³ o yd³. 3) Multiplica por cada porcentaje.",
         ],
       },
+      {
+        heading: "Consejo para no equivocarte",
+        paragraphs: [
+          "Si compras por partes (compost/topsoil/aireación), usa el mismo recipiente para medir volúmenes y evita mezclar materiales muy finos. Una mezcla demasiado “polvosa” puede compactarse y drenar peor.",
+        ],
+      },
     ],
     related: [
       { label: "Calculadora de mezcla de suelo", href: "/calculators/home-improvement/soil-mix" },
@@ -1158,6 +1210,19 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Confirma cobertura por galón/litro y número de manos (mejor ser conservador).",
           "Compra del mismo lote si el color exacto importa.",
           "Guarda un poco para retoques futuros (misma marca y brillo).",
+        ],
+      },
+      {
+        heading: "Dos cosas que cambian el resultado",
+        bullets: [
+          "Textura y porosidad: suelen bajar la cobertura real más que el número “promedio” por galón.",
+          "Herramienta: rodillo vs brocha y el tamaño del pelo influyen en consumo y retoques.",
+        ],
+      },
+      {
+        heading: "Error típico",
+        paragraphs: [
+          "No uses primer para “ahorrar” pintura si el problema es solo cobertura. El primer se suma como producto, y su valor suele estar en adherencia y uniformidad, no en reemplazar manos de acabado.",
         ],
       },
     ],
@@ -1249,6 +1314,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           ],
         },
       },
+      {
+        heading: "Tip para un acabado durable",
+        paragraphs: [
+          "Respeta el tiempo de curado del esmalte: puede “secar” rápido al tacto, pero tarda más en endurecer. Evita limpieza agresiva o golpes en los primeros días.",
+        ],
+      },
     ],
     related: [
       { label: "Calculadora de pintura (paredes)", href: "/calculators/home-improvement/paint" },
@@ -1292,6 +1363,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Backer board/preparación de sustrato",
           "Trim, transiciones y juntas de movimiento",
           "Espaciadores, sistema de nivelación y silicón en cambios de plano",
+        ],
+      },
+      {
+        heading: "Detalle que evita desperdicio",
+        paragraphs: [
+          "Antes de comprar, decide dónde irá la primera línea y cómo terminarán los cortes en bordes visibles. Un pequeño ajuste de layout puede reducir cortes feos y también bajar el overage necesario.",
         ],
       },
     ],
@@ -1347,6 +1424,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Usa refuerzo donde el sistema lo pida (esquinas y uniones).",
         ],
       },
+      {
+        heading: "Tip de durabilidad",
+        paragraphs: [
+          "En duchas, los detalles mandan: esquinas, nichos y penetraciones deben sellarse según el sistema. No mezcles productos incompatibles (thinset, membrana, selladores) sin confirmar compatibilidad.",
+        ],
+      },
     ],
     related: [
       { label: "Calculadora de azulejo", href: "/calculators/home-improvement/tile" },
@@ -1386,6 +1469,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
         heading: "No olvides plates (top/bottom)",
         paragraphs: [
           "Las placas (bottom plate y a menudo doble top plate) se compran en largos estándar y necesitan empalmes. Estímalas como partida aparte: longitud de muro × número de corridas, luego convierte a piezas y agrega margen.",
+        ],
+      },
+      {
+        heading: "Consejo práctico",
+        paragraphs: [
+          "Si tu pared tiene varias aberturas, trata cada una como un “paquete”: king + jack + header y, a veces, cripples. Contarlas explícitamente suele ser más preciso que agregar un porcentaje global.",
         ],
       },
     ],
@@ -1495,6 +1584,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Juntas de movimiento usan silicón/caulk, no grout.",
         ],
       },
+      {
+        heading: "Tip de compra",
+        paragraphs: [
+          "La cobertura por bolsa cambia mucho entre marcas. Para no quedarte corto, usa la tabla/etiqueta de tu producto y guarda una pequeña cantidad del mismo lote para reparaciones.",
+        ],
+      },
     ],
     related: [
       { label: "Calculadora de grout", href: "/calculators/home-improvement/tile-grout" },
@@ -1545,6 +1640,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Calidad importa: confirma topsoil cribado y compost bien terminado.",
         ],
       },
+      {
+        heading: "Tip de mezcla",
+        paragraphs: [
+          "Para césped, menos suele ser más: demasiado compost puede asentarse y dejar una capa esponjosa. Si quieres mejorar el suelo, aplica compost en capas delgadas y repite según temporada.",
+        ],
+      },
     ],
     related: [
       { label: "Tabla de cobertura de topsoil", href: "/resources/topsoil-coverage-chart" },
@@ -1584,6 +1685,12 @@ export const RESOURCE_ARTICLES_ES: ResourceArticle[] = [
           "Cuenta tiras por pared (ancho de pared ÷ ancho del rollo) y redondea.",
           "Determina tiras por rollo con altura + margen + repeat.",
           "Redondea a rollos completos y compra extra si el lote debe coincidir.",
+        ],
+      },
+      {
+        heading: "Detalle que sube el pedido",
+        paragraphs: [
+          "Suma un margen por recortes arriba/abajo y por paredes fuera de plomo. En casas antiguas, unos centímetros extra por tira pueden cambiar tiras por rollo.",
         ],
       },
     ],

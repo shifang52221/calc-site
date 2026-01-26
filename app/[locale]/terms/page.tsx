@@ -35,6 +35,12 @@ export default async function TermsPage({
   const useParagraphs = [t("useBody.p1"), t("useBody.p2")];
   const warrantyParagraphs = [t("warrantyBody.p1"), t("warrantyBody.p2")];
   const liabilityParagraphs = [t("liabilityBody.p1"), t("liabilityBody.p2")];
+  const thirdPartyParagraphs = [t("thirdPartyBody.p1"), t("thirdPartyBody.p2")];
+  const ipParagraphs = [t("ipBody.p1"), t("ipBody.p2")];
+  const terminationParagraphs = [
+    t("terminationBody.p1"),
+    t("terminationBody.p2"),
+  ];
   const changesParagraphs = [t("changesBody.p1"), t("changesBody.p2")];
 
   return (
@@ -60,6 +66,27 @@ export default async function TermsPage({
           {t("liabilityTitle")}
         </h2>
         {liabilityParagraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
+
+        <h2 className="mt-2 text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("thirdPartyTitle")}
+        </h2>
+        {thirdPartyParagraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
+
+        <h2 className="mt-2 text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("ipTitle")}
+        </h2>
+        {ipParagraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
+
+        <h2 className="mt-2 text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("terminationTitle")}
+        </h2>
+        {terminationParagraphs.map((p) => (
           <p key={p}>{p}</p>
         ))}
         <h2 className="mt-2 text-base font-semibold text-zinc-900 dark:text-zinc-100">

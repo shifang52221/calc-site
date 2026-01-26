@@ -1245,6 +1245,21 @@
       "p1": "En la medida máxima permitida por la ley, no nos hacemos responsables de daños indirectos, incidentales o consecuentes derivados del uso del servicio.",
       "p2": "Si se determina alguna responsabilidad, nuestro total se limita al monto que pagaste por usar el servicio (normalmente $0)."
     },
+    "thirdPartyTitle": "Servicios de terceros",
+    "thirdPartyBody": {
+      "p1": "El sitio puede incluir servicios de terceros como analítica o publicidad. Esos proveedores pueden tener sus propios términos y prácticas de privacidad.",
+      "p2": "No somos responsables por sitios o servicios de terceros. Revisa sus políticas antes de usarlos."
+    },
+    "ipTitle": "Propiedad intelectual",
+    "ipBody": {
+      "p1": "El diseño del sitio, las calculadoras y el contenido escrito están protegidos por leyes de propiedad intelectual.",
+      "p2": "Puedes compartir enlaces y resultados. No copies ni republicas nuestro contenido a gran escala sin permiso."
+    },
+    "terminationTitle": "Suspensión o terminación",
+    "terminationBody": {
+      "p1": "Podemos suspender o limitar el acceso para proteger el servicio, cumplir con la ley o responder a un uso indebido.",
+      "p2": "Estas condiciones siguen aplicando en lo que deba sobrevivir, como avisos legales y límites de responsabilidad."
+    },
     "changesTitle": "Cambios",
     "changesBody": {
       "p1": "Podemos actualizar estos términos para reflejar cambios del servicio o requisitos legales.",
@@ -1260,11 +1275,23 @@
       "p2": "Priorizamos supuestos claros, valores por defecto prácticos y explicaciones que te ayuden a medir y comprar con confianza.",
       "p3": "Cada página intenta resolver lo práctico: qué medir, qué redondear y qué revisar antes de comprar."
     },
+    "whatYouGetTitle": "Qué encontrarás aquí",
+    "whatYouGet": {
+      "i1": "Estimaciones que coinciden con cómo se venden los materiales (bolsas, cajas, bultos, placas).",
+      "i2": "Notas que explican fórmula, conversiones y por qué redondeamos hacia arriba.",
+      "i3": "Reglas simples y checklists para evitar quedarte corto.",
+      "i4": "Guías y recursos relacionados para el siguiente paso."
+    },
     "principlesTitle": "Nuestros principios",
     "principles": {
       "p1": "Claridad: supuestos, unidades y valores útiles por defecto.",
       "p2": "Rapidez: cálculos en el navegador y enlaces para compartir.",
       "p3": "Privacidad: sin cuentas y mínima recopilación de datos."
+    },
+    "limitationsTitle": "Precisión y límites",
+    "limitations": {
+      "p1": "Ningún estimado refleja todas las condiciones: empaques cambian, materiales se asientan, la merma varía por diseño y la normativa depende de la región.",
+      "p2": "Usa el resultado como punto de partida y confirma con la etiqueta del producto, conversiones del proveedor e instrucciones de instalación."
     },
     "howItWorksTitle": "Cómo funciona",
     "howItWorksBody": "Cada calculadora incluye notas sobre unidades, redondeo y desperdicio. Las páginas de recursos y metodología explican la lógica detrás de los estimados.",
@@ -1278,6 +1305,17 @@
     "intro": {
       "p1": "Para soporte, sugerencias o correcciones, escríbenos e incluye algunos detalles para ayudarte más rápido.",
       "p2": "Si es sobre una calculadora, incluye tus entradas y el resultado que esperabas."
+    },
+    "beforeYouEmailTitle": "Antes de escribir",
+    "beforeYouEmail": {
+      "b1": "Revisa unidades (pies vs pulgadas, sq ft vs m²). Muchos errores vienen de mezclar unidades.",
+      "b2": "Ajusta la merma según tu diseño: patrones, muchos cortes o formas irregulares requieren más.",
+      "b3": "En materiales por bolsa/caja, confirma rendimiento/cobertura en tu etiqueta específica.",
+      "b4": "Si algo no cuadra, incluye un enlace compartible para que podamos reproducirlo."
+    },
+    "note": {
+      "p1": "No ofrecemos servicios profesionales de ingeniería, legales ni de contratista.",
+      "p2": "Para trabajos urgentes o críticos de seguridad, consulta a un profesional local calificado."
     },
     "emailLabel": "Correo",
     "email": "shifang522221@gmail.com",

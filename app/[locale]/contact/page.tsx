@@ -33,6 +33,7 @@ export default async function ContactPage({
   const t = await getTranslations("contactPage");
   const contactEmail = getContactEmail() ?? t("email");
   const introParagraphs = [t("intro.p1"), t("intro.p2")];
+  const noteParagraphs = [t("note.p1"), t("note.p2")];
 
   return (
     <div className="mx-auto grid max-w-3xl gap-6">
@@ -55,6 +56,21 @@ export default async function ContactPage({
             {t("responseTime")}
           </div>
         </div>
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("beforeYouEmailTitle")}
+        </h2>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t("beforeYouEmail.b1")}</li>
+          <li>{t("beforeYouEmail.b2")}</li>
+          <li>{t("beforeYouEmail.b3")}</li>
+          <li>{t("beforeYouEmail.b4")}</li>
+        </ul>
+        {noteParagraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
       </section>
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">

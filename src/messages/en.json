@@ -1242,13 +1242,28 @@
   },
   "liabilityTitle": "Limitation of liability",
   "liabilityBody": {
-    "p1": "To the fullest extent permitted by law, we are not liable for indirect, incidental, or consequential damages arising from your use of the service.",
-    "p2": "If liability is found, our total liability is limited to the amount you paid to use the service (which is typically $0)."
+   "p1": "To the fullest extent permitted by law, we are not liable for indirect, incidental, or consequential damages arising from your use of the service.",
+   "p2": "If liability is found, our total liability is limited to the amount you paid to use the service (which is typically $0)."
+  },
+  "thirdPartyTitle": "Third-party services",
+  "thirdPartyBody": {
+    "p1": "The site may include third-party services such as analytics or advertising. Those providers may have their own terms and privacy practices.",
+    "p2": "We are not responsible for third-party websites or services. Review their policies before relying on them."
+  },
+  "ipTitle": "Intellectual property",
+  "ipBody": {
+    "p1": "Our site design, calculators, and written content are protected by applicable intellectual property laws.",
+    "p2": "You may share links to pages and results. Do not copy or republish our content at scale without permission."
+  },
+  "terminationTitle": "Termination",
+  "terminationBody": {
+    "p1": "We may suspend or restrict access to protect the service, comply with law, or respond to misuse.",
+    "p2": "These terms remain in effect for the parts that should survive termination, such as disclaimers and liability limits."
   },
   "changesTitle": "Changes",
   "changesBody": {
-    "p1": "We may update these terms to reflect changes to the service or legal requirements.",
-    "p2": "Continued use of the site after changes become effective means you accept the updated terms."
+   "p1": "We may update these terms to reflect changes to the service or legal requirements.",
+   "p2": "Continued use of the site after changes become effective means you accept the updated terms."
   }
  },
   "aboutPage": {
@@ -1260,11 +1275,23 @@
       "p2": "We focus on clear assumptions, practical defaults, and explanations that help you measure and buy materials with confidence.",
       "p3": "Each page aims to answer the practical questions: what to measure, what to round up, and what to double-check before you buy."
     },
+    "whatYouGetTitle": "What you’ll find here",
+    "whatYouGet": {
+      "i1": "Material estimates that match how supplies are sold (bags, boxes, bundles, sheets).",
+      "i2": "Notes that explain the formula, unit conversions, and why we round up.",
+      "i3": "Simple rules of thumb and checklists that prevent under-ordering.",
+      "i4": "Related guides and resources for the next step in planning."
+    },
     "principlesTitle": "Our principles",
     "principles": {
       "p1": "Clarity: show assumptions, units, and helpful defaults.",
       "p2": "Speed: calculations run in your browser, with shareable links.",
       "p3": "Privacy: no accounts, minimal data collection."
+    },
+    "limitationsTitle": "Accuracy & limitations",
+    "limitations": {
+      "p1": "Estimates can’t capture every jobsite condition. Packaging varies, materials settle, waste differs by layout, and local code requirements change by region.",
+      "p2": "Use calculator results as a starting point, then confirm with your product label, supplier conversions, and installation requirements."
     },
     "howItWorksTitle": "How it works",
     "howItWorksBody": "Every calculator includes notes about units, rounding, and common waste factors. Resources and methodology pages explain the logic behind typical estimates.",
@@ -1278,6 +1305,17 @@
   "intro": {
     "p1": "For support, feedback, or corrections, email us and include a few details so we can help quickly.",
     "p2": "We read every message. If the issue is about a specific calculator, include your inputs and the result you expected."
+  },
+  "beforeYouEmailTitle": "Before you email",
+  "beforeYouEmail": {
+    "b1": "Check units first (feet vs inches, sq ft vs m²). Most issues are unit mix-ups.",
+    "b2": "If you used a default waste factor, try adjusting it to match your layout complexity.",
+    "b3": "For bag/box materials, confirm the yield/coverage on your specific product label.",
+    "b4": "If something looks wrong, include a shareable link so we can reproduce it."
+  },
+  "note": {
+    "p1": "We don’t provide professional engineering, legal, or contractor services.",
+    "p2": "For urgent or safety-critical work, consult a qualified local professional."
   },
   "emailLabel": "Email",
   "email": "shifang522221@gmail.com",

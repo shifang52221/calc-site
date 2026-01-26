@@ -48,6 +48,18 @@ export default async function AboutPage({
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
         <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("whatYouGetTitle")}
+        </h2>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t("whatYouGet.i1")}</li>
+          <li>{t("whatYouGet.i2")}</li>
+          <li>{t("whatYouGet.i3")}</li>
+          <li>{t("whatYouGet.i4")}</li>
+        </ul>
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
           {t("principlesTitle")}
         </h2>
         <ul className="grid list-disc gap-2 pl-5">
@@ -55,6 +67,14 @@ export default async function AboutPage({
           <li>{t("principles.p2")}</li>
           <li>{t("principles.p3")}</li>
         </ul>
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("limitationsTitle")}
+        </h2>
+        <p>{t("limitations.p1")}</p>
+        <p>{t("limitations.p2")}</p>
       </section>
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
