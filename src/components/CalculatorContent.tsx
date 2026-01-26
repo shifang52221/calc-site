@@ -19,6 +19,11 @@ export function CalculatorContent({
   }
 
   const content = CALCULATOR_CONTENT_EN[calculatorId];
+  const previewCount = Math.min(3, content.quick.length);
+  const quickPreview = content.quick.slice(0, previewCount);
+  const quickRemainder = content.quick.slice(previewCount);
+  const hasMoreTopContent =
+    quickRemainder.length > 0 || Boolean(content.deepDiveTitle && content.deepDive?.length);
 
   if (variant === "before") {
     return (
@@ -27,20 +32,39 @@ export function CalculatorContent({
           Quick guide
         </h2>
         <ul className="mt-3 grid list-disc gap-2 pl-5">
-          {content.quick.map((item) => (
+          {quickPreview.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
 
-        {content.deepDiveTitle && content.deepDive?.length ? (
-          <div className="mt-4 grid gap-2">
-            <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-              {content.deepDiveTitle}
-            </h3>
-            {content.deepDive.map((p) => (
-              <p key={p}>{p}</p>
-            ))}
-          </div>
+        {hasMoreTopContent ? (
+          <details className="group mt-4">
+            <summary className="cursor-pointer list-none select-none rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-100 dark:hover:bg-zinc-900/60">
+              <span className="group-open:hidden">Show more</span>
+              <span className="hidden group-open:inline">Show less</span>
+            </summary>
+
+            <div className="mt-4 grid gap-4">
+              {quickRemainder.length ? (
+                <ul className="grid list-disc gap-2 pl-5">
+                  {quickRemainder.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              ) : null}
+
+              {content.deepDiveTitle && content.deepDive?.length ? (
+                <div className="grid gap-2">
+                  <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                    {content.deepDiveTitle}
+                  </h3>
+                  {content.deepDive.map((p) => (
+                    <p key={p}>{p}</p>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          </details>
         ) : null}
 
         <div className="mt-4 text-xs text-zinc-500 dark:text-zinc-400">
