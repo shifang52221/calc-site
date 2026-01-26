@@ -22,8 +22,10 @@ export function CalculatorContent({
   const previewCount = Math.min(3, content.quick.length);
   const quickPreview = content.quick.slice(0, previewCount);
   const quickRemainder = content.quick.slice(previewCount);
+  const deepDiveCount = content.deepDive?.length ?? 0;
+  const moreItemsCount = quickRemainder.length + deepDiveCount;
   const hasMoreTopContent =
-    quickRemainder.length > 0 || Boolean(content.deepDiveTitle && content.deepDive?.length);
+    quickRemainder.length > 0 || Boolean(content.deepDiveTitle && deepDiveCount);
 
   if (variant === "before") {
     return (
@@ -39,9 +41,28 @@ export function CalculatorContent({
 
         {hasMoreTopContent ? (
           <details className="group mt-4">
-            <summary className="cursor-pointer list-none select-none rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-100 dark:hover:bg-zinc-900/60">
-              <span className="group-open:hidden">Show more</span>
-              <span className="hidden group-open:inline">Show less</span>
+            <summary className="cursor-pointer list-none select-none rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-100 dark:hover:bg-zinc-900/60 dark:focus-visible:ring-zinc-600 dark:focus-visible:ring-offset-zinc-950">
+              <span className="flex items-center justify-between gap-3">
+                <span className="flex items-center gap-2">
+                  <span className="group-open:hidden">
+                    Show full guide
+                    {moreItemsCount ? ` (${moreItemsCount} more)` : ""}
+                  </span>
+                  <span className="hidden group-open:inline">Hide details</span>
+                </span>
+                <svg
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                  className="h-4 w-4 text-zinc-500 transition-transform group-open:rotate-180 dark:text-zinc-400"
+                >
+                  <path
+                    fill="currentColor"
+                    fillRule="evenodd"
+                    d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 11.17l3.71-3.94a.75.75 0 1 1 1.08 1.04l-4.25 4.5a.75.75 0 0 1-1.08 0l-4.25-4.5a.75.75 0 0 1 .02-1.06Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </span>
             </summary>
 
             <div className="mt-4 grid gap-4">
