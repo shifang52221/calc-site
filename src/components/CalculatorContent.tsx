@@ -3,7 +3,18 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/routing";
 import type { CalculatorId } from "@/lib/calculatorsCatalog";
 import { CALCULATOR_CONTENT_EN } from "@/lib/content/calculatorsEn";
+import { CALCULATOR_CONTENT_ES } from "@/lib/content/calculatorsEs";
+import { CALCULATOR_CONTENT_ZH_TW } from "@/lib/content/calculatorsZhTW";
 import { routes } from "@/lib/routes";
+
+const CALCULATOR_CONTENT_BY_LOCALE: Record<
+  Locale,
+  Partial<Record<CalculatorId, typeof CALCULATOR_CONTENT_EN[CalculatorId]>>
+> = {
+  en: CALCULATOR_CONTENT_EN,
+  es: CALCULATOR_CONTENT_ES,
+  "zh-TW": CALCULATOR_CONTENT_ZH_TW,
+};
 
 export function CalculatorContent({
   locale,
@@ -14,11 +25,9 @@ export function CalculatorContent({
   calculatorId: CalculatorId;
   variant: "before" | "after";
 }) {
-  if (locale !== "en") {
-    return null;
-  }
-
-  const content = CALCULATOR_CONTENT_EN[calculatorId];
+  const content =
+    CALCULATOR_CONTENT_BY_LOCALE[locale]?.[calculatorId] ??
+    CALCULATOR_CONTENT_EN[calculatorId];
   const previewCount = Math.min(3, content.quick.length);
   const quickPreview = content.quick.slice(0, previewCount);
   const quickRemainder = content.quick.slice(previewCount);
