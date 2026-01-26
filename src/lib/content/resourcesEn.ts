@@ -406,6 +406,40 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Keep a small amount of soil for minor low spots that appear after settling.",
         ],
       },
+      {
+        heading: "Step 0 (optional): prep that makes leveling easier",
+        bullets: [
+          "Mow shorter than normal and remove debris so you can see the grade.",
+          "Break up hard spots and remove rocks; core aeration can help if the soil is very compact (project dependent).",
+          "If the lawn has severe thatch or poor drainage, address that first; adding soil on top won’t fix root-zone issues by itself.",
+        ],
+      },
+      {
+        heading: "How thick should you spread?",
+        paragraphs: [
+          "For lawn topdressing, thinner passes are usually safer. If you bury grass too deeply, you can smother it. Deeper fills often require seeding/sod or staged applications rather than one heavy dump.",
+        ],
+        bullets: [
+          "If you’re only smoothing minor unevenness, aim for a thin, rakeable layer.",
+          "If low spots are several inches deep, treat them as a separate repair area and plan reseeding or sod (project dependent).",
+        ],
+      },
+      {
+        heading: "Aftercare (what keeps it from turning into a mess)",
+        bullets: [
+          "Rake to keep grass blades exposed so the lawn can grow through.",
+          "Water lightly to settle without washing soil into piles; avoid heavy watering that creates ruts.",
+          "If you seeded, follow seed watering guidance and avoid foot traffic until established.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        bullets: [
+          "Using the deepest spot as the depth for the whole lawn (over-ordering).",
+          "Spreading too thick and smothering turf instead of staging the repair.",
+          "Skipping feathering and ending up with a ridge that mows poorly and pools water.",
+        ],
+      },
     ],
     related: [
       { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
@@ -660,11 +694,11 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         table: {
           columns: ["Depth", "Topsoil volume", "Notes"],
           rows: [
-            ['1"', "0.31 cu yd", "Light topdressing"],
-            ['2"', "0.62 cu yd", "Common leveling depth"],
-            ['3"', "0.93 cu yd", "Heavier leveling / fill"],
-            ['4"', "1.23 cu yd", "Significant fill (confirm drainage)"],
-            ['6"', "1.85 cu yd", "Major fill (plan compaction/settling)"],
+            ["1 in", "0.31 cu yd", "Light topdressing"],
+            ["2 in", "0.62 cu yd", "Common leveling depth"],
+            ["3 in", "0.93 cu yd", "Heavier leveling / fill"],
+            ["4 in", "1.23 cu yd", "Significant fill (confirm drainage)"],
+            ["6 in", "1.85 cu yd", "Major fill (plan compaction/settling)"],
           ],
         },
       },
@@ -717,6 +751,94 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Worked example: need 18 cu ft and your bag is 40 L (≈ 1.41 cu ft). 18 / 1.41 ≈ 12.8, so buy 13 bags (plus a small buffer for leveling).",
           "If the project is large, compare bag totals to bulk delivery; bags add up quickly in both cost and carrying time.",
           "Bulk topsoil is often cheaper per unit, but quality varies by supplier—confirm screening/organic content if it matters for your project.",
+        ],
+      },
+      {
+        heading: "How to measure area (fast and good enough)",
+        paragraphs: [
+          "For rectangles, area = length × width. For circles, area ≈ 3.14 × radius². For irregular lawns, break the space into simple rectangles/triangles, estimate each area, and add them up.",
+          "The biggest ordering errors usually come from area estimates (or using the deepest spot everywhere), not from the chart itself.",
+        ],
+        bullets: [
+          "Measure along the ground, not “as the crow flies” across steps or slopes.",
+          "If the site is sloped, measure the footprint (plan view) area, then confirm whether you’ll also need regrading materials.",
+        ],
+      },
+      {
+        heading: "Screened topsoil vs fill dirt (what changes coverage)",
+        paragraphs: [
+          "“Topsoil” is not a single standardized product. Screened topsoil spreads and rakes more evenly than fill dirt with rocks and clods, which can leave high spots and require more material to get a smooth finish.",
+        ],
+        bullets: [
+          "For lawns and finish grading, screened topsoil is usually easier to level and seed.",
+          "For deeper fills, you may use cheaper fill material below and finish with a topsoil layer (project dependent).",
+          "If you’re doing significant fill, plan compaction and settling so the final grade ends up where you want it.",
+        ],
+      },
+      {
+        heading: "When topsoil isn’t the fix",
+        bullets: [
+          "If water pools because of poor slope or a blocked drain path, topsoil alone may not solve it.",
+          "If you have heavy clay, consider aeration/compost topdressing strategies and drainage planning (project dependent).",
+          "If the yard has severe ruts or large low areas, you may need regrading before a thin topsoil layer.",
+        ],
+      },
+      {
+        heading: "Choosing a depth (how people actually use this chart)",
+        paragraphs: [
+          "Depth should match the job. A thin topdressing is used to improve soil and smooth minor unevenness. A thicker layer is usually a leveling or regrading project, which can change drainage and may require compaction planning.",
+          "If you’re unsure, start by defining the goal: improve turf health, smooth bumps, fill a low area, or rebuild grade. The goal determines whether you should spread a thin layer everywhere or treat only the low zones as “extra” material.",
+        ],
+        bullets: [
+          "1 inch is often used as light topdressing where you want grass to grow through quickly.",
+          "2–3 inches is often used for leveling and regrading work where you’re actively changing grade.",
+          "4+ inches is fill work—plan drainage, settling, and possibly staged placement (project dependent).",
+        ],
+      },
+      {
+        heading: "A reliable measuring method (average depth, not the deepest spot)",
+        paragraphs: [
+          "Take multiple depth readings across the full area and use an average thickness. Then add a second line item for low spots that truly need more depth. This avoids the common mistake of applying the deepest spot to the entire yard.",
+          "For low spots, measure the area of the spot and use an average depth for that spot (center deeper, edges shallower). That average depth is usually much smaller than the maximum depth you see at one point.",
+        ],
+        bullets: [
+          "Mark low spots and include a feathering zone—feathering consumes material beyond the obvious low area.",
+          "Add a buffer for settling and raking; real lawns are irregular even if the math is clean.",
+        ],
+      },
+      {
+        heading: "Topdressing vs regrading (different goals, different risks)",
+        paragraphs: [
+          "Topdressing is a thin layer used to improve soil and smooth small imperfections without changing overall drainage patterns. Regrading is adding enough material to meaningfully change slope and water flow. Regrading can solve water problems, but it can also create new ones if you change where water goes.",
+          "If you’re adding several inches in places, think like a grading project: check where water will drain, how you’ll compact or stage the fill, and whether you need to protect nearby hardscape, beds, or foundations (project dependent).",
+        ],
+        bullets: [
+          "Thin topdressing is usually spread and raked so grass can grow through quickly.",
+          "Thicker fills often need seeding/sod or staged placement rather than one pass.",
+          "If standing water is the core problem, plan drainage first and use topsoil as the finishing layer.",
+        ],
+      },
+      {
+        heading: "Spreading tips (make the material go farther)",
+        paragraphs: [
+          "Even a good volume estimate can be wasted by uneven spreading. The goal is consistent thickness. Work in small sections, spread lightly, and re-check with a straightedge as you go instead of dumping piles and trying to rake them flat later.",
+        ],
+        bullets: [
+          "Use a landscape rake to feather edges and avoid ridges that catch mower wheels.",
+          "Keep grass blades exposed during lawn topdressing; burying turf too deep can smother it.",
+          "After watering or rain, expect some settling and plan a small touch-up pass.",
+        ],
+      },
+      {
+        heading: "Bulk ordering checklist (quality and logistics)",
+        paragraphs: [
+          "Bulk topsoil is usually cheaper per unit than bags, but quality varies. Before you order, confirm what you’re getting and where it will be dumped. A single load in the wrong spot can damage a driveway, block access, or turn into a messy wheelbarrow marathon.",
+          "Ask whether the topsoil is screened and what the typical texture is (sandy, loamy, clay-heavy). If you’re finishing a lawn, screened material is easier to rake smooth and is less likely to leave rocks that interfere with mowing.",
+        ],
+        bullets: [
+          "Confirm unit: cubic yard vs ton (and if ton, what conversion is used).",
+          "Confirm access and dump location; plan tarps or a containment edge if needed.",
+          "Keep a small buffer for feathering, cleanup, and unexpected low areas.",
         ],
       },
     ],
@@ -877,6 +999,36 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Plan a small buffer for uneven base and compaction.",
         ],
       },
+      {
+        heading: "Conversion math (if you need a quick estimate)",
+        paragraphs: [
+          "If you know your product density, you can convert directly: tons (short tons) = cubic yards × (lb per cubic yard) / 2000.",
+          "Example: 5 yd³ of crushed stone at 2800 lb/yd³ is 5 × 2800 / 2000 = 7.0 tons.",
+        ],
+        bullets: [
+          "If you only have tons per yard, multiply: tons = yards × (tons per yard).",
+          "Round up to delivery minimums; running short is a big time penalty mid-project.",
+        ],
+      },
+      {
+        heading: "Compaction and “installed depth”",
+        paragraphs: [
+          "Delivered gravel is loose; your finished base is compacted. That means your installed depth can be less than the loose depth you dumped, and compaction effort affects the result.",
+        ],
+        bullets: [
+          "For base layers, place material in lifts and compact each lift (project dependent).",
+          "Edges and transitions often run thicker than the “average” plan; include that in your buffer.",
+        ],
+      },
+      {
+        heading: "Ordering checklist (questions to ask the supplier)",
+        bullets: [
+          "What’s the product name/gradation (crushed stone, road base, pea gravel, etc.)?",
+          "Do you sell by the ton, yard, or truckload, and what unit is a “ton” for your region?",
+          "What density or conversion do you use for this product?",
+          "What’s the delivery minimum and where can the truck dump safely?",
+        ],
+      },
     ],
     related: [
       { label: "Gravel calculator", href: "/en/calculators/home-improvement/gravel" },
@@ -996,6 +1148,62 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Mixing nominal and actual sizes without noticing.",
           "Forgetting to convert inches/feet consistently.",
           "Not planning extra for defects, cutoffs, and grain matching.",
+        ],
+      },
+      {
+        heading: "Nominal vs actual size (why it changes board feet)",
+        paragraphs: [
+          "Many softwood boards are sold by nominal size (2×6, 2×4), but the actual dressed size is smaller. If you price by board feet, be clear about which size you’re using.",
+        ],
+        table: {
+          columns: ["Nominal size", "Common actual size (approx)", "Notes"],
+          rows: [
+            ["2×4", "1.5×3.5 in", "Common framing lumber"],
+            ["2×6", "1.5×5.5 in", "Framing and decking (varies)"],
+            ["4×4", "3.5×3.5 in", "Posts can be rough-sawn or dressed"],
+          ],
+        },
+      },
+      {
+        heading: "Hardwood thickness terms (4/4, 5/4, 8/4)",
+        paragraphs: [
+          "Hardwoods are often priced using “quarters” for thickness: 4/4 is about 1 inch rough thickness, 5/4 is about 1.25 inches, and 8/4 is about 2 inches. After surfacing, the finished thickness is typically less.",
+        ],
+        bullets: [
+          "If you’re matching an existing piece, ask for the finished thickness (S2S/S3S/S4S) before you calculate board feet.",
+          "Wide boards and long lengths can be limited by stock availability, so ordering extra can avoid project delays.",
+        ],
+      },
+      {
+        heading: "How to estimate lumber for a project (simple workflow)",
+        bullets: [
+          "List parts by thickness × width × length and quantity (cut list).",
+          "Convert each part to board feet and sum the total.",
+          "Add waste allowance based on the project: straight framing can be lower; furniture-grade and grain-matching can be higher.",
+          "If the lumberyard charges by linear foot for certain products (trim, decking, studs), compare both pricing methods to avoid surprises.",
+        ],
+      },
+      {
+        heading: "Waste allowance tips (avoid running short)",
+        bullets: [
+          "Knots, checks, and warping reduce usable yield (especially in wide boards).",
+          "Mitered trim and angled cuts increase offcuts that can’t be reused.",
+          "If boards must be color/grain matched, you often need more extra to select pieces.",
+        ],
+      },
+      {
+        heading: "Pricing example (turn board feet into cost)",
+        paragraphs: [
+          "If hardwood is priced at $7.50 per board foot and your project needs 28 board feet, the rough material cost is 28 × 7.50 = $210 (before waste allowance, tax, delivery, and surfacing charges).",
+          "If the lumberyard applies a minimum length, width upcharge, or surfacing fee, include those items separately; they can be significant for small projects.",
+        ],
+      },
+      {
+        heading: "Board foot vs linear foot (avoid a common confusion)",
+        bullets: [
+          "Trim and some decking products are priced by linear foot; hardwood and many rough boards are priced by board foot.",
+          "A board-foot calculation needs thickness, width, and length. A linear-foot price usually assumes a standard profile/size.",
+          "If you’re comparing two quotes, confirm they’re using the same unit and the same dimensions (nominal vs actual).",
         ],
       },
     ],
@@ -1301,6 +1509,56 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Order a small buffer for grading and cleanup, and round to delivery minimums.",
         ],
       },
+      {
+        heading: "How to convert yards to tons (quick method)",
+        paragraphs: [
+          "To estimate weight from volume: weight (lb) = volume (cubic yards) × density (lb per cubic yard). Then tons (US short tons) = lb / 2000.",
+          "Example: 3 cubic yards of damp sand at 3000 lb/yd³ is about 3 × 3000 = 9000 lb, or 4.5 tons.",
+        ],
+        bullets: [
+          "If your supplier sells by the ton, ask them what density they use for their specific product.",
+          "If your supplier sells by the yard, use tons only as a delivery/truckload sanity check.",
+        ],
+      },
+      {
+        heading: "Sand types (what you’re usually buying)",
+        table: {
+          columns: ["Type (common label)", "Typical use", "Notes to confirm"],
+          rows: [
+            ["Masonry sand", "Mortar, bedding, general use", "Grading and fines vary by supplier"],
+            ["Concrete sand", "Concrete mixes and base layers", "Often coarser than masonry sand"],
+            ["Play sand", "Sandboxes", "Usually washed; not a base material"],
+            ["Polymeric/joint sand", "Paver joints", "Follow manufacturer instructions"],
+          ],
+        },
+      },
+      {
+        heading: "Compaction and thickness (why your estimate can be off)",
+        paragraphs: [
+          "If you’re building a base, the delivered sand is loose, but your finished layer is compacted and graded. Your “installed” volume is often less than the delivery volume, and the difference depends on moisture and compaction effort.",
+        ],
+        bullets: [
+          "Measure thickness after compaction (project dependent) instead of assuming the loose depth equals the finished depth.",
+          "Very wet sand can be heavier, harder to screed, and can change compaction behavior.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        bullets: [
+          "Using a single conversion for all suppliers and sand products.",
+          "Confusing bedding sand with base material (they have different roles).",
+          "Ignoring delivery minimums and ending up forced to over-order.",
+        ],
+      },
+      {
+        heading: "Supplier questions (fast way to avoid bad estimates)",
+        bullets: [
+          "What is the exact sand product name/gradation (masonry, concrete, washed, etc.)?",
+          "Do you sell by the yard, ton, or bag, and what unit is a “ton” in your region?",
+          "What conversion/density do you use for this exact product (especially if it’s damp)?",
+          "Is the sand intended for my use (bedding sand vs joint sand vs mortar sand)?",
+        ],
+      },
     ],
     related: [
       { label: "Sand calculator", href: "/en/calculators/home-improvement/sand" },
@@ -1358,6 +1616,33 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Large pours take many bags and a lot of labor time.",
           "Consistency is easier with ready-mix.",
           "Ordering short can stop a pour; buffers are usually cheaper than a second delivery.",
+        ],
+      },
+      {
+        heading: "How to estimate bags (step-by-step)",
+        paragraphs: [
+          "Step 1: calculate total concrete volume in cubic feet (or cubic yards). Step 2: divide by the bag yield on the label. Step 3: round up and add a buffer.",
+          "Example: if you need 40 cu ft and your 80 lb bag yields 0.60 cu ft, you need 40 / 0.60 = 66.7 → 67 bags (plus buffer).",
+        ],
+        bullets: [
+          "If the job is tight-tolerance (posts, footings), the buffer is usually worth it.",
+          "If you’re mixing by hand, smaller bag sizes can reduce fatigue but increase batch count.",
+        ],
+      },
+      {
+        heading: "Consistency tips when mixing many bags",
+        bullets: [
+          "Measure water consistently; “a splash more” changes strength and finish quality.",
+          "Mix long enough for uniform color and texture, then place quickly to avoid cold joints.",
+          "Stagger mixing and placing so you’re not dumping half-set material into fresh work.",
+        ],
+      },
+      {
+        heading: "Common mistakes that reduce yield or strength",
+        bullets: [
+          "Adding extra water to improve workability (can reduce strength and increase cracking).",
+          "Estimating with generic bag yield instead of the label yield for your product.",
+          "Ignoring forms and over-excavation: extra void space can consume many bags.",
         ],
       },
     ],
@@ -1561,6 +1846,75 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Concrete planning notes",
         paragraphs: [
           "Concrete volume depends on hole diameter and depth. Local frost depth and soil conditions can change requirements, so confirm local practice and code.",
+        ],
+      },
+      {
+        heading: "Hole size basics (depth and diameter)",
+        paragraphs: [
+          "There is no single \"correct\" hole size for every fence. Depth is driven by frost line guidance, fence height, wind load, and soil conditions. Diameter is driven by post size and the footing system you use.",
+        ],
+        table: {
+          columns: ["Fence detail (typical)", "What often needs more concrete", "Reminder"],
+          rows: [
+            ["Corners/ends", "More bracing and stronger footing", "Corners take the load of long runs"],
+            ["Gates", "Deeper/stronger posts and footings", "Gate sag prevention starts at the footing"],
+            ["High fences / windy sites", "Deeper footings and stronger posts", "Confirm local practice"],
+          ],
+        },
+      },
+      {
+        heading: "Concrete volume math (quick method)",
+        paragraphs: [
+          "A post hole is often approximated as a cylinder: volume = pi * (radius^2) * depth. Convert to cubic feet, then convert to bags using your bag yield (or order ready-mix if the job is large).",
+          "Example: a 12 inch diameter hole that is 36 inches deep is radius 0.5 ft and depth 3 ft, so volume ~ 3.14 * (0.5^2) * 3 ~ 2.36 cu ft per hole (before gravel base or bell shapes).",
+        ],
+        bullets: [
+          "If you add a gravel base, subtract that depth from the concrete depth.",
+          "Bell-shaped footings can increase volume beyond a simple cylinder estimate.",
+          "Round up: running short mid-set is a big time penalty.",
+        ],
+      },
+      {
+        heading: "Concrete vs gravel set (why the system matters)",
+        bullets: [
+          "Concrete-set posts are common for gates, corners, and higher loads (project dependent).",
+          "Gravel set can drain well, but performance depends on compaction and soil conditions.",
+          "If frost heave is a concern, drainage and depth planning are usually more important than perfect volume math.",
+        ],
+      },
+      {
+        heading: "Setting posts (simple workflow)",
+        bullets: [
+          "Lay out post locations first (corners, ends, gates), then string a line for straight runs.",
+          "Dig holes and dry-fit posts to confirm height and alignment before mixing concrete.",
+          "Brace posts plumb in two directions so they don’t move while concrete sets.",
+          "Place concrete, rod/tamp to remove voids, then shape the top to shed water away from the post.",
+        ],
+      },
+      {
+        heading: "Drainage notes (frost heave and rot prevention)",
+        paragraphs: [
+          "Water management matters. Even a perfectly sized footing can perform poorly if water sits around the post. This is one reason some systems use a gravel base or focus heavily on depth and drainage details (project dependent).",
+        ],
+        bullets: [
+          "If you add a gravel base, compact it and keep the post stable before pouring concrete above it.",
+          "Slope the finished concrete cap away from the post so water doesn’t pool at the wood/concrete interface.",
+        ],
+      },
+      {
+        heading: "Ordering and waste planning",
+        bullets: [
+          "Calculate total concrete volume (per hole × number of holes) and add a buffer for over-excavation and bell shapes.",
+          "If the job needs many bags, consider ready-mix or at least a consistent mixing plan so all batches are similar.",
+          "Keep extra mix for small patches and to avoid stopping mid-set if one hole is larger than planned.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        bullets: [
+          "Not bracing posts plumb; a small lean is obvious once panels are attached.",
+          "Mixing different consistencies from hole to hole (harder to set a consistent height).",
+          "Leaving the top of the concrete flat so water pools around the post.",
         ],
       },
     ],
@@ -2246,6 +2600,48 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Treat soil as a “base mix” and plan to topdress later. Beds settle over time, and adding a thin layer of compost or topsoil is often easier than trying to build the perfect mix on day one.",
         ],
       },
+      {
+        heading: "What “aeration” usually means (options and tradeoffs)",
+        paragraphs: [
+          "Aeration is the part of the mix that creates pore space so roots can breathe and water can drain. The best choice depends on what is available locally and what you’re planting.",
+        ],
+        table: {
+          columns: ["Material (common)", "Why people use it", "Watch-outs"],
+          rows: [
+            ["Coarse composted bark", "Structure + drainage", "Can float or break down over time"],
+            ["Pumice / perlite", "Lightweight pore space", "Can be dusty; may cost more"],
+            ["Coarse sand", "Adds weight and drainage", "Too fine can make mixes dense"],
+            ["Rice hulls / biochar", "Structure and water handling", "Quality varies; start small"],
+          ],
+        },
+      },
+      {
+        heading: "How to calculate your ingredient volumes",
+        paragraphs: [
+          "Step 1: calculate bed volume (length × width × depth). Step 2: convert to cubic yards or cubic feet. Step 3: multiply by each percentage in your mix.",
+          "Example: a 4 ft × 8 ft bed filled to 12 inches is 32 cu ft (about 1.19 cu yd). If you use a 40/40/20 mix, that’s ~12.8 cu ft topsoil, ~12.8 cu ft compost, and ~6.4 cu ft aeration material.",
+        ],
+        bullets: [
+          "If you’re using bagged products, convert everything to cubic feet first and round up to whole bags.",
+          "Plan for settling: many beds lose volume after watering and the first few weeks (project dependent).",
+        ],
+      },
+      {
+        heading: "Crop and climate adjustments (starting guidance)",
+        bullets: [
+          "Vegetables and annuals typically like a fertile mix but still need structure so roots don’t sit wet.",
+          "Perennials and shrubs often prefer a more mineral mix (more topsoil, less compost) for long-term stability.",
+          "Hot/dry climates benefit from mulching and water-holding strategy; wet climates benefit from more structure and drainage focus.",
+        ],
+      },
+      {
+        heading: "Common mistakes that cause bed problems",
+        bullets: [
+          "Using only compost: it can shrink, get hydrophobic when dry, or get soggy depending on compost quality.",
+          "Using very fine materials that compact easily, reducing drainage and oxygen.",
+          "Skipping mulch: the top of a raised bed can dry fast and form crust without protection.",
+        ],
+      },
     ],
     related: [
       { label: "Soil mix calculator", href: "/en/calculators/home-improvement/soil-mix" },
@@ -2641,11 +3037,78 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Typical curing milestones (rule of thumb)",
+        paragraphs: [
+          "Exact timing depends on mix design, temperature, humidity, and thickness, but these milestones are common for planning and conversations with contractors.",
+        ],
+        table: {
+          columns: ["Time after pour (typical)", "What often happens", "Reminder"],
+          rows: [
+            ["24-48 hours", "Light foot traffic (project dependent)", "Protect edges and avoid dragging tools"],
+            ["3-7 days", "Early strength gain", "Heavy loads can still damage the slab"],
+            ["28 days", "Common \"design strength\" milestone", "Strength continues to increase beyond this"],
+          ],
+        },
+      },
+      {
+        heading: "Drying is different (especially for flooring/coatings)",
+        paragraphs: [
+          "Drying is about moisture leaving the slab. Some finishes (epoxy, sealers, adhesives, and certain floor systems) are sensitive to moisture and require tests rather than guessing based on touch.",
+        ],
+        bullets: [
+          "Thicker slabs and cool/humid conditions dry slower.",
+          "Moisture barriers, curing compounds, and sealers can change drying behavior.",
+          "Use product instructions and moisture test guidance for flooring installs.",
+        ],
+      },
+      {
+        heading: "Curing practices that improve results",
+        bullets: [
+          "Avoid rapid early drying (wind/sun) that can increase cracking risk.",
+          "Keep the surface protected per contractor guidance (curing compound, plastic, or watering schedule).",
+          "Avoid heavy point loads (ladders, jack stands) until the slab has gained enough strength.",
+        ],
+      },
+      {
         heading: "Planning checklist",
         bullets: [
           "Follow product guidance for sealers, coatings, and flooring install timing.",
           "Protect the slab from early drying and weather if recommended by your mix/conditions.",
           "For critical work, confirm with your contractor/supplier.",
+        ],
+      },
+      {
+        heading: "Why 28 days is mentioned so often",
+        paragraphs: [
+          "Many mixes are specified by their 28-day compressive strength. That doesn’t mean concrete is “done” at 28 days—it usually continues to gain strength beyond that milestone.",
+          "For planning, treat it as a reference point for strength discussions, not a universal “OK to do anything” date.",
+        ],
+      },
+      {
+        heading: "What changes curing and drying time",
+        bullets: [
+          "Temperature: cold slows strength gain; hot/windy conditions can dry the surface fast.",
+          "Humidity and airflow: higher humidity slows drying; strong airflow can dry the surface unevenly.",
+          "Thickness: thicker slabs hold moisture longer and can dry much slower for flooring installs.",
+          "Surface treatments: curing compounds, sealers, and moisture barriers change drying behavior.",
+        ],
+      },
+      {
+        heading: "Moisture-sensitive flooring (don’t guess by touch)",
+        paragraphs: [
+          "If you’re installing a flooring system that is sensitive to slab moisture (some epoxies, adhesives, and floor coverings), follow the product’s testing and moisture limit guidance. “It feels dry” is not a reliable test.",
+        ],
+        bullets: [
+          "If testing is required, plan it early so it doesn’t delay the install schedule.",
+          "If you’re unsure, your flooring installer or product documentation will specify acceptable moisture ranges and test methods (project dependent).",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        bullets: [
+          "Removing protection too early and letting sun/wind dry the surface too fast (cracking risk).",
+          "Adding water during finishing to “help it close,” which can weaken the surface.",
+          "Installing coatings/flooring before moisture guidance is met (bond failures and bubbling).",
         ],
       },
     ],
@@ -2952,6 +3415,45 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Mix selection affects cost and placement. For critical work, follow code and supplier guidance rather than generic assumptions.",
         ],
       },
+      {
+        heading: "Typical strength ranges (planning examples only)",
+        paragraphs: [
+          "Exact requirements vary by local code, exposure conditions, and engineer/contractor specs. Use these as conversation starters, not as a substitute for requirements.",
+        ],
+        table: {
+          columns: ["Use case (typical)", "Common strength range", "Notes"],
+          rows: [
+            ["Patios and walkways", "3000–3500 PSI", "Thickness, base, and curing still drive durability"],
+            ["Driveways", "3500–4500 PSI", "Freeze/thaw exposure may require air entrainment"],
+            ["Footings / piers", "3000–4000 PSI", "Rebar spacing and aggregate size can matter"],
+          ],
+        },
+      },
+      {
+        heading: "Weather planning (hot vs cold)",
+        bullets: [
+          "Hot/windy weather can dry the surface fast: plan curing and finishing timing to reduce cracking risk.",
+          "Cold weather slows strength gain: you may need an accelerator, protection, or schedule changes (project dependent).",
+          "If you need a longer working time (large pour), discuss retarder and delivery timing before the truck is dispatched.",
+        ],
+      },
+      {
+        heading: "Delivery checklist (avoid day-of surprises)",
+        bullets: [
+          "Confirm access: can the truck reach the forms, or do you need a pump/wheelbarrow plan?",
+          "Confirm discharge time limits and washout location.",
+          "Have labor/tools ready before arrival: rakes, screed, float, edger, and curing plan.",
+          "Plan a small buffer: short loads can stop the pour at the worst time.",
+        ],
+      },
+      {
+        heading: "Common mistakes that cause weak concrete",
+        bullets: [
+          "Adding water on site to increase slump (often reduces strength and increases shrinkage).",
+          "Skipping curing because the surface “looks dry.”",
+          "Poor base prep and drainage: slabs fail from below more often than from mix design alone.",
+        ],
+      },
     ],
     related: [
       { label: "Concrete guide", href: "/en/guides/home-improvement/concrete" },
@@ -3193,6 +3695,35 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Primer does not replace paint volume. Plan primer and paint separately if you want a reliable purchase plan.",
         ],
       },
+      {
+        heading: "Primer types (which one matches your problem)",
+        table: {
+          columns: ["Primer (common)", "Best for", "Notes"],
+          rows: [
+            ["PVA drywall primer", "New drywall", "Reduces flashing; not a stain blocker"],
+            ["Bonding primer", "Glossy/previously coated surfaces", "Prep still matters (clean + scuff)"],
+            ["Stain-blocking primer", "Water, smoke, tannins", "Choose product type per stain and follow dry time"],
+            ["Multi-surface primer", "General spot priming", "Good for mixed repairs (quality varies)"],
+          ],
+        },
+      },
+      {
+        heading: "Spot-prime vs full-prime (practical decision)",
+        bullets: [
+          "Spot-prime when only patches, repairs, or small stain areas exist and the rest of the wall is sound.",
+          "Full-prime when the entire surface is porous/uneven, heavily stained, or you’ve sanded through existing coatings in many places.",
+          "If the finish coat looks blotchy after the first coat, that’s often a sign the substrate is uneven and primer (or another coat) is needed.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        bullets: [
+          "Skipping cleaning on kitchen/bath walls (soap and grease reduce adhesion).",
+          "Priming everything with a single product even when a bonding or stain-block primer is needed.",
+          "Assuming primer is “free coverage”: it still needs film build and correct dry time.",
+          "Painting over glossy surfaces without scuffing/deglossing (peeling risk).",
+        ],
+      },
     ],
     related: [
       { label: "Paint calculator", href: "/en/calculators/home-improvement/paint" },
@@ -3263,6 +3794,41 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Plan layout so cut pieces land in less-visible areas when possible.",
           "Increase overage for large-format or fragile tile; breakage risk matters.",
           "Keep a few spares for future repairs; matching later can be difficult.",
+        ],
+      },
+      {
+        heading: "Substrate flatness and prep (where many projects fail)",
+        paragraphs: [
+          "Layout and overage are important, but tile performance depends on substrate prep: flatness, stiffness, and compatibility with your mortar and membrane system. Large-format tile is especially unforgiving on uneven surfaces.",
+        ],
+        bullets: [
+          "Confirm floor stiffness and underlayment requirements (project dependent).",
+          "Plan leveling/patching materials if the surface isn’t flat enough for your tile size.",
+          "Choose mortar type based on tile material, size, and environment (follow manufacturer guidance).",
+        ],
+      },
+      {
+        heading: "Movement joints and transitions (plan before you start)",
+        bullets: [
+          "Plan soft joints at changes of plane and where movement is expected (follow tile industry guidance).",
+          "Plan transitions at doorways and where tile meets other flooring for height changes.",
+          "Dry-fit trim pieces (schluter/edge profiles) so you know what thicknesses and overlaps you need.",
+        ],
+      },
+      {
+        heading: "Jobsite checklist (day-of efficiency)",
+        bullets: [
+          "Verify you have enough spacers/leveling clips, mixing buckets, and trowels for the day’s pace.",
+          "Have a clean water and wash station plan; grout cleanup is easier when you’re organized.",
+          "Open multiple boxes and mix tiles to blend shade variation (common recommendation).",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        bullets: [
+          "Buying tile based on calculated pieces-per-box instead of the label coverage.",
+          "Underestimating cuts around toilets, cabinets, niches, and pipe penetrations.",
+          "Skipping substrate prep and then trying to “fix it in thinset,” which usually creates lippage and weak spots.",
         ],
       },
     ],
@@ -3475,6 +4041,32 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Stair stringers and connectors (if applicable)",
         ],
       },
+      {
+        heading: "Composite vs wood planning (what changes)",
+        bullets: [
+          "Gapping rules differ: composites can expand/contract differently than wood—follow the specific product instructions.",
+          "Fastening systems differ: hidden clip systems can change board-to-board spacing and waste.",
+          "Blocking needs can change for diagonal installs and for composite to meet deflection limits (project dependent).",
+        ],
+      },
+      {
+        heading: "Ledger and waterproofing (a common long-term failure point)",
+        paragraphs: [
+          "If your deck is attached to a house, ledger flashing and water management are critical. Water trapped behind a ledger can cause structural rot. This is more important to long-term safety than saving a few boards of decking.",
+        ],
+        bullets: [
+          "Plan ledger flashing, fastener type, and waterproofing details per code and manufacturer guidance (project dependent).",
+          "If you’re unsure, consider a freestanding design or professional review for attachment details.",
+        ],
+      },
+      {
+        heading: "Layout sanity checks (before ordering)",
+        bullets: [
+          "Confirm board run lengths and where seams will land (avoid tiny end pieces where possible).",
+          "Confirm stair/landing geometry and the number of steps needed (it often drives extra boards).",
+          "Confirm railing line and post locations early so you can plan blocking and avoid surprise cutouts.",
+        ],
+      },
     ],
     related: [
       { label: "Deck calculator", href: "/en/calculators/home-improvement/deck" },
@@ -3634,6 +4226,29 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Over-washing or delaying cleanup, which can cause rework and extra grout usage.",
         ],
       },
+      {
+        heading: "Joint width planning (what drives the choice)",
+        bullets: [
+          "Tile size and edge style matter: rectified edges can allow tighter joints, but floors still need practical spacing.",
+          "Substrate flatness matters: if the surface isn’t flat, tighter joints can highlight lippage and make layout harder.",
+          "Use manufacturer guidance for specialty tile (stone, glass, polished surfaces) and for wet areas.",
+        ],
+      },
+      {
+        heading: "Worked example (why small tile uses more grout)",
+        paragraphs: [
+          "A mosaic can use multiple times the grout of a large-format tile because joint length per square foot is much higher. If you’re mixing field tile with mosaics, estimate mosaics separately so you don’t run short.",
+          "As a rough check: if you halve tile size, joint length increases significantly (project dependent). That’s why “one bag per X sq ft” numbers rarely transfer from one tile size to another.",
+        ],
+      },
+      {
+        heading: "Color, sealing, and cleanup notes",
+        bullets: [
+          "Cement grout color can vary with water content and cleanup timing; mix consistently and follow wash timing.",
+          "Some cement grouts require sealing; many epoxy/specialty grouts do not (follow product instructions).",
+          "Movement joints (changes of plane, large spans) should be flexible sealant, not grout.",
+        ],
+      },
     ],
     related: [
       { label: "Tile grout calculator", href: "/en/calculators/home-improvement/tile-grout" },
@@ -3679,6 +4294,53 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Why “just add more sealant” is not waterproofing",
         paragraphs: [
           "Caulk and grout are not a waterproofing plan. They help with surface management and movement joints, but they do not replace a proper membrane and substrate prep in wet areas.",
+        ],
+      },
+      {
+        heading: "Wet areas vs splash areas (what usually needs a membrane)",
+        table: {
+          columns: ["Area (typical)", "Water exposure", "Common approach (high level)"],
+          rows: [
+            ["Shower / wet room", "Continuous", "Waterproofing membrane as a system (walls + floor + seams)"],
+            ["Tub surround", "Frequent splash", "Membrane where required; confirm substrate guidance"],
+            ["Bathroom floor (outside shower)", "Intermittent", "Often optional; consider around toilets and entry points"],
+            ["Kitchen backsplash", "Splash only", "Usually not a full waterproofing system"],
+          ],
+        },
+      },
+      {
+        heading: "Critical details that prevent leaks",
+        bullets: [
+          "Slope-to-drain planning: the waterproof layer (or pan system) must direct water to the drain (project dependent).",
+          "Seams and corners: treat overlaps, inside/outside corners, and changes of plane per the system instructions.",
+          "Penetrations: valves, shower heads, niches, and benches need pre-planned seals (gaskets, banding, or sealant details).",
+          "Transitions: plan how waterproofing ties into the bathroom floor, curb, and door threshold.",
+        ],
+      },
+      {
+        heading: "Liquid membrane thickness (common failure point)",
+        paragraphs: [
+          "Liquid-applied waterproofing needs the correct dry film thickness. Too thin can fail; too thick can crack or take too long to cure. Use the manufacturer coverage rate and coats as a checklist rather than guessing by appearance.",
+        ],
+        bullets: [
+          "Let each coat cure the required time (temperature and humidity matter).",
+          "Use reinforcement fabric where the system calls for it (corners, seams, transitions).",
+        ],
+      },
+      {
+        heading: "Compatibility notes (avoid “it didn’t bond”)",
+        bullets: [
+          "Use thinset/mortar types approved for your membrane and tile (some membranes require specific mortars).",
+          "Porcelain and large-format tiles can need different mortars and trowel techniques for coverage.",
+          "If you mix products across brands, confirm compatibility; “generic” substitutions can create weak points.",
+        ],
+      },
+      {
+        heading: "Sanity checks before tile",
+        bullets: [
+          "Confirm the substrate is flat enough for your tile size (large tile is less forgiving).",
+          "Dry-fit layout for niche heights, valve locations, and trim pieces before waterproofing details are locked in.",
+          "If your system requires a flood test, schedule it before setting tile (project dependent).",
         ],
       },
     ],
@@ -3864,6 +4526,46 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Plan a buffer for settling and feathering edges.",
         ],
       },
+      {
+        heading: "Simple blend ratios (starting points)",
+        paragraphs: [
+          "Blend ratios depend on your goal. For lawns, you typically want a stable mineral base (topsoil) and only a light compost addition. For garden beds, higher compost content can work if the mix still has structure and drainage.",
+        ],
+        table: {
+          columns: ["Use case", "Typical compost share (by volume)", "Why"],
+          rows: [
+            ["Lawn topdressing", "10–25%", "Adds organic matter without making the surface too soft"],
+            ["New lawn/top layer", "10–30%", "Helps early rooting (project dependent)"],
+            ["Vegetable beds", "25–50%", "Fertility + structure (quality dependent)"],
+          ],
+        },
+      },
+      {
+        heading: "Quality matters more than the label",
+        bullets: [
+          "“Topsoil” can mean screened topsoil, sandy loam, or fill with clods and rocks—ask what you’re getting.",
+          "Compost quality varies: finished compost should smell earthy and be stable (not hot or full of fresh chunks).",
+          "Weed seeds, salts, and pH can be issues depending on feedstock and how compost was made.",
+        ],
+      },
+      {
+        heading: "Worked example (plan the two materials separately)",
+        paragraphs: [
+          "Say you need 2.0 cubic yards of blended material for a bed and you want ~40% compost. That’s 0.8 cu yd compost and 1.2 cu yd topsoil. Ordering separately makes it easier to adjust on site if the mix looks too heavy or too dry.",
+        ],
+        bullets: [
+          "If you’re mixing by hand, blend in thin layers instead of dumping everything in one pile.",
+          "Water lightly as you mix if materials are dusty; very dry mixes can be hard to wet evenly.",
+        ],
+      },
+      {
+        heading: "Common mistakes (and what to do instead)",
+        bullets: [
+          "Using compost as fill: use mineral soil for fill, then topdress with compost.",
+          "Over-amending clay with only compost: add structure (aeration) and address drainage planning (project dependent).",
+          "Skipping a soil test for recurring problems: pH and salts can drive plant issues more than “fertility.”",
+        ],
+      },
     ],
     related: [
       { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
@@ -3907,6 +4609,46 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         bullets: [
           "Door and window casings add more area than most people expect.",
           "Glossy trim needs better prep (clean + scuff sand) and often primer for reliable adhesion.",
+        ],
+      },
+      {
+        heading: "Choosing a trim enamel (what to look for)",
+        paragraphs: [
+          "Trim enamel is usually chosen for hardness, blocking resistance (so doors/windows don’t stick), and washability. The best product depends on your timeline, ventilation, and how much durability you need.",
+        ],
+        table: {
+          columns: ["Enamel type (common)", "Why people choose it", "Tradeoffs"],
+          rows: [
+            ["Waterborne acrylic enamel", "Fast dry, low odor, easy cleanup", "Can be less “hard” than other options"],
+            ["Waterborne alkyd/urethane enamel", "Smoother finish and harder cure (project dependent)", "Longer cure time; can be pricier"],
+            ["Oil-based enamel (where used)", "Hard finish and leveling", "Odor/VOC, yellowing risk, longer dry time"],
+          ],
+        },
+      },
+      {
+        heading: "Sheen selection (practical)",
+        bullets: [
+          "Semi-gloss is common for trim because it cleans well and resists scuffs, but it highlights surface defects.",
+          "Satin can be a good compromise if walls are textured or trim isn’t perfectly smooth.",
+          "Higher sheen usually means more visible prep marks—spend time on sanding/filling if you want a “smooth” look.",
+        ],
+      },
+      {
+        heading: "Application tips that reduce brush marks",
+        bullets: [
+          "Use the right tool: high-quality brush for profiles, small roller for flat trim, and keep a wet edge.",
+          "Don’t overwork: lay it off and leave it; repeated passes can cause ridges and flashing.",
+          "Watch recoat windows: recoating too soon can tear semi-dried film and leave texture.",
+          "Allow full cure before heavy cleaning or taping for adjacent work (project dependent).",
+        ],
+      },
+      {
+        heading: "Common failure points (why trim peels)",
+        bullets: [
+          "Painting over grease, soap residue, or dust without cleaning.",
+          "Skipping deglossing/scuff sanding on glossy or previously enamel-coated trim.",
+          "Not priming bare wood, water stains, or patched areas (adhesion and bleed-through issues).",
+          "Caulking or filling and then painting before it’s cured (can cause cracking).",
         ],
       },
     ],
