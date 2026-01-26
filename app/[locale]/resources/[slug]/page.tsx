@@ -1,19 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { normalizeLocale } from "@/i18n/locale";
 import { getAlternates, getLocalizedUrl } from "@/lib/seo";
 import { routes } from "@/lib/routes";
 import { SITE_NAME } from "@/lib/site";
-import { RESOURCE_ARTICLES_EN } from "@/lib/content/resourcesEn";
 import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
+import { getResourceArticles } from "@/lib/content/resourcesByLocale";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/structuredData";
 
-function getArticle(slug: string) {
-  return RESOURCE_ARTICLES_EN.find((a) => a.slug === slug);
+function localizeInternalHref(locale: string, href: string) {
+  if (!href.startsWith("/")) return href;
+  const localePrefix = `/${locale}`;
+  if (href.startsWith(localePrefix + "/")) return href;
+  const localeMatch = href.match(/^\/(en|es|zh-TW)(\/.*)$/);
+  if (localeMatch) return `${localePrefix}${localeMatch[2]}`;
+  return `${localePrefix}${href}`;
 }
 
 export async function generateMetadata({
@@ -26,7 +31,7 @@ export async function generateMetadata({
   setRequestLocale(locale);
 
   const redirected = RESOURCE_REDIRECTS_EN[slug];
-  const article = getArticle(redirected ?? slug);
+  const article = getResourceArticles(locale).find((a) => a.slug === (redirected ?? slug));
   if (!article) return {};
 
   return {
@@ -44,19 +49,21 @@ export default async function ResourceArticlePage({
   const { locale: rawLocale, slug } = await params;
   const locale = normalizeLocale(rawLocale);
   setRequestLocale(locale);
+  const t = await getTranslations("resourcesArticle");
+  const tResourcesIndex = await getTranslations("resourcesIndex");
 
   const redirected = RESOURCE_REDIRECTS_EN[slug];
   if (redirected) {
     permanentRedirect(getLocalizedUrl(locale, `/resources/${redirected}`));
   }
 
-  const article = getArticle(slug);
+  const article = getResourceArticles(locale).find((a) => a.slug === slug);
   if (!article) return notFound();
 
   const url = getLocalizedUrl(locale, `/resources/${slug}`);
   const breadcrumbs = [
     { name: SITE_NAME, url: getLocalizedUrl(locale, "") },
-    { name: "Resources", url: getLocalizedUrl(locale, "/resources") },
+    { name: tResourcesIndex("title"), url: getLocalizedUrl(locale, "/resources") },
     { name: article.title, url },
   ];
 
@@ -134,13 +141,13 @@ export default async function ResourceArticlePage({
       {article.related?.length ? (
         <section className="grid gap-2 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
           <div className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
-            Related
+            {t("relatedTitle")}
           </div>
           <ul className="grid gap-2">
             {article.related.map((r) => (
               <li key={r.href}>
                 <Link
-                  href={r.href}
+                  href={localizeInternalHref(locale, r.href)}
                   className="text-zinc-700 underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:text-zinc-300 dark:decoration-zinc-700 dark:hover:text-zinc-100"
                 >
                   {r.label}
@@ -156,14 +163,14 @@ export default async function ResourceArticlePage({
           href={routes.resources(locale)}
           className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
         >
-          Back to resources
+          {t("backToResources")}
         </Link>
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
           <Link
             href={routes.methodology(locale)}
             className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
           >
-            Methodology
+            {t("methodologyLink")}
           </Link>
           <span className="hidden text-zinc-400 dark:text-zinc-600 sm:inline">
             ·
@@ -172,7 +179,7 @@ export default async function ResourceArticlePage({
             href={routes.editorialPolicy(locale)}
             className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
           >
-            Editorial policy
+            {t("editorialPolicyLink")}
           </Link>
         </div>
       </div>

@@ -45,6 +45,12 @@
     "subtitle": "快速表格、檢核清單與實用規劃備註。",
     "intro": "這些資源用簡短方式解釋常見估算背後的原因：快速表格、簡單口訣與避免買不夠的提醒。"
   },
+  "resourcesArticle": {
+    "relatedTitle": "相關內容",
+    "backToResources": "返回資源列表",
+    "methodologyLink": "方法論",
+    "editorialPolicyLink": "編輯政策"
+  },
   "methodologyPage": {
     "metaTitle": "方法論 | HomeDecorCalc",
     "metaDescription": "我們的計算器如何運作：單位、進位、耗損與假設。",

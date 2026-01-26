@@ -45,6 +45,12 @@
   "subtitle": "Quick reference charts, checklists, and practical planning notes.",
   "intro": "These short resources explain the \"why\" behind common estimates: quick charts, simple rules of thumb, and reminders that prevent under-ordering."
  },
+ "resourcesArticle": {
+  "relatedTitle": "Related",
+  "backToResources": "Back to resources",
+  "methodologyLink": "Methodology",
+  "editorialPolicyLink": "Editorial policy"
+ },
  "methodologyPage": {
   "metaTitle": "Methodology | HomeDecorCalc",
   "metaDescription": "How our calculators work: units, rounding, waste factors, and assumptions.",

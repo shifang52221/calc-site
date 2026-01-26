@@ -5,8 +5,8 @@ import { getSiteUrl } from "@/lib/site";
 import { routes } from "@/lib/routes";
 import { CALCULATOR_CATEGORIES, CALCULATORS } from "@/lib/calculatorsCatalog";
 import { GUIDE_DEFINITIONS } from "@/lib/guidesCatalog";
-import { RESOURCE_ARTICLES_EN } from "@/lib/content/resourcesEn";
 import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
+import { getResourceArticles } from "@/lib/content/resourcesByLocale";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
@@ -14,12 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
-  const resourceArticles = RESOURCE_ARTICLES_EN.filter(
-    (article) =>
-      !Object.prototype.hasOwnProperty.call(RESOURCE_REDIRECTS_EN, article.slug),
-  );
 
   for (const locale of locales) {
+    const resourceArticles = getResourceArticles(locale).filter(
+      (article) =>
+        !Object.prototype.hasOwnProperty.call(RESOURCE_REDIRECTS_EN, article.slug),
+    );
     const urls: string[] = [
       `${baseUrl}${routes.home(locale)}`,
       `${baseUrl}${routes.privacy(locale)}`,

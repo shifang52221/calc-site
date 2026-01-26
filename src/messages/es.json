@@ -18,6 +18,12 @@
     "subtitle": "Tablas, listas y notas prácticas.",
     "intro": "Estos recursos explican el “por qué” detrás de estimaciones comunes: tablas rápidas, reglas simples y recordatorios para evitar comprar de menos."
   },
+  "resourcesArticle": {
+    "relatedTitle": "Relacionado",
+    "backToResources": "Volver a recursos",
+    "methodologyLink": "Metodología",
+    "editorialPolicyLink": "Política editorial"
+  },
   "methodologyPage": {
     "metaTitle": "Metodología | HomeDecorCalc",
     "metaDescription": "Cómo funcionan nuestras calculadoras: unidades, redondeo, desperdicio y supuestos.",
