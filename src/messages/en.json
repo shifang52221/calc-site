@@ -560,34 +560,34 @@
   "title": "How to Calculate Fence Panels",
   "subtitle": "Use total fence length and panel width to estimate panels, then add posts for corners and gates.",
   "intro": {
-   "p1": "Fence estimates depend on layout assumptions: panel width, post spacing, and how you handle corners and gates. A quick plan on paper prevents ordering the wrong quantities.",
-   "p2": "This guide covers a straightforward approach for panel fences."
+   "p1": "Fence estimates depend on layout assumptions: panel width, post spacing, and how you handle corners and gates. A quick sketch prevents the most common mistakes: missing a gate opening, forgetting corners/ends, or assuming every run is a perfect multiple of panel width.",
+   "p2": "This guide covers a straightforward approach for panel fences, plus the practical details that change real counts: slope handling (stepped vs racked), stronger posts for gates, and how to avoid ending up with a tiny last panel."
   },
   "stepsTitle": "Step-by-step: fence math",
   "steps": {
-   "s1": "Measure total fence run length (sum each straight segment).",
-   "s2": "Choose panel width (common panels are 6 ft or 8 ft).",
-   "s3": "Compute panel count (length / panel width), then round up for full coverage.",
-   "s4": "Estimate posts: one more post than panels for a straight run, plus extras for corners and gates.",
-   "s5": "Add gates, end posts, and hardware as separate line items."
+   "s1": "Measure fence run length by segments. Walk the fence line and measure each straight run (between corners, ends, or gates) rather than using one diagonal backyard measurement.",
+   "s2": "Choose the fence system: prebuilt panels (fixed width) or site-built sections. Panel fences are usually based on 6 ft or 8 ft panels, but the installed width can be slightly less depending on brackets and gaps.",
+   "s3": "Compute panel count per run: (run length minus gate openings) / panel width. Round up, then sanity-check the last section so you don't end up forcing a 1 ft wide panel at the end.",
+   "s4": "Estimate posts: a simple straight run is usually panels + 1, but corners and gates add posts. Corner and gate locations often need heavier posts than line posts (project dependent).",
+   "s5": "Add line items you can't ignore: gates and hardware (hinges/latches), concrete for post holes, and any special parts for slope installs or transitions."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Corners, ends, and gates usually require special posts and hardware.",
-   "t2": "Confirm local code or HOA rules before buying materials.",
-   "t3": "Slopes change how panels fit; stepped installs can affect counts.",
-   "t4": "Plan for waste and mistakes, especially if you're cutting panels."
+   "t1": "Corners, ends, and gates usually require stronger posts and more hardware. Gate hinge posts are a common failure point if they're undersized or poorly set (project dependent).",
+   "t2": "Slope planning changes counts and waste. Racked panels follow slope but have limits; stepped panels may require more cuts and can create gaps that you need to plan for.",
+   "t3": "Check local rules before you buy: setback requirements, maximum height, HOA style rules, and whether you need permits.",
+   "t4": "Plan waste and future repairs. Buying an extra panel or extra pickets from the same batch can save you if one gets damaged or if the style is discontinued."
   },
   "ctaTitle": "Want panels and posts instantly?",
   "ctaBody": "Use our fence calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How many fence panels do I need?",
-   "a1": "Divide total run length by panel width and round up, then adjust for gates and layout.",
+   "a1": "Divide each run length by the panel width and round up, then subtract gate openings (treat gates as their own line items). It's usually safer to compute panels per run than to average everything into one number.",
    "q2": "How many fence posts do I need?",
-   "a2": "For a straight run, it's usually panels + 1. Add extra posts for corners, gates, and any breaks in the line.",
+   "a2": "For a straight run, it's usually panels + 1. Add posts for every corner and both sides of each gate. Gate posts and corner posts may need to be larger or set deeper than line posts depending on wind load and gate weight (project dependent).",
    "q3": "Should I include a gate in the panel count?",
-   "a3": "Treat gates separately: subtract the gate opening from total run length, then compute panels for the remaining length."
+   "a3": "Treat gates separately: subtract the gate opening from the run length, then compute panels for the remaining length. Gates also require hardware and often stronger posts, so bundling them into \"panel count\" hides important costs."
   }
  },
  "guideGravel": {
@@ -596,34 +596,34 @@
   "title": "How to estimate gravel for a driveway or path",
   "subtitle": "Area x depth gives volume; convert to cubic yards and account for compaction.",
   "intro": {
-   "p1": "Gravel is typically ordered by volume (cubic yards). Your measurements are usually area and target depth, so the estimate is a volume conversion problem.",
-   "p2": "The two common mistakes are forgetting compaction and using the wrong depth."
+   "p1": "Gravel is typically ordered by volume (cubic yards). Your inputs are usually area and target depth, so the estimate is a volume conversion problem. The trick is choosing the right depth for the job and the right material for the layer.",
+   "p2": "The two common mistakes are forgetting compaction and mixing up layers. Many projects use a compactable base (crushed stone/road base) plus a separate top layer (pea gravel or decorative rock). Those layers can have different depth targets and behave differently."
   },
   "stepsTitle": "Step-by-step: gravel math",
   "steps": {
-   "s1": "Measure the area to cover (length x width, or break irregular shapes into rectangles).",
-   "s2": "Choose a compacted depth target (often a few inches, depending on use).",
-   "s3": "Convert area x depth to volume (cubic feet or cubic meters).",
-   "s4": "Convert volume to cubic yards for ordering.",
-   "s5": "Add a buffer for compaction and uneven grade, then round up."
+   "s1": "Measure the area to cover (length x width), or break irregular shapes into rectangles and add them. Measure the finished footprint, not the size of the gravel pile you plan to dump.",
+   "s2": "Choose a compacted depth target for each layer (base vs top). Depth depends on use (walkway vs driveway) and soil conditions (project dependent).",
+   "s3": "Convert area x depth to volume (cubic feet or cubic meters). If depth is in inches, convert to feet first (in / 12).",
+   "s4": "Convert volume to cubic yards for ordering (1 yd3 = 27 ft3). If your supplier sells by tons, use their yards-to-tons conversion for the exact product and moisture condition.",
+   "s5": "Add a buffer for compaction, uneven grade, and edge loss. Many driveways and bases are compacted in lifts; placing a thick loose layer and hoping it compacts evenly is a common cause of settlement later."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Base layers and top layers can have different depths-estimate them separately.",
-   "t2": "Compaction reduces volume; ordering slightly extra prevents shortages.",
-   "t3": "Edging and containment keep gravel from spreading.",
-   "t4": "Confirm the material type and density with your supplier if you're converting to tons."
+   "t1": "Base layers and top layers can have different depths and different materials—estimate them separately so you don't accidentally order the wrong product at the wrong thickness.",
+   "t2": "Compaction reduces installed height; ordering slightly extra prevents shortages. If you're unsure, order the base first, compact and grade, then re-measure before ordering the top layer.",
+   "t3": "Edging and containment keep gravel from spreading and reduce long-term maintenance. Without edging, some gravel will migrate into grass and walkways over time.",
+   "t4": "Confirm the material type and supplier conversion if you're ordering by tons. Density varies by product and moisture; supplier tables are usually more reliable than generic averages."
   },
   "ctaTitle": "Want the cubic yard estimate fast?",
   "ctaBody": "Use our gravel calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How deep should gravel be for a driveway?",
-   "a1": "It depends on soil and use. Many driveways use a thicker compacted base with a thinner top layer. Estimate layers separately for better results.",
+   "a1": "It depends on soil, drainage, and use. Many driveways use a thicker compacted base with a thinner top layer. Estimate layers separately for better results, and confirm depth recommendations with your local supplier for your specific aggregate (project dependent).",
    "q2": "Should I order gravel by tons or cubic yards?",
-   "a2": "Suppliers vary. Cubic yards are common; tons require density. If ordering by tons, confirm the supplier's conversion for the specific material.",
+   "a2": "Suppliers vary. Cubic yards are common; tons require a density conversion. If ordering by tons, confirm the supplier's yards-to-tons conversion for the specific material you are buying (pea gravel vs crushed stone vs base rock).",
    "q3": "Do I need to account for compaction?",
-   "a3": "Yes. Compaction can reduce the installed height, so adding a small buffer helps ensure you don't run short."
+   "a3": "Yes. Compaction can reduce the installed height, so adding a small buffer helps ensure you don't run short. Compaction is usually done in lifts for thicker bases; proper compaction and drainage matter as much as the initial volume math (project dependent)."
   }
  },
  "guideTopsoil": {
@@ -632,23 +632,23 @@
   "title": "How to estimate topsoil for a lawn or garden",
   "subtitle": "Plan the area and depth you want, then convert to cubic yards and round up.",
   "intro": {
-   "p1": "Topsoil is ordered by volume, but your plan is usually area and target depth. The estimate is straightforward once you decide how deep you want to spread soil.",
-   "p2": "For grading and leveling, you may need more than you think-low spots and settling add up."
+   "p1": "Topsoil is ordered by volume, but your plan is usually area and target depth. The estimate becomes reliable when you decide what the job actually is: a thin topdressing layer, adding planting depth, or fixing grade/low spots.",
+   "p2": "For grading and leveling, you often need more than you think because low spots, feathered edges, and settling add up. Measuring multiple depth points and using an average is usually more accurate than picking one 'worst spot' depth for the whole area."
   },
   "stepsTitle": "Step-by-step: topsoil math",
   "steps": {
-   "s1": "Measure the area to cover (lawn section, garden bed, or fill area).",
-   "s2": "Choose a target depth (thin topdressing vs deeper leveling).",
-   "s3": "Convert area x depth to volume (cubic feet/meters).",
-   "s4": "Convert volume to cubic yards for ordering.",
-   "s5": "Add a buffer for uneven grade and settling, then round up."
+   "s1": "Measure the area to cover (lawn section, garden bed, or fill area). Break irregular shapes into rectangles and add them for total area.",
+   "s2": "Choose a target depth that matches the purpose: thin topdressing is different from raising grade or creating planting depth. For leveling, think in terms of average depth plus extra in low spots.",
+   "s3": "Convert area x depth to volume (cubic feet/meters). If depth is in inches, convert to feet first (in / 12) so your units stay consistent.",
+   "s4": "Convert volume to cubic yards for ordering (1 yd3 = 27 ft3). If you are buying bags, convert to bag size (cubic feet per bag) and round up.",
+   "s5": "Add a buffer for uneven grade, wheelbarrow/spillage loss, and settling after watering and rain. Rounding up is usually cheaper than a second delivery."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Estimate thin topdressing separately from deeper fill or grading.",
-   "t2": "Soil settles; a small buffer prevents shortages.",
-   "t3": "Confirm whether you need screened topsoil for a smoother finish.",
-   "t4": "If you're fixing drainage or slope, consider getting a grading plan before ordering."
+   "t1": "Estimate thin topdressing separately from deeper fill or grading. Mixing those goals into one depth number is a common cause of over-ordering.",
+   "t2": "Soil settles; a small buffer prevents shortages. If you are leveling a lawn, you may also keep some soil aside for touch-ups after the first rain.",
+   "t3": "Confirm the material quality: screened topsoil spreads smoother; unscreened fill can contain rocks and clumps that slow grading. Compost blends can be better for planting than plain 'topsoil' (project dependent).",
+   "t4": "If you're fixing drainage or slope, a grading plan matters more than the volume math. Soil alone won't solve a drainage problem if the shape of the ground is still wrong."
   },
   "ctaTitle": "Want the cubic yard estimate fast?",
   "ctaBody": "Use our topsoil calculator and share a link that keeps your inputs.",
@@ -656,11 +656,11 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How much topsoil do I need for a lawn?",
-   "a1": "Measure the lawn area and choose a target depth, then convert to cubic yards and round up.",
+   "a1": "Measure the lawn area and choose a target depth, then convert to cubic yards and round up. For leveling, it can be more accurate to estimate a thin overall layer plus separate low-spot volumes rather than using one uniform depth everywhere.",
    "q2": "How deep should topsoil be?",
-   "a2": "It depends on the project. Topdressing is often thin; building up grade or creating planting depth usually needs more. Pick a depth that matches your goal.",
+   "a2": "It depends on the project. Topdressing is often thin, while building up grade or creating planting depth needs more. Use a depth that matches your goal, and keep in mind that deep fills usually need compaction and multiple lifts to avoid settling (project dependent).",
    "q3": "Should I buy extra topsoil?",
-   "a3": "A small buffer helps cover low spots and settling, and it reduces the chance of running short mid-project."
+   "a3": "Yes, a small buffer helps cover low spots, feathered edges, and settling, and it reduces the chance of running short mid-project. Buying enough at once also helps keep texture consistent if you care about finish quality."
   }
  },
  "guidePaintCeiling": {
@@ -777,34 +777,34 @@
   "title": "Tile waste factor: how much extra to buy",
   "subtitle": "Waste depends on cuts, layout, and room complexity-plan overage before you order.",
   "intro": {
-   "p1": "Tile projects almost always require extra material: cuts, breakage, pattern matching, and future repairs all add up.",
-   "p2": "A waste factor (overage) is the simplest way to avoid running short while still keeping costs under control."
+   "p1": "Tile projects almost always require extra material: cuts, breakage, pattern matching, and future repairs all add up. Even with perfect area math, you will lose tiles to edge cuts, mistakes, and pieces that crack during cutting or handling.",
+   "p2": "A waste factor (overage) is the simplest way to avoid running short while still keeping costs under control. The right waste factor depends on layout complexity, tile size, and how many detailed features you have (niches, benches, borders, and plumbing penetrations)."
   },
   "stepsTitle": "Step-by-step: pick a waste factor",
   "steps": {
-   "s1": "Start with the tile area you need (including walls, floors, or backsplashes).",
-   "s2": "Consider layout: straight stack typically wastes less than diagonal or herringbone.",
-   "s3": "Consider room complexity: many corners, niches, or small rooms increase waste.",
-   "s4": "Pick a waste factor (commonly 10% for simple layouts; 15%+ for diagonal/patterns).",
-   "s5": "Round up to whole boxes, and consider adding an extra box for future repairs."
+   "s1": "Start with the tile area you need (including walls, floors, or backsplashes). Use the planned tile coverage area, not just the room size, and include any feature walls or shower niches you will tile.",
+   "s2": "Consider layout: straight-lay usually wastes less than diagonal, herringbone, and other patterns that force more cutoffs and unusable offcuts.",
+   "s3": "Consider room complexity: many corners, small rooms, niches, benches, borders, and plumbing penetrations increase waste because more tiles become small custom pieces.",
+   "s4": "Pick a waste factor that matches the risk: 10% is common for simple straight-lay, 15%+ for diagonal/patterns, and higher if you need strict pattern/vein matching (project dependent).",
+   "s5": "Round up to whole boxes, then consider an extra box for future repairs and dye-lot matching. Matching later is often harder (and more expensive) than storing a spare box."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Large-format tiles can increase waste in small rooms due to cutoffs.",
-   "t2": "If you're matching veins or patterns, plan higher overage.",
-   "t3": "Order all tile at once to reduce color variation between batches.",
-   "t4": "Save spare tiles after installation for replacements and repairs."
+   "t1": "Large-format tiles can increase waste in small rooms because you create more offcuts that can't be reused. Narrow hallways and many doorways are classic waste drivers.",
+   "t2": "If you're matching veins or patterns (especially marble-look tile), plan higher overage. Pattern consistency can force you to reject otherwise usable pieces.",
+   "t3": "Order all tile at once to reduce color variation between dye lots/batches. Also buy trims and specialty pieces (bullnose, mosaic sheets) at the same time if you need a consistent look.",
+   "t4": "Keep spares after installation for replacements and repairs. A single cracked tile later is easier to fix if you have matching material from the same lot."
   },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our tile calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Is 10% waste enough for tile?",
-   "a1": "Often yes for simple rooms with straight layouts. For diagonal layouts, patterns, or lots of obstacles, you may need 15% or more.",
+   "a1": "Often yes for simple rooms with straight layouts and few obstacles. For diagonal layouts, patterns, lots of obstacles, or strict pattern matching, you may need 15% or more (project dependent).",
    "q2": "Should I buy extra tile for future repairs?",
-   "a2": "Yes if you can. It's hard to match batch color later, and discontinued products are common.",
+   "a2": "Yes if you can. It's hard to match batch color later, and discontinued products are common. One extra box is often cheaper than trying to source a close match later.",
    "q3": "Does tile size affect waste?",
-   "a3": "It can. Large tiles can waste more in small or irregular spaces, while smaller tiles can waste more if patterns require matching."
+   "a3": "Yes. Large tiles can waste more in small or irregular spaces, while small tiles can waste more when patterns require matching or when you have many cuts and trim details. Room shape and layout usually matter more than the tile size alone."
   }
  },
  "guideDrywallCeiling": {
@@ -957,34 +957,34 @@
   "title": "Convert gravel yards to tons",
   "subtitle": "Tons = cubic yards x density-confirm the density with your supplier.",
   "intro": {
-   "p1": "Some suppliers sell gravel by cubic yards, others by tons. The conversion depends on material density, which varies by gravel type and moisture.",
-   "p2": "Use your cubic yard estimate, pick a realistic density (or ask your supplier), then multiply to get tons."
+   "p1": "Some suppliers sell gravel by cubic yards, others by tons. The conversion depends on material density, which varies by gravel type, gradation, and moisture. That’s why two suppliers can give different tons for the same 'yard' estimate.",
+   "p2": "Use your cubic yard estimate, then use the supplier’s yards-to-tons conversion for the exact product you are buying whenever possible. Generic density numbers are fine for planning, but supplier conversions are the most reliable for ordering."
   },
   "stepsTitle": "Step-by-step: yards to tons",
   "steps": {
-   "s1": "Estimate volume in cubic yards based on area and compacted depth.",
-   "s2": "Choose a density for your material (tons per cubic yard) from supplier info.",
-   "s3": "Multiply: tons = cubic yards x density.",
-   "s4": "Add a small buffer for compaction and uneven grade.",
-   "s5": "Round up to match supplier delivery increments (e.g., half-ton or full-ton)."
+   "s1": "Estimate volume in cubic yards based on area and compacted depth (or use an existing yard estimate from a volume calculator).",
+   "s2": "Choose a density for your material (tons per cubic yard). If the supplier provides a conversion table for your product, use it.",
+   "s3": "Multiply: tons = cubic yards x density (conversion factor). Keep units consistent: short tons (2,000 lb) vs metric tonnes (1,000 kg).",
+   "s4": "Add a buffer for compaction, uneven grade, and edge loss. Bases are often compacted in lifts; the installed coverage can be smaller than the loose delivered volume.",
+   "s5": "Round up to match delivery increments and minimum loads. The practical order size is often driven by truck size and fees, not perfect math."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Wet material can weigh more than dry material-supplier conversions are the best source.",
-   "t2": "Different products (pea gravel, crushed stone, base rock) can have different densities.",
-   "t3": "If you need exact tonnage for hauling limits, confirm density before ordering.",
-   "t4": "Order slightly extra to avoid a second delivery fee."
+   "t1": "Wet material can weigh more than dry material—supplier conversions are the best source. Ask for the product name/gradation so you’re comparing the right material.",
+   "t2": "Different products (pea gravel, crushed stone, base rock) can have different densities. Don’t assume one conversion fits both base and top layers.",
+   "t3": "If you need exact tonnage for hauling limits, confirm the conversion before ordering and note whether the supplier uses short tons or metric tonnes.",
+   "t4": "Ordering slightly extra is usually cheaper than paying a second delivery fee and trying to match material later (especially for decorative stone)."
   },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our gravel calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How many tons are in a cubic yard of gravel?",
-   "a1": "It depends on the material. Many gravels fall around 1.2-1.5 tons per cubic yard, but you should confirm with your supplier.",
+   "a1": "It depends on the material. Many gravels fall around 1.2-1.5 tons per cubic yard, but the best answer is your supplier's conversion for the exact product you are buying (including typical moisture).",
    "q2": "Why do supplier conversions differ?",
-   "a2": "Density varies by rock type, gradation, moisture, and how the material is measured. Suppliers often use their own tested conversion for each product.",
+   "a2": "Density varies by rock type, gradation, moisture, and how the material is measured. Suppliers often use their own tested conversion for each product, and they may also be quoting different units (short tons vs metric tonnes).",
    "q3": "Should I use compacted depth or loose depth?",
-   "a3": "Use compacted (installed) depth for your project target. Then add a small buffer to account for compaction and uneven grade."
+   "a3": "Use compacted (installed) depth for your project target. Then add a small buffer to account for compaction and uneven grade. If you are building a base course, expect compaction and lift placement to affect the final coverage (project dependent)."
   }
  },
  "guideTopsoilLeveling": {
