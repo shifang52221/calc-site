@@ -9,7 +9,9 @@
     "lint": "eslint",
     "content:check:calc": "node scripts/local-calculator-content-audit.mjs --minWords=500 --top=20",
     "content:check:resources": "node scripts/local-resources-audit.mjs --min=400 --top=30",
-    "content:check": "npm run content:check:calc && npm run content:check:resources && npm run build"
+    "content:check": "npm run content:check:calc && npm run content:check:resources && npm run build",
+    "audit:local": "node scripts/local-duplicate-audit.mjs && node scripts/local-calculator-content-audit.mjs --minWords=500 --top=20 && node scripts/local-resources-audit.mjs --min=400 --top=30 && node scripts/local-guide-content-audit.mjs --minWords=600 --top=20 && npm run build",
+    "audit:live": "node scripts/live-sitemap-audit.mjs && node scripts/adsense-audit.mjs --sample=50 --minWords=250"
   },
   "dependencies": {
     "next": "16.1.1",
