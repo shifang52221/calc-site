@@ -380,34 +380,34 @@
   "title": "How to estimate tile for a floor or wall",
   "subtitle": "Measure area, add a sensible waste factor, then round up to whole boxes.",
   "intro": {
-   "p1": "Tile estimates are mostly math, but the two places people miss are waste and coverage per box. Even a simple room needs cuts, and different tile sizes cover different areas per box.",
-   "p2": "This guide shows a fast, reliable approach that works for floors, showers, and backsplashes."
+   "p1": "Tile estimates are mostly math, but most surprises come from two practical details: waste and how the product is packaged. Even a simple room needs cuts at walls, doorways, and edges, and those offcuts are not always reusable. Coverage per box also varies by tile size and thickness, and it can change between a field tile box, mosaic sheets, and trim pieces.",
+   "p2": "A good estimate starts with measuring only the surfaces you will actually tile, then adding a waste factor that matches your layout (straight vs diagonal/pattern) and the complexity of the space (niches, benches, many corners). Once you have total tile area with waste, convert to boxes using the label coverage and round up so you finish in one batch."
   },
   "stepsTitle": "Step-by-step: tile math",
   "steps": {
-   "s1": "Measure the tiled area (length x width for floors, or sum wall rectangles).",
-   "s2": "Subtract large openings only if they are truly untiled (e.g., a big window).",
-   "s3": "Choose a waste factor (often 10% for straight-lay, 15%+ for diagonal/complex layouts).",
-   "s4": "Convert total tile area to boxes using the product coverage per box.",
-   "s5": "Round up to whole boxes and consider extra for future repairs or dye-lot matching."
+   "s1": "Measure the tiled area. For floors, add each room (and closets if they get the same tile). For walls, measure each rectangle (width x height) and add features like shower niches, half walls, or backsplash sections.",
+   "s2": "Decide what you are not tiling. Subtract only truly untiled areas that are large enough to matter (big windows, large built-ins). Many people keep small cutouts (outlets, small vents) in the total and let waste cover the difference.",
+   "s3": "Pick a waste factor that matches your layout and risk. Around 10% is common for straight-lay rooms with few obstacles. Use more for diagonal layouts, herringbone, lots of corners, large-format tile in small rooms, or strict pattern/vein matching (project dependent).",
+   "s4": "Convert area to boxes using the product label coverage and make sure units match (sq ft vs m²). If you have multiple products (field tile, mosaics, bullnose/trim), estimate each separately because coverage and waste differ.",
+   "s5": "Round up to whole boxes and consider keeping at least a little extra for breakage during cutting and for future repairs. If returns are allowed, keeping one unopened box from the same batch is often the easiest insurance against discontinuation and color variation later."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Small tiles and mosaics increase cut count; waste often goes up.",
-   "t2": "Patterned layouts (herringbone, diagonal) usually require more overage.",
-   "t3": "Don't forget trim pieces, bullnose, and transitions if your design needs them.",
-   "t4": "Buy extra from the same batch to avoid color/size variation later."
+   "t1": "Do a quick layout plan before ordering. Avoiding tiny edge slivers and deciding where cuts land can change waste more than the raw square footage.",
+   "t2": "Patterns (diagonal, herringbone) and many obstacles create more unusable offcuts. In small or oddly shaped rooms, geometry drives waste more than area.",
+   "t3": "Account for details that are not part of field tile coverage: edge trim, metal profiles, thresholds, and any decorative borders. These often need separate quantities and can delay a job if missing.",
+   "t4": "Buy enough at once and keep the batch/lot consistent when possible. Small size and shade differences between lots can make grout lines and leveling harder to keep consistent."
   },
   "ctaTitle": "Want a quick box count?",
   "ctaBody": "Use our tile calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How much waste should I add for tile?",
-   "a1": "10% is common for straightforward installs. Use 15% or more for diagonal patterns, lots of corners, or small rooms.",
+   "a1": "10% is common for straightforward installs with a simple straight layout. Use 15% or more for diagonal or patterned layouts, lots of corners, many penetrations, or strict pattern/vein matching. In small cut-heavy spaces, waste is often driven by room shape, not room size (project dependent).",
    "q2": "Should I subtract cabinets or vanities?",
-   "a2": "If they will permanently cover the area and you won't tile underneath, subtract them. If you're unsure, leave them in and rely on waste/overage.",
+   "a2": "Subtract them only if you are sure you will not tile underneath (for example, a permanent vanity that will sit on the subfloor). If you might remove or replace the cabinet later, tiling under it can be worth it. When in doubt, leaving the area in the total and relying on waste is usually safer than under-ordering.",
    "q3": "Why do I need to round up to whole boxes?",
-   "a3": "Tile is sold by the box, and breakage or future repairs are much easier if you have spare pieces from the same batch."
+   "a3": "Tile is sold by the box, not by the exact square foot. Rounding up avoids running short when you hit unavoidable cuts or break a few pieces during cutting. Keeping spare pieces from the same batch also makes future repairs far easier than trying to match a discontinued tile or a different production lot."
   }
  },
  "guideDrywall": {
@@ -416,34 +416,34 @@
   "title": "How to estimate drywall sheets",
   "subtitle": "Measure wall/ceiling area, pick a sheet size, then add waste and round up.",
   "intro": {
-   "p1": "Drywall estimates start with total surface area, then you convert that area into sheet counts. The key decisions are sheet size (4x8 vs 4x12) and a realistic waste factor.",
-   "p2": "This guide gives a quick process for rooms, basements, and ceilings."
+   "p1": "Drywall estimates start with total surface area: walls (perimeter x height) plus ceilings (length x width) if you are hanging the lid. Then you convert that area into a sheet count based on the sheet size you can handle and install. The two choices that most affect the final number are your sheet length (8 ft, 10 ft, 12 ft) and how much waste you should expect from cuts, corners, soffits, and odd wall lengths.",
+   "p2": "A reliable estimate is not just square footage. Think about layout: where seams land, how many small sections you have, and whether you are matching an existing thickness/type (1/2\" vs 5/8\", moisture-resistant board, or a second layer for sound/fire). This guide gives a practical process for rooms, basements, and simple remodels so you can order confidently without overbuying."
   },
   "stepsTitle": "Step-by-step: drywall math",
   "steps": {
-   "s1": "Measure wall area (perimeter x height) and add ceiling area (length x width) if applicable.",
-   "s2": "Subtract big openings if you want a tighter estimate (doors, large windows).",
-   "s3": "Choose a drywall sheet size and compute coverage per sheet.",
-   "s4": "Add a waste factor (often 10%+, more for lots of corners or small cut pieces).",
-   "s5": "Round up to whole sheets and consider extra for mistakes or repairs."
+   "s1": "Measure wall area for each room: (perimeter x height). Add ceilings (length x width) if you are drywalling the ceiling, and add any soffits, knee walls, or bump-outs as their own rectangles.",
+   "s2": "Decide whether to subtract openings. Subtracting doors and large windows can tighten the estimate, but only do it if you measure carefully. Many projects keep openings in the total and let the waste factor cover it, which is often faster and still accurate enough.",
+   "s3": "Choose sheet size and thickness based on handling and the space. A 4x8 sheet covers 32 sq ft; 4x10 covers 40; 4x12 covers 48. Longer sheets reduce seams but can increase handling difficulty (project dependent).",
+   "s4": "Add a waste factor. Around 10% can work for simple rectangles. Use more if you have lots of corners, short wall segments, sloped ceilings, many cutouts, or you are learning as you go.",
+   "s5": "Round up to whole sheets, then add a small safety margin if the job is time-sensitive. Being one or two sheets short can stop progress, while leftover sheets are often returnable if kept clean and flat (check store policy)."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Longer sheets reduce seams but can be harder to handle.",
-   "t2": "Ceilings are harder; adding extra is usually cheaper than a second trip.",
-   "t3": "Corner count and room complexity drive waste more than raw area.",
-   "t4": "If you're matching existing thickness (e.g., 1/2\" vs 5/8\"), confirm before you buy."
+   "t1": "Plan seam locations. Fewer butt joints usually means easier finishing, but a layout that creates tiny strips can increase waste. A quick sketch of sheet orientation per wall can prevent surprises.",
+   "t2": "Ceilings are slower and more cut-heavy (lights, fans, vents). If your schedule is tight, a little extra material is often cheaper than losing a day to a second trip.",
+   "t3": "Waste is driven by complexity: corners, alcoves, soffits, and uneven framing. If the room has many small sections, increase your waste factor even if the total area is not large.",
+   "t4": "Confirm the board type before buying: thickness, moisture resistance for baths, and any fire-rating requirements. Matching existing thickness matters for transitions, and the wrong type can force rework (project dependent)."
   },
   "ctaTitle": "Want the fast sheet count?",
   "ctaBody": "Use our drywall calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How many drywall sheets do I need for a room?",
-   "a1": "Measure total wall/ceiling area, divide by sheet coverage, add waste, then round up to whole sheets.",
+   "a1": "Add up total wall area (perimeter x height) and any ceiling area you will cover. Divide by the sheet coverage (32 sq ft for 4x8, 40 for 4x10, 48 for 4x12), then add a waste factor and round up. If the room has many corners, soffits, or short runs, use a higher waste factor because offcuts are harder to reuse (project dependent).",
    "q2": "What waste factor should I use for drywall?",
-   "a2": "10% is common. Use more if you have lots of corners, soffits, or small sections that force extra cuts.",
+   "a2": "Around 10% is common for simple rooms with long, straight walls. Use 15% (or more) for complex layouts: lots of corners, angled ceilings, many small wall segments, many cutouts, or when you are unsure of your final layout. The more your job looks like a collection of small rectangles instead of a few big ones, the more waste you should expect.",
    "q3": "Should I subtract doors and windows?",
-   "a3": "You can for a tighter estimate, but many people skip it and let the waste factor cover the difference."
+   "a3": "You can for a tighter estimate if you measure openings accurately, especially if there are many large windows. For quick estimating, many people do not subtract openings and simply use a realistic waste factor. The goal is to avoid running short, not to calculate the perfect theoretical minimum."
   }
  },
  "guideMulch": {
@@ -669,34 +669,34 @@
   "title": "How much paint do I need for a ceiling?",
   "subtitle": "Ceiling area x coats / coverage, plus a small buffer for texture and cut-ins.",
   "intro": {
-   "p1": "Ceilings often need more paint than you expect because texture and roller technique reduce real coverage.",
-   "p2": "Measure the ceiling area, pick a realistic coverage rate, decide coats, then round up to whole cans so you don't run short mid-project."
+   "p1": "Ceilings often need more paint than you expect because real coverage drops with texture (popcorn, knockdown), dry or stained surfaces, and the amount of cutting-in around walls, beams, and fixtures. Even if the label shows a high coverage number, ceilings are commonly applied heavier and will show lap marks if you try to stretch paint too thin.",
+   "p2": "A dependable estimate starts with ceiling surface area (including trays, soffits, and any sloped sections), then factors in coats and a realistic coverage rate. Add a small buffer so you can keep a wet edge and finish the ceiling in one session without running out or changing batches mid-room."
   },
   "stepsTitle": "Step-by-step: ceiling paint estimate",
   "steps": {
-   "s1": "Measure ceiling footprint (length x width) for each room and add them up.",
-   "s2": "Decide whether to treat soffits or tray ceilings as separate sections and include those areas.",
-   "s3": "Choose coats (often 1 for same-color repaints, 2 for big color changes or stained ceilings).",
-   "s4": "Use a realistic coverage rate (textured ceilings can cover less than the label).",
-   "s5": "Add 5-10% buffer, then round up to whole gallons/liters."
+   "s1": "Measure ceiling area for each room. For flat ceilings, length x width is usually enough. Add closets and small halls if they get the same paint so you do not undercount.",
+   "s2": "Include extra ceiling surfaces: tray recesses, soffits, boxed beams, and any sloped or vaulted planes. For vaulted ceilings, measure the sloped surface area (not the floor footprint).",
+   "s3": "Decide coats. Same-color repaints on a clean ceiling can sometimes be one coat, but stain coverage, water marks, or big color changes often need primer and/or two finish coats (project dependent).",
+   "s4": "Pick a realistic coverage rate. Texture and thirsty surfaces reduce coverage, and spraying can add overspray loss. If you are unsure, assume a lower coverage number so you do not run short.",
+   "s5": "Add a buffer (often 5-10%), then round up to whole gallons/liters. A small overage is useful for touch-ups, especially on flat ceiling paint that can flash differently when patched."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Popcorn and heavy texture usually need more paint-lean toward the higher buffer.",
-   "t2": "Cutting in around trim uses more paint than rolling; keep a little extra for edges and touch-ups.",
-   "t3": "Flat ceiling paint touches up differently than satin/eggshell-keep the same product for repairs.",
-   "t4": "If you're using a sprayer, plan for overspray and equipment loss; a slightly larger buffer helps."
+   "t1": "Texture changes everything. Popcorn and heavy knockdown often need more paint and can be hard to back-roll evenly, so plan a higher buffer and avoid over-stretching the product.",
+   "t2": "Cut-ins around crown, walls, and fixtures consume more paint than people expect. If you have lots of edges or beams, allocate extra for cutting-in and for a clean second pass.",
+   "t3": "Use a ceiling-appropriate sheen (often flat) and keep the same product for touch-ups. Even the same color can look different if the sheen or product line changes, especially under raking light.",
+   "t4": "Sprayers can save time but increase paint usage through overspray and equipment loss. Masking and ventilation planning matters as much as the math when you are painting ceilings."
   },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our paint calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Should I use the same coverage rate as walls?",
-   "a1": "Start with the product label, then adjust down for texture and application method. Ceilings often cover a bit less than smooth walls.",
+   "a1": "Start with the product label, then adjust down for ceiling reality: texture, cutting-in, and application method. Smooth walls often cover better than ceilings, and textured ceilings can require noticeably more paint for the same square footage (project dependent).",
    "q2": "Do I subtract light fixtures or vents?",
-   "a2": "Usually no. The area is small and your buffer covers it. Subtract only if you want a very tight estimate and there are many large openings.",
+   "a2": "Usually no. Most fixtures and vents are small, and your buffer covers that area plus normal losses. Subtract only if you are doing a tight estimate and there are many large openings or skylights you are not painting around.",
    "q3": "How do I estimate vaulted ceilings?",
-   "a3": "Measure the sloped surface area (not the floor footprint). If you can't measure directly, break the ceiling into rectangles/triangles and add them up."
+   "a3": "Measure the sloped surface area, not the floor footprint. If you cannot measure directly, break the ceiling into rectangles and triangles, measure each piece, and add them. Another option is to measure the slope length (rafter length) and multiply by the room length for each plane."
   }
  },
  "guidePaintTrim": {
@@ -705,34 +705,34 @@
   "title": "How much paint do I need for trim?",
   "subtitle": "Trim is measured as length x face width; include doors and windows, then round up to quarts.",
   "intro": {
-   "p1": "Trim paint estimates are different from walls because you're usually painting narrow surfaces: baseboards, door/window casings, and sometimes doors.",
-   "p2": "The fastest way is to measure total linear feet, convert to square footage using an average face width, then apply coats and a small buffer."
+   "p1": "Trim paint estimates are different from walls because you are painting narrow, detailed surfaces: baseboards, door and window casing, crown, and sometimes doors. Trim profiles also have multiple faces and edges, so the real painted area can be larger than the simple height you see from across the room.",
+   "p2": "The fastest approach is to measure total linear feet and convert that length into area using an average face width (in feet). Then apply your coat count, include primer if needed, and add a buffer for brush/roller waste. This method is accurate enough for buying the right number of quarts without measuring every small detail."
   },
   "stepsTitle": "Step-by-step: trim paint estimate",
   "steps": {
-   "s1": "Measure baseboards as total linear feet around each room (minus large openings if you want).",
-   "s2": "Add door and window casings (linear feet) if you're painting them too.",
-   "s3": "Convert linear feet to area: linear feet x average face width (in feet).",
-   "s4": "Choose coats (often 2 for color changes or when using a primer + top coat).",
-   "s5": "Add 5-15% buffer for brush waste and touch-ups, then round up to whole quarts/gallons."
+   "s1": "Measure baseboards as total linear feet around each room. Subtract large openings (like a wide sliding door) only if you want a tighter estimate; many people leave openings in and let the buffer cover it.",
+   "s2": "Add the linear feet of door and window casing if you are painting them. If you are also painting crown or chair rail, include those lengths as separate line items because they often have wider faces.",
+   "s3": "Convert length to area: (total linear feet) x (average face width in feet). For example, a 5 inch baseboard face is about 0.42 ft. If your trim is a complex profile, use a slightly larger effective width to account for curves and edges.",
+   "s4": "Choose coats and primer. Big color changes, glossy-to-matte changes, stained wood, or patched areas often benefit from primer plus one or two finish coats (project dependent). Count primer as its own coat if you are estimating total paint volume.",
+   "s5": "Add a buffer (often 5-15%) for brush waste, cut-ins, and touch-ups, then round up to whole quarts or gallons. If you are spraying trim, plan a bit more for overspray and setup loss."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Trim paint often goes further than wall paint, but brush work increases waste-keep a buffer.",
-   "t2": "If you're painting doors, estimate them separately (door area x coats).",
-   "t3": "Gloss and semi-gloss show imperfections; prep can take longer than painting.",
-   "t4": "Buy enough from the same product line and sheen to avoid mismatched touch-ups."
+   "t1": "Trim paint can cover well, but brushwork and cutting-in create waste. A small buffer also helps you avoid dry-brush marks on long runs and gives you enough for clean touch-ups.",
+   "t2": "Estimate doors separately if you are painting them: door area (both sides if applicable) x coats. Doors and trim often use different paint types or sheens, so separating the estimate prevents confusion.",
+   "t3": "Higher sheens show defects. Sanding, filling, and caulking can take longer than painting, and good prep often reduces the number of coats needed for a smooth finish (project dependent).",
+   "t4": "Keep the same product line and sheen for touch-ups. Even when the color code matches, a different sheen or line can flash under light and look like a patch."
   },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our paint calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How much paint do I need for baseboards only?",
-   "a1": "Measure total linear feet and multiply by the baseboard face height (in feet), then apply coats and a small buffer.",
+   "a1": "Measure total linear feet of baseboards and multiply by the baseboard face height (in feet) to get area. Then apply your coat count and add a small buffer. If the baseboard has a complex profile or you are also painting shoe molding, increase the effective width slightly to account for extra surface area.",
    "q2": "Do I need primer on trim?",
-   "a2": "It depends on the surface and color change. Bare wood, stains, and big color shifts often benefit from primer.",
+   "a2": "It depends on the surface and the change you are making. Bare wood, stained trim, repaired/filled spots, and big color changes usually benefit from primer for better adhesion and fewer finish coats. If you are repainting already-painted trim in a similar color, a light sand and a quality finish coat may be enough (project dependent).",
    "q3": "Should I buy quarts or gallons for trim?",
-   "a3": "Small trim jobs usually fit in quarts. If you're painting trim throughout a home (and doors), gallons may be more cost-effective."
+   "a3": "Small trim jobs often fit in quarts. If you are painting trim throughout a home (and doors), gallons are usually more cost-effective and reduce the chance of subtle color differences between containers. If you are unsure, estimate both ways and choose based on return policy and how much touch-up paint you want to keep."
   }
  },
  "guideFlooringBoxes": {
@@ -741,34 +741,34 @@
   "title": "How many boxes of flooring do I need?",
   "subtitle": "(Area + waste) / coverage per box = boxes (rounded up).",
   "intro": {
-   "p1": "Most flooring is sold by the box, and each box covers a specific area (square feet or square meters). The key is to add a realistic waste factor before converting to boxes.",
-   "p2": "Once you know your total area and the product's coverage per box, the math is simple: divide and round up."
+   "p1": "Most flooring is sold by the box, and each box covers a specific area (square feet or square meters). The part that changes the order the most is not the area math, but the practical waste: end cuts, odd room shapes, out-of-square walls, direction changes between rooms, and any pattern you are installing.",
+   "p2": "A reliable estimate adds waste before converting to boxes. Measure each room (and closets if they get the same flooring), choose a waste factor that matches the install style, then divide by the product coverage per box and round up. Keeping one extra box is often the difference between an easy repair later and trying to match a discontinued product."
   },
   "stepsTitle": "Step-by-step: boxes estimate",
   "steps": {
-   "s1": "Measure total floor area for all rooms (include closets if they're getting the same flooring).",
-   "s2": "Choose a waste factor (often 5-10% for straight layouts; more for diagonal or complex cuts).",
-   "s3": "Multiply floor area by (1 + waste factor).",
-   "s4": "Divide by coverage per box from the product spec.",
-   "s5": "Round up to whole boxes (and consider an extra box for future repairs)."
+   "s1": "Measure total floor area for all rooms that get the same product. Add closets and small halls if they are included. Exclude areas that will not be floored (for example, under permanent cabinets, or rooms getting a different material).",
+   "s2": "Pick a waste factor based on install style. Many straight installs use about 5-10%. Use more for diagonal installs, herringbone, lots of alcoves, or many direction changes between rooms (project dependent).",
+   "s3": "Compute total ordering area: floor area x (1 + waste factor). If you are doing multiple phases, consider ordering everything at once to keep the batch consistent.",
+   "s4": "Divide by the product coverage per box from the spec label. Confirm units (sq ft vs m²) and remember that different SKUs (different thicknesses or widths) may have different box coverage.",
+   "s5": "Round up to whole boxes. If returns are allowed for unopened boxes, consider keeping an extra box for future repairs or plank replacement, especially for click-lock products that can be hard to match later."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Check that coverage per box matches your unit system (sq ft vs m²).",
-   "t2": "Stairs, patterns, and direction changes increase waste-plan higher overage.",
-   "t3": "Try to buy all boxes from the same dye lot/batch when possible.",
-   "t4": "If you're mixing rooms later, keep one unopened box for repairs."
+   "t1": "Double-check the units and the box label. It is easy to mix square feet and square meters, or to assume every box covers the same amount when the product has multiple sizes or thickness options.",
+   "t2": "Stairs and landings usually need separate estimating (treads/risers), and patterns can increase waste dramatically. Even a straight install can waste more if walls are not square or you are aligning seams across doorways.",
+   "t3": "Buy the same lot/batch when possible and mix planks from multiple boxes as you install to blend small color variation. Keep cartons labeled in case you need to match later.",
+   "t4": "Store an unopened box flat in a dry area for future repairs. A spare box is especially helpful if a board gets damaged and the product is no longer stocked."
   },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our flooring calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "What waste factor should I use?",
-   "a1": "Many straight layouts use 5-10%. Diagonal layouts, small rooms, and complex cuts often need more.",
+   "a1": "Many straight installs use 5-10%. Use more for diagonal layouts, herringbone, many small rooms, lots of alcoves, or when you are aligning patterns across rooms. If you are unsure, lean higher and confirm your return policy for unopened boxes (project dependent).",
    "q2": "Do I include closets?",
-   "a2": "Include any area that will receive the same flooring. Exclude areas with a different product (tile, carpet, etc.).",
+   "a2": "Include any closet or hallway that receives the same flooring. Exclude areas that get a different material, and exclude spaces that will be permanently covered by fixed cabinetry if you are not flooring underneath it.",
    "q3": "Should I buy an extra box?",
-   "a3": "Often yes. It can save you later if a plank gets damaged or if the product is discontinued."
+   "a3": "Often yes. One extra box makes future repairs much easier if a plank is damaged, water-stained, or needs to be removed for another repair. It is also insurance against discontinued lines and changes in color between production runs."
   }
  },
  "guideTileWaste": {
@@ -813,34 +813,34 @@
   "title": "How many drywall sheets for a ceiling?",
   "subtitle": "Ceiling area / sheet area, then round up and add waste for cutoffs and seams.",
   "intro": {
-   "p1": "Ceilings are easiest to estimate by area, but sheet layout (8', 10', 12' sheets) can change how much waste you generate.",
-   "p2": "Start with ceiling square footage, then choose a sheet size and apply a waste factor for cutoffs and mistakes."
+   "p1": "Ceilings are easiest to estimate by area, but the sheet layout can change the real number you need. Longer sheets can reduce seams (and finishing work), but they also change where cutoffs land. Cutouts for lights, fans, vents, and access panels add waste that does not show up in a simple square-foot calculation.",
+   "p2": "A dependable ceiling estimate starts with total ceiling area, then converts to sheets based on the size you can handle safely. After that, apply a waste factor that matches the complexity of the ceiling and how carefully you plan the sheet layout."
   },
   "stepsTitle": "Step-by-step: ceiling drywall estimate",
   "steps": {
-   "s1": "Measure ceiling area (length x width) for each room and add them up.",
-   "s2": "Pick sheet size (e.g., 4x8, 4x10, 4x12) based on room size and handling.",
-   "s3": "Divide ceiling area by sheet area to get a base sheet count.",
-   "s4": "Add a waste factor (often 10-15% depending on layout and obstacles).",
-   "s5": "Round up to whole sheets and plan for extra around light boxes or irregular edges."
+   "s1": "Measure ceiling area for each room. For flat ceilings, length x width is usually enough. Add any soffits, tray recesses, or boxed beams that will be covered with drywall.",
+   "s2": "Choose sheet size based on access and handling: 4x8 is common, while 4x10 or 4x12 can reduce seams in larger rooms. Longer sheets are heavier and often require a lift or more help (project dependent).",
+   "s3": "Compute a base count: ceiling area / sheet area (32, 40, or 48 sq ft depending on sheet length). This gives a starting point before layout waste and cutouts.",
+   "s4": "Add waste for cutouts and layout. Around 10% can work for simple rectangles; use 15% (or more) for many cutouts, angled edges, tray ceilings, or when the room size forces many offcuts you cannot reuse.",
+   "s5": "Round up to whole sheets and consider a small safety margin if you cannot afford delays. A single missing sheet can stop a ceiling because layout and seams matter more overhead than on walls."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Longer sheets can reduce seams but are harder to handle-balance labor vs material efficiency.",
-   "t2": "Plan sheet orientation to reduce seams and avoid tiny strips.",
-   "t3": "Ceiling work is awkward; a little extra drywall can prevent delays.",
-   "t4": "Confirm local code requirements for thickness and type (regular vs moisture resistant)."
+   "t1": "Balance material efficiency and labor. Longer sheets reduce seams and finishing time, but the handling risk goes up. Renting a drywall lift can make ceiling work safer and more accurate.",
+   "t2": "Plan orientation so seams run where they should relative to framing and so you avoid tiny edge strips. A quick sketch often reduces both waste and finishing headaches.",
+   "t3": "Ceilings have more cutouts and more risk of damage during handling. A small overage can prevent a full stop if you crack a sheet during installation.",
+   "t4": "Confirm board type and thickness for ceilings. Some ceilings use thicker drywall for sag resistance or fire rating, and baths may require moisture-resistant products depending on local code and conditions (project dependent)."
   },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our drywall calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Is 10% waste enough for ceiling drywall?",
-   "a1": "Often yes for simple rectangles, but complex ceilings and many cutouts can need more. When in doubt, use 15%.",
+   "a1": "Often yes for simple rectangular rooms with few cutouts, especially if you plan sheet layout. If the ceiling has many lights/vents, angled edges, tray details, or lots of small sections, 15% is a safer starting point. The more cutouts and offcuts you create, the harder it is to reuse scraps effectively (project dependent).",
    "q2": "Should I use 5/8\" drywall on ceilings?",
-   "a2": "Some ceilings use thicker drywall for sag resistance or code reasons. Check your joist spacing and local requirements.",
+   "a2": "Sometimes. Thicker drywall can resist sag on wider joist spacing and may be required for certain fire-rated assemblies. The right choice depends on joist spacing, the framing type, and local requirements. If you are matching existing conditions, confirm what is already installed so transitions stay flush (project dependent).",
    "q3": "Does sheet size change the total number of sheets?",
-   "a3": "It can. Different layouts create different cutoff waste. Use a slightly higher waste factor if you aren't planning a detailed layout."
+   "a3": "Yes. Different sheet sizes create different seam locations and different cutoff patterns, which changes how much waste you generate. If you are not planning a detailed layout, use a slightly higher waste factor to cover cutoff risk, especially in rooms where ceiling dimensions do not divide neatly into 4-foot widths."
   }
  },
  "guideMulchDepth": {
@@ -849,34 +849,34 @@
   "title": "Mulch depth: 2 inches vs 3 inches",
   "subtitle": "Going from 2\" to 3\" is 50% more mulch-depth matters more than you think.",
   "intro": {
-   "p1": "Mulch volume is driven by area and depth. Small depth changes can significantly change how many cubic yards you need.",
-   "p2": "If you're deciding between 2 inches and 3 inches, the math is straightforward-and it can save you from overbuying."
+   "p1": "Mulch volume is driven by area and depth, and depth changes compound quickly. Going from 2 inches to 3 inches is a 50% increase in depth, which means about 50% more mulch for the same bed area. That is why two projects that look similar can require very different yardage depending on whether you are topping off or building a fresh layer.",
+   "p2": "The best depth depends on your goal: a lighter layer for appearance and moisture retention, or a deeper layer for better weed suppression. This guide helps you do the depth math, then choose a depth that is effective without creating problems like burying plant crowns or trapping moisture against trunks."
   },
   "stepsTitle": "Step-by-step: depth math",
   "steps": {
-   "s1": "Measure the bed area (square feet or square meters).",
-   "s2": "Choose a target depth (2\" for lighter coverage, 3\" for more weed suppression).",
-   "s3": "Convert depth to feet (2\" = 0.167 ft, 3\" = 0.25 ft) or meters.",
-   "s4": "Multiply area x depth to get volume (cubic feet/meters).",
-   "s5": "Convert to cubic yards and round up for settling and uneven beds."
+   "s1": "Measure the bed area you will actually cover. Exclude hardscape, areas you intentionally keep thin, and the small ring around trunks/stems where you should not pile mulch.",
+   "s2": "Choose a target depth based on purpose. About 2 inches can work for refresh/top-up and appearance. About 3 inches can improve weed suppression and moisture retention, but it also increases volume and can be too much near some plants (project dependent).",
+   "s3": "Convert depth to consistent units before multiplying. In feet: 2 inches is 2/12 = 0.167 ft and 3 inches is 3/12 = 0.25 ft. In metric, convert to meters for the same reason.",
+   "s4": "Multiply area x depth to get volume (cubic feet or cubic meters). If you plan different depths in different zones, estimate each zone separately and add them for a more accurate order.",
+   "s5": "Convert volume to what you buy (cubic yards for bulk, or bag volume) and round up for settling, uneven beds, and the reality that raking always redistributes mulch."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "New mulch settles-ordering a little extra helps you hit your final depth.",
-   "t2": "Avoid piling mulch against tree trunks; keep a small gap to prevent rot.",
-   "t3": "If you're refreshing existing mulch, you may only need a thin top-up layer.",
-   "t4": "Depth recommendations vary by plant type and climate-use local guidance when possible."
+   "t1": "Mulch settles after raking and after the first rain. If you need a true finished depth, a small buffer helps you avoid thin spots without a second trip.",
+   "t2": "Avoid the classic 'mulch volcano'. Keep mulch pulled back from tree trunks and plant crowns to reduce rot, pests, and stem damage (project dependent).",
+   "t3": "Refresh depth is different from new install depth. If you already have a healthy layer, you may only need a thin top-up in bare spots rather than rebuilding full depth everywhere.",
+   "t4": "Mulch is not a grading material. If you are trying to fix low spots or drainage, use soil to correct grade first, then apply mulch as the final surface layer. Depth guidelines also vary by climate and plant type, so local recommendations can help."
   },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our mulch calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Is 2 inches of mulch enough?",
-   "a1": "Often yes for appearance and moisture retention. For better weed suppression, many beds use closer to 3 inches.",
+   "a1": "Often yes for appearance and moisture retention, especially as a refresh layer. For better weed suppression, many beds use closer to 3 inches, but you should still keep mulch thinner right at plant crowns and trunks. If weeds are the main issue, bed prep (weeding and edging) matters as much as depth (project dependent).",
    "q2": "How much more mulch is 3 inches vs 2 inches?",
-   "a2": "About 50% more volume for the same area because 3 inches is 1.5x the depth of 2 inches.",
+   "a2": "About 50% more volume for the same area because 3 inches is 1.5 times the depth of 2 inches. For example, if 2 inches requires 2 cubic yards, 3 inches will be about 3 cubic yards for the same bed area (before buffers and settling).",
    "q3": "Should I remove old mulch first?",
-   "a3": "Not always. If the old layer is thick or matted, removing some can help prevent excess buildup and drainage problems."
+   "a3": "Not always. If the old layer is thin and in good shape, you can top it up. If it is thick, matted, or mixed with soil and weeds, removing some can prevent excess buildup and improve air and water movement. Also consider whether old mulch has accumulated year after year to a depth that is no longer healthy for the plants."
   }
  },
  "guideRoofingShed": {
@@ -885,34 +885,34 @@
   "title": "How many shingles for a shed roof?",
   "subtitle": "Measure roof area, convert to squares, then to bundles-don't forget waste and starter strips.",
   "intro": {
-   "p1": "Shed roofs are usually simple, which makes shingle estimating easier than complex houses. The key is to estimate the actual roof surface area, not just the floor footprint.",
-   "p2": "Once you have roof area, convert to squares (100 sq ft) and then to bundles based on your shingle spec."
+   "p1": "Shed roofs are usually simple, which makes shingle estimating easier than complex houses. The key is to estimate the roof surface area you will actually cover, not just the shed floor footprint. Overhangs add area, and roof pitch increases the sloped surface compared to the flat footprint.",
+   "p2": "Once you have roof surface area, convert to squares (100 sq ft) and then to bundles based on your shingle product. Finally, add waste and make sure you also have the accessories that do not follow the same math (starter strip, underlayment, drip edge, ridge cap if applicable)."
   },
   "stepsTitle": "Step-by-step: shed shingle estimate",
   "steps": {
-   "s1": "Measure roof length and sloped width (or calculate slope-adjusted width from pitch).",
-   "s2": "Compute roof area (length x sloped width) for each roof plane and add them up.",
-   "s3": "Convert area to squares (sq ft / 100).",
-   "s4": "Convert squares to bundles (often ~3 bundles per square; confirm your product).",
-   "s5": "Add waste (often 10% for simple roofs; more for many cuts) and round up."
+   "s1": "Measure roof length along the eave and the sloped rafter length (the distance from eave to ridge/high edge). If you only have footprint width and pitch, convert to sloped length using a pitch factor (project dependent).",
+   "s2": "Compute roof area: length x sloped width for each roof plane. Many shed roofs are one plane, but if yours has multiple planes or a gable section, estimate each plane and add them.",
+   "s3": "Convert area to squares: squares = (sq ft / 100). Keep planes separate if you want a tighter waste estimate on cut-heavy shapes.",
+   "s4": "Convert squares to bundles using the actual product spec. Many asphalt shingles are about 3 bundles per square, but it varies by brand/type, and starter and ridge products have their own coverage rules.",
+   "s5": "Add waste and round up. Around 10% is common for simple rectangles, but increase waste for lots of trim, many cut edges, or if you are learning the install. Rounding up is usually cheaper than stopping mid-job to buy one more bundle."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Starter strips, ridge caps, and underlayment are separate materials-plan them alongside shingles.",
-   "t2": "Low-slope roofs may require special products or installation methods-check manufacturer requirements.",
-   "t3": "If the shed has overhangs, include them in your measurements.",
-   "t4": "Buy a little extra for repairs; matching later can be difficult."
+   "t1": "Plan the full system: starter strips, underlayment, drip edge, nails, and flashing details. Missing one accessory can stop the job even if you have the right number of bundles.",
+   "t2": "Pay attention to slope. Low-slope roofs may require special underlayment, specific shingle products, or a different roofing system. Always follow manufacturer requirements and local code (project dependent).",
+   "t3": "Include overhangs and any attached roof sections. Small roofs are sensitive to small measurement errors, so double-check dimensions before ordering.",
+   "t4": "Keep at least a little extra for repairs and for starter/ridge adjustments. Matching shingles later can be harder than storing one extra bundle (check return policy if you are unsure)."
   },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our roofing calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How many bundles are in a square?",
-   "a1": "Many architectural shingles use about 3 bundles per square, but it varies by product. Always confirm on the packaging or spec sheet.",
+   "a1": "Many asphalt shingles are about 3 bundles per square, but it varies by product type, weight, and brand. Always confirm on the packaging or the spec sheet for the exact shingles you are buying, and remember that starter and ridge products have separate coverage numbers.",
    "q2": "Do I estimate by footprint or roof surface area?",
-   "a2": "Use roof surface area. Pitch increases the surface area compared to the footprint.",
+   "a2": "Use roof surface area (the sloped area you will actually cover). The footprint is smaller on any pitched roof, and using it will undercount shingles. Also include overhangs if they are being shingled.",
    "q3": "How much waste should I add for a shed roof?",
-   "a3": "Simple rectangles often use around 10%. If you have many cuts or obstacles, add more."
+   "a3": "Simple rectangles often use around 10%. Add more if you have many cut edges, lots of trim details, roof penetrations, or multiple planes. If you are close to minimum purchase quantities, rounding up can be cheaper than being short and making a second run (project dependent)."
   }
  },
  "guideFencePosts": {
@@ -921,34 +921,34 @@
   "title": "How many fence posts do I need?",
   "subtitle": "Count corners and gates first, then add line posts using your chosen spacing.",
   "intro": {
-   "p1": "Fence posts are easy to undercount because corners, ends, and gates each need their own posts in addition to regular line posts.",
-   "p2": "Start with a simple plan: break the fence into straight runs, choose spacing, then count posts run by run."
+   "p1": "Fence posts are easy to undercount because the layout is not just a long straight line. Corners, ends, and gates each need dedicated posts in addition to your regular line posts, and those special posts are often larger and set deeper than the rest.",
+   "p2": "A reliable post count starts with a simple plan: sketch the fence, break it into straight runs, and decide your spacing based on the fence style or panel width. Then count posts run by run and make sure you understand which posts are shared (for example, a corner post serves two runs)."
   },
   "stepsTitle": "Step-by-step: post count",
   "steps": {
-   "s1": "Draw your fence layout and break it into straight runs between corners/gates/ends.",
-   "s2": "Choose post spacing based on your fence style (often 6-8 ft on center).",
-   "s3": "For each run, compute line posts: (run length / spacing), then round down and add posts appropriately for the ends.",
-   "s4": "Add corner posts (one per corner) and end posts (one per run end if not shared).",
-   "s5": "Add gate posts (often two; heavier gates may require stronger posts) and round up."
+   "s1": "Draw the fence layout and list each straight run between corners, ends, and gates. Measure run lengths along the property line where the fence will actually sit.",
+   "s2": "Choose post spacing based on your fence type and manufacturer specs. Many fences use 6-8 ft on-center, but prebuilt panels often dictate the spacing more than preference (project dependent).",
+   "s3": "Count posts per run. A simple method is: number of spaces = ceiling(run length / spacing), then posts in that run = spaces + 1. If two runs meet at a corner, the corner post is shared, so do not double-count it.",
+   "s4": "Add special posts: one corner post at each corner, end posts at any run endpoints that are not corners, and any brace/terminal posts your fence design requires (some styles need bracing at ends and corners).",
+   "s5": "Add gate posts. Most gates use two posts, and heavy or wide gates may need larger posts, deeper footings, or additional bracing. Round up if your plan includes future gate changes or uncertain spacing."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Corner and gate posts often need to be sturdier than line posts.",
-      "t2": "Measure spacing \"on center\" and confirm panel sizes if you're using prebuilt panels.",
-   "t3": "If the fence follows a slope, you may need more posts due to stepped sections.",
-   "t4": "Check local frost depth and code for post hole depth and concrete footing requirements."
+   "t1": "Corner, end, and gate posts often carry more load than line posts. Many builds use larger posts and deeper holes at terminals, and that can also affect the amount of concrete you need (project dependent).",
+      "t2": "Measure spacing on-center and confirm the actual panel width if you are using prebuilt panels. Small differences (like 6 ft vs 6 ft 8 in) can change the post count over a long run.",
+   "t3": "Slopes change the build. Stepped fences and grade changes can increase the number of short sections, which can increase posts and waste. Plan where steps happen before you finalize spacing.",
+   "t4": "Check local rules for frost depth, minimum post embedment, and footing details. The right depth can matter more for longevity than the exact spacing, especially in windy areas."
   },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our fence calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "What spacing should I use for fence posts?",
-   "a1": "Common spacing is 6-8 feet on center, but it depends on panel size, wind load, and fence type.",
+   "a1": "Common spacing is 6-8 feet on-center, but the best spacing depends on panel size, wind load, fence height, and material. If you are using prebuilt panels, follow the panel width and the manufacturer guidance so everything fits without forcing odd gaps (project dependent).",
    "q2": "Do corners share posts?",
-   "a2": "Corners generally use a dedicated corner post. Adjacent runs connect to it, so you don't count separate end posts at that same point.",
+   "a2": "Yes. A corner generally uses one dedicated corner post, and both fence runs connect to that same post. You do not count separate end posts for each run at the corner, but you may still need special bracing depending on the fence style and local wind (project dependent).",
    "q3": "How do gates affect post count?",
-   "a3": "A gate usually needs two posts. Large or heavy gates may need larger posts or additional bracing."
+   "a3": "A gate usually needs two posts. Heavy, wide, or cantilevered gates may require larger posts, deeper footings, metal posts, or additional bracing to prevent sag. Plan gate locations early because they often determine where corners/ends fall and can change the count for nearby line posts."
   }
  },
  "guideGravelTons": {
