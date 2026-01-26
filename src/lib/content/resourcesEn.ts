@@ -227,6 +227,39 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Roof pitch multipliers (quick table)",
+        paragraphs: [
+          "If you only know the footprint area, multiply by a pitch multiplier to estimate roof surface area. This is a planning tool—complex roofs should be measured by planes when possible.",
+        ],
+        table: {
+          columns: ["Pitch", "Multiplier (approx.)", "Note"],
+          rows: [
+            ["4/12", "1.054", "Low slope"],
+            ["6/12", "1.118", "Common"],
+            ["8/12", "1.202", "Steeper, more waste risk"],
+            ["10/12", "1.302", "Steep"],
+            ["12/12", "1.414", "Very steep"],
+          ],
+        },
+      },
+      {
+        heading: "Starter strips and ridge cap (why they add up)",
+        paragraphs: [
+          "Starter strips and ridge cap shingles are often separate SKUs. Even if your shingle bundle math is right, missing these items is a common cause of last-minute trips and color mismatches.",
+        ],
+        bullets: [
+          "Starters are planned by linear feet of eaves/rakes (project dependent).",
+          "Ridge cap is planned by linear feet of ridge/hip length (project dependent).",
+          "If you add ridge vent, include ridge vent components and compatible cap requirements.",
+        ],
+      },
+      {
+        heading: "Squares to bundles (quick example)",
+        paragraphs: [
+          "Example: if your roof is 22 squares (2200 sq ft) and your shingle is packaged at 3 bundles per square, you plan 22 × 3 = 66 bundles. Then apply your waste factor and round up to whole bundles.",
+        ],
+      },
+      {
         heading: "Buying strategy (avoid shortages and mismatches)",
         bullets: [
           "Round up to whole bundles and keep a small number of extras for repairs.",
@@ -238,8 +271,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     related: [
       { label: "Roofing calculator", href: "/en/calculators/home-improvement/roofing" },
       { label: "Roofing guide", href: "/en/guides/home-improvement/roofing" },
-      { label: "Roof pitch multiplier", href: "/en/resources/roof-pitch-area-multiplier" },
-      { label: "Starter & ridge cap", href: "/en/resources/roofing-starter-and-ridge-cap" },
+      { label: "Methodology", href: "/en/methodology" },
     ],
   },
   {
@@ -283,6 +315,29 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Base vs top layer (pick the right material)",
+        paragraphs: [
+          "Base layers are about stability and compaction. Top layers are about surface performance (look, traction, and how it behaves under tires). Treat them as different products and estimate them separately.",
+        ],
+        table: {
+          columns: ["Layer", "Common material", "Why it matters"],
+          rows: [
+            ["Base", "Crushed stone/road base with fines", "Compacts and locks together"],
+            ["Top", "Crushed stone (cleaner) or pea gravel (project dependent)", "Surface behavior and appearance"],
+            ["Separation (optional)", "Geotextile fabric (project dependent)", "Helps reduce mixing with weak subgrade"],
+          ],
+        },
+      },
+      {
+        heading: "Edge containment (stops migration)",
+        bullets: [
+          "Metal/plastic edging: common for paths; durability varies by product.",
+          "Timber/landscape ties: can work but need anchoring and rot planning.",
+          "Concrete/asphalt edge: most durable, higher cost and planning.",
+          "A shoulder of larger rock can work on rural drives, but it’s not true containment.",
+        ],
+      },
+      {
         heading: "Practical ordering checklist",
         bullets: [
           "Measure multiple depth checks and use an average thickness.",
@@ -296,7 +351,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
       { label: "Gravel calculator", href: "/en/calculators/home-improvement/gravel" },
       { label: "Gravel guide", href: "/en/guides/home-improvement/gravel" },
       { label: "Yards to tons guide", href: "/en/resources/gravel-yards-to-tons-guide" },
-      { label: "Base vs top layer", href: "/en/resources/gravel-base-vs-top-layer" },
+      { label: "Methodology", href: "/en/methodology" },
     ],
   },
   {
@@ -385,11 +440,47 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Underlayment checklist (common misses)",
+        bullets: [
+          "Underlayment or vapor barrier (product and subfloor dependent).",
+          "Transitions, reducers, and stair noses.",
+          "Baseboard/shoe molding and quarter round as needed.",
+          "Leveling compound for uneven subfloors (separate estimate).",
+        ],
+      },
+      {
+        heading: "How to choose the right underlayment (quick decision path)",
+        paragraphs: [
+          "Start with the flooring manufacturer’s requirements (they can affect warranty), then match the subfloor conditions (moisture, flatness, and sound).",
+        ],
+        bullets: [
+          "Concrete slab: moisture management is often the first priority (barrier requirements vary by product).",
+          "Wood subfloor: flatness and squeak reduction can matter more than vapor management.",
+          "Condos: sound control requirements can drive underlayment thickness and type.",
+          "Radiant heat: confirm temperature limits and approved underlayment types.",
+        ],
+      },
+      {
         heading: "Waste and box rounding (real-world rules)",
         bullets: [
           "Pick a waste factor that matches layout complexity (diagonal installs cost more).",
           "Use label coverage per box and round up to whole boxes.",
           "Keep 1–2 boxes for future repairs if matching later matters.",
+        ],
+      },
+      {
+        heading: "Box rounding (worked example)",
+        paragraphs: [
+          "Flooring is purchased in whole boxes. A reliable approach is: area → apply waste → divide by box coverage from the label → round up.",
+          "Example: 420 sq ft with 10% waste is 462 sq ft. If a box covers 20 sq ft: 462/20 = 23.1, so you buy 24 boxes.",
+        ],
+      },
+      {
+        heading: "Direction and layout change waste",
+        bullets: [
+          "Diagonal layouts or many small rooms/closets increase waste.",
+          "Hallways and narrow runs create offcuts that are harder to reuse.",
+          "Strict staggering rules or patterned installs can increase waste.",
         ],
       },
       {
@@ -402,8 +493,8 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     related: [
       { label: "Flooring calculator", href: "/en/calculators/home-improvement/flooring" },
       { label: "Flooring guide", href: "/en/guides/home-improvement/flooring" },
-      { label: "Underlayment checklist", href: "/en/resources/flooring-underlayment-checklist" },
-      { label: "Flooring boxes rounding", href: "/en/resources/flooring-boxes-rounding" },
+      { label: "Flooring boxes guide", href: "/en/guides/home-improvement/flooring-boxes" },
+      { label: "Baseboard & trim calculator", href: "/en/calculators/home-improvement/baseboard-trim" },
     ],
   },
   {
@@ -821,10 +912,63 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Order for compacted thickness, but expect to place more loose material to reach the final compacted depth. Your supplier or compactor guidance is usually more reliable than generic percentages.",
         ],
       },
+      {
+        heading: "Bedding sand thickness (typical planning)",
+        table: {
+          columns: ["Layer", "Typical thickness", "Notes"],
+          rows: [
+            ["Compacted base", "4-12 in", "Depends on use case and soil"],
+            ["Bedding sand", "1 in (approx.)", "Not a thick leveling layer"],
+          ],
+        },
+      },
+      {
+        heading: "Sand: bedding vs leveling (why base matters)",
+        bullets: [
+          "Sand is typically a thin bedding layer, not a structural leveling layer.",
+          "Base stone and compaction control stability and drainage.",
+          "If you need to correct grade, fix base depth and compaction first.",
+        ],
+      },
+      {
+        heading: "Estimating tip (treat layers separately)",
+        paragraphs: [
+          "Estimate base stone and bedding sand as separate materials. Base depth is often ordered in cubic yards or tons; sand is a thinner layer with different density and delivery minimums.",
+        ],
+      },
+      {
+        heading: "Step-by-step base build (high level)",
+        bullets: [
+          "Excavate to the planned depth, accounting for paver thickness, bedding sand, and compacted base.",
+          "Set grade and slope for drainage before placing base material.",
+          "Place base in lifts and compact each lift (project dependent).",
+          "Screed a thin bedding sand layer and set pavers without using sand to “fix” base problems.",
+          "Install edge restraint before final joint sand so the field can’t spread.",
+        ],
+      },
+      {
+        heading: "Common mistakes that cause settlement",
+        bullets: [
+          "Using thick sand to correct grade instead of fixing the base.",
+          "Skipping compaction (or compacting only the top).",
+          "Ignoring drainage so water saturates the base and subgrade.",
+          "No edge restraint, allowing pavers to migrate and joints to open.",
+        ],
+      },
+      {
+        heading: "Ordering checklist",
+        bullets: [
+          "Confirm compacted base depth target for your use case and soil.",
+          "Order base and sand separately (different densities and delivery minimums).",
+          "Plan a small buffer for edge cuts, grading, and cleanup.",
+          "Confirm whether your supplier sells by cubic yard or ton and use their conversion.",
+        ],
+      },
     ],
     related: [
       { label: "Paver base calculator", href: "/en/calculators/home-improvement/paver-base" },
       { label: "Sand calculator", href: "/en/calculators/home-improvement/sand" },
+      { label: "Methodology", href: "/en/methodology" },
     ],
   },
   {
@@ -874,6 +1018,17 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Typical compacted thickness ranges (planning)",
+        table: {
+          columns: ["Project type", "Typical compacted thickness", "Reminder"],
+          rows: [
+            ["Resurface/overlay (good base)", "1.5–2 in", "Base problems still telegraph through"],
+            ["Residential driveway", "2–3 in", "Traffic and climate can push thicker"],
+            ["Heavy use/weak subgrade", "3–4+ in", "Often needs a stronger base too"],
+          ],
+        },
+      },
+      {
         heading: "Resurface vs rebuild",
         bullets: [
           "Resurface overlays can be thinner, but base problems still show through.",
@@ -882,15 +1037,59 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Base layer basics (the real driver of longevity)",
+        paragraphs: [
+          "If the base is weak, asphalt thickness alone won’t save the driveway. Most long-term failures are water and subgrade problems: poor drainage, pumping, and inadequate compaction.",
+        ],
+        bullets: [
+          "Fix grading and drainage first (water sitting on asphalt shortens life).",
+          "Estimate base stone separately; base thickness and compaction are project dependent.",
+          "Edge support matters: unsupported edges crumble faster under turning tires.",
+        ],
+      },
+      {
+        heading: "Tonnage math (simple check)",
+        paragraphs: [
+          "If you want a quick sanity check: volume (cu ft) = area (sq ft) × thickness (in/12). Compacted asphalt is often in the ~145 lb/cu ft range (varies), so tons ≈ (cu ft × 145) / 2000.",
+          "Example: 600 sq ft at 3 inches is 600 × (3/12) = 150 cu ft. 150 × 145 = 21,750 lb ≈ 10.9 tons. Then add waste/compaction allowances and confirm with your supplier/contractor.",
+        ],
+      },
+      {
+        heading: "Why conversions vary (density and compaction)",
+        bullets: [
+          "Different mixes and aggregate gradations have different densities.",
+          "Moisture, temperature, and compaction effort change the final density and thickness.",
+          "Edges, transitions, and handwork areas often run thicker than the “average” plan.",
+        ],
+      },
+      {
+        heading: "Truckloads and scheduling",
+        bullets: [
+          "Suppliers may have minimum order sizes; confirm before estimating to the decimal.",
+          "Plan where trucks can dump and how you will move mix without cold joints.",
+          "Hot mix has limited working time—schedule compaction and labor accordingly.",
+        ],
+      },
+      {
         heading: "Ordering note",
         paragraphs: [
           "Hot mix has limited working time. Confirm delivery schedule and placement plan so material is placed and compacted properly.",
+        ],
+      },
+      {
+        heading: "Ordering checklist (avoid last-minute shortages)",
+        bullets: [
+          "Confirm compacted thickness target (not just “a couple inches”).",
+          "Confirm mix type and whether pricing is short tons vs metric tonnes.",
+          "Plan access, truck turnaround, and where material will be dumped/staged.",
+          "Add a buffer for edges, transitions, and handwork areas.",
         ],
       },
     ],
     related: [
       { label: "Asphalt driveway calculator", href: "/en/calculators/home-improvement/asphalt-driveway" },
       { label: "Gravel calculator (base layer)", href: "/en/calculators/home-improvement/gravel" },
+      { label: "Methodology", href: "/en/methodology" },
     ],
   },
   {
@@ -940,11 +1139,52 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Linear feet to pieces (simple method)",
+        paragraphs: [
+          "A simple planning method is: pieces needed ≈ (total linear feet ÷ piece length) × (1 + waste). Then round up to whole pieces. Waste depends on corners and short runs.",
+          "Example: if you need 180 linear feet and pieces are 16 ft, the minimum is 180/16 = 11.25 → 12 pieces. If your layout is cut-up, adding 10–15% can be safer (12 × 1.15 = 13.8 → 14 pieces).",
+        ],
+        bullets: [
+          "Confirm piece length (8 ft, 12 ft, 16 ft) and availability for your profile.",
+          "Count inside/outside corners and short runs that create unusable offcuts.",
+          "If you need stain/finish match, buy extra from the same batch when possible.",
+        ],
+      },
+      {
         heading: "Waste drivers",
         bullets: [
           "Inside and outside corners (miter offcuts).",
           "Short wall runs that cannot reuse offcuts.",
           "Out-of-square rooms that force re-cuts and fitting.",
+        ],
+      },
+      {
+        heading: "Typical waste ranges (starting points)",
+        table: {
+          columns: ["Room complexity", "Common waste", "Why it increases"],
+          rows: [
+            ["Long simple runs", "5–10%", "Better reuse of offcuts"],
+            ["Typical rooms", "10–15%", "Corners and doors add short pieces"],
+            ["Very cut-up layouts", "15–25%", "Many corners, closets, and short runs"],
+          ],
+        },
+      },
+      {
+        heading: "Cut planning tips (reduces waste)",
+        bullets: [
+          "Use longer pieces on the most visible walls; hide joints behind doors/furniture when possible.",
+          "Plan scarf joints on long runs (stronger and less visible than square butt joints).",
+          "Coping inside corners can be more forgiving than perfect miters (project dependent).",
+          "Dry-fit tricky corners in scrap before cutting your finish pieces if the room is out of square.",
+        ],
+      },
+      {
+        heading: "Ordering checklist",
+        bullets: [
+          "Confirm piece length and profile availability (some profiles only come in certain lengths).",
+          "Decide on inside-corner method (miter vs cope) and outside corner returns (project dependent).",
+          "Plan for transitions to door casings, fireplaces, and stair trim where runs break.",
+          "Add extra for defects, damaged ends, and future repairs if matching later matters.",
         ],
       },
       {
@@ -1140,6 +1380,77 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Quick coverage chart (bags per 100 sq ft)",
+        paragraphs: [
+          "A quick way to plan bags is to convert depth to feet and use: bags = (area × depth in feet) ÷ bag cubic feet, then round up.",
+        ],
+        table: {
+          columns: ["Depth", "2 cu ft bags", "3 cu ft bags"],
+          rows: [
+            ['1" (0.083 ft)', "≈ 5 bags", "≈ 3–4 bags"],
+            ['2" (0.167 ft)', "≈ 9 bags", "≈ 6 bags"],
+            ['3" (0.25 ft)', "≈ 13 bags", "≈ 9 bags"],
+          ],
+        },
+      },
+      {
+        heading: "2 cu ft vs 3 cu ft bags (what changes)",
+        paragraphs: [
+          "The math is the same—only the bag volume changes. The practical difference is handling and rounding: you often end up buying one extra bag because you can’t buy partial bags.",
+        ],
+        bullets: [
+          "3 cu ft bags reduce total bag count, but each bag is heavier to carry and spread.",
+          "If color matching matters, buy enough in one batch; mixing lots can look uneven.",
+        ],
+      },
+      {
+        heading: "Depth selection (1 vs 2 vs 3 inches)",
+        table: {
+          columns: ["Depth", "Common use", "Reminder"],
+          rows: [
+            ['1"', "Top-up/refresh", "May not suppress weeds by itself"],
+            ['2"', "Most beds (general)", "A common balance of coverage and cost"],
+            ['3"+', "Deeper mulch look / erosion control (project dependent)", "Avoid piling against trunks; watch drainage near foundations"],
+          ],
+        },
+      },
+      {
+        heading: "Worked example",
+        paragraphs: [
+          "Example: 300 sq ft bed at 2 inches needs volume = 300 × (2/12) = 50 cu ft. If you use 2 cu ft bags: 50/2 = 25 bags (then add a small buffer for uneven edges).",
+        ],
+      },
+      {
+        heading: "Bulk vs bags (when to switch)",
+        paragraphs: [
+          "Bagged mulch is convenient for small projects. For larger beds, bulk delivery is often cheaper per cubic foot and saves carrying time. The tradeoff is delivery access and the need to move material from a pile.",
+        ],
+        bullets: [
+          "Compare total cubic feet: 1 cubic yard = 27 cubic feet (bags add up fast).",
+          "Plan space for delivery and tarps/wheelbarrow paths to protect lawns and driveways.",
+          "Confirm mulch type and moisture—coverage claims vary by product.",
+        ],
+      },
+      {
+        heading: "How to measure beds (fast method)",
+        bullets: [
+          "Break the bed into rectangles/triangles and add areas together.",
+          "For curved edges, measure an average width and multiply by length as a planning estimate.",
+          "Use multiple depth checks if the bed isn’t uniform (edges are often thinner).",
+        ],
+      },
+      {
+        heading: "Bags vs cubic yards (delivery comparison)",
+        paragraphs: [
+          "If you are comparing bag totals to bulk delivery, convert to cubic yards: cubic yards = cubic feet ÷ 27. Example: 54 cu ft is 2 cu yd. This makes price comparisons much easier.",
+        ],
+        bullets: [
+          "Bag coverage claims vary by brand; volume math is more reliable.",
+          "Plan edging and cleanup: mulch migrates without a defined border.",
+          "Avoid “mulch volcano” around trunks; keep mulch away from bark.",
+        ],
+      },
+      {
         heading: "Planning notes",
         bullets: [
           "Mulch settles after spreading and watering. A small buffer helps.",
@@ -1151,6 +1462,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     related: [
       { label: "Mulch bags calculator", href: "/en/calculators/home-improvement/mulch-bags" },
       { label: "Mulch calculator (bulk)", href: "/en/calculators/home-improvement/mulch" },
+      { label: "Mulch depth guide", href: "/en/guides/home-improvement/mulch-depth" },
     ],
   },
   {
@@ -1622,6 +1934,28 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Stud spacing (16\" vs 24\" on center)",
+        paragraphs: [
+          "At 24 inch spacing, you typically need fewer studs than 16 inch spacing. But corners, T-walls, openings, and code requirements can add studs beyond simple spacing math.",
+        ],
+        bullets: [
+          "Finishes matter: heavier finishes and some applications benefit from tighter spacing for stiffness.",
+          "Always follow local code and structural requirements for load-bearing walls.",
+        ],
+      },
+      {
+        heading: "Plates (top/bottom) are often underestimated",
+        paragraphs: [
+          "Walls typically need bottom plates and (often) double top plates, and lumber is purchased in standard stick lengths. After you estimate stud count, estimate plates as their own line item.",
+          "A simple starting point: plate linear feet = total wall length × number of plate runs (commonly 3 runs: one bottom + two top, but details vary). Then convert to stick counts and add a buffer for splices and cut waste.",
+        ],
+        bullets: [
+          "Stick count = plate LF ÷ stick length, rounded up.",
+          "Plates must splice over studs; short wall segments and many openings increase waste.",
+          "Corners and T-walls can require extra backing depending on your framing detail.",
+        ],
+      },
+      {
         heading: "Worked example (quick mental planning)",
         paragraphs: [
           "Suppose your baseline estimate is 50 studs for the straight runs. If your layout has 4 corners and 3 openings (2 windows and 1 door), you might add an allowance for corners plus an allowance for each opening. The exact number depends on the framing detail, but the important point is that openings and corners can change the total more than people expect in small rooms.",
@@ -1637,7 +1971,8 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
     related: [
       { label: "Studs calculator", href: "/en/calculators/home-improvement/studs" },
-      { label: "Stud spacing guide", href: "/en/resources/stud-spacing-16-vs-24-on-center" },
+      { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
+      { label: "Methodology", href: "/en/methodology" },
     ],
   },
   {
@@ -1780,6 +2115,45 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Should you subtract windows and doors?",
+        paragraphs: [
+          "For wallpaper, the limiting factor is often strips-per-roll, not pure wall area. Openings can reduce paper use, but they do not always reduce strip count because you still cut full-height strips and trim around openings.",
+        ],
+        bullets: [
+          "If you have a few standard doors/windows, many people do not subtract them and treat it as a buffer for alignment and mistakes.",
+          "If you have large openings (sliding doors, multiple big windows) and a low-repeat pattern, subtracting can help—but confirm strips-per-roll first.",
+          "If the pattern repeat is large, subtracting openings often doesn’t change roll count because pattern alignment drives waste.",
+        ],
+      },
+      {
+        heading: "Worked example (quick planning)",
+        paragraphs: [
+          "If one roll yields 3 full-height strips for your wall height and pattern, and you need 26 strips total, you need 26/3 = 8.67 → 9 rolls. Even if you have openings, strip count often stays similar because the strips are still full height.",
+        ],
+      },
+      {
+        heading: "Roll size and terminology (quick clarification)",
+        paragraphs: [
+          "Roll length and width vary by region and product. Some brands sell “double rolls” (two single rolls packaged together). Always check the label coverage/length so you don’t underbuy.",
+        ],
+        table: {
+          columns: ["What to check", "Why it matters", "Tip"],
+          rows: [
+            ["Roll width", "Determines strips per wall width", "Common widths vary by product"],
+            ["Roll length", "Determines strips per roll at your wall height", "Pattern repeat reduces usable length"],
+            ["Single vs double roll", "Changes how many rolls you need to buy", "Use label coverage, not assumptions"],
+          ],
+        },
+      },
+      {
+        heading: "A practical measuring method (strip-first)",
+        bullets: [
+          "Measure each wall width and count how many full-width strips you need for that wall (round up).",
+          "Use your wall height + trimming allowance and pattern repeat to determine strips-per-roll.",
+          "Add extra strips for mistakes and future repairs if matching later matters.",
+        ],
+      },
+      {
         heading: "Practical tip",
         paragraphs: [
           "Measure wall height carefully (including crown molding decisions). A small height difference can change how many full strips fit in a roll.",
@@ -1788,7 +2162,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
     related: [
       { label: "Wallpaper rolls calculator", href: "/en/calculators/home-improvement/wallpaper-rolls" },
-      { label: "Pattern repeat and waste", href: "/en/resources/wallpaper-pattern-repeat-waste" },
+      { label: "Methodology", href: "/en/methodology" },
     ],
   },
   {
@@ -3123,6 +3497,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Panel vs picket (what changes in your estimate)",
+        table: {
+          columns: ["Fence style", "Primary quantity", "Common extras to remember"],
+          rows: [
+            ["Panel fence", "Panels/sections", "Brackets, rails (if needed), stepped/racked adjustments"],
+            ["Picket fence", "Picket count + rail length", "Fasteners, spacing jig, extra pickets for damage"],
+          ],
+        },
+        bullets: [
+          "Gates and corners often require extra posts and stronger bracing regardless of style.",
+          "If the fence follows a slope, panel stepping/racking can change both layout and waste.",
+        ],
+      },
+      {
         heading: "Posts are not just length ÷ spacing",
         paragraphs: [
           "Corners, ends, and gates require extra posts and often extra bracing. If you do not plan these explicitly, you will under-buy posts and concrete.",
@@ -3135,6 +3523,35 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Gate posts often need to be stronger or deeper (project dependent).",
           "Hardware (hinges, latches) is a separate line item.",
           "Slope and terrain can require adjustments in panel stepping or racking.",
+        ],
+      },
+      {
+        heading: "Gate sag prevention (practical planning)",
+        bullets: [
+          "Wider/heavier gates sag more; plan stronger posts and hardware up front.",
+          "Use appropriate hinges and consider a gate brace/cable (project dependent).",
+          "Plan ground clearance and swing direction (driveway slope changes clearances).",
+          "If the gate must align with panels, plan latch-side adjustments before setting posts.",
+        ],
+      },
+      {
+        heading: "Post spacing and layout (quick rules)",
+        table: {
+          columns: ["Fence type", "Common spacing approach", "Reminder"],
+          rows: [
+            ["Panels", "Post-to-post matches panel length", "Corners/ends/gates add posts"],
+            ["Pickets", "Posts support rails (layout dependent)", "Rails and picket spacing drive counts"],
+            ["Sloped sites", "Step or rack panels (project dependent)", "Slope changes section count and waste"],
+          ],
+        },
+      },
+      {
+        heading: "Post holes and concrete (planning notes)",
+        bullets: [
+          "Post depth depends on fence height and local frost line guidance.",
+          "Gate posts often need deeper/stronger footings (project dependent).",
+          "Estimate concrete as its own line item and round up—running short mid-set is painful.",
+          "Drainage and soil type can change footing needs; confirm local practice.",
         ],
       },
       {
@@ -3151,8 +3568,8 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     related: [
       { label: "Fence calculator", href: "/en/calculators/home-improvement/fence" },
       { label: "Fence guide", href: "/en/guides/home-improvement/fence" },
-      { label: "Panel vs picket estimate", href: "/en/resources/fence-panel-vs-picket-estimate" },
       { label: "Post hole concrete guide", href: "/en/resources/fence-post-hole-concrete-guide" },
+      { label: "Fence posts guide", href: "/en/guides/home-improvement/fence-posts" },
     ],
   },
   {
