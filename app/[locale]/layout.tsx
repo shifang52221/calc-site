@@ -6,6 +6,8 @@ import { normalizeLocale } from "@/i18n/locale";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { CookieBanner } from "@/components/CookieBanner";
+import { AdSenseScript } from "@/components/AdSenseScript";
+import { ADSENSE_CLIENT } from "@/lib/adsense";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -33,6 +35,7 @@ export default async function LocaleLayout({
         </main>
         <SiteFooter locale={locale} />
         <CookieBanner />
+        <AdSenseScript clientId={ADSENSE_CLIENT} />
       </div>
     </NextIntlClientProvider>
   );
