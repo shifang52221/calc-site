@@ -30,7 +30,7 @@ export async function generateMetadata({
   if (!article) return {};
 
   return {
-    title: `${article.title} | ${SITE_NAME}`,
+    title: article.title,
     description: article.description,
     alternates: getAlternates(locale, `/resources/${redirected ?? slug}`),
   };
