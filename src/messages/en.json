@@ -425,6 +425,14 @@
       "t3": "Primer can reduce coats, but it is not \"free paint\".",
    "t4": "Batch-mix cans (boxing) for consistent color across walls."
   },
+  "quickTitle": "Quick checklist",
+  "quickIntro": "If you want a dependable paint estimate without overthinking it, use this checklist. It focuses on the decisions that change the number the most: what you measure, coats, realistic coverage, and a small buffer. If you're between two assumptions, choose the safer one and round up; it saves a second trip and avoids lot-matching headaches.",
+  "quick": {
+   "q1": "Measure each wall (width x height) and add them. If you're also painting the ceiling, estimate ceiling area separately because it often uses different paint and coverage. Subtract only large openings if you want a tighter estimate; for most rooms your buffer covers doors and typical windows.",
+   "q2": "Choose coats honestly. Two finish coats is common for new colors, patched walls, and big color changes. Primer is its own step: it can reduce finish coats or help stains, but it does not replace paint volume, and you still need to buy enough finish paint for the coats you plan.",
+   "q3": "Use realistic coverage, not ideal label numbers. Texture, porous drywall, and deep colors can cut coverage, and cutting-in around trim adds extra brushwork. If you're unsure, assume a lower coverage rate so you don't run out mid-wall and end up with lap marks or a mismatched batch.",
+   "q4": "Add 5-10% for touch-ups, cutting-in waste, and roller/brush loss, then round up to whole cans. If color matching later matters, buying one extra can from the same batch can save time and prevent subtle differences in sheen or tint."
+  },
   "mistakesTitle": "Common mistakes",
   "mistakes": {
    "m1": "Forgetting to multiply by coats (2 coats is common).",
@@ -713,6 +721,14 @@
    "t3": "Check local rules before you buy: setback requirements, maximum height, HOA style rules, and whether you need permits.",
    "t4": "Plan waste and future repairs. Buying an extra panel or extra pickets from the same batch can save you if one gets damaged or if the style is discontinued."
   },
+  "quickTitle": "Quick checklist",
+  "quickIntro": "Before you buy, sanity-check your fence layout and the posts that are easy to forget.",
+  "quick": {
+   "q1": "Sketch the fence and break it into straight runs. Measure run-by-run (between corners, ends, or gates) instead of using one diagonal backyard measurement.",
+   "q2": "Compute panels per run: (run length minus gate openings) / panel width, then round up. Check the last section so you don't end up forcing a tiny panel at the end.",
+   "q3": "Count posts explicitly: line posts are often panels + 1 per run, then add posts for every corner, end, and both sides of each gate. Gate and corner posts may need to be stronger or set deeper (project dependent).",
+   "q4": "Add the non-panel items: gates/hardware, concrete for post holes, and any special parts for slope installs. Verify local code/HOA limits before ordering materials you can't return."
+  },
   "ctaTitle": "Want panels and posts instantly?",
   "ctaBody": "Use our fence calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
@@ -748,6 +764,14 @@
    "t2": "Compaction reduces installed height; ordering slightly extra prevents shortages. If you're unsure, order the base first, compact and grade, then re-measure before ordering the top layer.",
    "t3": "Edging and containment keep gravel from spreading and reduce long-term maintenance. Without edging, some gravel will migrate into grass and walkways over time.",
    "t4": "Confirm the material type and supplier conversion if you're ordering by tons. Density varies by product and moisture; supplier tables are usually more reliable than generic averages."
+  },
+  "quickTitle": "Quick checklist",
+  "quickIntro": "A good gravel order comes from measuring the finished footprint, choosing the right depth per layer, and adding a realistic buffer for compaction and grade.",
+  "quick": {
+   "q1": "Measure the finished area (length x width) or break the shape into rectangles and add them. Estimate base and top layers separately if you're using different materials.",
+   "q2": "Use compacted (installed) depth for your target. Convert inches to feet before multiplying (in / 12), then convert cubic feet to cubic yards (divide by 27).",
+   "q3": "If ordering by tons, use your supplier's yards-to-tons conversion for the exact product and typical moisture. Density varies enough that generic averages can be off.",
+   "q4": "Add buffer for compaction, uneven grade, and edge loss, then round up to delivery quantities. It's usually cheaper to have a little extra than to pay a second delivery fee."
   },
   "ctaTitle": "Want the cubic yard estimate fast?",
   "ctaBody": "Use our gravel calculator and share a link that keeps your inputs.",
@@ -785,6 +809,14 @@
    "t3": "Confirm the material quality: screened topsoil spreads smoother; unscreened fill can contain rocks and clumps that slow grading. Compost blends can be better for planting than plain 'topsoil' (project dependent).",
    "t4": "If you're fixing drainage or slope, a grading plan matters more than the volume math. Soil alone won't solve a drainage problem if the shape of the ground is still wrong."
   },
+  "quickTitle": "Quick checklist",
+  "quickIntro": "Use this checklist to pick a realistic depth and order size for topsoil without guessing.",
+  "quick": {
+   "q1": "Decide the job: thin topdressing, adding planting depth, or raising/leveling grade. Different goals use very different depths and waste assumptions.",
+   "q2": "Measure the area you will actually cover and use an average depth (especially for leveling). Taking a few depth readings in highs and lows is usually better than using one \"worst spot\" depth for the whole area.",
+   "q3": "Convert to cubic yards for bulk delivery: area x depth (in feet) gives cubic feet, then divide by 27. If buying bags, convert using bag volume and round up to whole bags.",
+   "q4": "Add buffer for uneven grade, spreading loss, and settling after watering and rain. Rounding up is usually cheaper than a second delivery and helps you finish edges cleanly."
+  },
   "ctaTitle": "Want the cubic yard estimate fast?",
   "ctaBody": "Use our topsoil calculator and share a link that keeps your inputs.",
   "lastUpdated": "Last updated: Dec 2025",
@@ -821,6 +853,14 @@
    "t2": "Cut-ins around crown, walls, and fixtures consume more paint than people expect. If you have lots of edges or beams, allocate extra for cutting-in and for a clean second pass.",
    "t3": "Use a ceiling-appropriate sheen (often flat) and keep the same product for touch-ups. Even the same color can look different if the sheen or product line changes, especially under raking light.",
    "t4": "Sprayers can save time but increase paint usage through overspray and equipment loss. Masking and ventilation planning matters as much as the math when you are painting ceilings."
+  },
+  "quickTitle": "Quick checklist",
+  "quickIntro": "Ceilings are unforgiving: a little extra paint is usually cheaper than running out mid-room.",
+  "quick": {
+   "q1": "Measure all ceiling surfaces you will paint: trays, soffits, boxed beams, and vaulted planes (use sloped surface area, not floor footprint).",
+   "q2": "Pick coats and primer based on what you're covering. Stains, water marks, and big color changes often need primer and/or two finish coats (project dependent).",
+   "q3": "Assume lower real-world coverage for textured or thirsty ceilings, and plan extra if you're spraying because overspray and equipment loss add up.",
+   "q4": "Add a 5-10% buffer and round up to whole gallons/liters so you can keep a wet edge and finish in one batch. Keep the same product for touch-ups to avoid flashing."
   },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our paint calculator and share a link that keeps your inputs.",
@@ -894,6 +934,14 @@
    "t3": "Buy the same lot/batch when possible and mix planks from multiple boxes as you install to blend small color variation. Keep cartons labeled in case you need to match later.",
    "t4": "Store an unopened box flat in a dry area for future repairs. A spare box is especially helpful if a board gets damaged and the product is no longer stocked."
   },
+  "quickTitle": "Quick checklist",
+  "quickIntro": "If you want a reliable box count, do waste and rounding in the right order.",
+  "quick": {
+   "q1": "Measure each room (and closets/halls that get the same product) and add areas together. Keep units consistent (sq ft or m²).",
+   "q2": "Pick a waste factor that matches the install: about 5-10% for many straight installs, higher for diagonal/patterns, lots of small rooms, or many direction changes (project dependent).",
+   "q3": "Apply waste before converting to boxes: ordering area = floor area x (1 + waste). Then divide by your product's coverage per box from the label/spec.",
+   "q4": "Round up to whole boxes and consider keeping an extra unopened box for repairs and future lot matching. Returns are often easier than hunting for discontinued product later."
+  },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our flooring calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
@@ -929,6 +977,14 @@
    "t2": "If you're matching veins or patterns (especially marble-look tile), plan higher overage. Pattern consistency can force you to reject otherwise usable pieces.",
    "t3": "Order all tile at once to reduce color variation between dye lots/batches. Also buy trims and specialty pieces (bullnose, mosaic sheets) at the same time if you need a consistent look.",
    "t4": "Keep spares after installation for replacements and repairs. A single cracked tile later is easier to fix if you have matching material from the same lot."
+  },
+  "quickTitle": "Quick checklist",
+  "quickIntro": "Tile waste is mostly about layout risk. Use this checklist to choose overage before you order.",
+  "quick": {
+   "q1": "Pick the layout first. Straight-lay usually wastes less; diagonal, herringbone, and strict pattern matching usually require higher overage (project dependent).",
+   "q2": "Account for complexity: niches, benches, borders, many corners, and plumbing penetrations turn tiles into one-off custom pieces and increase breakage risk.",
+   "q3": "Round up to whole boxes and order everything at once to keep dye lots consistent. Buy trims and specialty pieces in the same order so the finish matches.",
+   "q4": "Plan for repairs: keep spares (often at least one extra box) so a future crack or plumbing repair doesn't force you to hunt for a close match."
   },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our tile calculator and share a link that keeps your inputs.",
@@ -1038,6 +1094,14 @@
    "t3": "Include overhangs and any attached roof sections. Small roofs are sensitive to small measurement errors, so double-check dimensions before ordering.",
    "t4": "Keep at least a little extra for repairs and for starter/ridge adjustments. Matching shingles later can be harder than storing one extra bundle (check return policy if you are unsure)."
   },
+  "quickTitle": "Quick checklist",
+  "quickIntro": "Use this checklist to get a practical bundle count (and avoid the missing-accessory problem).",
+  "quick": {
+   "q1": "Measure roof surface area, not just shed footprint. Include overhangs, and use a pitch factor if you only have horizontal dimensions (project dependent).",
+   "q2": "Convert to squares: squares = (sq ft / 100). Keep each roof plane separate if you want a tighter waste estimate on cut-heavy shapes.",
+   "q3": "Convert squares to bundles using the packaging/spec for your shingles (often 3 bundles per square, but not always). Starter strip and ridge cap (if used) have separate coverage numbers.",
+   "q4": "Add waste and round up. Simple rectangles often use around 10%, but add more for lots of trim, multiple planes, penetrations, or first-time installs (project dependent)."
+  },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our roofing calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
@@ -1110,6 +1174,14 @@
    "t3": "If you need exact tonnage for hauling limits, confirm the conversion before ordering and note whether the supplier uses short tons or metric tonnes.",
    "t4": "Ordering slightly extra is usually cheaper than paying a second delivery fee and trying to match material later (especially for decorative stone)."
   },
+  "quickTitle": "Quick checklist",
+  "quickIntro": "Yards-to-tons is only as accurate as the density you use, so treat supplier conversions as the source of truth. When in doubt, ask your supplier which ton unit they quote and what moisture condition they assume.",
+  "quick": {
+   "q1": "Start with a cubic yard estimate based on compacted (installed) depth. If you're estimating multiple layers, keep each layer separate so you don't mix products and densities.",
+   "q2": "Use the supplier's conversion for your exact product whenever possible. Moisture and gradation can change weight, so generic \"tons per yard\" averages are best for planning only.",
+   "q3": "Confirm the unit: short tons (2,000 lb) vs metric tonnes (1,000 kg). If you're hauling, ask the supplier what they load you to and whether it's measured or assumed.",
+   "q4": "Add buffer and round to delivery increments or minimum loads. In practice, truck size and fees often matter more than perfect math."
+  },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our gravel calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
@@ -1151,6 +1223,14 @@
    "t2": "Soil settles after watering and rain-extra helps you finish without a second delivery.",
    "t3": "A sand/soil blend can be easier to spread for leveling; confirm what's recommended for your grass type.",
    "t4": "Avoid burying grass too deeply at once-level in multiple thin passes if needed."
+  },
+  "quickTitle": "Quick checklist",
+  "quickIntro": "Leveling is about averages. This checklist helps you avoid using one worst-case depth and ordering exactly the calculated volume with no margin. A practical approach is to plan a thin blanket layer across the whole lawn, then estimate low spots separately. Even small depth changes add up quickly across a large area.",
+  "quick": {
+   "q1": "Measure only the area you will level (exclude beds and hardscape). Break the lawn into rectangles so you don't miss strips near fences or along paths. If the yard has distinct zones, estimate each zone separately so small areas don't distort the total.",
+   "q2": "Choose an average depth: thin topdressing across most of the lawn plus extra in low spots. Take a few depth readings in highs and lows and use a realistic average instead of one maximum number. For low spots, estimate their area and the extra depth beyond the blanket layer, then add that volume on top.",
+   "q3": "Convert inches to feet before multiplying, then convert cubic feet to cubic yards (divide by 27). If using bags, convert using bag volume and round up because you can't buy partial bags. If you work in metric, convert to cubic meters first and then to whatever unit your supplier sells.",
+   "q4": "Add buffer for settling, spread loss, and low spots you discover while raking. Plan for wheelbarrow/spillage loss and for the reality that you often find new lows after the first pass. If you're building up more than about an inch, consider leveling in multiple thin passes so you don't smother grass (project dependent)."
   },
   "mistakesTitle": "Common mistakes",
   "mistakes": {

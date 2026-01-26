@@ -425,6 +425,14 @@
       "t3": "La imprimación puede reducir manos, pero no es “pintura gratis”.",
       "t4": "Mezcla latas (boxing) para mantener el color uniforme."
     },
+    "quickTitle": "Checklist rapido",
+    "quickIntro": "Si quieres un estimado confiable sin complicarte, revisa estos puntos antes de comprar.",
+    "quick": {
+      "q1": "Suma el area de paredes (ancho x alto). Si tambien pintas el techo, estimarlo aparte. Resta solo aberturas grandes; el margen suele cubrir puertas y ventanas normales.",
+      "q2": "Define manos: 2 manos es comun en cambios de color o parches. La imprimacion es un paso aparte; puede ayudar a cubrir manchas, pero no reemplaza la pintura final.",
+      "q3": "Usa una cobertura realista. Textura, porosidad y colores intensos reducen la cobertura; si dudas, asume menos para no quedarte corto a mitad del trabajo.",
+      "q4": "Agrega 5-10% de margen y redondea a latas enteras. Si importa igualar color luego, compra una lata extra del mismo lote."
+    },
     "mistakesTitle": "Errores comunes",
     "mistakes": {
       "m1": "Olvidar multiplicar por manos (2 manos es común).",
@@ -713,6 +721,14 @@
       "t3": "Confirma reglas locales/HOA antes de comprar.",
       "t4": "Considera desperdicio si cortarás paneles."
     },
+    "quickTitle": "Checklist rapido",
+    "quickIntro": "Antes de comprar, revisa el plano de la cerca y los postes que suelen olvidarse.",
+    "quick": {
+      "q1": "Haz un croquis y divide la cerca en tramos rectos (entre esquinas, finales o portones). Mide tramo por tramo para no subestimar.",
+      "q2": "Calcula paneles por tramo: (longitud del tramo menos aberturas de portón) / ancho del panel, luego redondea hacia arriba. Revisa el último tramo para evitar un panel demasiado pequeño.",
+      "q3": "Cuenta postes explícitamente: en tramos rectos suele ser paneles + 1, y suma postes para cada esquina, final y ambos lados de cada portón (según el caso).",
+      "q4": "Agrega herrajes, concreto para hoyos y piezas especiales por pendiente. Verifica reglas locales/HOA y permisos antes de comprar materiales difíciles de devolver."
+    },
     "ctaTitle": "¿Quieres paneles y postes al instante?",
     "ctaBody": "Usa nuestra calculadora de cerca y comparte un enlace con tus datos.",
     "faqTitle": "Preguntas frecuentes",
@@ -748,6 +764,14 @@
       "t2": "La compactación reduce la altura instalada.",
       "t3": "Bordes/contención ayudan a que la grava no se desplace.",
       "t4": "Si compras por toneladas, confirma la densidad con tu proveedor."
+    },
+    "quickTitle": "Checklist rapido",
+    "quickIntro": "Para pedir grava sin quedarte corto: mide el area final, define profundidad por capa y suma margen por compactacion.",
+    "quick": {
+      "q1": "Mide el area terminada (largo x ancho) o divide la forma en rectangulos y suma. Si hay base y capa superior, estima cada capa por separado.",
+      "q2": "Usa profundidad instalada/compactada. Convierte pulgadas a pies antes de multiplicar y luego a yardas cubicas (divide por 27).",
+      "q3": "Si compras por toneladas, usa la conversion del proveedor para el material exacto (la densidad cambia segun producto y humedad).",
+      "q4": "Agrega margen por compactacion, desniveles y perdida en bordes, y redondea a cantidades de entrega."
     },
     "ctaTitle": "¿Quieres la estimación rápida?",
     "ctaBody": "Usa nuestra calculadora de grava y comparte un enlace con tus datos.",
@@ -785,6 +809,14 @@
       "t3": "Confirma si necesitas tierra cernida para un acabado más fino.",
       "t4": "Para drenaje o pendientes, considera un plan de nivelación antes de comprar."
     },
+    "quickTitle": "Checklist rapido",
+    "quickIntro": "Para pedir tierra vegetal sin adivinar: define el objetivo, usa profundidad promedio y suma margen realista.",
+    "quick": {
+      "q1": "Define el trabajo: topdressing delgado, añadir profundidad de plantación o subir/nivelar terreno. Cada objetivo usa profundidades muy distintas.",
+      "q2": "Mide el área real y usa una profundidad promedio (especialmente en nivelación). Varias mediciones en altos y bajos suelen ser más fiables que un solo punto.",
+      "q3": "Convierte a yardas cúbicas: área x profundidad (en pies) = ft³, luego divide por 27. Si compras bolsas, convierte por volumen de la bolsa y redondea hacia arriba.",
+      "q4": "Agrega margen por desniveles, pérdida al esparcir y asentamiento tras riego/lluvia. Si te importa el acabado, considera tierra cernida y compra suficiente del mismo tipo."
+    },
     "ctaTitle": "¿Quieres la estimación rápida?",
     "ctaBody": "Usa nuestra calculadora de tierra vegetal y comparte un enlace con tus datos.",
     "lastUpdated": "Última actualización: dic 2025",
@@ -821,6 +853,14 @@
       "t2": "Recortar alrededor de molduras consume más que rodillar; guarda un poco extra para bordes y retoques.",
       "t3": "La pintura mate para techo se retoca distinto que satinada: conserva el mismo producto para reparaciones.",
       "t4": "Si usas pistola, considera pérdida por equipo y sobrepulverización; un margen mayor ayuda."
+    },
+    "quickTitle": "Checklist rapido",
+    "quickIntro": "En techos, quedarse sin pintura a mitad del trabajo se nota. Esta lista ayuda a estimar con margen.",
+    "quick": {
+      "q1": "Mide todas las superficies del techo: bandejas, plafones, vigas cajón y planos inclinados (usa el área inclinada, no la huella del piso).",
+      "q2": "Define manos e imprimación según lo que cubres. Manchas y cambios grandes suelen necesitar imprimación y/o dos manos (según el caso).",
+      "q3": "Asume menor cobertura real en techos con textura o muy porosos, y planifica extra si pulverizas por pérdida de equipo y overspray.",
+      "q4": "Agrega 5-10% de margen y redondea a galones/litros completos para poder mantener borde húmedo y terminar con el mismo lote."
     },
     "ctaTitle": "¿Quieres una estimación rápida?",
     "ctaBody": "Usa nuestra calculadora de pintura y comparte un enlace que guarda tus datos.",
@@ -894,6 +934,14 @@
       "t3": "Compra todas las cajas del mismo lote cuando sea posible.",
       "t4": "Guarda una caja sin abrir para reparaciones futuras."
     },
+    "quickTitle": "Checklist rapido",
+    "quickIntro": "Para un conteo confiable, aplica desperdicio antes de dividir por cobertura y luego redondea.",
+    "quick": {
+      "q1": "Mide cada habitación (y closets/pasillos con el mismo piso) y suma el área total. Mantén unidades consistentes (ft² o m²).",
+      "q2": "Elige un desperdicio acorde al diseño: 5-10% en muchos patrones rectos, más en diagonal/patrones y en espacios con muchos cortes (según el caso).",
+      "q3": "Aplica desperdicio antes de convertir a cajas: área de compra = área x (1 + desperdicio). Luego divide por la cobertura por caja del producto.",
+      "q4": "Redondea a cajas completas y considera una caja extra para reparaciones y para igualar el lote en el futuro."
+    },
     "ctaTitle": "¿Quieres una estimación rápida?",
     "ctaBody": "Usa nuestra calculadora de pisos y comparte un enlace que guarda tus datos.",
     "faqTitle": "Preguntas frecuentes",
@@ -929,6 +977,14 @@
       "t2": "Si necesitas alinear vetas o patrones, planifica más margen.",
       "t3": "Ordena todo de una vez para minimizar variaciones de color por lote.",
       "t4": "Guarda sobrantes para reemplazos."
+    },
+    "quickTitle": "Checklist rapido",
+    "quickIntro": "El desperdicio depende del diseño y la complejidad. Esta lista ayuda a elegir margen antes de ordenar.",
+    "quick": {
+      "q1": "Define el patrón primero. Recto suele desperdiciar menos; diagonal/espiga y el alineado estricto de vetas suelen necesitar más margen (según el caso).",
+      "q2": "Cuenta la complejidad: nichos, bancas, muchas esquinas y penetraciones de plomería convierten piezas en recortes únicos y suben el riesgo de rotura.",
+      "q3": "Redondea a cajas completas y ordena todo en una sola compra para mantener el mismo lote. Compra también molduras y piezas especiales en el mismo pedido.",
+      "q4": "Planifica reparaciones: guarda repuestos (a menudo al menos una caja extra) para no depender de conseguir el mismo tono después."
     },
     "ctaTitle": "¿Quieres una estimación rápida?",
     "ctaBody": "Usa nuestra calculadora de azulejos y comparte un enlace que guarda tus datos.",
@@ -1038,6 +1094,14 @@
       "t3": "Incluye aleros/voladizos en las medidas.",
       "t4": "Compra un poco extra para reparaciones: igualar lote después puede ser difícil."
     },
+    "quickTitle": "Checklist rapido",
+    "quickIntro": "Para contar bultos sin sorpresas, mide el área real inclinada y no olvides accesorios.",
+    "quick": {
+      "q1": "Mide el área del techo que se va a cubrir (área inclinada), incluyendo voladizos. Si solo tienes medidas horizontales, usa un factor de pendiente (según el caso).",
+      "q2": "Convierte a squares: squares = ft² / 100. Si hay varios planos, calcula cada uno y suma.",
+      "q3": "Convierte squares a bultos según tu producto (a menudo ~3 bultos por square, pero varía). Starter y cumbrera (si aplica) tienen coberturas separadas.",
+      "q4": "Agrega desperdicio y redondea. Techos simples suelen usar ~10%, pero sube el margen si hay muchos cortes, penetraciones o si es tu primera instalación."
+    },
     "ctaTitle": "¿Quieres una estimación rápida?",
     "ctaBody": "Usa nuestra calculadora de techos y comparte un enlace que guarda tus datos.",
     "faqTitle": "Preguntas frecuentes",
@@ -1110,6 +1174,14 @@
       "t3": "Si necesitas tonelaje exacto por límites de transporte, confirma densidad antes de ordenar.",
       "t4": "Un poco extra puede evitar una segunda entrega."
     },
+    "quickTitle": "Checklist rapido",
+    "quickIntro": "La conversión de yardas a toneladas depende de la densidad, así que toma la tabla del proveedor como referencia.",
+    "quick": {
+      "q1": "Empieza con una estimación en yardas cúbicas basada en profundidad instalada/compactada. Si hay varias capas o productos, calcula cada uno por separado.",
+      "q2": "Usa la conversión del proveedor para el producto exacto cuando sea posible. La humedad y la granulometría cambian el peso, y los promedios genéricos pueden fallar.",
+      "q3": "Confirma la unidad: ton corta (2,000 lb) vs tonelada métrica (1,000 kg). Si hay límites de carga, valida el número antes de pedir.",
+      "q4": "Agrega margen y redondea a incrementos de entrega o carga mínima. En la práctica, el tamaño del camión y las tarifas pesan más que la matemática perfecta."
+    },
     "ctaTitle": "¿Quieres una estimación rápida?",
     "ctaBody": "Usa nuestra calculadora de grava y comparte un enlace que guarda tus datos.",
     "faqTitle": "Preguntas frecuentes",
@@ -1151,6 +1223,14 @@
       "t2": "El suelo se asienta con riego y lluvia: un poco extra ayuda a terminar.",
       "t3": "Una mezcla de arena y tierra puede ser más fácil de esparcir para nivelar.",
       "t4": "Evita enterrar el césped demasiado de una sola vez: haz varias pasadas finas."
+    },
+    "quickTitle": "Checklist rapido",
+    "quickIntro": "Nivelar es trabajar con promedios. Esta lista evita usar la profundidad maxima en todo el cesped y quedarte corto por asentamiento.",
+    "quick": {
+      "q1": "Mide solo el area que vas a nivelar (excluye canteros y superficies duras). Divide el cesped en rectangulos para no olvidar tiras angostas.",
+      "q2": "Elige una profundidad promedio: capa fina en todo + extra en zonas bajas. Si puedes, toma varias medidas y usa un promedio realista.",
+      "q3": "Convierte pulgadas a pies antes de multiplicar y luego a yardas cubicas (divide por 27). Si compras bolsas, convierte por volumen de la bolsa y redondea hacia arriba.",
+      "q4": "Agrega margen por asentamiento y perdida al esparcir. Si vas a subir mucho, haz varias pasadas finas (segun el caso)."
     },
     "mistakesTitle": "Errores comunes",
     "mistakes": {

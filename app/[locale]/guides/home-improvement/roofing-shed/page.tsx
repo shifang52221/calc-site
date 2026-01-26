@@ -91,6 +91,19 @@ export default async function RoofingShedGuidePage({
         </ul>
       </section>
 
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("quickTitle")}
+        </h2>
+        <p>{t("quickIntro")}</p>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t("quick.q1")}</li>
+          <li>{t("quick.q2")}</li>
+          <li>{t("quick.q3")}</li>
+          <li>{t("quick.q4")}</li>
+        </ul>
+      </section>
+
       <GuideExtraContent locale={locale} guideId="roofing-shed" />
 
       <GuideReferenceSection locale={locale} guideId="roofing-shed" />
