@@ -28,9 +28,21 @@ Pillar upgrades:
 - `paint-planning-complete-guide`: added coverage/ceiling buffer bullets.
 - `paint-trim-enamel-selection-and-prep`: added linear-feet-to-area method and common misses.
 
-## Batch 2 (proposed): 24 micro resources to consolidate
+## Batch 2 (done): 24 micro resources to consolidate
 
 Note: when implementing, merge each micro article’s unique content into its target pillar before enabling the redirect.
+
+Pillar upgrades completed (high level):
+
+- `drywall-materials-and-finishing-guide`: added finish level overview, board types, ceiling thickness guidance, waste ranges, and room-size sanity checks.
+- `deck-planning-materials-and-layout-guide`: added diagonal/border waste table and a framing checklist.
+- `deck-mud-coverage-chart`: added mix ratio and slope/average-thickness guidance.
+- `tile-project-planning-guide`: added box-coverage checklist and waste-reduction tips; updated related links to non-redirected resources.
+- `tile-grout-selection-and-coverage-guide`: added coverage drivers and a sanded-vs-unsanded checklist; updated related links to non-redirected resources.
+- `topsoil-coverage-chart`: added bag conversions (liters/cubic feet) and worked example.
+- `topsoil-leveling-step-by-step-guide`: added feathering workflow and checklist.
+- `concrete-bag-yield-guide`: added slab volume table and thickened-edge notes/examples.
+- `gravel-yards-to-tons-guide`: added tons-vs-tonnes unit clarification.
 
 ### Drywall (8)
 

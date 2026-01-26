@@ -47,6 +47,36 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Mix ratio and consistency (dry pack basics)",
+        paragraphs: [
+          "Deck mud (dry pack) is intentionally low-water and packable. The goal is a stable, shaped bed you can compact and screed flat or to slope.",
+          "Ratios vary by application and local practice, but many mixes start around 5:1 sand-to-cement by volume. Follow your waterproofing/system guidance for critical installs.",
+        ],
+        table: {
+          columns: ["Ratio (by volume)", "Use note", "Reminder"],
+          rows: [
+            ["5:1 sand:cement", "Common starting point", "Follow system guidance"],
+            ["4:1 sand:cement", "Sometimes for higher strength", "Workability changes"],
+          ],
+        },
+        bullets: [
+          "Use a consistent container for volume ratios and measure water the same way each batch.",
+          "Squeeze test: it should hold together when squeezed, but it should not ooze water.",
+          "Mix thoroughly before adding more water; dry pockets create weak areas.",
+        ],
+      },
+      {
+        heading: "Slope planning: estimate by average thickness",
+        paragraphs: [
+          "A sloped bed is thicker at the perimeter than at the drain. Estimate volume using average thickness: measure your high and low points and average them.",
+        ],
+        bullets: [
+          "Confirm the waterproofing system and drain type first; they determine build-up.",
+          "Prefer fewer “surprises” mid-bed: estimate total volume, plan batches, and round up to avoid cold joints.",
+          "If you must patch or blend batches, aim for consistent mix feel so finish texture stays uniform.",
+        ],
+      },
+      {
         heading: "Practical notes",
         bullets: [
           "Use average thickness. If you are correcting slope, measure high and low points and average them.",
@@ -302,6 +332,18 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Feathering in practice (avoid sharp edges)",
+        paragraphs: [
+          "Instead of dumping soil into a low spot with a sharp edge, spread the transition so thickness tapers gradually. This makes it easier to rake flat and avoids creating a “lip” that catches water or a mower wheel.",
+          "Most low spots are deeper in the center and taper toward the edges—so your estimate should be based on an average thickness, not the deepest point.",
+        ],
+        bullets: [
+          "Mark the low area and the feathering zone (it is usually bigger than the low spot).",
+          "Measure several depths, average them, then add a small buffer for settling.",
+          "Water lightly and re-check after settling; some projects need a second light top-up.",
+        ],
+      },
+      {
         heading: "Step 4: settle and plan touch-ups",
         bullets: [
           "Water and lightly roll if appropriate for your project; expect settling.",
@@ -313,8 +355,8 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     related: [
       { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
       { label: "Topsoil leveling guide", href: "/en/guides/home-improvement/topsoil-leveling" },
-      { label: "Feathering guide", href: "/en/resources/topsoil-leveling-feathering-guide" },
       { label: "Topsoil coverage chart", href: "/en/resources/topsoil-coverage-chart" },
+      { label: "Topsoil vs compost blends", href: "/en/resources/topsoil-vs-compost-blends-for-lawns-and-beds" },
     ],
   },
   {
@@ -565,6 +607,27 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Order in whole increments you can handle: bags, half-yard, or full-yard deliveries depending on access.",
         ],
       },
+      {
+        heading: "Bagged topsoil: cubic feet and liters (quick conversions)",
+        paragraphs: [
+          "Bagged topsoil is commonly labeled in cubic feet or liters. Convert everything to cubic feet (or cubic yards) first, then round up to whole bags.",
+          "Helpful conversions: 1 cubic yard = 27 cubic feet. 1 cubic foot ≈ 28.3 liters.",
+        ],
+        table: {
+          columns: ["Liters", "Cubic feet (approx.)", "Common note"],
+          rows: [
+            ["25 L", "0.88 cu ft", "Small bag"],
+            ["40 L", "1.41 cu ft", "Common bag size"],
+            ["50 L", "1.77 cu ft", "Common bag size"],
+            ["60 L", "2.12 cu ft", "Large bag"],
+          ],
+        },
+        bullets: [
+          "Worked example: need 18 cu ft and your bag is 40 L (≈ 1.41 cu ft). 18 / 1.41 ≈ 12.8, so buy 13 bags (plus a small buffer for leveling).",
+          "If the project is large, compare bag totals to bulk delivery; bags add up quickly in both cost and carrying time.",
+          "Bulk topsoil is often cheaper per unit, but quality varies by supplier—confirm screening/organic content if it matters for your project.",
+        ],
+      },
     ],
     related: [
       { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
@@ -697,6 +760,23 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["Road base", "1.3-1.6", "Varies by fines and moisture"],
           ],
         },
+      },
+      {
+        heading: "Tons vs tonnes (avoid unit mix-ups)",
+        paragraphs: [
+          "A “ton” is not always the same unit. In the US, many suppliers use short tons (2000 lb). Many other regions quote metric tonnes (2204.62 lb). Mixing them up can shift a quote by about 10%.",
+        ],
+        table: {
+          columns: ["Unit", "Equals", "Note"],
+          rows: [
+            ["1 short ton (US)", "2000 lb", "Common in the US"],
+            ["1 metric tonne", "2204.62 lb", "Common outside the US"],
+          ],
+        },
+        bullets: [
+          "If a quote says “ton” without specifying, confirm the unit in writing before ordering.",
+          "Quick check: 1 metric tonne ≈ 1.102 short tons.",
+        ],
       },
       {
         heading: "Best practice",
@@ -1001,11 +1081,35 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Quick volume per 100 sq ft (common slab thicknesses)",
+        table: {
+          columns: ["Thickness", "Volume per 100 sq ft", "Notes"],
+          rows: [
+            ['3" (0.25 ft)', "0.93 cu yd", "Thin slab; confirm suitability"],
+            ['4" (0.33 ft)', "1.23 cu yd", "Very common for pads/driveways"],
+            ['5" (0.42 ft)', "1.54 cu yd", "Heavier loads / some driveways"],
+            ['6" (0.50 ft)', "1.85 cu yd", "Common for heavier duty slabs"],
+          ],
+        },
+      },
+      {
         heading: "Rule of thumb (use the label when possible)",
         bullets: [
           "80 lb bags often yield around 0.6 cu ft (varies by product).",
           "60 lb bags often yield around 0.45 cu ft (varies by product).",
           "50 lb bags often yield around 0.375 cu ft (varies by product).",
+        ],
+      },
+      {
+        heading: "Do not forget thickened edges (a common under-order)",
+        paragraphs: [
+          "Many slabs include thickened edges or footings. If you ignore them, you can come up short even if the slab volume is correct. Treat thickened edges as a separate volume line item.",
+          "Example: a 12 ft × 20 ft slab at 4 inches is ~2.96 cu yd. If all four edges are thickened to 12 inches deep and 12 inches wide, the extra thickened portion is ~1.58 cu yd—often a meaningful add-on.",
+        ],
+        bullets: [
+          "Slab volume = area × slab thickness.",
+          "Thickened edge volume = edge length × thickened width × (thickened depth − slab thickness).",
+          "If you have multiple thickened zones, calculate each one and add them.",
         ],
       },
       {
@@ -2763,6 +2867,15 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Box coverage checklist (avoid unit mistakes)",
+        bullets: [
+          "Use the label coverage per box (sq ft or m²), not tile dimensions alone.",
+          "Add overage for layout complexity before converting to boxes.",
+          "Round up to whole boxes; partial boxes are not practical to buy.",
+          "Estimate trim, mosaics, and borders separately.",
+        ],
+      },
+      {
         heading: "Practical buying rules",
         bullets: [
           "Round up: one extra box is cheaper than a lot mismatch mid-project.",
@@ -2770,12 +2883,21 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "If tile may be back-ordered, buy everything at once and store it safely.",
         ],
       },
+      {
+        heading: "Tips that reduce waste (without under-buying)",
+        bullets: [
+          "Plan layout so cut pieces land in less-visible areas when possible.",
+          "Increase overage for large-format or fragile tile; breakage risk matters.",
+          "Keep a few spares for future repairs; matching later can be difficult.",
+        ],
+      },
     ],
     related: [
       { label: "Tile calculator", href: "/en/calculators/home-improvement/tile" },
       { label: "Tile guide", href: "/en/guides/home-improvement/tile" },
-      { label: "Tile waste percentage guide", href: "/en/resources/tile-waste-percentage-guide" },
-      { label: "Tile box coverage checklist", href: "/en/resources/tile-box-coverage-checklist" },
+      { label: "Tile waste guide", href: "/en/guides/home-improvement/tile-waste" },
+      { label: "Tile grout guide", href: "/en/resources/tile-grout-selection-and-coverage-guide" },
+      { label: "Tile waterproofing guide", href: "/en/resources/tile-waterproofing-and-membranes-guide" },
     ],
   },
   {
@@ -2807,6 +2929,86 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Finish levels (quick overview)",
+        table: {
+          columns: ["Finish level", "Typical use", "Material impact"],
+          rows: [
+            ["Level 2", "Garages/utility", "Lower compound use"],
+            ["Level 4", "Most painted walls", "More coats and sanding"],
+            ["Level 5", "Critical lighting/smooth", "Highest compound use"],
+          ],
+        },
+      },
+      {
+        heading: "Board types (moisture, fire-rated, and ceilings)",
+        table: {
+          columns: ["Type", "Typical use", "Reminder"],
+          rows: [
+            ["Regular drywall", "Most dry interior rooms", "Match thickness to framing and local code"],
+            ["Moisture-resistant", "Bathrooms/laundry (non-shower areas)", "Not a substitute for waterproofing"],
+            ["Fire-rated (Type X)", "Garages/required assemblies", "Follow local code requirements"],
+            ["Sag-resistant / ceiling board", "Ceilings", "Helps reduce sag on wider spans"],
+          ],
+        },
+        bullets: [
+          "Board type choices don’t usually change sheet count, but they affect cost and availability—estimate specialty board as its own line item.",
+          "Do not assume moisture-resistant board makes a shower waterproof; waterproofing is a system.",
+        ],
+      },
+      {
+        heading: "Ceiling thickness (1/2 vs 5/8): a quick decision",
+        table: {
+          columns: ["Ceiling framing (typical)", "Common thickness", "Why"],
+          rows: [
+            ['16\" on center', '1/2\" or 5/8\"', "Both can be acceptable; check code and product"],
+            ['24\" on center', '5/8\" (often)', "Better sag resistance across wider spacing"],
+          ],
+        },
+        bullets: [
+          "If the ceiling will be under strong directional light, stiffer board usually looks flatter.",
+          "If you are working alone, smaller/lighter sheets can be safer even if seam count increases.",
+          "Sketch the ceiling and keep butt joints away from the most noticeable sight lines when possible.",
+        ],
+      },
+      {
+        heading: "Mud, tape, and texture: what drives usage",
+        bullets: [
+          "Finish level: higher levels generally mean more compound and sanding.",
+          "Seam count: more seams and patches mean more tape and compound.",
+          "Corners: inside corners consume tape and compound faster than people expect.",
+          "Texture type and tool (spray vs hopper vs trowel) change coverage and waste.",
+          "Second coats and blending repairs can approach a full extra coat on some textures.",
+        ],
+      },
+      {
+        heading: "Waste factors (how much extra to buy)",
+        table: {
+          columns: ["Project type", "Typical waste", "Notes"],
+          rows: [
+            ["Large simple rooms", "8-12%", "Better reuse of offcuts"],
+            ["Many small rooms", "12-18%", "More corners and short runs"],
+            ["Ceilings / tricky access", "12-20%", "Handling decisions add cuts"],
+          ],
+        },
+        paragraphs: [
+          "Waste includes cutouts, breakage, and offcuts that cannot be reused. It also includes rounding to whole sheets and layout decisions that change seam placement.",
+        ],
+      },
+      {
+        heading: "Room-size examples (sanity check)",
+        paragraphs: [
+          "These examples assume a simple rectangular room and do not subtract openings. Add a waste factor and round up to whole sheets.",
+        ],
+        table: {
+          columns: ["Room size", "Wall height", "Wall area (approx.)"],
+          rows: [
+            ["10x10 ft", "8 ft", "320 sq ft"],
+            ["12x12 ft", "8 ft", "384 sq ft"],
+            ["12x16 ft", "8 ft", "448 sq ft"],
+          ],
+        },
+      },
+      {
         heading: "Seams, corners, and repairs (why area alone is not enough)",
         paragraphs: [
           "Seam length is driven by layout. Corners, soffits, and repairs add tape and compound but do not always show up in area math. If the room is complex, increase your waste and buffer.",
@@ -2828,8 +3030,9 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     related: [
       { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
       { label: "Drywall guide", href: "/en/guides/home-improvement/drywall" },
-      { label: "Mud and tape estimating", href: "/en/resources/drywall-mud-and-tape-estimating" },
-      { label: "Drywall finish levels", href: "/en/resources/drywall-finish-levels-0-5" },
+      { label: "Drywall ceiling guide", href: "/en/guides/home-improvement/drywall-ceiling" },
+      { label: "Drywall mud & tape calculator", href: "/en/calculators/home-improvement/drywall-mud-tape" },
+      { label: "Drywall texture calculator", href: "/en/calculators/home-improvement/drywall-texture" },
     ],
   },
   {
@@ -2853,9 +3056,39 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Diagonal and borders: quick waste ranges",
+        table: {
+          columns: ["Layout", "Typical waste", "Notes"],
+          rows: [
+            ["Straight", "5-10%", "Fewer angle cuts"],
+            ["Diagonal", "10-15%", "More cutoffs"],
+            ["Picture frame + diagonal", "12-20%", "Miter waste adds up"],
+          ],
+        },
+        bullets: [
+          "Posts, stairs, borders, and lots of cut interruptions push waste higher.",
+          "If color matching matters (some composite products), buying enough up front is safer than topping up later.",
+        ],
+      },
+      {
         heading: "Stairs: estimate as a separate line item",
         paragraphs: [
           "Stairs can add board count quickly. Treat steps and landings separately rather than hoping the main deck waste covers them. If you are planning a border or diagonal pattern, expect more waste on stairs.",
+        ],
+      },
+      {
+        heading: "Framing checklist (joists, beams, posts, and hardware)",
+        paragraphs: [
+          "A deck board estimate covers surface boards. Framing includes joists, beams, posts, connectors, and fasteners. Framing needs depend on span, spacing, and local requirements, so estimate framing as a separate list.",
+        ],
+        bullets: [
+          "Joist spacing (often 12/16/24\" on center depending on decking and code)",
+          "Beam layout and spans (affects beam size and post count)",
+          "Ledger vs freestanding design (changes hardware and flashing needs)",
+          "Railing and stair loads (adds blocking and connectors)",
+          "Joist hangers and hanger nails/screws",
+          "Post bases, brackets, and anchor hardware",
+          "Ledger flashing and waterproofing details",
         ],
       },
       {
@@ -2872,8 +3105,8 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     related: [
       { label: "Deck calculator", href: "/en/calculators/home-improvement/deck" },
       { label: "Deck guide", href: "/en/guides/home-improvement/deck" },
-      { label: "Board gap and coverage", href: "/en/resources/deck-board-gap-and-coverage" },
-      { label: "Diagonal waste guide", href: "/en/resources/deck-diagonal-waste-guide" },
+      { label: "Board feet explained", href: "/en/resources/board-feet-explained" },
+      { label: "Baseboard waste tips", href: "/en/resources/baseboard-trim-waste-tips" },
     ],
   },
   {
@@ -2952,11 +3185,28 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Coverage drivers (what changes bag count)",
+        bullets: [
+          "Tile size: smaller tiles have more grout lines per square foot.",
+          "Joint width: wider joints use more grout.",
+          "Joint depth: thicker tile and deeper joints increase usage.",
+          "Waste: mixing loss, cleanup, and rounding to whole bags.",
+        ],
+      },
+      {
         heading: "Practical rules for estimating grout",
         bullets: [
           "Confirm tile size and the joint width you will actually install (not what you hope to install).",
           "Estimate mosaics separately; small pieces increase joint footage dramatically.",
           "Round up to whole bags and keep a small amount for touch-ups and repairs.",
+        ],
+      },
+      {
+        heading: "Sanded vs unsanded (quick checklist)",
+        bullets: [
+          "Product choice depends on joint width and tile type; follow the bag and manufacturer guidance.",
+          "Some projects use specialty grouts (epoxy/urethane) with different working time and coverage.",
+          "Movement joints use caulk/sealant, not grout.",
         ],
       },
       {
@@ -2970,8 +3220,8 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
     related: [
       { label: "Tile grout calculator", href: "/en/calculators/home-improvement/tile-grout" },
-      { label: "Tile grout coverage guide", href: "/en/resources/tile-grout-coverage-guide" },
-      { label: "Sanded vs unsanded", href: "/en/resources/tile-grout-sanded-vs-unsanded" },
+      { label: "Tile planning guide", href: "/en/resources/tile-project-planning-guide" },
+      { label: "Tile guide", href: "/en/guides/home-improvement/tile" },
     ],
   },
   {
