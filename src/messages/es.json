@@ -1552,8 +1552,8 @@
     }
   },
   "tile": {
-    "metaTitle": "Calculadora de azulejos",
-    "metaDescription": "Estima azulejos necesarios, con merma y cajas/costo opcionales.",
+    "metaTitle": "Calculadora de azulejos (cajas y merma)",
+    "metaDescription": "Calculadora de azulejo: estima azulejos necesarios con merma (overage), cajas y costo opcional.",
     "title": "Calculadora de azulejos",
     "subtitle": "Estima área y cajas según la cobertura por caja.",
     "inputs": {
@@ -1574,7 +1574,7 @@
     "faqTitle": "Preguntas frecuentes",
     "faq": {
       "q1": "¿Qué merma es típica para azulejos?",
-      "a1": "Un rango común es 10–15%, especialmente en diagonal o con muchos cortes.",
+      "a1": "Un rango común es 10-15%, especialmente en diagonal o con muchos cortes.",
       "q2": "¿Dónde encuentro la cobertura por caja?",
       "a2": "En la etiqueta o la ficha del producto; depende del tamaño y piezas por caja.",
       "q3": "¿Por qué las cajas se redondean hacia arriba?",
