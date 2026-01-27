@@ -554,21 +554,21 @@
     }
   },
   "guideDrywall": {
-    "metaTitle": "Cómo estimar paneles de yeso",
-    "metaDescription": "Aprende a estimar paneles de yeso midiendo el área total, eligiendo el tamaño de hoja y sumando desperdicio.",
+    "metaTitle": "Cómo calcular drywall (paneles de yeso)",
+    "metaDescription": "Guía práctica para estimar hojas 4×8/4×10/4×12 según área de paredes y techo, recortes, merma y compra en hojas completas.",
     "title": "Cómo estimar hojas de panel de yeso (drywall)",
     "subtitle": "Calcula el área de paredes/techo, convierte a hojas y agrega desperdicio.",
     "intro": {
-      "p1": "Para estimar paneles de yeso necesitas el área total de superficies y luego convertirla a hojas según el tamaño (por ejemplo, 1.22×2.44 m).",
-      "p2": "El desperdicio depende mucho de la forma del cuarto, esquinas y recortes."
+      "p1": "Para estimar drywall, calcula el área total de paredes y techo y conviértela a hojas según el tamaño (4×8, 4×10, 4×12 o métrico).",
+      "p2": "La merma viene de recortes, esquinas, nichos y cambios de nivel; en techos y espacios con muchos cortes conviene subir el margen."
     },
     "stepsTitle": "Paso a paso: cálculo de drywall",
     "steps": {
       "s1": "Calcula el área de paredes (perímetro × altura) y suma el techo si aplica.",
-      "s2": "Resta puertas/ventanas grandes si quieres un cálculo más ajustado.",
-      "s3": "Elige el tamaño de hoja y su cobertura.",
-      "s4": "Agrega desperdicio (10%+; más si hay muchas esquinas y recortes).",
-      "s5": "Redondea a hojas completas y considera algunas extra por errores."
+      "s2": "Decide si restar aberturas grandes (puertas/ventanas) o dejar que la merma lo cubra.",
+      "s3": "Elige el tamaño de hoja y la orientación (horizontal/vertical) para reducir juntas y desperdicio.",
+      "s4": "Agrega merma (10–15% es común; más para muchos recortes o diseños complejos).",
+      "s5": "Redondea a hojas completas y considera algunas extra para errores o reparaciones."
     },
     "tipsTitle": "Consejos prácticos",
     "tips": {
@@ -582,11 +582,11 @@
     "faqTitle": "Preguntas frecuentes",
     "faq": {
       "q1": "¿Cuántas hojas de drywall necesito?",
-      "a1": "Área total ÷ cobertura por hoja, agrega desperdicio y redondea hacia arriba.",
+      "a1": "Divide el área total entre la cobertura de una hoja (por ejemplo, 32 ft² para 4×8), suma merma y redondea hacia arriba.",
       "q2": "¿Qué porcentaje de desperdicio uso para drywall?",
-      "a2": "10% es común; usa más si hay muchos recortes, esquinas o piezas pequeñas.",
+      "a2": "Empieza con 10%. Sube a 12–15% si hay muchas esquinas, recortes, plafones o piezas pequeñas.",
       "q3": "¿Debo restar puertas y ventanas?",
-      "a3": "Puedes hacerlo para afinar, pero muchos lo omiten y dejan que el desperdicio cubra la diferencia."
+      "a3": "Solo si quieres afinar. Si prefieres rapidez, no restes y usa una merma razonable para cubrir la diferencia."
     }
   },
   "guideMulch": {
@@ -626,28 +626,28 @@
     }
   },
   "guideRoofing": {
-    "metaTitle": "Cómo estimar tejas para techo",
-    "metaDescription": "Aprende a estimar tejas usando squares y bultos, más un porcentaje de desperdicio.",
+    "metaTitle": "Cómo calcular tejas para techo (shingles)",
+    "metaDescription": "Aprende a convertir el área del techo a 'squares' (100 ft²) y bultos, considerando pendiente, merma y accesorios como starter y cumbrera.",
     "title": "Cómo estimar tejas (shingles)",
     "subtitle": "Convierte el área del techo a squares y luego a bultos, sumando desperdicio.",
     "intro": {
-      "p1": "En muchos lugares las tejas se estiman por “square” (100 ft²). Primero necesitas el área real del techo y luego convertirla a squares.",
-      "p2": "El desperdicio sube con valles, caderas, buhardillas y cortes."
+      "p1": "En muchos lugares las tejas se estiman por “square” (100 ft²). La clave es usar el área real de superficie del techo (incluye la pendiente) y luego convertirla a squares.",
+      "p2": "La merma sube con valles, caderas, buhardillas, penetraciones y cortes de borde."
     },
     "stepsTitle": "Paso a paso: cálculo de techo",
     "steps": {
-      "s1": "Mide el área de superficie del techo (no solo la huella de la casa).",
+      "s1": "Mide el área de superficie del techo (no es lo mismo que la huella de la casa).",
       "s2": "Convierte a squares (ft² ÷ 100).",
-      "s3": "Agrega desperdicio (10–15%+; más si el techo es complejo).",
+      "s3": "Agrega merma (10–15% es común; 15–25%+ en techos muy recortados).",
       "s4": "Convierte a bultos según el producto (bultos por square).",
-      "s5": "Redondea e incluye piezas de arranque y cumbrera por separado."
+      "s5": "Redondea e incluye accesorios por separado (starter, cumbrera, underlayment, clavos y flashing; según proyecto)."
     },
     "tipsTitle": "Consejos prácticos",
     "tips": {
       "t1": "La pendiente aumenta el área real del techo.",
       "t2": "Los techos complejos requieren más desperdicio.",
       "t3": "Los bultos por square varían: revisa la ficha del producto.",
-      "t4": "Considera extra para reparaciones o para igualar color en el futuro."
+      "t4": "Compra del mismo lote y guarda algunas tejas extra para futuras reparaciones."
     },
     "ctaTitle": "¿Quieres squares y bultos al instante?",
     "ctaBody": "Usa nuestra calculadora de techo y comparte un enlace con tus datos.",
@@ -656,25 +656,25 @@
       "q1": "¿Qué es un “square” de techo?",
       "a1": "Un square equivale a 100 pies cuadrados (ft²) de cobertura.",
       "q2": "¿Cuántos bultos hay en un square?",
-      "a2": "A menudo 3, pero depende del tipo de teja. Verifica especificaciones.",
+      "a2": "Muchas tejas son 3 bultos por square, pero puede ser 4 o variar por producto. La etiqueta siempre manda.",
       "q3": "¿Qué desperdicio debo considerar?",
-      "a3": "10–15% es común. Techos con muchos valles/caderas pueden requerir más."
+      "a3": "10–15% suele funcionar en techos sencillos. Para valles/caderas, muchos cortes o varias aguas, 15–25%+ puede ser más realista."
     }
   },
   "guideDeck": {
-    "metaTitle": "Cómo estimar tablas para deck",
-    "metaDescription": "Aprende a estimar tablas para deck midiendo el área y convirtiendo a cobertura y cantidad de tablas.",
+    "metaTitle": "Cómo calcular tablas para un deck",
+    "metaDescription": "Guía para estimar tablas según área, ancho real, separación, largo de tabla, diseño (recto/diagonal) y detalles como escalones y fascia.",
     "title": "Cómo estimar tablas para un deck",
     "subtitle": "Parte del área del deck, ajusta por separación y suma desperdicio.",
     "intro": {
       "p1": "La estimación de tablas comienza con el área del deck, pero el ancho de tabla, la separación y el diseño (recto o diagonal) afectan la cantidad final.",
-      "p2": "Esta guía te ayuda a convertir área a cantidades realistas."
+      "p2": "También revisa bordes, marco perimetral, escalones, fascia y remates: estos detalles consumen material y cambian el conteo."
     },
     "stepsTitle": "Paso a paso: cálculo de tablas",
     "steps": {
       "s1": "Mide el área del deck (largo × ancho o suma de rectángulos).",
       "s2": "Elige ancho de tabla y separación para estimar cobertura efectiva.",
-      "s3": "Convierte el área a pies/metros lineales de tabla y luego a número de tablas.",
+      "s3": "Convierte el área a pies/metros lineales totales y luego a número de tablas según el largo que compras.",
       "s4": "Agrega desperdicio (10%+; más si el diseño es diagonal).",
       "s5": "Redondea y verifica detalles como bordes, escalones o marco perimetral."
     },
@@ -690,11 +690,11 @@
     "faqTitle": "Preguntas frecuentes",
     "faq": {
       "q1": "¿Cuántas tablas necesito para un deck?",
-      "a1": "Convierte área a cobertura por tabla considerando separación, agrega desperdicio y redondea.",
+      "a1": "Convierte el área a pies/metros lineales usando el ancho real y la separación, divide entre el largo de tabla, agrega merma y redondea hacia arriba.",
       "q2": "¿La separación cambia la cantidad?",
-      "a2": "Sí, pero suele ser un cambio pequeño. Sigue recomendaciones para drenaje y dilatación.",
+      "a2": "Sí. El efecto suele ser pequeño, pero conviene usar la separación recomendada para drenaje y dilatación (sobre todo en composite).",
       "q3": "¿Qué desperdicio debo considerar?",
-      "a3": "10% es común en diseño recto; usa más si hay diagonales u obstáculos."
+      "a3": "10% es un buen punto de partida en diseño recto; sube si hay diagonales, muchos cortes, bordes tipo picture-frame o escalones."
     }
   },
   "guideFence": {
@@ -1582,10 +1582,10 @@
     }
   },
   "deckMud": {
-    "metaTitle": "Calculadora de Deck Mud (Mortero Seco)",
-    "metaDescription": "Estima deck mud (mortero seco) según área, espesor, desperdicio/overage y proporción arena-cemento.",
+    "metaTitle": "Calculadora de deck mud (mortero seco)",
+    "metaDescription": "Calcula deck mud por área y espesor promedio (incluye pendiente), agrega overage y divide mezcla arena:cemento para compras.",
     "title": "Calculadora de Deck Mud",
-    "subtitle": "Estima mortero seco (deck mud) por área y espesor. Ajusta desperdicio y proporción.",
+    "subtitle": "Estima mortero seco por área y espesor promedio. Ajusta pendiente, overage y proporción.",
     "inputs": {
       "areaSqFt": "Área (ft2)",
       "areaM2": "Área (m2)",
@@ -1618,9 +1618,9 @@
       "q1": "¿Qué es deck mud?",
       "a1": "Deck mud (mortero seco) es una mezcla de arena y cemento usada para camas de mortero, a menudo en duchas y bajo baldosas.",
       "q2": "¿Qué espesor debo usar?",
-      "a2": "Depende del proyecto. Si hay pendiente, el espesor no es uniforme: usa un promedio para estimar.",
+      "a2": "Depende del proyecto. Si hay pendiente, usa un espesor promedio: (espesor en el perímetro + espesor en el drenaje) ÷ 2, y luego agrega un margen.",
       "q3": "¿Qué proporción debo usar?",
-      "a3": "Muchas mezclas usan 5:1 arena:cemento por volumen. Sigue la ficha del producto y la práctica local."
+      "a3": "Muchas camas usan 5:1 arena:cemento por volumen; 4:1 es más fuerte. Sigue la ficha del producto y la práctica local."
     }
   },
   "drywall": {
@@ -1744,10 +1744,10 @@
   }
   ,
   "roofing": {
-    "metaTitle": "Calculadora de techo (tejas)",
-    "metaDescription": "Estima tejas necesarias usando área, merma y cobertura por bulto. Incluye costo opcional.",
+    "metaTitle": "Calculadora de tejas para techo (squares y bultos)",
+    "metaDescription": "Convierte área de techo a squares (100 ft²) y bultos usando la cobertura real del producto, con merma y costo opcional.",
     "title": "Calculadora de techo",
-    "subtitle": "Estima tejas usando 'squares' y bultos. Ajusta merma y cobertura.",
+    "subtitle": "Calcula tejas en squares y bultos. Ajusta merma y cobertura por bulto.",
     "inputs": {
       "roofAreaSqFt": "Área del techo (pies²)",
       "roofAreaM2": "\u00c1rea del techo (m\u00b2)",
@@ -1768,9 +1768,9 @@
       "q1": "¿Qué es un 'square' de techo?",
       "a1": "Un 'square' equivale a 100 pies² de superficie de techo.",
       "q2": "¿Cuántos bultos hay en un 'square'?",
-      "a2": "A menudo 3 bultos, pero depende del producto. Usa la etiqueta cuando sea posible.",
+      "a2": "Muchas tejas son 3 bultos por square, pero puede ser 4 o variar por producto. Usa la etiqueta del fabricante.",
       "q3": "¿Por qué agregar merma?",
-      "a3": "Cortes, limahoyas y errores requieren tejas extra."
+      "a3": "Cortes, limahoyas, cumbreras y errores requieren tejas extra. 10–15% es común; más si el techo es complejo."
     }
   },
   "deck": {
@@ -1808,10 +1808,10 @@
     }
   },
   "fence": {
-    "metaTitle": "Calculadora de cerca",
-    "metaDescription": "Estima paneles y postes según longitud, separación, ancho de panel y merma.",
+    "metaTitle": "Calculadora de cerca: paneles y postes",
+    "metaDescription": "Estima paneles y postes por longitud y ancho de panel, y luego ajusta por esquinas, finales y portones.",
     "title": "Calculadora de cerca",
-    "subtitle": "Estima paneles y postes para una línea recta. Agrega merma y costos opcionales.",
+    "subtitle": "Calcula paneles y postes para tramos rectos. Luego suma postes extra por esquinas y portones.",
     "inputs": {
       "fenceLengthFt": "Longitud (ft)",
       "postSpacingFt": "Separación de postes (ft)",
@@ -1832,11 +1832,11 @@
     "faqTitle": "Preguntas frecuentes",
     "faq": {
       "q1": "¿Cómo se estiman los postes?",
-      "a1": "Se estima según la separación a lo largo, más un poste final.",
+      "a1": "Para un tramo recto: postes ≈ (longitud ÷ separación) redondeado hacia abajo + 1. Ajusta según el sistema y los tramos reales.",
       "q2": "¿Debo ajustar por esquinas o portones?",
-      "a2": "Sí—esquinas, extremos y portones pueden requerir postes y herrajes adicionales.",
+      "a2": "Sí. Cada esquina o final suele requerir un poste adicional, y cada portón normalmente añade 2 postes y herrajes reforzados (depende del caso).",
       "q3": "¿Qué separación es común?",
-      "a3": "Muchos paneles son de 8 ft y los postes se colocan acorde. Sigue código local y especificaciones."
+      "a3": "Muchos paneles son de 8 ft (2.44 m) con postes colocados acorde. Verifica el ancho real del panel y el código local."
     }
   },
   "gravel": {
@@ -1945,8 +1945,8 @@
     }
   },
   "paverBase": {
-    "metaTitle": "Calculadora de base para adoquines",
-    "metaDescription": "Estima piedra base y arena de cama para adoquines según área, espesores, densidad y costo opcional.",
+    "metaTitle": "Calculadora de base para adoquines (paver base)",
+    "metaDescription": "Calcula piedra base y arena de cama por área y espesor, y conviértelo a yardas/toneladas con densidad y margen por compactación.",
     "title": "Calculadora de base para adoquines",
     "subtitle": "Estima volumen, peso y costo opcional de la base y la arena.",
     "inputs": {
@@ -2002,11 +2002,11 @@
     "faqTitle": "Preguntas frecuentes",
     "faq": {
       "q1": "¿Qué espesor debe tener la base para adoquines?",
-      "a1": "Depende del suelo y del uso. Pasillos y patios suelen requerir varias pulgadas de base compactada; entradas de autos normalmente más. Sigue recomendaciones locales.",
+      "a1": "Depende del suelo y del uso. Patios/pasillos suelen estar en 4–6\" de base compactada; entradas de autos a menudo 6–12\" o más. Sigue recomendaciones locales.",
       "q2": "¿La arena de cama es lo mismo que la piedra base?",
-      "a2": "No. La arena de cama es una capa delgada para nivelar. La piedra base compactada aporta estructura y drenaje.",
+      "a2": "No. La arena de cama es una capa delgada (a menudo ~1\" / 2–3 cm) para nivelar; la base compactada aporta estructura y drenaje.",
       "q3": "¿Debo agregar margen?",
-      "a3": "Sí. La compactación, el nivelado y los bordes irregulares pueden aumentar la cantidad necesaria. 5-10% es un margen común."
+      "a3": "Sí. La compactación, el nivelado y los bordes irregulares pueden aumentar la cantidad necesaria. 5–10% es un margen común."
     }
   },
   "soilMix": {

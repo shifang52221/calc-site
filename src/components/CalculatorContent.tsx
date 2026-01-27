@@ -16,6 +16,46 @@ const CALCULATOR_CONTENT_BY_LOCALE: Record<
   "zh-TW": CALCULATOR_CONTENT_ZH_TW,
 };
 
+const UI_LABELS: Record<
+  Locale,
+  {
+    quickGuideTitle: string;
+    showFullGuide: (moreItemsCount: number) => string;
+    hideDetails: string;
+    methodology: string;
+    resources: string;
+    editorialPolicy: string;
+  }
+> = {
+  en: {
+    quickGuideTitle: "Quick guide",
+    showFullGuide: (moreItemsCount) =>
+      `Show full guide${moreItemsCount ? ` (${moreItemsCount} more)` : ""}`,
+    hideDetails: "Hide details",
+    methodology: "Methodology",
+    resources: "Resources",
+    editorialPolicy: "Editorial policy",
+  },
+  es: {
+    quickGuideTitle: "Guía rápida",
+    showFullGuide: (moreItemsCount) =>
+      `Ver guía completa${moreItemsCount ? ` (${moreItemsCount} más)` : ""}`,
+    hideDetails: "Ocultar",
+    methodology: "Metodología",
+    resources: "Recursos",
+    editorialPolicy: "Política editorial",
+  },
+  "zh-TW": {
+    quickGuideTitle: "快速指南",
+    showFullGuide: (moreItemsCount) =>
+      `展開完整指南${moreItemsCount ? `（另有 ${moreItemsCount} 項）` : ""}`,
+    hideDetails: "收起",
+    methodology: "方法論",
+    resources: "資源",
+    editorialPolicy: "編輯政策",
+  },
+};
+
 export function CalculatorContent({
   locale,
   calculatorId,
@@ -25,6 +65,7 @@ export function CalculatorContent({
   calculatorId: CalculatorId;
   variant: "before" | "after";
 }) {
+  const labels = UI_LABELS[locale] ?? UI_LABELS.en;
   const content =
     CALCULATOR_CONTENT_BY_LOCALE[locale]?.[calculatorId] ??
     CALCULATOR_CONTENT_EN[calculatorId];
@@ -40,7 +81,7 @@ export function CalculatorContent({
     return (
       <section className="rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
         <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
-          Quick guide
+          {labels.quickGuideTitle}
         </h2>
         <ul className="mt-3 grid list-disc gap-2 pl-5">
           {quickPreview.map((item) => (
@@ -54,10 +95,11 @@ export function CalculatorContent({
               <span className="flex items-center justify-between gap-3">
                 <span className="flex items-center gap-2">
                   <span className="group-open:hidden">
-                    Show full guide
-                    {moreItemsCount ? ` (${moreItemsCount} more)` : ""}
+                    {labels.showFullGuide(moreItemsCount)}
                   </span>
-                  <span className="hidden group-open:inline">Hide details</span>
+                  <span className="hidden group-open:inline">
+                    {labels.hideDetails}
+                  </span>
                 </span>
                 <svg
                   viewBox="0 0 20 20"
@@ -102,21 +144,21 @@ export function CalculatorContent({
             href={routes.methodology(locale)}
             className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
           >
-            Methodology
+            {labels.methodology}
           </Link>
           {" · "}
           <Link
             href={routes.resources(locale)}
             className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
           >
-            Resources
+            {labels.resources}
           </Link>
           {" · "}
           <Link
             href={routes.editorialPolicy(locale)}
             className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
           >
-            Editorial policy
+            {labels.editorialPolicy}
           </Link>
         </div>
       </section>
@@ -180,21 +222,21 @@ export function CalculatorContent({
           href={routes.methodology(locale)}
           className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
         >
-          Methodology
+          {labels.methodology}
         </Link>
         {" · "}
         <Link
           href={routes.resources(locale)}
           className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
         >
-          Resources
+          {labels.resources}
         </Link>
         {" · "}
         <Link
           href={routes.editorialPolicy(locale)}
           className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
         >
-          Editorial policy
+          {labels.editorialPolicy}
         </Link>
       </div>
     </section>
