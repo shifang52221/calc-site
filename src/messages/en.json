@@ -1476,8 +1476,8 @@
   }
  },
  "wallpaperRolls": {
-  "metaTitle": "Wallpaper Rolls Calculator",
-  "metaDescription": "Estimate how many wallpaper rolls you need based on wall area, openings, roll size, and waste, with optional cost.",
+  "metaTitle": "Wallpaper Calculator (Rolls & Waste)",
+  "metaDescription": "Estimate how many wallpaper rolls you need from wall area, optional openings, roll size, and a waste factor (pattern matching/cuts), with optional cost.",
   "title": "Wallpaper Rolls Calculator",
   "subtitle": "Estimate rolls needed with a roll size preset, custom sizes, and a waste factor.",
   "inputs": {
@@ -1518,14 +1518,14 @@
    "q1": "Should I subtract doors and windows?",
    "a1": "For a quick estimate, many people don't subtract openings. If you want a tighter estimate, subtract large doors and windows here.",
    "q2": "What waste factor should I use for wallpaper?",
-   "a2": "Waste varies by pattern matching, corners, and cuts. 10% is a common starting point; increase it for complex layouts or patterned wallpaper.",
+   "a2": "Waste varies by pattern matching (repeat), wall height, corners, and cutoffs. 10% is a common starting point for simple layouts; use more for patterned wallpaper or lots of cuts (project dependent).",
    "q3": "Why is the roll count rounded up?",
    "a3": "You can only buy whole rolls, and extra helps cover mistakes and future repairs."
   }
  },
  "flooring": {
-  "metaTitle": "Flooring Calculator",
-  "metaDescription": "Estimate flooring needed (sq ft), including a waste factor and optional cost.",
+  "metaTitle": "Flooring Calculator (Square Feet & Waste)",
+  "metaDescription": "Estimate flooring square footage with a waste factor and optional cost per sq ft/m² (useful for hardwood, laminate, vinyl, and more).",
   "title": "Flooring Calculator",
   "subtitle": "Estimate flooring area with a waste factor. Add price per sq ft for cost.",
   "inputs": {
@@ -1543,10 +1543,10 @@
   },
   "faqTitle": "FAQ",
   "faq": {
-   "q1": "What waste factor should I use?",
-   "a1": "Many projects use 5-15% depending on pattern, cuts and room shape.",
-   "q2": "Do I need to subtract cabinets or closets?",
-   "a2": "Subtract areas that will not be covered if you want a tighter estimate.",
+   "q1": "How do I calculate flooring square footage?",
+   "a1": "Measure the floor area (length x width for rectangles, or break the room into rectangles and add them). If you want a tighter estimate, subtract areas that will not be covered (like permanent cabinets or closets).",
+   "q2": "What waste factor should I use for flooring?",
+   "a2": "Many projects use about 5-10% for simple rooms and higher (10-15%+) for diagonal installs, lots of corners, or complex layouts (project dependent).",
    "q3": "Does this include underlayment?",
    "a3": "No. This calculator estimates flooring area only."
   }
@@ -1652,8 +1652,8 @@
   }
  },
  "drywallTexture": {
-  "metaTitle": "Drywall Texture Calculator",
-  "metaDescription": "Estimate drywall texture material (bags) based on area, coats, coverage, and a waste factor.",
+  "metaTitle": "Drywall Texture Calculator (Bags & Coverage)",
+  "metaDescription": "Estimate drywall texture material (bags) from area, coats/passes, coverage per bag, and a waste factor.",
   "title": "Drywall Texture Calculator",
   "subtitle": "Estimate texture material needed. Adjust coats, coverage per bag, and waste.",
   "inputs": {
@@ -2065,8 +2065,8 @@
   }
  },
  "asphaltDriveway": {
-  "metaTitle": "Asphalt Driveway Calculator",
-  "metaDescription": "Estimate asphalt quantity in cubic yards and tons from area and thickness, including truckloads and optional cost.",
+  "metaTitle": "Asphalt Driveway Calculator (Tons & Yards)",
+  "metaDescription": "Estimate asphalt quantity in cubic yards and tons from area and thickness, including truckloads and optional cost (density-based).",
   "title": "Asphalt Driveway Calculator",
   "subtitle": "Estimate asphalt volume, tons, truckloads, and optional cost.",
   "inputs": {
@@ -2101,15 +2101,15 @@
   "faq": {
    "q1": "How thick should an asphalt driveway be?",
    "a1": "It depends on use and base conditions. Many residential driveways use multiple inches. Follow contractor and local recommendations.",
-   "q2": "Why does asphalt tonnage vary?",
-   "a2": "Density varies by mix design and compaction. Ask your supplier/contractor for a conversion if you need high accuracy.",
+   "q2": "How do I estimate asphalt tons from square footage?",
+   "a2": "First estimate volume from area and thickness (inches). Then convert volume to tons using a realistic density for your mix and compaction. Tonnage varies because density changes by mix design and compaction, so use your supplier/contractor conversion when available (project dependent).",
    "q3": "Should I add waste/overage?",
    "a3": "Yes. Tie-ins, irregular edges, and thickness variation can increase quantity. 5-10% is a common buffer."
   }
  },
  "boardFeet": {
-  "metaTitle": "Board Feet Calculator",
-  "metaDescription": "Calculate board feet for lumber using thickness, width, length, quantity, and waste, with optional cost per board foot.",
+  "metaTitle": "Board Foot Calculator (Lumber Volume)",
+  "metaDescription": "Calculate board feet for lumber using thickness, width, length, and quantity, then add waste and optional cost per board foot.",
   "title": "Board Feet Calculator",
   "subtitle": "Estimate lumber volume in board feet, plus cubic feet/meters, and optional cost.",
   "inputs": {
@@ -2134,8 +2134,8 @@
   "faq": {
    "q1": "What is a board foot?",
    "a1": "A board foot is a unit of lumber volume equal to a board 1 inch thick, 12 inches wide, and 12 inches long.",
-   "q2": "Should I use nominal or actual size?",
-   "a2": "Use actual dimensions for accuracy. Nominal sizes (like 2x6) are larger than the finished actual size.",
+   "q2": "How do I calculate board feet?",
+   "a2": "Board feet = thickness (in) x width (in) x length (ft) / 12, then multiply by quantity. For best accuracy, use actual dimensions (not nominal).",
    "q3": "Why add waste?",
    "a3": "Waste helps cover defects, knots, cuts, and a few mistakes. 5-10% is common depending on the project."
   }
@@ -2224,8 +2224,8 @@
   }
  },
  "studs": {
-  "metaTitle": "Studs Calculator (Wall Framing)",
-  "metaDescription": "Estimate the number of wall studs and plates from total wall length, stud spacing, openings, and waste, with optional cost.",
+  "metaTitle": "Studs Calculator (16\" / 24\" on Center)",
+  "metaDescription": "Estimate wall studs and plates from total wall length, stud spacing (16\"/24\" OC), openings, and waste, with optional cost.",
   "title": "Studs Calculator",
   "subtitle": "Estimate studs and plates for wall framing with openings and waste.",
   "yes": "Yes",
@@ -2269,8 +2269,8 @@
   },
   "faqTitle": "FAQ",
   "faq": {
-   "q1": "How many studs do I need for a wall?",
-   "a1": "It depends on wall length, stud spacing, and openings. Enter total wall length and choose 16\" or 24\" spacing to get an estimate.",
+   "q1": "How do I estimate studs for a wall?",
+   "a1": "A simple starting point is studs ≈ wall length / spacing + 1 (per wall run), then add extras for corners and openings. Real framing rules vary by layout and code, so use this as a planning estimate (project dependent).",
    "q2": "Do doors and windows add studs?",
    "a2": "Yes. Openings typically add king/jack studs and headers. This calculator lets you add extra studs per opening as a simple estimate.",
    "q3": "Is this accurate for load-bearing walls?",
@@ -2278,8 +2278,8 @@
   }
  },
  "baseboardTrim": {
-  "metaTitle": "Baseboard & Trim Calculator",
-  "metaDescription": "Estimate baseboard/trim length and pieces from wall length, doors, waste, and stock length, with optional cost.",
+  "metaTitle": "Baseboard & Trim Calculator (Linear Feet & Pieces)",
+  "metaDescription": "Estimate baseboard/trim linear feet and pieces to buy from wall length, doors, waste, and stock length, with optional cost.",
   "title": "Baseboard & Trim Calculator",
   "subtitle": "Estimate linear feet (or meters), pieces to buy, and optional cost.",
   "inputs": {
@@ -2311,7 +2311,7 @@
    "q1": "Do I subtract doors for baseboard?",
    "a1": "Usually yes. Baseboard typically stops at the door casing, so subtracting door openings helps avoid overbuying.",
    "q2": "What piece length should I choose?",
-   "a2": "Use the stock length you plan to buy (commonly 8 ft or 12 ft). The calculator rounds up to whole pieces.",
+   "a2": "Use the stock length you plan to buy (commonly 8 ft or 12 ft). Longer pieces can reduce seams but may be harder to transport. Pieces are estimated by dividing total trim length (after waste) by piece length and rounding up.",
    "q3": "How much waste should I add?",
    "a3": "5-10% is common. Add more for lots of corners, complex rooms, or if you're new to trim work."
   }
@@ -2403,8 +2403,8 @@
   }
  },
  "tileGrout": {
-  "metaTitle": "Tile Grout Calculator",
-  "metaDescription": "Estimate grout needed from tile size, joint width/depth, and area, with optional bag count and cost.",
+  "metaTitle": "Tile Grout Calculator (Bags & Coverage)",
+  "metaDescription": "Estimate tile grout needed from tile size, joint width/depth, and area, with optional bag count and cost (sanded/unsanded/epoxy presets).",
   "title": "Tile Grout Calculator",
   "subtitle": "Estimate grout amount and bags using tile size, joints, and area.",
   "inputs": {
@@ -2451,14 +2451,14 @@
    "q1": "What joint width should I use?",
    "a1": "Follow tile and spacing recommendations. Wider joints use more grout.",
    "q2": "Is sanded or unsanded grout better?",
-   "a2": "It depends on joint width and tile type. Use the product guidelines for your application.",
+   "a2": "It depends on joint width and tile type. Sanded grout is often used for wider joints, while unsanded is often used for narrower joints. Follow the product guidelines for your application (project dependent).",
    "q3": "Should I add waste?",
    "a3": "Yes. Spillage, cleanup, and uneven joints can increase usage. 5-10% is a common buffer."
   }
  },
  "drywallMudTape": {
-  "metaTitle": "Drywall Mud & Tape Calculator",
-  "metaDescription": "Estimate drywall tape rolls and joint compound (mud) from area, sheet size, coats, and waste, with optional cost.",
+  "metaTitle": "Drywall Mud & Tape Calculator (Joint Compound)",
+  "metaDescription": "Estimate drywall tape rolls and joint compound (mud) from area, sheet size, coats, and waste, with optional cost (planning estimate).",
   "title": "Drywall Mud & Tape Calculator",
   "subtitle": "Estimate seam length, tape rolls, and joint compound using adjustable assumptions.",
   "inputs": {
@@ -2501,12 +2501,12 @@
   },
   "faqTitle": "FAQ",
   "faq": {
-   "q1": "How accurate is this mud and tape estimate?",
-   "a1": "It's a planning estimate based on average seam density for a sheet size and your chosen assumptions. Corners and real layouts can change material needs.",
-   "q2": "Why does sheet size matter?",
-   "a2": "Larger sheets generally create fewer seams per square foot, which reduces tape and compound.",
-   "q3": "How many coats should I use?",
-   "a3": "Many finishing approaches use multiple coats. Choose what matches your plan and product recommendations."
+   "q1": "How many rolls of drywall tape do I need?",
+   "a1": "Tape length is driven by seam length (joints and corners). This calculator estimates seam length from area and sheet size, then converts it to rolls based on your roll length and waste (project dependent).",
+   "q2": "How much joint compound (mud) do I need?",
+   "a2": "Compound depends on seam length, coat count, joint width, and how wide you feather each coat. Use your planned finish level and adjust assumptions to match your technique and product yield (project dependent).",
+   "q3": "Why does sheet size matter?",
+   "a3": "Larger sheets generally create fewer seams per square foot, which reduces tape and compound, but handling and layout can change real results."
   }
  },
  "topsoil": {
