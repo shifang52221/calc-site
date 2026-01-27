@@ -20,6 +20,15 @@ function getCanonicalHost() {
 }
 
 const CANONICAL_HOST = getCanonicalHost();
+const LOCALES = new Set(routing.locales);
+const DEFAULT_LOCALE = routing.defaultLocale;
+
+function hasLocalePrefix(pathname: string) {
+  const [, firstSegment] = pathname.split("/");
+  return Boolean(firstSegment && LOCALES.has(firstSegment as (typeof routing.locales)[number]));
+}
+
+const LOCALE_EXEMPT_PATHS = new Set(["/opengraph-image", "/twitter-image"]);
 
 export default function middleware(request: NextRequest) {
   if (CANONICAL_HOST) {
@@ -35,6 +44,15 @@ export default function middleware(request: NextRequest) {
   if (request.nextUrl.pathname === "/") {
     const url = request.nextUrl.clone();
     url.pathname = "/en";
+    return NextResponse.redirect(url, 308);
+  }
+
+  if (
+    !hasLocalePrefix(request.nextUrl.pathname) &&
+    !LOCALE_EXEMPT_PATHS.has(request.nextUrl.pathname)
+  ) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${DEFAULT_LOCALE}${request.nextUrl.pathname}`;
     return NextResponse.redirect(url, 308);
   }
 
