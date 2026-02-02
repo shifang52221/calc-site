@@ -645,7 +645,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Concrete volume per 100 sq ft (quick chart)",
     description:
       "A quick concrete chart: cubic yards per 100 sq ft at common slab thicknesses, plus ordering tips.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Quick chart",
@@ -658,6 +658,29 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ['6" (0.50 ft)', "1.85 cu yd", "Common for heavier duty slabs"],
           ],
         },
+      },
+      {
+        heading: "Rule of thumb (fast scaling)",
+        paragraphs: [
+          "A quick shortcut: 100 sq ft at 1 inch thickness is about 0.31 cu yd (8.33 cu ft). Multiply by thickness in inches. Example: 100 sq ft at 4 inches is about 1.23 cu yd.",
+        ],
+      },
+      {
+        heading: "Bagged mix conversion (quick planning)",
+        paragraphs: [
+          "If you are buying bagged mix, use the bag yield on the label. A common planning range is about 0.45 cu ft for a 60 lb bag and about 0.60 cu ft for an 80 lb bag, but always confirm the product.",
+        ],
+        bullets: [
+          "Convert volume to cubic feet first (1 cu yd = 27 cu ft).",
+          "Bags needed = total cu ft / bag yield, then round up.",
+          "Order extra for over-excavation, uneven forms, and cleanup.",
+        ],
+      },
+      {
+        heading: "Edges and thickened sections (do not forget)",
+        paragraphs: [
+          "Thickened edges, footings, or pads for posts add volume that is not included in simple slab area math. Estimate those pieces separately and add them to the total.",
+        ],
       },
       {
         heading: "Ordering notes",
@@ -1370,12 +1393,26 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Wallpaper pattern repeat and waste (why you need extra rolls)",
     description:
       "How pattern repeat affects usable roll length, why corners and windows increase waste, and how to plan a safer order.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Why pattern repeat changes roll yield",
         paragraphs: [
           "With a pattern repeat, you may need to cut strips so the pattern aligns from strip to strip. That can reduce usable length per roll and increase the number of rolls beyond simple wall area math.",
+        ],
+      },
+      {
+        heading: "Match type matters (straight vs drop)",
+        bullets: [
+          "Straight match: patterns line up at the same height across strips (less waste).",
+          "Drop match: patterns shift down between strips (often more waste).",
+          "If the label lists match type, use that when estimating strips per roll.",
+        ],
+      },
+      {
+        heading: "Strip yield example (quick math)",
+        paragraphs: [
+          "Example: wall height is 9 ft (108 in) and the repeat is 20 in. Each strip must be cut to the next repeat multiple: 120 in (10 ft). A 33 ft roll yields about 3 strips, not 3.6.",
         ],
       },
       {
@@ -1392,6 +1429,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "If the manufacturer provides strips-per-roll guidance for your wall height and pattern, use that. It is often more accurate than a generic area conversion.",
         ],
       },
+      {
+        heading: "Ordering tips (avoid mismatched rolls)",
+        bullets: [
+          "Buy a little extra and keep one spare roll for future repairs.",
+          "Order all rolls at once to keep dye lot consistent.",
+          "If you are wrapping through multiple rooms, plan the entire run before buying.",
+        ],
+      },
     ],
     related: [
       { label: "Wallpaper rolls calculator", href: "/en/calculators/home-improvement/wallpaper-rolls" },
@@ -1403,12 +1448,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Baseboard and trim waste tips (miters, corners, and pieces)",
     description:
       "How corners and miter cuts drive waste, why piece length matters, and practical ways to plan trim purchases.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Why piece length matters",
         paragraphs: [
           "Trim is often sold in fixed piece lengths. Even if your total linear feet are correct, you can still run short if you do not plan how those lengths break into pieces around corners and doors.",
+        ],
+      },
+      {
+        heading: "Piece length strategy (reduce seams and waste)",
+        bullets: [
+          "Longer pieces reduce seams on long runs but can increase waste in small rooms.",
+          "Use longer stock on the most visible walls and save short pieces for closets and short runs.",
+          "If transport is limited, verify that longer lengths will fit before ordering.",
         ],
       },
       {
@@ -1421,6 +1474,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Confirm piece length (8 ft, 12 ft, 16 ft) and availability for your profile.",
           "Count inside/outside corners and short runs that create unusable offcuts.",
           "If you need stain/finish match, buy extra from the same batch when possible.",
+        ],
+      },
+      {
+        heading: "Corners, returns, and casing breaks",
+        bullets: [
+          "Outside corners use two pieces and create miter offcuts on both ends.",
+          "Returns (small end caps) consume extra inches that are easy to forget.",
+          "Plan where runs stop at door casings, fireplaces, or stair trim so you do not waste long lengths.",
         ],
       },
       {
