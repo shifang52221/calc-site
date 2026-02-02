@@ -57,11 +57,7 @@ export default function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 308);
   }
 
-  const response = intlMiddleware(request);
-  if (pathname.startsWith("/es") || pathname.startsWith("/zh-TW")) {
-    response.headers.set("X-Robots-Tag", "noindex, follow");
-  }
-  return response;
+  return intlMiddleware(request);
 }
 
 export const config = {

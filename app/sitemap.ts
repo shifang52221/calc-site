@@ -10,16 +10,19 @@ import { getResourceArticles } from "@/lib/content/resourcesByLocale";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
-  const locales = routing.locales.filter((l) => l === "en");
+  const locales = routing.locales;
 
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
 
   for (const locale of locales) {
-    const resourceArticles = getResourceArticles(locale).filter(
-      (article) =>
-        !Object.prototype.hasOwnProperty.call(RESOURCE_REDIRECTS_EN, article.slug),
-    );
+    const resourceArticles = getResourceArticles(locale).filter((article) => {
+      if (locale !== "en") return true;
+      return !Object.prototype.hasOwnProperty.call(
+        RESOURCE_REDIRECTS_EN,
+        article.slug,
+      );
+    });
     const urls: string[] = [
       `${baseUrl}${routes.home(locale)}`,
       `${baseUrl}${routes.privacy(locale)}`,
