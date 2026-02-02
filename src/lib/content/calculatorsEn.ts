@@ -361,6 +361,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Add waste for cuts, outlets, and breakage (often 10-15%).",
         "Round up to whole sheets—partial sheets are not practical.",
         "If ceilings and walls use different thickness, estimate them as separate line items.",
+        "Ceilings often need thicker board for sag resistance; verify joist spacing and local requirements.",
         "Plan your layout: sheet orientation and staggered seams can reduce waste and finishing time.",
         "Treat stairwells, closets, and soffits as separate mini-areas (they usually waste more than open rooms).",
         "If you are matching an existing texture level, the finishing work can dominate cost even when sheet count is similar.",
@@ -373,6 +374,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "For a tighter estimate, treat ceilings, walls, soffits, and closets separately; small areas often waste more because offcuts don’t fit elsewhere.",
         "A good drywall estimate is not only about sheet count. A layout that reduces seams and avoids tiny slivers can cut finishing time dramatically even if you buy the same number of sheets.",
         "Thickness and type matter. Many ceilings and fire-rated assemblies use 5/8\" board, while many walls use 1/2\". Bathrooms may need moisture-resistant board. Estimate by surface and by board type.",
+        "Sag resistance depends on joist spacing. A common rule of thumb is 1/2\" at 16\" OC and 5/8\" at 24\" OC, but always confirm local code and manufacturer limits.",
         "Openings do not reduce sheet count linearly. Cutting around windows and doors creates offcuts that are often the wrong shape to reuse, so many people keep openings in the area math and rely on waste to cover it.",
         "If your goal is sound reduction, sag resistance, or fire rating, the right board and assembly details matter more than the exact sheet count. Treat those requirements as constraints first, then do the quantity math.",
         "Worked example: a 12' x 16' ceiling is 192 sq ft. Using 4' x 12' sheets (48 sq ft) is 4 sheets before waste; using 4' x 8' sheets (32 sq ft) is 6 sheets before waste. The larger sheets may reduce seams, but only if you can safely lift and hang them.",
@@ -425,13 +427,14 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Assuming openings will reduce sheet count a lot, then running short because cutouts created unusable offcuts.",
         "Not thinking about seam placement (butt joints in visible areas) and then spending far more time finishing than expected.",
       ],
-      lastUpdated: "Last updated: Dec 2025",
+      lastUpdated: "Last updated: Feb 2026",
     },
     drywallMudTape: {
       quick: [
         "Drywall finishing materials depend on seam length and the number of coats.",
         "Estimate seam length from area and sheet size, then convert to tape rolls.",
         "Compound usage varies by technique and product—use this as a planning estimate and confirm bag/bucket yields.",
+        "Ceilings and Level 5 finishes typically use more mud than standard wall finishes.",
         "Corners and repairs can consume more tape than you expect; plan for inside corners, outside corners, and patch work.",
         "Your finish level matters: a Level 5 smooth finish typically needs more compound than a basic garage finish.",
       ],
@@ -439,6 +442,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       deepDive: [
         "Tape and compound needs depend on seam length, corners, and how many coats you apply. Larger sheets can reduce seams, but real layouts (corners, openings, soffits) still add finishing work.",
         "Compound yield varies by product type and technique, so treat this as a planning estimate and confirm with the label on the exact product you'll buy.",
+        "Ceilings, long butt joints, and high-finish work can increase compound usage even when sheet count is the same.",
         "If you're aiming for a higher finish level (e.g., Level 4-5), expect more compound, sanding, and touch-up time than a basic garage finish.",
         "Tape choice changes workflow. Paper tape is common for strength and inside corners, while mesh tape can be faster for patches but often pairs better with setting-type compound. The quantity math is similar, but waste and rework can differ.",
         "Coats are not all the same thickness. A typical workflow is tape coat + 1-2 fill coats + a skim/touch-up coat. If you are learning, expect to use more compound because you will sand and re-coat more.",
@@ -485,7 +489,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Mixing very large batches and losing material to setting or drying before you can apply it.",
         "Trying to fix poor seam layout with extra mud (it usually increases sanding and still telegraphs under paint).",
       ],
-      lastUpdated: "Last updated: Dec 2025",
+      lastUpdated: "Last updated: Feb 2026",
     },
     drywallTexture: {
       quick: [
@@ -548,7 +552,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Ignoring substrate differences (patched vs painted walls) that change how texture builds and dries.",
         "Spraying too close or too wet and creating runs or heavy blobs that must be sanded and re-textured (which increases material use and time).",
       ],
-      lastUpdated: "Last updated: Jan 2026",
+      lastUpdated: "Last updated: Dec 2025",
     },
     fence: {
       quick: [
@@ -762,6 +766,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Suppliers often sell gravel by tons, but homeowners estimate by area and volume (cubic yards).",
         "The conversion depends on density, which varies by gravel type and moisture.",
         "Use a density preset or ask your supplier for their yards-to-tons conversion.",
+        "Rule of thumb only: many gravels fall around 1.2-1.6 tons per cubic yard, but supplier conversions are more reliable.",
         "If you start from length x width x depth, convert depth to feet (in / 12) before calculating cubic yards.",
         "Compacted thickness is not the same as loose delivered thickness—plan a buffer if you’re building a base.",
         "For layered builds (base + top), estimate each layer separately because materials and densities can differ.",
@@ -794,6 +799,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       assumptionsTitle: "Assumptions to double-check",
       assumptions: [
         "Density varies by product, moisture, and compaction—supplier conversions may differ.",
+        "Rule-of-thumb conversions are only for planning; use the supplier's number for ordering.",
         "Some suppliers use short tons (US), others use metric tonnes.",
         "Rounding up usually prevents shortages and extra delivery fees.",
         "Your input volume is a loose-material estimate; installed (compacted) coverage may be smaller.",
@@ -819,7 +825,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Assuming base stone and decorative/top stone use the same conversion factor and depth target.",
         "Ignoring compaction lifts; dumping a thick layer and hoping it compacts evenly can lead to settling and ruts.",
       ],
-      lastUpdated: "Last updated: Dec 2025",
+      lastUpdated: "Last updated: Feb 2026",
     },
     mulch: {
       quick: [
@@ -1287,6 +1293,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
     tile: {
       quick: [
         "Measure tiled area, then add overage (waste factor) — often 10%+.",
+        "Use an overage percentage that fits the layout: ~10% straight, 15-20% for diagonal/patterned or cut-heavy rooms.",
         "Convert to boxes using the product's coverage per box.",
         "Round up to whole boxes and keep a few tiles for repairs.",
         "Estimate trim pieces, mosaics, and accent strips separately when they use different packaging.",
@@ -1298,6 +1305,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       deepDiveTitle: "Why waste factor matters",
       deepDive: [
         "Tile waste isn't just broken pieces—it's also the cuts required around edges, corners, and obstacles. Diagonal layouts, patterns, and small formats usually increase waste.",
+        "Overage percentage is layout-driven. A straight layout often starts around 10%, while diagonal, herringbone, and many cutouts can push 15-20% or more depending on room shape and tile size.",
         "If you need tiles from the same dye lot, buying the right overage up front can save you from mismatched repairs later.",
         "Walls with niches, benches, and plumbing penetrations often need higher waste than open floor areas because cuts are harder to reuse.",
         "Tile type affects breakage and selection. Large-format porcelain can crack during cutting if unsupported; natural stone can vary in color and veining and may need sorting for a consistent look.",
@@ -1328,6 +1336,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       assumptions: [
         "Coverage per box varies by tile size and packaging—use label coverage.",
         "Patterns and many cuts can push waste beyond 10-15%.",
+        "A 10% overage is a starting point, not a rule—raise it for complex layouts or many penetrations.",
         "Mosaics and feature borders often require separate estimating.",
         "Some tile types (natural stone, large-format) can have higher breakage risk—plan extra for handling and cuts.",
         "You’re estimating finished tiled surfaces, not the room footprint that includes cabinets, tubs, or other untiled zones.",
@@ -1360,11 +1369,12 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Skipping waterproofing details in wet areas and assuming grout/caulk will keep water out.",
         "Starting layout without checking for out-of-square walls, then ending up with sliver cuts and extra waste at the finish.",
       ],
-      lastUpdated: "Last updated: Dec 2025",
+      lastUpdated: "Last updated: Feb 2026",
     },
     deckMud: {
       quick: [
         "Measure your deck mud area (square feet) and average thickness (inches).",
+        "Use a coverage chart or rule of thumb to translate thickness into coverage per cubic foot.",
         "Add waste/overage for uneven subfloor, mixing loss, and cleanup (often 5-15%).",
         "Use a common dry pack mortar ratio (often 5:1 sand to cement) and round up.",
         "If you’re building a shower pan, include slope (typically about 1/4\" per foot toward the drain) when choosing average thickness.",
@@ -1374,7 +1384,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
       deepDive: [
         "Deck mud (dry pack mortar) is a sand-and-cement mix that's packed and screeded to a flat plane. It's commonly used for shower pans, tile underlayment, and patching low areas where you need a firm, slopeable bed.",
         "It's not the same as thinset, self-leveling underlayment, or concrete. The right product depends on what you're building and the thickness range you need; follow the tile system manufacturer's instructions.",
-        "Quick volume rule: volume (cu ft) = area (sq ft) x thickness (in) / 12. That means 1 cu ft covers ~12 sq ft at 1\", ~6 sq ft at 2\", and ~4 sq ft at 3\" (before waste).",
+        "Coverage chart rule of thumb: volume (cu ft) = area (sq ft) x thickness (in) / 12. That means 1 cu ft covers ~12 sq ft at 1\", ~6 sq ft at 2\", and ~4 sq ft at 3\" (before waste).",
         "For shower pans, slope matters. A typical slope target is about 1/4\" per foot toward the drain, so the perimeter thickness can be noticeably higher than the drain thickness on larger showers.",
         "Slope or thickness notes: slope is a geometry problem first. Perimeter thickness = drain thickness + (longest run to the drain in feet × slope per foot). Using the longest run (especially with off-center drains) gives a more reliable average thickness input.",
         "Minimum thickness is system-dependent. Some systems require a minimum mud thickness at the drain/flange or over a liner. Confirm minimums before you choose “average thickness” (project dependent).",
@@ -1387,6 +1397,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Measure the footprint you'll fill (e.g., shower pan) and total the area.",
         "Estimate average thickness: thin edges and thicker slopes change volume.",
         "Convert area x thickness to volume, then split volume by your sand:cement ratio.",
+        "If your mix or product lists a coverage chart, use that yield and match the units to your thickness.",
         "If you're building slope, measure the perimeter thickness and the drain thickness, then average them for a more realistic thickness input.",
         "If the drain is off-center, measure thickness at the farthest wall and the closest wall; off-center drains increase the maximum thickness and total volume.",
         "If you will install a pre-slope and a final bed (liner system), estimate each layer separately and add the totals.",
@@ -1397,6 +1408,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Deck mud (dry pack mortar) is mixed by volume ratios; products and techniques vary.",
         "Cement bag volume varies by brand; treat bag counts as planning estimates.",
         "If your bed is sloped (typical for showers), thickness is not uniform—use an average.",
+        "Coverage charts assume consistent mixing; wetter mixes can reduce coverage and increase waste.",
         "Some systems use a separate waterproofing layer (liner vs bonded membrane). Follow the system instructions—layering affects thickness and materials.",
         "If you need metal lath or reinforcing mesh, it’s a separate material; it won’t change the mud volume much but affects the build and prep.",
         "Dry pack mortar is not a self-leveler. If you need an ultra-flat floor for large-format tile, your system choice may change.",
@@ -1419,7 +1431,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Not planning slope and drain height first, then discovering you can’t hit minimum thickness or waterproofing requirements.",
         "Stopping mid-bed and remixing with a different water ratio, creating weak or inconsistent areas.",
       ],
-      lastUpdated: "Last updated: Jan 2026",
+      lastUpdated: "Last updated: Feb 2026",
     },
     asphaltDriveway: {
       quick: [

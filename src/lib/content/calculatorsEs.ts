@@ -118,6 +118,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
     quick: [
       "Mide solo las superficies que realmente vas a alicatar (piso, paredes, nichos).",
       "Define el patron y el factor de merma (cortes, roturas, coincidencia de veta/patron).",
+      "Usa un porcentaje de merma segun el layout: ~10% recto, 15-20% en diagonal o con muchos recortes.",
       "Convierte el area total a cajas usando la cobertura por caja del producto.",
       "Redondea a cajas completas; una caja extra suele ahorrar problemas de lote.",
       "Si tienes varios productos (mosaico, cenefas, remates), estimarlos por separado es mas fiable.",
@@ -126,6 +127,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
     deepDiveTitle: "La merma depende de cortes y complejidad",
     deepDive: [
       "En ceramica/porcelanato, el area es solo el inicio. La merma viene de cortes al perimetro, obstaculos, roturas al cortar y piezas que no se pueden reutilizar.",
+      "El porcentaje de merma depende del patron: recto suele arrancar cerca de 10%, mientras que diagonal/espiga y muchos recortes pueden subir a 15-20% o mas segun el ambiente.",
       "Un patron recto en un cuarto grande suele desperdiciar menos que diagonal, espiga u otros patrones que fuerzan mas recortes.",
       "La coincidencia de vetas o patrones puede obligarte a descartar piezas. Si el diseno exige continuidad, sube la merma (segun el caso).",
       "La cobertura por caja varía: verifica unidades (pies2 vs m2) y recuerda que molduras y mosaicos no siguen la misma cobertura.",
@@ -144,6 +146,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
     assumptions: [
       "El patron de colocacion cambia la merma.",
       "Muchos recortes y obstaculos aumentan desperdicio.",
+      "El 10% es un punto de partida, no una regla fija; sube la merma en layouts complejos.",
       "Piezas grandes en cuartos pequenos pueden aumentar sobrantes inutiles.",
       "Mosaicos y remates tienen cobertura distinta.",
       "Lotes distintos aumentan riesgo de variacion de tono/tamano.",
@@ -164,7 +167,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
       "Confundir cobertura por caja (pies2 vs m2).",
       "No guardar repuestos del mismo lote para futuras reparaciones.",
     ],
-    lastUpdated: "Ultima actualizacion: ene 2026",
+    lastUpdated: "Ultima actualizacion: feb 2026",
   },
 
   drywall: {
@@ -174,6 +177,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
       "Agrega un factor de desperdicio por cortes, esquinas, soffits y errores.",
       "Redondea a placas completas; quedarse corto retrasa la obra.",
       "Confirma espesor y tipo (1/2 vs 5/8, resistente a humedad/fuego) antes de comprar.",
+      "En techos, el 5/8 suele ser comun cuando la separacion de vigas es mayor; verifica normas y fabricante.",
       "Techos suelen requerir mas margen por recortes y dificultad de instalacion.",
     ],
     deepDiveTitle: "El diseno de placas y las juntas importan",
@@ -182,6 +186,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
       "Placas mas largas reducen juntas, pero son mas pesadas y a veces imposibles de maniobrar en escaleras o pasillos.",
       "La mayor variacion suele venir del desperdicio: esquinas, muros cortos, techos con luces/ventilaciones y recortes para instalaciones generan sobrantes inutilizables.",
       "El tipo de placa no cambia el conteo, pero si la compra: zonas humedas y techos pueden requerir placa especifica (segun codigo/estructura).",
+      "La separacion de vigas influye en el espesor: 1/2 en 16\" OC y 5/8 en 24\" OC son reglas comunes, pero confirma con codigo local.",
       "Comprar 1-2 placas extra suele ser mas barato que detenerse por una sola placa.",
     ],
     howToMeasureTitle: "Como medir para placas de yeso (drywall)",
@@ -270,7 +275,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
       "No revisar minimos de entrega y sorprenderse con costos.",
       "No preparar colocacion/curado y perder calidad aunque el volumen sea correcto.",
     ],
-    lastUpdated: "Ultima actualizacion: ene 2026",
+    lastUpdated: "Ultima actualizacion: feb 2026",
   },
 
   roofing: {
@@ -649,6 +654,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
   deckMud: {
     quick: [
       "Define el area a cubrir y el espesor promedio (por ejemplo, base de ducha con pendiente).",
+      "Usa una tabla de cobertura o regla rapida para pasar de espesor a cobertura por pie3.",
       "Convierte area x espesor a volumen y luego a sacos segun rendimiento por bolsa.",
       "La pendiente cambia el espesor: usa espesor promedio para una estimacion realista.",
       "Si hay bordes altos o desniveles, estima esas zonas aparte y suma.",
@@ -658,6 +664,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
     deepDiveTitle: "Espesor promedio = cantidad real",
     deepDive: [
       "El deck mud (dry pack) se estima por volumen. En duchas con pendiente, el espesor no es uniforme: el promedio entre el punto mas delgado y el mas grueso suele ser mas confiable.",
+      "Regla de cobertura: volumen (pies3) = area (pies2) x espesor (in) / 12. Eso equivale a ~12 pies2 a 1\", ~6 a 2\" y ~4 a 3\" (antes de merma).",
       "La mezcla se trabaja en un tiempo limitado. Quedarte corto puede obligarte a parar y mezclar otra tanda, lo que afecta calidad y pendiente.",
       "El rendimiento por bolsa varía por marca y consistencia. Usa el dato del fabricante si lo tienes y agrega margen por desperdicio.",
       "Pequenos detalles consumen material: bordes, bancos, nichos o zonas de reparacion.",
@@ -669,6 +676,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
       "Define espesor minimo y maximo si hay pendiente.",
       "Usa espesor promedio: (min + max) / 2.",
       "Volumen = area x espesor (con unidades consistentes).",
+      "Si tu producto trae tabla de cobertura, usa ese rendimiento y cuida las unidades.",
       "Convierte a sacos usando rendimiento por bolsa del producto.",
       "Agrega margen por desperdicio y por ajustes de pendiente en obra.",
     ],
@@ -676,6 +684,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
     assumptions: [
       "Pendiente significa espesor variable; promedio evita subestimar.",
       "Rendimiento por bolsa depende del producto y de la mezcla.",
+      "Las tablas de cobertura asumen mezcla consistente; mas agua suele reducir la cobertura real.",
       "Desperdicio y limpieza consumen material real.",
       "Detalles y reparaciones locales aumentan volumen.",
       "El sistema de impermeabilizacion puede requerir capas adicionales (segun metodo).",
@@ -697,7 +706,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
       "No preparar el sitio y perder tiempo mientras la mezcla se seca.",
       "Olvidar desperdicio por limpieza y ajuste de pendiente.",
     ],
-    lastUpdated: "Ultima actualizacion: ene 2026",
+    lastUpdated: "Ultima actualizacion: feb 2026",
   },
 
   paverBase: {
@@ -1241,6 +1250,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
       "Mide el area y define el espesor compactado objetivo (no el espesor suelto).",
       "Convierte a volumen (cu yd o m3) y luego a toneladas segun densidad realista.",
       "La densidad cambia por tipo de piedra, humedad y compactacion: confirma con proveedor.",
+      "Regla rapida: muchas gravas rondan 1.2-1.6 toneladas por yarda3, pero la conversion del proveedor es la mas fiable.",
       "Agrega margen por bordes, irregularidades y variacion de espesor (5-10% suele ayudar).",
       "Si hay base y capa superior, estima cada capa por separado y suma.",
       "En pendientes, usa espesor promedio para no subestimar.",
@@ -1266,6 +1276,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
     assumptions: [
       "El espesor objetivo es despues de compactar.",
       "La densidad usada corresponde al tipo de grava real y a su humedad.",
+      "Las reglas rapidas sirven para planear, pero el pedido debe usar la conversion del proveedor.",
       "El area medida incluye solo donde se colocara material.",
       "Hay perdidas por esparcido y nivelacion.",
       "Capas multiples se estiman por separado (base vs capa final).",
@@ -1286,7 +1297,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
       "No agregar margen para bordes e irregularidades.",
       "No separar capas (base y acabado) y mezclar espesores.",
     ],
-    lastUpdated: "Ultima actualizacion: ene 2026",
+    lastUpdated: "Ultima actualizacion: feb 2026",
   },
 
   tileGrout: {
@@ -1347,6 +1358,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
       "El consumo depende de cuantas juntas y esquinas tienes, no solo de area.",
       "Cuenta laminas de drywall y estima lineas de junta (verticales/horizontales) segun layout.",
       "Decide el nivel de acabado (Level 3/4/5): mas nivel = mas compuesto y lijado.",
+      "Techos y acabados Level 5 suelen requerir mas compuesto que paredes simples.",
       "Las esquinas (internas/externas) consumen cinta y mas compuesto por pasada.",
       "Usa la cobertura por galon/bolsa del producto y agrega margen por desperdicio y lijado.",
       "Si hay textura pesada, el nivel de acabado puede bajar; si va liso y pintado, suele subir (segun objetivo).",
@@ -1355,6 +1367,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
     deepDive: [
       "Una habitacion con la misma area puede requerir cantidades muy distintas segun el numero de juntas, altura y cantidad de cortes.",
       "Butt joints (uniones de extremo) suelen requerir mas compuesto para difuminar y evitar que se note. Layout inteligente puede reducirlas.",
+      "En techos y zonas con luz rasante, suele haber mas capas y mas lijado; el consumo real de compuesto sube.",
       "El tipo de cinta (papel vs malla) cambia el consumo y la tecnica. Papel suele ser mas fuerte en esquinas; malla es mas rapida pero puede requerir compuesto especifico (segun sistema).",
       "Nivel 4 suele implicar varias manos sobre juntas y tornillos. Nivel 5 agrega skim coat completo, aumentando material de forma marcada.",
       "Parte del material se pierde en la bandeja, en lijado y en reparaciones. Un margen ayuda a terminar sin parar.",
@@ -1392,7 +1405,7 @@ export const CALCULATOR_CONTENT_ES: Partial<
       "No dejar secar entre manos y arruinar el acabado.",
       "Comprar justo y quedarte sin cinta/compuesto antes de terminar.",
     ],
-    lastUpdated: "Ultima actualizacion: ene 2026",
+    lastUpdated: "Ultima actualizacion: feb 2026",
   },
 
   drywallTexture: {
