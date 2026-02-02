@@ -578,7 +578,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Tile waste percentage guide (how much overage to buy)",
     description:
       "A practical guide to tile overage: recommended waste ranges, when to increase them, and how to avoid running short.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Common waste ranges (rule of thumb)",
@@ -595,6 +595,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Why waste is not just mistakes",
         paragraphs: [
           "Waste includes offcuts that cannot be reused, breakage, and rounding to whole boxes. It also includes pattern and dye-lot concerns: if matching later is hard, buying enough up front matters.",
+        ],
+      },
+      {
+        heading: "Layout checkpoint (before you buy)",
+        bullets: [
+          "Confirm the tile module (tile size + grout joint) and dry-lay a few rows.",
+          "Shift the layout to reduce sliver cuts at the most visible walls.",
+          "If you have borders or mosaics, estimate those as separate materials.",
         ],
       },
       {
@@ -852,7 +860,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Ceiling drywall thickness guide (1/2 vs 5/8)",
     description:
       "A practical ceiling drywall guide: thickness choices, joist spacing, sag resistance, and seam planning.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Quick rule of thumb (common practice)",
@@ -890,6 +898,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Prefer fewer butt joints; long butt seams can telegraph under light.",
           "Avoid lining up ceiling butt joints in a straight line across the room when possible.",
           "If you must patch or break sheets, keep seams away from prominent fixtures and skylights.",
+        ],
+      },
+      {
+        heading: "Fastener spacing (quick reminder)",
+        bullets: [
+          "Follow the board and fastener manufacturer schedule for ceilings.",
+          "Missed framing members lead to sag and popped screws.",
+          "If you are unsure, tighten spacing on ceilings rather than widening it.",
         ],
       },
       {
@@ -955,7 +971,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Gravel yards to tons guide (why the conversion varies)",
     description:
       "Why yards-to-tons conversions vary, what density means, and how to get a reliable number from your supplier.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Why conversions vary",
@@ -1027,6 +1043,12 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Do you sell by the ton, yard, or truckload, and what unit is a “ton” for your region?",
           "What density or conversion do you use for this product?",
           "What’s the delivery minimum and where can the truck dump safely?",
+        ],
+      },
+      {
+        heading: "Proof of quantity (keep the ticket)",
+        paragraphs: [
+          "Keep the scale ticket or delivery slip. It lists the product name, tons delivered, and often the moisture condition. It helps match future loads and validate your real-world coverage.",
         ],
       },
     ],

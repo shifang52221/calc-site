@@ -86,11 +86,14 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     paragraphs: [
       "Tile waste depends on layout and room shape more than raw square footage. Diagonal patterns, herringbone, and lots of corners increase waste because more tiles are cut.",
       "If you’re mixing field tile with mosaics, borders, or trim, estimate those separately—the box coverage and waste behavior are different.",
+      "Box rounding matters. Even if your math says 10.2 boxes, you must buy 11, and that rounding can be the difference between a calm install and a mid-job shortage.",
+      "Layout modules (tile + grout joint) affect where cuts land. A small shift in layout can turn a room full of sliver cuts into larger, reusable offcuts.",
     ],
     bullets: [
       "Use a higher waste factor for patterns, niches, and many penetrations.",
       "Keep spare tiles for repairs (same dye lot when possible).",
       "Round up if tiles may be discontinued or hard to match later.",
+      "Measure a few tiles from different boxes; real tile size can vary slightly and shift your layout lines.",
     ],
   },
   drywall: {
@@ -112,11 +115,13 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     paragraphs: [
       "Ceilings often need different board thickness and fastening schedules depending on joist spacing and local practice. That can affect both materials and labor.",
       "If the ceiling has texture removal or many patched areas, consider skim coating and primer needs in addition to sheets.",
+      "Sag resistance is the long-term issue. Heavier insulation or attic traffic can make marginal thickness choices show up later as waves or visible seams.",
     ],
     bullets: [
       "Confirm joist spacing and required board thickness (common: 1/2\" vs 5/8\").",
       "Plan help or lifts—full sheets are heavy overhead.",
       "Expect more finishing time where lighting reveals imperfections.",
+      "Hang sheets perpendicular to joists when possible to reduce sag between framing members.",
     ],
   },
   concrete: {
@@ -191,12 +196,14 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Tons calculations are only as good as the density assumption. Different gravel mixes (crushed stone, pea gravel, base) can vary enough to change your order size.",
       "If you have delivery minimums, it’s often better to round up to a clean order size than to risk running short mid-project.",
       "When in doubt, use your supplier’s density for the exact product—they see the same conversion every day and it’s usually more reliable than a generic chart.",
+      "Compaction changes coverage. The same tonnage looks like less volume after proper compaction, so plan your depth for the installed result, not the loose pile.",
     ],
     bullets: [
       "Use a supplier-provided density when possible.",
       "Round up near delivery minimums.",
       "Plan for compaction—loose thickness is not final thickness.",
       "Keep extra material for touch-ups after the first few rains and compaction.",
+      "Confirm unit: short ton (US) vs metric tonne.",
     ],
   },
   mulch: {
