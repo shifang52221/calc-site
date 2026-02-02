@@ -101,7 +101,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Paint planning complete guide (coats, primer, sheen, and prep)",
     description:
       "A practical paint planning guide that explains coats, primer decisions, sheen selection, and the measurements that make paint estimates reliable.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Start with the right measurement (wall area, not floor area)",
@@ -163,6 +163,27 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Surface prep checklist (the part that controls results)",
+        bullets: [
+          "Clean walls where there is grease, dust, or soap film; paint does not bond to grime.",
+          "Patch holes and sand flush; uneven patches show up more under higher sheen.",
+          "Scuff or degloss glossy trim before repainting to improve adhesion.",
+          "Remove sanding dust before coating; dust can cause rough finish or poor bond.",
+          "Plan drying time between coats, especially in humid rooms or during cool weather.",
+        ],
+      },
+      {
+        heading: "Estimate trim, doors, and ceilings as separate line items",
+        paragraphs: [
+          "Trim and doors often use different paint and sheen, and they usually need more prep. Ceilings require extra cut-in time around fixtures and edges. Separating them keeps your gallon count realistic.",
+        ],
+        bullets: [
+          "Trim profiles add surface area, so coverage drops compared to a flat wall.",
+          "Doors have two sides and edges; a single door can use more paint than expected.",
+          "If ceilings are textured, plan extra coverage and consider primer for stains.",
+        ],
+      },
+      {
         heading: "Buffering and buying: the real-world rules",
         bullets: [
           "Separate walls, ceilings, and trim if products or coat counts differ.",
@@ -183,7 +204,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Roofing materials checklist (what you forget when estimating)",
     description:
       "A practical checklist for roofing orders: squares, bundles, waste, and the accessory items that often get missed in basic estimates.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Squares, bundles, and why the label matters",
@@ -279,7 +300,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Gravel driveway layering and compaction (base vs top)",
     description:
       "A practical guide to estimating gravel by layers: base vs surface, compaction, drainage, and supplier ton conversions.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Think in layers (base and top are not the same)",
@@ -359,7 +380,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Topsoil leveling step-by-step (how to avoid over-ordering)",
     description:
       "A step-by-step guide to leveling with topsoil: measuring average depth, feathering edges, settling, and planning touch-ups.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Why leveling estimates go wrong",
@@ -657,7 +678,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Mulch coverage chart (cubic yards per area and depth)",
     description:
       "Mulch coverage rules of thumb and a quick chart for 100 sq ft at common depths.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Quick coverage chart (per 100 sq ft)",
@@ -684,6 +705,17 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Different mulch types spread differently; supplier coverage claims vary.",
         ],
       },
+      {
+        heading: "Bulk vs bagged mulch (quick conversion)",
+        paragraphs: [
+          "Bulk mulch is sold by the cubic yard. Bagged mulch is often sold in 2 cu ft or 3 cu ft bags. Converting early helps avoid underbuying.",
+        ],
+        bullets: [
+          "1 cubic yard = 27 cubic feet.",
+          "A 2 cu ft bag is about 0.074 cu yd; a 3 cu ft bag is about 0.111 cu yd.",
+          "Example: 2 cu yd is about 54 cu ft, or about 27 bags of 2 cu ft.",
+        ],
+      },
     ],
     related: [
       { label: "Mulch calculator", href: "/en/calculators/home-improvement/mulch" },
@@ -695,7 +727,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Topsoil coverage chart (cubic yards per area and depth)",
     description:
       "Topsoil coverage rules of thumb and a quick chart for common depths, with leveling tips.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Quick coverage chart (per 100 sq ft)",
@@ -781,6 +813,17 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "For lawns and finish grading, screened topsoil is usually easier to level and seed.",
           "For deeper fills, you may use cheaper fill material below and finish with a topsoil layer (project dependent).",
           "If you’re doing significant fill, plan compaction and settling so the final grade ends up where you want it.",
+        ],
+      },
+      {
+        heading: "Topsoil blends and compost mixes (coverage changes)",
+        paragraphs: [
+          "Many suppliers sell blended topsoil that includes compost. The blend can improve soil health, but it may feel lighter and fluffier than straight topsoil. That can change how it settles and how much you need after watering.",
+        ],
+        bullets: [
+          "Ask for the blend ratio if you are ordering by the yard.",
+          "Expect some settling after watering; plan a small buffer for touch-ups.",
+          "If you are topdressing turf, keep the layer thin so grass can grow through.",
         ],
       },
       {
@@ -3677,7 +3720,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Primer vs paint (when to prime for better coverage)",
     description:
       "A practical note: primer can improve coverage and adhesion, but it is a separate material step.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "When primer helps",
@@ -3735,6 +3778,23 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Spot-prime when only patches, repairs, or small stain areas exist and the rest of the wall is sound.",
           "Full-prime when the entire surface is porous/uneven, heavily stained, or you’ve sanded through existing coatings in many places.",
           "If the finish coat looks blotchy after the first coat, that’s often a sign the substrate is uneven and primer (or another coat) is needed.",
+        ],
+      },
+      {
+        heading: "Dry time and recoat windows (do not rush it)",
+        paragraphs: [
+          "Primer needs time to dry and cure before topcoating. Rushing can trap moisture or reduce adhesion. Always check the product label for dry and recoat time, especially in cool or humid rooms.",
+        ],
+        bullets: [
+          "Oil-based and stain-blocking primers often need longer dry times than water-based primers.",
+          "Cold or humid conditions slow drying; plan extra time in bathrooms and basements.",
+          "Sanding between coats is often optional, but it can improve smoothness on trim.",
+        ],
+      },
+      {
+        heading: "Coverage math tip (primer gallons are separate)",
+        paragraphs: [
+          "If you plan to prime, estimate primer gallons using its own coverage rate and coat count. Do not count primer as part of the paint gallons or you will underbuy.",
         ],
       },
       {
