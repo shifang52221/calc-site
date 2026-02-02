@@ -73,7 +73,6 @@ async function main() {
 
   const results = [];
   for (const b of chunk(urls, concurrency)) {
-    // eslint-disable-next-line no-await-in-loop
     const batch = await Promise.all(
       b.map(async (item) => {
         const started = Date.now();
@@ -144,4 +143,3 @@ main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
-

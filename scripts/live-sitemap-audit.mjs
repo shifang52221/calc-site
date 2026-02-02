@@ -192,7 +192,6 @@ async function main() {
 
   const results = [];
   for (const batch of urlBatches) {
-    // eslint-disable-next-line no-await-in-loop
     const batchResults = await Promise.all(
       batch.map(async (url) => {
         const started = Date.now();
@@ -369,4 +368,3 @@ main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
-
