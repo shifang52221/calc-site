@@ -31,6 +31,7 @@ function hasLocalePrefix(pathname: string) {
 const LOCALE_EXEMPT_PATHS = new Set(["/opengraph-image", "/twitter-image"]);
 
 export default function middleware(request: NextRequest) {
+  const pathname = request.nextUrl.pathname;
   if (CANONICAL_HOST) {
     const host = request.headers.get("host");
     if (host && !host.endsWith(".vercel.app") && host !== CANONICAL_HOST) {
@@ -41,22 +42,26 @@ export default function middleware(request: NextRequest) {
     }
   }
 
-  if (request.nextUrl.pathname === "/") {
+  if (pathname === "/") {
     const url = request.nextUrl.clone();
     url.pathname = "/en";
     return NextResponse.redirect(url, 308);
   }
 
   if (
-    !hasLocalePrefix(request.nextUrl.pathname) &&
-    !LOCALE_EXEMPT_PATHS.has(request.nextUrl.pathname)
+    !hasLocalePrefix(pathname) &&
+    !LOCALE_EXEMPT_PATHS.has(pathname)
   ) {
     const url = request.nextUrl.clone();
-    url.pathname = `/${DEFAULT_LOCALE}${request.nextUrl.pathname}`;
+    url.pathname = `/${DEFAULT_LOCALE}${pathname}`;
     return NextResponse.redirect(url, 308);
   }
 
-  return intlMiddleware(request);
+  const response = intlMiddleware(request);
+  if (pathname.startsWith("/es") || pathname.startsWith("/zh-TW")) {
+    response.headers.set("X-Robots-Tag", "noindex, follow");
+  }
+  return response;
 }
 
 export const config = {
