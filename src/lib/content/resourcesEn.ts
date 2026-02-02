@@ -24,7 +24,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Deck mud coverage chart (dry pack mortar)",
     description:
       "Quick deck mud coverage table, mixing notes, and practical tips for estimating dry pack mortar by area and thickness.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Quick coverage table",
@@ -3757,7 +3757,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Tile project planning guide (layout, overage, and materials list)",
     description:
       "A practical tile planning guide: how to choose an overage factor, avoid box-coverage mistakes, and build a complete materials list.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Start with layout (layout drives waste)",
@@ -3774,6 +3774,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["Large format tile", "10–15%", "Fewer pieces but breakage risk matters"],
           ],
         },
+      },
+      {
+        heading: "Layout checkpoint (before you buy)",
+        bullets: [
+          "Confirm the tile module (tile size + grout joint) and dry-lay a few rows.",
+          "Shift the layout to reduce sliver cuts at the most visible walls.",
+          "If you have borders or mosaics, estimate those as separate materials.",
+        ],
       },
       {
         heading: "Box coverage: the label always wins",
@@ -3930,6 +3938,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "If the ceiling will be under strong directional light, stiffer board usually looks flatter.",
           "If you are working alone, smaller/lighter sheets can be safer even if seam count increases.",
           "Sketch the ceiling and keep butt joints away from the most noticeable sight lines when possible.",
+        ],
+      },
+      {
+        heading: "Fastener spacing (quick reminder)",
+        bullets: [
+          "Follow the board and fastener manufacturer schedule for ceilings.",
+          "Missed framing members lead to sag and popped screws.",
+          "If you are unsure, tighten spacing on ceilings rather than widening it.",
         ],
       },
       {
