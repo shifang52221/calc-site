@@ -8,6 +8,9 @@ import { GUIDE_DEFINITIONS } from "@/lib/guidesCatalog";
 import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 import { getResourceArticles } from "@/lib/content/resourcesByLocale";
 
+export const dynamic = "force-static";
+export const revalidate = 86400;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
   const locales = routing.locales;

@@ -1,6 +1,8 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
+export const dynamic = "force-static";
+export const revalidate = 86400;
 
 export const size = {
   width: 1200,
@@ -46,4 +48,3 @@ export default function TwitterImage() {
     size,
   );
 }
-
