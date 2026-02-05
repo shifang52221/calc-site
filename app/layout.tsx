@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
-import { cookies } from "next/headers";
 import "./globals.css";
 import { getSiteUrl, SITE_NAME } from "@/lib/site";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
@@ -42,13 +41,14 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
+export const dynamic = "force-static";
+
 export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const cookieStore = await cookies();
-  const locale = cookieStore.get("NEXT_LOCALE")?.value ?? "en";
+  const locale = "en";
   const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN?.trim();
   const plausibleSrc =
     process.env.NEXT_PUBLIC_PLAUSIBLE_SRC?.trim() ||
@@ -60,6 +60,14 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Script
+          id="set-html-lang"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){var path=location.pathname||'/';var seg=path.split('/')[1]||'en';if(seg==='es'||seg==='en'||seg==='zh-TW'){document.documentElement.lang=seg;}})();",
+          }}
+        />
         <GoogleAnalytics measurementId={gaMeasurementId} />
         {plausibleDomain ? (
           <Script

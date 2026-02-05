@@ -9,6 +9,8 @@ import { CookieBanner } from "@/components/CookieBanner";
 import { AdSenseScript } from "@/components/AdSenseScript";
 import { ADSENSE_CLIENT } from "@/lib/adsense";
 
+export const dynamic = "force-static";
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
