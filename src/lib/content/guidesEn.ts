@@ -14,11 +14,15 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     paragraphs: [
       "Paint estimates are most accurate when you separate walls, ceilings, and trim. They often use different products and can have different coverage rates and number of coats.",
       "Coverage varies with surface texture, porosity, and color change. If you’re painting fresh drywall, heavy texture, or making a dramatic color change, plan for extra material (and sometimes an extra coat).",
+      "Primer is its own line item. Use it for raw drywall, stains, glossy surfaces, or big color changes, then still plan enough finish paint for your chosen coats.",
+      "If you are painting multiple rooms, box (mix) your paint in a larger bucket to keep color consistent and save labeled leftovers for touch-ups.",
     ],
     bullets: [
       "If you know the product, use the label coverage; don’t rely on generic averages.",
       "Deep colors and stains often need more coats than you expect.",
       "Buy enough from the same batch/tint for color consistency.",
+      "Spraying uses more paint than rolling; add a larger waste buffer if you spray.",
+      "Sanding, patching, and caulk are often the difference between one and two finish coats.",
     ],
   },
   "paint-ceiling": {
@@ -88,12 +92,16 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "If you’re mixing field tile with mosaics, borders, or trim, estimate those separately—the box coverage and waste behavior are different.",
       "Box rounding matters. Even if your math says 10.2 boxes, you must buy 11, and that rounding can be the difference between a calm install and a mid-job shortage.",
       "Layout modules (tile + grout joint) affect where cuts land. A small shift in layout can turn a room full of sliver cuts into larger, reusable offcuts.",
+      "For tighter estimates, split floors, walls, and niches into separate line items; wall tile and niches usually create more waste than open floors.",
+      "Apply waste before converting to boxes, and confirm the label units (sq ft vs sq m) so you don’t under-buy.",
     ],
     bullets: [
       "Use a higher waste factor for patterns, niches, and many penetrations.",
       "Keep spare tiles for repairs (same dye lot when possible).",
       "Round up if tiles may be discontinued or hard to match later.",
       "Measure a few tiles from different boxes; real tile size can vary slightly and shift your layout lines.",
+      "Confirm box coverage and units before you convert to boxes.",
+      "Estimate trims, mosaics, and edge profiles as separate line items.",
     ],
   },
   drywall: {
@@ -102,10 +110,13 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Drywall estimates are driven by sheet layout and seams. Larger sheets reduce seams but may be harder to handle and transport.",
       "Many corners, soffits, and odd shapes increase waste because more pieces are cut and fewer offcuts are reusable.",
       "If you’re doing ceilings, plan for lifts or extra help—handling choices often matter more than the last sheet in the estimate.",
+      "If you are matching existing drywall, confirm thickness and edge profile before you order.",
     ],
     bullets: [
+      "Subtract large openings only if you want a tight estimate; waste often covers doors and windows.",
       "Consider 4×8 vs 4×10/4×12 sheets (handling vs fewer seams).",
       "Plan for corner bead, screws, tape, and compound as separate materials.",
+      "Plan for joint materials (tape, mud, corner bead) and fasteners as their own line items.",
       "Fire-rated areas may require specific board types and thicknesses.",
       "If sound control matters, confirm whether you need insulation, resilient channels, or specialty board.",
     ],

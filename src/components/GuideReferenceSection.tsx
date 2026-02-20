@@ -158,6 +158,16 @@ const REFERENCES_EN: Partial<Record<GuideId, GuideReferenceBlock>> = {
     title: "When to increase tile waste",
     intro:
       "Use a higher waste factor when the layout forces lots of small cuts and the offcuts can’t be reused.",
+    table: {
+      columns: ["Layout", "Typical waste", "Note"],
+      rows: [
+        ["Straight lay", "7-10%", "Few cutoffs in simple rooms"],
+        ["Diagonal", "12-15%", "More angled cuts and offcuts"],
+        ["Herringbone", "15-20%+", "Pattern matching creates more waste"],
+      ],
+    },
+    example:
+      "Example: 120 sq ft at 12% waste = 134.4 sq ft. Divide by box coverage and round up.",
     bullets: [
       "Diagonal, herringbone, and complex patterns almost always increase waste.",
       "Niches, benches, plumbing penetrations, and many corners increase waste on walls.",
@@ -181,6 +191,8 @@ const REFERENCES_EN: Partial<Record<GuideId, GuideReferenceBlock>> = {
         ["4×12", "48 sq ft", "Large areas; heavy"],
       ],
     },
+    example:
+      "Example: 384 sq ft walls / 32 sq ft = 12 sheets. Add 10% waste and round up to 14.",
     bullets: [
       "Add more waste for lots of openings, angles, or small rooms where offcuts don’t fit elsewhere.",
       "Estimate ceilings separately if you use thicker or sag-resistant board.",
@@ -446,14 +458,14 @@ export function GuideReferenceSection({
           >
             Methodology
           </Link>
-          <span className="hidden sm:inline">·</span>
+          <span className="hidden sm:inline">|</span>
           <Link
             href={routes.resources(locale)}
             className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
           >
             Resources
           </Link>
-          <span className="hidden sm:inline">·</span>
+          <span className="hidden sm:inline">|</span>
           <Link
             href={routes.editorialPolicy(locale)}
             className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
@@ -474,7 +486,7 @@ export function GuideReferenceSection({
           {block.related?.length ? (
             <>
               {block.calculatorHref ? (
-                <span className="hidden sm:inline">·</span>
+                <span className="hidden sm:inline">|</span>
               ) : null}
               {block.related.map((r, idx) => (
                 <span key={r.href} className="flex flex-row items-center gap-2">
@@ -485,7 +497,7 @@ export function GuideReferenceSection({
                     {r.label}
                   </Link>
                   {idx < block.related!.length - 1 ? (
-                    <span className="hidden sm:inline">·</span>
+                    <span className="hidden sm:inline">|</span>
                   ) : null}
                 </span>
               ))}

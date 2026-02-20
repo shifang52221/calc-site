@@ -84,9 +84,9 @@ export default async function DeckMudPage({
             Deck mud coverage chart (quick reference)
           </h2>
           <p>
-            Coverage is based on simple volume math (before waste): 1 cu ft covers{" "}
-            {`12 ÷ thickness(in)`} sq ft, and 1 cu yd (27 cu ft) covers{" "}
-            {`324 ÷ thickness(in)`} sq ft.
+            Coverage is based on simple volume math (before waste): 1 cu ft covers
+            about 12 / thickness(in) sq ft, and 1 cu yd (27 cu ft) covers about
+            324 / thickness(in) sq ft.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full min-w-[520px] border-collapse text-left">
@@ -123,7 +123,7 @@ export default async function DeckMudPage({
             </table>
           </div>
           <p className="text-xs text-zinc-500 dark:text-zinc-400">
-            Tip: If you’re building a shower slope, use the average of perimeter
+            Tip: If you're building a shower slope, use the average of perimeter
             thickness and drain thickness, then add a buffer for waste and cleanup.
           </p>
           <p className="text-xs text-zinc-500 dark:text-zinc-400">
@@ -134,14 +134,14 @@ export default async function DeckMudPage({
             >
               Deck mud coverage chart
             </Link>
-            {" · "}
+            {" | "}
             <Link
               href={`${routes.resources(locale)}/deck-mud-mix-ratio-guide`}
               className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
             >
               Mix ratio guide
             </Link>
-            {" · "}
+            {" | "}
             <Link
               href={`${routes.resources(locale)}/deck-mud-slope-per-foot`}
               className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"

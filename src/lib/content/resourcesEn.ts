@@ -47,6 +47,36 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Cubic yards quick reference",
+        paragraphs: [
+          "1 cubic yard = 27 cubic feet. Convert your total cubic feet to yards by dividing by 27.",
+          "Example: 18.75 cu ft / 27 = 0.69 cu yd (round up if ordering bulk).",
+        ],
+      },
+      {
+        heading: "Thickness conversion (inches to feet)",
+        paragraphs: [
+          "Thickness in feet = thickness in inches / 12. Use that value for volume: area x thickness (ft).",
+        ],
+        bullets: [
+          "1 inch = 0.083 ft, 1.5 inches = 0.125 ft, 2 inches = 0.167 ft.",
+        ],
+      },
+      {
+        heading: "Worked example (quick order)",
+        paragraphs: [
+          "Example: 40 sq ft at 1.25 inches: volume = 40 x (1.25/12) = 4.17 cu ft. Add 10% waste to about 4.6 cu ft.",
+        ],
+      },
+      {
+        heading: "Bag planning notes",
+        bullets: [
+          "Use the bag yield on the label (cu ft per bag).",
+          "Bags needed = total cu ft / bag yield, then round up.",
+          "Keep a small buffer for mixing loss and cleanup.",
+        ],
+      },
+      {
         heading: "Mix ratio and consistency (dry pack basics)",
         paragraphs: [
           "Deck mud (dry pack) is intentionally low-water and packable. The goal is a stable, shaped bed you can compact and screed flat or to slope.",
@@ -474,7 +504,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Flooring installation planning (moisture, acclimation, and underlayment)",
     description:
       "A practical flooring planning guide: waste, moisture checks, acclimation, underlayment selection, and the non-area items that cause project delays.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Why flooring projects fail (it is not the square footage)",
@@ -489,9 +519,28 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Moisture testing (do not guess by feel)",
+        bullets: [
+          "Concrete slabs often require moisture testing before install (method depends on product).",
+          "Wood subfloors can hold moisture that causes warping or gaps later.",
+          "If the product has a moisture limit, document it before installation.",
+        ],
+      },
+      {
         heading: "Underlayment: match the system",
         paragraphs: [
           "Underlayment choice depends on floor type (LVP, laminate, engineered wood), subfloor type, and whether you need moisture barrier or sound control. Do not assume one underlayment fits all products.",
+        ],
+      },
+      {
+        heading: "Subfloor flatness and prep",
+        paragraphs: [
+          "Most flooring failures trace back to uneven or unstable subfloors. Flatness tolerances are product-specific, but the principle is the same: fix dips and high spots before you install.",
+        ],
+        bullets: [
+          "Use a long straightedge to find low and high areas.",
+          "Plan leveling compound as a separate line item for uneven slabs.",
+          "Secure squeaks or loose panels on wood subfloors before covering.",
         ],
       },
       {
@@ -521,6 +570,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Pick a waste factor that matches layout complexity (diagonal installs cost more).",
           "Use label coverage per box and round up to whole boxes.",
           "Keep 1–2 boxes for future repairs if matching later matters.",
+        ],
+      },
+      {
+        heading: "Expansion gaps and transitions",
+        bullets: [
+          "Most floating floors require expansion gaps at walls and fixed objects.",
+          "Large continuous runs often need transitions per manufacturer guidance.",
+          "Doorways and floor height changes should be planned early so you choose compatible profiles.",
         ],
       },
       {
@@ -557,12 +614,18 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Roofing squares and bundles explained",
     description:
       "Learn what a roofing square is, how bundles convert to squares, and how waste and accessories affect your final order.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "What is a roofing square?",
         paragraphs: [
           "A roofing square is 100 square feet of roof surface area. Roofing is priced and ordered based on surface area, not the house footprint.",
+        ],
+      },
+      {
+        heading: "Footprint vs roof area (quick reminder)",
+        paragraphs: [
+          "A pitched roof has more surface area than the footprint. If you only have the footprint, use a pitch multiplier as a planning estimate, then add waste for complexity.",
         ],
       },
       {
@@ -580,12 +643,35 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Convert squares to bundles (step-by-step)",
+        bullets: [
+          "Calculate roof surface area, then divide by 100 to get squares.",
+          "Multiply squares by bundles per square from the product label.",
+          "Apply a waste factor based on roof complexity.",
+          "Round up to whole bundles.",
+        ],
+      },
+      {
         heading: "What people forget to order",
         bullets: [
           "Starter strip, ridge caps, and underlayment (often separate SKUs).",
           "Ice & water shield (code/climate dependent).",
           "Drip edge and flashing around penetrations.",
           "Nails and ventilation components (ridge vent).",
+        ],
+      },
+      {
+        heading: "Worked example (bundles and waste)",
+        paragraphs: [
+          "Example: roof area 2,000 sq ft = 20 squares. If the shingle is 3 bundles per square, base bundles = 60. Add 10-15% waste for a simple roof (66-69 bundles), then round up.",
+        ],
+      },
+      {
+        heading: "Ordering tips",
+        bullets: [
+          "Buy all shingles and ridge caps from the same batch when possible to reduce color mismatch risk.",
+          "Plan delivery placement and weather windows to reduce damage and loss.",
+          "Keep a small number of extra bundles for repairs or future matching.",
         ],
       },
     ],
@@ -612,17 +698,51 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           ],
         },
       },
-      {
-        heading: "Why waste is not just mistakes",
-        paragraphs: [
-          "Waste includes offcuts that cannot be reused, breakage, and rounding to whole boxes. It also includes pattern and dye-lot concerns: if matching later is hard, buying enough up front matters.",
-        ],
-      },
-      {
-        heading: "Layout checkpoint (before you buy)",
-        bullets: [
-          "Confirm the tile module (tile size + grout joint) and dry-lay a few rows.",
-          "Shift the layout to reduce sliver cuts at the most visible walls.",
+        {
+          heading: "Why waste is not just mistakes",
+          paragraphs: [
+            "Waste includes offcuts that cannot be reused, breakage, and rounding to whole boxes. It also includes pattern and dye-lot concerns: if matching later is hard, buying enough up front matters.",
+          ],
+        },
+        {
+          heading: "Quick formula (boxes)",
+          paragraphs: [
+            "Ordering area = tile area x (1 + waste).",
+            "Boxes needed = ordering area / box coverage, then round up.",
+          ],
+          bullets: [
+            "Apply waste before dividing by box coverage.",
+            "Round up to whole boxes; partial boxes are rarely sold.",
+          ],
+        },
+        {
+          heading: "When to increase waste",
+          bullets: [
+            "Diagonal, herringbone, or complex patterns.",
+            "Large-format tiles in small rooms (more offcuts).",
+            "Many cuts: niches, benches, corners, and plumbing penetrations.",
+            "Strict pattern or vein matching that forces you to reject pieces.",
+          ],
+        },
+        {
+          heading: "Example: box rounding matters",
+          paragraphs: [
+            "Example: 120 sq ft room at 12% waste = 134.4 sq ft. If a box covers 13.6 sq ft, you need 9.88, which rounds to 10 boxes.",
+          ],
+        },
+        {
+          heading: "Walls vs floors (quick reminder)",
+          bullets: [
+            "Walls with niches, benches, and plumbing almost always need higher waste.",
+            "Large-format wall tile can increase waste around corners and cutouts.",
+            "Mosaics and trims are separate materials - estimate them separately.",
+          ],
+        },
+        {
+          heading: "Layout checkpoint (before you buy)",
+          bullets: [
+            "Confirm the tile module (tile size + grout joint) and dry-lay a few rows.",
+            "Shift the layout to reduce sliver cuts at the most visible walls.",
           "If you have borders or mosaics, estimate those as separate materials.",
         ],
       },
@@ -946,6 +1066,18 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Sag and span basics (why thickness matters)",
+        paragraphs: [
+          "Sag risk increases with wider framing spacing, humidity changes, and ceiling loads. Thicker or sag-resistant board reduces long-term deflection and helps the ceiling stay flat.",
+          "If a ceiling will be hit by strong directional light, even small deflection can be visible. Planning for stiffness is usually more important than shaving a few pounds off each sheet.",
+        ],
+        bullets: [
+          'Wider spacing (24" on center) is the most common reason to step up to 5/8".',
+          "High humidity or temperature swings can increase sag risk (garages, kitchens, covered porches).",
+          "Longer sheets reduce butt joints but increase weight; balance seam reduction with safe handling.",
+        ],
+      },
+      {
         heading: "How to choose between 1/2 and 5/8 (decision checklist)",
         bullets: [
           'If framing is 24" on center, 5/8" is a common safer choice for sag resistance.',
@@ -972,6 +1104,17 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Follow the board and fastener manufacturer schedule for ceilings.",
           "Missed framing members lead to sag and popped screws.",
           "If you are unsure, tighten spacing on ceilings rather than widening it.",
+        ],
+      },
+      {
+        heading: "Handling and install planning (reduce breakage and fatigue)",
+        paragraphs: [
+          "Ceiling sheets are awkward even when the math is perfect. Plan for a lift or extra hands when using 5/8 inch or long sheets. A clean layout beats a perfect sheet count if it keeps the install safe and accurate.",
+        ],
+        bullets: [
+          "Consider a drywall lift for long or heavy sheets.",
+          "Pre-mark joists and lighting locations so fasteners and cutouts land cleanly.",
+          "If a ceiling will be textured, plan that finishing method early; it can change how seams and joints are treated.",
         ],
       },
       {
@@ -1216,7 +1359,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Board feet explained (simple formula and examples)",
     description:
       "What board feet are, the formula, and how to avoid common mistakes when pricing lumber.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "The board foot formula",
@@ -1236,6 +1379,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Mixing nominal and actual sizes without noticing.",
           "Forgetting to convert inches/feet consistently.",
           "Not planning extra for defects, cutoffs, and grain matching.",
+        ],
+      },
+      {
+        heading: "Surfacing and kerf (why rough vs finished matters)",
+        paragraphs: [
+          "Rough-sawn lumber is thicker and wider than the finished size after surfacing. Plan your board feet based on the rough size you are buying, then confirm the finished thickness you need (S2S/S3S/S4S).",
+        ],
+        bullets: [
+          "Plan extra if you need to plane or joint boards heavily.",
+          "Saw kerf (the blade cut) reduces usable length on repeated cuts.",
         ],
       },
       {
@@ -1263,12 +1416,28 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Moisture and movement (planning for wood movement)",
+        bullets: [
+          "Wood moves with humidity; acclimate lumber if the project requires stable dimensions.",
+          "Outdoor projects need species-appropriate treatment and fasteners.",
+          "If you are matching an existing floor or trim, moisture content matters as much as size.",
+        ],
+      },
+      {
         heading: "How to estimate lumber for a project (simple workflow)",
         bullets: [
           "List parts by thickness × width × length and quantity (cut list).",
           "Convert each part to board feet and sum the total.",
           "Add waste allowance based on the project: straight framing can be lower; furniture-grade and grain-matching can be higher.",
           "If the lumberyard charges by linear foot for certain products (trim, decking, studs), compare both pricing methods to avoid surprises.",
+        ],
+      },
+      {
+        heading: "Grade and yield (why you might need more)",
+        bullets: [
+          "Lower grades have more knots and defects, which reduce usable yield.",
+          "If you need clear or long pieces, plan extra board feet for selection.",
+          "Ask your supplier about minimum length rules and width upcharges.",
         ],
       },
       {
@@ -1609,32 +1778,44 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Sand density and weight guide (yards, tons, and compaction)",
     description:
       "Why sand density varies, how to convert volume to weight, and what to confirm with your supplier.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
-      {
-        heading: "Why density varies",
-        paragraphs: [
-          "Sand density changes by moisture and sand type (masonry, concrete, play sand), and compaction. That is why one generic conversion can be wrong for your supplier.",
-        ],
-      },
-      {
-        heading: "Typical planning ranges (loose)",
-        table: {
-          columns: ["Material (typical)", "Approx. lb per cubic yard", "Notes"],
-          rows: [
-            ["Dry sand", "2400-2800", "Varies by moisture and gradation"],
-            ["Damp sand", "2700-3200", "Heavier due to moisture"],
+        {
+          heading: "Why density varies",
+          paragraphs: [
+            "Sand density changes by moisture and sand type (masonry, concrete, play sand), and compaction. That is why one generic conversion can be wrong for your supplier.",
+            "Two piles that look similar can weigh very differently if one is wetter or more compacted. Delivered sand is loose; after placement and compaction, the installed volume usually shrinks.",
           ],
         },
-      },
-      {
-        heading: "Best practice",
-        bullets: [
-          "Use the supplier conversion for the exact sand you are buying.",
-          "If you are bedding pavers, confirm bedding sand type and typical compacted thickness.",
-          "Order a small buffer for grading and cleanup, and round to delivery minimums.",
-        ],
-      },
+        {
+          heading: "Typical planning ranges (loose)",
+          table: {
+            columns: ["Material (typical)", "Approx. lb per cubic yard", "Notes"],
+            rows: [
+              ["Dry sand", "2400-2800", "Varies by moisture and gradation"],
+              ["Damp sand", "2700-3200", "Heavier due to moisture"],
+            ],
+          },
+        },
+        {
+          heading: "Metric quick reference (loose)",
+          table: {
+            columns: ["Material (typical)", "Approx. kg per m^3", "Notes"],
+            rows: [
+              ["Dry sand", "1450-1700", "Wide range by gradation and moisture"],
+              ["Damp sand", "1600-1900", "Moisture adds weight quickly"],
+            ],
+          },
+        },
+        {
+          heading: "Best practice",
+          bullets: [
+            "Use the supplier conversion for the exact sand you are buying.",
+            "If you are bedding pavers, confirm bedding sand type and typical compacted thickness.",
+            "Order a small buffer for grading and cleanup, and round to delivery minimums.",
+            "Confirm whether the supplier uses short tons (US) or metric tonnes for weight pricing.",
+          ],
+        },
       {
         heading: "How to convert yards to tons (quick method)",
         paragraphs: [
@@ -1958,7 +2139,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Fence post hole concrete guide (depth, diameter, and layout)",
     description:
       "How to plan fence posts: why corners/gates add posts, what affects hole size, and how concrete volume adds up.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Why post count is not just length / spacing",
@@ -1966,6 +2147,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Corners, ends, and gates add posts beyond simple spacing math.",
           "Gate posts often need heavier posts and more concrete.",
           "Sloped terrain and stepped panels can change layout and spacing.",
+        ],
+      },
+      {
+        heading: "Depth planning (frost and wind)",
+        bullets: [
+          "Frost depth often sets the minimum hole depth in cold climates.",
+          "Taller fences and windy sites usually need deeper or wider footings.",
+          "Corner and gate posts carry higher loads and should be planned separately.",
         ],
       },
       {
@@ -2006,6 +2195,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Concrete-set posts are common for gates, corners, and higher loads (project dependent).",
           "Gravel set can drain well, but performance depends on compaction and soil conditions.",
           "If frost heave is a concern, drainage and depth planning are usually more important than perfect volume math.",
+        ],
+      },
+      {
+        heading: "Bell footings and gravel bases",
+        bullets: [
+          "Bell-shaped footings can resist uplift but increase concrete volume.",
+          "A compacted gravel base can improve drainage under the post.",
+          "If you add gravel, subtract that depth from the concrete depth.",
         ],
       },
       {
@@ -2086,31 +2283,57 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "How many drywall sheets do I need? (room size examples)",
     description:
       "A few practical drywall sheet examples for common room sizes, plus what changes the count.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
-      {
-        heading: "Example planning table (walls only)",
-        paragraphs: [
-          "These examples assume a simple rectangular room and do not subtract openings. Add a waste factor and round up to whole sheets.",
-        ],
-        table: {
-          columns: ["Room size", "Wall height", "Wall area (approx.)"],
-          rows: [
-            ["10x10 ft", "8 ft", "320 sq ft"],
-            ["12x12 ft", "8 ft", "384 sq ft"],
-            ["12x16 ft", "8 ft", "448 sq ft"],
+        {
+          heading: "Example planning table (walls only)",
+          paragraphs: [
+            "These examples assume a simple rectangular room and do not subtract openings. Add a waste factor and round up to whole sheets.",
+          ],
+          table: {
+            columns: ["Room size", "Wall height", "Wall area (approx.)"],
+            rows: [
+              ["10x10 ft", "8 ft", "320 sq ft"],
+              ["12x12 ft", "8 ft", "384 sq ft"],
+              ["12x16 ft", "8 ft", "448 sq ft"],
+            ],
+          },
+        },
+        {
+          heading: "Quick sheet count formula",
+          paragraphs: [
+            "Sheets needed = total area / sheet coverage, then round up and add waste.",
+            "Example: 320 sq ft / 32 sq ft (4x8) = 10 sheets. Add 10-15% waste and round up to 11-12 sheets.",
           ],
         },
-      },
-      {
-        heading: "What changes the number fast",
-        bullets: [
-          "Ceilings (add ceiling area = length x width).",
-          "Many small walls/corners increase waste (offcuts are harder to reuse).",
-          "Tall walls and stairwells can require different sheet planning and more waste.",
-        ],
-      },
-    ],
+        {
+          heading: "Sheet sizes change seams and handling",
+          table: {
+            columns: ["Sheet size", "Coverage", "Planning note"],
+            rows: [
+              ["4x8", "32 sq ft", "Easiest handling, more seams"],
+              ["4x10", "40 sq ft", "Fewer seams, needs clearance"],
+              ["4x12", "48 sq ft", "Fewest seams, heavy/awkward"],
+            ],
+          },
+        },
+        {
+          heading: "What changes the number fast",
+          bullets: [
+            "Ceilings (add ceiling area = length x width).",
+            "Many small walls/corners increase waste (offcuts are harder to reuse).",
+            "Tall walls and stairwells can require different sheet planning and more waste.",
+          ],
+        },
+        {
+          heading: "Openings and ceiling notes",
+          bullets: [
+            "Large openings can be subtracted for tighter estimates, but many small openings are usually within the waste buffer.",
+            "Ceilings often need different thickness (1/2 vs 5/8) and can increase waste because of handling.",
+            "Plan extra sheets if you want long, unbroken runs to reduce seams.",
+          ],
+        },
+      ],
     related: [
       { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
       { label: "Drywall guide", href: "/en/guides/home-improvement/drywall" },
@@ -2121,7 +2344,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Drywall waste factor guide (how much extra to buy?)",
     description:
       "A practical drywall waste guide: common ranges and when to increase overage.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Common ranges (rule of thumb)",
@@ -2133,6 +2356,21 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["Ceilings / tricky access", "12-20%", "Handling decisions add cuts"],
           ],
         },
+      },
+      {
+        heading: "When to increase waste",
+        bullets: [
+          "Lots of small rooms, closets, or short wall segments.",
+          "Many cutouts (windows, doors, lights, vents).",
+          "Ceilings, stairwells, or overhead work where breakage is more likely.",
+          "Complex layouts with soffits, alcoves, or angled ceilings.",
+        ],
+      },
+      {
+        heading: "Worked example",
+        paragraphs: [
+          "Example: 480 sq ft total / 32 sq ft per 4x8 sheet = 15 sheets. Add 12% waste = 16.8, round up to 17 sheets.",
+        ],
       },
       {
         heading: "Why waste is not just mistakes",
@@ -2151,7 +2389,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Roof pitch area multiplier (quick reference)",
     description:
       "How roof pitch increases surface area vs footprint, with common multipliers.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Common multipliers (planning)",
@@ -2170,6 +2408,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         paragraphs: [
           "Use the multiplier to convert footprint (horizontal) area into roof surface area. For a simple gable roof, you can often estimate roof area as footprint area x pitch multiplier, then add waste based on complexity.",
           "If your roof has multiple planes with different pitches, apply the multiplier per plane for a more accurate estimate.",
+        ],
+      },
+      {
+        heading: "When multipliers are not enough",
+        bullets: [
+          "Multiple pitches or complex layouts (dormers, hips, valleys) need plane-by-plane measurement.",
+          "Large overhangs add roof area beyond the footprint.",
+          "Porches and attached garages can have different pitches that change the total.",
         ],
       },
       {
@@ -2196,7 +2442,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Roofing waste factor guide (valleys, hips, dormers)",
     description:
       "How to pick a roofing waste factor based on roof complexity and cut patterns.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Typical waste ranges (rule of thumb)",
@@ -2219,6 +2465,15 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Layout details that add waste",
+        bullets: [
+          "Multiple valleys or hips that force angled cuts.",
+          "Short roof planes that leave more offcuts per bundle.",
+          "Skylights, chimneys, and vent clusters that interrupt shingle runs.",
+          "Mixing shingle types or colors (less reuse of offcuts).",
+        ],
+      },
+      {
         heading: "Accessories are separate",
         bullets: [
           "Starter, ridge caps, underlayment, flashing, drip edge, and nails are separate line items.",
@@ -2226,9 +2481,23 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Worked example (simple vs complex)",
+        paragraphs: [
+          "Example: 18 squares on a simple gable roof at 10% waste = 19.8 squares. A similar area with multiple dormers at 20% waste = 21.6 squares. The difference is mostly cut-up and layout complexity.",
+        ],
+      },
+      {
         heading: "Practical planning tip",
         paragraphs: [
           "Estimate field shingles from roof surface area, apply a waste factor, then convert to squares/bundles using the product packaging. Treat starter and ridge caps as separate estimates based on product guidance and ridge length.",
+        ],
+      },
+      {
+        heading: "Buying tips",
+        bullets: [
+          "Round up to whole bundles and keep a small buffer for repairs.",
+          "Buy all shingles from the same batch when possible to reduce color mismatch risk.",
+          "If you have a complex roof, use the higher waste range and adjust after a contractor review.",
         ],
       },
     ],
@@ -2315,7 +2584,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Deck board gap and coverage (how spacing changes board count)",
     description:
       "How board width and gapping affect coverage and why 'actual' width matters.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "What changes coverage",
@@ -2326,9 +2595,31 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Actual width beats nominal (the common miss)",
+        paragraphs: [
+          "Decking is sold by nominal size, but the actual width is smaller. Use the actual coverage width in your math or you will under-estimate board count.",
+        ],
+        bullets: [
+          "Composite and PVC boards often have different actual widths than wood.",
+          "If you mix products, do not assume widths are interchangeable.",
+        ],
+      },
+      {
+        heading: "Gapping rules (wood vs composite)",
+        bullets: [
+          "Wood gaps are often installed tighter because wood shrinks as it dries.",
+          "Composites can expand and contract with temperature; follow the product spacing chart.",
+          "End gaps matter too, especially on long runs or hot installs.",
+        ],
+      },
+      {
         heading: "Practical advice",
         paragraphs: [
           "For accurate planning, confirm your product's actual width and recommended gap. Then add waste for cuts and keep a few spare boards for future repairs.",
+        ],
+        bullets: [
+          "If you’re installing in hot weather, composite gaps may need to be slightly larger.",
+          "Plan extra boards for stairs, picture framing, and border details.",
         ],
       },
     ],
@@ -2342,7 +2633,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Diagonal deck board waste guide (how much extra?)",
     description:
       "Why diagonal deck layouts waste more material and how to pick a safer buffer.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Rule of thumb waste ranges",
@@ -2363,11 +2654,33 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Board length and layout planning",
+        bullets: [
+          "Longer boards reduce seams but can increase offcuts on diagonal cuts.",
+          "Short decks with long boards often create more unusable pieces.",
+          "If you can choose board length, match it to the deck size to reduce waste.",
+        ],
+      },
+      {
         heading: "How to choose a safer buffer",
         bullets: [
           "If your deck is a simple rectangle, start in the 10-15% range for diagonal.",
           "If you have many cut interruptions (posts, stairs, borders), increase buffer to reduce mid-project shortages.",
           "If color matching matters (some composite products), buying enough up front is safer than topping up later.",
+        ],
+      },
+      {
+        heading: "Worked example (quick planning)",
+        paragraphs: [
+          "Example: if the straight layout estimate is 300 sq ft of boards, a diagonal layout at 15% waste plans about 345 sq ft. Add more if you include borders or stairs.",
+        ],
+      },
+      {
+        heading: "Ways to reduce waste",
+        bullets: [
+          "Use offcuts for shorter runs or stairs when possible.",
+          "Stage cuts so similar angles are grouped (reduces mistakes).",
+          "If you have a picture frame, plan the border lengths first, then infill.",
         ],
       },
       {
@@ -2460,7 +2773,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Baseboard: linear feet to pieces (why piece length matters)",
     description:
       "How to convert total trim length into pieces and avoid running short due to cut planning.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Quick planning idea",
@@ -2469,11 +2782,33 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Measure runs, not just perimeter",
+        paragraphs: [
+          "Perimeter gives a fast total, but real runs stop at doors, stair trim, and built-ins. Break the room into runs and count pieces per run to avoid underbuying.",
+        ],
+      },
+      {
         heading: "Checklist",
         bullets: [
           "Confirm piece length (8 ft, 12 ft, 16 ft).",
           "Count corners and short runs that create unusable offcuts.",
           "Add a buffer for miter waste and out-of-square cuts.",
+        ],
+      },
+      {
+        heading: "Splices and joints (plan where they land)",
+        bullets: [
+          "Use scarf joints on long runs to make seams less visible.",
+          "Place joints away from corners and high-visibility spots when possible.",
+          "Short wall segments can force extra seams; add waste for these areas.",
+        ],
+      },
+      {
+        heading: "Ordering tips",
+        bullets: [
+          "Longer pieces reduce seams but can increase waste in small rooms.",
+          "If stain or finish must match, buy extra from the same batch.",
+          "Keep a spare length for future repairs and touch-ups.",
         ],
       },
     ],
@@ -2487,7 +2822,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Flooring direction and waste (why plank direction changes the math)",
     description:
       "How plank direction and room shape impact waste and box count planning.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "What increases waste",
@@ -2505,11 +2840,25 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Plank length and room width",
+        paragraphs: [
+          "Longer planks can reduce seams but they also create more offcuts in short rooms. If a room is short compared to plank length, expect higher waste because many cuts are too small to reuse.",
+        ],
+      },
+      {
         heading: "How to estimate waste more reliably",
         bullets: [
           "Start with a baseline waste factor for a simple rectangle (straight layout).",
           "Add extra waste for each additional room, closet, or hallway because offcuts are harder to reuse.",
           "Increase waste if the product requires strict staggering rules or if you need consistent color/lot matching.",
+        ],
+      },
+      {
+        heading: "Ways to reduce waste (without changing layout)",
+        bullets: [
+          "Stage planks by length to reuse offcuts in nearby rooms.",
+          "Plan transitions so offcuts can be reused in closets or secondary rooms.",
+          "If color variation is allowed, mix boxes to keep appearance consistent even with offcuts.",
         ],
       },
       {
@@ -2529,7 +2878,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Flooring boxes rounding (why you should round up)",
     description:
       "Why flooring is purchased in whole boxes and how to round safely without wasting money.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Why rounding matters",
@@ -2537,6 +2886,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Boxes are sold as whole cartons; partial cartons are not practical.",
           "Running short mid-install can force mismatched lots and delays.",
           "Keeping a small spare amount is useful for future repairs.",
+        ],
+      },
+      {
+        heading: "Box coverage varies by product",
+        paragraphs: [
+          "Two products with the same plank size can have different box coverage because the number of pieces per carton differs. Always use the exact coverage printed on the label.",
+        ],
+        bullets: [
+          "Confirm whether coverage is listed in sq ft or sq m.",
+          "Do not assume a box count based on another brand or style.",
         ],
       },
       {
@@ -2552,6 +2911,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         paragraphs: [
           "If your floor is 420 sq ft and you plan 10% waste, budget 462 sq ft. If a box covers 20 sq ft, you need 462/20 = 23.1 boxes, so you buy 24 boxes.",
           "That last box is not “waste” in most projects—it's insurance against breakage, cuts, and future repairs.",
+        ],
+      },
+      {
+        heading: "Lot matching and returns",
+        bullets: [
+          "Buy enough from one lot when possible; color and sheen can vary across lots.",
+          "Check the store return policy before opening all boxes.",
+          "Keep at least one unopened box if returns are allowed and you have extra.",
         ],
       },
       {
@@ -2983,7 +3350,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Paint coverage per gallon guide (why it varies)",
     description:
       "Why paint coverage changes with surface, texture, and color, and how to plan coats and buffer.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "What changes coverage most",
@@ -2994,9 +3361,50 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Surface porosity (what the label assumes)",
+        paragraphs: [
+          "Coverage numbers on the can assume a reasonably smooth, primed surface. New drywall, patched areas, and chalky walls absorb more paint and reduce real coverage.",
+        ],
+        bullets: [
+          "Prime new drywall or repaired areas to even out absorption.",
+          "Degloss and clean glossy or greasy surfaces so paint bonds properly.",
+          "If the wall has a lot of patching, plan extra paint even if the area is small.",
+        ],
+      },
+      {
+        heading: "Color change and sheen (coverage vs hide)",
+        bullets: [
+          "Dramatic color changes usually need extra coats for uniform color.",
+          "Dark, vivid, or saturated colors tend to need more coats.",
+          "Higher sheen can highlight roller marks and lap lines if coverage is thin.",
+        ],
+      },
+      {
+        heading: "Application method (brush, roll, or spray)",
+        bullets: [
+          "Spraying can use more paint if back-rolling or heavy overspray is involved.",
+          "Rough rollers hold more paint and reduce theoretical coverage.",
+          "Brush work on trim and edges uses more paint per square foot than rolling walls.",
+        ],
+      },
+      {
         heading: "Practical planning",
         paragraphs: [
           "Prefer the product label coverage when you have it. Then add a small buffer for touch-ups and roller/brush waste and round up to whole cans.",
+        ],
+        bullets: [
+          "If you are unsure, assume two finish coats for most repaints.",
+          "Add a buffer for dark colors, heavy texture, or porous surfaces.",
+          "Keep a labeled touch-up can for future repairs.",
+        ],
+      },
+      {
+        heading: "Quick planning checklist",
+        bullets: [
+          "Confirm surface condition (new drywall, patched, or glossy).",
+          "Confirm color change severity and target sheen.",
+          "Plan primer if absorption or stain blocking is a risk.",
+          "Round up to whole cans for consistency between batches.",
         ],
       },
     ],
@@ -3010,7 +3418,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Ceiling paint cut-in buffer (why ceilings take more time and paint)",
     description:
       "Why cut-ins, fixtures, and texture reduce ceiling paint coverage, plus practical buffer tips.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Why ceilings burn paint",
@@ -3021,10 +3429,38 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Cut-in length matters as much as area",
+        paragraphs: [
+          "A ceiling can have more linear feet of edges than you expect: light boxes, vents, fans, and closets all add cut-in. That extra brush work uses more paint and time than a simple open rectangle.",
+        ],
+        bullets: [
+          "More fixtures = more cut-in = more paint loss to brush work.",
+          "Vaulted ceilings and beams add extra edges and corners.",
+        ],
+      },
+      {
+        heading: "Texture and repairs (coverage drops fast)",
+        bullets: [
+          "Popcorn or heavy texture can reduce coverage significantly.",
+          "Patches and water stains often require primer to avoid flashing.",
+          "If you are changing ceiling color, plan an extra coat for uniformity.",
+        ],
+      },
+      {
         heading: "Practical tips",
         bullets: [
           "Plan a small buffer (often 5-10%) and keep the same product for touch-ups.",
           "If stains exist, use a stain-blocking primer first.",
+          "Cut in first, then roll while the cut-in is still wet to reduce lap marks.",
+          "Use flat or matte ceiling paint to hide surface flaws.",
+        ],
+      },
+      {
+        heading: "Planning checklist",
+        bullets: [
+          "Count fixtures/vents and add buffer for extra cut-ins.",
+          "Confirm texture type and plan for lower coverage.",
+          "Plan primer if stains or repairs exist.",
         ],
       },
     ],
@@ -3038,7 +3474,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Trim paint area from linear feet (simple method)",
     description:
       "How to convert baseboard/casing length into paintable area using face width.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Simple formula",
@@ -3047,10 +3483,37 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Measure the face, not the profile",
+        paragraphs: [
+          "Trim coverage is based on the visible face width, not the full profile depth. Use an average face width for each trim type and estimate them as separate line items.",
+        ],
+        bullets: [
+          "Baseboard and door casing often have different face widths.",
+          "Crown molding usually has more face area than baseboard.",
+          "Round up if the profile has deep grooves or heavy detail.",
+        ],
+      },
+      {
+        heading: "Don’t forget doors, jambs, and edges",
+        bullets: [
+          "Doors need paint on both sides and the edges.",
+          "Window sashes and trim return pieces add extra area.",
+          "Closet doors and bi-folds can add more surface area than expected.",
+        ],
+      },
+      {
         heading: "Common misses",
         bullets: [
           "Door/window casings add more area than people expect.",
           "Prep and primer matter more on glossy trim than on walls.",
+        ],
+      },
+      {
+        heading: "Planning tips",
+        bullets: [
+          "Trim usually needs more coats for a durable finish (often 2 finish coats).",
+          "If the trim is glossy, plan for deglossing and primer.",
+          "Round up to whole cans and keep a small amount for touch-ups.",
         ],
       },
     ],
@@ -3064,23 +3527,71 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Drywall finish levels (Level 0 to Level 5) and material impact",
     description:
       "How finish level affects mud usage and why higher levels require more compound and sanding.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Quick overview",
         table: {
           columns: ["Finish level", "Typical use", "Material impact"],
           rows: [
-            ["Level 2", "Garages/utility", "Lower compound use"],
-            ["Level 4", "Most painted walls", "More coats and sanding"],
-            ["Level 5", "Critical lighting/smooth", "Highest compound use"],
+            ["Level 0", "Temporary or behind tile", "No tape or mud applied"],
+            ["Level 1", "Concealed areas", "Tape set in compound only"],
+            ["Level 2", "Garages/utility", "Thin skim over joints and fasteners"],
+            ["Level 3", "Heavy texture", "Extra coat to reduce ridges"],
+            ["Level 4", "Most painted walls", "Multiple coats and sanding"],
+            ["Level 5", "Critical lighting/smooth", "Skim coat across the surface"],
           ],
         },
+      },
+      {
+        heading: "What each level means (plain language)",
+        paragraphs: [
+          "Levels are about how much compound is applied and how smooth the surface is before paint. Higher levels are not just \"prettier\"—they add material, time, and sanding.",
+        ],
+        bullets: [
+          "Level 0: boards hung only, no tape or finishing.",
+          "Level 1: tape in joint compound, minimal finishing.",
+          "Level 2: tape plus a thin coat over joints and fasteners.",
+          "Level 3: more compound to smooth ridges, often used under heavy texture.",
+          "Level 4: standard for smooth painted walls, multiple coats and sanding.",
+          "Level 5: full skim coat for critical light or glossy finishes.",
+        ],
       },
       {
         heading: "Planning note",
         paragraphs: [
           "If you target a higher finish level, plan more joint compound and time than a basic finish. Texture and paint can hide some imperfections, but lighting can expose them.",
+        ],
+      },
+      {
+        heading: "Material and time impact (what changes most)",
+        bullets: [
+          "More finish level = more compound, more coats, and more sanding time.",
+          "Skim coating (Level 5) often adds a near full extra coat across the surface.",
+          "Higher levels increase primer and paint performance, especially under hard light.",
+        ],
+      },
+      {
+        heading: "Paint sheen and lighting (why Level 5 exists)",
+        paragraphs: [
+          "Glossy or semi-gloss paints and strong directional light reveal flaws. If a wall will be seen under raking light, a higher finish level can prevent visible seams and ridges.",
+          "If your plan is a matte paint with heavy texture, Level 3 may be acceptable. For smooth walls and satin or glossier paint, Level 4 or 5 is more reliable.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        bullets: [
+          "Planning a high-gloss finish with only a Level 3 finish.",
+          "Skipping a skim coat where lighting makes seams obvious.",
+          "Assuming texture hides everything; it can still show joint ridges under light.",
+        ],
+      },
+      {
+        heading: "Quick planning checklist",
+        bullets: [
+          "Confirm the target finish level per room (not all rooms need the same level).",
+          "Adjust mud and sanding time based on level and wall count.",
+          "Match paint sheen and lighting expectations to the finish level.",
         ],
       },
     ],
@@ -3094,7 +3605,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Deck mud mix ratio guide (sand-to-cement)",
     description:
       "A practical deck mud note: common ratios, what changes workability, and why consistency matters.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Common ratios (by volume)",
@@ -3107,10 +3618,27 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Quick ratio math (volume split)",
+        paragraphs: [
+          "If your total mud volume is V, split by ratio. For 5:1, sand = (5/6) V and cement = (1/6) V. For 4:1, sand = (4/5) V and cement = (1/5) V.",
+          "Example: 6 cu ft at 5:1 uses about 5 cu ft sand and about 1 cu ft cement (before waste).",
+        ],
+      },
+      {
         heading: "What “deck mud” is (and what it is not)",
         paragraphs: [
           "Deck mud (also called dry pack) is intentionally low-water and packable. The goal is a stable, shaped bed that can be compacted and screeded to flat or to slope.",
           "Because it is drier than many other mixes, it behaves differently: water content, sand type, and mixing consistency matter more than people expect.",
+        ],
+      },
+      {
+        heading: "Sand selection (why it changes workability)",
+        paragraphs: [
+          "Sand gradation changes how the mix packs and screeds. Many installers use masonry or concrete sand based on local practice and system guidance.",
+        ],
+        bullets: [
+          "Avoid very fine sand if it makes the mix sticky or hard to pack.",
+          "Keep sand type consistent across batches to avoid texture changes.",
         ],
       },
       {
@@ -3141,6 +3669,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         bullets: [
           "Use the right sand type per local practice and product guidance.",
           "Consistency matters: running short mid-bed can change mix behavior and finish.",
+          "If you are converting to bags, use the cement bag yield on the label and round up.",
         ],
       },
     ],
@@ -3395,7 +3924,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Fence estimate: panels vs pickets (what changes)",
     description:
       "How fence style changes counting: prebuilt panels vs pickets, spacing, and waste planning.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "What changes between styles",
@@ -3413,6 +3942,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Panel sizing tips",
+        bullets: [
+          "Panel lengths are typically 6 ft or 8 ft; confirm the exact width for your product.",
+          "Add posts for corners, ends, and gates before you compute panels.",
+          "If the fence is stepped, plan extra panels or cut adjustments.",
+        ],
+      },
+      {
         heading: "Picket estimating (spacing drives the count)",
         paragraphs: [
           "With pickets, the count depends on picket width and the gap you choose. Small spacing changes add up across long runs. You also have more cut waste on slopes, corners, and around gates.",
@@ -3421,6 +3958,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Decide whether pickets butt together or have a gap (and how much).",
           "Confirm whether you will overlap pickets (privacy styles change math).",
           "Plan extra pickets for cuts at the ends of runs and for stepped sections.",
+        ],
+      },
+      {
+        heading: "Hardware and rails (easy to miss)",
+        bullets: [
+          "Panel installs often need brackets or clips (product dependent).",
+          "Picket fences need rails sized for span and material; plan them separately.",
+          "Gate hardware and bracing are separate line items.",
         ],
       },
       {
@@ -3440,7 +3985,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Tile grout: sanded vs unsanded (quick choice guide)",
     description:
       "A simple grout choice guide: what changes between sanded and unsanded and what to confirm on the bag.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Quick guide",
@@ -3451,9 +3996,35 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Sanded vs unsanded (practical differences)",
+        bullets: [
+          "Unsanded grout is smoother and often used for narrow joints or delicate tile surfaces.",
+          "Sanded grout is stronger in wider joints but can scratch some polished or soft tiles.",
+          "If you are unsure, test a small area or confirm with the tile manufacturer.",
+        ],
+      },
+      {
+        heading: "Joint width and tile surface (why it matters)",
+        paragraphs: [
+          "The grout type must match both the joint width and the tile surface. A grout that is too smooth for a wide joint can crack or shrink. A sanded grout on a delicate surface can scratch.",
+        ],
+        bullets: [
+          "Rectified or polished tile may need extra caution with sanded products.",
+          "Rustic or textured tile can hide sanded grout texture more easily.",
+        ],
+      },
+      {
         heading: "Planning note",
         paragraphs: [
           "Coverage varies by product. If you need a tighter estimate, use the exact bag yield chart for your chosen grout.",
+        ],
+      },
+      {
+        heading: "Decision checklist",
+        bullets: [
+          "Confirm joint width from your layout plan.",
+          "Check tile surface hardness and manufacturer guidance.",
+          "Plan movement joints as flexible sealant, not grout.",
         ],
       },
     ],
@@ -3467,7 +4038,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Roofing starter strip and ridge cap (common misses)",
     description:
       "Why starter and ridge caps are separate from field shingles and how they affect ordering.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "What people forget",
@@ -3478,9 +4049,45 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Starter strip estimating (linear feet)",
+        paragraphs: [
+          "Starter strips are usually planned by the linear feet of eaves and rakes (project dependent). They are not included in the field shingle count unless the system says otherwise.",
+        ],
+        bullets: [
+          "Measure the total linear feet of eaves and rakes that require starter.",
+          "Confirm whether the product uses a dedicated starter strip or modified shingles.",
+        ],
+      },
+      {
+        heading: "Ridge cap estimating (ridge and hip length)",
+        paragraphs: [
+          "Ridge cap quantity is driven by linear feet of ridge and hip length, not roof area. If you add ridge vent, cap requirements can change based on the system.",
+        ],
+        bullets: [
+          "Measure ridge and hip length separately from roof area.",
+          "Confirm cap coverage per bundle or per cap piece.",
+        ],
+      },
+      {
+        heading: "Compatibility notes (do not mix systems)",
+        bullets: [
+          "Use ridge caps that match the shingle product line for appearance and warranty.",
+          "If you use ridge vent, confirm compatible cap requirements and fastener length.",
+          "Color matching is easier if all cap materials are from the same batch.",
+        ],
+      },
+      {
         heading: "Practical advice",
         paragraphs: [
           "Use your roofing calculator for field shingles, then add starter and ridge caps based on the product guidance and your ridge length.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        bullets: [
+          "Assuming starter and ridge caps are included in field shingle bundles.",
+          "Using ridge cap coverage from a different shingle line.",
+          "Forgetting hips and short ridges on dormers when estimating cap length.",
         ],
       },
     ],
@@ -3494,7 +4101,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Concrete PSI and mix choice (planning note)",
     description:
       "A practical checklist for ready-mix: PSI/MPa, slump, fiber, and admixtures that affect cost and performance.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "What suppliers ask",
@@ -3524,6 +4131,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Air entrainment (freeze/thaw durability)",
+        paragraphs: [
+          "In freeze/thaw climates, air-entrained concrete is often used to reduce surface scaling and damage. If your area sees freezing conditions, confirm whether air entrainment is required or recommended.",
+        ],
+        bullets: [
+          "Air entrainment affects finish and strength; coordinate with the mix design.",
+          "Do not add water on site to “fix” workability in air-entrained mixes.",
+        ],
+      },
+      {
         heading: "Fiber, reinforcement, and cracking (what to expect)",
         paragraphs: [
           "Fiber can help with plastic shrinkage cracking and handling, but it is not automatically a replacement for reinforcement. Crack control depends on joints, thickness, base condition, curing, and reinforcement strategy.",
@@ -3533,6 +4150,15 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Plan control joints and spacing before you pour (layout matters).",
           "Plan curing method and timing (especially in hot, windy, or dry conditions).",
           "Confirm reinforcement requirements for the project; local practice varies.",
+        ],
+      },
+      {
+        heading: "Admixture checklist (common options)",
+        bullets: [
+          "Accelerators for cold weather or tight schedules (project dependent).",
+          "Retarders for hot weather or large pours that need more working time.",
+          "Water reducers for workability without adding water.",
+          "Fibers for plastic shrinkage control (not a rebar replacement).",
         ],
       },
       {
@@ -3591,12 +4217,35 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Deck mud slope per foot (shower pan planning)",
     description:
       "A practical slope note for deck mud: why average thickness matters when you build slope.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Why average thickness matters",
         paragraphs: [
           "A sloped bed is thicker at the perimeter than at the drain. Estimate volume using average thickness (measure high and low points, then average).",
+        ],
+      },
+      {
+        heading: "Slope rule of thumb",
+        paragraphs: [
+          "A common shower slope target is about 1/4\" per foot toward the drain (confirm local practice and system guidance).",
+          "Perimeter thickness = drain thickness + (longest run in feet x slope per foot).",
+        ],
+      },
+      {
+        heading: "Average thickness (the key input)",
+        paragraphs: [
+          "Average thickness = (perimeter thickness + drain thickness) / 2. Use this average for volume math.",
+        ],
+        bullets: [
+          "If the drain is off-center, use the longest run to find perimeter thickness.",
+          "Measure at multiple walls; the thickest point drives volume most.",
+        ],
+      },
+      {
+        heading: "Worked example",
+        paragraphs: [
+          "Example: longest run 4 ft, slope 1/4\" per ft = 1\" of rise. If drain thickness is 1\", perimeter thickness is ~2\" and average thickness is ~1.5\".",
         ],
       },
       {
@@ -3691,7 +4340,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Flooring underlayment checklist (common misses)",
     description:
       "A simple checklist of materials people forget when estimating flooring.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Checklist",
@@ -3700,6 +4349,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Transitions, reducers, and stair noses.",
           "Baseboard/shoe molding and quarter round as needed.",
           "Leveling compound for uneven subfloors (separate estimate).",
+        ],
+      },
+      {
+        heading: "Moisture barrier details",
+        bullets: [
+          "Some underlayments include a vapor barrier; others require a separate film.",
+          "Overlap and tape seams per manufacturer guidance.",
+          "Do not assume a barrier is optional on slabs if the product requires it.",
         ],
       },
       {
@@ -3715,12 +4372,28 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Sound control and building rules",
+        bullets: [
+          "Condos and multi-family buildings can require specific sound ratings (IIC/STC).",
+          "Underlayment thickness changes door clearances and transition heights.",
+          "If sound ratings are required, use approved products to avoid rework.",
+        ],
+      },
+      {
         heading: "Common misses (why projects run long)",
         bullets: [
           "Acclimation time and room conditions (temperature/humidity) before install.",
           "Adhesives/fasteners for specific systems (glue-down, nail-down, floating).",
           "Moisture test or primer requirements for slab installs (product dependent).",
           "Extra material for stairs, thresholds, and closets even when the main room math is correct.",
+        ],
+      },
+      {
+        heading: "Compatibility checks",
+        bullets: [
+          "Some flooring includes a built-in pad and does not allow extra underlayment.",
+          "Glue-down floors may require specific adhesives and trowel sizes.",
+          "Follow manufacturer limits to keep warranty valid.",
         ],
       },
       {
@@ -3996,7 +4669,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Drywall materials and finishing guide (sheets, seams, mud, and tape)",
     description:
       "A practical drywall planning guide: choosing sheet sizes, understanding finishing levels, and estimating seams, tape, and compound realistically.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Sheet sizing: fewer seams vs handling",
@@ -4070,6 +4743,47 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Joint compound types (setting vs premix)",
+        table: {
+          columns: ["Type", "Typical use", "Tradeoff"],
+          rows: [
+            ["Setting-type (powder)", "Taping and quick turnaround", "Hardens fast; limited working time"],
+            ["Premix (bucket)", "Topping and finishing", "Longer working time; slower dry"],
+          ],
+        },
+        bullets: [
+          "Setting compound is often used for first coats or repairs; premix is common for final coats.",
+          "Hot/dry rooms can shorten working time; plan batch size accordingly.",
+        ],
+      },
+      {
+        heading: "Tape and bead choices (plan these separately)",
+        bullets: [
+          "Paper tape: common standard, strong when embedded correctly.",
+          "Mesh tape: easier to apply on repairs but often paired with setting compound.",
+          "Corner bead: metal, vinyl, or paper-faced; choose per impact risk and finish level.",
+        ],
+      },
+      {
+        heading: "Drying, sanding, and dust planning",
+        paragraphs: [
+          "Drying time depends on humidity, temperature, and compound type. Plan ventilation and dry time so coats are not rushed. Rushed sanding leads to waves and burn-through.",
+        ],
+        bullets: [
+          "Allow adequate drying between coats; humid rooms can double dry time.",
+          "Use a bright light at a low angle to check for ridges before priming.",
+          "Control dust with vacuum sanding or dust barriers if the space is occupied.",
+        ],
+      },
+      {
+        heading: "Primer and paint schedule (finishing impact)",
+        bullets: [
+          "Prime new drywall to even out absorption before paint.",
+          "Higher finish levels benefit from better primer and careful sanding between coats.",
+          "Glossy paint shows more defects; use matte or eggshell where you want forgiveness.",
+        ],
+      },
+      {
         heading: "Mud, tape, and texture: what drives usage",
         bullets: [
           "Finish level: higher levels generally mean more compound and sanding.",
@@ -4139,7 +4853,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Deck planning guide (layout, gaps, stairs, and materials list)",
     description:
       "A practical deck planning guide: board direction, gapping, diagonal waste, stairs, and the material items people forget.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Board direction and borders change waste",
@@ -4176,6 +4890,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Footings and posts (do not guess depth)",
+        paragraphs: [
+          "Footing depth and post size are driven by load, span, and local frost depth. If you under-plan footings, the whole deck can move. Confirm footing depth before you buy concrete or posts.",
+        ],
+        bullets: [
+          "Local frost depth often drives minimum footing depth.",
+          "Heavier railings or hot tubs increase loads and may require larger footings.",
+        ],
+      },
+      {
         heading: "Framing checklist (joists, beams, posts, and hardware)",
         paragraphs: [
           "A deck board estimate covers surface boards. Framing includes joists, beams, posts, connectors, and fasteners. Framing needs depend on span, spacing, and local requirements, so estimate framing as a separate list.",
@@ -4191,6 +4915,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Railing and code considerations",
+        bullets: [
+          "Guard rail height and spacing requirements can affect post layout.",
+          "Stair rails often require different hardware than deck rails.",
+          "If your deck is elevated, plan railing posts before you set the framing layout.",
+        ],
+      },
+      {
         heading: "Materials list (beyond deck boards)",
         bullets: [
           "Fasteners/clips (product-specific)",
@@ -4198,6 +4930,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Joists/beams/posts and hardware (separate framing estimate)",
           "Railing materials and hardware",
           "Stair stringers and connectors (if applicable)",
+        ],
+      },
+      {
+        heading: "Drainage and water management",
+        bullets: [
+          "Plan deck slope or gaps so water can drain away from the house.",
+          "Keep soil or mulch from burying deck framing and posts.",
+          "If attaching to a house, prioritize ledger flashing and waterproofing details.",
         ],
       },
       {
@@ -4239,12 +4979,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Fence planning guide (posts, gates, and materials checklist)",
     description:
       "A practical fence planning guide: panels vs pickets, post spacing, gates and corners, and the material items most estimates miss.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Decide panel vs picket before you estimate",
         paragraphs: [
           "Panel fences are often estimated by sections (6 ft/8 ft panels). Picket fences are estimated by picket count and rail length. The math and the shopping list are different, so pick the system first.",
+        ],
+      },
+      {
+        heading: "Planning before you dig",
+        bullets: [
+          "Confirm property lines, setbacks, and any HOA or local permit rules.",
+          "Call utility locate before digging.",
+          "Plan gate locations early so post spacing stays consistent.",
         ],
       },
       {
@@ -4266,6 +5014,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         paragraphs: [
           "Corners, ends, and gates require extra posts and often extra bracing. If you do not plan these explicitly, you will under-buy posts and concrete.",
           "Post depth is driven by fence height and local frost line guidance. Depth affects post length and concrete needs.",
+        ],
+      },
+      {
+        heading: "Material choices (wood, vinyl, steel)",
+        bullets: [
+          "Wood fences need stain/sealer planning and a maintenance schedule.",
+          "Vinyl panels reduce maintenance but can limit custom sizing.",
+          "Steel/aluminum changes hardware and post spacing; follow system guidance.",
         ],
       },
       {
@@ -4315,6 +5071,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Extra boards for damage and future repairs",
         ],
       },
+      {
+        heading: "Ordering tips",
+        bullets: [
+          "Buy extra pickets or panels for damage and future repairs.",
+          "If matching color matters, buy from the same batch when possible.",
+          "Plan delivery and storage so materials stay dry and flat.",
+        ],
+      },
     ],
     related: [
       { label: "Fence calculator", href: "/en/calculators/home-improvement/fence" },
@@ -4328,7 +5092,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Tile grout guide (sanded vs unsanded, joint width, and coverage)",
     description:
       "A practical grout guide: choosing grout type, sizing joints, and understanding why coverage changes with tile size and joint width.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Grout type: sanded vs unsanded vs specialty",
@@ -4346,6 +5110,17 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Joint width planning (tile type and substrate matter)",
+        paragraphs: [
+          "Joint width is a design and performance decision. Narrow joints can look clean but demand flatter substrates and more precise tile sizing. Wider joints are more forgiving but change grout volume and cleanup effort.",
+        ],
+        bullets: [
+          "Rectified tile can support tighter joints, but floors still need practical spacing.",
+          "Handmade or rustic tile often needs wider joints to hide size variation.",
+          "If the substrate is not flat, tighter joints can create lippage and alignment issues.",
+        ],
+      },
+      {
         heading: "Why grout coverage varies so much",
         paragraphs: [
           "Grout usage is driven by total joint volume, not tile surface area. Smaller tiles create more linear feet of joints per square foot. Wider joints and deeper joints also increase volume.",
@@ -4359,6 +5134,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Joint width: wider joints use more grout.",
           "Joint depth: thicker tile and deeper joints increase usage.",
           "Waste: mixing loss, cleanup, and rounding to whole bags.",
+        ],
+      },
+      {
+        heading: "Mixing and cleanup (color consistency matters)",
+        bullets: [
+          "Measure water consistently; too much water can weaken grout and change color.",
+          "Mix the same way for every batch to avoid shade shifts between areas.",
+          "Wash timing affects color and joint strength; follow the bag instructions.",
         ],
       },
       {
@@ -4378,6 +5161,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Epoxy and specialty grouts (when they make sense)",
+        bullets: [
+          "High-use kitchens, showers, and commercial spaces often benefit from stain resistance.",
+          "Epoxy cleanup timing is stricter; plan smaller batches and follow the system.",
+          "Specialty grouts can reduce sealing needs but have different working time and cost.",
+        ],
+      },
+      {
         heading: "Common mistakes",
         bullets: [
           "Using a “generic coverage” number that does not match your tile size and joint width.",
@@ -4391,6 +5182,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Tile size and edge style matter: rectified edges can allow tighter joints, but floors still need practical spacing.",
           "Substrate flatness matters: if the surface isn’t flat, tighter joints can highlight lippage and make layout harder.",
           "Use manufacturer guidance for specialty tile (stone, glass, polished surfaces) and for wet areas.",
+        ],
+      },
+      {
+        heading: "Movement joints and transitions (do not grout these)",
+        bullets: [
+          "Changes of plane (wall to floor, inside corners) need flexible sealant, not grout.",
+          "Large spans and door thresholds need movement joints to prevent cracking.",
+          "Follow tile industry guidance for placement and joint spacing (project dependent).",
         ],
       },
       {
@@ -4408,6 +5207,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Movement joints (changes of plane, large spans) should be flexible sealant, not grout.",
         ],
       },
+      {
+        heading: "Cure time and protection (plan the schedule)",
+        bullets: [
+          "Protect grout from heavy traffic and water until it cures per product guidance.",
+          "Wet areas often need longer cure times before regular use.",
+          "If you plan to seal, follow the grout maker’s cure window before sealing.",
+        ],
+      },
     ],
     related: [
       { label: "Tile grout calculator", href: "/en/calculators/home-improvement/tile-grout" },
@@ -4420,7 +5227,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Tile waterproofing and membranes (what’s required vs optional)",
     description:
       "A practical guide to waterproofing choices in tile projects: showers, wet rooms, membranes, and why prep affects long-term durability.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Waterproofing is a system, not a product",
@@ -4439,6 +5246,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["Uncoupling membrane", "Floors", "Helps manage movement; not always waterproof by itself"],
           ],
         },
+      },
+      {
+        heading: "Substrate choices (what goes under the membrane)",
+        bullets: [
+          "Cement board: common in wet areas but still needs waterproofing.",
+          "Foam board systems: light and fast, but must follow the system details.",
+          "Drywall in wet areas: only allowed in some systems and only with correct waterproofing (project dependent).",
+        ],
       },
       {
         heading: "Planning checklist (before you buy tile)",
@@ -4477,6 +5292,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Drain and pan options (high level)",
+        bullets: [
+          "Traditional mud pan: flexible for custom sizes but requires skill to slope correctly.",
+          "Pre-formed foam pan: faster install, but sizing and drain alignment must be exact.",
+          "Linear drains can simplify slope but need careful layout planning.",
+        ],
+      },
+      {
         heading: "Liquid membrane thickness (common failure point)",
         paragraphs: [
           "Liquid-applied waterproofing needs the correct dry film thickness. Too thin can fail; too thick can crack or take too long to cure. Use the manufacturer coverage rate and coats as a checklist rather than guessing by appearance.",
@@ -4484,6 +5307,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         bullets: [
           "Let each coat cure the required time (temperature and humidity matter).",
           "Use reinforcement fabric where the system calls for it (corners, seams, transitions).",
+        ],
+      },
+      {
+        heading: "Flood testing and cure time (plan the schedule)",
+        bullets: [
+          "Many shower systems require a flood test before tile (project dependent).",
+          "Do not rush cure time; early water exposure can compromise seams.",
+          "Plan the test window so it does not delay tile installation.",
         ],
       },
       {
@@ -4502,6 +5333,15 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "If your system requires a flood test, schedule it before setting tile (project dependent).",
         ],
       },
+      {
+        heading: "Common waterproofing mistakes",
+        bullets: [
+          "Skipping seam banding or corner treatment in sheet systems.",
+          "Applying liquid membrane too thin or missing the second coat.",
+          "Not sealing penetrations (valves, niches, benches) correctly.",
+          "Assuming grout is waterproof and skipping the membrane entirely.",
+        ],
+      },
     ],
     related: [
       { label: "Tile planning guide", href: "/en/resources/tile-project-planning-guide" },
@@ -4513,7 +5353,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Drywall board types (regular, moisture-resistant, fire-rated, sound)",
     description:
       "A practical guide to drywall types: where regular board is fine, when you need moisture/fire-rated board, and how that affects planning.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Common drywall board types (quick overview)",
@@ -4526,6 +5366,42 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["Sag-resistant / ceiling board", "Ceilings", "Helps reduce sag on wider spans"],
           ],
         },
+      },
+      {
+        heading: "Moisture zones (what MR board does and does not do)",
+        paragraphs: [
+          "Moisture-resistant (MR) board is meant for damp areas, not direct water exposure. Showers and wet rooms need a waterproofing system with proper substrate and membrane details.",
+        ],
+        bullets: [
+          "Use MR board for bathroom walls outside of direct spray zones (project dependent).",
+          "In wet areas, follow a system that includes waterproofing membrane and compatible backer.",
+          "Do not treat MR board as a waterproofing shortcut.",
+        ],
+      },
+      {
+        heading: "Fire-rated assemblies (follow the full system)",
+        paragraphs: [
+          "Fire ratings depend on the whole assembly: board type, thickness, fasteners, and layers. Type X board is common for garages and shared walls, but the rating requires the right installation pattern.",
+        ],
+        bullets: [
+          "If your project needs a rated assembly, match thickness and layer count to code.",
+          "Do not mix board types or thicknesses in a rated assembly unless approved.",
+        ],
+      },
+      {
+        heading: "Sound control (board type is only one part)",
+        bullets: [
+          "Sound isolation improves with mass, decoupling, and insulation, not just specialty board.",
+          "Common upgrades include resilient channel, double layers, and insulation in cavities.",
+          "Plan sound-control assemblies early because they change thickness and trim details.",
+        ],
+      },
+      {
+        heading: "Ceiling and sag-resistant board (when it helps)",
+        bullets: [
+          'Sag-resistant board can help on 24" on-center ceilings or humid areas.',
+          "If lighting is critical, stiffness matters more than minimum code allowance.",
+        ],
       },
       {
         heading: "Where people choose the wrong board",
@@ -4541,6 +5417,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Board type decisions don’t usually change sheet counts, but they do affect cost, availability, and handling. If ceilings and walls use different thickness or type, estimate them as separate line items so you don’t under-buy the specialty board.",
         ],
       },
+      {
+        heading: "Handling and availability",
+        bullets: [
+          "Type X and sound-rated boards are heavier; plan labor and lifting.",
+          "Specialty boards may require lead time; avoid last-minute substitutions.",
+          "Store boards flat and dry; bowed sheets create finishing problems.",
+        ],
+      },
     ],
     related: [
       { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
@@ -4553,7 +5437,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Deck framing checklist (joists, beams, posts, and hardware)",
     description:
       "A planning checklist for deck framing: what to confirm before you buy lumber and hardware, and why framing is a separate estimate from deck boards.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Deck boards are not the framing estimate",
@@ -4571,12 +5455,36 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Span and spacing (why math changes fast)",
+        bullets: [
+          "Joist span tables determine joist size and spacing (do not guess).",
+          "Wider joist spacing reduces joist count but can require thicker decking.",
+          "Blocking may be required for diagonal layouts or composite decking.",
+        ],
+      },
+      {
+        heading: "Footings and posts",
+        bullets: [
+          "Footing depth is often driven by frost depth and load (project dependent).",
+          "Post size and spacing are tied to beam span and layout.",
+          "Concrete volume should be estimated separately per footing size.",
+        ],
+      },
+      {
         heading: "Hardware items people forget",
         bullets: [
           "Joist hangers and hanger nails/screws",
           "Post bases, brackets, and anchor hardware",
           "Ledger flashing and waterproofing details",
           "Structural screws/bolts where required",
+        ],
+      },
+      {
+        heading: "Lateral load and attachment details",
+        bullets: [
+          "Ledger attachments often require specific fasteners and spacing.",
+          "Lateral load connectors can be required by code (project dependent).",
+          "If attaching to a house, confirm flashing and water management details.",
         ],
       },
     ],
@@ -4590,12 +5498,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Fence gate planning (hardware, sag, and post bracing)",
     description:
       "A practical guide to fence gates: why gates sag, how to plan posts and bracing, and which hardware decisions affect long-term performance.",
-    lastUpdated: "Last updated: Jan 2026",
+    lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
         heading: "Why gates sag (and what fixes it)",
         paragraphs: [
           "Gates sag when posts move, hardware is undersized, or the gate frame isn’t braced for weight. Planning the gate post and bracing is often more important than the pickets or panels.",
+        ],
+      },
+      {
+        heading: "Post planning (the real foundation)",
+        bullets: [
+          "Gate posts often need to be larger or deeper than line posts.",
+          "Set gate posts first and let them cure before hanging the gate (project dependent).",
+          "If the gate is heavy, consider steel-reinforced posts or sleeves.",
         ],
       },
       {
@@ -4608,8 +5524,24 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Hardware selection tips",
+        bullets: [
+          "Use hinges rated for the gate weight and material (wood, vinyl, metal).",
+          "Plan for a drop rod on double gates to prevent sag and movement.",
+          "Allow clearance for latch hardware and seasonal movement.",
+        ],
+      },
+      {
         heading: "Hardware items to list separately",
         bullets: ["Hinges", "Latch/lock", "Drop rod (for double gates)", "Fasteners and braces"],
+      },
+      {
+        heading: "Common mistakes",
+        bullets: [
+          "Using line posts for gates without extra depth or reinforcement.",
+          "Hanging the gate before posts have set or cured.",
+          "Skipping diagonal bracing on wider gates.",
+        ],
       },
     ],
     related: [
@@ -4818,4 +5750,3 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
   },
 ];
-

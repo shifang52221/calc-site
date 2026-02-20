@@ -396,37 +396,37 @@
   "noCalculatorsYet": "More calculators coming soon."
  },
  "guidePaint": {
-  "metaTitle": "How to estimate paint",
-  "metaDescription": "Learn how to estimate paint for walls and ceilings, including coverage, coats, and common adjustments.",
+    "metaTitle": "How to estimate paint (walls, ceilings, trim)",
+    "metaDescription": "Learn how to estimate paint for walls, ceilings, and trim, including coverage per gallon, coats, primer, and waste.",
   "title": "How to estimate paint for a room",
-  "subtitle": "Measure correctly, apply a realistic coverage rate, and add a small buffer.",
+    "subtitle": "Measure correctly, apply a realistic coverage rate, and add a small buffer for waste and touch-ups.",
   "tldrTitle": "TL;DR",
   "tldr": {
-   "t1": "Area x coats / coverage = paint needed (then round up).",
-   "t2": "Coverage on the can is a starting point-texture and color changes reduce it.",
-   "t3": "Add a small buffer for touch-ups and waste (often 5-10%)."
-  },
-  "intro": {
-   "p1": "A good paint estimate comes down to two numbers: surface area to paint and coverage per gallon (or per liter). Add the number of coats, then include a small buffer for touch-ups and waste.",
-   "p2": "If you measure once and calculate once, you usually under-buy. This guide explains what to measure and why the coverage number on the can is only a starting point."
-  },
+     "t1": "Area x coats / coverage = paint needed (then round up to whole cans).",
+     "t2": "Coverage on the can is a starting point - texture, porosity, and color changes reduce it.",
+     "t3": "Add a small buffer for touch-ups, cut-ins, and waste (often 5-10%)."
+    },
+    "intro": {
+     "p1": "A good paint estimate comes down to two numbers: surface area to paint and coverage per gallon (or per liter). Add the number of coats, then include a small buffer for touch-ups and waste. Separate walls, ceilings, and trim if they use different products or sheens.",
+     "p2": "If you measure once and calculate once, you usually under-buy. This guide explains what to measure, how to handle coats and primer, and why the coverage number on the can is only a starting point."
+    },
   "stepsTitle": "Step-by-step: paint math",
   "steps": {
-   "s1": "Measure wall area (length x height) for each wall and sum them.",
-   "s2": "Subtract large openings (doors, big windows) if you want a tighter estimate.",
-   "s3": "Decide coats (often 2 for new colors or big color changes).",
-   "s4": "Pick a realistic coverage rate based on wall texture and paint type.",
-   "s5": "Add 5-10% buffer, then round up to whole cans."
-  },
-  "tipsTitle": "Practical tips",
-  "tips": {
-   "t1": "Textured walls and deep colors reduce coverage.",
-   "t2": "Ceilings and trim often use different paint and finish.",
-      "t3": "Primer can reduce coats, but it is not \"free paint\".",
-   "t4": "Batch-mix cans (boxing) for consistent color across walls."
-  },
+     "s1": "Measure wall area (length x height) for each wall and sum them. Measure ceilings separately if you plan to paint them.",
+     "s2": "Subtract large openings (doors, big windows) only if you want a tighter estimate; most rooms can leave them in and use the buffer.",
+     "s3": "Decide coats (often 2 for new colors or big color changes). Count primer as its own coat if you plan to use it.",
+     "s4": "Pick a realistic coverage rate based on wall texture, porosity, and paint type. Use the label if you know the product.",
+     "s5": "Add 5-10% buffer, then round up to whole cans so you can finish without switching batches."
+    },
+    "tipsTitle": "Practical tips",
+    "tips": {
+     "t1": "Textured walls, porous patches, and deep colors reduce coverage.",
+     "t2": "Ceilings, trim, and doors often use different paint and finish - estimate them separately.",
+     "t3": "Primer can reduce finish coats, but it is not \"free paint\" - plan primer volume separately.",
+     "t4": "Batch-mix cans (boxing) for consistent color across walls, especially across multiple rooms."
+    },
   "quickTitle": "Quick checklist",
-  "quickIntro": "If you want a dependable paint estimate without overthinking it, use this checklist. It focuses on the decisions that change the number the most: what you measure, coats, realistic coverage, and a small buffer. If you're between two assumptions, choose the safer one and round up; it saves a second trip and avoids lot-matching headaches.",
+    "quickIntro": "If you want a dependable paint estimate without overthinking it, use this checklist. It focuses on the decisions that change the number the most: what you measure, coats, realistic coverage, primer, and a small buffer. If you're between two assumptions, choose the safer one and round up; it saves a second trip and avoids lot-matching headaches.",
   "quick": {
    "q1": "Measure each wall (width x height) and add them. If you're also painting the ceiling, estimate ceiling area separately because it often uses different paint and coverage. Subtract only large openings if you want a tighter estimate; for most rooms your buffer covers doors and typical windows.",
    "q2": "Choose coats honestly. Two finish coats is common for new colors, patched walls, and big color changes. Primer is its own step: it can reduce finish coats or help stains, but it does not replace paint volume, and you still need to buy enough finish paint for the coats you plan.",
@@ -435,23 +435,23 @@
   },
   "mistakesTitle": "Common mistakes",
   "mistakes": {
-   "m1": "Forgetting to multiply by coats (2 coats is common).",
-   "m2": "Using ideal label coverage for rough or porous surfaces.",
-   "m3": "Skipping a buffer and running short mid-project."
-  },
+     "m1": "Forgetting to multiply by coats (2 coats is common).",
+     "m2": "Using ideal label coverage for rough, porous, or patched surfaces.",
+     "m3": "Skipping a buffer and running short mid-project (which risks lap marks and color mismatch)."
+    },
   "ctaTitle": "Want the fast estimate?",
   "ctaBody": "Use our paint calculator and share a link that keeps your inputs.",
-  "lastUpdated": "Last updated: Dec 2025",
+  "lastUpdated": "Last updated: Feb 2026",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Should I subtract windows and doors?",
-   "a1": "For small openings, the difference is usually within your buffer. Subtracting is useful for very large windows, many doors, or tight budgets.",
+     "a1": "For small openings, the difference is usually within your buffer. Subtracting is useful for very large windows, many doors, or tight budgets.",
    "q2": "Why is my result higher than the can label coverage?",
-   "a2": "Label coverage assumes ideal conditions. Texture, porosity, application method, and multiple coats all reduce real-world coverage.",
+     "a2": "Label coverage assumes ideal conditions. Texture, porosity, application method, and multiple coats all reduce real-world coverage.",
    "q3": "How much extra paint should I buy?",
-   "a3": "A 5-10% buffer is common. If you need exact color matching later, buying an extra can from the same batch can save time."
-  }
- },
+     "a3": "A 5-10% buffer is common. If you need exact color matching later, buying an extra can from the same batch can save time."
+    }
+  },
  "guideFlooring": {
   "metaTitle": "How to measure flooring",
   "metaDescription": "Learn how to measure flooring area room-by-room and choose a waste factor that fits the layout.",
@@ -554,10 +554,10 @@
   }
  },
  "guideDrywall": {
-  "metaTitle": "How to estimate drywall",
-  "metaDescription": "Learn how to estimate drywall sheets by measuring square footage, choosing sheet sizes, and adding waste.",
+  "metaTitle": "How to estimate drywall sheets (area, sheets, waste)",
+  "metaDescription": "Learn how to estimate drywall sheets by measuring wall and ceiling area, choosing sheet sizes, and adding a waste factor.",
   "title": "How to estimate drywall sheets",
-  "subtitle": "Measure wall/ceiling area, pick a sheet size, then add waste and round up.",
+  "subtitle": "Measure wall and ceiling area, pick a sheet size, then add waste and round up.",
   "intro": {
    "p1": "Drywall estimates start with total surface area: walls (perimeter x height) plus ceilings (length x width) if you are hanging the lid. Then you convert that area into a sheet count based on the sheet size you can handle and install. The two choices that most affect the final number are your sheet length (8 ft, 10 ft, 12 ft) and how much waste you should expect from cuts, corners, soffits, and odd wall lengths.",
    "p2": "A reliable estimate is not just square footage. Think about layout: where seams land, how many small sections you have, and whether you are matching an existing thickness/type (1/2\" vs 5/8\", moisture-resistant board, or a second layer for sound/fire). This guide gives a practical process for rooms, basements, and simple remodels so you can order confidently without overbuying."
@@ -575,10 +575,12 @@
    "t1": "Plan seam locations. Fewer butt joints usually means easier finishing, but a layout that creates tiny strips can increase waste. A quick sketch of sheet orientation per wall can prevent surprises.",
    "t2": "Ceilings are slower and more cut-heavy (lights, fans, vents). If your schedule is tight, a little extra material is often cheaper than losing a day to a second trip.",
    "t3": "Waste is driven by complexity: corners, alcoves, soffits, and uneven framing. If the room has many small sections, increase your waste factor even if the total area is not large.",
-   "t4": "Confirm the board type before buying: thickness, moisture resistance for baths, and any fire-rating requirements. Matching existing thickness matters for transitions, and the wrong type can force rework (project dependent)."
+   "t4": "Confirm the board type before buying: thickness, moisture resistance for baths, and any fire-rating requirements. Matching existing thickness matters for transitions, and the wrong type can force rework (project dependent).",
+   "t5": "Plan accessories: corner bead, screws, joint tape, compound, and primer often cost more than the last sheet."
   },
   "ctaTitle": "Want the fast sheet count?",
   "ctaBody": "Use our drywall calculator and share a link that keeps your inputs.",
+  "lastUpdated": "Last updated: Feb 2026",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How many drywall sheets do I need for a room?",
@@ -586,7 +588,9 @@
    "q2": "What waste factor should I use for drywall?",
    "a2": "Around 10% is common for simple rooms with long, straight walls. Use 15% (or more) for complex layouts: lots of corners, angled ceilings, many small wall segments, many cutouts, or when you are unsure of your final layout. The more your job looks like a collection of small rectangles instead of a few big ones, the more waste you should expect.",
    "q3": "Should I subtract doors and windows?",
-   "a3": "You can for a tighter estimate if you measure openings accurately, especially if there are many large windows. For quick estimating, many people do not subtract openings and simply use a realistic waste factor. The goal is to avoid running short, not to calculate the perfect theoretical minimum."
+   "a3": "You can for a tighter estimate if you measure openings accurately, especially if there are many large windows. For quick estimating, many people do not subtract openings and simply use a realistic waste factor. The goal is to avoid running short, not to calculate the perfect theoretical minimum.",
+   "q4": "What else do I need besides sheets?",
+   "a4": "Plan accessories: screws, joint tape, corner bead, compound, and primer. These often add cost and are easy to forget in a sheet-only estimate."
   }
  },
  "guideMulch": {
@@ -955,21 +959,21 @@
   }
  },
  "guideTileWaste": {
-  "metaTitle": "Tile overage (waste factor): how much extra to buy",
-  "metaDescription": "Choose a tile overage percentage based on layout, room complexity, and future repair needs.",
+  "metaTitle": "Tile waste percentage (overage): how much extra to buy",
+  "metaDescription": "Choose a tile waste percentage based on layout, cuts, and pattern matching. Includes box rounding and repair spares.",
   "title": "Tile waste factor: how much extra to buy",
-  "subtitle": "Waste depends on cuts, layout, and room complexity-plan overage before you order.",
+  "subtitle": "Waste depends on cuts, layout, and room complexity - pick a safe overage before you order.",
   "intro": {
    "p1": "Tile projects almost always require extra material: cuts, breakage, pattern matching, and future repairs all add up. Even with perfect area math, you will lose tiles to edge cuts, mistakes, and pieces that crack during cutting or handling.",
-   "p2": "A waste factor (overage) is the simplest way to avoid running short while still keeping costs under control. The right waste factor depends on layout complexity, tile size, and how many detailed features you have (niches, benches, borders, and plumbing penetrations)."
+   "p2": "A waste factor (overage) is the simplest way to avoid running short while still keeping costs under control. The right waste factor depends on layout complexity, tile size, and how many detailed features you have (niches, benches, borders, and plumbing penetrations). Box coverage and dye-lot matching also change what a safe order looks like."
   },
   "stepsTitle": "Step-by-step: pick a waste factor",
   "steps": {
    "s1": "Start with the tile area you need (including walls, floors, or backsplashes). Use the planned tile coverage area, not just the room size, and include any feature walls or shower niches you will tile.",
-   "s2": "Consider layout: straight-lay usually wastes less than diagonal, herringbone, and other patterns that force more cutoffs and unusable offcuts.",
+   "s2": "Choose the layout and tile module (tile size + grout joint). Straight-lay usually wastes less than diagonal, herringbone, and other patterns that force more cutoffs and unusable offcuts.",
    "s3": "Consider room complexity: many corners, small rooms, niches, benches, borders, and plumbing penetrations increase waste because more tiles become small custom pieces.",
    "s4": "Pick a waste factor that matches the risk: 10% is common for simple straight-lay, 15%+ for diagonal/patterns, and higher if you need strict pattern/vein matching (project dependent).",
-   "s5": "Round up to whole boxes, then consider an extra box for future repairs and dye-lot matching. Matching later is often harder (and more expensive) than storing a spare box."
+   "s5": "Convert to boxes: ordering area = tile area x (1 + waste), then divide by box coverage and round up. Consider an extra box for future repairs and dye-lot matching.",
   },
   "tipsTitle": "Practical tips",
   "tips": {
@@ -979,11 +983,11 @@
    "t4": "Keep spares after installation for replacements and repairs. A single cracked tile later is easier to fix if you have matching material from the same lot."
   },
   "quickTitle": "Quick checklist",
-  "quickIntro": "Tile waste is mostly about layout risk. Use this checklist to choose overage before you order.",
+  "quickIntro": "Tile waste is mostly about layout risk and box rounding. Use this checklist before you order.",
   "quick": {
    "q1": "Pick the layout first. Straight-lay usually wastes less; diagonal, herringbone, and strict pattern matching usually require higher overage (project dependent).",
    "q2": "Account for complexity: niches, benches, borders, many corners, and plumbing penetrations turn tiles into one-off custom pieces and increase breakage risk.",
-   "q3": "Round up to whole boxes and order everything at once to keep dye lots consistent. Buy trims and specialty pieces in the same order so the finish matches.",
+   "q3": "Apply waste before converting to boxes, then round up. Order everything at once to keep dye lots consistent, including trims and specialty pieces.",
    "q4": "Plan for repairs: keep spares (often at least one extra box) so a future crack or plumbing repair doesn't force you to hunt for a close match."
   },
   "ctaTitle": "Want the fast estimate?",
@@ -991,7 +995,7 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Is 10% waste enough for tile?",
-   "a1": "Often yes for simple rooms with straight layouts and few obstacles. For diagonal layouts, patterns, lots of obstacles, or strict pattern matching, you may need 15% or more (project dependent).",
+   "a1": "Often yes for simple rooms with straight layouts and few obstacles. For diagonal layouts, patterns, many obstacles, large-format tile in small rooms, or strict pattern matching, plan 15% or more (project dependent).",
    "q2": "Should I buy extra tile for future repairs?",
    "a2": "Yes if you can. It's hard to match batch color later, and discontinued products are common. One extra box is often cheaper than trying to source a close match later.",
    "q3": "Does tile size affect waste?",
@@ -1651,11 +1655,11 @@
    "a3": "No. This estimates sheets only."
   }
  },
- "drywallTexture": {
-  "metaTitle": "Drywall Texture Calculator (Bags & Coverage)",
-  "metaDescription": "Estimate drywall texture material (bags) from area, coats/passes, coverage per bag, and a waste factor.",
+   "drywallTexture": {
+    "metaTitle": "Drywall Texture Calculator (Coverage & Bags)",
+    "metaDescription": "Estimate drywall texture material (bags) from area, coats/passes, coverage per bag, and a waste factor. Useful for knockdown, orange peel, and skip trowel.",
   "title": "Drywall Texture Calculator",
-  "subtitle": "Estimate texture material needed. Adjust coats, coverage per bag, and waste.",
+    "subtitle": "Estimate texture material needed. Adjust coats, coverage per bag, texture type, and waste.",
   "inputs": {
    "areaSqFt": "Area to texture (sq ft)",
    "areaM2": "Area to texture (m2)",

@@ -146,14 +146,14 @@ export function CalculatorContent({
           >
             {labels.methodology}
           </Link>
-          {" · "}
+          {" | "}
           <Link
             href={routes.resources(locale)}
             className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
           >
             {labels.resources}
           </Link>
-          {" · "}
+          {" | "}
           <Link
             href={routes.editorialPolicy(locale)}
             className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
@@ -224,14 +224,14 @@ export function CalculatorContent({
         >
           {labels.methodology}
         </Link>
-        {" · "}
+        {" | "}
         <Link
           href={routes.resources(locale)}
           className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
         >
           {labels.resources}
         </Link>
-        {" · "}
+        {" | "}
         <Link
           href={routes.editorialPolicy(locale)}
           className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
