@@ -8,6 +8,24 @@ function normalizePathname(pathname: string) {
   return withSlash === "/" ? "" : withSlash.replace(/\/+$/, "");
 }
 
+function resolveIndexedLocales(): readonly Locale[] {
+  const raw = process.env.NEXT_PUBLIC_INDEXED_LOCALES?.trim();
+  const configured = raw
+    ? raw
+        .split(",")
+        .map((value) => value.trim())
+        .filter(Boolean)
+    : ["en"];
+  const filtered = routing.locales.filter((locale) =>
+    configured.includes(locale),
+  );
+  return filtered.length ? filtered : [routing.defaultLocale];
+}
+
+export function getIndexedLocales(): readonly Locale[] {
+  return resolveIndexedLocales();
+}
+
 export function getLocalizedUrl(locale: Locale, pathname: string) {
   const baseUrl = getSiteUrl();
   const normalized = normalizePathname(pathname);
@@ -15,8 +33,10 @@ export function getLocalizedUrl(locale: Locale, pathname: string) {
 }
 
 export function getAlternates(locale: Locale, pathname: string) {
-  const indexedLocales: readonly Locale[] = routing.locales;
-  const canonicalLocale = locale;
+  const indexedLocales = resolveIndexedLocales();
+  const canonicalLocale = indexedLocales.includes(locale)
+    ? locale
+    : routing.defaultLocale;
 
   const languages: Record<string, string> = {};
   for (const l of indexedLocales) {

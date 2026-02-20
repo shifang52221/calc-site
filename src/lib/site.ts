@@ -19,9 +19,9 @@ export function getLocaleLabel(locale: Locale) {
     case "en":
       return "English";
     case "es":
-      return "Español";
+      return "Spanish";
     case "zh-TW":
-      return "繁體中文";
+      return "Traditional Chinese";
     default:
       return locale;
   }
@@ -30,3 +30,4 @@ export function getLocaleLabel(locale: Locale) {
 export function getAllLocales() {
   return routing.locales as readonly Locale[];
 }
+

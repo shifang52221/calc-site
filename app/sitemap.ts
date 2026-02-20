@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
-import { routing } from "@/i18n/routing";
 import { getSiteUrl } from "@/lib/site";
+import { getIndexedLocales } from "@/lib/seo";
 import { routes } from "@/lib/routes";
 import { CALCULATOR_CATEGORIES, CALCULATORS } from "@/lib/calculatorsCatalog";
 import { GUIDE_DEFINITIONS } from "@/lib/guidesCatalog";
@@ -13,7 +13,7 @@ export const revalidate = 86400;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
-  const locales = routing.locales;
+  const locales = getIndexedLocales();
 
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];

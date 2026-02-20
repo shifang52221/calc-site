@@ -973,7 +973,7 @@
    "s2": "Choose the layout and tile module (tile size + grout joint). Straight-lay usually wastes less than diagonal, herringbone, and other patterns that force more cutoffs and unusable offcuts.",
    "s3": "Consider room complexity: many corners, small rooms, niches, benches, borders, and plumbing penetrations increase waste because more tiles become small custom pieces.",
    "s4": "Pick a waste factor that matches the risk: 10% is common for simple straight-lay, 15%+ for diagonal/patterns, and higher if you need strict pattern/vein matching (project dependent).",
-   "s5": "Convert to boxes: ordering area = tile area x (1 + waste), then divide by box coverage and round up. Consider an extra box for future repairs and dye-lot matching.",
+   "s5": "Convert to boxes: ordering area = tile area x (1 + waste), then divide by box coverage and round up. Consider an extra box for future repairs and dye-lot matching."
   },
   "tipsTitle": "Practical tips",
   "tips": {
