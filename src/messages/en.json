@@ -456,43 +456,43 @@
   "metaTitle": "How to measure flooring",
   "metaDescription": "Learn how to measure flooring area room-by-room and choose a waste factor that fits the layout.",
   "title": "How to measure flooring for a project",
-  "subtitle": "Room-by-room measuring plus the right waste factor prevents shortages.",
+  "subtitle": "Room-by-room measuring plus the right waste factor prevents shortages and overbuying.",
   "intro": {
-   "p1": "Flooring estimates start with accurate area, but the most reliable way to measure is room-by-room. Measure each room (including closets and hallways if they will be floored), break odd shapes into simple rectangles, and add everything together to get your total area. Write measurements down as you go and sketch the layout so you don’t miss small spaces like pantry closets and long hallways.",
-   "p2": "After area, your biggest swing factor is waste. Waste is driven by layout choices (board direction, borders, and patterns like herringbone), room complexity (corners, doorways, and notches), and the product itself (plank length/width and the manufacturer’s box coverage). The more “cut-heavy” the project, the less you can reuse offcuts, even if your area math is perfect."
+   "p1": "Flooring estimates start with accurate area, but the most reliable way to measure is room-by-room. Measure each room (including closets and hallways if they will be floored), break odd shapes into simple rectangles, and add everything together to get your total area. Write measurements down as you go and sketch the layout so you do not miss small spaces like pantry closets and long hallways. Use finished dimensions (wall-to-wall), not rough framing.",
+   "p2": "After area, your biggest swing factor is waste. Waste is driven by layout choices (board direction, borders, and patterns like herringbone), room complexity (corners, doorways, and notches), and the product itself (plank length/width and the manufacturer's box coverage). The more cut-heavy the project, the less you can reuse offcuts, even if your area math is perfect. If you are changing direction between rooms or adding a picture-frame border, plan extra waste."
   },
   "measuringTitle": "Measuring checklist",
   "measuring": {
-   "m1": "Measure each space using finished dimensions (wall-to-wall). If a room is an L-shape, split it into rectangles and add them. If you have many doorways or angles, a quick sketch with labeled dimensions prevents missed sections.",
-   "m2": "Add all areas (rooms, closets, and hallways). Keep units consistent (sq ft or sq m) so you don’t accidentally mix measurements.",
-   "m3": "Use the manufacturer’s stated coverage per box for your exact product. Box coverage varies by thickness and packaging, and you almost always must buy whole boxes. If you’re comparing products, box coverage differences can be bigger than the difference between two waste factors.",
-   "m4": "Apply waste before converting to boxes, then round up. If matching later might be difficult, consider keeping 1–2 extra boxes for repairs and future color/lot matching."
+   "m1": "Measure each space using finished dimensions (wall-to-wall). If a room is an L-shape, split it into rectangles and add them. If you have many doorways or angles, a quick sketch with labeled dimensions prevents missed sections. Measure closets and alcoves separately so they do not get skipped.",
+   "m2": "Add all areas (rooms, closets, and hallways). Keep units consistent (sq ft or sq m) so you do not accidentally mix measurements. Convert once and stick to a single unit system for the whole project.",
+   "m3": "Use the manufacturer's stated coverage per box for your exact product. Box coverage varies by thickness and packaging, and you almost always must buy whole boxes. If you are comparing products, box coverage differences can be bigger than the difference between two waste factors. Check the label coverage, not just plank dimensions.",
+   "m4": "Apply waste before converting to boxes, then round up. If matching later might be difficult, consider keeping 1-2 extra boxes for repairs and future color/lot matching. Inspect boards early so you can exchange defects before you install."
   },
   "wasteTitle": "Picking a waste factor",
-  "wasteBody": "A common range is 5–15%, but it should match your layout. Around 5% can work for large, simple rectangles with a straight install and minimal cut-outs. Around 10% is safer for multiple rooms, many doorways, narrow hallways, and lots of short cuts. 15%+ is common for diagonal installs, herringbone, and other pattern layouts that create offcuts you can’t reuse. Plank length and room width interact too: short planks or a room that forces lots of small end pieces can raise waste even with a straight layout. If you have to maintain a specific stagger pattern across multiple rooms, waste can also increase. If the product may be discontinued or lot-matching matters, extra material is often cheaper than trying to match later.",
+  "wasteBody": "A common range is 5-15%, but it should match your layout. Around 5% can work for large, simple rectangles with a straight install and minimal cut-outs. Around 10% is safer for multiple rooms, many doorways, narrow hallways, and lots of short cuts. 15%+ is common for diagonal installs, herringbone, and other pattern layouts that create offcuts you cannot reuse. Plank length and room width interact too: short planks or a room that forces lots of small end pieces can raise waste even with a straight layout. If you have to maintain a specific stagger pattern across multiple rooms, waste can also increase. If the product may be discontinued or lot-matching matters, extra material is often cheaper than trying to match later. When in doubt, add a little more and keep a sealed box for future repairs.",
   "ctaTitle": "Calculate boxes and cost",
   "ctaBody": "Use the flooring calculator to estimate boxes and optional cost.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Why do I need a waste factor?",
-   "a1": "You lose material to end cuts, notches, damaged boards, and defects. Even with a perfect area measurement, you’ll create offcuts that are too short to reuse. You also usually have to buy whole boxes, so rounding decisions matter. A small surplus makes future repairs easier, because matching color/texture later is often the hardest part.",
+   "a1": "You lose material to end cuts, notches, damaged boards, and defects. Even with a perfect area measurement, you will create offcuts that are too short to reuse. You also usually have to buy whole boxes, so rounding decisions matter. A small surplus makes future repairs easier, because matching color/texture later is often the hardest part. Waste is cheaper than a second trip or a mismatched lot.",
    "q2": "Should I include closets?",
-   "a2": "Usually yes—measure them like any other space if the flooring will run into the closet. Closets and small rooms are cut-heavy, which is another reason waste matters. Only exclude areas you are sure will not be floored (for example, a built-in island that will remain in place). If you’re changing direction between rooms, closets can also force extra transitions and cuts.",
+   "a2": "Usually yes-measure them like any other space if the flooring will run into the closet. Closets and small rooms are cut-heavy, which is another reason waste matters. Only exclude areas you are sure will not be floored (for example, a built-in island that will remain in place). If you are changing direction between rooms, closets can also force extra transitions and cuts. If a closet uses a different product, estimate it separately.",
    "q3": "What if my rooms are not perfect rectangles?",
-   "a3": "Split the shape into rectangles (and triangles if needed), measure each piece, and add them. This is usually more accurate than guessing one overall dimension. For curved edges, measure a conservative rectangle that covers the curve and treat the “extra” as part of your waste buffer."
+   "a3": "Split the shape into rectangles (and triangles if needed), measure each piece, and add them. This is usually more accurate than guessing one overall dimension. For curved edges, measure a conservative rectangle that covers the curve and treat the extra as part of your waste buffer. If the curve is important, make a simple cardboard template and approximate the area by segments."
   }
  },
  "guideConcrete": {
   "metaTitle": "How to estimate concrete",
   "metaDescription": "Learn how to estimate concrete volume for slabs, including thickness, ordering buffer, and common mistakes.",
   "title": "How to estimate concrete for a slab",
-  "subtitle": "Compute volume from area x thickness, then add a realistic ordering buffer.",
+  "subtitle": "Compute volume from area x thickness, then add a realistic ordering buffer and plan for forms.",
   "intro": {
-   "p1": "Concrete is ordered by volume (cubic yards or cubic meters). For slabs and pads, volume comes from slab area multiplied by slab thickness, with thickness converted into the same unit system (inches → feet, or centimeters → meters).",
-   "p2": "Most real-world errors come from site conditions: uneven subgrade, thickened edges, footings, and waste during placement. Ordering short can create cold joints or force a second delivery that arrives too late to finish properly, so this guide focuses on safe, practical estimating rather than perfect math."
+   "p1": "Concrete is ordered by volume (cubic yards or cubic meters). For slabs and pads, volume comes from slab area multiplied by slab thickness, with thickness converted into the same unit system (inches to feet, or centimeters to meters). For bag mixes, estimate total cubic feet or liters first, then divide by the yield per bag.",
+   "p2": "Most real-world errors come from site conditions: uneven subgrade, thickened edges, footings, and waste during placement. Ordering short can create cold joints or force a second delivery that arrives too late to finish properly, so this guide focuses on safe, practical estimating rather than perfect math. Small thickness errors can change the order by a full yard."
   },
   "formulaTitle": "The basic formula",
-  "formulaBody": "Start with finished slab dimensions, convert thickness into the same unit system, compute volume, then convert to the unit your supplier sells. If the slab is sloped, use average thickness (thin edge + thick edge) / 2. If you have thickened edges, steps, or footings, estimate those parts separately and add them for a more reliable order. For multi-part projects (slab + walkway + small pad), estimate each pour as its own line item before you place the order.",
+  "formulaBody": "Start with finished slab dimensions, convert thickness into the same unit system, compute volume, then convert to the unit your supplier sells. If the slab is sloped, use average thickness (thin edge + thick edge) / 2, and measure thickness at multiple points. If you have thickened edges, steps, or footings, estimate those parts separately and add them for a more reliable order. For multi-part projects (slab + walkway + small pad), estimate each pour as its own line item before you place the order.",
   "formula": {
    "f1": "Area = length × width (or break the shape into rectangles and add them).",
    "f2": "Volume = area × thickness (use average thickness if the slab slopes).",
@@ -501,20 +501,20 @@
   "orderingTitle": "Ordering tips",
   "ordering": {
    "o1": "Confirm whether thickness is uniform. If you have thickened edges, grade beams, steps, or footings, estimate those volumes separately and add them.",
-   "o2": "Add a realistic buffer (often 5–10%) for uneven subgrade, spillage, and cleanup losses. If you’re placing by wheelbarrow or pump, losses can be higher, and if the base is soft/uneven you may “lose” thickness into low spots unless you grade and compact carefully (project dependent).",
-   "o3": "Ask about minimum load and short-load fees, delivery timing, and mix options (PSI, slump, fiber, and any admixtures). Confirm whether you can add water on site and what the supplier allows—water changes workability but can affect strength and finish. Supplier rules can affect your practical order size more than “perfect” math.",
-   "o4": "Plan placement and finishing before the truck arrives: access route, tools, helpers, screeding method, and a curing plan. Also think through joints (control joints and isolation joints) because good joint planning affects durability even though it doesn’t change the yardage. Weather (heat, wind, rain, freezing) can change finishing and curing risk even when yardage is correct."
+   "o2": "Add a realistic buffer (often 5-10%) for uneven subgrade, spillage, and cleanup losses. If you are placing by wheelbarrow or pump, losses can be higher, and if the base is soft/uneven you may lose thickness into low spots unless you grade and compact carefully (project dependent).",
+   "o3": "Ask about minimum load and short-load fees, delivery timing, and mix options (PSI, slump, fiber, and any admixtures). Confirm whether you can add water on site and what the supplier allows; water changes workability but can affect strength and finish. Also confirm maximum aggregate size for tight forms or thin sections.",
+   "o4": "Plan placement and finishing before the truck arrives: access route, tools, helpers, screeding method, and a curing plan. Also think through joints (control joints and isolation joints) because good joint planning affects durability even though it does not change the yardage. Weather (heat, wind, rain, freezing) can change finishing and curing risk even when yardage is correct, so plan protections in advance."
   },
   "ctaTitle": "Estimate volume quickly",
   "ctaBody": "Use the concrete calculator to estimate cubic yards/meters and optional cost.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Do I need to add extra for rebar or mesh?",
-   "a1": "Rebar and mesh don’t meaningfully change concrete volume. Your buffer is for uneven base, spillage, and placement losses. Reinforcement does change the materials list (chairs, tie wire, cutting tools) and can influence thickness details, but it doesn’t usually change yardage.",
+   "a1": "Rebar and mesh do not meaningfully change concrete volume. Your buffer is for uneven base, spillage, and placement losses. Reinforcement does change the materials list (chairs, tie wire, cutting tools) and can influence thickness details, but it does not usually change yardage. The steel volume itself is negligible for ordering.",
    "q2": "What thickness should I use?",
-   "a2": "It depends on load, base preparation, and local requirements. Many walkways are around 4 inches, while driveways are often thicker and may have thicker edges, and heavy loads (RVs, dumpsters) can require more. If your slab must drain, thickness can vary across the slope—use the average thickness for volume and confirm the minimum thickness at the thinnest edge (project dependent).",
+   "a2": "It depends on load, base preparation, and local requirements. Many walkways are around 4 inches, while driveways are often thicker and may have thicker edges, and heavy loads (RVs, dumpsters) can require more. Use local code or engineer guidance, then use the average thickness for volume and confirm the minimum thickness at the thinnest edge (project dependent).",
    "q3": "Why does ordering too little cause problems?",
-   "a3": "If you run short, you risk cold joints or a second delivery arriving after the first concrete has started to set. That can reduce bond strength, create visible seams, and make finishing much harder. A small overage is usually cheaper than the schedule and quality risks of being short."
+   "a3": "If you run short, you risk cold joints or a second delivery arriving after the first concrete has started to set. That can reduce bond strength, create visible seams, and make finishing much harder. A small overage is usually cheaper than the schedule and quality risks of being short, and short-load fees can be expensive."
   }
  },
  "guideTile": {
@@ -597,108 +597,108 @@
   "metaTitle": "How to estimate mulch",
   "metaDescription": "Learn how to estimate mulch by measuring bed area, choosing depth, and converting to cubic yards.",
   "title": "How to estimate mulch for garden beds",
-  "subtitle": "Area x depth gives volume; convert to cubic yards and round up.",
+  "subtitle": "Area x depth gives volume; convert to cubic yards (or bags) and round up.",
   "intro": {
-   "p1": "Mulch is sold by volume, but you measure beds by area. The bridge is depth: a 1-inch top-up is very different from installing a fresh 3-inch layer across the whole bed. A good estimate also considers what you’ll actually cover (not under hardscape, not piled against trunks), and whether you’re buying bulk by the yard or bags by the cubic foot/liter.",
-   "p2": "This guide helps you measure beds quickly, choose a depth that matches your goal (appearance vs weed suppression), and avoid common mistakes like using mulch to “fix” grade or burying plant crowns. It also highlights why bed prep and edge containment can matter as much as the volume math."
+   "p1": "Mulch is sold by volume, but you measure beds by area. The bridge is depth: a 1-inch top-up is very different from installing a fresh 3-inch layer across the whole bed. A good estimate also considers what you will actually cover (not under hardscape, not piled against trunks), and whether you are buying bulk by the yard or bags by the cubic foot/liter. Bag weight is not a volume measurement.",
+   "p2": "This guide helps you measure beds quickly, choose a depth that matches your goal (appearance vs weed suppression), and avoid common mistakes like using mulch to fix grade or burying plant crowns. It also highlights why bed prep and edge containment can matter as much as the volume math, and why re-mulching often needs less depth than a fresh install."
   },
   "stepsTitle": "Step-by-step: mulch math",
   "steps": {
-   "s1": "Measure bed area. Use rectangles and circles, or break irregular beds into simple shapes and add them. Exclude hardscape, established groundcover you won’t cover, and any areas you intentionally keep thin (like right at stems/trunks).",
-   "s2": "Choose a target depth based on purpose. Many beds look good with about 2–3 inches, refresh layers can be thinner, and weed suppression often needs deeper coverage (project dependent). Keep mulch intentionally thinner at the base of plants and trees.",
-   "s3": "Convert area x depth to volume. If you measured depth in inches, convert to feet first (in / 12) so the volume math is consistent.",
-   "s4": "Convert volume to what you’ll buy. Bulk suppliers often sell cubic yards; bags are usually labeled in cubic feet or liters—use the label volume, not the bag weight.",
-   "s5": "Round up and plan for reality: mulch settles after raking and rain, slopes can migrate downhill, and edging isn’t perfectly tight. A small buffer helps you finish in one trip and saves color-matching headaches later."
+   "s1": "Measure bed area. Use rectangles and circles, or break irregular beds into simple shapes and add them. Measure only the areas you plan to cover and exclude hardscape or permanent groundcover.",
+   "s2": "Choose a target depth based on purpose. Many beds look good with about 2-3 inches, refresh layers can be thinner, and weed suppression often needs deeper coverage (project dependent). Keep mulch intentionally thinner at the base of plants and trees.",
+   "s3": "Convert area x depth to volume. If you measured depth in inches, convert to feet first (in / 12) so the volume math is consistent. Keep units consistent from start to finish.",
+   "s4": "Convert volume to what you will buy. Bulk suppliers often sell cubic yards; bags are usually labeled in cubic feet or liters-use the label volume, not the bag weight. Divide by bag volume to estimate bag count.",
+   "s5": "Round up and plan for reality: mulch settles after raking and rain, slopes can migrate downhill, and edging is not perfectly tight. A small buffer helps you finish in one trip and saves color-matching headaches later."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Depth matters more than people expect: doubling depth doubles volume. Always sanity-check the depth input before ordering (especially when switching between 2\" and 4\").",
-   "t2": "Fresh mulch settles and can look thinner after the first rain. Buying a small buffer is usually cheaper than running short and trying to match color later.",
-      "t3": "Avoid piling mulch against tree trunks (\"mulch volcano\"). Keep a small gap or much thinner layer at trunks/stems so you don’t trap moisture and invite rot and pests (project dependent).",
-   "t4": "For re-mulching, decide whether you are topping off or removing old mulch first. If the bed has low spots to fill, fix grade with soil, then apply mulch as the final surface layer."
+   "t1": "Depth matters more than people expect: doubling depth doubles volume. Always sanity-check the depth input before ordering, especially when switching between 2 and 4 inches or mixing units.",
+   "t2": "Fresh mulch settles and can look thinner after the first rain. Buying a small buffer is usually cheaper than running short and trying to match color later. If you plan a precise edge, extra helps.",
+   "t3": "Avoid piling mulch against tree trunks (mulch volcano). Keep a small gap or much thinner layer at trunks/stems so you do not trap moisture and invite rot and pests (project dependent).",
+   "t4": "For re-mulching, decide whether you are topping off or removing old mulch first. If the bed has low spots to fill, fix grade with soil, then apply mulch as the final surface layer. Consider weed barrier only if it fits your plant needs."
   },
   "ctaTitle": "Want the quick yardage estimate?",
   "ctaBody": "Use our mulch calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How deep should mulch be?",
-   "a1": "Many beds use about 2–3 inches as a practical middle ground. Thin top-ups can be around 1 inch for appearance, while weed suppression and moisture retention may use deeper coverage. Keep mulch thinner at plant crowns and tree trunks to avoid trapping moisture (project dependent).",
+   "a1": "Many beds use about 2-3 inches as a practical middle ground. Thin top-ups can be around 1 inch for appearance, while weed suppression and moisture retention may use deeper coverage. Keep mulch thinner at plant crowns and tree trunks to avoid trapping moisture (project dependent).",
    "q2": "How many cubic yards of mulch do I need?",
-   "a2": "Compute bed area x depth to get volume, then convert to cubic yards (1 yd³ = 27 ft³) and round up. For a tighter estimate, measure beds separately if you plan different depths (for example, a thicker layer in open areas and a thinner layer around plant bases).",
+   "a2": "Compute bed area x depth to get volume, then convert to cubic yards (1 yd3 = 27 ft3) and round up. For a tighter estimate, measure beds separately if you plan different depths (for example, a thicker layer in open areas and a thinner layer around plant bases).",
    "q3": "Should I buy extra mulch?",
-   "a3": "Yes, a small buffer is usually smart. It covers settling, uneven beds, and edge loss, and it reduces the chance you run short mid-project. If appearance matters, buying enough at once also reduces the risk of color differences between loads or bag batches."
+   "a3": "Yes, a small buffer is usually smart. It covers settling, uneven beds, and edge loss, and it reduces the chance you run short mid-project. If appearance matters, buying enough at once also reduces the risk of color differences between loads or bag batches. Store leftovers in a dry place for future touch-ups."
   }
  },
  "guideRoofing": {
   "metaTitle": "How to calculate roof shingles",
   "metaDescription": "Learn how to calculate roof shingles using squares and bundles, plus a realistic waste factor.",
   "title": "How to calculate roof shingles",
-  "subtitle": "Convert roof area to squares, then to bundles, and add waste for cuts and hips/valleys.",
+  "subtitle": "Convert roof area to squares, then to bundles, and add waste for cuts, hips/valleys, and accessories.",
   "intro": {
-      "p1": "Roofing is usually sold in \"squares\" (100 sq ft). The basic estimate is roof surface area divided by 100, then converted to bundles based on the shingle product. The key is using true roof surface area (pitch increases area), not just the house footprint.",
-   "p2": "Waste depends heavily on roof complexity. Valleys, hips, dormers, penetrations, and cut-up layouts increase offcuts and can raise your overage. You also need to plan accessories (starter strip, ridge cap, underlayment, ice & water shield, drip edge) as separate line items, and confirm any local requirements for ventilation and flashing details (project dependent)."
+      "p1": "Roofing is usually sold in squares (100 sq ft). The basic estimate is roof surface area divided by 100, then converted to bundles based on the shingle product. The key is using true roof surface area (pitch increases area), not just the house footprint, and measuring each roof plane including overhangs.",
+   "p2": "Waste depends heavily on roof complexity. Valleys, hips, dormers, penetrations, and cut-up layouts increase offcuts and can raise your overage. You also need to plan accessories (starter strip, ridge cap, underlayment, ice & water shield, drip edge) as separate line items, and confirm any local requirements for ventilation and flashing details (project dependent). Ridge and starter products have their own coverage rates, so do not assume they use the same math as field shingles."
   },
   "stepsTitle": "Step-by-step: roofing math",
   "steps": {
-   "s1": "Measure roof surface area for each plane. If you start from footprint, apply a pitch multiplier to convert to surface area (and include overhangs if they will be shingled).",
-   "s2": "Convert area to squares (sq ft / 100). Keep each plane separate if you want to estimate waste more realistically on complex shapes.",
-   "s3": "Add a waste factor based on complexity. Simple gable roofs can be lower; valleys, hips, dormers, and lots of penetrations often push waste higher (project dependent). If you’re changing shingle direction around features or using specialty caps, plan extra for learning curve and cutoffs.",
-   "s4": "Convert squares to bundles using the product's bundles-per-square. The number varies by shingle type and weight—don’t assume every shingle is 3 bundles per square.",
-   "s5": "Round up and build a complete materials list: starter strip, ridge cap, underlayment, ice & water shield (where required), nails, and flashing/drip edge. These items don’t always follow the same “square” math as field shingles, and missing one accessory can stop the job even when you have enough bundles."
+   "s1": "Measure roof surface area for each plane. If you start from footprint, apply a pitch multiplier to convert to surface area and include overhangs, then add each plane.",
+   "s2": "Convert area to squares (sq ft / 100). Keep each plane separate if you want to estimate waste more realistically on complex shapes or if you are mixing products.",
+   "s3": "Add a waste factor based on complexity. Simple gable roofs can be lower; valleys, hips, dormers, and lots of penetrations often push waste higher (project dependent). If you are changing shingle direction around features or using specialty caps, plan extra for learning curve and cutoffs. Cold-weather or steep roofs can also increase breakage and waste.",
+   "s4": "Convert squares to bundles using the product's bundles-per-square. The number varies by shingle type and weight, and ridge/starter products have their own coverage; do not assume every shingle is 3 bundles per square.",
+   "s5": "Round up and build a complete materials list: starter strip, ridge cap, underlayment, ice and water shield (where required), nails, and flashing/drip edge. These items do not always follow the same square math as field shingles, and missing one accessory can stop the job even when you have enough bundles."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Roof pitch increases surface area—don’t estimate from footprint alone. If you don’t have plane-by-plane measurements, use a pitch multiplier as a sanity check.",
-   "t2": "Complex roofs need more waste than simple gables. Valleys and hips create diagonal cuts that generate offcuts you can’t reuse easily, and they also increase the number of details that must be flashed correctly (project dependent).",
-   "t3": "Bundles-per-square varies by shingle type, weight, and brand. Confirm the spec for the exact shingle, starter, and ridge products you plan to buy, and keep product names consistent so you don’t accidentally mix systems.",
-   "t4": "Order extras for repairs or future matching, especially for specialty colors. Matching a discontinued shingle or a different production lot can be noticeably harder than storing an extra bundle (check return policy if you’re unsure)."
+   "t1": "Roof pitch increases surface area-do not estimate from footprint alone. If you do not have plane-by-plane measurements, use a pitch multiplier as a sanity check.",
+   "t2": "Complex roofs need more waste than simple gables. Valleys and hips create diagonal cuts that generate offcuts you cannot reuse easily, and they also increase the number of details that must be flashed correctly (project dependent).",
+   "t3": "Bundles-per-square varies by shingle type, weight, and brand. Confirm the spec for the exact shingle, starter, and ridge products you plan to buy, and keep product names consistent so you do not accidentally mix systems.",
+   "t4": "Order extras for repairs or future matching, especially for specialty colors. Matching a discontinued shingle or a different production lot can be noticeably harder than storing an extra bundle (check return policy if you are unsure)."
   },
   "ctaTitle": "Want bundles and squares instantly?",
   "ctaBody": "Use our roofing calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "What is a roofing square?",
-   "a1": "A roofing square is 100 square feet of roof coverage (surface area). It’s a unit used for ordering and pricing and does not include your waste factor.",
+   "a1": "A roofing square is 100 square feet of roof coverage (surface area). It is a unit used for ordering and pricing and does not include your waste factor. It is not the same as the house footprint.",
    "q2": "How many bundles are in a square?",
-   "a2": "Often 3 bundles per square for many asphalt shingles, but it varies. Some products are 4 bundles per square (especially heavier/larger profiles), and ridge/starter products have their own coverage—always check the product specs.",
+   "a2": "Often 3 bundles per square for many asphalt shingles, but it varies. Some products are 4 bundles per square (especially heavier/larger profiles), and ridge/starter products have their own coverage-always check the product specs.",
    "q3": "How much waste should I add for roofing?",
-   "a3": "10–15% is common for many projects, but it depends on complexity. Simple gable roofs can be closer to the low end, while roofs with many valleys, hips, dormers, and cut-ups often need more. If you’re near minimum order quantities, rounding up can be cheaper than being short. Keeping one extra bundle for future repairs can also save time if the shingle is hard to match later (project dependent)."
+   "a3": "10-15% is common for many projects, but it depends on complexity. Simple gable roofs can be closer to the low end, while roofs with many valleys, hips, dormers, and cut-ups often need more. If you are near minimum order quantities, rounding up can be cheaper than being short. Keeping one extra bundle for future repairs can also save time if the shingle is hard to match later (project dependent)."
   }
  },
  "guideDeck": {
   "metaTitle": "How to estimate deck boards",
   "metaDescription": "Learn how to estimate deck boards by measuring deck area and converting to board coverage and counts.",
   "title": "How to estimate deck boards for a deck",
-  "subtitle": "Start with deck area, then convert to board coverage with spacing and waste.",
+  "subtitle": "Start with deck area, then convert to board coverage with spacing, layout, and waste.",
   "intro": {
-   "p1": "Deck board estimates start with surface area, but board layout decisions matter: board width, spacing, direction, and whether you’re adding a picture-frame border or breaker boards. The same deck area can use noticeably different board counts depending on board lengths and where seams land. Composite systems can also require specific edge boards or grooved boards for hidden fasteners (project dependent).",
-   "p2": "This guide helps you get a realistic board count and avoid shortages, while keeping your plan aligned with the product’s installation guidance (especially for composite) and the real details that consume boards (stairs, fascia, and borders)."
+   "p1": "Deck board estimates start with surface area, but board layout decisions matter: board width, spacing, direction, and whether you are adding a picture-frame border or breaker boards. The same deck area can use noticeably different board counts depending on board lengths and where seams land. Composite systems can also require specific edge boards or grooved boards for hidden fasteners (project dependent). Joist spacing and blocking can affect board layout too.",
+   "p2": "This guide helps you get a realistic board count and avoid shortages, while keeping your plan aligned with the product's installation guidance (especially for composite) and the real details that consume boards (stairs, fascia, and borders). Plan stairs, landings, and fascia as separate line items before you order."
   },
   "stepsTitle": "Step-by-step: deck board math",
   "steps": {
-   "s1": "Measure deck surface area using finished dimensions (length x width, or sum rectangles). If you have stairs or landings to deck, estimate those separately so they don’t disappear in “one big rectangle.”",
-   "s2": "Choose board width and spacing based on the product. Composite and wood can have different gapping guidance, and temperature can affect recommended end gaps (project dependent).",
-   "s3": "Convert area to linear feet of decking, then to board counts by board length. Plan a seam strategy (staggered end joints vs breaker board) so you don’t end up with obvious seams and wasted offcuts.",
-   "s4": "Add waste for cuts and layout. Straight layouts often use less; diagonal layouts, picture framing, and lots of notches around posts generally use more (project dependent). If you plan to hide end joints with a breaker board, include that board line in your count instead of treating waste as a single percentage.",
-   "s5": "Round up and verify edge details: picture-frame borders, fascia, stair treads, and any special boards required by your fastener system. These can consume many boards even on a modest deck."
+   "s1": "Measure deck surface area using finished dimensions (length x width, or sum rectangles). Use finished deck size, not framing size. If you have stairs or landings to deck, estimate those separately so they do not disappear in one big rectangle.",
+   "s2": "Choose board width and spacing based on the product. Composite and wood can have different gapping guidance, and temperature can affect recommended end gaps (project dependent). Confirm joist spacing and fastening rules before you pick board lengths.",
+   "s3": "Convert area to linear feet of decking, then to board counts by board length. Plan a seam strategy (staggered end joints vs breaker board) so you do not end up with obvious seams and wasted offcuts. If you are using multiple board lengths, plan your mix up front.",
+   "s4": "Add waste for cuts and layout. Straight layouts often use less; diagonal layouts, picture framing, and lots of notches around posts generally use more (project dependent). If you plan to hide end joints with a breaker board, include that board line in your count instead of treating waste as a single percentage. Stairs and fascia typically need extra waste.",
+   "s5": "Round up and verify edge details: picture-frame borders, fascia, stair treads, and any special boards required by your fastener system. These can consume many boards even on a modest deck. If you need matching trim boards, order them from the same product line."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Diagonal layouts increase waste and cut time. They can also require extra blocking and tighter joist spacing depending on material—check manufacturer and code guidance (project dependent).",
-   "t2": "Don't forget stairs, fascia, and picture-frame borders if your design includes them. Treat them as separate line items so a “surface area” estimate doesn’t under-buy.",
-   "t3": "Board spacing affects total coverage and long-term performance. Follow the manufacturer's guidance for gaps and end joints so drainage and expansion/contraction are handled correctly.",
-   "t4": "Mix board lengths to reduce waste when possible, but keep transport and handling realistic. Buying a few extra boards can be cheaper than trying to optimize lengths and then running short at the end."
+   "t1": "Diagonal layouts increase waste and cut time. They can also require extra blocking and tighter joist spacing depending on material; check manufacturer and code guidance (project dependent).",
+   "t2": "Do not forget stairs, fascia, and picture-frame borders if your design includes them. Treat them as separate line items so a surface area estimate does not under-buy. Stair treads often use different board lengths.",
+   "t3": "Board spacing affects total coverage and long-term performance. Follow the manufacturer's guidance for gaps and end joints so drainage and expansion/contraction are handled correctly. Never force tighter gaps to save boards.",
+   "t4": "Mix board lengths to reduce waste when possible, but keep transport and handling realistic. Buying a few extra boards can be cheaper than trying to optimize lengths and then running short at the end. Keep a few spares for future repairs."
   },
   "ctaTitle": "Want a fast board estimate?",
   "ctaBody": "Use our deck board calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How many deck boards do I need?",
-   "a1": "Estimate deck area, convert it to board coverage using your board width and gap, then add waste and round up. For a tighter estimate, choose board lengths and a seam plan (where end joints land) because board length choice can change real waste even when area is identical.",
+   "a1": "Estimate deck area, convert it to board coverage using your board width and gap, then add waste and round up. For a tighter estimate, choose board lengths and a seam plan (where end joints land) because board length choice can change real waste even when area is identical. Stairs and fascia should be estimated separately.",
    "q2": "Does spacing change the board count?",
-   "a2": "Yes. Larger gaps slightly reduce board count, but spacing is primarily a performance decision (drainage and movement). Follow product guidance rather than trying to “save” boards with tighter spacing.",
+   "a2": "Yes. Larger gaps slightly reduce board count, but spacing is primarily a performance decision (drainage and movement). Follow product guidance rather than trying to save boards with tighter spacing. End gaps can also change with temperature.",
    "q3": "How much waste should I add for deck boards?",
-   "a3": "10% is common for straight layouts with few cutouts. Add more for diagonal patterns, picture-frame borders, lots of notches around posts, and stairs. If the deck shape is complex or you’re new to the work, a higher waste factor is usually cheaper than a second trip (project dependent), and it gives you a few spare boards for future repairs."
+   "a3": "10% is common for straight layouts with few cutouts. Add more for diagonal patterns, picture-frame borders, lots of notches around posts, and stairs. If the deck shape is complex or you are new to the work, a higher waste factor is usually cheaper than a second trip (project dependent), and it gives you a few spare boards for future repairs. Composite often wastes more on complex layouts."
   }
  },
  "guideFence": {
@@ -1006,16 +1006,16 @@
   "metaTitle": "How many drywall sheets for a ceiling?",
   "metaDescription": "Estimate drywall sheets for a ceiling by dividing ceiling area by sheet area, then adding a waste factor. Includes notes on ceiling drywall thickness (1/2\" vs 5/8\").",
   "title": "How many drywall sheets for a ceiling?",
-  "subtitle": "Ceiling area / sheet area, then round up and add waste for cutoffs and seams.",
+  "subtitle": "Ceiling area / sheet area, then round up and add waste for cutoffs, seams, and cutouts.",
   "intro": {
-   "p1": "Ceilings are easiest to estimate by area, but the sheet layout can change the real number you need. Longer sheets can reduce seams (and finishing work), but they also change where cutoffs land. Cutouts for lights, fans, vents, and access panels add waste that does not show up in a simple square-foot calculation.",
-   "p2": "A dependable ceiling estimate starts with total ceiling area, then converts to sheets based on the size you can handle safely. After that, apply a waste factor that matches the complexity of the ceiling and how carefully you plan the sheet layout."
+   "p1": "Ceilings are easiest to estimate by area, but the sheet layout can change the real number you need. Longer sheets can reduce seams (and finishing work), but they also change where cutoffs land. Cutouts for lights, fans, vents, and access panels add waste that does not show up in a simple square-foot calculation. Sheet orientation and room shape can add or reduce waste by a full sheet.",
+   "p2": "A dependable ceiling estimate starts with total ceiling area, then converts to sheets based on the size you can handle safely. After that, apply a waste factor that matches the complexity of the ceiling and how carefully you plan the sheet layout. Thickness and sag resistance also matter for ceilings, so confirm what you plan to install."
   },
   "stepsTitle": "Step-by-step: ceiling drywall estimate",
   "steps": {
    "s1": "Measure ceiling area for each room. For flat ceilings, length x width is usually enough. Add any soffits, tray recesses, or boxed beams that will be covered with drywall.",
-   "s2": "Choose sheet size based on access and handling: 4x8 is common, while 4x10 or 4x12 can reduce seams in larger rooms. Longer sheets are heavier and often require a lift or more help (project dependent).",
-   "s3": "Compute a base count: ceiling area / sheet area (32, 40, or 48 sq ft depending on sheet length). This gives a starting point before layout waste and cutouts.",
+   "s2": "Choose sheet size based on access and handling: 4x8 is common, while 4x10 or 4x12 can reduce seams in larger rooms. Longer sheets are heavier and often require a lift or more help (project dependent). Confirm joist spacing and ceiling thickness before you commit.",
+   "s3": "Compute a base count: ceiling area / sheet area (32, 40, or 48 sq ft depending on sheet length). This gives a starting point before layout waste and cutouts. If your room dimensions do not divide into 4-foot widths, expect extra waste.",
    "s4": "Add waste for cutouts and layout. Around 10% can work for simple rectangles; use 15% (or more) for many cutouts, angled edges, tray ceilings, or when the room size forces many offcuts you cannot reuse.",
    "s5": "Round up to whole sheets and consider a small safety margin if you cannot afford delays. A single missing sheet can stop a ceiling because layout and seams matter more overhead than on walls."
   },
@@ -1033,7 +1033,7 @@
    "q1": "Is 10% waste enough for ceiling drywall?",
    "a1": "Often yes for simple rectangular rooms with few cutouts, especially if you plan sheet layout. If the ceiling has many lights/vents, angled edges, tray details, or lots of small sections, 15% is a safer starting point. The more cutouts and offcuts you create, the harder it is to reuse scraps effectively (project dependent).",
    "q2": "What size drywall (sheetrock) for a ceiling: 1/2\" or 5/8\"?",
-   "a2": "It depends on joist spacing, sag resistance needs, and local code. Many ceilings use 1/2\" in common conditions, while 5/8\" is often used for better sag resistance and some fire-rated assemblies. If you're matching existing construction, confirm what is already installed so transitions stay flush (project dependent).",
+   "a2": "It depends on joist spacing, sag resistance needs, and local code. Many ceilings use 1/2 in in common conditions, while 5/8 in is often used for better sag resistance and some fire-rated assemblies. If you are matching existing construction, confirm what is already installed so transitions stay flush (project dependent).",
    "q3": "Does sheet size change the total number of sheets?",
    "a3": "Yes. Different sheet sizes create different seam locations and different cutoff patterns, which changes how much waste you generate. If you are not planning a detailed layout, use a slightly higher waste factor to cover cutoff risk, especially in rooms where ceiling dimensions do not divide neatly into 4-foot widths."
   }
@@ -1122,24 +1122,24 @@
   "metaTitle": "How many fence posts do I need?",
   "metaDescription": "Estimate fence posts by counting corners and gates, then adding line posts based on spacing.",
   "title": "How many fence posts do I need?",
-  "subtitle": "Count corners and gates first, then add line posts using your chosen spacing.",
+  "subtitle": "Count corners and gates first, then add line posts using your chosen spacing and brace needs.",
   "intro": {
-   "p1": "Fence posts are easy to undercount because the layout is not just a long straight line. Corners, ends, and gates each need dedicated posts in addition to your regular line posts, and those special posts are often larger and set deeper than the rest.",
-   "p2": "A reliable post count starts with a simple plan: sketch the fence, break it into straight runs, and decide your spacing based on the fence style or panel width. Then count posts run by run and make sure you understand which posts are shared (for example, a corner post serves two runs)."
+   "p1": "Fence posts are easy to undercount because the layout is not just a long straight line. Corners, ends, and gates each need dedicated posts in addition to your regular line posts, and those special posts are often larger and set deeper than the rest. Plan for heavier posts and more concrete at terminals.",
+   "p2": "A reliable post count starts with a simple plan: sketch the fence, break it into straight runs, and decide your spacing based on the fence style or panel width. Then count posts run by run and make sure you understand which posts are shared (for example, a corner post serves two runs). If you are using panels, use the actual panel width, not the nominal size."
   },
   "stepsTitle": "Step-by-step: post count",
   "steps": {
-   "s1": "Draw the fence layout and list each straight run between corners, ends, and gates. Measure run lengths along the property line where the fence will actually sit.",
-   "s2": "Choose post spacing based on your fence type and manufacturer specs. Many fences use 6-8 ft on-center, but prebuilt panels often dictate the spacing more than preference (project dependent).",
-   "s3": "Count posts per run. A simple method is: number of spaces = ceiling(run length / spacing), then posts in that run = spaces + 1. If two runs meet at a corner, the corner post is shared, so do not double-count it.",
-   "s4": "Add special posts: one corner post at each corner, end posts at any run endpoints that are not corners, and any brace/terminal posts your fence design requires (some styles need bracing at ends and corners).",
-   "s5": "Add gate posts. Most gates use two posts, and heavy or wide gates may need larger posts, deeper footings, or additional bracing. Round up if your plan includes future gate changes or uncertain spacing."
+   "s1": "Draw the fence layout and list each straight run between corners, ends, and gates. Measure run lengths along the property line where the fence will actually sit and mark all gate openings.",
+   "s2": "Choose post spacing based on your fence type and manufacturer specs. Many fences use 6-8 ft on-center, but prebuilt panels often dictate the spacing more than preference (project dependent). Use the actual panel width after brackets or gaps.",
+   "s3": "Count posts per run. A simple method is: number of spaces = ceiling(run length / spacing), then posts in that run = spaces + 1. If two runs meet at a corner, the corner post is shared, so do not double-count it. Adjust spacing slightly if you need an even fit.",
+   "s4": "Add special posts: one corner post at each corner, end posts at any run endpoints that are not corners, and any brace/terminal posts your fence design requires (some styles need bracing at ends and corners). Plan braces now so you do not forget extra posts.",
+   "s5": "Add gate posts. Most gates use two posts, and heavy or wide gates may need larger posts, deeper footings, or additional bracing. Include gate hardware and latch clearance in the plan so post spacing does not surprise you."
   },
   "tipsTitle": "Practical tips",
   "tips": {
    "t1": "Corner, end, and gate posts often carry more load than line posts. Many builds use larger posts and deeper holes at terminals, and that can also affect the amount of concrete you need (project dependent).",
-      "t2": "Measure spacing on-center and confirm the actual panel width if you are using prebuilt panels. Small differences (like 6 ft vs 6 ft 8 in) can change the post count over a long run.",
-   "t3": "Slopes change the build. Stepped fences and grade changes can increase the number of short sections, which can increase posts and waste. Plan where steps happen before you finalize spacing.",
+   "t2": "Measure spacing on-center and confirm the actual panel width if you are using prebuilt panels. Small differences (like 6 ft vs 6 ft 8 in) can change the post count over a long run. Brackets and gaps change the true spacing.",
+   "t3": "Slopes change the build. Stepped fences and grade changes can increase the number of short sections, which can increase posts and waste. Decide whether you will rack panels or step them before you lock spacing.",
    "t4": "Check local rules for frost depth, minimum post embedment, and footing details. The right depth can matter more for longevity than the exact spacing, especially in windy areas."
   },
   "ctaTitle": "Want the fast estimate?",
@@ -1158,28 +1158,28 @@
   "metaTitle": "Convert gravel yards to tons",
   "metaDescription": "Convert cubic yards of gravel to tons using density, then round up for supplier delivery quantities.",
   "title": "Convert gravel yards to tons",
-  "subtitle": "Tons = cubic yards x density-confirm the density with your supplier.",
+  "subtitle": "Tons = cubic yards x density; confirm density and moisture with your supplier.",
   "intro": {
-   "p1": "Some suppliers sell gravel by cubic yards, others by tons. The conversion depends on material density, which varies by gravel type, gradation, and moisture. That’s why two suppliers can give different tons for the same 'yard' estimate.",
-   "p2": "Use your cubic yard estimate, then use the supplier’s yards-to-tons conversion for the exact product you are buying whenever possible. Generic density numbers are fine for planning, but supplier conversions are the most reliable for ordering."
+   "p1": "Some suppliers sell gravel by cubic yards, others by tons. The conversion depends on material density, which varies by gravel type, gradation, and moisture. That is why two suppliers can give different tons for the same yard estimate, and why wet material can weigh more.",
+   "p2": "Use your cubic yard estimate, then use the supplier's yards-to-tons conversion for the exact product you are buying whenever possible. Generic density numbers are fine for planning, but supplier conversions are the most reliable for ordering. If you switch products (base vs top), use separate conversions."
   },
   "stepsTitle": "Step-by-step: yards to tons",
   "steps": {
-   "s1": "Estimate volume in cubic yards based on area and compacted depth (or use an existing yard estimate from a volume calculator).",
-   "s2": "Choose a density for your material (tons per cubic yard). If the supplier provides a conversion table for your product, use it.",
+   "s1": "Estimate volume in cubic yards based on area and compacted depth (or use an existing yard estimate from a volume calculator). Use compacted depth as your target, then add buffer later.",
+   "s2": "Choose a density for your material (tons per cubic yard). If the supplier provides a conversion table for your product, use it and note the product name/gradation.",
    "s3": "Multiply: tons = cubic yards x density (conversion factor). Keep units consistent: short tons (2,000 lb) vs metric tonnes (1,000 kg).",
    "s4": "Add a buffer for compaction, uneven grade, and edge loss. Bases are often compacted in lifts; the installed coverage can be smaller than the loose delivered volume.",
    "s5": "Round up to match delivery increments and minimum loads. The practical order size is often driven by truck size and fees, not perfect math."
   },
   "tipsTitle": "Practical tips",
   "tips": {
-   "t1": "Wet material can weigh more than dry material—supplier conversions are the best source. Ask for the product name/gradation so you’re comparing the right material.",
-   "t2": "Different products (pea gravel, crushed stone, base rock) can have different densities. Don’t assume one conversion fits both base and top layers.",
-   "t3": "If you need exact tonnage for hauling limits, confirm the conversion before ordering and note whether the supplier uses short tons or metric tonnes.",
+   "t1": "Wet material can weigh more than dry material-supplier conversions are the best source. Ask for the product name/gradation so you are comparing the right material.",
+   "t2": "Different products (pea gravel, crushed stone, base rock) can have different densities. Do not assume one conversion fits both base and top layers.",
+   "t3": "If you need exact tonnage for hauling limits, confirm the conversion before ordering and note whether the supplier uses short tons or metric tonnes. Ask whether their numbers are for loose or compacted material.",
    "t4": "Ordering slightly extra is usually cheaper than paying a second delivery fee and trying to match material later (especially for decorative stone)."
   },
   "quickTitle": "Quick checklist",
-  "quickIntro": "Yards-to-tons is only as accurate as the density you use, so treat supplier conversions as the source of truth. When in doubt, ask your supplier which ton unit they quote and what moisture condition they assume.",
+  "quickIntro": "Yards-to-tons is only as accurate as the density you use, so treat supplier conversions as the source of truth. When in doubt, ask your supplier which ton unit they quote, what moisture condition they assume, and whether the number is for loose or compacted material.",
   "quick": {
    "q1": "Start with a cubic yard estimate based on compacted (installed) depth. If you're estimating multiple layers, keep each layer separate so you don't mix products and densities.",
    "q2": "Use the supplier's conversion for your exact product whenever possible. Moisture and gradation can change weight, so generic \"tons per yard\" averages are best for planning only.",
