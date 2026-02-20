@@ -311,6 +311,18 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Round-up and delivery planning (per SKU)",
+        paragraphs: [
+          "Round up by product line item, not just total bundles. Field shingles, ridge cap, starter, and underlayment often have different coverage rates and packaging rules.",
+          "If you need to split orders, keep lot/batch consistent when possible and plan where bundles will be stored dry and flat to prevent damage.",
+        ],
+        bullets: [
+          "Track field shingles, ridge cap, starter, and underlayment as separate line items.",
+          "Confirm bundle coverage on each wrapper; similar products can differ.",
+          "Plan delivery access and staging before the truck arrives to reduce breakage.",
+        ],
+      },
+      {
         heading: "Buying strategy (avoid shortages and mismatches)",
         bullets: [
           "Round up to whole bundles and keep a small number of extras for repairs.",
@@ -343,6 +355,17 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Compaction: loose depth vs final depth",
         paragraphs: [
           "Compaction reduces loose thickness. If you want 4 inches final compacted depth, you may need to place more than 4 inches loose. The exact factor depends on material and compaction effort, but a buffer is usually cheaper than a second delivery.",
+        ],
+      },
+      {
+        heading: "Lift thickness (avoid placing too deep at once)",
+        paragraphs: [
+          "Compaction works best in lifts. Very thick loose layers are hard to compact evenly, which can lead to soft spots and later settlement.",
+        ],
+        bullets: [
+          "If your base is thick, plan multiple lifts instead of one deep layer.",
+          "Compact each lift before adding the next to avoid trapped loose material.",
+          "If you are unsure, ask your supplier or contractor what lift thickness works for your material.",
         ],
       },
       {
@@ -513,6 +536,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Subfloor prep checklist",
+        bullets: [
+          "Check for flatness and repair low/high spots before install.",
+          "Remove dust, paint, and debris that can affect adhesion or click-lock fit.",
+          "Confirm moisture levels meet the product spec before you start.",
+        ],
+      },
+      {
         heading: "Acclimation and moisture checks",
         paragraphs: [
           "Many products require acclimation and moisture limits before install. If you skip this, you risk cupping, gaps, or failure later. Follow the product instructions and confirm your subfloor conditions before you buy everything.",
@@ -620,6 +651,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "What is a roofing square?",
         paragraphs: [
           "A roofing square is 100 square feet of roof surface area. Roofing is priced and ordered based on surface area, not the house footprint.",
+        ],
+      },
+      {
+        heading: "Ridge cap and starter are separate math",
+        paragraphs: [
+          "Ridge cap and starter strips often have their own coverage rates. Treat them as separate line items instead of assuming they match field shingles.",
+        ],
+        bullets: [
+          "Confirm ridge cap coverage per bundle or per linear foot.",
+          "Starter strip coverage is usually by linear feet of eave and rake.",
         ],
       },
       {
@@ -780,6 +821,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Thickness check",
+        paragraphs: [
+          "Even small thickness errors can change volume by a lot. Measure thickness at multiple points and use an average.",
+        ],
+        bullets: [
+          "4 inches = 0.333 ft, 6 inches = 0.5 ft.",
+          "Add buffer if the base is uneven or you expect spillage.",
+        ],
+      },
+      {
         heading: "Rule of thumb (fast scaling)",
         paragraphs: [
           "A quick shortcut: 100 sq ft at 1 inch thickness is about 0.31 cu yd (8.33 cu ft). Multiply by thickness in inches. Example: 100 sq ft at 4 inches is about 1.23 cu yd.",
@@ -835,6 +886,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Refresh vs new install",
+        paragraphs: [
+          "Top-ups use less volume than new installs. Measure existing depth and decide how much you actually need to add.",
+        ],
+        bullets: [
+          "A 1-inch refresh is often enough for appearance.",
+          "Avoid piling mulch against trunks or stems.",
+        ],
+      },
+      {
         heading: "Rule of thumb",
         paragraphs: [
           "A common shortcut: 1 cubic yard covers about 324 sq ft at 1 inch depth. Multiply or divide that by the depth you want.",
@@ -884,6 +945,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["6 in", "1.85 cu yd", "Major fill (plan compaction/settling)"],
           ],
         },
+      },
+      {
+        heading: "Depth drives volume",
+        paragraphs: [
+          "Small depth changes add up quickly over large areas. Always double-check depth before ordering.",
+        ],
+        bullets: [
+          "1 inch is 1/12 ft; 2 inches is 1/6 ft; 3 inches is 1/4 ft.",
+          "Use average depth for uneven lawns, not the deepest spot.",
+        ],
       },
       {
         heading: "Rule of thumb (fast mental math)",
@@ -1059,6 +1130,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Sag risk factors (beyond thickness)",
+        bullets: [
+          "Wide joist spacing increases sag risk.",
+          "High humidity or heavy attic insulation can increase sag risk.",
+          "Longer spans benefit from sag-resistant board even if code allows thinner board.",
+        ],
+      },
+      {
         heading: "Why ceilings are different from walls",
         paragraphs: [
           "Ceilings are more sensitive to sag and lighting. Even if 1/2 inch board is allowed, many people choose 5/8 inch on ceilings for stiffness and a flatter finished look under raking light.",
@@ -1189,6 +1268,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Delivery and truck limits",
+        paragraphs: [
+          "If ordering by truckload, supplier minimums can drive the final tonnage more than the exact math.",
+        ],
+        bullets: [
+          "Ask if loads are based on short tons or metric tonnes.",
+          "Confirm whether pricing is by delivered tons or by truck size.",
+        ],
+      },
+      {
         heading: "Typical ranges (rough planning only)",
         table: {
           columns: ["Material", "Typical tons per cubic yard", "Notes"],
@@ -1282,6 +1371,26 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["Driveway (vehicle traffic)", "8-12 inches", "Often deeper in freeze climates or weak soils"],
           ],
         },
+      },
+      {
+        heading: "Compaction in lifts",
+        paragraphs: [
+          "Paver base should be compacted in thin lifts. A thick loose layer is harder to compact evenly and can lead to settlement.",
+        ],
+        bullets: [
+          "Compact each lift before adding the next.",
+          "Moisture content affects compaction quality.",
+        ],
+      },
+      {
+        heading: "Edge restraint matters",
+        paragraphs: [
+          "Without edge restraint, pavers spread and joints open. Plan restraint as part of the base system.",
+        ],
+        bullets: [
+          "Use edge restraints compatible with your paver type.",
+          "Install restraints after final compaction.",
+        ],
       },
       {
         heading: "Why soil and drainage matter",
@@ -1571,6 +1680,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Pattern match options",
+        paragraphs: [
+          "Straight match wastes less than drop match, but it depends on the pattern. Check the label for the repeat and match type.",
+        ],
+        bullets: [
+          "Large repeats increase waste quickly.",
+          "Order extra for future repairs if the pattern is discontinued.",
+        ],
+      },
+      {
         heading: "Match type matters (straight vs drop)",
         bullets: [
           "Straight match: patterns line up at the same height across strips (less waste).",
@@ -1623,6 +1742,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Why piece length matters",
         paragraphs: [
           "Trim is often sold in fixed piece lengths. Even if your total linear feet are correct, you can still run short if you do not plan how those lengths break into pieces around corners and doors.",
+        ],
+      },
+      {
+        heading: "Outside corners and scarf joints",
+        paragraphs: [
+          "Outside corners and scarf joints create offcuts that cannot always be reused. Add a small buffer for cut loss.",
+        ],
+        bullets: [
+          "Pre-plan long runs so you do not end with tiny pieces.",
+          "Buy extra if you need continuous runs in visible areas.",
         ],
       },
       {
@@ -1751,6 +1880,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Joint width: wider joints use more grout.",
           "Joint depth: thicker tile and deeper joints increase usage.",
           "Waste: mixing loss, cleanup, and rounding to whole bags.",
+        ],
+      },
+      {
+        heading: "Mixing and pot life (avoid waste)",
+        paragraphs: [
+          "Grout has a limited working time after mixing. Mix smaller batches if you are working alone or in warm conditions.",
+        ],
+        bullets: [
+          "Mix only what you can install before it starts to stiffen.",
+          "Clean tools and buckets between batches to avoid clumps.",
         ],
       },
       {
@@ -1972,6 +2111,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Bag size consistency",
+        paragraphs: [
+          "Bag volumes vary by brand. Use the volume on the bag (cu ft or liters) and do not assume all bags are the same size.",
+        ],
+        bullets: [
+          "Mixing bag sizes can skew totals; track each size separately.",
+          "Round up to full bags; partial bags are not sold.",
+        ],
+      },
+      {
         heading: "Quick coverage chart (bags per 100 sq ft)",
         paragraphs: [
           "A quick way to plan bags is to convert depth to feet and use: bags = (area × depth in feet) ÷ bag cubic feet, then round up.",
@@ -2071,6 +2220,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Bag labels vs weight",
+        paragraphs: [
+          "Topsoil bags should be estimated by volume, not weight. Weight varies with moisture and blend.",
+        ],
+        bullets: [
+          "Use the volume label (cu ft or liters) for calculations.",
+          "Store bags dry; wet bags are heavier but not larger.",
+        ],
+      },
+      {
         heading: "When bulk is better",
         bullets: [
           "Large projects can require many bags and a lot of carrying time.",
@@ -2147,6 +2306,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Corners, ends, and gates add posts beyond simple spacing math.",
           "Gate posts often need heavier posts and more concrete.",
           "Sloped terrain and stepped panels can change layout and spacing.",
+        ],
+      },
+      {
+        heading: "Concrete volume example",
+        paragraphs: [
+          "Example: a 10 inch diameter hole at 36 inches deep is about 1.64 cu ft of concrete. Multiply by hole count and round up.",
+        ],
+        bullets: [
+          "Increase volume for bell-shaped or flared bottoms.",
+          "Order extra if your holes are oversized or sloped.",
         ],
       },
       {
@@ -2263,6 +2432,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["4x12", "48 sq ft", "Fewest seams; ceilings with lift/help"],
           ],
         },
+      },
+      {
+        heading: "Handling and waste tradeoff",
+        paragraphs: [
+          "Larger sheets reduce seams but are heavier and harder to maneuver. Choose sheet size based on access and labor, not just math.",
+        ],
+        bullets: [
+          "If you cannot safely lift 12-foot sheets, use smaller sizes and accept more seams.",
+          "Plan a layout sketch to reduce cutoffs before you order.",
+        ],
       },
       {
         heading: "Why bigger is not always better",
@@ -2525,6 +2704,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Pattern planning before you cut",
+        paragraphs: [
+          "A quick dry layout can reveal small sliver cuts and reduce waste. Pattern orientation changes where cuts land.",
+        ],
+        bullets: [
+          "Shift the layout by half a tile if it avoids tiny edge pieces.",
+          "Plan focal lines first, then work outward.",
+        ],
+      },
+      {
         heading: "Why patterns increase waste",
         paragraphs: [
           "Patterns increase waste because more tiles become “angle cut” pieces that cannot be reused elsewhere. Herringbone and other repeating patterns also force more alignment cuts at edges and around penetrations.",
@@ -2568,6 +2757,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Box rounding and dye lots",
+        paragraphs: [
+          "Tile orders should be rounded up to whole boxes and kept within one dye lot when possible.",
+        ],
+        bullets: [
+          "Buy an extra box for repairs.",
+          "Record the dye lot or batch number for future matching.",
+        ],
+      },
+      {
         heading: "Why this matters",
         paragraphs: [
           "Two tiles with the same size can have different coverage per box because pieces-per-carton differ. Label coverage is the reliable number.",
@@ -2592,6 +2791,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Actual board width (nominal sizes are larger than actual).",
           "Gap spacing (especially for composites) changes coverage slightly across wide decks.",
           "Picture framing and diagonal layouts increase waste.",
+        ],
+      },
+      {
+        heading: "Gap effects are real but small",
+        paragraphs: [
+          "Wider gaps slightly reduce board count, but the bigger cost driver is waste and layout. Do not reduce gaps just to save boards.",
+        ],
+        bullets: [
+          "Follow manufacturer guidance for end gaps and side gaps.",
+          "Temperature and moisture can change recommended gaps (project dependent).",
         ],
       },
       {
@@ -2645,6 +2854,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["Picture frame + diagonal", "12-20%", "Miter waste adds up"],
           ],
         },
+      },
+      {
+        heading: "Blocking and joist spacing",
+        paragraphs: [
+          "Diagonal layouts often need extra blocking or tighter joist spacing. That can affect framing materials and labor, not just deck boards.",
+        ],
+        bullets: [
+          "Check manufacturer guidance for diagonal installs.",
+          "Plan extra blocking if board ends will land between joists.",
+        ],
       },
       {
         heading: "Why diagonal layouts waste more",
@@ -2709,6 +2928,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Corners (2-stud vs 3-stud corners).",
           "T-intersections and backing/blocking needs.",
           "Door/window openings with king/jack studs and header support.",
+        ],
+      },
+      {
+        heading: "Corner and opening extras",
+        paragraphs: [
+          "Corners and openings add studs beyond the simple spacing math. Plan extra studs for framing returns and jack studs.",
+        ],
+        bullets: [
+          "Each opening typically needs king and jack studs (project dependent).",
+          "Corners may require three studs or blocking for drywall attachment.",
         ],
       },
       {
@@ -2833,6 +3062,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Direction changes between rooms",
+        paragraphs: [
+          "Changing direction between rooms can increase waste and require transitions. Plan direction early so you can set a realistic waste factor.",
+        ],
+        bullets: [
+          "Long, narrow rooms often look best with boards running lengthwise.",
+          "Transitions can add trim and hardware costs not in the board count.",
+        ],
+      },
+      {
         heading: "Direction changes where the cuts land",
         paragraphs: [
           "Plank direction determines which walls require the most end cuts and which areas produce unusable offcuts. In a long, narrow space, running planks the long way can reduce the number of short end pieces. In complex layouts, direction can move waste from one area to another.",
@@ -2947,6 +3186,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Ceiling height and usable drops",
+        paragraphs: [
+          "The number of drops per roll changes when ceiling height crosses certain thresholds. Always compute usable drop length after pattern repeat.",
+        ],
+        bullets: [
+          "A small increase in height can reduce drops per roll by one.",
+          "Verify roll length in feet or meters to avoid unit mix-ups.",
+        ],
+      },
+      {
         heading: "Pattern repeat can be a bigger driver than height",
         paragraphs: [
           "If the wallpaper has a repeat, you lose usable length per strip because you need to align the pattern. The larger the repeat, the more “waste length” per strip.",
@@ -3028,6 +3277,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["Bedding sand", "1 in (approx.)", "Not a thick leveling layer"],
           ],
         },
+      },
+      {
+        heading: "Do not use sand to fix grade",
+        paragraphs: [
+          "Bedding sand is for leveling on top of a compacted base, not for correcting large grade changes. Use base material for grade correction.",
+        ],
+        bullets: [
+          "Keep bedding sand thickness consistent.",
+          "Over-thick sand can lead to paver movement.",
+        ],
       },
       {
         heading: "Why bedding sand should stay thin",
@@ -3266,6 +3525,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Estimate edges separately",
+        paragraphs: [
+          "Thickened edges can add significant volume. Estimate the edge as a separate beam and add it to the slab volume.",
+        ],
+        bullets: [
+          "Use edge length x width x extra thickness for volume.",
+          "Round up if edges are irregular or steps are included.",
+        ],
+      },
+      {
         heading: "Basic math (separate it into shapes)",
         bullets: [
           "Slab volume = area x slab thickness.",
@@ -3358,6 +3627,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Fresh drywall and porous surfaces usually need more paint (and often primer).",
           "Heavy texture reduces coverage compared to smooth walls.",
           "Big color changes and dark colors often need extra coats.",
+        ],
+      },
+      {
+        heading: "Coverage sanity check (quick math)",
+        paragraphs: [
+          "A fast sanity check is gallons = (wall area x coats) / coverage. Round up to whole gallons and keep a small buffer for touch-ups.",
+        ],
+        bullets: [
+          "If your estimate is under 1 gallon for a full room, double-check measurements.",
+          "Deep colors, heavy texture, and spraying often reduce coverage.",
         ],
       },
       {
@@ -3544,6 +3823,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Finish level affects labor, not sheet count",
+        paragraphs: [
+          "Finish level does not change board count, but it changes time, materials, and expectations. Plan accordingly.",
+        ],
+        bullets: [
+          "Level 4 is common for painted walls; level 5 is for critical light or smooth finishes.",
+          "Higher finish levels require more mud, sanding, and time.",
+        ],
+      },
+      {
         heading: "What each level means (plain language)",
         paragraphs: [
           "Levels are about how much compound is applied and how smooth the surface is before paint. Higher levels are not just \"prettier\"—they add material, time, and sanding.",
@@ -3618,6 +3907,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Batch consistency",
+        paragraphs: [
+          "Use the same measuring container for every batch so the ratio stays consistent. Small changes in water can change workability and strength.",
+        ],
+        bullets: [
+          "Mix dry ingredients thoroughly before adding water.",
+          "Do not re-temper with extra water once the mix starts to set.",
+        ],
+      },
+      {
         heading: "Quick ratio math (volume split)",
         paragraphs: [
           "If your total mud volume is V, split by ratio. For 5:1, sand = (5/6) V and cement = (1/6) V. For 4:1, sand = (4/5) V and cement = (1/5) V.",
@@ -3689,6 +3988,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Cure vs dry",
         paragraphs: [
           "Curing is the strength-gain process; drying is moisture leaving the slab. Concrete can feel dry on top before it reaches useful strength, and it can take longer to dry for some finishes.",
+        ],
+      },
+      {
+        heading: "Early traffic and loads",
+        paragraphs: [
+          "Concrete can feel hard in a day but it is still curing internally. Heavy loads too early can cause cracks or surface damage.",
+        ],
+        bullets: [
+          "Follow the supplier or mix guidance for vehicle traffic timing.",
+          "Keep the surface moist during curing to improve strength.",
         ],
       },
       {
@@ -3788,6 +4097,13 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["1 metric tonne", "2204.62 lb", "Common outside the US"],
           ],
         },
+      },
+      {
+        heading: "Invoice units",
+        bullets: [
+          "Short ton = 2,000 lb; metric tonne = 1,000 kg (2,204.6 lb).",
+          "Confirm which unit appears on the invoice before comparing prices.",
+        ],
       },
       {
         heading: "Why this mix-up is expensive",
@@ -3908,6 +4224,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Which layer does what?",
+        paragraphs: [
+          "Bedding sand creates a smooth, thin setting layer. Base material handles structural support and grade. Mixing the two causes failure.",
+        ],
+        bullets: [
+          "Use base aggregate for structural thickness.",
+          "Use bedding sand only as a thin layer.",
+        ],
+      },
+      {
         heading: "Planning tip",
         paragraphs: [
           "Estimate base stone and bedding sand separately. Do not compensate for a weak base by adding more sand.",
@@ -3996,6 +4322,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Joint width rule of thumb",
+        paragraphs: [
+          "Sanded grout is typically used for wider joints; unsanded is for very narrow joints or polished surfaces that can scratch. Follow the tile manufacturer guidance for exact limits.",
+        ],
+        bullets: [
+          "If joints are too wide for unsanded, it can shrink or crack.",
+          "If joints are too narrow for sanded, it may not pack well.",
+        ],
+      },
+      {
         heading: "Sanded vs unsanded (practical differences)",
         bullets: [
           "Unsanded grout is smoother and often used for narrow joints or delicate tile surfaces.",
@@ -4046,6 +4382,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Starter strip coverage and ridge cap coverage are separate line items.",
           "Some ridge caps are cut from shingles; others are a dedicated product.",
           "Underlayment and flashing are also separate materials.",
+        ],
+      },
+      {
+        heading: "Starter and ridge are separate SKUs",
+        paragraphs: [
+          "Starter strips and ridge cap shingles are often separate products with different coverage. Do not assume they match field shingles.",
+        ],
+        bullets: [
+          "Plan starter by linear feet of eaves and rakes.",
+          "Plan ridge cap by linear feet of ridges and hips.",
         ],
       },
       {
@@ -4109,6 +4455,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Strength (PSI/MPa) and aggregate size.",
           "Slump (workability) and whether you need fiber.",
           "Admixtures (accelerator/retarder) based on weather and timing.",
+        ],
+      },
+      {
+        heading: "Delivery timing and slump",
+        paragraphs: [
+          "Your mix choice should match placement timing and finish needs. Slump affects workability and finishing time.",
+        ],
+        bullets: [
+          "Ask the supplier about allowable water addition on site.",
+          "Plan crew size so placement and finishing happen on time.",
         ],
       },
       {
@@ -4278,6 +4634,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Double plates and waste",
+        paragraphs: [
+          "Most walls use double top plates, which increases lumber count beyond the studs themselves. Plan plate length as a separate line item.",
+        ],
+        bullets: [
+          "Add extra for overlapping joints and splices.",
+          "Corners and intersections often need additional blocking.",
+        ],
+      },
+      {
         heading: "Quick estimating method",
         paragraphs: [
           "A simple starting point: take total wall length and multiply by the number of plate runs you need. A common wall uses one bottom plate and two top plates (three total runs), but details vary by project and local practice.",
@@ -4324,6 +4690,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Small openings and windows",
+        paragraphs: [
+          "Small windows and doors often do not reduce roll count once you account for pattern repeat and matching.",
+        ],
+        bullets: [
+          "Subtract only large openings if you want a tighter estimate.",
+          "Keep waste for matching and mistakes.",
+        ],
+      },
+      {
         heading: "Pattern repeat matters",
         paragraphs: [
           "If the wallpaper has a repeat, usable length per roll drops. Manufacturer strips-per-roll guidance is often the safest method.",
@@ -4349,6 +4725,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Transitions, reducers, and stair noses.",
           "Baseboard/shoe molding and quarter round as needed.",
           "Leveling compound for uneven subfloors (separate estimate).",
+        ],
+      },
+      {
+        heading: "Moisture testing and acclimation",
+        paragraphs: [
+          "Moisture is a common failure point. Test subfloors per product guidance and acclimate materials before install.",
+        ],
+        bullets: [
+          "Do not install over wet slabs or damp wood.",
+          "Store flooring in the room for the recommended acclimation time.",
         ],
       },
       {
@@ -4422,6 +4808,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Traffic and base condition",
+        paragraphs: [
+          "Thickness choice depends on traffic and base quality. A weak base will fail regardless of surface thickness.",
+        ],
+        bullets: [
+          "Heavier vehicles need a stronger base and thicker asphalt.",
+          "If the base is soft or wet, fix drainage before paving.",
+        ],
+      },
+      {
         heading: "Compacted thickness vs loose thickness (confirm this)",
         paragraphs: [
           "Asphalt is typically specified by compacted thickness, but the material is placed and then compacted. If you compare quotes, make sure everyone is talking about the same thickness definition.",
@@ -4464,6 +4860,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Big color changes (can reduce topcoat count).",
           "Glossy surfaces (improves adhesion when properly prepared).",
           "Raw or porous surfaces (helps even out absorption).",
+        ],
+      },
+      {
+        heading: "Quick decision rules",
+        bullets: [
+          "Prime if the surface is bare, patched, stained, glossy, or chalky.",
+          "Prime for large color changes when the finish coat would need 3+ coats.",
+          "Skip primer only when existing paint is sound and similar in color and sheen.",
         ],
       },
       {
@@ -4558,6 +4962,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         paragraphs: [
           "Tile waste is mostly layout and cuts, not broken tiles. Straight layouts in open rectangles typically waste less than diagonal layouts, herringbone, or projects with many corners, niches, and penetrations.",
           "If appearance matters, plan to buy enough from a consistent dye lot. That usually means choosing a realistic overage upfront instead of trying to top up later.",
+        ],
+      },
+      {
+        heading: "Order timing and batch consistency",
+        paragraphs: [
+          "Tile batches can vary slightly. Ordering everything at once reduces dye-lot mismatch and speeds the job.",
+        ],
+        bullets: [
+          "Buy trims, bullnose, and mosaics in the same batch when possible.",
+          "Keep at least one extra box for future repairs.",
         ],
         table: {
           columns: ["Install type", "Typical overage", "Notes"],
@@ -4675,6 +5089,17 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Sheet sizing: fewer seams vs handling",
         paragraphs: [
           "Larger sheets reduce seams, which can reduce finishing time, but handling and safety matter—especially for ceilings. Choose a sheet size you can safely install and transport.",
+        ],
+      },
+      {
+        heading: "Sequence planning (hang, tape, finish)",
+        paragraphs: [
+          "Drywall work is sequential. Delays between stages can add labor and sanding. Plan materials for each step before you start.",
+        ],
+        bullets: [
+          "Hanging: sheets, screws, corner bead.",
+          "Taping: tape, joint compound, mixing tools.",
+          "Finishing: additional compound, sanding, primer.",
         ],
         table: {
           columns: ["Sheet size", "Coverage", "Tradeoff"],
@@ -4862,6 +5287,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Stairs and fascia are separate line items",
+        paragraphs: [
+          "Stairs, landings, and fascia often use different board lengths and can consume more material than expected. Estimate them separately.",
+        ],
+        bullets: [
+          "Count stair treads and risers before you order boards.",
+          "Plan fascia boards and trim from the same product line.",
+        ],
+      },
+      {
         heading: "Gaps and actual board width affect coverage",
         paragraphs: [
           "Coverage depends on actual board width (not nominal) and the gap you leave. Composite and wood often have different recommended gapping rules—follow the product guidance.",
@@ -4988,6 +5423,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Gate posts need extra planning",
+        paragraphs: [
+          "Gate posts often need to be larger and deeper than line posts, especially for wide or heavy gates.",
+        ],
+        bullets: [
+          "Plan gate hardware and latch clearance early.",
+          "Allow concrete cure time before hanging gates.",
+        ],
+      },
+      {
         heading: "Planning before you dig",
         bullets: [
           "Confirm property lines, setbacks, and any HOA or local permit rules.",
@@ -5099,6 +5544,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         paragraphs: [
           "Grout choice depends on joint width, tile type, and the environment. Traditional cement grouts are common, but specialty and epoxy grouts can be worth it for stain resistance in high-use areas.",
           "Always follow the grout manufacturer's rules for your joint width and tile type. The goal is durable joints and consistent color, not just the cheapest bag.",
+        ],
+      },
+      {
+        heading: "Color and cleaning considerations",
+        paragraphs: [
+          "Lighter grout shows staining more easily, while darker grout can hide dirt but may show haze. Plan sealing and cleaning accordingly.",
+        ],
+        bullets: [
+          "Test grout color on a sample board before committing.",
+          "Follow cure times before sealing or heavy cleaning.",
         ],
         table: {
           columns: ["Type", "Common use", "Tradeoff"],
@@ -5234,6 +5689,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         paragraphs: [
           "Most tile failures are water-management failures: water gets behind tile and reaches materials that cannot handle it. Waterproofing should be designed as a system (substrate + membrane + seams + penetrations).",
           "Requirements vary by local code and by manufacturer system. If you are using a branded system, follow that system’s instructions end-to-end.",
+        ],
+      },
+      {
+        heading: "Membrane compatibility",
+        paragraphs: [
+          "Waterproofing systems are brand-specific. Mixing membranes and mortars from different systems can void warranties.",
+        ],
+        bullets: [
+          "Use the membrane manufacturer?s approved thinset.",
+          "Follow required overlap and seam treatment details.",
         ],
       },
       {
@@ -5471,6 +5936,15 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Quick framing takeoff list (by category)",
+        bullets: [
+          "Joists and blocking (count by spacing and span tables).",
+          "Beams and posts (count by layout and tributary loads).",
+          "Connectors and hardware (hangers, post bases, structural fasteners).",
+          "Concrete for footings (separate by footing diameter and depth).",
+        ],
+      },
+      {
         heading: "Hardware items people forget",
         bullets: [
           "Joist hangers and hanger nails/screws",
@@ -5521,6 +5995,16 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Plan stronger gate posts and deeper footings where needed.",
           "Choose hinges and latches rated for the gate weight and material.",
           "Use diagonal bracing or a gate kit appropriate for your design.",
+        ],
+      },
+      {
+        heading: "Diagonal brace direction (simple rule)",
+        paragraphs: [
+          "For a typical swinging gate, the diagonal brace should run from the bottom hinge corner up to the top latch corner. That puts the brace in compression and helps resist sag.",
+        ],
+        bullets: [
+          "A cable brace only works if it can be tensioned and re-tightened.",
+          "Keep hardware tight and recheck after the gate settles.",
         ],
       },
       {
@@ -5650,6 +6134,17 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Soil test and pH (small effort, big payoff)",
+        paragraphs: [
+          "A basic soil test can tell you if pH or salts are the real issue. Compost adds nutrients and organic matter, but it does not fix every soil problem.",
+        ],
+        bullets: [
+          "If plants struggle repeatedly, check pH before adding more compost.",
+          "Salts can build up in some composts; ask for lab results if available.",
+          "Match amendments to the test results instead of guessing.",
+        ],
+      },
+      {
         heading: "Common mistakes (and what to do instead)",
         bullets: [
           "Using compost as fill: use mineral soil for fill, then topdress with compost.",
@@ -5731,6 +6226,17 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Don’t overwork: lay it off and leave it; repeated passes can cause ridges and flashing.",
           "Watch recoat windows: recoating too soon can tear semi-dried film and leave texture.",
           "Allow full cure before heavy cleaning or taping for adjacent work (project dependent).",
+        ],
+      },
+      {
+        heading: "Dry time vs cure time (why trim still feels soft)",
+        paragraphs: [
+          "Many trim enamels dry to the touch quickly but take longer to fully cure and harden. That matters for doors, windows, and baseboards that get bumped or cleaned early.",
+        ],
+        bullets: [
+          "Follow the label for recoat and full cure time; they are not the same.",
+          "Avoid heavy cleaning or tape on trim until the paint has cured.",
+          "If trim sticks to weatherstripping, give it more cure time before closing tightly.",
         ],
       },
       {
