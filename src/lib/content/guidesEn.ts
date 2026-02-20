@@ -15,6 +15,8 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Paint estimates are most accurate when you separate walls, ceilings, and trim. They often use different products and can have different coverage rates and number of coats.",
       "Coverage varies with surface texture, porosity, and color change. If you’re painting fresh drywall, heavy texture, or making a dramatic color change, plan for extra material (and sometimes an extra coat).",
       "Primer is its own line item. Use it for raw drywall, stains, glossy surfaces, or big color changes, then still plan enough finish paint for your chosen coats.",
+      "Example: A 12 x 14 ft room with 8 ft ceilings has about 416 sq ft of wall area (2 x (12 + 14) x 8). Two coats at 350 sq ft per gallon is 2.38 gallons, so buy 3 gallons, then add a small buffer if you want leftovers.",
+      "Trim and doors are usually estimated separately. Measure linear feet of trim, multiply by an estimated paintable width, and round up because edges and profiles add area.",
       "If you are painting multiple rooms, box (mix) your paint in a larger bucket to keep color consistent and save labeled leftovers for touch-ups.",
     ],
     bullets: [
@@ -23,6 +25,8 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Buy enough from the same batch/tint for color consistency.",
       "Spraying uses more paint than rolling; add a larger waste buffer if you spray.",
       "Sanding, patching, and caulk are often the difference between one and two finish coats.",
+      "If you are changing sheen or painting over glossy surfaces, plan for more prep and possibly primer.",
+      "Keep a labeled leftover can for touch-ups, especially with custom tints.",
     ],
   },
   "paint-ceiling": {

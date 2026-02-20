@@ -76,19 +76,22 @@ const REFERENCES_EN: Partial<Record<GuideId, GuideReferenceBlock>> = {
   paint: {
     title: "Paint planning quick reference",
     intro:
-      "Most “paint math” errors come from mixing surfaces or guessing coats. Use this as a checklist before you buy.",
+      "Most \"paint math\" errors come from mixing surfaces or guessing coats. Use this checklist before you buy.",
     table: {
       columns: ["Surface", "Typical coats", "Typical coverage (per coat)"],
       rows: [
-        ["Walls (interior)", "2", "350–400 sq ft/gal"],
-        ["Ceilings", "1–2", "300–400 sq ft/gal"],
-        ["Primer", "0–1+", "250–400 sq ft/gal"],
-        ["Trim/doors (enamel)", "1–2", "350–450 sq ft/gal"],
+        ["Walls (interior)", "2", "350-400 sq ft/gal"],
+        ["Ceilings", "1-2", "300-400 sq ft/gal"],
+        ["Primer", "0-1+", "250-400 sq ft/gal"],
+        ["Trim/doors (enamel)", "1-2", "350-450 sq ft/gal"],
       ],
     },
+    example:
+      "Example: 416 sq ft walls x 2 coats / 350 sq ft per gal = 2.38 gal, round to 3 gallons (walls only).",
     bullets: [
       "If the wall is patched, stained, glossy, or raw drywall, primer becomes more likely (and often saves you a finish coat).",
-      "Separate walls, ceilings, and trim if products differ; don’t average them together.",
+      "Separate walls, ceilings, and trim if products differ; do not average them together.",
+      "Spraying uses more paint than rolling; increase your waste buffer if you spray.",
       "When in doubt, round up near thresholds and keep labeled touch-up paint.",
     ],
     calculatorHref: routes.paint,

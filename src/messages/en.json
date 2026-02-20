@@ -399,57 +399,57 @@
     "metaTitle": "How to estimate paint (walls, ceilings, trim)",
     "metaDescription": "Learn how to estimate paint for walls, ceilings, and trim, including coverage per gallon, coats, primer, and waste.",
   "title": "How to estimate paint for a room",
-    "subtitle": "Measure correctly, apply a realistic coverage rate, and add a small buffer for waste and touch-ups.",
+    "subtitle": "Measure correctly, apply a realistic coverage rate, and add a small buffer for waste and touch-ups. This guide focuses on the assumptions that change your result the most.",
   "tldrTitle": "TL;DR",
   "tldr": {
-     "t1": "Area x coats / coverage = paint needed (then round up to whole cans).",
-     "t2": "Coverage on the can is a starting point - texture, porosity, and color changes reduce it.",
-     "t3": "Add a small buffer for touch-ups, cut-ins, and waste (often 5-10%)."
+     "t1": "Area x coats / coverage = paint needed, then round up to whole cans. Keep walls, ceilings, and trim separate if products differ.",
+     "t2": "Coverage on the can is a starting point; texture, porosity, dark colors, and application method reduce it.",
+     "t3": "Add a small buffer for touch-ups, cut-ins, and waste (often 5-10%) and keep a labeled leftover."
     },
     "intro": {
-     "p1": "A good paint estimate comes down to two numbers: surface area to paint and coverage per gallon (or per liter). Add the number of coats, then include a small buffer for touch-ups and waste. Separate walls, ceilings, and trim if they use different products or sheens.",
-     "p2": "If you measure once and calculate once, you usually under-buy. This guide explains what to measure, how to handle coats and primer, and why the coverage number on the can is only a starting point."
+     "p1": "A good paint estimate comes down to two numbers: surface area to paint and coverage per gallon (or per liter). Add the number of coats, then include a small buffer for touch-ups and waste. Separate walls, ceilings, and trim if they use different products or sheens, and estimate trim by linear feet times paintable width if you need a tighter number.",
+     "p2": "If you measure once and calculate once, you usually under-buy. This guide explains what to measure, how to handle coats and primer, and why the coverage number on the can is only a starting point. Small shifts in coats or coverage can change the total by a full can."
     },
   "stepsTitle": "Step-by-step: paint math",
   "steps": {
-     "s1": "Measure wall area (length x height) for each wall and sum them. Measure ceilings separately if you plan to paint them.",
-     "s2": "Subtract large openings (doors, big windows) only if you want a tighter estimate; most rooms can leave them in and use the buffer.",
-     "s3": "Decide coats (often 2 for new colors or big color changes). Count primer as its own coat if you plan to use it.",
-     "s4": "Pick a realistic coverage rate based on wall texture, porosity, and paint type. Use the label if you know the product.",
-     "s5": "Add 5-10% buffer, then round up to whole cans so you can finish without switching batches."
+     "s1": "Measure wall area (length x height) for each wall and sum them. Include closets and alcoves, and measure ceilings separately if you plan to paint them.",
+     "s2": "Subtract large openings (doors, big windows) only if you want a tighter estimate; most rooms can leave them in and use the buffer. If you need a tighter trim estimate, measure linear feet and multiply by paintable width.",
+     "s3": "Decide coats (often 2 for new colors or big color changes). Count primer as its own coat if you plan to use it, and remember tinted primer can reduce finish coats.",
+     "s4": "Pick a realistic coverage rate based on wall texture, porosity, sheen, and application method. Use the label if you know the product.",
+     "s5": "Add 5-10% buffer, then round up to whole cans by product and sheen so you can finish without switching batches."
     },
     "tipsTitle": "Practical tips",
     "tips": {
-     "t1": "Textured walls, porous patches, and deep colors reduce coverage.",
-     "t2": "Ceilings, trim, and doors often use different paint and finish - estimate them separately.",
-     "t3": "Primer can reduce finish coats, but it is not \"free paint\" - plan primer volume separately.",
-     "t4": "Batch-mix cans (boxing) for consistent color across walls, especially across multiple rooms."
+     "t1": "Textured walls, porous patches, and deep colors reduce coverage; spraying also uses more paint than rolling.",
+     "t2": "Ceilings, trim, and doors often use different paint and finish; estimate them separately instead of averaging.",
+     "t3": "Primer can reduce finish coats, but it is not \"free paint\"; plan primer volume separately and choose the right type for stains or glossy surfaces.",
+     "t4": "Batch-mix cans (boxing) for consistent color across walls, especially across multiple rooms; label and save a small can for touch-ups."
     },
   "quickTitle": "Quick checklist",
-    "quickIntro": "If you want a dependable paint estimate without overthinking it, use this checklist. It focuses on the decisions that change the number the most: what you measure, coats, realistic coverage, primer, and a small buffer. If you're between two assumptions, choose the safer one and round up; it saves a second trip and avoids lot-matching headaches.",
+    "quickIntro": "If you want a dependable paint estimate without overthinking it, use this checklist. It focuses on the decisions that change the number the most: what you measure, coats, realistic coverage, primer, and a small buffer. Decide your products first (walls vs trim) so you do not mix coverage rates, then choose the safer assumption and round up.",
   "quick": {
-   "q1": "Measure each wall (width x height) and add them. If you're also painting the ceiling, estimate ceiling area separately because it often uses different paint and coverage. Subtract only large openings if you want a tighter estimate; for most rooms your buffer covers doors and typical windows.",
+   "q1": "Measure each wall (width x height) and add them. If you are also painting the ceiling, estimate ceiling area separately because it often uses different paint and coverage. Subtract only large openings if you want a tighter estimate; for most rooms your buffer covers doors and typical windows.",
    "q2": "Choose coats honestly. Two finish coats is common for new colors, patched walls, and big color changes. Primer is its own step: it can reduce finish coats or help stains, but it does not replace paint volume, and you still need to buy enough finish paint for the coats you plan.",
-   "q3": "Use realistic coverage, not ideal label numbers. Texture, porous drywall, and deep colors can cut coverage, and cutting-in around trim adds extra brushwork. If you're unsure, assume a lower coverage rate so you don't run out mid-wall and end up with lap marks or a mismatched batch.",
-   "q4": "Add 5-10% for touch-ups, cutting-in waste, and roller/brush loss, then round up to whole cans. If color matching later matters, buying one extra can from the same batch can save time and prevent subtle differences in sheen or tint."
+   "q3": "Use realistic coverage, not ideal label numbers. Texture, porous drywall, dark colors, and spray application can cut coverage, and cutting-in around trim adds extra brushwork. If you are unsure, assume a lower coverage rate so you do not run out mid-wall and end up with lap marks or a mismatched batch.",
+   "q4": "Add 5-10% for touch-ups, cutting-in waste, and roller/brush loss, then round up to whole cans by product and sheen. If color matching later matters, buying one extra can from the same batch can save time and prevent subtle differences in sheen or tint."
   },
   "mistakesTitle": "Common mistakes",
   "mistakes": {
-     "m1": "Forgetting to multiply by coats (2 coats is common).",
-     "m2": "Using ideal label coverage for rough, porous, or patched surfaces.",
+     "m1": "Forgetting to multiply by coats (2 coats is common for new colors or patchwork).",
+     "m2": "Using ideal label coverage for rough, porous, or patched surfaces and then running short.",
      "m3": "Skipping a buffer and running short mid-project (which risks lap marks and color mismatch)."
     },
   "ctaTitle": "Want the fast estimate?",
-  "ctaBody": "Use our paint calculator and share a link that keeps your inputs.",
+  "ctaBody": "Use our paint calculator and share a link that keeps your inputs, coverage, and coat assumptions.",
   "lastUpdated": "Last updated: Feb 2026",
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Should I subtract windows and doors?",
-     "a1": "For small openings, the difference is usually within your buffer. Subtracting is useful for very large windows, many doors, or tight budgets.",
+     "a1": "For small openings, the difference is usually within your buffer. Subtracting is useful for very large windows, many doors, or tight budgets. If you subtract, do it consistently across rooms.",
    "q2": "Why is my result higher than the can label coverage?",
-     "a2": "Label coverage assumes ideal conditions. Texture, porosity, application method, and multiple coats all reduce real-world coverage.",
+     "a2": "Label coverage assumes ideal conditions on smooth, well-primed surfaces. Texture, porosity, application method, and multiple coats all reduce real-world coverage.",
    "q3": "How much extra paint should I buy?",
-     "a3": "A 5-10% buffer is common. If you need exact color matching later, buying an extra can from the same batch can save time."
+     "a3": "A 5-10% buffer is common. If you need exact color matching later, buying an extra can from the same batch can save time. Keep it labeled for touch-ups."
     }
   },
  "guideFlooring": {
