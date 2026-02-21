@@ -85,7 +85,14 @@ export function TopsoilBagsCalculator() {
       : roundForInput(parseNumber(bagPreset), 2);
   }, [bagCustom, bagPreset, unitSystem]);
 
-  const { cubicYards, cubicFeet, bags, cost } = useMemo(() => {
+  const {
+    baseCubicYards,
+    wasteCubicYards,
+    cubicYards,
+    cubicFeet,
+    bags,
+    cost,
+  } = useMemo(() => {
     const areaSqFtValue =
       unitSystem === "metric" ? m2ToSqFt(parseNumber(area)) : parseNumber(area);
     const depthInValue =
@@ -216,6 +223,30 @@ export function TopsoilBagsCalculator() {
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
           <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.baseCubicMeters")
+                : t("results.baseCubicYards")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(cubicYardsToCubicMeters(baseCubicYards), 2)
+                : formatNumber(baseCubicYards, 2)
+            }
+          />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.wasteCubicMeters")
+                : t("results.wasteCubicYards")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(cubicYardsToCubicMeters(wasteCubicYards), 2)
+                : formatNumber(wasteCubicYards, 2)
+            }
+          />
+          <CalculatorResultRow
             label={unitSystem === "metric" ? t("results.cubicMeters") : t("results.cubicYards")}
             value={
               unitSystem === "metric"
@@ -239,4 +270,3 @@ export function TopsoilBagsCalculator() {
     </div>
   );
 }
-

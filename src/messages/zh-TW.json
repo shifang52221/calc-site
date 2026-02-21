@@ -1192,6 +1192,8 @@
     },
     "results": {
       "title": "結果",
+      "wasteSqFt": "損耗緩衝（平方英尺）",
+      "wasteM2": "損耗緩衝（m²）",
       "subtitle": "卷數會向上取整為整卷。",
       "netAreaSqFt": "扣除開口後的淨面積（平方英尺）",
       "netAreaM2": "扣除開口後的淨面積（m²）",
@@ -1305,6 +1307,10 @@
     },
     "results": {
       "title": "結果",
+      "baseTotalFt3": "基礎體積 (ft3)",
+      "baseTotalM3": "基礎體積 (m3)",
+      "wasteTotalFt3": "損耗緩衝 (ft3)",
+      "wasteTotalM3": "損耗緩衝 (m3)",
       "totalFt3": "總體積 (ft3)",
       "totalM3": "總體積 (m3)",
       "sandFt3": "砂 (ft3)",
@@ -1372,6 +1378,12 @@
     },
     "results": {
       "title": "結果",
+      "baseSqFt": "基礎面積（平方英尺）",
+      "baseM2": "基礎面積（m²）",
+      "wasteSqFt": "損耗緩衝（平方英尺）",
+      "wasteM2": "損耗緩衝（m²）",
+      "neededSqFt": "總面積（平方英尺）",
+      "neededM2": "總面積（m²）",
       "bags": "預估袋數",
       "neededSqFt": "總面積（平方英尺）",
       "neededM2": "總面積（m²）"
@@ -1472,6 +1484,12 @@
     "results": {
       "areaM2": "預估面積（m²）",
       "title": "結果",
+      "baseSqFt": "基礎面積（平方英尺）",
+      "baseM2": "基礎面積（m²）",
+      "wasteSqFt": "損耗緩衝（平方英尺）",
+      "wasteM2": "損耗緩衝（m²）",
+      "neededSqFt": "總面積（平方英尺）",
+      "neededM2": "總面積（m²）",
       "squares": "預估 squares（每 square = 100 平方英尺）",
       "bundles": "預估綑數",
       "cost": "預估費用"
@@ -1507,6 +1525,8 @@
     },
     "results": {
       "title": "結果",
+      "baseBoards": "基礎板材數量",
+      "wasteBoards": "損耗緩衝（板材）",
       "boards": "預估板材數量",
       "cost": "預估費用"
     },
@@ -1538,7 +1558,11 @@
     },
     "results": {
       "title": "結果",
+      "basePanels": "基礎面板數",
+      "wastePanels": "損耗緩衝（面板）",
       "panels": "預估面板數",
+      "basePosts": "基礎立柱數",
+      "wastePosts": "損耗緩衝（立柱）",
       "posts": "預估立柱數",
       "cost": "預估費用"
     },
@@ -1645,6 +1669,10 @@
     },
     "results": {
       "title": "結果",
+      "baseCubicYards": "基礎體積（立方碼）",
+      "baseCubicMeters": "基礎體積（立方公尺）",
+      "wasteCubicYards": "損耗緩衝（立方碼）",
+      "wasteCubicMeters": "損耗緩衝（立方公尺）",
       "cubicYards": "立方碼（估算）",
       "cubicMeters": "立方公尺（估算）",
       "shortTons": "噸（美制，估算）",
@@ -1707,6 +1735,10 @@
     },
     "results": {
       "title": "結果",
+      "baseCubicYards": "基礎體積（立方碼）",
+      "baseCubicMeters": "基礎體積（立方公尺）",
+      "wasteCubicYards": "損耗緩衝（立方碼）",
+      "wasteCubicMeters": "損耗緩衝（立方公尺）",
       "baseTitle": "底層碎石",
       "sandTitle": "墊砂",
       "cubicYards": "立方碼（估算）",
@@ -1758,6 +1790,10 @@
     },
     "results": {
       "title": "結果",
+      "baseCubicYards": "基礎體積（立方碼）",
+      "baseCubicMeters": "基礎體積（立方公尺）",
+      "wasteCubicYards": "損耗緩衝（立方碼）",
+      "wasteCubicMeters": "損耗緩衝（立方公尺）",
       "totalCubicYards": "總量（立方碼）",
       "totalCubicMeters": "總量（立方公尺）",
       "componentsTitle": "材料拆分",
@@ -1807,6 +1843,10 @@
     },
     "results": {
       "title": "結果",
+      "baseCubicYards": "基礎體積（立方碼）",
+      "baseCubicMeters": "基礎體積（立方公尺）",
+      "wasteCubicYards": "損耗緩衝（立方碼）",
+      "wasteCubicMeters": "損耗緩衝（立方公尺）",
       "cubicYards": "立方碼（估算）",
       "cubicMeters": "立方公尺（估算）",
       "shortTons": "噸（美制，估算）",
@@ -1842,6 +1882,8 @@
     },
     "results": {
       "title": "結果",
+      "baseBoardFeet": "基礎板英尺",
+      "wasteBoardFeet": "損耗緩衝（板英尺）",
       "boardFeet": "板英尺",
       "cubicFeet": "立方英尺",
       "cubicMeters": "立方公尺",
@@ -1881,6 +1923,10 @@
     },
     "results": {
       "title": "結果",
+      "baseCubicYards": "基礎體積（立方碼）",
+      "baseCubicMeters": "基礎體積（立方公尺）",
+      "wasteCubicYards": "損耗緩衝（立方碼）",
+      "wasteCubicMeters": "損耗緩衝（立方公尺）",
       "cubicYards": "立方碼（估算）",
       "cubicMeters": "立方公尺（估算）",
       "cubicFeet": "立方英尺",
@@ -1923,6 +1969,10 @@
     },
     "results": {
       "title": "結果",
+      "baseCubicYards": "基礎體積（立方碼）",
+      "baseCubicMeters": "基礎體積（立方公尺）",
+      "wasteCubicYards": "損耗緩衝（立方碼）",
+      "wasteCubicMeters": "損耗緩衝（立方公尺）",
       "cubicYards": "立方碼（估算）",
       "cubicMeters": "立方公尺（估算）",
       "cubicFeet": "立方英尺",
@@ -2057,6 +2107,10 @@
     },
     "results": {
       "title": "結果",
+      "baseCubicYards": "基礎體積（立方碼）",
+      "baseCubicMeters": "基礎體積（立方公尺）",
+      "wasteCubicYards": "損耗緩衝（立方碼）",
+      "wasteCubicMeters": "損耗緩衝（立方公尺）",
       "cubicYards": "立方碼（估算）",
       "cubicMeters": "立方公尺（估算）",
       "cubicFeet": "立方英尺",
@@ -2156,6 +2210,8 @@
     },
     "results": {
       "title": "結果",
+      "baseLiters": "基礎體積（公升）",
+      "wasteLiters": "損耗緩衝（公升）",
       "groutKg": "填縫劑（kg）",
       "groutLb": "填縫劑（lb）",
       "groutLiters": "體積（公升）",
@@ -2208,6 +2264,10 @@
     },
     "results": {
       "title": "結果",
+      "baseSeamFeet": "基礎接縫長度（英尺）",
+      "baseSeamMeters": "基礎接縫長度（公尺）",
+      "wasteSeamFeet": "損耗緩衝（英尺）",
+      "wasteSeamMeters": "損耗緩衝（公尺）",
       "seamFeet": "接縫總長（英尺）",
       "seamMeters": "接縫總長（公尺）",
       "tapeRolls": "紙帶卷數",

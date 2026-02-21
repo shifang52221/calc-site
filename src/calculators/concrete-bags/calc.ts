@@ -7,6 +7,10 @@ export type ConcreteBagsInputs = {
 };
 
 export type ConcreteBagsResults = {
+  baseCubicFeet: number;
+  wasteCubicFeet: number;
+  baseCubicYards: number;
+  wasteCubicYards: number;
   cubicFeet: number;
   cubicYards: number;
   bags: number;
@@ -22,9 +26,13 @@ export function calculateConcreteBags({
 }: ConcreteBagsInputs): ConcreteBagsResults {
   const area = Math.max(0, areaSqFt);
   const thickness = Math.max(0, thicknessIn);
-  const multiplier = 1 + Math.max(0, wastePercent) / 100;
+  const wasteMultiplier = Math.max(0, wastePercent) / 100;
 
-  const cubicFeet = area * (thickness / 12) * multiplier;
+  const baseCubicFeet = area * (thickness / 12);
+  const wasteCubicFeet = baseCubicFeet * wasteMultiplier;
+  const cubicFeet = Math.max(0, baseCubicFeet + wasteCubicFeet);
+  const baseCubicYards = baseCubicFeet / 27;
+  const wasteCubicYards = wasteCubicFeet / 27;
   const cubicYards = cubicFeet / 27;
 
   const yieldCuFt = Math.max(0, bagYieldCubicFeet);
@@ -36,10 +44,13 @@ export function calculateConcreteBags({
       : undefined;
 
   return {
+    baseCubicFeet: Math.max(0, baseCubicFeet),
+    wasteCubicFeet: Math.max(0, wasteCubicFeet),
+    baseCubicYards: Math.max(0, baseCubicYards),
+    wasteCubicYards: Math.max(0, wasteCubicYards),
     cubicFeet: Math.max(0, cubicFeet),
     cubicYards: Math.max(0, cubicYards),
     bags: Math.max(0, bags),
     cost,
   };
 }
-

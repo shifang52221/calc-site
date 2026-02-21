@@ -84,14 +84,17 @@ export function SoilMixCalculator() {
   const [topsoilPrice, setTopsoilPrice] = useQueryParamState("pTopsoil", defaultTopsoilPrice);
   const [sandPrice, setSandPrice] = useQueryParamState("pSand", defaultSandPrice);
 
-  const totalCubicYards = useMemo(() => {
+  const { baseCubicYards, wasteCubicYards, totalCubicYards } = useMemo(() => {
     const areaSqFtValue =
       unitSystem === "metric" ? m2ToSqFt(parseNumber(area)) : parseNumber(area);
     const depthInValue =
       unitSystem === "metric" ? cmToIn(parseNumber(depth)) : parseNumber(depth);
     const multiplier = 1 + Math.max(0, parseNumber(waste)) / 100;
     const cubicFeet = Math.max(0, areaSqFtValue) * (Math.max(0, depthInValue) / 12);
-    return Math.max(0, (cubicFeet / 27) * multiplier);
+    const base = Math.max(0, cubicFeet / 27);
+    const total = Math.max(0, base * multiplier);
+    const wasteVolume = Math.max(0, total - base);
+    return { baseCubicYards: base, wasteCubicYards: wasteVolume, totalCubicYards: total };
   }, [area, depth, unitSystem, waste]);
 
   const results = useMemo(() => {
@@ -267,6 +270,30 @@ export function SoilMixCalculator() {
       <CalculatorCard title={t("results.title")}>
         <div className="grid gap-5">
           <CalculatorResultList>
+            <CalculatorResultRow
+              label={
+                unitSystem === "metric"
+                  ? t("results.baseCubicMeters")
+                  : t("results.baseCubicYards")
+              }
+              value={
+                unitSystem === "metric"
+                  ? formatNumber(cubicYardsToCubicMeters(baseCubicYards), 2)
+                  : formatNumber(baseCubicYards, 2)
+              }
+            />
+            <CalculatorResultRow
+              label={
+                unitSystem === "metric"
+                  ? t("results.wasteCubicMeters")
+                  : t("results.wasteCubicYards")
+              }
+              value={
+                unitSystem === "metric"
+                  ? formatNumber(cubicYardsToCubicMeters(wasteCubicYards), 2)
+                  : formatNumber(wasteCubicYards, 2)
+              }
+            />
             <CalculatorResultRow
               label={unitSystem === "metric" ? t("results.totalCubicMeters") : t("results.totalCubicYards")}
               value={

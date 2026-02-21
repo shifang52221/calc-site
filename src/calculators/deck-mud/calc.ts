@@ -7,6 +7,8 @@ export type DeckMudInputs = {
 };
 
 export type DeckMudResults = {
+  baseCubicFeet: number;
+  wasteCubicFeet: number;
   totalCubicFeet: number;
   totalCubicYards: number;
   sandCubicFeet: number;
@@ -31,7 +33,9 @@ export function calculateDeckMud({
   const cementFraction = totalParts > 0 ? ratioCement / totalParts : 0;
 
   const cubicFeetRaw = area * (thickness / 12);
-  const totalCubicFeet = Math.max(0, cubicFeetRaw * multiplier);
+  const baseCubicFeet = Math.max(0, cubicFeetRaw);
+  const totalCubicFeet = Math.max(0, baseCubicFeet * multiplier);
+  const wasteCubicFeet = Math.max(0, totalCubicFeet - baseCubicFeet);
   const totalCubicYards = totalCubicFeet / 27;
 
   const cementCubicFeet = totalCubicFeet * cementFraction;
@@ -40,6 +44,8 @@ export function calculateDeckMud({
   const cementBags94lb = Math.ceil(Math.max(0, cementCubicFeet / 1));
 
   return {
+    baseCubicFeet,
+    wasteCubicFeet,
     totalCubicFeet,
     totalCubicYards,
     sandCubicFeet,
@@ -47,4 +53,3 @@ export function calculateDeckMud({
     cementBags94lb,
   };
 }
-

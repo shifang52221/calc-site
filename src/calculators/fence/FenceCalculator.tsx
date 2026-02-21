@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import { useTranslations } from "next-intl";
 
 import { calculateFence } from "./calc";
-import { formatCurrencyUSD } from "@/lib/format";
+import { formatCurrencyUSD, formatNumber } from "@/lib/format";
 import { useQueryParamState } from "@/lib/useQueryParamState";
 import { CalculatorCard } from "@/components/calculator/CalculatorCard";
 import { CalculatorField } from "@/components/calculator/CalculatorField";
@@ -60,7 +60,8 @@ export function FenceCalculator() {
     defaultPricePerPost,
   );
 
-  const { panels, posts, cost } = useMemo(() => {
+  const { basePanels, wastePanels, panels, basePosts, wastePosts, posts, cost } =
+    useMemo(() => {
     const fenceLengthFtValue =
       unitSystem === "metric"
         ? mToFt(parseNumber(fenceLengthFt))
@@ -183,8 +184,30 @@ export function FenceCalculator() {
 
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
-          <CalculatorResultRow label={t("results.panels")} value={panels} />
-          <CalculatorResultRow label={t("results.posts")} value={posts} />
+          <CalculatorResultRow
+            label={t("results.basePanels")}
+            value={formatNumber(basePanels, 0)}
+          />
+          <CalculatorResultRow
+            label={t("results.wastePanels")}
+            value={formatNumber(wastePanels, 0)}
+          />
+          <CalculatorResultRow
+            label={t("results.panels")}
+            value={formatNumber(panels, 0)}
+          />
+          <CalculatorResultRow
+            label={t("results.basePosts")}
+            value={formatNumber(basePosts, 0)}
+          />
+          <CalculatorResultRow
+            label={t("results.wastePosts")}
+            value={formatNumber(wastePosts, 0)}
+          />
+          <CalculatorResultRow
+            label={t("results.posts")}
+            value={formatNumber(posts, 0)}
+          />
           {typeof cost === "number" ? (
             <CalculatorResultRow
               label={t("results.cost")}

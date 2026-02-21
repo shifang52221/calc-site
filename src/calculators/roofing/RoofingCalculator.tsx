@@ -50,7 +50,7 @@ export function RoofingCalculator() {
     defaultPricePerBundle,
   );
 
-  const { squares, bundles, cost } = useMemo(() => {
+  const { baseAreaSqFt, wasteSqFt, neededSqFt, squares, bundles, cost } = useMemo(() => {
     const roofAreaSqFtValue =
       unitSystem === "metric"
         ? m2ToSqFt(parseNumber(roofAreaSqFt))
@@ -146,17 +146,48 @@ export function RoofingCalculator() {
 
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
-          {unitSystem === "metric" ? (
-            <CalculatorResultRow
-              label={t("results.areaM2")}
-              value={formatNumber(sqFtToM2(squares * 100), 2)}
-            />
-          ) : (
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.baseM2")
+                : t("results.baseSqFt")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(baseAreaSqFt), 2)
+                : formatNumber(baseAreaSqFt, 1)
+            }
+          />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.wasteM2")
+                : t("results.wasteSqFt")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(wasteSqFt), 2)
+                : formatNumber(wasteSqFt, 1)
+            }
+          />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.neededM2")
+                : t("results.neededSqFt")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(neededSqFt), 2)
+                : formatNumber(neededSqFt, 1)
+            }
+          />
+          {unitSystem === "us" ? (
             <CalculatorResultRow
               label={t("results.squares")}
               value={formatNumber(squares, 2)}
             />
-          )}
+          ) : null}
           <CalculatorResultRow label={t("results.bundles")} value={bundles} />
           {typeof cost === "number" ? (
             <CalculatorResultRow

@@ -117,7 +117,28 @@ export function DrywallTextureCalculator() {
 
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
-          <CalculatorResultRow label={t("results.bags")} value={results.bags} />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric" ? t("results.baseM2") : t("results.baseSqFt")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(results.baseSqFt), 2)
+                : formatNumber(results.baseSqFt, 0)
+            }
+          />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.wasteM2")
+                : t("results.wasteSqFt")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(results.wasteSqFt), 2)
+                : formatNumber(results.wasteSqFt, 0)
+            }
+          />
           <CalculatorResultRow
             label={
               unitSystem === "metric"
@@ -130,9 +151,9 @@ export function DrywallTextureCalculator() {
                 : formatNumber(results.neededSqFt, 0)
             }
           />
+          <CalculatorResultRow label={t("results.bags")} value={results.bags} />
         </CalculatorResultList>
       </CalculatorCard>
     </div>
   );
 }
-

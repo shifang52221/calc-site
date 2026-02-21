@@ -7,6 +7,10 @@ export type TopsoilBagsInputs = {
 };
 
 export type TopsoilBagsResults = {
+  baseCubicFeet: number;
+  wasteCubicFeet: number;
+  baseCubicYards: number;
+  wasteCubicYards: number;
   cubicYards: number;
   cubicFeet: number;
   bags: number;
@@ -22,9 +26,13 @@ export function calculateTopsoilBags({
 }: TopsoilBagsInputs): TopsoilBagsResults {
   const area = Math.max(0, areaSqFt);
   const depth = Math.max(0, depthIn);
-  const multiplier = 1 + Math.max(0, wastePercent) / 100;
+  const wasteMultiplier = Math.max(0, wastePercent) / 100;
 
-  const cubicFeet = area * (depth / 12) * multiplier;
+  const baseCubicFeet = area * (depth / 12);
+  const wasteCubicFeet = baseCubicFeet * wasteMultiplier;
+  const cubicFeet = Math.max(0, baseCubicFeet + wasteCubicFeet);
+  const baseCubicYards = baseCubicFeet / 27;
+  const wasteCubicYards = wasteCubicFeet / 27;
   const cubicYards = cubicFeet / 27;
 
   const bagVolume = Math.max(0, bagVolumeCubicFeet);
@@ -36,10 +44,13 @@ export function calculateTopsoilBags({
       : undefined;
 
   return {
+    baseCubicFeet: Math.max(0, baseCubicFeet),
+    wasteCubicFeet: Math.max(0, wasteCubicFeet),
+    baseCubicYards: Math.max(0, baseCubicYards),
+    wasteCubicYards: Math.max(0, wasteCubicYards),
     cubicYards: Math.max(0, cubicYards),
     cubicFeet: Math.max(0, cubicFeet),
     bags: Math.max(0, bags),
     cost,
   };
 }
-

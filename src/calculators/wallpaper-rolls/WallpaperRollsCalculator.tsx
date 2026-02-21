@@ -303,6 +303,14 @@ export function WallpaperRollsCalculator() {
             }
           />
           <CalculatorResultRow
+            label={unitSystem === "metric" ? t("results.wasteM2") : t("results.wasteSqFt")}
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(results.wasteSqFt), 2)
+                : formatNumber(results.wasteSqFt, 0)
+            }
+          />
+          <CalculatorResultRow
             label={
               unitSystem === "metric"
                 ? t("results.areaWithWasteM2")

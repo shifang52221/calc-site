@@ -9,6 +9,8 @@ export type DeckInputs = {
 };
 
 export type DeckResults = {
+  baseBoards: number;
+  wasteBoards: number;
   boards: number;
   cost?: number;
 };
@@ -32,13 +34,15 @@ export function calculateDeckBoards({
   const widthIn = widthFt * 12;
   const rowCount = Math.ceil(widthIn / (boardW + gap));
   const boardsPerRow = Math.ceil(lengthFt / boardLen);
-  const boardsRaw = rowCount * boardsPerRow * multiplier;
-  const boards = Math.ceil(Math.max(0, boardsRaw));
+  const boardsRaw = rowCount * boardsPerRow;
+  const baseBoards = Math.ceil(Math.max(0, boardsRaw));
+  const boards = Math.ceil(Math.max(0, boardsRaw * multiplier));
+  const wasteBoards = Math.max(0, boards - baseBoards);
 
   const cost =
     typeof pricePerBoard === "number" && isFinite(pricePerBoard)
       ? Math.max(0, pricePerBoard) * boards
       : undefined;
 
-  return { boards, cost };
+  return { baseBoards, wasteBoards, boards, cost };
 }

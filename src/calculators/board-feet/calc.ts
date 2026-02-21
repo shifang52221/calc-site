@@ -8,6 +8,8 @@ export type BoardFeetInputs = {
 };
 
 export type BoardFeetResults = {
+  baseBoardFeet: number;
+  wasteBoardFeet: number;
   boardFeet: number;
   cubicFeet: number;
   cost?: number;
@@ -29,7 +31,9 @@ export function calculateBoardFeet({
 
   const perBoardFeet = (thickness * width * length) / 12;
   const rawBoardFeet = perBoardFeet * qty;
-  const boardFeet = rawBoardFeet * multiplier;
+  const baseBoardFeet = Math.max(0, rawBoardFeet);
+  const boardFeet = baseBoardFeet * multiplier;
+  const wasteBoardFeet = Math.max(0, boardFeet - baseBoardFeet);
 
   const cubicFeet = boardFeet / 12;
 
@@ -39,9 +43,10 @@ export function calculateBoardFeet({
       : undefined;
 
   return {
+    baseBoardFeet: Math.max(0, baseBoardFeet),
+    wasteBoardFeet: Math.max(0, wasteBoardFeet),
     boardFeet: Math.max(0, boardFeet),
     cubicFeet: Math.max(0, cubicFeet),
     cost,
   };
 }
-

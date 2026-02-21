@@ -90,6 +90,8 @@ export function DeckMudCalculator() {
     });
   }, [area, cementParts, sandParts, thickness, unitSystem, waste]);
 
+  const baseCubicMeters = cubicYardsToCubicMeters(results.baseCubicFeet / 27);
+  const wasteCubicMeters = cubicYardsToCubicMeters(results.wasteCubicFeet / 27);
   const totalCubicMeters = cubicYardsToCubicMeters(results.totalCubicYards);
   const sandCubicMeters = cubicYardsToCubicMeters(results.sandCubicFeet / 27);
   const cementCubicMeters = cubicYardsToCubicMeters(results.cementCubicFeet / 27);
@@ -203,6 +205,22 @@ export function DeckMudCalculator() {
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
           <CalculatorResultRow
+            label={unitSystem === "metric" ? t("results.baseTotalM3") : t("results.baseTotalFt3")}
+            value={
+              unitSystem === "metric"
+                ? formatNumber(baseCubicMeters, 3)
+                : formatNumber(results.baseCubicFeet, 2)
+            }
+          />
+          <CalculatorResultRow
+            label={unitSystem === "metric" ? t("results.wasteTotalM3") : t("results.wasteTotalFt3")}
+            value={
+              unitSystem === "metric"
+                ? formatNumber(wasteCubicMeters, 3)
+                : formatNumber(results.wasteCubicFeet, 2)
+            }
+          />
+          <CalculatorResultRow
             label={unitSystem === "metric" ? t("results.totalM3") : t("results.totalFt3")}
             value={
               unitSystem === "metric"
@@ -239,4 +257,3 @@ export function DeckMudCalculator() {
     </div>
   );
 }
-

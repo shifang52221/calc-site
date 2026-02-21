@@ -14,6 +14,8 @@ export type DrywallMudTapeInputs = {
 };
 
 export type DrywallMudTapeResults = {
+  baseSeamFeet: number;
+  wasteSeamFeet: number;
   seamFeet: number;
   tapeRolls: number;
   compoundGallons: number;
@@ -45,7 +47,9 @@ export function calculateDrywallMudTape({
   const multiplier = 1 + clampNonNegative(wastePercent) / 100;
 
   const seamPerSqFt = 1 / width + 1 / length;
-  const seamFeet = area * seamPerSqFt * multiplier;
+  const baseSeamFeet = area * seamPerSqFt;
+  const wasteSeamFeet = baseSeamFeet * (multiplier - 1);
+  const seamFeet = baseSeamFeet + wasteSeamFeet;
 
   const rollLength = Math.max(0.01, clampNonNegative(tapeRollLengthFt));
   const tapeRolls = Math.ceil(seamFeet / rollLength);
@@ -77,6 +81,8 @@ export function calculateDrywallMudTape({
       : undefined;
 
   return {
+    baseSeamFeet: Math.max(0, baseSeamFeet),
+    wasteSeamFeet: Math.max(0, wasteSeamFeet),
     seamFeet: Math.max(0, seamFeet),
     tapeRolls: Math.max(0, tapeRolls),
     compoundGallons: Math.max(0, compoundGallons),
@@ -84,4 +90,3 @@ export function calculateDrywallMudTape({
     cost,
   };
 }
-

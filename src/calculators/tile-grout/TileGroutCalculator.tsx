@@ -171,6 +171,8 @@ export function TileGroutCalculator() {
   const groutKg = results.groutKg;
   const groutLb = groutKg / KG_PER_LB;
   const groutLiters = results.groutVolumeM3 * 1000;
+  const baseLiters = results.baseGroutVolumeM3 * 1000;
+  const wasteLiters = results.wasteGroutVolumeM3 * 1000;
 
   return (
     <div className="grid gap-6 lg:grid-cols-2">
@@ -328,6 +330,14 @@ export function TileGroutCalculator() {
         <CalculatorResultList>
           <CalculatorResultRow label={t("results.groutKg")} value={formatNumber(groutKg, 2)} />
           <CalculatorResultRow label={t("results.groutLb")} value={formatNumber(groutLb, 1)} />
+          <CalculatorResultRow
+            label={t("results.baseLiters")}
+            value={formatNumber(baseLiters, 1)}
+          />
+          <CalculatorResultRow
+            label={t("results.wasteLiters")}
+            value={formatNumber(wasteLiters, 1)}
+          />
           <CalculatorResultRow label={t("results.groutLiters")} value={formatNumber(groutLiters, 1)} />
           <CalculatorResultRow label={t("results.bags")} value={formatNumber(results.bags, 0)} />
           {typeof results.cost === "number" ? (

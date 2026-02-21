@@ -129,6 +129,8 @@ export function DrywallMudTapeCalculator() {
   ]);
 
   const seamMeters = results.seamFeet * 0.3048;
+  const baseSeamMeters = results.baseSeamFeet * 0.3048;
+  const wasteSeamMeters = results.wasteSeamFeet * 0.3048;
   const compoundLiters = results.compoundGallons * 3.785411784;
 
   return (
@@ -295,6 +297,22 @@ export function DrywallMudTapeCalculator() {
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
           <CalculatorResultRow
+            label={unitSystem === "metric" ? t("results.baseSeamMeters") : t("results.baseSeamFeet")}
+            value={
+              unitSystem === "metric"
+                ? formatNumber(baseSeamMeters, 0)
+                : formatNumber(results.baseSeamFeet, 0)
+            }
+          />
+          <CalculatorResultRow
+            label={unitSystem === "metric" ? t("results.wasteSeamMeters") : t("results.wasteSeamFeet")}
+            value={
+              unitSystem === "metric"
+                ? formatNumber(wasteSeamMeters, 0)
+                : formatNumber(results.wasteSeamFeet, 0)
+            }
+          />
+          <CalculatorResultRow
             label={unitSystem === "metric" ? t("results.seamMeters") : t("results.seamFeet")}
             value={unitSystem === "metric" ? formatNumber(seamMeters, 0) : formatNumber(results.seamFeet, 0)}
           />
@@ -312,4 +330,3 @@ export function DrywallMudTapeCalculator() {
     </div>
   );
 }
-

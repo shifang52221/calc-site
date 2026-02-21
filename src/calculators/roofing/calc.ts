@@ -6,6 +6,9 @@ export type RoofingInputs = {
 };
 
 export type RoofingResults = {
+  baseAreaSqFt: number;
+  wasteSqFt: number;
+  neededSqFt: number;
   squares: number;
   bundles: number;
   cost?: number;
@@ -18,10 +21,11 @@ export function calculateRoofing({
   pricePerBundle,
 }: RoofingInputs): RoofingResults {
   const baseArea = Math.max(0, roofAreaSqFt);
-  const multiplier = 1 + Math.max(0, wastePercent) / 100;
+  const wasteMultiplier = Math.max(0, wastePercent) / 100;
   const coverage = Math.max(1, coverageSqFtPerBundle);
 
-  const neededSqFt = baseArea * multiplier;
+  const wasteSqFt = Math.max(0, baseArea * wasteMultiplier);
+  const neededSqFt = Math.max(0, baseArea + wasteSqFt);
   const squares = neededSqFt / 100;
   const bundles = Math.ceil(neededSqFt / coverage);
 
@@ -30,5 +34,12 @@ export function calculateRoofing({
       ? Math.max(0, pricePerBundle) * bundles
       : undefined;
 
-  return { squares: Math.max(0, squares), bundles, cost };
+  return {
+    baseAreaSqFt: baseArea,
+    wasteSqFt,
+    neededSqFt,
+    squares: Math.max(0, squares),
+    bundles,
+    cost,
+  };
 }

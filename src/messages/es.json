@@ -1505,6 +1505,8 @@
     },
     "results": {
       "title": "Resultados",
+      "wasteSqFt": "Merma (pies²)",
+      "wasteM2": "Merma (m²)",
       "subtitle": "El número de rollos se redondea hacia arriba.",
       "netAreaSqFt": "Área neta tras aberturas (pies²)",
       "netAreaM2": "Área neta tras aberturas (m²)",
@@ -1616,11 +1618,15 @@
       "fourToOne": "4:1 (más fuerte)",
       "custom": "Personalizado"
     },
-    "results": {
-      "title": "Resultados",
-      "totalFt3": "Volumen total (ft3)",
-      "totalM3": "Volumen total (m3)",
-      "sandFt3": "Arena (ft3)",
+  "results": {
+    "title": "Resultados",
+    "baseTotalFt3": "Volumen base (ft3)",
+    "baseTotalM3": "Volumen base (m3)",
+    "wasteTotalFt3": "Merma (ft3)",
+    "wasteTotalM3": "Merma (m3)",
+    "totalFt3": "Volumen total (ft3)",
+    "totalM3": "Volumen total (m3)",
+    "sandFt3": "Arena (ft3)",
       "sandM3": "Arena (m3)",
       "cementFt3": "Cemento (ft3)",
       "cementM3": "Cemento (m3)",
@@ -1685,6 +1691,12 @@
     },
     "results": {
       "title": "Resultados",
+      "baseSqFt": "Área base (pies²)",
+      "baseM2": "Área base (m²)",
+      "wasteSqFt": "Merma (pies²)",
+      "wasteM2": "Merma (m²)",
+      "neededSqFt": "Área total (pies²)",
+      "neededM2": "Área total (m²)",
       "bags": "Bolsas estimadas",
       "neededSqFt": "Área total (pies²)",
       "neededM2": "Área total (m²)"
@@ -1785,6 +1797,12 @@
     },
     "results": {
       "title": "Resultados",
+      "baseSqFt": "Área base (pies²)",
+      "baseM2": "Área base (m²)",
+      "wasteSqFt": "Merma (pies²)",
+      "wasteM2": "Merma (m²)",
+      "neededSqFt": "Área total (pies²)",
+      "neededM2": "Área total (m²)",
       "squares": "'Squares' estimados (100 pies² cada uno)",
       "areaM2": "\u00c1rea estimada (m\u00b2)",
       "bundles": "Bultos estimados",
@@ -1821,6 +1839,8 @@
     },
     "results": {
       "title": "Resultados",
+      "baseBoards": "Tablas base (sin merma)",
+      "wasteBoards": "Merma (tablas)",
       "boards": "Tablas estimadas",
       "cost": "Costo estimado"
     },
@@ -1852,7 +1872,11 @@
     },
     "results": {
       "title": "Resultados",
+      "basePanels": "Paneles base (sin merma)",
+      "wastePanels": "Merma (paneles)",
       "panels": "Paneles estimados",
+      "basePosts": "Postes base (sin merma)",
+      "wastePosts": "Merma (postes)",
       "posts": "Postes estimados",
       "cost": "Costo estimado"
     },
@@ -1959,6 +1983,10 @@
     },
     "results": {
       "title": "Resultados",
+      "baseCubicYards": "Volumen base (yardas cúbicas)",
+      "baseCubicMeters": "Volumen base (metros cúbicos)",
+      "wasteCubicYards": "Merma (yardas cúbicas)",
+      "wasteCubicMeters": "Merma (metros cúbicos)",
       "cubicYards": "Yardas cúbicas estimadas",
       "cubicMeters": "Metros cúbicos estimados",
       "shortTons": "Toneladas (EE. UU.) estimadas",
@@ -2021,6 +2049,10 @@
     },
     "results": {
       "title": "Resultados",
+      "baseCubicYards": "Volumen base (yardas cúbicas)",
+      "baseCubicMeters": "Volumen base (metros cúbicos)",
+      "wasteCubicYards": "Merma (yardas cúbicas)",
+      "wasteCubicMeters": "Merma (metros cúbicos)",
       "baseTitle": "Piedra base",
       "sandTitle": "Arena de cama",
       "cubicYards": "Yardas cúbicas estimadas",
@@ -2072,6 +2104,10 @@
     },
     "results": {
       "title": "Resultados",
+      "baseCubicYards": "Volumen base (yardas cúbicas)",
+      "baseCubicMeters": "Volumen base (metros cúbicos)",
+      "wasteCubicYards": "Merma (yardas cúbicas)",
+      "wasteCubicMeters": "Merma (metros cúbicos)",
       "totalCubicYards": "Total (yardas cúbicas)",
       "totalCubicMeters": "Total (metros cúbicos)",
       "componentsTitle": "Desglose por componentes",
@@ -2121,6 +2157,10 @@
     },
     "results": {
       "title": "Resultados",
+      "baseCubicYards": "Volumen base (yardas cúbicas)",
+      "baseCubicMeters": "Volumen base (metros cúbicos)",
+      "wasteCubicYards": "Merma (yardas cúbicas)",
+      "wasteCubicMeters": "Merma (metros cúbicos)",
       "cubicYards": "Yardas cúbicas estimadas",
       "cubicMeters": "Metros cúbicos estimados",
       "shortTons": "Toneladas (EE. UU.) estimadas",
@@ -2156,6 +2196,8 @@
     },
     "results": {
       "title": "Resultados",
+      "baseBoardFeet": "Pies tablares base",
+      "wasteBoardFeet": "Merma (pies tablares)",
       "boardFeet": "Pies tablares",
       "cubicFeet": "Pies cúbicos",
       "cubicMeters": "Metros cúbicos",
@@ -2195,6 +2237,10 @@
     },
     "results": {
       "title": "Resultados",
+      "baseCubicYards": "Volumen base (yardas cúbicas)",
+      "baseCubicMeters": "Volumen base (metros cúbicos)",
+      "wasteCubicYards": "Merma (yardas cúbicas)",
+      "wasteCubicMeters": "Merma (metros cúbicos)",
       "cubicYards": "Yardas cúbicas estimadas",
       "cubicMeters": "Metros cúbicos estimados",
       "cubicFeet": "Pies cúbicos",
@@ -2237,6 +2283,10 @@
     },
     "results": {
       "title": "Resultados",
+      "baseCubicYards": "Volumen base (yardas cúbicas)",
+      "baseCubicMeters": "Volumen base (metros cúbicos)",
+      "wasteCubicYards": "Merma (yardas cúbicas)",
+      "wasteCubicMeters": "Merma (metros cúbicos)",
       "cubicYards": "Yardas cúbicas estimadas",
       "cubicMeters": "Metros cúbicos estimados",
       "cubicFeet": "Pies cúbicos",
@@ -2371,6 +2421,10 @@
     },
     "results": {
       "title": "Resultados",
+      "baseCubicYards": "Volumen base (yardas cúbicas)",
+      "baseCubicMeters": "Volumen base (metros cúbicos)",
+      "wasteCubicYards": "Merma (yardas cúbicas)",
+      "wasteCubicMeters": "Merma (metros cúbicos)",
       "cubicYards": "Yardas cúbicas estimadas",
       "cubicMeters": "Metros cúbicos estimados",
       "cubicFeet": "Pies cúbicos",
@@ -2470,6 +2524,8 @@
     },
     "results": {
       "title": "Resultados",
+      "baseLiters": "Volumen base (litros)",
+      "wasteLiters": "Merma (litros)",
       "groutKg": "Lechada (kg)",
       "groutLb": "Lechada (lb)",
       "groutLiters": "Volumen (litros)",
@@ -2522,6 +2578,10 @@
     },
     "results": {
       "title": "Resultados",
+      "baseSeamFeet": "Longitud base de juntas (ft)",
+      "baseSeamMeters": "Longitud base de juntas (m)",
+      "wasteSeamFeet": "Merma (ft)",
+      "wasteSeamMeters": "Merma (m)",
       "seamFeet": "Longitud de juntas (ft)",
       "seamMeters": "Longitud de juntas (m)",
       "tapeRolls": "Rollos de cinta",

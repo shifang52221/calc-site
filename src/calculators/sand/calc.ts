@@ -8,6 +8,8 @@ export type SandInputs = {
 };
 
 export type SandResults = {
+  baseCubicYards: number;
+  wasteCubicYards: number;
   cubicYards: number;
   shortTons: number;
   cost?: number;
@@ -23,10 +25,12 @@ export function calculateSand({
 }: SandInputs): SandResults {
   const area = Math.max(0, areaSqFt);
   const depth = Math.max(0, depthIn);
-  const multiplier = 1 + Math.max(0, wastePercent) / 100;
+  const wasteMultiplier = Math.max(0, wastePercent) / 100;
 
   const cubicFeet = area * (depth / 12);
-  const cubicYards = (cubicFeet / 27) * multiplier;
+  const baseCubicYards = Math.max(0, cubicFeet / 27);
+  const wasteCubicYards = Math.max(0, baseCubicYards * wasteMultiplier);
+  const cubicYards = Math.max(0, baseCubicYards + wasteCubicYards);
 
   const density = Math.max(0, densityLbPerYd3);
   const pounds = cubicYards * density;
@@ -45,9 +49,10 @@ export function calculateSand({
   const cost = typeof costByVolume === "number" ? costByVolume : costByWeight;
 
   return {
-    cubicYards: Math.max(0, cubicYards),
+    baseCubicYards,
+    wasteCubicYards,
+    cubicYards,
     shortTons: Math.max(0, shortTons),
     cost,
   };
 }
-

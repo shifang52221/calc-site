@@ -56,7 +56,7 @@ export function BoardFeetCalculator() {
   const [waste, setWaste] = useQueryParamState("waste", defaultWaste);
   const [price, setPrice] = useQueryParamState("price", defaultPrice);
 
-  const { boardFeet, cubicFeet, cost } = useMemo(() => {
+  const { baseBoardFeet, wasteBoardFeet, boardFeet, cubicFeet, cost } = useMemo(() => {
     const thicknessInValue =
       unitSystem === "metric" ? mmToIn(parseNumber(thickness)) : parseNumber(thickness);
     const widthInValue =
@@ -150,7 +150,18 @@ export function BoardFeetCalculator() {
 
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
-          <CalculatorResultRow label={t("results.boardFeet")} value={formatNumber(boardFeet, 2)} />
+          <CalculatorResultRow
+            label={t("results.baseBoardFeet")}
+            value={formatNumber(baseBoardFeet, 2)}
+          />
+          <CalculatorResultRow
+            label={t("results.wasteBoardFeet")}
+            value={formatNumber(wasteBoardFeet, 2)}
+          />
+          <CalculatorResultRow
+            label={t("results.boardFeet")}
+            value={formatNumber(boardFeet, 2)}
+          />
           <CalculatorResultRow
             label={t("results.cubicFeet")}
             value={formatNumber(cubicFeet, 2)}
@@ -167,4 +178,3 @@ export function BoardFeetCalculator() {
     </div>
   );
 }
-

@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import { useTranslations } from "next-intl";
 
 import { calculateDeckBoards } from "./calc";
-import { formatCurrencyUSD } from "@/lib/format";
+import { formatCurrencyUSD, formatNumber } from "@/lib/format";
 import { useQueryParamState } from "@/lib/useQueryParamState";
 import { CalculatorCard } from "@/components/calculator/CalculatorCard";
 import { CalculatorField } from "@/components/calculator/CalculatorField";
@@ -62,7 +62,7 @@ export function DeckCalculator() {
     defaultPricePerBoard,
   );
 
-  const { boards, cost } = useMemo(() => {
+  const { baseBoards, wasteBoards, boards, cost } = useMemo(() => {
     const deckLengthFtValue =
       unitSystem === "metric"
         ? mToFt(parseNumber(deckLengthFt))
@@ -210,7 +210,18 @@ export function DeckCalculator() {
 
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
-          <CalculatorResultRow label={t("results.boards")} value={boards} />
+          <CalculatorResultRow
+            label={t("results.baseBoards")}
+            value={formatNumber(baseBoards, 0)}
+          />
+          <CalculatorResultRow
+            label={t("results.wasteBoards")}
+            value={formatNumber(wasteBoards, 0)}
+          />
+          <CalculatorResultRow
+            label={t("results.boards")}
+            value={formatNumber(boards, 0)}
+          />
           {typeof cost === "number" ? (
             <CalculatorResultRow
               label={t("results.cost")}

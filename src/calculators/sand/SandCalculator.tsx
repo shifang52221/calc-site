@@ -132,7 +132,8 @@ export function SandCalculator() {
       : roundForInput(DENSITY_PRESETS_LB_PER_YD3[densityPreset], 0);
   }, [densityCustom, densityPreset, unitSystem]);
 
-  const { cubicYards, shortTons, cost } = useMemo(() => {
+  const { baseCubicYards, wasteCubicYards, cubicYards, shortTons, cost } = useMemo(
+    () => {
     const areaSqFtValue =
       unitSystem === "metric" ? m2ToSqFt(parseNumber(area)) : parseNumber(area);
     const depthInValue =
@@ -163,7 +164,9 @@ export function SandCalculator() {
       pricePerCubicYd,
       pricePerShortTon,
     });
-  }, [area, densityLbPerYd3, depth, price, priceMode, unitSystem, waste]);
+    },
+    [area, densityLbPerYd3, depth, price, priceMode, unitSystem, waste],
+  );
 
   return (
     <div className="grid gap-6 lg:grid-cols-2">
@@ -333,6 +336,30 @@ export function SandCalculator() {
 
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.baseCubicMeters")
+                : t("results.baseCubicYards")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(cubicYardsToCubicMeters(baseCubicYards), 2)
+                : formatNumber(baseCubicYards, 2)
+            }
+          />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.wasteCubicMeters")
+                : t("results.wasteCubicYards")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(cubicYardsToCubicMeters(wasteCubicYards), 2)
+                : formatNumber(wasteCubicYards, 2)
+            }
+          />
           <CalculatorResultRow
             label={unitSystem === "metric" ? t("results.cubicMeters") : t("results.cubicYards")}
             value={

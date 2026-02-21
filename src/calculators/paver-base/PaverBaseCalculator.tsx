@@ -477,6 +477,30 @@ export function PaverBaseCalculator() {
               <CalculatorResultRow
                 label={
                   unitSystem === "metric"
+                    ? t("results.baseCubicMeters")
+                    : t("results.baseCubicYards")
+                }
+                value={
+                  unitSystem === "metric"
+                    ? formatNumber(cubicYardsToCubicMeters(base.baseCubicYards), 2)
+                    : formatNumber(base.baseCubicYards, 2)
+                }
+              />
+              <CalculatorResultRow
+                label={
+                  unitSystem === "metric"
+                    ? t("results.wasteCubicMeters")
+                    : t("results.wasteCubicYards")
+                }
+                value={
+                  unitSystem === "metric"
+                    ? formatNumber(cubicYardsToCubicMeters(base.wasteCubicYards), 2)
+                    : formatNumber(base.wasteCubicYards, 2)
+                }
+              />
+              <CalculatorResultRow
+                label={
+                  unitSystem === "metric"
                     ? t("results.cubicMeters")
                     : t("results.cubicYards")
                 }
@@ -512,6 +536,30 @@ export function PaverBaseCalculator() {
               {t("results.sandTitle")}
             </div>
             <CalculatorResultList>
+              <CalculatorResultRow
+                label={
+                  unitSystem === "metric"
+                    ? t("results.baseCubicMeters")
+                    : t("results.baseCubicYards")
+                }
+                value={
+                  unitSystem === "metric"
+                    ? formatNumber(cubicYardsToCubicMeters(sand.baseCubicYards), 2)
+                    : formatNumber(sand.baseCubicYards, 2)
+                }
+              />
+              <CalculatorResultRow
+                label={
+                  unitSystem === "metric"
+                    ? t("results.wasteCubicMeters")
+                    : t("results.wasteCubicYards")
+                }
+                value={
+                  unitSystem === "metric"
+                    ? formatNumber(cubicYardsToCubicMeters(sand.wasteCubicYards), 2)
+                    : formatNumber(sand.wasteCubicYards, 2)
+                }
+              />
               <CalculatorResultRow
                 label={
                   unitSystem === "metric"
@@ -560,4 +608,3 @@ export function PaverBaseCalculator() {
     </div>
   );
 }
-

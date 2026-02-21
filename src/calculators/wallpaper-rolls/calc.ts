@@ -8,6 +8,7 @@ export type WallpaperRollsInputs = {
 
 export type WallpaperRollsResults = {
   netAreaSqFt: number;
+  wasteSqFt: number;
   areaWithWasteSqFt: number;
   coverageSqFtPerRoll: number;
   rolls: number;
@@ -28,6 +29,7 @@ export function calculateWallpaperRolls({
 
   const multiplier = 1 + Math.max(0, wastePercent) / 100;
   const areaWithWasteSqFt = netAreaSqFt * multiplier;
+  const wasteSqFt = Math.max(0, areaWithWasteSqFt - netAreaSqFt);
 
   const coverage = Math.max(0.000001, coverageSqFtPerRoll);
   const rolls = Math.max(0, Math.ceil(areaWithWasteSqFt / coverage));
@@ -41,6 +43,7 @@ export function calculateWallpaperRolls({
 
   return {
     netAreaSqFt,
+    wasteSqFt,
     areaWithWasteSqFt,
     coverageSqFtPerRoll: coverageSqFtPerRoll,
     rolls,
@@ -48,4 +51,3 @@ export function calculateWallpaperRolls({
     cost,
   };
 }
-

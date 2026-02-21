@@ -1512,6 +1512,8 @@
    "subtitle": "Roll count is rounded up to whole rolls.",
    "netAreaSqFt": "Net area after openings (sq ft)",
    "netAreaM2": "Net area after openings (m²)",
+   "wasteSqFt": "Waste buffer (sq ft)",
+   "wasteM2": "Waste buffer (m²)",
    "areaWithWasteSqFt": "Area with waste (sq ft)",
    "areaWithWasteM2": "Area with waste (m²)",
    "coveragePerRollSqFt": "Coverage per roll (sq ft)",
@@ -1622,6 +1624,10 @@
   },
   "results": {
    "title": "Results",
+   "baseTotalFt3": "Base volume (ft3)",
+   "baseTotalM3": "Base volume (m3)",
+   "wasteTotalFt3": "Waste buffer (ft3)",
+   "wasteTotalM3": "Waste buffer (m3)",
    "totalFt3": "Total volume (ft3)",
    "totalM3": "Total volume (m3)",
    "sandFt3": "Sand (ft3)",
@@ -1689,6 +1695,10 @@
   },
   "results": {
    "title": "Results",
+   "baseSqFt": "Base coverage (sq ft)",
+   "baseM2": "Base coverage (m2)",
+   "wasteSqFt": "Waste buffer (sq ft)",
+   "wasteM2": "Waste buffer (m2)",
    "bags": "Estimated bags",
    "neededSqFt": "Total coverage needed (sq ft)",
    "neededM2": "Total coverage needed (m2)"
@@ -1789,6 +1799,12 @@
   },
   "results": {
    "title": "Results",
+   "baseSqFt": "Base area (sq ft)",
+   "baseM2": "Base area (m²)",
+   "wasteSqFt": "Waste buffer (sq ft)",
+   "wasteM2": "Waste buffer (m²)",
+   "neededSqFt": "Total area (sq ft)",
+   "neededM2": "Total area (m²)",
    "squares": "Estimated squares (100 sq ft each)",
    "areaM2": "Estimated area (m²)",
    "bundles": "Estimated bundles",
@@ -1825,6 +1841,8 @@
   },
   "results": {
    "title": "Results",
+   "baseBoards": "Base boards (before waste)",
+   "wasteBoards": "Waste buffer (boards)",
    "boards": "Estimated boards",
    "cost": "Estimated cost"
   },
@@ -1856,7 +1874,11 @@
   },
   "results": {
    "title": "Results",
+   "basePanels": "Base panels (before waste)",
+   "wastePanels": "Waste buffer (panels)",
    "panels": "Estimated panels",
+   "basePosts": "Base posts (before waste)",
+   "wastePosts": "Waste buffer (posts)",
    "posts": "Estimated posts",
    "cost": "Estimated cost"
   },
@@ -1963,6 +1985,10 @@
   },
   "results": {
    "title": "Results",
+   "baseCubicYards": "Base volume (cubic yards)",
+   "baseCubicMeters": "Base volume (cubic meters)",
+   "wasteCubicYards": "Waste buffer (cubic yards)",
+   "wasteCubicMeters": "Waste buffer (cubic meters)",
    "cubicYards": "Estimated cubic yards",
    "cubicMeters": "Estimated cubic meters",
    "shortTons": "Estimated tons (US)",
@@ -2025,6 +2051,10 @@
   },
   "results": {
    "title": "Results",
+   "baseCubicYards": "Base volume (cubic yards)",
+   "baseCubicMeters": "Base volume (cubic meters)",
+   "wasteCubicYards": "Waste buffer (cubic yards)",
+   "wasteCubicMeters": "Waste buffer (cubic meters)",
    "baseTitle": "Base stone",
    "sandTitle": "Bedding sand",
    "cubicYards": "Estimated cubic yards",
@@ -2076,6 +2106,10 @@
   },
   "results": {
    "title": "Results",
+   "baseCubicYards": "Base volume (cubic yards)",
+   "baseCubicMeters": "Base volume (cubic meters)",
+   "wasteCubicYards": "Waste buffer (cubic yards)",
+   "wasteCubicMeters": "Waste buffer (cubic meters)",
    "totalCubicYards": "Total (cubic yards)",
    "totalCubicMeters": "Total (cubic meters)",
    "componentsTitle": "Component breakdown",
@@ -2125,6 +2159,10 @@
   },
   "results": {
    "title": "Results",
+   "baseCubicYards": "Base volume (cubic yards)",
+   "baseCubicMeters": "Base volume (cubic meters)",
+   "wasteCubicYards": "Waste buffer (cubic yards)",
+   "wasteCubicMeters": "Waste buffer (cubic meters)",
    "cubicYards": "Estimated cubic yards",
    "cubicMeters": "Estimated cubic meters",
    "shortTons": "Estimated tons (US)",
@@ -2160,6 +2198,8 @@
   },
   "results": {
    "title": "Results",
+   "baseBoardFeet": "Base board feet",
+   "wasteBoardFeet": "Waste buffer (board feet)",
    "boardFeet": "Board feet",
    "cubicFeet": "Cubic feet",
    "cubicMeters": "Cubic meters",
@@ -2199,6 +2239,10 @@
   },
   "results": {
    "title": "Results",
+   "baseCubicYards": "Base volume (cubic yards)",
+   "baseCubicMeters": "Base volume (cubic meters)",
+   "wasteCubicYards": "Waste buffer (cubic yards)",
+   "wasteCubicMeters": "Waste buffer (cubic meters)",
    "cubicYards": "Estimated cubic yards",
    "cubicMeters": "Estimated cubic meters",
    "cubicFeet": "Cubic feet",
@@ -2241,6 +2285,10 @@
   },
   "results": {
    "title": "Results",
+   "baseCubicYards": "Base volume (cubic yards)",
+   "baseCubicMeters": "Base volume (cubic meters)",
+   "wasteCubicYards": "Waste buffer (cubic yards)",
+   "wasteCubicMeters": "Waste buffer (cubic meters)",
    "cubicYards": "Estimated cubic yards",
    "cubicMeters": "Estimated cubic meters",
    "cubicFeet": "Cubic feet",
@@ -2375,6 +2423,10 @@
   },
   "results": {
    "title": "Results",
+   "baseCubicYards": "Base volume (cubic yards)",
+   "baseCubicMeters": "Base volume (cubic meters)",
+   "wasteCubicYards": "Waste buffer (cubic yards)",
+   "wasteCubicMeters": "Waste buffer (cubic meters)",
    "cubicYards": "Estimated cubic yards",
    "cubicMeters": "Estimated cubic meters",
    "cubicFeet": "Cubic feet",
@@ -2474,6 +2526,8 @@
   },
   "results": {
    "title": "Results",
+   "baseLiters": "Base grout volume (liters)",
+   "wasteLiters": "Waste buffer (liters)",
    "groutKg": "Grout (kg)",
    "groutLb": "Grout (lb)",
    "groutLiters": "Grout volume (liters)",
@@ -2526,6 +2580,10 @@
   },
   "results": {
    "title": "Results",
+   "baseSeamFeet": "Base seam length (ft)",
+   "baseSeamMeters": "Base seam length (m)",
+   "wasteSeamFeet": "Waste buffer (ft)",
+   "wasteSeamMeters": "Waste buffer (m)",
    "seamFeet": "Estimated seam length (ft)",
    "seamMeters": "Estimated seam length (m)",
    "tapeRolls": "Tape rolls",

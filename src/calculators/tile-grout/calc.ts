@@ -11,6 +11,8 @@ export type TileGroutInputs = {
 };
 
 export type TileGroutResults = {
+  baseGroutVolumeM3: number;
+  wasteGroutVolumeM3: number;
   groutVolumeM3: number;
   groutKg: number;
   bags: number;
@@ -35,11 +37,13 @@ export function calculateTileGrout({
   const jointDepth = Math.max(0, jointDepthMm);
   const density = Math.max(0, densityKgPerM3);
   const bagWeight = Math.max(0, bagKg);
-  const multiplier = 1 + Math.max(0, wastePercent) / 100;
+  const wasteMultiplier = 1 + Math.max(0, wastePercent) / 100;
 
   const perimeterFactor = l > 0 && w > 0 ? (l + w) / (l * w) : 0;
   const groutDepthMmPerM2 = perimeterFactor * jointWidth * jointDepth;
-  const groutVolumeM3 = area * groutDepthMmPerM2 * 1e-3 * multiplier;
+  const baseGroutVolumeM3 = area * groutDepthMmPerM2 * 1e-3;
+  const wasteGroutVolumeM3 = Math.max(0, baseGroutVolumeM3 * (wasteMultiplier - 1));
+  const groutVolumeM3 = Math.max(0, baseGroutVolumeM3 + wasteGroutVolumeM3);
 
   const groutKg = groutVolumeM3 * density;
   const bags = bagWeight > 0 ? Math.ceil(groutKg / bagWeight) : 0;
@@ -50,10 +54,11 @@ export function calculateTileGrout({
       : undefined;
 
   return {
-    groutVolumeM3: Math.max(0, groutVolumeM3),
+    baseGroutVolumeM3: Math.max(0, baseGroutVolumeM3),
+    wasteGroutVolumeM3: Math.max(0, wasteGroutVolumeM3),
+    groutVolumeM3,
     groutKg: Math.max(0, groutKg),
     bags: Math.max(0, bags),
     cost,
   };
 }
-

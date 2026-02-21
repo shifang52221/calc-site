@@ -8,7 +8,11 @@ export type FenceInputs = {
 };
 
 export type FenceResults = {
+  basePanels: number;
+  wastePanels: number;
   panels: number;
+  basePosts: number;
+  wastePosts: number;
   posts: number;
   cost?: number;
 };
@@ -26,9 +30,15 @@ export function calculateFence({
   const panelWidth = Math.max(1, panelWidthFt);
   const multiplier = 1 + Math.max(0, wastePercent) / 100;
 
+  const basePanels = Math.ceil(length / panelWidth);
+  const basePosts = Math.ceil(length / postSpacing) + 1;
+
   const adjustedLength = length * multiplier;
   const panels = Math.ceil(adjustedLength / panelWidth);
   const posts = Math.ceil(adjustedLength / postSpacing) + 1;
+
+  const wastePanels = Math.max(0, panels - basePanels);
+  const wastePosts = Math.max(0, posts - basePosts);
 
   const panelCost =
     typeof pricePerPanel === "number" && isFinite(pricePerPanel)
@@ -41,5 +51,5 @@ export function calculateFence({
   const cost =
     panelCost || postCost ? Math.max(0, panelCost + postCost) : undefined;
 
-  return { panels, posts, cost };
+  return { basePanels, wastePanels, panels, basePosts, wastePosts, posts, cost };
 }
