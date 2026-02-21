@@ -6,7 +6,10 @@ export type TileInputs = {
 };
 
 export type TileResults = {
+  baseAreaSqFt: number;
+  wasteSqFt: number;
   neededSqFt: number;
+  boxesRaw?: number;
   boxes?: number;
   cost?: number;
 };
@@ -17,9 +20,10 @@ export function calculateTile({
   coverageSqFtPerBox,
   pricePerBox,
 }: TileInputs): TileResults {
-  const baseArea = Math.max(0, areaSqFt);
-  const multiplier = 1 + Math.max(0, wastePercent) / 100;
-  const neededSqFt = baseArea * multiplier;
+  const baseAreaSqFt = Math.max(0, areaSqFt);
+  const wasteMultiplier = 1 + Math.max(0, wastePercent) / 100;
+  const neededSqFt = baseAreaSqFt * wasteMultiplier;
+  const wasteSqFt = Math.max(0, neededSqFt - baseAreaSqFt);
 
   const boxesRaw =
     typeof coverageSqFtPerBox === "number" && isFinite(coverageSqFtPerBox)
@@ -35,5 +39,5 @@ export function calculateTile({
       ? Math.max(0, pricePerBox) * boxes
       : undefined;
 
-  return { neededSqFt, boxes, cost };
+  return { baseAreaSqFt, wasteSqFt, neededSqFt, boxesRaw, boxes, cost };
 }

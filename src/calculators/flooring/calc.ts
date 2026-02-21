@@ -5,6 +5,8 @@ export type FlooringInputs = {
 };
 
 export type FlooringResults = {
+  baseAreaSqFt: number;
+  wasteSqFt: number;
   neededSqFt: number;
   cost?: number;
 };
@@ -14,14 +16,15 @@ export function calculateFlooring({
   wastePercent,
   pricePerSqFt,
 }: FlooringInputs): FlooringResults {
-  const baseArea = Math.max(0, areaSqFt);
-  const multiplier = 1 + Math.max(0, wastePercent) / 100;
-  const neededSqFt = baseArea * multiplier;
+  const baseAreaSqFt = Math.max(0, areaSqFt);
+  const wasteMultiplier = Math.max(0, wastePercent) / 100;
+  const wasteSqFt = Math.max(0, baseAreaSqFt * wasteMultiplier);
+  const neededSqFt = baseAreaSqFt + wasteSqFt;
 
   const cost =
     typeof pricePerSqFt === "number" && isFinite(pricePerSqFt)
       ? Math.max(0, pricePerSqFt) * neededSqFt
       : undefined;
 
-  return { neededSqFt, cost };
+  return { baseAreaSqFt, wasteSqFt, neededSqFt, cost };
 }

@@ -39,7 +39,7 @@ export function FlooringCalculator() {
   const [waste, setWaste] = useQueryParamState("waste", defaultWaste);
   const [price, setPrice] = useQueryParamState("price", defaultPrice);
 
-  const { neededSqFt, cost } = useMemo(() => {
+  const { baseAreaSqFt, wasteSqFt, neededSqFt, cost } = useMemo(() => {
     const areaSqFtValue =
       unitSystem === "metric" ? m2ToSqFt(parseNumber(areaSqFt)) : parseNumber(areaSqFt);
     const pricePerSqFtValue =
@@ -122,6 +122,30 @@ export function FlooringCalculator() {
 
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.baseM2")
+                : t("results.baseSqFt")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(baseAreaSqFt), 2)
+                : formatNumber(baseAreaSqFt, 1)
+            }
+          />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.wasteM2")
+                : t("results.wasteSqFt")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(wasteSqFt), 2)
+                : formatNumber(wasteSqFt, 1)
+            }
+          />
           <CalculatorResultRow
             label={
               unitSystem === "metric" ? t("results.neededM2") : t("results.neededSqFt")

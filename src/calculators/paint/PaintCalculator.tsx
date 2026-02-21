@@ -52,7 +52,7 @@ export function PaintCalculator() {
   const [waste, setWaste] = useQueryParamState("waste", defaultWaste);
   const [price, setPrice] = useQueryParamState("price", defaultPrice);
 
-  const { gallons, cost } = useMemo(() => {
+  const { baseGallons, wasteGallons, gallons, cost } = useMemo(() => {
     const areaSqFtValue =
       unitSystem === "metric"
         ? m2ToSqFt(parseNumber(areaSqFt))
@@ -174,6 +174,30 @@ export function PaintCalculator() {
 
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.baseLiters")
+                : t("results.baseGallons")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(gallonsToLiters(baseGallons), 2)
+                : formatNumber(baseGallons, 2)
+            }
+          />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.wasteLiters")
+                : t("results.wasteGallons")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(gallonsToLiters(wasteGallons), 2)
+                : formatNumber(wasteGallons, 2)
+            }
+          />
           <CalculatorResultRow
             label={
               unitSystem === "metric" ? t("results.liters") : t("results.gallons")

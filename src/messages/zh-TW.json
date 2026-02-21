@@ -1147,6 +1147,10 @@
       "price": "每加侖價格（美元，可選）"
     },
     "results": {
+      "baseGallons": "基礎加侖（不含損耗）",
+      "baseLiters": "基礎公升（不含損耗）",
+      "wasteGallons": "損耗緩衝（加侖）",
+      "wasteLiters": "損耗緩衝（公升）",
       "liters": "預估公升數",
       "title": "結果",
       "gallons": "預估加侖數",
@@ -1223,6 +1227,10 @@
       "price": "每平方英尺單價（美元，可選）"
     },
     "results": {
+      "baseSqFt": "基礎面積（平方英尺）",
+      "baseM2": "基礎面積（m²）",
+      "wasteSqFt": "損耗緩衝（平方英尺）",
+      "wasteM2": "損耗緩衝（m²）",
       "neededM2": "預估需要面積（m²）",
       "title": "結果",
       "neededSqFt": "預估需要面積（平方英尺）",
@@ -1252,6 +1260,11 @@
       "pricePerBox": "每箱價格（美元，可選）"
     },
     "results": {
+      "baseSqFt": "基礎面積（平方英尺）",
+      "baseM2": "基礎面積（m²）",
+      "wasteSqFt": "損耗緩衝（平方英尺）",
+      "wasteM2": "損耗緩衝（m²）",
+      "boxesExact": "所需箱數（精確）",
       "neededM2": "預估需要面積（m²）",
       "title": "結果",
       "neededSqFt": "預估需要面積（平方英尺）",

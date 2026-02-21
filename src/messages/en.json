@@ -1463,12 +1463,16 @@
    "price": "Price per gallon (USD, optional)",
    "priceMetric": "Price per liter (USD, optional)"
   },
-  "results": {
-   "title": "Results",
-   "gallons": "Estimated gallons",
-   "liters": "Estimated liters",
-   "cost": "Estimated cost"
-  },
+    "results": {
+     "title": "Results",
+     "baseGallons": "Base gallons (no waste)",
+     "baseLiters": "Base liters (no waste)",
+     "wasteGallons": "Waste buffer (gallons)",
+     "wasteLiters": "Waste buffer (liters)",
+     "gallons": "Estimated gallons",
+     "liters": "Estimated liters",
+     "cost": "Estimated cost"
+    },
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How do I calculate paint for a wall?",
@@ -1539,12 +1543,16 @@
    "price": "Price per sq ft (USD, optional)",
    "priceMetric": "Price per m² (USD, optional)"
   },
-  "results": {
-   "title": "Results",
-   "neededSqFt": "Estimated sq ft needed",
-   "neededM2": "Estimated m² needed",
-   "cost": "Estimated cost"
-  },
+    "results": {
+     "title": "Results",
+     "baseSqFt": "Base area (sq ft)",
+     "baseM2": "Base area (m²)",
+     "wasteSqFt": "Waste buffer (sq ft)",
+     "wasteM2": "Waste buffer (m²)",
+     "neededSqFt": "Estimated sq ft needed",
+     "neededM2": "Estimated m² needed",
+     "cost": "Estimated cost"
+    },
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How do I calculate flooring square footage?",
@@ -1568,13 +1576,18 @@
    "coveragePerBoxM2": "Coverage per box (m²)",
    "pricePerBox": "Price per box (USD, optional)"
   },
-  "results": {
-   "title": "Results",
-   "neededSqFt": "Estimated sq ft needed",
-   "neededM2": "Estimated m² needed",
-   "boxes": "Estimated boxes",
-   "cost": "Estimated cost"
-  },
+    "results": {
+     "title": "Results",
+     "baseSqFt": "Base area (sq ft)",
+     "baseM2": "Base area (m²)",
+     "wasteSqFt": "Waste buffer (sq ft)",
+     "wasteM2": "Waste buffer (m²)",
+     "neededSqFt": "Estimated sq ft needed",
+     "neededM2": "Estimated m² needed",
+     "boxesExact": "Boxes needed (exact)",
+     "boxes": "Estimated boxes",
+     "cost": "Estimated cost"
+    },
   "faqTitle": "FAQ",
   "faq": {
    "q1": "What overage/waste factor should I use for tile?",

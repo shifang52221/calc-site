@@ -1460,10 +1460,14 @@
       "priceMetric": "Precio por litro (USD, opcional)"
     },
     "results": {
-      "title": "Resultados",
-      "gallons": "Galones estimados",
-      "liters": "Litros estimados",
-      "cost": "Costo estimado"
+     "title": "Resultados",
+     "baseGallons": "Galones base (sin desperdicio)",
+     "baseLiters": "Litros base (sin desperdicio)",
+     "wasteGallons": "Margen de desperdicio (galones)",
+     "wasteLiters": "Margen de desperdicio (litros)",
+     "gallons": "Galones estimados",
+     "liters": "Litros estimados",
+     "cost": "Costo estimado"
     },
     "faqTitle": "Preguntas frecuentes",
     "faq": {
@@ -1535,12 +1539,16 @@
       "price": "Precio por pie² (USD, opcional)",
       "priceMetric": "Precio por m² (USD, opcional)"
     },
-    "results": {
-      "title": "Resultados",
-      "neededSqFt": "Pies² estimados necesarios",
-      "neededM2": "m² estimados necesarios",
-      "cost": "Costo estimado"
-    },
+      "results": {
+        "title": "Resultados",
+        "baseSqFt": "Área base (pies²)",
+        "baseM2": "Área base (m²)",
+        "wasteSqFt": "Merma (pies²)",
+        "wasteM2": "Merma (m²)",
+        "neededSqFt": "Pies² estimados necesarios",
+        "neededM2": "m² estimados necesarios",
+        "cost": "Costo estimado"
+      },
     "faqTitle": "Preguntas frecuentes",
     "faq": {
       "q1": "¿Qué merma debo usar?",
@@ -1564,13 +1572,18 @@
       "coveragePerBoxM2": "Cobertura por caja (m\u00b2)",
       "pricePerBox": "Precio por caja (USD, opcional)"
     },
-    "results": {
-      "title": "Resultados",
-      "neededSqFt": "Pies² estimados necesarios",
-      "neededM2": "m² estimados necesarios",
-      "boxes": "Cajas estimadas",
-      "cost": "Costo estimado"
-    },
+      "results": {
+        "title": "Resultados",
+        "baseSqFt": "Área base (pies²)",
+        "baseM2": "Área base (m²)",
+        "wasteSqFt": "Merma (pies²)",
+        "wasteM2": "Merma (m²)",
+        "neededSqFt": "Pies² estimados necesarios",
+        "neededM2": "m² estimados necesarios",
+        "boxesExact": "Cajas necesarias (exacto)",
+        "boxes": "Cajas estimadas",
+        "cost": "Costo estimado"
+      },
     "faqTitle": "Preguntas frecuentes",
     "faq": {
       "q1": "¿Qué merma es típica para azulejos?",

@@ -47,7 +47,8 @@ export function TileCalculator() {
     defaultPricePerBox,
   );
 
-  const { neededSqFt, boxes, cost } = useMemo(() => {
+  const { baseAreaSqFt, wasteSqFt, neededSqFt, boxesRaw, boxes, cost } =
+    useMemo(() => {
     const coverageSqFt =
       unitSystem === "metric"
         ? m2ToSqFt(parseNumber(coveragePerBox))
@@ -63,7 +64,7 @@ export function TileCalculator() {
       coverageSqFtPerBox: coverage > 0 ? coverage : undefined,
       pricePerBox: pricePerBox.trim() ? parseNumber(pricePerBox) : undefined,
     });
-  }, [areaSqFt, coveragePerBox, pricePerBox, unitSystem, waste]);
+    }, [areaSqFt, coveragePerBox, pricePerBox, unitSystem, waste]);
 
   return (
     <div className="grid gap-6 lg:grid-cols-2">
@@ -140,6 +141,30 @@ export function TileCalculator() {
           <CalculatorResultRow
             label={
               unitSystem === "metric"
+                ? t("results.baseM2")
+                : t("results.baseSqFt")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(baseAreaSqFt), 2)
+                : formatNumber(baseAreaSqFt, 1)
+            }
+          />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.wasteM2")
+                : t("results.wasteSqFt")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(wasteSqFt), 2)
+                : formatNumber(wasteSqFt, 1)
+            }
+          />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
                 ? t("results.neededM2")
                 : t("results.neededSqFt")
             }
@@ -149,6 +174,12 @@ export function TileCalculator() {
                 : formatNumber(neededSqFt, 1)
             }
           />
+          {typeof boxesRaw === "number" ? (
+            <CalculatorResultRow
+              label={t("results.boxesExact")}
+              value={formatNumber(boxesRaw, 2)}
+            />
+          ) : null}
           {typeof boxes === "number" ? (
             <CalculatorResultRow label={t("results.boxes")} value={boxes} />
           ) : null}
