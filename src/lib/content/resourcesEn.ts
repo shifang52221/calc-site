@@ -6701,4 +6701,246 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
       { label: "Baseboard waste tips", href: "/en/resources/baseboard-trim-waste-tips" },
     ],
   },
+  {
+    slug: "base-waste-total-estimate-guide",
+    title: "Base vs waste vs total (how to read material estimates)",
+    description:
+      "A quick guide to reading base, waste buffer, and total quantities so you order the right amount without guessing.",
+    lastUpdated: "Last updated: Feb 2026",
+    sections: [
+      {
+        heading: "What base, waste, and total mean",
+        paragraphs: [
+          "Most calculators now split results into three parts. Base is the pure quantity from your measurements (no buffer). Waste is the extra allowance for cuts, breakage, mixing loss, or rounding to whole units. Total is base plus waste, and that is the number you actually buy.",
+          "Seeing the split helps you sanity-check inputs. If the base number looks wrong, the measurement is probably wrong. If the waste number looks too high or too low, adjust the waste factor before you order.",
+        ],
+      },
+      {
+        heading: "How waste is applied (simple formula)",
+        paragraphs: [
+          "Most calculators use a simple rule: total = base x (1 + waste%). The waste buffer is total - base.",
+          "For materials purchased in whole units (bags, boxes, bundles), there is also rounding. That means the final order can be slightly higher than the percentage alone would suggest.",
+        ],
+        bullets: [
+          "Base = your measured quantity before any buffer.",
+          "Waste buffer = extra allowance for real-world loss.",
+          "Total = base + waste, then rounded up to whole units if needed.",
+        ],
+      },
+      {
+        heading: "Examples across materials (quick reference)",
+        table: {
+          columns: ["Material", "Base", "Waste buffer", "Total to buy"],
+          rows: [
+            ["Paint", "2.6 gal", "+10% = 0.26 gal", "2.86 gal -> round to 3 gal"],
+            ["Tile", "180 sq ft", "+12% = 21.6 sq ft", "201.6 sq ft -> round to boxes"],
+            ["Mulch (bulk)", "3.4 yd3", "+7% = 0.24 yd3", "3.64 yd3 -> round up delivery"],
+          ],
+        },
+      },
+      {
+        heading: "How to use the split in real planning",
+        paragraphs: [
+          "Use base quantities to validate the math: does the base match your mental estimate? If it feels too high or too low, fix the measurements first.",
+          "Use the waste buffer as a decision point. If your layout is simple, a 5-10% buffer may be enough. If it is cut-heavy or hard to match later, increase the buffer before you order.",
+          "Use total for purchasing. Materials sold in whole units must be rounded up, so total is the practical order quantity, not base.",
+        ],
+      },
+      {
+        heading: "When to increase waste",
+        bullets: [
+          "Diagonal layouts, patterns, borders, or lots of small rooms.",
+          "Many penetrations, cutouts, or curves.",
+          "First-time installs or complex details that slow you down.",
+          "Materials that are hard to match later (tile lots, stain colors, composites).",
+          "Projects where running short would be expensive or time critical.",
+        ],
+      },
+      {
+        heading: "When waste can be lower",
+        bullets: [
+          "Simple rectangles with long runs and minimal cuts.",
+          "You have experience and a clear layout plan.",
+          "You can return unopened units locally without penalty.",
+          "The material is easy to match later and delays are not costly.",
+        ],
+      },
+      {
+        heading: "Quick checklist before ordering",
+        bullets: [
+          "Does the base quantity match your rough mental estimate?",
+          "Is the waste factor realistic for the layout and your skill level?",
+          "Are you rounding to whole units (bags, boxes, bundles)?",
+          "Do you need extras for future repairs or color matching?",
+        ],
+      },
+    ],
+    related: [
+      { label: "Paint calculator", href: "/en/calculators/home-improvement/paint" },
+      { label: "Tile calculator", href: "/en/calculators/home-improvement/tile" },
+      { label: "Roofing calculator", href: "/en/calculators/home-improvement/roofing" },
+    ],
+  },
+  {
+    slug: "irregular-area-measurement-cheat-sheet",
+    title: "Measuring irregular areas (L-shapes, circles, curves)",
+    description:
+      "A practical cheat sheet to turn odd shapes into reliable area numbers for material estimates.",
+    lastUpdated: "Last updated: Feb 2026",
+    sections: [
+      {
+        heading: "Break the shape into simple pieces",
+        paragraphs: [
+          "The fastest way to estimate irregular areas is to break them into simple shapes you can measure confidently: rectangles, triangles, and circles. Measure each piece, calculate area, then add them.",
+          "If a shape is complex, over-simplify into a few larger pieces rather than dozens of tiny ones. Fewer pieces usually means fewer mistakes.",
+        ],
+        bullets: [
+          "Use rectangles for straight walls and main runs.",
+          "Use triangles for angled corners or diagonal cutoffs.",
+          "Use circles or half-circles for curved beds or patios.",
+        ],
+      },
+      {
+        heading: "Common shape formulas (quick table)",
+        table: {
+          columns: ["Shape", "Formula", "Notes"],
+          rows: [
+            ["Rectangle", "length x width", "Most rooms and patios"],
+            ["Triangle", "(base x height) / 2", "Angles, cutoffs"],
+            ["Circle", "3.14 x radius x radius", "Beds, round patios"],
+            ["Half circle", "Circle area / 2", "Curved edges"],
+          ],
+        },
+      },
+      {
+        heading: "L-shaped rooms (step-by-step)",
+        paragraphs: [
+          "Treat an L-shape as two rectangles. Measure the long run and the short run separately, calculate each rectangle area, then add them.",
+          "If the L-shape is irregular, sketch the space on paper and label lengths. A quick sketch reduces measurement errors more than any calculator trick.",
+        ],
+        bullets: [
+          "Measure the long rectangle first (length x width).",
+          "Measure the short rectangle that sticks out.",
+          "Add the two areas for the total.",
+          "If there is a cutout (like a closet), measure it and subtract it.",
+        ],
+      },
+      {
+        heading: "Curves and arcs (good-enough approach)",
+        paragraphs: [
+          "For curved beds or patios, measure the radius if possible and use the circle formula. If you only have a curve, approximate it with a half circle or a series of small rectangles.",
+          "When the edge is wavy, measure the average depth of the curve and treat it as a straight edge. Your waste factor can absorb the small irregularities.",
+        ],
+        bullets: [
+          "If you can measure radius, use circle or half-circle math.",
+          "If not, split the curve into 2-3 rectangles and add them.",
+          "Use a string line or garden hose to trace curves before measuring.",
+        ],
+      },
+      {
+        heading: "Slopes and multiple planes",
+        paragraphs: [
+          "If the surface is sloped or has multiple planes, measure each plane separately. A sloped surface has more area than the flat footprint, and that matters for roofing and some wall estimates.",
+          "Do not mix footprint area with sloped area. Keep the measurement consistent with what you are covering.",
+        ],
+      },
+      {
+        heading: "Common measurement mistakes",
+        bullets: [
+          "Using diagonal measurements instead of straight runs.",
+          "Forgetting small bump-outs or alcoves (they add up).",
+          "Using the longest dimension as the width for the entire shape.",
+          "Mixing feet and inches without converting before multiplying.",
+          "Skipping a sketch and trusting memory for irregular shapes.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Flooring calculator", href: "/en/calculators/home-improvement/flooring" },
+      { label: "Mulch calculator", href: "/en/calculators/home-improvement/mulch" },
+      { label: "Concrete calculator", href: "/en/calculators/home-improvement/concrete" },
+    ],
+  },
+  {
+    slug: "material-overage-planning-guide",
+    title: "Material overage planning guide (how much extra to buy)",
+    description:
+      "General waste/overage guidance across common home improvement materials and when to increase your buffer.",
+    lastUpdated: "Last updated: Feb 2026",
+    sections: [
+      {
+        heading: "Why overage is not just mistakes",
+        paragraphs: [
+          "Overage (waste buffer) covers more than broken pieces. It includes cuts that cannot be reused, rounding to whole units, mixing loss, and the reality that real rooms are not perfect rectangles.",
+          "The right buffer depends on layout complexity and how hard the material is to match later. A small extra amount up front is usually cheaper than a second trip or mismatched repairs.",
+        ],
+      },
+      {
+        heading: "Typical planning ranges (rule of thumb)",
+        table: {
+          columns: ["Material type", "Common waste range", "When to increase"],
+          rows: [
+            ["Paint", "5-10%", "Heavy texture, big color change, lots of cut-in"],
+            ["Flooring", "5-15%", "Diagonal layouts, many rooms, stair cuts"],
+            ["Tile", "10-20%", "Diagonal/patterned layouts, niches, mosaics"],
+            ["Roofing", "10-25%+", "Valleys, hips, dormers, many penetrations"],
+            ["Mulch/soil", "5-15%", "Irregular edges, settling, grading"],
+            ["Concrete", "5-10%", "Uneven subgrade, thickened edges"],
+          ],
+        },
+      },
+      {
+        heading: "When to increase your buffer",
+        bullets: [
+          "Cut-heavy layouts: diagonals, borders, patterns, or many small rooms.",
+          "First-time installs or learning a new technique.",
+          "Materials that are hard to match later (tile lots, stains, composites).",
+          "Projects with many penetrations, notches, or irregular edges.",
+          "Tight schedules where running short would cause delays.",
+        ],
+      },
+      {
+        heading: "When to keep it tight (but not zero)",
+        bullets: [
+          "Simple rectangles with long runs and minimal cuts.",
+          "Experienced installer with a clear cut plan.",
+          "You can return unopened units without penalty.",
+          "Material is easy to match later and timing is flexible.",
+        ],
+      },
+      {
+        heading: "Ordering tips that reduce pain",
+        bullets: [
+          "Round up to whole units (bags, boxes, bundles).",
+          "Buy from the same batch/lot when color matching matters.",
+          "Keep receipts and record lot numbers for future repairs.",
+          "Store extras properly so they stay usable (dry, flat, and protected).",
+          "If you are near a whole-unit threshold, round up instead of guessing.",
+        ],
+      },
+      {
+        heading: "How to use calculator outputs",
+        paragraphs: [
+          "Use base quantities to validate your measurements. Use the waste buffer to decide whether your layout justifies more or less extra. Use total to place the order and round up to whole units.",
+          "If your base estimate looks correct but the total feels high, adjust waste percentage instead of guessing. A small percentage change is easier to reason about than a random extra purchase.",
+        ],
+      },
+      {
+        heading: "Keep leftovers organized (it pays off later)",
+        paragraphs: [
+          "Extra material only helps if you can find it later. Store leftovers in a dry, labeled container and keep a note of the brand, color, batch, and purchase date. This is especially important for tile, paint, and composite products where later matching can be difficult.",
+        ],
+        bullets: [
+          "Write the batch/lot number on the box and keep a photo of the label.",
+          "Store flat materials flat (tile, boards) to prevent warping or breakage.",
+          "Keep small offcuts for future patches; they can save an entire repair.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Tile waste guide", href: "/en/guides/home-improvement/tile-waste" },
+      { label: "Roofing waste factor guide", href: "/en/resources/roofing-waste-factor-guide" },
+      { label: "Paint calculator", href: "/en/calculators/home-improvement/paint" },
+    ],
+  },
 ];
