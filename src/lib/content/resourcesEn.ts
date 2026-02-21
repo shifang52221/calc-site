@@ -684,6 +684,18 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Why bundle coverage varies",
+        paragraphs: [
+          "Bundles per square depend on shingle size, thickness, and brand packaging. Premium or impact-rated shingles can require more bundles per square than standard products.",
+        ],
+      },
+      {
+        heading: "Check each slope separately",
+        paragraphs: [
+          "If your roof has multiple pitches or planes, estimate area per plane and sum them. This avoids undercounting when some planes are steeper or have more waste.",
+        ],
+      },
+      {
         heading: "Convert squares to bundles (step-by-step)",
         bullets: [
           "Calculate roof surface area, then divide by 100 to get squares.",
@@ -756,15 +768,23 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             "Round up to whole boxes; partial boxes are rarely sold.",
           ],
         },
-        {
-          heading: "When to increase waste",
-          bullets: [
-            "Diagonal, herringbone, or complex patterns.",
-            "Large-format tiles in small rooms (more offcuts).",
-            "Many cuts: niches, benches, corners, and plumbing penetrations.",
-            "Strict pattern or vein matching that forces you to reject pieces.",
-          ],
-        },
+      {
+        heading: "When to increase waste",
+        bullets: [
+          "Diagonal, herringbone, or complex patterns.",
+          "Large-format tiles in small rooms (more offcuts).",
+          "Many cuts: niches, benches, corners, and plumbing penetrations.",
+          "Strict pattern or vein matching that forces you to reject pieces.",
+        ],
+      },
+      {
+        heading: "Tile size and room shape",
+        bullets: [
+          "Large tiles in small rooms create more offcuts at the edges.",
+          "Narrow hallways and L-shaped rooms increase cut loss.",
+          "Brick and staggered patterns can push waste higher than a straight grid.",
+        ],
+      },
         {
           heading: "Example: box rounding matters",
           paragraphs: [
@@ -837,6 +857,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Common thickness by use case (planning only)",
+        bullets: [
+          "Walkways/patios: often 4 inches (confirm local practice).",
+          "Driveways: often 4-6 inches depending on loads.",
+          "Sheds/garage pads: often 4-6 inches with thicker edges.",
+        ],
+      },
+      {
         heading: "Bagged mix conversion (quick planning)",
         paragraphs: [
           "If you are buying bagged mix, use the bag yield on the label. A common planning range is about 0.45 cu ft for a 60 lb bag and about 0.60 cu ft for an 80 lb bag, but always confirm the product.",
@@ -845,6 +873,12 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Convert volume to cubic feet first (1 cu yd = 27 cu ft).",
           "Bags needed = total cu ft / bag yield, then round up.",
           "Order extra for over-excavation, uneven forms, and cleanup.",
+        ],
+      },
+      {
+        heading: "Ready-mix vs bagged",
+        paragraphs: [
+          "If your project is larger than a few cubic yards, ready-mix is usually cheaper and more consistent. Bagged mix is better for small pours and patch work.",
         ],
       },
       {
@@ -1248,6 +1282,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Round up to whole bags/buckets; running short mid-room makes blending harder.",
         ],
       },
+      {
+        heading: "Seam types and corners add material",
+        bullets: [
+          "Butt joints usually need more compound and more coats than tapered seams.",
+          "Inside corners use tape on both sides of the corner, which adds up fast.",
+          "Ceiling work typically uses more compound due to overhead handling and sanding.",
+        ],
+      },
+      {
+        heading: "Finish level changes usage",
+        paragraphs: [
+          "Higher finish levels mean more coats, more sanding, and more compound. If your plan calls for Level 4 or Level 5, expect noticeably higher material usage than a basic utility finish.",
+        ],
+      },
     ],
     related: [
       { label: "Drywall mud & tape calculator", href: "/en/calculators/home-improvement/drywall-mud-tape" },
@@ -1265,6 +1313,12 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Why conversions vary",
         paragraphs: [
           "Gravel is planned by volume (cubic yards) but often sold by weight (tons). The conversion depends on density, which varies by product type, moisture content, and compaction.",
+        ],
+      },
+      {
+        heading: "Loose vs compacted volume",
+        paragraphs: [
+          "Delivered gravel is loose. After spreading and compaction, installed volume is smaller, which can make the delivered tonnage feel short if you planned by compacted depth.",
         ],
       },
       {
@@ -1287,6 +1341,13 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["Road base", "1.3-1.6", "Varies by fines and moisture"],
           ],
         },
+      },
+      {
+        heading: "Moisture swings change weight",
+        bullets: [
+          "Wet gravel is heavier; dry gravel is lighter.",
+          "Ask if the supplier conversion assumes wet, dry, or average conditions.",
+        ],
       },
       {
         heading: "Tons vs tonnes (avoid unit mix-ups)",
@@ -1698,9 +1759,22 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Measure repeat in one unit",
+        bullets: [
+          "Keep wall height and repeat in the same unit (inches or centimeters).",
+          "Round each strip up to the next repeat multiple before dividing by roll length.",
+        ],
+      },
+      {
         heading: "Strip yield example (quick math)",
         paragraphs: [
           "Example: wall height is 9 ft (108 in) and the repeat is 20 in. Each strip must be cut to the next repeat multiple: 120 in (10 ft). A 33 ft roll yields about 3 strips, not 3.6.",
+        ],
+      },
+      {
+        heading: "Room-by-room planning",
+        paragraphs: [
+          "If you are wrapping through multiple rooms, count strips per wall and sum them. A single-room estimate can undercount when there are many short walls and door returns.",
         ],
       },
       {
@@ -1853,6 +1927,22 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Drywall and sheathing limits",
+        paragraphs: [
+          "Wall and ceiling finishes have span limits. Some drywall and sheathing products are rated for 24 inch spacing only at certain thicknesses.",
+        ],
+        bullets: [
+          "Check the product span rating for 1/2 inch vs 5/8 inch drywall.",
+          "Tile, stone, and heavy wall finishes often need stiffer walls.",
+        ],
+      },
+      {
+        heading: "Insulation and performance",
+        paragraphs: [
+          "Wider spacing can allow deeper insulation and reduce thermal bridging, but it also changes how walls feel under load. Balance energy goals with finish stiffness and local code.",
+        ],
+      },
+      {
         heading: "Planning notes",
         bullets: [
           "Always follow local code and structural requirements for load-bearing walls.",
@@ -1904,6 +1994,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Sanded vs unsanded (and epoxy) grout are different products with different behavior.",
           "Movement joints and caulk are not grout.",
           "Extra grout is useful for future repairs, but matching later can be difficult.",
+        ],
+      },
+      {
+        heading: "Quick input checklist",
+        bullets: [
+          "Tile size (length and width).",
+          "Joint width and approximate joint depth.",
+          "Grout type (sanded, unsanded, or specialty).",
+        ],
+      },
+      {
+        heading: "When to add a buffer",
+        paragraphs: [
+          "Add extra if you have small tiles, wide joints, many cut tiles, or a complex layout. Mixing losses and cleanup also eat into bag yield.",
         ],
       },
     ],
@@ -2162,6 +2266,13 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Settling and top-ups",
+        bullets: [
+          "Fresh mulch often settles after watering or rain.",
+          "A light buffer prevents thin spots after the first week.",
+        ],
+      },
+      {
         heading: "Bulk vs bags (when to switch)",
         paragraphs: [
           "Bagged mulch is convenient for small projects. For larger beds, bulk delivery is often cheaper per cubic foot and saves carrying time. The tradeoff is delivery access and the need to move material from a pile.",
@@ -2237,6 +2348,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "If leveling, measure multiple depth checks and use an average thickness.",
         ],
       },
+      {
+        heading: "Quick coverage math",
+        paragraphs: [
+          "Bags needed = (area x depth in feet) / bag cubic feet. Round up to whole bags.",
+          "Example: 100 sq ft at 2 inches is 100 x (2/12) = 16.7 cubic feet. With 2 cu ft bags, that is 8.4 bags, so buy 9 (plus a small buffer).",
+        ],
+      },
+      {
+        heading: "Rounding and buffers",
+        bullets: [
+          "Round up to whole bags; partial bags are not sold.",
+          "Add a small buffer for settling and leveling work.",
+        ],
+      },
     ],
     related: [
       { label: "Topsoil bags calculator", href: "/en/calculators/home-improvement/topsoil-bags" },
@@ -2271,6 +2396,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Second coats can be close to a full coat if the first coat is light or if you need a consistent finish.",
           "Repairs and patches often need extra blending area (you texture beyond the patch).",
           "Sanding and knockdown changes how much material stays on the wall.",
+        ],
+      },
+      {
+        heading: "Surface prep changes coverage",
+        bullets: [
+          "Bare drywall and patches absorb more material unless primed.",
+          "High suction surfaces can require a heavier first coat.",
+          "Inconsistent prep leads to uneven texture thickness and rework.",
+        ],
+      },
+      {
+        heading: "Mix consistency and tooling",
+        paragraphs: [
+          "Thicker mixes cover less area but can reduce sag; thinner mixes cover more but can require extra coats. Tool settings (nozzle size, pressure) also change how much material ends up on the wall vs in the air.",
         ],
       },
       {
@@ -2451,6 +2590,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Complex layouts often waste more regardless of sheet size.",
         ],
       },
+      {
+        heading: "Transport and access checklist",
+        bullets: [
+          "Can the sheets fit through doorways, hallways, and stair turns?",
+          "Is there room to rotate or lift sheets into place?",
+          "Will you have a lift or extra help for ceilings?",
+        ],
+      },
+      {
+        heading: "Ceilings vs walls",
+        paragraphs: [
+          "For ceilings, stiffness and handling matter more than minimal seams. For walls, larger sheets can reduce seams if access and labor allow safe handling.",
+        ],
+      },
     ],
     related: [
       { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
@@ -2483,6 +2636,12 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           paragraphs: [
             "Sheets needed = total area / sheet coverage, then round up and add waste.",
             "Example: 320 sq ft / 32 sq ft (4x8) = 10 sheets. Add 10-15% waste and round up to 11-12 sheets.",
+          ],
+        },
+        {
+          heading: "Ceiling add-on (simple reminder)",
+          paragraphs: [
+            "If you are doing ceilings, add ceiling area (length x width). Ceilings often use a higher waste factor due to handling and cutouts.",
           ],
         },
         {
@@ -2557,6 +2716,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Waste includes cutouts, breakage, and offcuts that cannot be reused. It also includes rounding to whole sheets and layout decisions that change seam placement.",
         ],
       },
+      {
+        heading: "Sheet size affects waste",
+        bullets: [
+          "Larger sheets can reduce seams but may increase breakage if handling is difficult.",
+          "Smaller sheets create more seams and offcuts, especially in small rooms.",
+          "Pick a sheet size you can handle safely, then adjust waste accordingly.",
+        ],
+      },
+      {
+        heading: "Ordering strategy",
+        paragraphs: [
+          "If the job is large, order the base count plus waste in one batch. For smaller jobs, you can buy the base count first and a second trip for waste if needed, but that risks mismatched thickness or brand.",
+        ],
+      },
     ],
     related: [
       { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
@@ -2601,6 +2774,19 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Worked example (simple planning)",
         paragraphs: [
           "If a roof footprint is 1,600 sq ft and the pitch is 6/12, the roof surface area is about 1,600 x 1.12 = 1,792 sq ft before waste and details like valleys and dormers.",
+        ],
+      },
+      {
+        heading: "Pitch vs slope (quick reminder)",
+        bullets: [
+          "Pitch is usually expressed as rise over 12 inches of run (e.g., 6/12).",
+          "If your measurements are in degrees, convert to pitch or use a calculator for the multiplier.",
+        ],
+      },
+      {
+        heading: "Include overhangs",
+        paragraphs: [
+          "Overhangs add surface area beyond the footprint. If your roof has large eaves, add that area before applying the multiplier.",
         ],
       },
       {
@@ -2772,6 +2958,19 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Two tiles with the same size can have different coverage per box because pieces-per-carton differ. Label coverage is the reliable number.",
         ],
       },
+      {
+        heading: "Unit consistency",
+        bullets: [
+          "Do not mix square feet and square meters in one estimate.",
+          "If the box is labeled in m2, convert your room area to m2 before dividing.",
+        ],
+      },
+      {
+        heading: "Overage comes before boxes",
+        paragraphs: [
+          "Calculate your waste factor on total area first, then divide by box coverage. If you divide first, you usually underbuy.",
+        ],
+      },
     ],
     related: [
       { label: "Tile calculator", href: "/en/calculators/home-improvement/tile" },
@@ -2811,6 +3010,12 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         bullets: [
           "Composite and PVC boards often have different actual widths than wood.",
           "If you mix products, do not assume widths are interchangeable.",
+        ],
+      },
+      {
+        heading: "Quick coverage example",
+        paragraphs: [
+          "Example: a 12 ft by 16 ft deck is 192 sq ft. If your actual board coverage width is 5.5 inches (0.458 ft), you will need about 16 ft / 0.458 ≈ 35 board runs across the width, then add waste for cuts and borders.",
         ],
       },
       {
@@ -2881,11 +3086,24 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Angle changes waste",
+        paragraphs: [
+          "Steeper diagonal angles usually increase waste because more boards need to be trimmed at both ends. A slight diagonal can look great with less waste than a full 45° layout.",
+        ],
+      },
+      {
         heading: "How to choose a safer buffer",
         bullets: [
           "If your deck is a simple rectangle, start in the 10-15% range for diagonal.",
           "If you have many cut interruptions (posts, stairs, borders), increase buffer to reduce mid-project shortages.",
           "If color matching matters (some composite products), buying enough up front is safer than topping up later.",
+        ],
+      },
+      {
+        heading: "Cut planning tip",
+        bullets: [
+          "Lay out the border and picture frame first, then infill the diagonal field.",
+          "Group similar angle cuts together to reduce mistakes and waste.",
         ],
       },
       {
@@ -3025,6 +3243,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Piece count example",
+        paragraphs: [
+          "Example: 180 linear feet total with 16 ft pieces is 180 / 16 = 11.25, so 12 pieces minimum. With 10% waste, plan 13–14 pieces depending on layout.",
+        ],
+      },
+      {
+        heading: "Room-by-room method",
+        bullets: [
+          "List each wall run length and group them by piece length.",
+          "Use long pieces for long walls; use short pieces for closets and small runs.",
+          "Track offcuts that can be reused to reduce waste.",
+        ],
+      },
+      {
         heading: "Splices and joints (plan where they land)",
         bullets: [
           "Use scarf joints on long runs to make seams less visible.",
@@ -3158,6 +3390,13 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Buy enough from one lot when possible; color and sheen can vary across lots.",
           "Check the store return policy before opening all boxes.",
           "Keep at least one unopened box if returns are allowed and you have extra.",
+        ],
+      },
+      {
+        heading: "Open box strategy",
+        bullets: [
+          "Open a few boxes and mix boards for color consistency.",
+          "Hold back one full box for future repairs if the product may be discontinued.",
         ],
       },
       {
@@ -3428,6 +3667,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "How far to feather",
+        bullets: [
+          "Feathering zones are often wider than the low spot itself.",
+          "The smoother the transition, the less noticeable the repair.",
+          "When in doubt, feather farther and use a thinner edge.",
+        ],
+      },
+      {
+        heading: "Simple planning example",
+        paragraphs: [
+          "If a low area is about 10 ft by 6 ft and the deepest point is 2 inches, you might average depth to 1 inch after feathering. That turns a 10x6 area from 10 cu ft at 2 inches to about 5 cu ft at 1 inch, which is a big difference in bags or yards.",
+        ],
+      },
+      {
         heading: "Practical checklist",
         bullets: [
           "Mark the low area and the feathering zone (it is usually bigger than the low spot).",
@@ -3462,6 +3715,24 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Plan extra for settling after watering.",
         ],
       },
+      {
+        heading: "Depth by use case (rule of thumb)",
+        bullets: [
+          "1 inch: light refresh for appearance and color.",
+          "2 inches: common depth for most beds.",
+          "3 inches: better weed suppression, but avoid burying plant crowns.",
+        ],
+      },
+      {
+        heading: "Measure depth with an average",
+        paragraphs: [
+          "Beds are rarely uniform. Take several depth checks and use an average so you do not underbuy.",
+        ],
+        bullets: [
+          "Include bed edges and curves in your area estimate.",
+          "Keep mulch a few inches away from trunks to avoid moisture damage.",
+        ],
+      },
     ],
     related: [
       { label: "Mulch calculator", href: "/en/calculators/home-improvement/mulch" },
@@ -3494,6 +3765,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Ordering tip",
         paragraphs: [
           "If your supplier sells by tons, use their conversion for each product separately. Density varies by material type and moisture.",
+        ],
+      },
+      {
+        heading: "Typical thickness ranges (planning only)",
+        bullets: [
+          "Base layers are commonly thicker than top layers for stability.",
+          "Traffic, soil, and drainage can increase required base depth.",
+          "Use local practice or supplier guidance for your use case.",
+        ],
+      },
+      {
+        heading: "Compaction changes depth",
+        paragraphs: [
+          "Base material compacts after placement. If your target is a compacted depth, plan for extra loose depth before compaction.",
         ],
       },
       {
@@ -3535,11 +3820,24 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Turned-down slabs and haunches",
+        paragraphs: [
+          "Some slabs use turned-down edges or haunches instead of simple thickened strips. Treat each edge shape as a separate volume and add them together.",
+        ],
+      },
+      {
         heading: "Basic math (separate it into shapes)",
         bullets: [
           "Slab volume = area x slab thickness.",
           "Thickened edge volume = edge length x thickened width x (thickened depth - slab thickness).",
           "If you have multiple thickened zones, calculate each one and add them.",
+        ],
+      },
+      {
+        heading: "Form footprint matters",
+        bullets: [
+          "If forms are wider at the bottom, volume increases beyond simple width assumptions.",
+          "Confirm whether dimensions are inside-form or outside-form measurements.",
         ],
       },
       {
@@ -3608,6 +3906,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Heavy vehicles or frequent turning loads that require stronger support.",
         ],
       },
+      {
+        heading: "Base material types (what people use)",
+        bullets: [
+          "Crushed stone with fines for compaction and lock-up.",
+          "Recycled asphalt base when allowed by local practice.",
+          "Geotextile fabric in soft soils to separate base from subgrade.",
+        ],
+      },
+      {
+        heading: "Compaction and thickness notes",
+        paragraphs: [
+          "Base thickness is typically specified as compacted depth. Plan for extra loose depth before compaction to reach the final target.",
+        ],
+      },
     ],
     related: [
       { label: "Asphalt driveway calculator", href: "/en/calculators/home-improvement/asphalt-driveway" },
@@ -3659,11 +3971,25 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Primer vs extra coats",
+        bullets: [
+          "Primer can reduce finish coats on porous or stained surfaces.",
+          "If you are covering a dark color, primer often saves paint.",
+          "Tinted primer can improve hide for vivid colors.",
+        ],
+      },
+      {
         heading: "Application method (brush, roll, or spray)",
         bullets: [
           "Spraying can use more paint if back-rolling or heavy overspray is involved.",
           "Rough rollers hold more paint and reduce theoretical coverage.",
           "Brush work on trim and edges uses more paint per square foot than rolling walls.",
+        ],
+      },
+      {
+        heading: "Ceilings and texture",
+        paragraphs: [
+          "Ceilings and textured surfaces often reduce coverage because of cut-ins, fixtures, and increased surface area. Plan extra if you have popcorn or heavy texture.",
         ],
       },
       {
@@ -4157,6 +4483,19 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Buy enough in one batch if color matching matters.",
         ],
       },
+      {
+        heading: "Bag count example",
+        paragraphs: [
+          "Example: 100 sq ft at 3 inches is about 25 cubic feet of mulch. That is about 13 bags of 2 cu ft or about 9 bags of 3 cu ft (round up).",
+        ],
+      },
+      {
+        heading: "Handling and delivery notes",
+        bullets: [
+          "3 cu ft bags reduce bag count but are heavier to move.",
+          "If access is tight, smaller bags can be easier even if the count is higher.",
+        ],
+      },
     ],
     related: [
       { label: "Mulch bags calculator", href: "/en/calculators/home-improvement/mulch-bags" },
@@ -4202,6 +4541,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Mixing units is a common reason bag counts are off by a lot.",
         ],
       },
+      {
+        heading: "Liters to cubic yards (bulk comparison)",
+        paragraphs: [
+          "1 cubic yard is 27 cubic feet, or about 765 liters. Divide liters by 765 to estimate cubic yards when comparing bagged to bulk soil.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        bullets: [
+          "Using bag weight instead of volume for coverage.",
+          "Forgetting to round up to whole bags.",
+          "Skipping a small buffer for leveling or settling.",
+        ],
+      },
     ],
     related: [
       { label: "Topsoil bags calculator", href: "/en/calculators/home-improvement/topsoil-bags" },
@@ -4237,6 +4590,19 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Planning tip",
         paragraphs: [
           "Estimate base stone and bedding sand separately. Do not compensate for a weak base by adding more sand.",
+        ],
+      },
+      {
+        heading: "Typical bedding thickness",
+        bullets: [
+          "Bedding sand is usually a thin layer (often about 1/2 to 1 inch).",
+          "Do not use bedding sand to correct major grade issues.",
+        ],
+      },
+      {
+        heading: "Base prep is the real leveling step",
+        paragraphs: [
+          "If the base is soft, wet, or uneven, pavers will settle and the surface will fail. Fix the base, then use sand only for final bedding and screeding.",
         ],
       },
     ],
@@ -4276,6 +4642,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Slope and racking notes",
+        bullets: [
+          "Racked panels follow slope but may require special products or limits on slope.",
+          "Stepped panels create gaps and usually need extra cut planning.",
+          "Picket fences are more flexible on slopes but add labor and waste.",
+        ],
+      },
+      {
         heading: "Picket estimating (spacing drives the count)",
         paragraphs: [
           "With pickets, the count depends on picket width and the gap you choose. Small spacing changes add up across long runs. You also have more cut waste on slopes, corners, and around gates.",
@@ -4298,6 +4672,12 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Planning tip",
         paragraphs: [
           "Decide style first. Panel math and picket math differ, and switching late can invalidate your estimate.",
+        ],
+      },
+      {
+        heading: "Quick example",
+        paragraphs: [
+          "Example: a 96 ft run with 8 ft panels is 12 panels. Add posts for both ends, any corners, and any gates before finalizing the post count.",
         ],
       },
     ],
@@ -4589,6 +4969,12 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         ],
       },
       {
+        heading: "Off-center drain adjustment",
+        paragraphs: [
+          "If the drain is not centered, the longest run controls the perimeter thickness. Use the longest wall distance when calculating slope.",
+        ],
+      },
+      {
         heading: "Average thickness (the key input)",
         paragraphs: [
           "Average thickness = (perimeter thickness + drain thickness) / 2. Use this average for volume math.",
@@ -4596,6 +4982,13 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         bullets: [
           "If the drain is off-center, use the longest run to find perimeter thickness.",
           "Measure at multiple walls; the thickest point drives volume most.",
+        ],
+      },
+      {
+        heading: "Minimum thickness at drain",
+        bullets: [
+          "Confirm the minimum thickness allowed by your system (liner, bonding flange, or foam base).",
+          "Some systems require a minimum at the drain for strength and slope stability.",
         ],
       },
       {
@@ -4703,6 +5096,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Pattern repeat matters",
         paragraphs: [
           "If the wallpaper has a repeat, usable length per roll drops. Manufacturer strips-per-roll guidance is often the safest method.",
+        ],
+      },
+      {
+        heading: "When subtracting helps",
+        bullets: [
+          "Large openings that remove most of a wall section.",
+          "Rooms with minimal pattern repeat and simple layouts.",
+          "When you are close to a roll boundary and want a tighter estimate.",
+        ],
+      },
+      {
+        heading: "Quick method",
+        paragraphs: [
+          "Start with total wall area, subtract only large openings, then add a realistic waste factor for pattern matching and mistakes. If the manufacturer provides strips-per-roll, use that instead of a pure area method.",
         ],
       },
     ],
@@ -4989,6 +5396,12 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Confirm the tile module (tile size + grout joint) and dry-lay a few rows.",
           "Shift the layout to reduce sliver cuts at the most visible walls.",
           "If you have borders or mosaics, estimate those as separate materials.",
+        ],
+      },
+      {
+        heading: "Keep spares for repairs",
+        paragraphs: [
+          "Tile lines get discontinued. Keeping at least one extra box from the same dye lot saves headaches later.",
         ],
       },
       {
@@ -5459,6 +5872,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         paragraphs: [
           "Corners, ends, and gates require extra posts and often extra bracing. If you do not plan these explicitly, you will under-buy posts and concrete.",
           "Post depth is driven by fence height and local frost line guidance. Depth affects post length and concrete needs.",
+        ],
+      },
+      {
+        heading: "Corner bracing and end posts",
+        bullets: [
+          "Corners and ends often need heavier posts or additional bracing.",
+          "Plan extra concrete for gate posts and corner assemblies.",
+          "Brace before panels go up so alignment stays true.",
         ],
       },
       {
@@ -6051,6 +6472,31 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Edge containment and migration",
         paragraphs: [
           "Without containment, gravel migrates outward and thins. Edging and a stable base reduce long-term maintenance and keep depth consistent.",
+        ],
+      },
+      {
+        heading: "Crown and cross slope",
+        paragraphs: [
+          "A slight crown or cross slope moves water off the surface. Standing water breaks down the base and creates ruts.",
+        ],
+        bullets: [
+          "Keep water moving away from the center of the drive or path.",
+          "Fix low spots before adding new gravel.",
+        ],
+      },
+      {
+        heading: "Edge options",
+        bullets: [
+          "Steel or plastic edging for paths and beds.",
+          "Timber or concrete curbs for driveways and heavy traffic.",
+          "Natural shoulder with compacted base if edging is not possible.",
+        ],
+      },
+      {
+        heading: "Maintenance cadence",
+        bullets: [
+          "Regrade and compact after heavy rains or snow seasons.",
+          "Top up only after drainage and base issues are addressed.",
         ],
       },
       {
