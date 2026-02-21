@@ -56,7 +56,7 @@ export function ConcreteCalculator() {
     defaultPricePerYd,
   );
 
-  const { cubicYards, cost } = useMemo(() => {
+  const { baseCubicYards, wasteCubicYards, cubicYards, cost } = useMemo(() => {
     const lengthFtValue =
       unitSystem === "metric" ? mToFt(parseNumber(lengthFt)) : parseNumber(lengthFt);
     const widthFtValue =
@@ -164,6 +164,30 @@ export function ConcreteCalculator() {
 
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.baseCubicMeters")
+                : t("results.baseCubicYards")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(cubicYardsToCubicMeters(baseCubicYards), 2)
+                : formatNumber(baseCubicYards, 2)
+            }
+          />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.wasteCubicMeters")
+                : t("results.wasteCubicYards")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(cubicYardsToCubicMeters(wasteCubicYards), 2)
+                : formatNumber(wasteCubicYards, 2)
+            }
+          />
           <CalculatorResultRow
             label={
               unitSystem === "metric"

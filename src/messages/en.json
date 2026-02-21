@@ -1655,6 +1655,12 @@
   },
   "results": {
    "title": "Results",
+   "baseSqFt": "Base area (sq ft)",
+   "baseM2": "Base area (m²)",
+   "wasteSqFt": "Waste buffer (sq ft)",
+   "wasteM2": "Waste buffer (m²)",
+   "neededSqFt": "Total area (sq ft)",
+   "neededM2": "Total area (m²)",
    "sheets": "Estimated sheets",
    "cost": "Estimated cost"
   },
@@ -1715,6 +1721,10 @@
   },
   "results": {
    "title": "Results",
+   "baseCubicYards": "Base volume (cubic yards)",
+   "baseCubicMeters": "Base volume (cubic meters)",
+   "wasteCubicYards": "Waste buffer (cubic yards)",
+   "wasteCubicMeters": "Waste buffer (cubic meters)",
    "cubicYards": "Estimated cubic yards",
    "cubicMeters": "Estimated cubic meters",
    "cost": "Estimated cost"
@@ -1745,6 +1755,10 @@
   },
   "results": {
    "title": "Results",
+   "baseCubicYards": "Base volume (cubic yards)",
+   "baseCubicMeters": "Base volume (cubic meters)",
+   "wasteCubicYards": "Waste buffer (cubic yards)",
+   "wasteCubicMeters": "Waste buffer (cubic meters)",
    "cubicYards": "Estimated cubic yards",
    "cubicMeters": "Estimated cubic meters",
    "cost": "Estimated cost"
@@ -1897,6 +1911,10 @@
   },
   "results": {
    "title": "Results",
+   "baseCubicYards": "Base volume (cubic yards)",
+   "baseCubicMeters": "Base volume (cubic meters)",
+   "wasteCubicYards": "Waste buffer (cubic yards)",
+   "wasteCubicMeters": "Waste buffer (cubic meters)",
    "cubicYards": "Estimated cubic yards",
    "cubicMeters": "Estimated cubic meters",
    "cost": "Estimated cost"
@@ -2567,6 +2585,10 @@
   },
   "results": {
    "title": "Results",
+   "baseCubicYards": "Base volume (cubic yards)",
+   "baseCubicMeters": "Base volume (cubic meters)",
+   "wasteCubicYards": "Waste buffer (cubic yards)",
+   "wasteCubicMeters": "Waste buffer (cubic meters)",
    "cubicYards": "Estimated cubic yards",
    "cubicMeters": "Estimated cubic meters",
    "cost": "Estimated cost"

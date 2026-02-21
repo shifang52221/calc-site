@@ -1231,9 +1231,9 @@
       "baseM2": "基礎面積（m²）",
       "wasteSqFt": "損耗緩衝（平方英尺）",
       "wasteM2": "損耗緩衝（m²）",
-      "neededM2": "預估需要面積（m²）",
+      "neededM2": "總面積（m²）",
       "title": "結果",
-      "neededSqFt": "預估需要面積（平方英尺）",
+      "neededSqFt": "總面積（平方英尺）",
       "cost": "預估費用"
     },
     "faqTitle": "常見問題",
@@ -1265,9 +1265,9 @@
       "wasteSqFt": "損耗緩衝（平方英尺）",
       "wasteM2": "損耗緩衝（m²）",
       "boxesExact": "所需箱數（精確）",
-      "neededM2": "預估需要面積（m²）",
+      "neededM2": "總面積（m²）",
       "title": "結果",
-      "neededSqFt": "預估需要面積（平方英尺）",
+      "neededSqFt": "總面積（平方英尺）",
       "boxes": "預估箱數",
       "cost": "預估費用"
     },
@@ -1338,6 +1338,12 @@
     },
     "results": {
       "title": "結果",
+      "baseSqFt": "基礎面積（平方英尺）",
+      "baseM2": "基礎面積（m²）",
+      "wasteSqFt": "損耗緩衝（平方英尺）",
+      "wasteM2": "損耗緩衝（m²）",
+      "neededSqFt": "總面積（平方英尺）",
+      "neededM2": "總面積（m²）",
       "sheets": "預估片數",
       "cost": "預估費用"
     },
@@ -1367,8 +1373,8 @@
     "results": {
       "title": "結果",
       "bags": "預估袋數",
-      "neededSqFt": "總覆蓋需求 (ft2)",
-      "neededM2": "總覆蓋需求 (m2)"
+      "neededSqFt": "總面積（平方英尺）",
+      "neededM2": "總面積（m²）"
     },
     "faqTitle": "常見問題",
     "faq": {
@@ -1399,6 +1405,10 @@
     "results": {
       "cubicMeters": "預估立方公尺數",
       "title": "結果",
+      "baseCubicYards": "基礎體積（立方碼）",
+      "baseCubicMeters": "基礎體積（立方公尺）",
+      "wasteCubicYards": "損耗緩衝（立方碼）",
+      "wasteCubicMeters": "損耗緩衝（立方公尺）",
       "cubicYards": "預估立方碼",
       "cost": "預估費用"
     },
@@ -1429,6 +1439,10 @@
     "results": {
       "cubicMeters": "預估立方公尺數",
       "title": "結果",
+      "baseCubicYards": "基礎體積（立方碼）",
+      "baseCubicMeters": "基礎體積（立方公尺）",
+      "wasteCubicYards": "損耗緩衝（立方碼）",
+      "wasteCubicMeters": "損耗緩衝（立方公尺）",
       "cubicYards": "預估立方碼",
       "cost": "預估費用"
     },
@@ -1580,6 +1594,10 @@
     "results": {
       "cubicMeters": "預估立方公尺數",
       "title": "結果",
+      "baseCubicYards": "基礎體積（立方碼）",
+      "baseCubicMeters": "基礎體積（立方公尺）",
+      "wasteCubicYards": "損耗緩衝（立方碼）",
+      "wasteCubicMeters": "損耗緩衝（立方公尺）",
       "cubicYards": "預估立方碼",
       "cost": "預估費用"
     },
@@ -2250,6 +2268,10 @@
     "results": {
       "cubicMeters": "預估立方公尺數",
       "title": "結果",
+      "baseCubicYards": "基礎體積（立方碼）",
+      "baseCubicMeters": "基礎體積（立方公尺）",
+      "wasteCubicYards": "損耗緩衝（立方碼）",
+      "wasteCubicMeters": "損耗緩衝（立方公尺）",
       "cubicYards": "預估立方碼",
       "cost": "預估費用"
     },

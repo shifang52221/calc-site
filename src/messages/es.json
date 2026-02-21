@@ -1545,8 +1545,8 @@
         "baseM2": "Área base (m²)",
         "wasteSqFt": "Merma (pies²)",
         "wasteM2": "Merma (m²)",
-        "neededSqFt": "Pies² estimados necesarios",
-        "neededM2": "m² estimados necesarios",
+        "neededSqFt": "Área total (pies²)",
+        "neededM2": "Área total (m²)",
         "cost": "Costo estimado"
       },
     "faqTitle": "Preguntas frecuentes",
@@ -1578,8 +1578,8 @@
         "baseM2": "Área base (m²)",
         "wasteSqFt": "Merma (pies²)",
         "wasteM2": "Merma (m²)",
-        "neededSqFt": "Pies² estimados necesarios",
-        "neededM2": "m² estimados necesarios",
+        "neededSqFt": "Área total (pies²)",
+        "neededM2": "Área total (m²)",
         "boxesExact": "Cajas necesarias (exacto)",
         "boxes": "Cajas estimadas",
         "cost": "Costo estimado"
@@ -1651,6 +1651,12 @@
     },
     "results": {
       "title": "Resultados",
+      "baseSqFt": "Área base (pies²)",
+      "baseM2": "Área base (m²)",
+      "wasteSqFt": "Merma (pies²)",
+      "wasteM2": "Merma (m²)",
+      "neededSqFt": "Área total (pies²)",
+      "neededM2": "Área total (m²)",
       "sheets": "Placas estimadas",
       "cost": "Costo estimado"
     },
@@ -1680,8 +1686,8 @@
     "results": {
       "title": "Resultados",
       "bags": "Bolsas estimadas",
-      "neededSqFt": "Cobertura total necesaria (ft2)",
-      "neededM2": "Cobertura total necesaria (m2)"
+      "neededSqFt": "Área total (pies²)",
+      "neededM2": "Área total (m²)"
     },
     "faqTitle": "FAQ",
     "faq": {
@@ -1711,6 +1717,10 @@
     },
     "results": {
       "title": "Resultados",
+      "baseCubicYards": "Volumen base (yardas cúbicas)",
+      "baseCubicMeters": "Volumen base (metros cúbicos)",
+      "wasteCubicYards": "Merma (yardas cúbicas)",
+      "wasteCubicMeters": "Merma (metros cúbicos)",
       "cubicYards": "Yardas cúbicas estimadas",
       "cubicMeters": "Metros cúbicos estimados",
       "cost": "Costo estimado"
@@ -1741,6 +1751,10 @@
     },
     "results": {
       "title": "Resultados",
+      "baseCubicYards": "Volumen base (yardas cúbicas)",
+      "baseCubicMeters": "Volumen base (metros cúbicos)",
+      "wasteCubicYards": "Merma (yardas cúbicas)",
+      "wasteCubicMeters": "Merma (metros cúbicos)",
       "cubicYards": "Yardas cúbicas estimadas",
       "cubicMeters": "Metros cúbicos estimados",
       "cost": "Costo estimado"
@@ -1893,6 +1907,10 @@
     },
     "results": {
       "title": "Resultados",
+      "baseCubicYards": "Volumen base (yardas cúbicas)",
+      "baseCubicMeters": "Volumen base (metros cúbicos)",
+      "wasteCubicYards": "Merma (yardas cúbicas)",
+      "wasteCubicMeters": "Merma (metros cúbicos)",
       "cubicYards": "Yardas cúbicas estimadas",
       "cubicMeters": "Metros cúbicos estimados",
       "cost": "Costo estimado"
@@ -2563,6 +2581,10 @@
     },
     "results": {
       "title": "Resultados",
+      "baseCubicYards": "Volumen base (yardas cúbicas)",
+      "baseCubicMeters": "Volumen base (metros cúbicos)",
+      "wasteCubicYards": "Merma (yardas cúbicas)",
+      "wasteCubicMeters": "Merma (metros cúbicos)",
       "cubicYards": "Yardas cúbicas estimadas",
       "cubicMeters": "Metros cúbicos estimados",
       "cost": "Costo estimado"

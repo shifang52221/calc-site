@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import { useTranslations } from "next-intl";
 
 import { calculateDrywall } from "./calc";
-import { formatCurrencyUSD } from "@/lib/format";
+import { formatCurrencyUSD, formatNumber } from "@/lib/format";
 import { useQueryParamState } from "@/lib/useQueryParamState";
 import { CalculatorCard } from "@/components/calculator/CalculatorCard";
 import { CalculatorField } from "@/components/calculator/CalculatorField";
@@ -47,7 +47,7 @@ export function DrywallCalculator() {
     defaultPricePerSheet,
   );
 
-  const { sheets, cost } = useMemo(() => {
+  const { baseAreaSqFt, wasteSqFt, neededSqFt, sheets, cost } = useMemo(() => {
     const areaSqFtValue =
       unitSystem === "metric" ? m2ToSqFt(parseNumber(areaSqFt)) : parseNumber(areaSqFt);
     const sheetCoverageSqFt =
@@ -135,6 +135,42 @@ export function DrywallCalculator() {
 
       <CalculatorCard title={t("results.title")}>
         <CalculatorResultList>
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.baseM2")
+                : t("results.baseSqFt")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(baseAreaSqFt), 2)
+                : formatNumber(baseAreaSqFt, 1)
+            }
+          />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.wasteM2")
+                : t("results.wasteSqFt")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(wasteSqFt), 2)
+                : formatNumber(wasteSqFt, 1)
+            }
+          />
+          <CalculatorResultRow
+            label={
+              unitSystem === "metric"
+                ? t("results.neededM2")
+                : t("results.neededSqFt")
+            }
+            value={
+              unitSystem === "metric"
+                ? formatNumber(sqFtToM2(neededSqFt), 2)
+                : formatNumber(neededSqFt, 1)
+            }
+          />
           <CalculatorResultRow label={t("results.sheets")} value={sheets} />
           {typeof cost === "number" ? (
             <CalculatorResultRow
