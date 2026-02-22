@@ -1776,11 +1776,11 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "What mulch depth is typical?",
-   "a1": "Many beds use 2-4 inches. Follow plant and climate recommendations.",
+   "a1": "Many beds use 2-3 inches; paths or play areas may need more. For top-ups over existing mulch, a thinner layer is common.",
    "q2": "How do I calculate cubic yards of mulch?",
-   "a2": "Cubic yards = area (sq ft) x depth (in) / 324. Example: 500 sq ft at 3\" depth is about 4.63 yd³ before waste. If you're ordering in bulk, round up to match delivery minimums (project dependent).",
+   "a2": "Cubic yards = area (sq ft) x depth (in) / 324. Use average depth from multiple measurements and round up for irregular shapes.",
    "q3": "Should I add extra mulch?",
-   "a3": "Usually yes. Mulch settles after spreading and watering, and bed edges/low spots use more material than a perfectly flat rectangle. 5-10% is a common buffer."
+   "a3": "Usually yes. Mulch settles after spreading and watering, and bed edges use more material. 5-10% is a common buffer, and buying enough at once helps match color."
   }
  }
  ,
@@ -1944,11 +1944,11 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "What gravel depth should I use?",
-   "a1": "It depends on the application. Many paths and beds use a few inches, while driveways and base layers often need more depth and proper compaction. Use an average finished depth and follow local/supplier recommendations (project dependent).",
+   "a1": "It depends on the application. Many paths and top layers use a few inches, while driveways and base layers often need more depth and proper compaction. Estimate base and top layers separately and use finished (compacted) depth.",
    "q2": "How do I calculate cubic yards of gravel?",
-   "a2": "Cubic yards = area (sq ft) x depth (in) / 324. For irregular shapes, break the area into rectangles, add them up, then use the same formula and round up slightly.",
+   "a2": "Cubic yards = area (sq ft) x depth (in) / 324. Use average depth from multiple measurements, and split the math by layer if you are building a base plus a top layer.",
    "q3": "How much extra gravel should I order?",
-   "a3": "A small buffer helps cover compaction, grading variation, and delivery minimums. If you have lots of edges, transitions, or low spots, consider a higher buffer (project dependent)."
+   "a3": "Plan 5-10% for compaction, grading variation, and edge loss. Irregular shapes, soft subgrade, or delivery minimums often require more."
   }
  },
  "sand": {
@@ -2208,11 +2208,11 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "What is a board foot?",
-   "a1": "A board foot is a unit of lumber volume equal to a board 1 inch thick, 12 inches wide, and 12 inches long.",
+   "a1": "A board foot is a volume unit equal to 1 in x 12 in x 12 in (1/12 cubic foot). Lumber is often priced per board foot, especially hardwoods.",
    "q2": "How do I calculate board feet?",
-   "a2": "Board feet = thickness (in) x width (in) x length (ft) / 12, then multiply by quantity. For best accuracy, use actual dimensions (not nominal).",
+   "a2": "Board feet = thickness (in) x width (in) x length (ft) / 12, then multiply by quantity. Use actual dimensions and convert quarters (4/4 = 1 in, 5/4 = 1.25 in) for accuracy.",
    "q3": "Why add waste?",
-   "a3": "Waste helps cover defects, knots, cuts, and a few mistakes. 5-10% is common depending on the project."
+   "a3": "Waste covers defects, knots, milling loss, and your cut plan. Add more if you need clear or color-matched boards."
   }
  },
  "mulchBags": {
@@ -2299,11 +2299,11 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How many 80 lb bags of concrete do I need?",
-   "a1": "Enter your area and thickness, then choose 80 lb bags. The calculator converts volume to bags using the yield per bag and rounds up. Example: a 10 ft x 10 ft slab at 4\" is about 33.3 cu ft; if your 80 lb bag yields ~0.6 cu ft, that's ~56 bags before waste (check your bag label).",
+   "a1": "Enter your area and thickness, then choose 80 lb bags. The calculator converts volume to bags using the yield per bag and rounds up. Example: a 10 ft x 10 ft slab at 4 in is about 33.3 cu ft; if your 80 lb bag yields about 0.6 cu ft, that is about 56 bags before waste (check your bag label).",
    "q2": "Why do different bag sizes give different results?",
-   "a2": "Different bag weights have different yields (cubic feet per bag). Always confirm yield on the product label.",
+   "a2": "Bag weight is not the same as yield. Different sizes and mix types have different cubic feet per bag, so always use the product label yield.",
    "q3": "Should I add waste?",
-   "a3": "Yes. Spillage, uneven subgrade, and mixing losses can add up. 5-10% is a common buffer."
+   "a3": "Yes. Spillage, uneven subgrade, and rounding to whole bags can add up. 5-10% is a common buffer."
   }
  },
  "studs": {
@@ -2353,9 +2353,9 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How do I estimate studs for a wall?",
-   "a1": "A simple starting point is studs ≈ wall length / spacing + 1 (per wall run), then add extras for corners and openings. Real framing rules vary by layout and code, so use this as a planning estimate (project dependent).",
+   "a1": "A simple starting point is studs ≈ wall length / spacing + 1 (per wall run), then add extras for corners, T-walls, and openings. Treat this as a planning estimate.",
    "q2": "Do doors and windows add studs?",
-   "a2": "Yes. Openings typically add king/jack studs and headers. This calculator lets you add extra studs per opening as a simple estimate.",
+   "a2": "Yes. Openings typically add king and jack studs, a header, and often cripples. Add extra studs per opening based on your framing detail.",
    "q3": "Is this accurate for load-bearing walls?",
    "a3": "Use this as a planning estimate only. Always follow local code and engineering requirements for structural walls."
   }
@@ -2654,11 +2654,11 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "What topsoil depth is typical?",
-   "a1": "It depends on the project. Many lawns use a thin layer; raised beds often use more.",
+   "a1": "It depends on the project. Lawns often use a thin topdressing, leveling low spots may be thicker, and garden beds often use several inches. Use an average depth across the area.",
    "q2": "Why cubic yards (yd³)?",
-   "a2": "Bulk topsoil is commonly sold by the cubic yard. Convert area and average depth to cubic feet, then divide by 27 to get cubic yards (yd³).",
+   "a2": "Bulk topsoil is commonly sold by the cubic yard. Convert area and average depth to cubic feet, then divide by 27 to get cubic yards.",
    "q3": "Should I add waste?",
-   "a3": "A buffer helps account for settling and uneven areas."
+   "a3": "Yes. A buffer helps account for settling, feathering edges, and uneven areas. Delivery minimums can also force rounding up."
   }
  }
 }

@@ -112,6 +112,35 @@ const REFERENCES_EN: Partial<Record<CalculatorId, ReferenceBlock>> = {
     ],
     related: [{ label: "Concrete guide", href: "/en/guides/home-improvement/concrete" }],
   },
+  boardFeet: {
+    title: "Board feet quick reference",
+    intro:
+      "Board feet is a volume unit for lumber pricing. Use actual thickness and width for accuracy, especially for surfaced boards.",
+    bullets: [
+      "Formula: board feet = thickness (in) x width (in) x length (ft) / 12.",
+      "Convert quarters first (4/4 = 1 in, 5/4 = 1.25 in, 8/4 = 2 in).",
+      "Add waste for defects, cutoffs, and grain matching on visible work.",
+    ],
+    related: [
+      { label: "Board feet explained", href: "/en/resources/board-feet-explained" },
+      { label: "Material overage guide", href: "/en/resources/material-overage-planning-guide" },
+    ],
+  },
+  studs: {
+    title: "Stud count quick checks",
+    intro:
+      "Spacing gives you baseline studs, but openings and corners add extras. Plan plates separately.",
+    bullets: [
+      "Add studs for each opening (king + jack studs, plus cripples as needed).",
+      "Corners and T-walls add studs beyond simple spacing math.",
+      "Plates need overlap on studs and create their own waste.",
+    ],
+    related: [
+      { label: "Stud spacing 16 vs 24", href: "/en/resources/stud-spacing-16-vs-24-on-center" },
+      { label: "Corners and openings guide", href: "/en/resources/studs-corners-and-openings-guide" },
+      { label: "Stud plates planning", href: "/en/resources/stud-plates-lumber-planning" },
+    ],
+  },
   roofing: {
     title: "Roofing squares and bundles (quick)",
     intro:
@@ -146,7 +175,10 @@ const REFERENCES_EN: Partial<Record<CalculatorId, ReferenceBlock>> = {
       "Ask your supplier for density and yd³↔ton conversion for the exact product.",
       "Edge irregularities and compaction usually require a buffer.",
     ],
-    related: [{ label: "Gravel tons guide", href: "/en/guides/home-improvement/gravel-tons" }],
+    related: [
+      { label: "Gravel tons guide", href: "/en/guides/home-improvement/gravel-tons" },
+      { label: "Yards to tons guide", href: "/en/resources/gravel-yards-to-tons-guide" },
+    ],
   },
   mulch: {
     title: "Mulch depth quick guide",
@@ -164,7 +196,10 @@ const REFERENCES_EN: Partial<Record<CalculatorId, ReferenceBlock>> = {
       "Mulch settles after rain/watering—final depth is lower than spread depth.",
       "Avoid mulch volcanoes: keep mulch off tree trunks.",
     ],
-    related: [{ label: "Mulch depth guide", href: "/en/guides/home-improvement/mulch-depth" }],
+    related: [
+      { label: "Mulch depth guide", href: "/en/guides/home-improvement/mulch-depth" },
+      { label: "Mulch coverage chart", href: "/en/resources/mulch-coverage-chart" },
+    ],
   },
   topsoil: {
     title: "Topsoil depth planning (quick)",
@@ -180,7 +215,10 @@ const REFERENCES_EN: Partial<Record<CalculatorId, ReferenceBlock>> = {
     },
     example:
       "Example: 1,000 sq ft at 2 inches is ~6.17 cu yd (before waste and settling). Round up for leveling and compaction.",
-    related: [{ label: "Topsoil leveling guide", href: "/en/guides/home-improvement/topsoil-leveling" }],
+    related: [
+      { label: "Topsoil leveling guide", href: "/en/guides/home-improvement/topsoil-leveling" },
+      { label: "Topsoil coverage chart", href: "/en/resources/topsoil-coverage-chart" },
+    ],
   },
   wallpaperRolls: {
     title: "Wallpaper roll planning notes (quick)",
