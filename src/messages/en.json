@@ -1601,10 +1601,10 @@
   }
  },
  "deckMud": {
-  "metaTitle": "Deck Mud Calculator (Dry Pack Mortar)",
-  "metaDescription": "Estimate deck mud (dry pack mortar) needed from area, thickness, waste/overage, and sand-to-cement ratio. Includes a quick deck mud coverage chart in square feet.",
+  "metaTitle": "Deck Mud Calculator (Sq Ft Coverage & Dry Pack Volume)",
+  "metaDescription": "Estimate deck mud (dry pack mortar) from square feet, thickness, waste, and mix ratio. Includes a quick deck mud coverage chart for shower and tile mortar beds.",
   "title": "Deck Mud Calculator",
-  "subtitle": "Estimate dry pack mortar (deck mud) by square feet and thickness. Adjust waste and mix ratio.",
+  "subtitle": "Estimate dry pack mortar by square feet, thickness, waste, and mix ratio.",
   "inputs": {
    "areaSqFt": "Area (sq ft)",
    "areaM2": "Area (m2)",
@@ -1641,7 +1641,7 @@
    "q1": "What is deck mud?",
    "a1": "Deck mud (dry pack mortar) is a sand-and-cement mix used for mortar beds, often for shower pans and tile underlayment.",
    "q2": "How do I calculate deck mud coverage (sq ft)?",
-   "a2": "Deck mud is a volume estimate: volume (cu ft) = area (sq ft) x thickness (in) / 12. If the bed is sloped (common for showers), thickness is not uniform-use an average thickness, then add a buffer for waste and cleanup.",
+   "a2": "Use this deck mud calculator with volume math: volume (cu ft) = area (sq ft) x thickness (in) / 12. For sloped shower pans, use average thickness, then add a buffer for waste and cleanup.",
    "q3": "What mix ratio should I use for deck mud (dry pack)?",
    "a3": "Many mixes use 5:1 sand-to-cement by volume as a starting point, but systems vary. Follow your waterproofing/drain system guidance and local practice for minimum thickness and mix requirements (project dependent)."
   }
@@ -2361,10 +2361,10 @@
   }
  },
  "baseboardTrim": {
-  "metaTitle": "Baseboard & Trim Calculator (Linear Feet & Pieces)",
-  "metaDescription": "Estimate baseboard/trim linear feet and pieces to buy from wall length, doors, waste, and stock length, with optional cost.",
+  "metaTitle": "Baseboard Calculator (Linear Feet, Pieces & Waste)",
+  "metaDescription": "Estimate baseboard linear feet and pieces from wall length, door openings, stock length, and waste. Useful for 8 ft or 12 ft trim planning with optional cost.",
   "title": "Baseboard & Trim Calculator",
-  "subtitle": "Estimate linear feet (or meters), pieces to buy, and optional cost.",
+  "subtitle": "Estimate baseboard linear feet, piece count, and optional cost.",
   "inputs": {
    "wallLengthFt": "Total wall length (ft)",
    "wallLengthM": "Total wall length (m)",
@@ -2392,11 +2392,11 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Do I subtract doors for baseboard?",
-   "a1": "Usually yes. Baseboard typically stops at the door casing, so subtracting door openings helps avoid overbuying.",
+   "a1": "Usually yes. Baseboard typically stops at door casing, so subtracting door openings improves linear feet accuracy and helps avoid overbuying.",
    "q2": "What piece length should I choose?",
-   "a2": "Use the stock length you plan to buy (commonly 8 ft or 12 ft). Longer pieces can reduce seams but may be harder to transport. Pieces are estimated by dividing total trim length (after waste) by piece length and rounding up.",
+   "a2": "Use the stock length you plan to buy (commonly 8 ft or 12 ft). Longer pieces reduce seams but are harder to transport. Piece count = total trim length (after waste) divided by piece length, rounded up.",
    "q3": "How much waste should I add?",
-   "a3": "5-10% is common. Add more for lots of corners, complex rooms, or if you're new to trim work."
+   "a3": "5-10% is common. Use more for many corners, short walls, scarf joints, or first-time trim installs."
   }
  },
  "topsoilBags": {
