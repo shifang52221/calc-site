@@ -5454,6 +5454,28 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         },
       },
       {
+        heading: "Bathroom and kitchen tile waste (quick ranges)",
+        table: {
+          columns: ["Scenario", "Typical waste", "Why it changes"],
+          rows: [
+            ["Simple bathroom floor", "10-12%", "Toilet flange and perimeter cuts"],
+            ["Shower walls with niches", "15-20%", "More corners, penetrations, trim details"],
+            ["Kitchen backsplash", "10-15%", "Outlets and edge cuts increase offcuts"],
+          ],
+        },
+      },
+      {
+        heading: "Should you buy one extra box?",
+        paragraphs: [
+          "If your estimate lands near a box boundary, one extra box can reduce risk and avoid dye-lot mismatch later.",
+          "Extra boxes are especially useful for patterns, natural stone, and discontinued styles where matching later is difficult.",
+        ],
+        bullets: [
+          "Confirm return policy for unopened boxes before you buy extra.",
+          "Keep the lot or batch number in your project notes for future repairs.",
+        ],
+      },
+      {
         heading: "Layout checkpoint (before you buy)",
         bullets: [
           "Confirm the tile module (tile size + grout joint) and dry-lay a few rows.",
@@ -5721,6 +5743,25 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             ["12x16 ft", "8 ft", "448 sq ft"],
           ],
         },
+      },
+      {
+        heading: "Utility room and laundry room examples",
+        table: {
+          columns: ["Room size (8 ft walls)", "Wall area", "4x8 sheets with 12% waste"],
+          rows: [
+            ["6x8 ft", "224 sq ft", "8"],
+            ["8x8 ft", "256 sq ft", "9"],
+            ["8x10 ft", "288 sq ft", "11"],
+          ],
+        },
+      },
+      {
+        heading: "Should you subtract doors and windows?",
+        bullets: [
+          "For quick planning, many people keep openings in the total and rely on waste.",
+          "Subtract only large openings if you need a tighter estimate near a sheet boundary.",
+          "Small openings often do not reduce purchase count after rounding to whole sheets.",
+        ],
       },
       {
         heading: "Seams, corners, and repairs (why area alone is not enough)",

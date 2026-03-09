@@ -9,6 +9,7 @@ import { CalculatorRelatedSection } from "@/components/CalculatorRelatedSection"
 import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
 import { CalculatorContent } from "@/components/CalculatorContent";
+import { CalculatorReferenceSection } from "@/components/CalculatorReferenceSection";
 import { CalculatorSeoJsonLd } from "@/components/CalculatorSeoJsonLd";
 import { routes } from "@/lib/routes";
 
@@ -165,6 +166,8 @@ export default async function DeckMudPage({
           ))}
         </div>
       </section>
+
+      <CalculatorReferenceSection locale={locale} calculatorId="deckMud" />
 
       <CalculatorRelatedSection locale={locale} calculatorId="deckMud" />
 
