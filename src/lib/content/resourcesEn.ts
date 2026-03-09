@@ -21,9 +21,9 @@
 export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
   {
     slug: "deck-mud-coverage-chart",
-    title: "Deck mud coverage chart (dry pack mortar)",
+    title: "Deck Mud Coverage Chart (How Much Dry Pack Do I Need?)",
     description:
-      "Quick deck mud coverage table, mixing notes, and practical tips for estimating dry pack mortar by area and thickness.",
+      "Deck mud coverage chart with area-to-volume examples, shower pan average-thickness math, and bag planning tips for dry pack mortar.",
     lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
@@ -791,6 +791,17 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             "Example: 120 sq ft room at 12% waste = 134.4 sq ft. If a box covers 13.6 sq ft, you need 9.88, which rounds to 10 boxes.",
           ],
         },
+      {
+        heading: "Scenario comparison: 10% vs 15% waste",
+        table: {
+          columns: ["Base area", "With 10% waste", "With 15% waste", "Difference"],
+          rows: [
+            ["80 sq ft", "88 sq ft", "92 sq ft", "+4 sq ft"],
+            ["120 sq ft", "132 sq ft", "138 sq ft", "+6 sq ft"],
+            ["200 sq ft", "220 sq ft", "230 sq ft", "+10 sq ft"],
+          ],
+        },
+      },
         {
           heading: "Walls vs floors (quick reminder)",
           bullets: [
@@ -2670,6 +2681,17 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             "Ceilings often need different thickness (1/2 vs 5/8) and can increase waste because of handling.",
             "Plan extra sheets if you want long, unbroken runs to reduce seams.",
           ],
+        },
+        {
+          heading: "Room-size quick sheet counts (with 12% waste)",
+          table: {
+            columns: ["Room (8 ft wall height)", "4x8 sheets", "4x10 sheets", "4x12 sheets"],
+            rows: [
+              ["10x10 ft walls (320 sq ft)", "12", "9", "8"],
+              ["12x12 ft walls (384 sq ft)", "14", "11", "9"],
+              ["12x16 ft walls (448 sq ft)", "16", "13", "11"],
+            ],
+          },
         },
       ],
     related: [

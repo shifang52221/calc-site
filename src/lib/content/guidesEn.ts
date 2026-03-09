@@ -18,6 +18,8 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Example: A 12 x 14 ft room with 8 ft ceilings has about 416 sq ft of wall area (2 x (12 + 14) x 8). Two coats at 350 sq ft per gallon is 2.38 gallons, so buy 3 gallons, then add a small buffer if you want leftovers.",
       "Trim and doors are usually estimated separately. Measure linear feet of trim, multiply by an estimated paintable width, and round up because edges and profiles add area.",
       "If you are painting multiple rooms, box (mix) your paint in a larger bucket to keep color consistent and save labeled leftovers for touch-ups.",
+      "Application method changes real coverage. Sprayers are faster but usually need a larger buffer than rolling because of overspray and setup loss.",
+      "For whole-home repaint projects, estimate by room and product type first, then combine totals. This helps avoid overbuying specialty products like ceiling paint or trim enamel.",
     ],
     bullets: [
       "If you know the product, use the label coverage; don’t rely on generic averages.",
@@ -27,6 +29,8 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Sanding, patching, and caulk are often the difference between one and two finish coats.",
       "If you are changing sheen or painting over glossy surfaces, plan for more prep and possibly primer.",
       "Keep a labeled leftover can for touch-ups, especially with custom tints.",
+      "When in doubt, buy one extra gallon of the main wall color; matching custom tints later can be difficult.",
+      "Do not mix interior and exterior coverage assumptions; product solids and spread rates are different.",
     ],
   },
   "paint-ceiling": {
@@ -98,6 +102,8 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Layout modules (tile + grout joint) affect where cuts land. A small shift in layout can turn a room full of sliver cuts into larger, reusable offcuts.",
       "For tighter estimates, split floors, walls, and niches into separate line items; wall tile and niches usually create more waste than open floors.",
       "Apply waste before converting to boxes, and confirm the label units (sq ft vs sq m) so you don’t under-buy.",
+      "Caliber and shade variation also matter. If your tile has lot-to-lot variation, ordering enough in one batch reduces blending issues and future mismatch risk.",
+      "A practical strategy is to run a base estimate and a stress-case estimate. If both totals round to the same box count, your purchase risk is lower.",
     ],
     bullets: [
       "Use a higher waste factor for patterns, niches, and many penetrations.",
@@ -106,6 +112,8 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Measure a few tiles from different boxes; real tile size can vary slightly and shift your layout lines.",
       "Confirm box coverage and units before you convert to boxes.",
       "Estimate trims, mosaics, and edge profiles as separate line items.",
+      "For natural stone or heavily veined porcelain, increase overage to preserve visual matching.",
+      "Before ordering, confirm whether the supplier accepts returns on unopened boxes.",
     ],
   },
   drywall: {
@@ -115,6 +123,8 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Many corners, soffits, and odd shapes increase waste because more pieces are cut and fewer offcuts are reusable.",
       "If you’re doing ceilings, plan for lifts or extra help—handling choices often matter more than the last sheet in the estimate.",
       "If you are matching existing drywall, confirm thickness and edge profile before you order.",
+      "Scheduling affects waste too. If you can stage rooms in a consistent sequence, offcuts from one wall are easier to reuse on adjacent walls.",
+      "Separate board types before ordering (standard, moisture-resistant, fire-rated, mold-resistant). Mixed board specs are a common source of expensive re-orders.",
     ],
     bullets: [
       "Subtract large openings only if you want a tight estimate; waste often covers doors and windows.",
@@ -123,6 +133,8 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Plan for joint materials (tape, mud, corner bead) and fasteners as their own line items.",
       "Fire-rated areas may require specific board types and thicknesses.",
       "If sound control matters, confirm whether you need insulation, resilient channels, or specialty board.",
+      "Order enough sheets from the same production run when finish consistency matters.",
+      "Check delivery access and carrying path before choosing longer sheets.",
     ],
   },
   "drywall-ceiling": {

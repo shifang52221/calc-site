@@ -1601,8 +1601,8 @@
   }
  },
  "deckMud": {
-  "metaTitle": "Deck Mud Calculator (Sq Ft Coverage & Dry Pack Volume)",
-  "metaDescription": "Estimate deck mud (dry pack mortar) from square feet, thickness, waste, and mix ratio. Includes a quick deck mud coverage chart for shower and tile mortar beds.",
+  "metaTitle": "Deck Mud Calculator (How Much Dry Pack for Shower Pan?)",
+  "metaDescription": "Calculate deck mud volume, sand/cement split, and bag count from area and thickness. Useful for shower pans and tile mortar beds with waste included.",
   "title": "Deck Mud Calculator",
   "subtitle": "Estimate dry pack mortar by square feet, thickness, waste, and mix ratio.",
   "inputs": {
@@ -1639,16 +1639,16 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "What is deck mud?",
-   "a1": "Deck mud (dry pack mortar) is a sand-and-cement mix used for mortar beds, often for shower pans and tile underlayment.",
+   "a1": "Deck mud (dry pack mortar) is a low-water sand-and-cement mix used to form mortar beds, especially for shower pans and tile underlayment.",
    "q2": "How do I calculate deck mud coverage (sq ft)?",
-   "a2": "Use this deck mud calculator with volume math: volume (cu ft) = area (sq ft) x thickness (in) / 12. For sloped shower pans, use average thickness, then add a buffer for waste and cleanup.",
+   "a2": "Use volume math: volume (cu ft) = area (sq ft) x thickness (in) / 12. For sloped shower pans, estimate with average thickness, then add waste and round up.",
    "q3": "What mix ratio should I use for deck mud (dry pack)?",
-   "a3": "Many mixes use 5:1 sand-to-cement by volume as a starting point, but systems vary. Follow your waterproofing/drain system guidance and local practice for minimum thickness and mix requirements (project dependent)."
+   "a3": "5:1 sand-to-cement by volume is a common starting point, while some setups use 4:1. Follow your waterproofing/drain system guidance and local practice for required thickness and ratio."
   }
  },
  "drywall": {
-  "metaTitle": "Drywall Sheet Calculator (Sheetrock)",
-  "metaDescription": "Estimate how many drywall sheets (sheetrock) you need from area, sheet size, and a waste factor.",
+  "metaTitle": "Drywall Sheet Calculator (How Many 4x8, 4x10, 4x12 Sheets?)",
+  "metaDescription": "Estimate drywall sheet count from wall/ceiling area, sheet size, and waste. Compare 4x8, 4x10, and 4x12 sheets and round up to whole pieces.",
   "title": "Drywall Sheet Calculator",
   "subtitle": "Estimate how many drywall sheets you need. Adjust sheet coverage for 4x8, 4x10, or 4x12.",
   "inputs": {
@@ -1673,11 +1673,11 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How many drywall sheets (sheetrock) do I need?",
-   "a1": "Start with total wall/ceiling area, divide by sheet coverage (32, 40, or 48 sq ft), then add a waste factor and round up to whole sheets.",
+   "a1": "Measure total wall/ceiling area, divide by sheet coverage (32, 40, or 48 sq ft), add waste, then round up to whole sheets.",
    "q2": "What waste factor should I use?",
-   "a2": "10-15% is common depending on cuts and layout.",
+   "a2": "10-15% is common for simple rooms. Use 15-20% when layouts are complex, ceilings are included, or you expect more cutouts.",
    "q3": "Does this include screws or joint compound?",
-   "a3": "No. This estimates sheets only."
+   "a3": "No. This page estimates sheet count only; screws, tape, and compound are separate materials."
   }
  },
    "drywallTexture": {
