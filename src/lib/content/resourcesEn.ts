@@ -735,9 +735,9 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
   },
   {
     slug: "tile-waste-percentage-guide",
-    title: "Tile waste percentage guide (how much overage to buy)",
+    title: "Tile Waste Percentage Guide (How Much Overage to Buy)",
     description:
-      "A practical guide to tile overage: recommended waste ranges, when to increase them, and how to avoid running short.",
+      "Tile waste percentage rules with practical overage ranges, box-rounding math, and when to use 10%, 15%, or higher.",
     lastUpdated: "Last updated: Feb 2026",
     sections: [
       {
@@ -2612,9 +2612,9 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
   },
   {
     slug: "drywall-sheets-for-room-size",
-    title: "How many drywall sheets do I need? (room size examples)",
+    title: "Drywall Sheet Calculator by Room Size (Examples)",
     description:
-      "A few practical drywall sheet examples for common room sizes, plus what changes the count.",
+      "Drywall sheet examples by room size with quick formulas, waste guidance, and 4x8 / 4x10 / 4x12 comparisons.",
     lastUpdated: "Last updated: Feb 2026",
     sections: [
         {

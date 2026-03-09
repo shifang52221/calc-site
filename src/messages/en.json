@@ -1681,8 +1681,8 @@
   }
  },
    "drywallTexture": {
-    "metaTitle": "Drywall Texture Calculator (Coverage & Bags)",
-    "metaDescription": "Estimate drywall texture material (bags) from area, coats/passes, coverage per bag, and a waste factor. Useful for knockdown, orange peel, and skip trowel.",
+    "metaTitle": "Drywall Texture Calculator (Knockdown, Orange Peel, Bag Count)",
+    "metaDescription": "Estimate how much drywall texture you need by square feet, passes, and coverage per bag. Works for knockdown, orange peel, and skip trowel with waste included.",
   "title": "Drywall Texture Calculator",
     "subtitle": "Estimate texture material needed. Adjust coats, coverage per bag, texture type, and waste.",
   "inputs": {
@@ -1706,11 +1706,11 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How do I estimate drywall texture?",
-   "a1": "Multiply area by coats/passes, divide by product coverage per bag, add waste, then round up.",
+   "a1": "Multiply area by coats/passes, divide by product coverage per bag, add waste, then round up to whole bags. This gives a practical estimate for how much texture to buy.",
    "q2": "What coverage per bag should I use?",
-   "a2": "Use the exact product label. Coverage varies by texture type and application method.",
+   "a2": "Use the exact product label for your texture and method. Knockdown, orange peel, and skip trowel can have very different real-world coverage.",
    "q3": "How much waste should I add?",
-   "a3": "5-15% is common. Spraying, sanding, and learning curves can increase waste."
+   "a3": "5-15% is common. Spraying setup, overspray, sanding, and first-time application can push waste higher."
   }
  },
  "concrete": {
@@ -2361,8 +2361,8 @@
   }
  },
  "baseboardTrim": {
-  "metaTitle": "Baseboard Calculator (Linear Feet, Pieces & Waste)",
-  "metaDescription": "Estimate baseboard linear feet and pieces from wall length, door openings, stock length, and waste. Useful for 8 ft or 12 ft trim planning with optional cost.",
+  "metaTitle": "Baseboard Calculator (How Much Baseboard Do I Need?)",
+  "metaDescription": "Calculate baseboard linear feet, piece count, and waste from wall length and door openings. Plan 8 ft or 12 ft trim purchases with optional cost.",
   "title": "Baseboard & Trim Calculator",
   "subtitle": "Estimate baseboard linear feet, piece count, and optional cost.",
   "inputs": {
@@ -2392,7 +2392,7 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "Do I subtract doors for baseboard?",
-   "a1": "Usually yes. Baseboard typically stops at door casing, so subtracting door openings improves linear feet accuracy and helps avoid overbuying.",
+   "a1": "Usually yes. Baseboard usually stops at door casing, so subtracting door openings gives a more accurate linear-feet estimate.",
    "q2": "What piece length should I choose?",
    "a2": "Use the stock length you plan to buy (commonly 8 ft or 12 ft). Longer pieces reduce seams but are harder to transport. Piece count = total trim length (after waste) divided by piece length, rounded up.",
    "q3": "How much waste should I add?",
