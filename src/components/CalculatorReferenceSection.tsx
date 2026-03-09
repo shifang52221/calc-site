@@ -94,6 +94,51 @@ const REFERENCES_EN: Partial<Record<CalculatorId, ReferenceBlock>> = {
       "Complex rooms usually need more waste because offcuts are harder to reuse.",
     ],
   },
+  drywallTexture: {
+    title: "Drywall texture bags: quick planning rules",
+    intro:
+      "Texture estimates swing most from application style. Set your texture type and passes first, then convert to bag count.",
+    table: {
+      columns: ["Texture style", "Typical passes", "Planning note"],
+      rows: [
+        ["Orange peel", "1", "Usually lighter build and lower bag use"],
+        ["Knockdown", "1 spray + knockdown", "Often heavier build than orange peel"],
+        ["Skip trowel", "1 hand-applied pass", "Labor-heavy and patch blending matters"],
+      ],
+    },
+    bullets: [
+      "For patch blending, include a wider blend zone around the repair area.",
+      "Ceilings and tall walls usually need a higher waste buffer.",
+      "Use the exact label coverage per bag and round up to whole bags.",
+    ],
+    related: [
+      { label: "Drywall texture coverage guide", href: "/en/resources/drywall-texture-coverage-guide" },
+      { label: "Drywall sheet calculator", href: "/en/calculators/home-improvement/drywall" },
+    ],
+  },
+  deckMud: {
+    title: "Deck mud volume and ratio checks",
+    intro:
+      "For shower pans and mortar beds, quantity depends on area and average thickness. Convert to volume first, then split by mix ratio.",
+    table: {
+      columns: ["Input", "Quick rule", "Why it matters"],
+      rows: [
+        ["Volume", "sq ft x thickness (in) / 12", "Core deck mud quantity math"],
+        ["Waste", "Usually 5-15%", "Covers mixing loss and cleanup"],
+        ["Mix ratio", "Commonly 5:1 sand:cement", "Needed to split material volumes"],
+      ],
+    },
+    bullets: [
+      "For sloped shower pans, estimate with average thickness, not just drain thickness.",
+      "If you run a pre-slope and final bed, estimate each layer separately.",
+      "Round up cement bags; running short mid-bed can cause consistency issues.",
+    ],
+    related: [
+      { label: "Deck mud coverage chart", href: "/en/resources/deck-mud-coverage-chart" },
+      { label: "Deck mud mix ratio guide", href: "/en/resources/deck-mud-mix-ratio-guide" },
+      { label: "Deck mud slope per foot", href: "/en/resources/deck-mud-slope-per-foot" },
+    ],
+  },
   concrete: {
     title: "Concrete slab ordering notes (quick)",
     intro:
@@ -139,6 +184,28 @@ const REFERENCES_EN: Partial<Record<CalculatorId, ReferenceBlock>> = {
       { label: "Stud spacing 16 vs 24", href: "/en/resources/stud-spacing-16-vs-24-on-center" },
       { label: "Corners and openings guide", href: "/en/resources/studs-corners-and-openings-guide" },
       { label: "Stud plates planning", href: "/en/resources/stud-plates-lumber-planning" },
+    ],
+  },
+  baseboardTrim: {
+    title: "How much baseboard should you buy?",
+    intro:
+      "Baseboard is linear-feet math plus corner waste. Piece length choice (8 ft vs 12 ft) can change seams and real waste more than expected.",
+    table: {
+      columns: ["Step", "Rule", "Practical note"],
+      rows: [
+        ["Perimeter", "Sum wall lengths", "Include alcoves and short returns"],
+        ["Door subtraction", "Subtract door widths", "Baseboard usually stops at casing"],
+        ["Piece count", "Total LF / piece length, round up", "Then add waste for miters and re-cuts"],
+      ],
+    },
+    bullets: [
+      "Rooms with many corners often need more waste than straight runs.",
+      "Buy extra from the same profile/batch for future repairs.",
+      "If shoe molding or quarter round is needed, estimate it separately.",
+    ],
+    related: [
+      { label: "Baseboard waste tips", href: "/en/resources/baseboard-trim-waste-tips" },
+      { label: "Trim area from linear feet", href: "/en/resources/trim-paint-area-from-linear-feet" },
     ],
   },
   roofing: {

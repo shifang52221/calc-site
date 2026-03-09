@@ -1602,7 +1602,7 @@
  },
  "deckMud": {
   "metaTitle": "Deck Mud Calculator (How Much Dry Pack for Shower Pan?)",
-  "metaDescription": "Calculate deck mud volume, sand/cement split, and bag count from area and thickness. Useful for shower pans and tile mortar beds with waste included.",
+  "metaDescription": "Calculate deck mud volume and bag count from square feet and thickness. Estimate dry pack for shower pans with sand/cement split and waste included.",
   "title": "Deck Mud Calculator",
   "subtitle": "Estimate dry pack mortar by square feet, thickness, waste, and mix ratio.",
   "inputs": {
@@ -1681,8 +1681,8 @@
   }
  },
    "drywallTexture": {
-    "metaTitle": "Drywall Texture Calculator (Knockdown, Orange Peel, Bag Count)",
-    "metaDescription": "Estimate how much drywall texture you need by square feet, passes, and coverage per bag. Works for knockdown, orange peel, and skip trowel with waste included.",
+    "metaTitle": "Drywall Texture Calculator (How Much Texture Do I Need?)",
+    "metaDescription": "Estimate drywall texture bags by square feet, passes, and coverage per bag. Works for knockdown, orange peel, and skip trowel with waste included.",
   "title": "Drywall Texture Calculator",
     "subtitle": "Estimate texture material needed. Adjust coats, coverage per bag, texture type, and waste.",
   "inputs": {
@@ -2362,7 +2362,7 @@
  },
  "baseboardTrim": {
   "metaTitle": "Baseboard Calculator (How Much Baseboard Do I Need?)",
-  "metaDescription": "Calculate baseboard linear feet, piece count, and waste from wall length and door openings. Plan 8 ft or 12 ft trim purchases with optional cost.",
+  "metaDescription": "Calculate baseboard linear feet, piece count, and waste from wall length and door openings. Estimate how much baseboard you need for a room and plan 8 ft or 12 ft trim purchases.",
   "title": "Baseboard & Trim Calculator",
   "subtitle": "Estimate baseboard linear feet, piece count, and optional cost.",
   "inputs": {
