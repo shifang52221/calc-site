@@ -123,7 +123,7 @@ export default async function DeckMudPage({
             </table>
           </div>
           <p className="text-xs text-zinc-500 dark:text-zinc-400">
-            Tip: If you're building a shower slope, use the average of perimeter
+            Tip: If you&apos;re building a shower slope, use the average of perimeter
             thickness and drain thickness, then add a buffer for waste and cleanup.
           </p>
           <p className="text-xs text-zinc-500 dark:text-zinc-400">
