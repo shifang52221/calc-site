@@ -89,6 +89,11 @@ export default async function DeckMudPage({
             about 12 / thickness(in) sq ft, and 1 cu yd (27 cu ft) covers about
             324 / thickness(in) sq ft.
           </p>
+          <p>
+            Quick example: a 32 sq ft shower pan at 1.5&quot; average thickness needs
+            about 4.0 cu ft of dry pack before waste. Divide that total by the bag
+            yield on your mix, then round up so you do not run short mid-install.
+          </p>
           <div className="overflow-x-auto">
             <table className="w-full min-w-[520px] border-collapse text-left">
               <thead>
@@ -126,6 +131,10 @@ export default async function DeckMudPage({
           <p className="text-xs text-zinc-500 dark:text-zinc-400">
             Tip: If you&apos;re building a shower slope, use the average of perimeter
             thickness and drain thickness, then add a buffer for waste and cleanup.
+          </p>
+          <p className="text-xs text-zinc-500 dark:text-zinc-400">
+            For square-feet estimates, start with area x thickness / 12 to get cubic
+            feet, then convert that volume into bag count using the product label.
           </p>
           <p className="text-xs text-zinc-500 dark:text-zinc-400">
             See also:{" "}

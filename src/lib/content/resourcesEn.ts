@@ -21,16 +21,17 @@
 export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
   {
     slug: "deck-mud-coverage-chart",
-    title: "Deck Mud Coverage Chart (How Much Dry Pack Do I Need?)",
+    title: "Deck Mud Coverage Chart (Square Feet, Thickness, Bag Planning)",
     description:
-      "Deck mud coverage chart with area-to-volume examples, shower pan average-thickness math, and bag planning tips for dry pack mortar.",
+      "Deck mud coverage chart with square-feet examples, 1 inch to 2 inch thickness math, and bag-planning tips for dry pack mortar and shower pans.",
     lastUpdated: "Last updated: Feb 2026",
     sections: [
-      {
-        heading: "Quick coverage table",
-        paragraphs: [
-          "Deck mud (dry pack mortar) is usually estimated by volume: area × average thickness. The table below is a fast planning reference for common thicknesses.",
-        ],
+        {
+          heading: "Quick coverage table",
+          paragraphs: [
+            "Deck mud (dry pack mortar) is usually estimated by volume: area × average thickness. The table below is a fast planning reference for common square-foot and thickness combinations.",
+            "If you want a full bag-count estimate after checking the chart, run your numbers through the deck mud calculator to add waste, sand/cement split, and round-up logic before you buy material.",
+          ],
         table: {
           columns: ["Coverage", "1 inch thickness", "1.5 inches thickness", "2 inches thickness"],
           rows: [
@@ -68,14 +69,15 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Example: 40 sq ft at 1.25 inches: volume = 40 x (1.25/12) = 4.17 cu ft. Add 10% waste to about 4.6 cu ft.",
         ],
       },
-      {
-        heading: "Bag planning notes",
-        bullets: [
-          "Use the bag yield on the label (cu ft per bag).",
-          "Bags needed = total cu ft / bag yield, then round up.",
-          "Keep a small buffer for mixing loss and cleanup.",
-        ],
-      },
+        {
+          heading: "Bag planning notes",
+          bullets: [
+            "Use the bag yield on the label (cu ft per bag).",
+            "Bags needed = total cu ft / bag yield, then round up.",
+            "For shower pans and other one-shot installs, a small extra buffer is usually safer than running short mid-bed.",
+            "Keep a small buffer for mixing loss and cleanup.",
+          ],
+        },
       {
         heading: "Mix ratio and consistency (dry pack basics)",
         paragraphs: [
@@ -735,18 +737,21 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
   },
   {
     slug: "tile-waste-percentage-guide",
-    title: "Tile Waste Percentage Guide (How Much Overage to Buy)",
+    title: "Tile Waste Percentage Guide (Should You Buy 10% or 15% Extra?)",
     description:
-      "Tile waste percentage rules with practical overage ranges, box-rounding math, and when to use 10%, 15%, or higher.",
+      "Use practical tile overage rules for straight lay, diagonal, and patterned installs. See when 10%, 15%, or more makes sense before ordering boxes.",
     lastUpdated: "Last updated: Feb 2026",
     sections: [
-      {
-        heading: "Common waste ranges (rule of thumb)",
-        table: {
-          columns: ["Layout", "Typical waste", "When to increase"],
-          rows: [
-            ["Straight lay (simple room)", "7-10%", "Many corners, small cuts"],
-            ["Diagonal layout", "12-15%", "Large tiles or many penetrations"],
+        {
+          heading: "Should you buy 10% or 15% extra tile?",
+          paragraphs: [
+            "For a simple straight-lay room, 7-10% extra tile is usually enough. Move to 12-15% for diagonal layouts, large-format tile with more edge cuts, or rooms with several penetrations. Complex patterns, strict matching, and shower walls often need 15-20% or more.",
+          ],
+          table: {
+            columns: ["Layout", "Typical waste", "When to increase"],
+            rows: [
+              ["Straight lay (simple room)", "7-10%", "Many corners, small cuts"],
+              ["Diagonal layout", "12-15%", "Large tiles or many penetrations"],
             ["Herringbone / complex pattern", "15-20%+", "Multiple rooms, tight matching"],
           ],
         },
@@ -791,21 +796,29 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
             "Example: 120 sq ft room at 12% waste = 134.4 sq ft. If a box covers 13.6 sq ft, you need 9.88, which rounds to 10 boxes.",
           ],
         },
-      {
-        heading: "Scenario comparison: 10% vs 15% waste",
-        table: {
-          columns: ["Base area", "With 10% waste", "With 15% waste", "Difference"],
-          rows: [
+        {
+          heading: "Scenario comparison: 10% vs 15% waste",
+          table: {
+            columns: ["Base area", "With 10% waste", "With 15% waste", "Difference"],
+            rows: [
             ["80 sq ft", "88 sq ft", "92 sq ft", "+4 sq ft"],
             ["120 sq ft", "132 sq ft", "138 sq ft", "+6 sq ft"],
             ["200 sq ft", "220 sq ft", "230 sq ft", "+10 sq ft"],
           ],
+          },
         },
-      },
-      {
-        heading: "Bathroom and kitchen tile waste (quick ranges)",
-        table: {
-          columns: ["Scenario", "Typical waste", "Why it changes"],
+        {
+          heading: "Ordering risk check before you buy",
+          bullets: [
+            "Dye lot and caliber variation can make later matching difficult, so order enough in one batch when possible.",
+            "Box rounding changes the final order more than most people expect, especially when coverage per carton is awkward.",
+            "Check the supplier return policy for unopened boxes before you add a safety box to the order.",
+          ],
+        },
+        {
+          heading: "Bathroom and kitchen tile waste (quick ranges)",
+          table: {
+            columns: ["Scenario", "Typical waste", "Why it changes"],
           rows: [
             ["Simple bathroom floor", "10-12%", "Toilet flange and perimeter cuts"],
             ["Shower walls with niches", "15-20%", "More corners, penetrations, trim details"],
