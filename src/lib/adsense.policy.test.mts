@@ -72,3 +72,15 @@ test("returns false when placement is not in allowed list", () => {
     false,
   );
 });
+
+test("returns false when allowlist is configured but placement is missing", () => {
+  assert.equal(
+    canRenderAdSlot({
+      clientId: "ca-pub-abc",
+      slot: "123",
+      reviewMode: false,
+      allowedPlacements: ["calculatorAfterResult"],
+    }),
+    false,
+  );
+});

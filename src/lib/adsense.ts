@@ -64,8 +64,12 @@ export function canRenderAdSlot({
     return false;
   }
 
-  if (!placement || allowedPlacements.length === 0) {
+  if (allowedPlacements.length === 0) {
     return true;
+  }
+
+  if (!placement) {
+    return false;
   }
 
   return allowedPlacements.includes(placement);
