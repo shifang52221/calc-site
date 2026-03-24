@@ -34,6 +34,7 @@ export default async function ContactPage({
   const contactEmail = getContactEmail() ?? t("email");
   const introParagraphs = [t("intro.p1"), t("intro.p2")];
   const noteParagraphs = [t("note.p1"), t("note.p2"), t("note.p3")];
+  const nextParagraphs = [t("whatHappensNext.n1"), t("whatHappensNext.n2"), t("whatHappensNext.n3")];
 
   return (
     <div className="mx-auto grid max-w-3xl gap-6">
@@ -96,6 +97,26 @@ export default async function ContactPage({
           <li>{t("topics.t2")}</li>
           <li>{t("topics.t3")}</li>
           <li>{t("topics.t4")}</li>
+        </ul>
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("whatHappensNextTitle")}
+        </h2>
+        {nextParagraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("priorityTitle")}
+        </h2>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t("priority.p1")}</li>
+          <li>{t("priority.p2")}</li>
+          <li>{t("priority.p3")}</li>
         </ul>
       </section>
     </div>

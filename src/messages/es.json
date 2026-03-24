@@ -26,10 +26,12 @@
   },
   "methodologyPage": {
     "metaTitle": "Metodología",
-    "metaDescription": "Cómo funcionan nuestras calculadoras: unidades, redondeo, desperdicio y supuestos.",
-    "title": "Metodología",
-    "subtitle": "Cómo pensamos las estimaciones: unidades claras, supuestos transparentes y márgenes prácticos.",
-    "whatWeDoTitle": "Qué hacemos (y qué no)",
+  "metaDescription": "Cómo funcionan nuestras calculadoras: unidades, redondeo, desperdicio y supuestos.",
+  "title": "Metodología",
+  "subtitle": "Cómo pensamos las estimaciones: unidades claras, supuestos transparentes y márgenes prácticos.",
+  "ownershipTitle": "Quién es responsable de la metodología",
+  "ownershipBody": "La metodología la mantiene el editor/propietario del sitio. Somos responsables de fórmulas, valores por defecto y gestión de correcciones.",
+  "whatWeDoTitle": "Qué hacemos (y qué no)",
     "whatWeDo": {
       "p1": "Nuestras calculadoras son herramientas de planificación. Convierten tus medidas en una estimación práctica usando fórmulas comunes y supuestos razonables.",
       "p2": "No sustituyen el código local, las especificaciones del fabricante ni un presupuesto profesional en proyectos críticos."
@@ -54,19 +56,36 @@
       "w3": "Si es difícil igualar después (lotes de color), comprar suficiente al inicio es más seguro."
     },
     "sourcesTitle": "Supuestos y fuentes",
-    "sources": {
-      "p1": "Usamos fórmulas comunes de la industria (conversiones de área/volumen y convenciones de empaque).",
-      "p2": "Para mayor precisión, usa la cobertura exacta de la etiqueta y las instrucciones del fabricante y proveedor."
-    },
-    "contactTitle": "Comentarios",
+  "sources": {
+    "p1": "Usamos fórmulas comunes de la industria (conversiones de área/volumen y convenciones de empaque).",
+    "p2": "Para mayor precisión, usa la cobertura exacta de la etiqueta y las instrucciones del fabricante y proveedor."
+  },
+  "reviewProcessTitle": "Proceso de revisión",
+  "reviewProcess": {
+    "r1": "Probamos entradas de ejemplo antes de publicar para validar unidades, redondeo y resultados de compra.",
+    "r2": "Cuando un usuario reporta diferencias de producto o empaque local, revisamos supuestos y ajustamos si corresponde.",
+    "r3": "Los cambios relevantes se reflejan en el contenido para que el lector entienda qué cambió y por qué."
+  },
+  "uncertaintyTitle": "Cómo tratamos la incertidumbre y variación local",
+  "uncertainty": {
+    "u1": "Los valores por defecto son para planificación, no reglas universales.",
+    "u2": "Si cambian normas locales, clima o criterios del proveedor, prevalece el contexto local.",
+    "u3": "Cuando hay alta incertidumbre, recomendamos un margen práctico y validar con documentación del proveedor."
+  },
+  "contactTitle": "Comentarios",
     "contactBody": "Si un supuesto no coincide con tu región o producto, contáctanos con el producto y el contexto. Mejoramos continuamente."
   },
   "editorialPolicyPage": {
     "metaTitle": "Política editorial",
-    "metaDescription": "Cómo creamos y actualizamos el contenido, y cómo solicitar correcciones.",
-    "title": "Política editorial",
-    "subtitle": "Cómo publicamos notas y guías: estándares de calidad, actualizaciones y correcciones.",
-    "qualityTitle": "Estándares de calidad",
+  "metaDescription": "Cómo creamos y actualizamos el contenido, y cómo solicitar correcciones.",
+  "title": "Política editorial",
+  "subtitle": "Cómo publicamos notas y guías: estándares de calidad, actualizaciones y correcciones.",
+  "responsibilityTitle": "Responsabilidad editorial",
+  "responsibility": {
+    "p1": "HomeDecorCalc se mantiene bajo la responsabilidad del editor/propietario del sitio.",
+    "p2": "Podemos usar herramientas para redactar más rápido, pero la revisión y decisión final de publicación es humana."
+  },
+  "qualityTitle": "Estándares de calidad",
     "quality": {
       "q1": "Cada calculadora explica unidades, supuestos y redondeo.",
       "q2": "Preferimos ayuda práctica (cómo medir, qué redondear, errores comunes) en lugar de relleno genérico.",
@@ -81,16 +100,28 @@
       "u3": "Confirma con el código local y especificaciones."
     },
     "howWeBuildTitle": "Cómo se crean las calculadoras",
-    "howWeBuild": {
-      "p1": "Partimos de fórmulas habituales (por ejemplo, área × espesor = volumen), rangos de cobertura y unidades de compra (bolsas, cajas, paquetes).",
-      "p2": "Antes de publicar, validamos con ejemplos y comprobamos que el resultado coincide con cómo se compra el material (unidades enteras, mínimos y redondeos)."
-    },
-    "correctionsTitle": "Correcciones",
-    "corrections": {
-      "p1": "Envíanos un correo con la URL y lo que crees que está mal, incluyendo el producto o contexto local si aplica.",
-      "p2": "Priorizamos correcciones que afecten seguridad, cumplimiento o grandes diferencias de material/costo."
-    },
-    "independenceTitle": "Publicidad e independencia editorial",
+  "howWeBuild": {
+    "p1": "Partimos de fórmulas habituales (por ejemplo, área × espesor = volumen), rangos de cobertura y unidades de compra (bolsas, cajas, paquetes).",
+    "p2": "Antes de publicar, validamos con ejemplos y comprobamos que el resultado coincide con cómo se compra el material (unidades enteras, mínimos y redondeos)."
+  },
+  "humanReviewTitle": "Puntos de revisión humana",
+  "humanReview": {
+    "h1": "Cada actualización importante se revisa en lógica de fórmula, consistencia de unidades y salida de compra.",
+    "h2": "Verificamos que ejemplos y FAQ coincidan con el comportamiento real de la calculadora.",
+    "h3": "Si una sección suena genérica o ambigua, se reescribe antes de publicar."
+  },
+  "correctionsTitle": "Correcciones",
+  "corrections": {
+    "p1": "Envíanos un correo con la URL y lo que crees que está mal, incluyendo el producto o contexto local si aplica.",
+    "p2": "Priorizamos correcciones que afecten seguridad, cumplimiento o grandes diferencias de material/costo."
+  },
+  "correctionsWorkflowTitle": "Flujo de correcciones",
+  "correctionsWorkflow": {
+    "w1": "Reproducimos el reporte con tus datos y contexto.",
+    "w2": "Si se confirma, actualizamos texto, supuestos o lógica de salida y registramos la actualización.",
+    "w3": "Si no se puede reproducir, pedimos más detalle y mantenemos el caso abierto."
+  },
+  "independenceTitle": "Publicidad e independencia editorial",
     "independence": {
       "i1": "Los anuncios pueden ayudar a financiar el sitio, pero los anunciantes no revisan ni aprueban la lógica ni el contenido.",
       "i2": "Los valores por defecto son escenarios comunes de planificación. No recomendamos marcas ni proveedores.",
@@ -1355,6 +1386,11 @@
       "p2": "Priorizamos supuestos claros, valores por defecto prácticos y explicaciones que te ayuden a medir y comprar con confianza.",
       "p3": "Cada página intenta resolver lo práctico: qué medir, qué redondear y qué revisar antes de comprar."
     },
+    "responsibilityTitle": "Quién mantiene este sitio",
+    "responsibility": {
+      "p1": "Un editor/propietario del sitio mantiene HomeDecorCalc y responde por supuestos, páginas de confianza y correcciones.",
+      "p2": "Podemos usar herramientas de apoyo para redactar, pero la revisión final antes de publicar es humana."
+    },
     "whatYouGetTitle": "Qué encontrarás aquí",
     "whatYouGet": {
       "i1": "Estimaciones que coinciden con cómo se venden los materiales (bolsas, cajas, bultos, placas).",
@@ -1374,8 +1410,20 @@
       "p2": "Usa el resultado como punto de partida y confirma con la etiqueta del producto, conversiones del proveedor e instrucciones de instalación.",
       "p3": "Si un supuesto no coincide con tu zona o producto, escríbenos con el contexto y la etiqueta para mejorar la página."
     },
+    "scopeTitle": "Alcance y límites",
+    "scope": {
+      "s1": "Nos enfocamos en estimaciones de planificación para materiales y cantidades comunes.",
+      "s2": "No prestamos servicios profesionales de ingeniería, legales ni de contratista responsable.",
+      "s3": "Para trabajos críticos de seguridad, normativa o permisos, siempre manda la normativa local y el profesional local."
+    },
     "howItWorksTitle": "Cómo funciona",
     "howItWorksBody": "Cada calculadora incluye notas sobre unidades, redondeo y desperdicio. Las páginas de recursos y metodología explican la lógica detrás de los estimados.",
+    "correctionsProcessTitle": "Cómo gestionamos correcciones",
+    "correctionsProcess": {
+      "c1": "Envíanos URL, entradas usadas y por qué crees que el cálculo o texto está mal.",
+      "c2": "Verificamos contra etiqueta de producto, unidades y lógica de página antes de corregir.",
+      "c3": "Cuando se confirma un problema, publicamos actualización y priorizamos impactos mayores."
+    },
     "fundingTitle": "Cómo financiamos el sitio",
     "fundingBody": "Podemos mostrar anuncios para cubrir hosting y mantenimiento. Los anuncios no deberían impedir el uso de las calculadoras."
   },
@@ -1417,6 +1465,18 @@
       "t2": "Reportes de errores (entradas rotas, enlaces incorrectos o problemas de diseño).",
       "t3": "Correcciones de contenido (coberturas, empaques o pasos faltantes).",
       "t4": "Comentarios generales sobre cómo mejorar el sitio."
+    },
+    "whatHappensNextTitle": "Qué pasa después de tu correo",
+    "whatHappensNext": {
+      "n1": "Revisamos el reporte y lo clasificamos como bug, desajuste de supuestos o aclaración de contenido.",
+      "n2": "Si faltan datos, te pedimos una lista breve de información adicional.",
+      "n3": "Si se confirma, actualizamos la página y priorizamos primero lo de mayor impacto."
+    },
+    "priorityTitle": "Cómo priorizamos reportes",
+    "priority": {
+      "p1": "Máxima prioridad: seguridad, cumplimiento normativo o riesgo grande de sobre/subcompra.",
+      "p2": "Prioridad media: valores por defecto, diferencias regionales de supuestos y explicaciones confusas.",
+      "p3": "Prioridad menor: mejoras de redacción y detalles de interfaz no bloqueantes."
     }
   },
   "paint": {

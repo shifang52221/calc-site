@@ -35,6 +35,7 @@ export default async function AboutPage({
   const nav = await getTranslations("nav");
 
   const bodyParagraphs = [t("body.p1"), t("body.p2"), t("body.p3")];
+  const responsibilityParagraphs = [t("responsibility.p1"), t("responsibility.p2")];
 
   return (
     <div className="mx-auto grid max-w-3xl gap-6">
@@ -42,6 +43,15 @@ export default async function AboutPage({
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
         {bodyParagraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("responsibilityTitle")}
+        </h2>
+        {responsibilityParagraphs.map((p) => (
           <p key={p}>{p}</p>
         ))}
       </section>
@@ -80,6 +90,17 @@ export default async function AboutPage({
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
         <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("scopeTitle")}
+        </h2>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t("scope.s1")}</li>
+          <li>{t("scope.s2")}</li>
+          <li>{t("scope.s3")}</li>
+        </ul>
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
           {t("howItWorksTitle")}
         </h2>
         <p>{t("howItWorksBody")}</p>
@@ -103,6 +124,17 @@ export default async function AboutPage({
             {nav("editorialPolicy")}
           </Link>
         </div>
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("correctionsProcessTitle")}
+        </h2>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t("correctionsProcess.c1")}</li>
+          <li>{t("correctionsProcess.c2")}</li>
+          <li>{t("correctionsProcess.c3")}</li>
+        </ul>
       </section>
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">

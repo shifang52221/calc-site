@@ -60,6 +60,14 @@ export default async function EditorialPolicyPage({
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
         <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("responsibilityTitle")}
+        </h2>
+        <p>{t("responsibility.p1")}</p>
+        <p>{t("responsibility.p2")}</p>
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
           {t("qualityTitle")}
         </h2>
         <ul className="grid list-disc gap-2 pl-5">
@@ -92,10 +100,32 @@ export default async function EditorialPolicyPage({
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
         <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("humanReviewTitle")}
+        </h2>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t("humanReview.h1")}</li>
+          <li>{t("humanReview.h2")}</li>
+          <li>{t("humanReview.h3")}</li>
+        </ul>
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
           {t("correctionsTitle")}
         </h2>
         <p>{t("corrections.p1")}</p>
         <p>{t("corrections.p2")}</p>
+      </section>
+
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+          {t("correctionsWorkflowTitle")}
+        </h2>
+        <ul className="grid list-disc gap-2 pl-5">
+          <li>{t("correctionsWorkflow.w1")}</li>
+          <li>{t("correctionsWorkflow.w2")}</li>
+          <li>{t("correctionsWorkflow.w3")}</li>
+        </ul>
       </section>
 
       <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">

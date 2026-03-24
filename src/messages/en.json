@@ -16,6 +16,11 @@
     "metaDescription": "How we create and update calculator content, and how to request corrections.",
     "title": "Editorial policy",
     "subtitle": "How we publish calculator notes and guides: quality standards, updates, and corrections.",
+    "responsibilityTitle": "Responsibility",
+    "responsibility": {
+      "p1": "HomeDecorCalc is maintained by a site owner/editor who is responsible for publishing standards, correction handling, and update decisions.",
+      "p2": "We use tools to improve drafting speed, but final publication decisions and quality checks are human-owned."
+    },
     "qualityTitle": "Quality standards",
     "quality": {
       "q1": "Every calculator explains units, assumptions, and rounding behavior.",
@@ -35,10 +40,22 @@
       "p1": "We start with common takeoff formulas (like area × thickness = volume), typical coverage ranges, and packaging conventions (bags, boxes, bundles).",
       "p2": "Before publishing, we sanity-check results with sample inputs and make sure outputs match how materials are actually purchased (whole units, minimums, and rounding up)."
     },
+    "humanReviewTitle": "Human review checkpoints",
+    "humanReview": {
+      "h1": "Each major update is reviewed for formula logic, unit consistency, and practical buying output.",
+      "h2": "We check that examples and FAQ answers match the calculator behavior on the page.",
+      "h3": "If a section feels generic or unclear, we rewrite it before publication."
+    },
     "correctionsTitle": "Corrections",
     "corrections": {
       "p1": "If you spot an issue, email us with the page URL and what you believe is wrong, including your product or local context if relevant.",
       "p2": "We prioritize corrections that affect safety, code compliance, or large material/cost differences."
+    },
+    "correctionsWorkflowTitle": "Correction workflow",
+    "correctionsWorkflow": {
+      "w1": "We reproduce the report using your inputs and context.",
+      "w2": "If confirmed, we update the page copy, assumptions, or formula output and note the update.",
+      "w3": "If we cannot reproduce it, we request additional details and keep the report open."
     },
     "independenceTitle": "Advertising & editorial independence",
     "independence": {
@@ -73,6 +90,8 @@
   "metaDescription": "How our calculators work: units, rounding, waste factors, and assumptions.",
   "title": "Methodology",
   "subtitle": "How we think about estimates: clear units, transparent assumptions, and practical buffers.",
+  "ownershipTitle": "Who is responsible for methodology",
+  "ownershipBody": "Methodology decisions are maintained by the site owner/editor. We are responsible for formula choices, default assumptions, and correction turnaround.",
   "whatWeDoTitle": "What we do (and what we don't)",
   "whatWeDo": {
    "p1": "Our calculators are planning tools. They convert your measurements into a practical material estimate using common formulas and reasonable assumptions.",
@@ -101,6 +120,18 @@
   "sources": {
    "p1": "We use common industry formulas (area/volume conversions, packaging conventions like roofing squares, and typical coverage ranges).",
    "p2": "For best accuracy, always prefer the exact product label coverage, manufacturer installation requirements, and your supplier's conversions for the specific material you're buying."
+  },
+  "reviewProcessTitle": "Review process",
+  "reviewProcess": {
+   "r1": "We test sample inputs before publishing to confirm unit conversion, rounding, and purchase-unit behavior.",
+   "r2": "When user reports conflict with local products or packaging, we review assumptions and revise if needed.",
+   "r3": "Major changes are reflected in page copy so readers can understand what changed and why."
+  },
+  "uncertaintyTitle": "Handling uncertainty and local variation",
+  "uncertainty": {
+   "u1": "Default values are planning defaults, not universal rules.",
+   "u2": "Where local code, climate, or supplier conventions differ, local requirements take priority over our defaults.",
+   "u3": "When uncertainty is high, we recommend ordering with a practical buffer and validating with supplier documentation."
   },
   "contactTitle": "Feedback",
   "contactBody": "If you find an assumption that doesn't match your region or product, contact us and include the product and context. We continuously improve the calculators."
@@ -1366,6 +1397,11 @@
       "i3": "Simple rules of thumb and checklists that prevent under-ordering.",
       "i4": "Related guides and resources for the next step in planning."
     },
+    "responsibilityTitle": "Who maintains this site",
+    "responsibility": {
+      "p1": "A site owner/editor maintains HomeDecorCalc and is accountable for trust pages, calculator assumptions, and correction responses.",
+      "p2": "We may use tools for drafting support, but human review is required before updates go live."
+    },
     "principlesTitle": "Our principles",
     "principles": {
       "p1": "Clarity: show assumptions, units, and helpful defaults.",
@@ -1378,8 +1414,20 @@
       "p2": "Use calculator results as a starting point, then confirm with your product label, supplier conversions, and installation requirements.",
       "p3": "If an assumption doesn’t match what you’re seeing locally, contact us with the product label and context so we can improve the page."
     },
+    "scopeTitle": "Scope and boundaries",
+    "scope": {
+      "s1": "We focus on planning estimates for common home-improvement materials and quantities.",
+      "s2": "We do not provide engineering, legal, or contractor-of-record services.",
+      "s3": "For safety-critical, code-sensitive, or permit-required work, local professionals and local code always take priority."
+    },
     "howItWorksTitle": "How it works",
     "howItWorksBody": "Every calculator includes notes about units, rounding, and common waste factors. Resources and methodology pages explain the logic behind typical estimates.",
+    "correctionsProcessTitle": "How we handle corrections",
+    "correctionsProcess": {
+      "c1": "Send the page URL, your inputs, and why you think the output or copy is wrong.",
+      "c2": "We verify against product labels, unit math, and page logic before publishing a correction.",
+      "c3": "When we confirm an issue, we update content and prioritize higher-impact fixes first."
+    },
     "fundingTitle": "How we fund the site",
     "fundingBody": "We may show ads to support hosting and ongoing updates. Ads should never prevent you from using a calculator or reading the supporting notes."
   },
@@ -1421,6 +1469,18 @@
     "t2": "Bug reports (broken inputs, wrong links, or layout issues).",
     "t3": "Content corrections (coverage rates, packaging conventions, or missing steps).",
     "t4": "General feedback on what would make the site more useful."
+  },
+  "whatHappensNextTitle": "What happens after you email us",
+  "whatHappensNext": {
+    "n1": "We review your report and classify it as a bug, assumption mismatch, or clarification request.",
+    "n2": "If details are missing, we reply with a short follow-up checklist.",
+    "n3": "When confirmed, we update the page and prioritize higher-impact fixes first."
+  },
+  "priorityTitle": "How we prioritize reports",
+  "priority": {
+    "p1": "Highest priority: safety, code-compliance, or major material over/under-order risk.",
+    "p2": "Medium priority: defaults, assumption mismatches, and unclear explanations.",
+    "p3": "Lower priority: copy polish and non-blocking UI improvements."
   }
  },
  "paint": {

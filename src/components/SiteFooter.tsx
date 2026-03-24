@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-import { routes } from "@/lib/routes";
 import type { Locale } from "@/i18n/routing";
 import { CookiePreferencesButton } from "@/components/CookiePreferencesButton";
+import { routes } from "@/lib/routes";
 
 export function SiteFooter({ locale }: { locale: Locale }) {
   const t = useTranslations("nav");
   const site = useTranslations("site");
+
   return (
     <footer className="mt-auto border-t border-zinc-200 py-8 text-sm text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">
       <div className="mx-auto flex max-w-5xl flex-col gap-3 px-4 sm:flex-row sm:items-center sm:justify-between">
@@ -21,14 +22,12 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           <Link href={routes.methodology(locale)} className="hover:text-zinc-900">
             {t("methodology")}
           </Link>
-          {locale === "en" ? (
-            <Link
-              href={routes.editorialPolicy(locale)}
-              className="hover:text-zinc-900"
-            >
-              {t("editorialPolicy")}
-            </Link>
-          ) : null}
+          <Link
+            href={routes.editorialPolicy(locale)}
+            className="hover:text-zinc-900"
+          >
+            {t("editorialPolicy")}
+          </Link>
           <Link href={routes.privacy(locale)} className="hover:text-zinc-900">
             {t("privacy")}
           </Link>
@@ -43,9 +42,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           </Link>
           <CookiePreferencesButton />
         </div>
-        <div>
-          © {new Date().getFullYear()} {site("name")}
-        </div>
+        <div>&copy; {new Date().getFullYear()} {site("name")}</div>
       </div>
     </footer>
   );
