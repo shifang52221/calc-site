@@ -3,6 +3,8 @@
 import Script from "next/script";
 import { useEffect, useMemo, useState } from "react";
 
+import { ADSENSE_REVIEW_MODE } from "@/lib/adsense";
+
 type ConsentValue = "all" | "essential";
 
 const CONSENT_COOKIE = "CH_CONSENT";
@@ -34,7 +36,7 @@ export function AdSenseScript({ clientId }: { clientId: string }) {
   }, []);
 
   const shouldLoad = useMemo(() => {
-    return Boolean(clientId) && consent === "all";
+    return Boolean(clientId) && consent === "all" && !ADSENSE_REVIEW_MODE;
   }, [clientId, consent]);
 
   if (!shouldLoad) return null;

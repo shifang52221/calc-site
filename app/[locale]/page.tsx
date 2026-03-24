@@ -11,6 +11,7 @@ import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 import { SITE_NAME } from "@/lib/site";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
 import { organizationJsonLd, webSiteJsonLd } from "@/lib/structuredData";
+import { sortResourcesForReview } from "@/lib/reviewPolicy";
 
 export async function generateMetadata({
   params,
@@ -42,12 +43,15 @@ export default async function HomePage({
 
   const featuredResources =
     locale === "en"
-      ? RESOURCE_ARTICLES_EN.filter(
-          (article) =>
-            !Object.prototype.hasOwnProperty.call(
-              RESOURCE_REDIRECTS_EN,
-              article.slug,
-            ),
+      ? sortResourcesForReview(
+          RESOURCE_ARTICLES_EN.filter(
+            (article) =>
+              !Object.prototype.hasOwnProperty.call(
+                RESOURCE_REDIRECTS_EN,
+                article.slug,
+              ),
+          ),
+          locale,
         ).slice(0, 6)
       : [];
   const priorityTopics =
@@ -69,7 +73,7 @@ export default async function HomePage({
             description: t("priorityDrywallTextureDesc"),
           },
           {
-            href: `${routes.resources(locale)}/tile-waste-percentage-guide`,
+            href: `${routes.resources(locale)}/tile-project-planning-guide`,
             title: t("priorityTileWasteTitle"),
             description: t("priorityTileWasteDesc"),
           },

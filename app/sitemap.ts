@@ -7,6 +7,7 @@ import { CALCULATOR_CATEGORIES, CALCULATORS } from "@/lib/calculatorsCatalog";
 import { GUIDE_DEFINITIONS } from "@/lib/guidesCatalog";
 import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 import { getResourceArticles } from "@/lib/content/resourcesByLocale";
+import { isReviewNoindexGuide, isReviewNoindexResource } from "@/lib/reviewPolicy";
 
 export const dynamic = "force-static";
 export const revalidate = 86400;
@@ -20,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const locale of locales) {
     const resourceArticles = getResourceArticles(locale).filter((article) => {
+      if (isReviewNoindexResource(locale, article.slug)) return false;
       if (locale !== "en") return true;
       return !Object.prototype.hasOwnProperty.call(
         RESOURCE_REDIRECTS_EN,
@@ -42,7 +44,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
           `${baseUrl}${routes.calculatorsCategory(locale, category.id)}`,
       ),
       ...CALCULATORS.map((calculator) => `${baseUrl}${calculator.href(locale)}`),
-      ...GUIDE_DEFINITIONS.map((guide) => `${baseUrl}${guide.href(locale)}`),
+      ...GUIDE_DEFINITIONS.filter(
+        (guide) => !isReviewNoindexGuide(locale, guide.id),
+      ).map((guide) => `${baseUrl}${guide.href(locale)}`),
       ...resourceArticles.map(
         (article) => `${baseUrl}${routes.resources(locale)}/${article.slug}`,
       ),

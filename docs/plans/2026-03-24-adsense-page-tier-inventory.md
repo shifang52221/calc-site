@@ -36,7 +36,7 @@ These are the strongest demand pages to preserve and strengthen.
 | `/en/calculators/home-improvement/deck-mud` | Highest-validated calculator demand page | Off during review (restore only after approval, gradually) | Keep index (priority recrawl) | Proven traffic/value anchor. |
 | `/en/calculators/home-improvement/baseboard-trim` | High-impression calculator with CTR upside | Off during review (restore only after approval, gradually) | Keep index (priority recrawl) | Core commercial-intent topic. |
 | `/en/calculators/home-improvement/drywall-texture` | Validated calculator demand page | Off during review (restore only after approval, gradually) | Keep index (priority recrawl) | Strong candidate for quality-led growth. |
-| `/en/resources/tile-waste-percentage-guide` | Core resource in proven tile intent cluster | Off during review | Keep index (priority recrawl) | High-value supporting intent page. |
+| `/en/resources/tile-project-planning-guide` | Core resource in proven tile intent cluster | Off during review | Keep index (priority recrawl) | High-value supporting intent page. |
 | `/en/resources/deck-mud-coverage-chart` | Core supporting resource for top calculator | Off during review | Keep index | Reinforces winning deck-mud cluster. |
 | `/en/guides/home-improvement/tile-waste` | Core guide in tile demand cluster | Off during review | Keep index | Important explanatory companion page. |
 
@@ -124,7 +124,7 @@ These pages are clearer low-value-risk candidates from prior analysis. They are 
 | `/en/guides/home-improvement/topsoil-leveling` | Weak long-tail guide | Off during review | `noindex` (review phase) | Previously identified high-impression/low-value risk. |
 | `/en/resources/topsoil-leveling-step-by-step-guide` | Weak long-tail resource | Off during review | `noindex` (review phase) | Mirrors weak guide intent and adds little review value. |
 | `/en/guides/home-improvement/drywall-ceiling` | Weak long-tail guide | Off during review | `noindex` (review phase) | Linked to low-conversion long-tail intent. |
-| `/en/resources/drywall-ceiling-thickness-guide` | Weak long-tail resource | Off during review | `noindex` (review phase) | Linked to low-conversion long-tail intent. |
+| `/en/resources/drywall-ceiling-thickness-guide` | Legacy weak long-tail resource route | Off during review | `308` redirect to `/en/resources/drywall-materials-and-finishing-guide` | Retires the weak standalone page and consolidates that intent into a stronger canonical resource. |
 | `/es/resources/concrete-bag-yield-guide` | ES weak-tail resource | Off during review | `noindex` (review phase) | Explicitly flagged weak ES tail from prior dataset. |
 | `/es/resources/fence-post-hole-concrete-guide` | ES weak-tail resource | Off during review | `noindex` (review phase) | Explicitly flagged weak ES tail from prior dataset. |
 

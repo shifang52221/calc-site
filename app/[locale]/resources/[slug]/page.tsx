@@ -11,6 +11,10 @@ import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 import { getResourceArticles } from "@/lib/content/resourcesByLocale";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/structuredData";
+import {
+  isReviewNoindexResource,
+  shouldRenderReviewResourceEnhancements,
+} from "@/lib/reviewPolicy";
 
 function localizeInternalHref(locale: string, href: string) {
   if (!href.startsWith("/")) return href;
@@ -38,6 +42,9 @@ export async function generateMetadata({
     title: article.title,
     description: article.description,
     alternates: getAlternates(locale, `/resources/${redirected ?? slug}`),
+    robots: isReviewNoindexResource(locale, redirected ?? slug)
+      ? { index: false, follow: true }
+      : undefined,
   };
 }
 
@@ -59,6 +66,7 @@ export default async function ResourceArticlePage({
 
   const article = getResourceArticles(locale).find((a) => a.slug === slug);
   if (!article) return notFound();
+  const showEnhancements = shouldRenderReviewResourceEnhancements(locale, slug);
 
   const url = getLocalizedUrl(locale, `/resources/${slug}`);
   const breadcrumbs = [
@@ -69,16 +77,18 @@ export default async function ResourceArticlePage({
 
   return (
     <div className="mx-auto grid max-w-3xl gap-6">
-      <SeoJsonLd data={breadcrumbJsonLd(breadcrumbs)} />
-      <SeoJsonLd
-        data={articleJsonLd({
-          headline: article.title,
-          description: article.description,
-          url,
-          inLanguage: locale,
-          publisherName: SITE_NAME,
-        })}
-      />
+      {showEnhancements ? <SeoJsonLd data={breadcrumbJsonLd(breadcrumbs)} /> : null}
+      {showEnhancements ? (
+        <SeoJsonLd
+          data={articleJsonLd({
+            headline: article.title,
+            description: article.description,
+            url,
+            inLanguage: locale,
+            publisherName: SITE_NAME,
+          })}
+        />
+      ) : null}
 
       <div className="grid gap-2">
         <h1 className="text-2xl font-semibold">{article.title}</h1>
@@ -138,7 +148,7 @@ export default async function ResourceArticlePage({
         </section>
       ))}
 
-      {article.related?.length ? (
+      {showEnhancements && article.related?.length ? (
         <section className="grid gap-2 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
           <div className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
             {t("relatedTitle")}
@@ -173,7 +183,7 @@ export default async function ResourceArticlePage({
             {t("methodologyLink")}
           </Link>
           <span className="hidden text-zinc-400 dark:text-zinc-600 sm:inline">
-            ·
+            |
           </span>
           <Link
             href={routes.editorialPolicy(locale)}

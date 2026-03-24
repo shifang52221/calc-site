@@ -283,7 +283,7 @@ const REFERENCES_EN: Partial<Record<CalculatorId, ReferenceBlock>> = {
     example:
       "Example: 1,000 sq ft at 2 inches is ~6.17 cu yd (before waste and settling). Round up for leveling and compaction.",
     related: [
-      { label: "Topsoil leveling guide", href: "/en/guides/home-improvement/topsoil-leveling" },
+      { label: "Topsoil feathering guide", href: "/en/resources/topsoil-leveling-feathering-guide" },
       { label: "Topsoil coverage chart", href: "/en/resources/topsoil-coverage-chart" },
     ],
   },

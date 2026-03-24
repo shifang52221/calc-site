@@ -4,7 +4,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { normalizeLocale } from "@/i18n/locale";
 import { getAlternates } from "@/lib/seo";
-import { GUIDES } from "@/lib/guidesCatalog";
+import { GUIDE_DEFINITIONS } from "@/lib/guidesCatalog";
+import { sortGuidesForReview } from "@/lib/reviewPolicy";
 
 export async function generateMetadata({
   params,
@@ -33,6 +34,7 @@ export default async function GuidesIndexPage({
   setRequestLocale(locale);
   const t = await getTranslations("guidesIndex");
   const cards = await getTranslations("guidesCards");
+  const guides = sortGuidesForReview(GUIDE_DEFINITIONS, locale);
 
   return (
     <div className="grid gap-6">
@@ -42,9 +44,9 @@ export default async function GuidesIndexPage({
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {GUIDES.map((guide) => (
+        {guides.map((guide) => (
           <Link
-            key={guide.titleKey}
+            key={guide.id}
             href={guide.href(locale)}
             className="rounded-xl border border-zinc-200 bg-white p-5 hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700"
           >

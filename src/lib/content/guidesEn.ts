@@ -104,6 +104,7 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Apply waste before converting to boxes, and confirm the label units (sq ft vs sq m) so you don’t under-buy.",
       "Caliber and shade variation also matter. If your tile has lot-to-lot variation, ordering enough in one batch reduces blending issues and future mismatch risk.",
       "A practical strategy is to run a base estimate and a stress-case estimate. If both totals round to the same box count, your purchase risk is lower.",
+      "That two-scenario check is especially useful for showers and backsplashes. A room that looks small on paper can still jump an entire box once niches, outlet cuts, and trim pieces are included.",
     ],
     bullets: [
       "Use a higher waste factor for patterns, niches, and many penetrations.",
@@ -114,6 +115,7 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Estimate trims, mosaics, and edge profiles as separate line items.",
       "For natural stone or heavily veined porcelain, increase overage to preserve visual matching.",
       "Before ordering, confirm whether the supplier accepts returns on unopened boxes.",
+      "Run a base-case and high-risk case before ordering.",
     ],
   },
   drywall: {

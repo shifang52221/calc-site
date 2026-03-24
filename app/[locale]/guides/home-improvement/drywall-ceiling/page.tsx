@@ -11,6 +11,10 @@ import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
 import { GuideSeoJsonLd } from "@/components/GuideSeoJsonLd";
 import { GuideReferenceSection } from "@/components/GuideReferenceSection";
+import {
+  isReviewNoindexGuide,
+  shouldRenderReviewGuideEnhancements,
+} from "@/lib/reviewPolicy";
 
 export async function generateMetadata({
   params,
@@ -26,6 +30,9 @@ export async function generateMetadata({
     title: t("metaTitle"),
     description: t("metaDescription"),
     alternates: getAlternates(locale, "/guides/home-improvement/drywall-ceiling"),
+    robots: isReviewNoindexGuide(locale, "drywall-ceiling")
+      ? { index: false, follow: true }
+      : undefined,
   };
 }
 
@@ -39,6 +46,10 @@ export default async function DrywallCeilingGuidePage({
   setRequestLocale(locale);
   const t = await getTranslations("guideDrywallCeiling");
   const common = await getTranslations("guidesCommon");
+  const showEnhancements = shouldRenderReviewGuideEnhancements(
+    locale,
+    "drywall-ceiling",
+  );
 
   const faq = [
     { q: t("faq.q1"), a: t("faq.a1") },
@@ -48,13 +59,15 @@ export default async function DrywallCeilingGuidePage({
 
   return (
     <div className="mx-auto grid max-w-3xl gap-8">
-      <GuideSeoJsonLd
-        locale={locale}
-        pathname="/guides/home-improvement/drywall-ceiling"
-        title={t("metaTitle")}
-        description={t("metaDescription")}
-        faq={faq}
-      />
+      {showEnhancements ? (
+        <GuideSeoJsonLd
+          locale={locale}
+          pathname="/guides/home-improvement/drywall-ceiling"
+          title={t("metaTitle")}
+          description={t("metaDescription")}
+          faq={faq}
+        />
+      ) : null}
 
       <div className="grid gap-2">
         <h1 className="text-2xl font-semibold">{t("title")}</h1>
@@ -128,7 +141,9 @@ export default async function DrywallCeilingGuidePage({
         </div>
       </section>
 
-      <GuideRelatedSection locale={locale} guideId="drywall-ceiling" />
+      {showEnhancements ? (
+        <GuideRelatedSection locale={locale} guideId="drywall-ceiling" />
+      ) : null}
 
       <Link
         href={routes.guides(locale)}

@@ -10,6 +10,7 @@ import {
 } from "@/lib/calculatorsCatalog";
 import { CalculatorsIndexClient } from "@/components/CalculatorsIndexClient";
 import { routes } from "@/lib/routes";
+import { sortCalculatorsForReview } from "@/lib/reviewPolicy";
 
 export async function generateMetadata({
   params,
@@ -53,7 +54,7 @@ export default async function CalculatorsIndex({
       ? (rawCategory as (typeof CALCULATOR_CATEGORIES)[number]["id"] | "all")
       : "all";
 
-  const calculators = CALCULATORS.map((calculator) => ({
+  const calculators = sortCalculatorsForReview(CALCULATORS).map((calculator) => ({
     href: calculator.href(locale),
     titleKey: calculator.titleKey,
     descriptionKey: calculator.descriptionKey,

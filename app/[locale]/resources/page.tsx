@@ -6,6 +6,7 @@ import { normalizeLocale } from "@/i18n/locale";
 import { getAlternates } from "@/lib/seo";
 import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 import { getResourceArticles } from "@/lib/content/resourcesByLocale";
+import { sortResourcesForReview } from "@/lib/reviewPolicy";
 
 export async function generateMetadata({
   params,
@@ -33,6 +34,10 @@ export default async function ResourcesIndexPage({
   const locale = normalizeLocale(rawLocale);
   setRequestLocale(locale);
   const t = await getTranslations("resourcesIndex");
+  const resources = sortResourcesForReview(
+    getResourceArticles(locale).filter((article) => !RESOURCE_REDIRECTS_EN[article.slug]),
+    locale,
+  );
 
   return (
     <div className="mx-auto grid max-w-3xl gap-6">
@@ -46,9 +51,7 @@ export default async function ResourcesIndexPage({
       </section>
 
       <div className="grid gap-3">
-        {getResourceArticles(locale).filter(
-          (article) => !RESOURCE_REDIRECTS_EN[article.slug],
-        ).map((article) => (
+        {resources.map((article) => (
           <Link
             key={article.slug}
             href={`/${locale}/resources/${article.slug}`}

@@ -9,6 +9,7 @@ import {
   type GuideId,
 } from "@/lib/guidesCatalog";
 import type { Locale } from "@/i18n/routing";
+import { sortGuideDefinitionsForReview } from "@/lib/reviewPolicy";
 
 function buildCategoryUrl(locale: Locale, categoryId: string) {
   return `${routes.calculators(locale)}?category=${encodeURIComponent(categoryId)}`;
@@ -41,9 +42,13 @@ export async function GuideRelatedSection({
       calculator.id !== guide.calculatorId,
   ).slice(0, 6);
 
-  const relatedGuides = GUIDE_DEFINITIONS.filter(
-    (item) => item.categoryId === guide.categoryId && item.id !== guide.id,
-  ).slice(0, 6);
+  const relatedGuides = sortGuideDefinitionsForReview(
+    GUIDE_DEFINITIONS,
+    locale,
+    guide.categoryId,
+  )
+    .filter((item) => item.id !== guide.id)
+    .slice(0, 6);
 
   return (
     <section className="grid gap-4 rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-950">

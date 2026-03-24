@@ -11,6 +11,10 @@ import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
 import { GuideSeoJsonLd } from "@/components/GuideSeoJsonLd";
 import { GuideReferenceSection } from "@/components/GuideReferenceSection";
+import {
+  isReviewNoindexGuide,
+  shouldRenderReviewGuideEnhancements,
+} from "@/lib/reviewPolicy";
 
 export async function generateMetadata({
   params,
@@ -29,6 +33,9 @@ export async function generateMetadata({
       locale,
       "/guides/home-improvement/topsoil-leveling",
     ),
+    robots: isReviewNoindexGuide(locale, "topsoil-leveling")
+      ? { index: false, follow: true }
+      : undefined,
   };
 }
 
@@ -42,6 +49,10 @@ export default async function TopsoilLevelingGuidePage({
   setRequestLocale(locale);
   const t = await getTranslations("guideTopsoilLeveling");
   const common = await getTranslations("guidesCommon");
+  const showEnhancements = shouldRenderReviewGuideEnhancements(
+    locale,
+    "topsoil-leveling",
+  );
 
   const faq = [
     { q: t("faq.q1"), a: t("faq.a1") },
@@ -51,13 +62,15 @@ export default async function TopsoilLevelingGuidePage({
 
   return (
     <div className="mx-auto grid max-w-3xl gap-8">
-      <GuideSeoJsonLd
-        locale={locale}
-        pathname="/guides/home-improvement/topsoil-leveling"
-        title={t("metaTitle")}
-        description={t("metaDescription")}
-        faq={faq}
-      />
+      {showEnhancements ? (
+        <GuideSeoJsonLd
+          locale={locale}
+          pathname="/guides/home-improvement/topsoil-leveling"
+          title={t("metaTitle")}
+          description={t("metaDescription")}
+          faq={faq}
+        />
+      ) : null}
 
       <div className="grid gap-2">
         <h1 className="text-2xl font-semibold">{t("title")}</h1>
@@ -166,7 +179,9 @@ export default async function TopsoilLevelingGuidePage({
         </div>
       </section>
 
-      <GuideRelatedSection locale={locale} guideId="topsoil-leveling" />
+      {showEnhancements ? (
+        <GuideRelatedSection locale={locale} guideId="topsoil-leveling" />
+      ) : null}
 
       <div className="text-xs text-zinc-500 dark:text-zinc-400">
         {t("lastUpdated")}

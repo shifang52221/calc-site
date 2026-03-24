@@ -325,7 +325,7 @@ const REFERENCES_EN: Partial<Record<GuideId, GuideReferenceBlock>> = {
     calculatorHref: routes.topsoil,
     related: [
       { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
-      { label: "Leveling guide", href: "/en/guides/home-improvement/topsoil-leveling" },
+      { label: "Feathering guide", href: "/en/resources/topsoil-leveling-feathering-guide" },
     ],
   },
   "topsoil-leveling": {
@@ -387,8 +387,8 @@ const REFERENCES_EN: Partial<Record<GuideId, GuideReferenceBlock>> = {
     ],
     calculatorHref: routes.drywall,
     related: [
-      { label: "Ceiling thickness guide", href: "/en/resources/drywall-ceiling-thickness-guide" },
-      { label: "Sheet sizes reference", href: "/en/resources/drywall-sheet-sizes-4x8-4x10-4x12" },
+      { label: "Ceiling board sizing", href: "/en/resources/drywall-sheet-sizes-4x8-4x10-4x12" },
+      { label: "Finish levels reference", href: "/en/resources/drywall-finish-levels-0-5" },
     ],
   },
 };

@@ -69,6 +69,18 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Example: 40 sq ft at 1.25 inches: volume = 40 x (1.25/12) = 4.17 cu ft. Add 10% waste to about 4.6 cu ft.",
         ],
       },
+      {
+        heading: "Worked example (full shower-pan order)",
+        paragraphs: [
+          "Example: a 32 sq ft shower pan with an average mud thickness of 1.6 inches needs 32 x (1.6/12) = 4.27 cu ft before waste. Add 10% waste and the planning total becomes about 4.7 cu ft.",
+          "If your chosen mix yields about 0.5 cu ft per bag, that order rounds to 10 bags. This is the kind of project where rounding up is safer than planning to hit the label yield perfectly on every batch.",
+        ],
+        bullets: [
+          "Use average thickness when the bed slopes to a drain.",
+          "Convert to whole bags after waste, not before.",
+          "Keep your sand and cement split tied to the same final cubic-foot total so the mix ratio stays consistent.",
+        ],
+      },
         {
           heading: "Bag planning notes",
           bullets: [
@@ -519,7 +531,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
     related: [
       { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
-      { label: "Topsoil leveling guide", href: "/en/guides/home-improvement/topsoil-leveling" },
+      { label: "Topsoil feathering guide", href: "/en/resources/topsoil-leveling-feathering-guide" },
       { label: "Topsoil coverage chart", href: "/en/resources/topsoil-coverage-chart" },
       { label: "Topsoil vs compost blends", href: "/en/resources/topsoil-vs-compost-blends-for-lawns-and-beds" },
     ],
@@ -795,6 +807,20 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           paragraphs: [
             "Example: 120 sq ft room at 12% waste = 134.4 sq ft. If a box covers 13.6 sq ft, you need 9.88, which rounds to 10 boxes.",
           ],
+        },
+        {
+          heading: "Worked example (floor vs shower wall order risk)",
+          paragraphs: [
+            "Example floor: 95 sq ft with a simple straight layout at 10% waste becomes 104.5 sq ft. If the box covers 15.5 sq ft, the order rounds to 7 boxes.",
+            "Example shower walls: the same 95 sq ft with niches, corners, and trim at 18% waste becomes 112.1 sq ft. At 15.5 sq ft per box, that rounds to 8 boxes, and that extra box is usually cheaper than trying to match the batch later.",
+          ],
+          table: {
+            columns: ["Scenario", "Ordering area", "Box coverage", "Rounded order"],
+            rows: [
+              ["Simple floor at 10% waste", "104.5 sq ft", "15.5 sq ft/box", "7 boxes"],
+              ["Shower walls at 18% waste", "112.1 sq ft", "15.5 sq ft/box", "8 boxes"],
+            ],
+          },
         },
         {
           heading: "Scenario comparison: 10% vs 15% waste",
@@ -1189,7 +1215,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
     related: [
       { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
-      { label: "Topsoil leveling guide", href: "/en/guides/home-improvement/topsoil-leveling" },
+      { label: "Topsoil feathering guide", href: "/en/resources/topsoil-leveling-feathering-guide" },
     ],
   },
   {
@@ -1296,7 +1322,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
     related: [
       { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
-      { label: "Drywall ceiling guide", href: "/en/guides/home-improvement/drywall-ceiling" },
+      { label: "Drywall guide", href: "/en/guides/home-improvement/drywall" },
     ],
   },
   {
@@ -2653,7 +2679,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
     related: [
       { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
-      { label: "Ceiling drywall thickness guide", href: "/en/resources/drywall-ceiling-thickness-guide" },
+      { label: "Drywall sheet sizes reference", href: "/en/resources/drywall-sheet-sizes-4x8-4x10-4x12" },
     ],
   },
   {
@@ -3767,7 +3793,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
     related: [
       { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
-      { label: "Topsoil leveling guide", href: "/en/guides/home-improvement/topsoil-leveling" },
+      { label: "Topsoil feathering guide", href: "/en/resources/topsoil-leveling-feathering-guide" },
     ],
   },
   {
@@ -5798,7 +5824,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     related: [
       { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
       { label: "Drywall guide", href: "/en/guides/home-improvement/drywall" },
-      { label: "Drywall ceiling guide", href: "/en/guides/home-improvement/drywall-ceiling" },
+      { label: "Drywall sheet sizes reference", href: "/en/resources/drywall-sheet-sizes-4x8-4x10-4x12" },
       { label: "Drywall mud & tape calculator", href: "/en/calculators/home-improvement/drywall-mud-tape" },
       { label: "Drywall texture calculator", href: "/en/calculators/home-improvement/drywall-texture" },
     ],
@@ -6431,7 +6457,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
     related: [
       { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
-      { label: "Ceiling thickness guide", href: "/en/resources/drywall-ceiling-thickness-guide" },
+      { label: "Drywall sheet sizes reference", href: "/en/resources/drywall-sheet-sizes-4x8-4x10-4x12" },
       { label: "Finish levels 0–5", href: "/en/resources/drywall-finish-levels-0-5" },
     ],
   },
@@ -6718,7 +6744,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
     related: [
       { label: "Topsoil calculator", href: "/en/calculators/home-improvement/topsoil" },
-      { label: "Topsoil leveling guide", href: "/en/guides/home-improvement/topsoil-leveling" },
+      { label: "Topsoil feathering guide", href: "/en/resources/topsoil-leveling-feathering-guide" },
       { label: "Topsoil coverage chart", href: "/en/resources/topsoil-coverage-chart" },
     ],
   },
