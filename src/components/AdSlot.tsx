@@ -2,7 +2,13 @@
 
 import { useEffect, useId } from "react";
 
-import { ADSENSE_CLIENT, isAdSenseEnabled } from "@/lib/adsense";
+import {
+  ADSENSE_ALLOWED_PLACEMENTS,
+  ADSENSE_CLIENT,
+  ADSENSE_REVIEW_MODE,
+  canRenderAdSlot,
+  type AdPlacement,
+} from "@/lib/adsense";
 
 declare global {
   interface Window {
@@ -12,13 +18,21 @@ declare global {
 
 export function AdSlot({
   slot,
+  placement,
   minHeightClassName = "min-h-[250px] sm:min-h-[280px]",
 }: {
   slot: string;
+  placement?: AdPlacement;
   minHeightClassName?: string;
 }) {
   const id = useId();
-  const enabled = isAdSenseEnabled() && Boolean(slot);
+  const enabled = canRenderAdSlot({
+    clientId: ADSENSE_CLIENT,
+    slot,
+    reviewMode: ADSENSE_REVIEW_MODE,
+    placement,
+    allowedPlacements: ADSENSE_ALLOWED_PLACEMENTS,
+  });
 
   useEffect(() => {
     if (!enabled) {
