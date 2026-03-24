@@ -1685,6 +1685,10 @@
     "metaDescription": "Calculate dry pack mortar coverage, volume, and bag count from square feet and thickness. Estimate deck mud for shower pans and mortar beds with waste included.",
     "title": "Deck Mud Calculator",
     "subtitle": "Estimate deck mud coverage, dry pack volume, sand/cement split, and bag count from square feet, thickness, and waste.",
+    "reviewNoteTitle": "Review note",
+    "reviewNoteBody": "This estimate was checked for practical deck-mud planning. Use it as a planning baseline, then confirm drain system requirements, minimum mud thickness, and product yield on your label before buying.",
+    "reviewNoteLinkMethodology": "See methodology",
+    "reviewNoteLinkEditorial": "See editorial policy",
   "inputs": {
    "areaSqFt": "Area (sq ft)",
    "areaM2": "Area (m2)",
@@ -1765,6 +1769,10 @@
     "metaDescription": "Estimate drywall texture bags by square feet, passes, and coverage per bag. Works for knockdown, orange peel, and skip trowel with waste included.",
   "title": "Drywall Texture Calculator",
     "subtitle": "Estimate texture material needed. Adjust coats, coverage per bag, texture type, and waste.",
+    "reviewNoteTitle": "Review note",
+    "reviewNoteBody": "This estimate was reviewed for practical drywall-texture planning. Always verify texture type, pass count, and the exact coverage on your product label after a small test patch.",
+    "reviewNoteLinkMethodology": "See methodology",
+    "reviewNoteLinkEditorial": "See editorial policy",
   "inputs": {
    "areaSqFt": "Area to texture (sq ft)",
    "areaM2": "Area to texture (m2)",
@@ -2445,6 +2453,10 @@
     "metaDescription": "Calculate how much baseboard you need by wall length, door openings, waste, and stock length. Estimate linear feet and piece count before you buy trim.",
     "title": "Baseboard Calculator",
     "subtitle": "Calculate baseboard linear feet, 8 ft or 12 ft piece count, and waste before you buy trim.",
+    "reviewNoteTitle": "Review note",
+    "reviewNoteBody": "This estimate was reviewed for practical trim planning. Confirm door deductions, stock length strategy, and corner/joint layout before final purchasing so your piece count is realistic.",
+    "reviewNoteLinkMethodology": "See methodology",
+    "reviewNoteLinkEditorial": "See editorial policy",
   "inputs": {
    "wallLengthFt": "Total wall length (ft)",
    "wallLengthM": "Total wall length (m)",

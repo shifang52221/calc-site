@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { BaseboardTrimCalculator } from "@/calculators/baseboard-trim/BaseboardTrimCalculator";
 import { normalizeLocale } from "@/i18n/locale";
 import { getAlternates } from "@/lib/seo";
+import { routes } from "@/lib/routes";
 import { CalculatorRelatedSection } from "@/components/CalculatorRelatedSection";
 import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
@@ -63,6 +65,30 @@ export default async function BaseboardTrimPage({
         <p className="text-zinc-600 dark:text-zinc-400">{t("subtitle")}</p>
       </div>
 
+      {locale === "en" ? (
+        <section className="rounded-xl border border-zinc-200 bg-white p-4 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+          <h2 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+            {t("reviewNoteTitle")}
+          </h2>
+          <p className="mt-1">{t("reviewNoteBody")}</p>
+          <div className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
+            <Link
+              href={routes.methodology(locale)}
+              className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+            >
+              {t("reviewNoteLinkMethodology")}
+            </Link>
+            {" | "}
+            <Link
+              href={routes.editorialPolicy(locale)}
+              className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
+            >
+              {t("reviewNoteLinkEditorial")}
+            </Link>
+          </div>
+        </section>
+      ) : null}
+
       <CalculatorContent
         locale={locale}
         calculatorId="baseboardTrim"
@@ -71,7 +97,10 @@ export default async function BaseboardTrimPage({
 
       <BaseboardTrimCalculator />
 
-      <AdSlot slot={ADSENSE_SLOTS.calculatorAfterResult} />
+      <AdSlot
+        slot={ADSENSE_SLOTS.calculatorAfterResult}
+        placement="calculatorAfterResult"
+      />
 
       <CalculatorContent
         locale={locale}

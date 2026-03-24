@@ -251,6 +251,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Transitions matter: stair landings, fireplaces, and baseboard returns at door casings can require small extra pieces that don’t show up in simple perimeter math.",
         "Profile and material affect your “real” waste. Tall baseboard and complex profiles show gaps more and can require more test fitting and re-cuts. MDF is common and stable, but it can be fragile on corners; hardwood may need more defect selection and grain matching (project dependent).",
         "Transport and handling can influence what lengths are practical. If long stock is hard to move safely, mixing 8 ft and 12 ft pieces can reduce seams while still fitting your vehicle and workspace.",
+        "Worked example: if your measured baseboard run is 146 linear ft after subtracting doors, 12 ft stock gives 146 / 12 = 12.2, so 13 pieces before waste. With a 10% planning buffer, target ~161 linear ft total, which is 14 pieces of 12 ft stock.",
       ],
       howToMeasureTitle: "How to estimate baseboard and trim",
       howToMeasureSteps: [
@@ -269,6 +270,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Inside corners are often coped (less visible gaps), which affects your cut plan but not total linear feet.",
         "Door casing details vary; some installs require small return pieces or transitions that increase waste.",
         "If you have many outside corners, waste can be higher because miter cuts reduce how much of each piece is usable.",
+        "Default planning range: many simple rectangular rooms land around 8-10% waste, while trim-heavy layouts with many outside corners and short runs can need 12-15% (project dependent).",
       ],
       buyingTipsTitle: "Buying tips",
       buyingTips: [
@@ -534,6 +536,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
           "Dry time and sanding can shift your material needs. Heavy texture can crack or slump if you repaint too soon, while aggressive sanding/knockdown can remove material and require touch-up passes.",
           "Knockdown timing matters. A heavier coat uses more material and needs a longer set time before you knock it down; rushing can smear the texture and force a recoat.",
           "Pre-mixed vs bagged products can behave differently. Follow the label mixing ratio and rest time so the material sprays consistently and does not clog.",
+          "Worked example: a 640 sq ft project with 2 passes needs 1,280 sq ft effective coverage. If your product covers 160 sq ft per bag, base need is 8 bags; adding 15% for overspray/touch-up gives 9.2, so plan to buy 10 bags.",
         ],
       howToMeasureTitle: "How to measure for drywall texture",
         howToMeasureSteps: [
@@ -557,6 +560,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
           "Lighting can reveal texture differences. Strong side lighting (“raking light”) can make small thickness changes obvious, which often leads to extra touch-ups even when the math was right.",
           "Coverage per bag assumes a specific mix thickness. Over-thinning or extra water can change spray pattern and coverage.",
           "If you switch products or batches mid-room, texture consistency can change even if the math is correct.",
+          "Default planning check: if you are unsure, many users start around 10-15% waste for spray texture and increase toward 15-20% for ceilings, patch blending, or first-time application.",
         ],
       buyingTipsTitle: "Buying tips",
         buyingTips: [
@@ -1445,6 +1449,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Workability is the point. Deck mud is mixed fairly dry so it packs and holds shape. Too wet makes it weaker and harder to screed; too dry can make it crumbly and hard to compact.",
         "Different systems want different layers. A traditional liner shower pan often uses a pre-slope + liner + final mud bed. A bonded membrane system may use one sloped bed with a surface membrane. Quantity changes if you add or remove a layer.",
         "Worked example: a 3' x 5' shower (15 sq ft) with an average thickness of 1.5\" is 15 x 1.5 / 12 = 1.88 cu ft. Add 10% waste → ~2.1 cu ft. At a 5:1 sand-to-cement ratio by volume, most of that volume is sand.",
+        "Default planning check: many shower pans target roughly 1\" to 1.25\" mud thickness at the drain plus about 1/4\" per foot slope to the farthest wall; use that geometry to estimate perimeter and average thickness before ordering.",
       ],
       howToMeasureTitle: "How to measure for deck mud",
       howToMeasureSteps: [
