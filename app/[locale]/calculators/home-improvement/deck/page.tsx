@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { DeckCalculator } from "@/calculators/deck/DeckCalculator";
 import { normalizeLocale } from "@/i18n/locale";
 import { getAlternates } from "@/lib/seo";
+import { isReviewNoindexCalculator } from "@/lib/reviewPolicy";
 import { CalculatorRelatedSection } from "@/components/CalculatorRelatedSection";
 import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
@@ -24,6 +25,9 @@ export async function generateMetadata({
     title: t("metaTitle"),
     description: t("metaDescription"),
     alternates: getAlternates(locale, "/calculators/home-improvement/deck"),
+    robots: isReviewNoindexCalculator(locale, "deck")
+      ? { index: false, follow: true }
+      : undefined,
   };
 }
 

@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { ConcreteBagsCalculator } from "@/calculators/concrete-bags/ConcreteBagsCalculator";
 import { normalizeLocale } from "@/i18n/locale";
 import { getAlternates } from "@/lib/seo";
+import { isReviewNoindexCalculator } from "@/lib/reviewPolicy";
 import { CalculatorRelatedSection } from "@/components/CalculatorRelatedSection";
 import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
@@ -23,10 +24,10 @@ export async function generateMetadata({
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
-    alternates: getAlternates(
-      locale,
-      "/calculators/home-improvement/concrete-bags",
-    ),
+    alternates: getAlternates(locale, "/calculators/home-improvement/concrete-bags"),
+    robots: isReviewNoindexCalculator(locale, "concreteBags")
+      ? { index: false, follow: true }
+      : undefined,
   };
 }
 

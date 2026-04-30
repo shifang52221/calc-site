@@ -8,6 +8,7 @@ import { getAlternates, getLocalizedUrl } from "@/lib/seo";
 import { routes } from "@/lib/routes";
 import { CALCULATOR_CATEGORIES, CALCULATORS } from "@/lib/calculatorsCatalog";
 import { GUIDE_DEFINITIONS } from "@/lib/guidesCatalog";
+import { sortCalculatorsForReview } from "@/lib/reviewPolicy";
 import { breadcrumbJsonLd } from "@/lib/structuredData";
 
 function faqJsonLd(faq: { q: string; a: string }[]) {
@@ -80,8 +81,9 @@ export default async function CalculatorsCategoryPage({
     },
   ];
 
-  const calculators = CALCULATORS.filter(
-    (item) => item.categoryId === category.id,
+  const calculators = sortCalculatorsForReview(
+    CALCULATORS.filter((item) => item.categoryId === category.id),
+    locale,
   );
   const guides = GUIDE_DEFINITIONS.filter((item) => item.categoryId === category.id);
 

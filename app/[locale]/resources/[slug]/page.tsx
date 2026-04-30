@@ -10,9 +10,11 @@ import { SITE_NAME } from "@/lib/site";
 import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 import { getResourceArticles } from "@/lib/content/resourcesByLocale";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
+import { ReviewedBy } from "@/components/ReviewedBy";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/structuredData";
 import {
   isReviewNoindexResource,
+  shouldRenderReviewerSignal,
   shouldRenderReviewResourceEnhancements,
 } from "@/lib/reviewPolicy";
 
@@ -97,6 +99,10 @@ export default async function ResourceArticlePage({
           {article.lastUpdated}
         </div>
       </div>
+
+      {shouldRenderReviewerSignal("resource", locale, slug) ? (
+        <ReviewedBy locale={locale} />
+      ) : null}
 
       {article.sections.map((section) => (
         <section

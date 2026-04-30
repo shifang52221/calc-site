@@ -2,8 +2,10 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  isReviewNoindexCalculator,
   isReviewNoindexGuide,
   isReviewNoindexResource,
+  shouldRenderReviewerSignal,
   shouldRenderReviewGuideEnhancements,
   shouldRenderReviewResourceEnhancements,
   sortGuideDefinitionsForReview,
@@ -35,6 +37,39 @@ test("review noindex policy only suppresses the targeted weak guides and resourc
     isReviewNoindexResource("zh-TW", "topsoil-leveling-step-by-step-guide"),
     false,
   );
+});
+
+test("review noindex policy suppresses non-core calculators during AdSense review", () => {
+  assert.equal(isReviewNoindexCalculator("en", "deckMud"), false);
+  assert.equal(isReviewNoindexCalculator("en", "baseboardTrim"), false);
+  assert.equal(isReviewNoindexCalculator("en", "drywallTexture"), false);
+  assert.equal(isReviewNoindexCalculator("en", "tile"), false);
+  assert.equal(isReviewNoindexCalculator("en", "paint"), false);
+
+  assert.equal(isReviewNoindexCalculator("en", "wallpaperRolls"), true);
+  assert.equal(isReviewNoindexCalculator("en", "soilMix"), true);
+  assert.equal(isReviewNoindexCalculator("es", "deckMud"), true);
+  assert.equal(isReviewNoindexCalculator("zh-TW", "deckMud"), true);
+});
+
+test("reviewer signal policy targets only core review surfaces", () => {
+  assert.equal(shouldRenderReviewerSignal("calculator", "en", "deckMud"), true);
+  assert.equal(shouldRenderReviewerSignal("calculator", "en", "tile"), true);
+  assert.equal(
+    shouldRenderReviewerSignal("calculator", "en", "wallpaperRolls"),
+    false,
+  );
+  assert.equal(
+    shouldRenderReviewerSignal("resource", "en", "deck-mud-coverage-chart"),
+    true,
+  );
+  assert.equal(
+    shouldRenderReviewerSignal("resource", "en", "topsoil-coverage-chart"),
+    false,
+  );
+  assert.equal(shouldRenderReviewerSignal("guide", "en", "tile-waste"), true);
+  assert.equal(shouldRenderReviewerSignal("guide", "en", "mulch"), false);
+  assert.equal(shouldRenderReviewerSignal("calculator", "es", "deckMud"), false);
 });
 
 test("review ordering moves proven surfaces to the top without dropping the rest", () => {

@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { DrywallTextureCalculator } from "@/calculators/drywall-texture/DrywallTextureCalculator";
 import { normalizeLocale } from "@/i18n/locale";
 import { getAlternates } from "@/lib/seo";
+import { isReviewNoindexCalculator } from "@/lib/reviewPolicy";
 import { routes } from "@/lib/routes";
 import { CalculatorRelatedSection } from "@/components/CalculatorRelatedSection";
 import { AdSlot } from "@/components/AdSlot";
@@ -26,10 +27,10 @@ export async function generateMetadata({
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
-    alternates: getAlternates(
-      locale,
-      "/calculators/home-improvement/drywall-texture",
-    ),
+    alternates: getAlternates(locale, "/calculators/home-improvement/drywall-texture"),
+    robots: isReviewNoindexCalculator(locale, "drywallTexture")
+      ? { index: false, follow: true }
+      : undefined,
   };
 }
 

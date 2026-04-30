@@ -3,7 +3,9 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/routing";
 import type { GuideId } from "@/lib/guidesCatalog";
 import { GUIDE_EXTRA_CONTENT_EN } from "@/lib/content/guidesEn";
+import { shouldRenderReviewerSignal } from "@/lib/reviewPolicy";
 import { routes } from "@/lib/routes";
+import { ReviewedBy } from "@/components/ReviewedBy";
 
 export function GuideExtraContent({
   locale,
@@ -18,7 +20,11 @@ export function GuideExtraContent({
   if (!block) return null;
 
   return (
-    <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+    <>
+      {shouldRenderReviewerSignal("guide", locale, guideId) ? (
+        <ReviewedBy locale={locale} />
+      ) : null}
+      <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
       <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
         {block.title}
       </h2>
@@ -57,5 +63,6 @@ export function GuideExtraContent({
         </Link>
       </div>
     </section>
+    </>
   );
 }

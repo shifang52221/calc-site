@@ -54,7 +54,7 @@ export default async function CalculatorsIndex({
       ? (rawCategory as (typeof CALCULATOR_CATEGORIES)[number]["id"] | "all")
       : "all";
 
-  const calculators = sortCalculatorsForReview(CALCULATORS).map((calculator) => ({
+  const calculators = sortCalculatorsForReview(CALCULATORS, locale).map((calculator) => ({
     href: calculator.href(locale),
     titleKey: calculator.titleKey,
     descriptionKey: calculator.descriptionKey,

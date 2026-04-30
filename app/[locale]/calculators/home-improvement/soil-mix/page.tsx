@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { SoilMixCalculator } from "@/calculators/soil-mix/SoilMixCalculator";
 import { normalizeLocale } from "@/i18n/locale";
 import { getAlternates } from "@/lib/seo";
+import { isReviewNoindexCalculator } from "@/lib/reviewPolicy";
 import { CalculatorRelatedSection } from "@/components/CalculatorRelatedSection";
 import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
@@ -24,6 +25,9 @@ export async function generateMetadata({
     title: t("metaTitle"),
     description: t("metaDescription"),
     alternates: getAlternates(locale, "/calculators/home-improvement/soil-mix"),
+    robots: isReviewNoindexCalculator(locale, "soilMix")
+      ? { index: false, follow: true }
+      : undefined,
   };
 }
 

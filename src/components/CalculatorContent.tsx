@@ -5,7 +5,9 @@ import type { CalculatorId } from "@/lib/calculatorsCatalog";
 import { CALCULATOR_CONTENT_EN } from "@/lib/content/calculatorsEn";
 import { CALCULATOR_CONTENT_ES } from "@/lib/content/calculatorsEs";
 import { CALCULATOR_CONTENT_ZH_TW } from "@/lib/content/calculatorsZhTW";
+import { shouldRenderReviewerSignal } from "@/lib/reviewPolicy";
 import { routes } from "@/lib/routes";
+import { ReviewedBy } from "@/components/ReviewedBy";
 
 const CALCULATOR_CONTENT_BY_LOCALE: Record<
   Locale,
@@ -79,15 +81,19 @@ export function CalculatorContent({
 
   if (variant === "before") {
     return (
-      <section className="rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
-        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
-          {labels.quickGuideTitle}
-        </h2>
-        <ul className="mt-3 grid list-disc gap-2 pl-5">
-          {quickPreview.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
+      <>
+        {shouldRenderReviewerSignal("calculator", locale, calculatorId) ? (
+          <ReviewedBy locale={locale} />
+        ) : null}
+        <section className="rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
+          <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+            {labels.quickGuideTitle}
+          </h2>
+          <ul className="mt-3 grid list-disc gap-2 pl-5">
+            {quickPreview.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
 
         {hasMoreTopContent ? (
           <details className="group mt-4">
@@ -162,6 +168,7 @@ export function CalculatorContent({
           </Link>
         </div>
       </section>
+      </>
     );
   }
 

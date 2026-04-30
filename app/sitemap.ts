@@ -7,7 +7,11 @@ import { CALCULATOR_CATEGORIES, CALCULATORS } from "@/lib/calculatorsCatalog";
 import { GUIDE_DEFINITIONS } from "@/lib/guidesCatalog";
 import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 import { getResourceArticles } from "@/lib/content/resourcesByLocale";
-import { isReviewNoindexGuide, isReviewNoindexResource } from "@/lib/reviewPolicy";
+import {
+  isReviewNoindexCalculator,
+  isReviewNoindexGuide,
+  isReviewNoindexResource,
+} from "@/lib/reviewPolicy";
 
 export const dynamic = "force-static";
 export const revalidate = 86400;
@@ -43,7 +47,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         (category) =>
           `${baseUrl}${routes.calculatorsCategory(locale, category.id)}`,
       ),
-      ...CALCULATORS.map((calculator) => `${baseUrl}${calculator.href(locale)}`),
+      ...CALCULATORS.filter(
+        (calculator) => !isReviewNoindexCalculator(locale, calculator.id),
+      ).map((calculator) => `${baseUrl}${calculator.href(locale)}`),
       ...GUIDE_DEFINITIONS.filter(
         (guide) => !isReviewNoindexGuide(locale, guide.id),
       ).map((guide) => `${baseUrl}${guide.href(locale)}`),

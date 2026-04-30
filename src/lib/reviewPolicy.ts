@@ -5,6 +5,11 @@ const REVIEW_FOCUS_CALCULATOR_ORDER = [
   "baseboardTrim",
   "drywallTexture",
   "tile",
+  "tileGrout",
+  "drywall",
+  "concrete",
+  "flooring",
+  "paint",
 ] as const;
 
 const REVIEW_FOCUS_GUIDE_ORDER = [
@@ -19,7 +24,97 @@ const REVIEW_FOCUS_RESOURCE_ORDER = [
   "tile-project-planning-guide",
   "baseboard-trim-waste-tips",
   "drywall-materials-and-finishing-guide",
+  "paint-planning-complete-guide",
+  "roofing-materials-checklist-and-estimate",
 ] as const;
+
+const REVIEW_CORE_CALCULATORS_EN = new Set<string>(REVIEW_FOCUS_CALCULATOR_ORDER);
+const REVIEW_CORE_GUIDES_EN = new Set<string>(REVIEW_FOCUS_GUIDE_ORDER);
+const REVIEW_CORE_RESOURCES_EN = new Set<string>(REVIEW_FOCUS_RESOURCE_ORDER);
+
+const REVIEW_NOINDEX_CALCULATORS_BY_LOCALE: Record<
+  Locale,
+  ReadonlySet<string>
+> = {
+  en: new Set([
+    "asphaltDriveway",
+    "boardFeet",
+    "concreteBags",
+    "deck",
+    "drywallMudTape",
+    "fence",
+    "gravel",
+    "gravelTons",
+    "mulch",
+    "mulchBags",
+    "paverBase",
+    "roofing",
+    "sand",
+    "soilMix",
+    "studs",
+    "topsoil",
+    "topsoilBags",
+    "wallpaperRolls",
+  ]),
+  es: new Set([
+    "asphaltDriveway",
+    "baseboardTrim",
+    "boardFeet",
+    "concrete",
+    "concreteBags",
+    "deck",
+    "deckMud",
+    "drywall",
+    "drywallMudTape",
+    "drywallTexture",
+    "fence",
+    "flooring",
+    "gravel",
+    "gravelTons",
+    "mulch",
+    "mulchBags",
+    "paint",
+    "paverBase",
+    "roofing",
+    "sand",
+    "soilMix",
+    "studs",
+    "tile",
+    "tileGrout",
+    "topsoil",
+    "topsoilBags",
+    "wallpaperRolls",
+  ]),
+  "zh-TW": new Set([
+    "asphaltDriveway",
+    "baseboardTrim",
+    "boardFeet",
+    "concrete",
+    "concreteBags",
+    "deck",
+    "deckMud",
+    "drywall",
+    "drywallMudTape",
+    "drywallTexture",
+    "fence",
+    "flooring",
+    "gravel",
+    "gravelTons",
+    "mulch",
+    "mulchBags",
+    "paint",
+    "paverBase",
+    "roofing",
+    "sand",
+    "soilMix",
+    "studs",
+    "tile",
+    "tileGrout",
+    "topsoil",
+    "topsoilBags",
+    "wallpaperRolls",
+  ]),
+};
 
 const REVIEW_NOINDEX_GUIDES_BY_LOCALE: Record<Locale, ReadonlySet<string>> = {
   en: new Set(["drywall-ceiling", "topsoil-leveling"]),
@@ -65,8 +160,33 @@ export function isReviewNoindexGuide(locale: Locale, guideId: string) {
   return REVIEW_NOINDEX_GUIDES_BY_LOCALE[locale].has(guideId);
 }
 
+export function isReviewNoindexCalculator(
+  locale: Locale,
+  calculatorId: string,
+) {
+  return REVIEW_NOINDEX_CALCULATORS_BY_LOCALE[locale].has(calculatorId);
+}
+
 export function isReviewNoindexResource(locale: Locale, slug: string) {
   return REVIEW_NOINDEX_RESOURCES_BY_LOCALE[locale].has(slug);
+}
+
+export function shouldRenderReviewerSignal(
+  kind: "calculator" | "guide" | "resource",
+  locale: Locale,
+  id: string,
+) {
+  if (locale !== "en") return false;
+
+  if (kind === "calculator") {
+    return REVIEW_CORE_CALCULATORS_EN.has(id);
+  }
+
+  if (kind === "guide") {
+    return REVIEW_CORE_GUIDES_EN.has(id);
+  }
+
+  return REVIEW_CORE_RESOURCES_EN.has(id);
 }
 
 export function shouldRenderReviewGuideEnhancements(
@@ -85,9 +205,12 @@ export function shouldRenderReviewResourceEnhancements(
 
 export function sortCalculatorsForReview<T extends { id: string }>(
   calculators: readonly T[],
+  locale: Locale = "en",
 ) {
   return sortByPriority(
-    calculators,
+    calculators.filter(
+      (calculator) => !isReviewNoindexCalculator(locale, calculator.id),
+    ),
     (calculator) => calculator.id,
     buildPriorityMap(REVIEW_FOCUS_CALCULATOR_ORDER),
   );
