@@ -19,6 +19,15 @@ function getByPath(obj: AnyObject, dottedPath: string): unknown {
   }, obj);
 }
 
+function collectStrings(value: unknown): string[] {
+  if (typeof value === "string") return [value];
+  if (Array.isArray(value)) return value.flatMap(collectStrings);
+  if (value && typeof value === "object") {
+    return Object.values(value).flatMap(collectStrings);
+  }
+  return [];
+}
+
 const REQUIRED_KEYS = [
   "aboutPage.responsibilityTitle",
   "aboutPage.responsibility.p1",
@@ -52,4 +61,22 @@ test("trust page structure includes required responsibility keys across locales"
       );
     }
   }
+});
+
+test("en trust surfaces name the responsible editor instead of anonymous ownership", () => {
+  const messages = loadLocaleMessages("en.json");
+  const trustText = [
+    messages.editorialPolicyPage,
+    messages.methodologyPage,
+    messages.aboutPage,
+    messages.contactPage,
+    getByPath(messages, "home.trustPoint1"),
+  ]
+    .flatMap(collectStrings)
+    .join("\n");
+
+  assert.match(trustText, /Ethan Parker/);
+  assert.match(trustText, /Editor and Calculator Methodology Lead/);
+  assert.doesNotMatch(trustText, /site owner\/editor/i);
+  assert.doesNotMatch(trustText, /owner\/editor/i);
 });

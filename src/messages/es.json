@@ -30,7 +30,7 @@
   "title": "Metodología",
   "subtitle": "Cómo pensamos las estimaciones: unidades claras, supuestos transparentes y márgenes prácticos.",
   "ownershipTitle": "Quién es responsable de la metodología",
-  "ownershipBody": "La metodología la mantiene el editor/propietario del sitio. Somos responsables de fórmulas, valores por defecto y gestión de correcciones.",
+  "ownershipBody": "La metodología la mantiene Ethan Parker, Editor and Calculator Methodology Lead. Ethan es responsable de fórmulas, valores por defecto y gestión de correcciones.",
   "whatWeDoTitle": "Qué hacemos (y qué no)",
     "whatWeDo": {
       "p1": "Nuestras calculadoras son herramientas de planificación. Convierten tus medidas en una estimación práctica usando fórmulas comunes y supuestos razonables.",
@@ -82,8 +82,8 @@
   "subtitle": "Cómo publicamos notas y guías: estándares de calidad, actualizaciones y correcciones.",
   "responsibilityTitle": "Responsabilidad editorial",
   "responsibility": {
-    "p1": "HomeDecorCalc se mantiene bajo la responsabilidad del editor/propietario del sitio.",
-    "p2": "Podemos usar herramientas para redactar más rápido, pero la revisión y decisión final de publicación es humana."
+    "p1": "HomeDecorCalc se mantiene bajo la responsabilidad de Ethan Parker, Editor and Calculator Methodology Lead.",
+    "p2": "Ethan puede usar herramientas para redactar más rápido, pero la revisión y decisión final de publicación es humana."
   },
   "qualityTitle": "Estándares de calidad",
     "quality": {
@@ -1388,8 +1388,8 @@
     },
     "responsibilityTitle": "Quién mantiene este sitio",
     "responsibility": {
-      "p1": "Un editor/propietario del sitio mantiene HomeDecorCalc y responde por supuestos, páginas de confianza y correcciones.",
-      "p2": "Podemos usar herramientas de apoyo para redactar, pero la revisión final antes de publicar es humana."
+      "p1": "Ethan Parker mantiene HomeDecorCalc como Editor and Calculator Methodology Lead y responde por supuestos, páginas de confianza y correcciones.",
+      "p2": "Ethan puede usar herramientas de apoyo para redactar, pero la revisión final antes de publicar es humana."
     },
     "whatYouGetTitle": "Qué encontrarás aquí",
     "whatYouGet": {

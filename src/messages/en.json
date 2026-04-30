@@ -18,8 +18,8 @@
     "subtitle": "How we publish calculator notes and guides: quality standards, updates, and corrections.",
     "responsibilityTitle": "Responsibility",
     "responsibility": {
-      "p1": "HomeDecorCalc is maintained by a site owner/editor who is responsible for publishing standards, correction handling, and update decisions.",
-      "p2": "We use tools to improve drafting speed, but final publication decisions and quality checks are human-owned."
+      "p1": "HomeDecorCalc is maintained by Ethan Parker, Editor and Calculator Methodology Lead. He is responsible for publishing standards, correction handling, and update decisions.",
+      "p2": "Ethan may use tools to improve drafting speed, but final publication decisions and quality checks are human-owned."
     },
     "qualityTitle": "Quality standards",
     "quality": {
@@ -91,7 +91,7 @@
   "title": "Methodology",
   "subtitle": "How we think about estimates: clear units, transparent assumptions, and practical buffers.",
   "ownershipTitle": "Who is responsible for methodology",
-  "ownershipBody": "Methodology decisions are maintained by the site owner/editor. We are responsible for formula choices, default assumptions, and correction turnaround.",
+  "ownershipBody": "Methodology decisions are maintained by Ethan Parker, Editor and Calculator Methodology Lead. Ethan is responsible for formula choices, default assumptions, and correction turnaround.",
   "whatWeDoTitle": "What we do (and what we don't)",
   "whatWeDo": {
    "p1": "Our calculators are planning tools. They convert your measurements into a practical material estimate using common formulas and reasonable assumptions.",
@@ -159,7 +159,7 @@
   "priorityTileWasteDesc": "Choose realistic overage ranges based on layout complexity, cuts, and box-rounding risk.",
   "trustTitle": "Why this site is trustworthy for planning",
   "trustIntro": "We prioritize clear assumptions and accountable updates so you can understand the estimate, not just copy a number.",
-  "trustPoint1": "A responsible site owner/editor reviews major updates and correction reports.",
+  "trustPoint1": "Ethan Parker, Editor and Calculator Methodology Lead, reviews major updates and correction reports.",
   "trustPoint2": "Methodology and editorial policy pages explain how assumptions are chosen and revised.",
   "trustPoint3": "Defaults are practical starting points and should be validated against local code and product labels.",
   "popularResourcesTitle": "Popular planning resources",
@@ -1419,8 +1419,8 @@
     },
     "responsibilityTitle": "Who maintains this site",
     "responsibility": {
-      "p1": "A site owner/editor maintains HomeDecorCalc and is accountable for trust pages, calculator assumptions, and correction responses.",
-      "p2": "We may use tools for drafting support, but human review is required before updates go live."
+      "p1": "Ethan Parker maintains HomeDecorCalc as Editor and Calculator Methodology Lead. He is accountable for trust pages, calculator assumptions, and correction responses.",
+      "p2": "Ethan may use tools for drafting support, but human review is required before updates go live."
     },
     "principlesTitle": "Our principles",
     "principles": {
@@ -1456,8 +1456,8 @@
   "metaDescription": "Get in touch with HomeDecorCalc.",
   "title": "Contact",
   "intro": {
-    "p1": "For support, feedback, or corrections, email us and include a few details so we can help quickly.",
-    "p2": "We read every message. If the issue is about a specific calculator, include your inputs, the result you expected, and your browser/device when possible, plus a screenshot if you can."
+    "p1": "For support, feedback, or corrections, email Ethan Parker, Editor and Calculator Methodology Lead, and include a few details so we can help quickly.",
+    "p2": "Ethan reviews every correction report. If the issue is about a specific calculator, include your inputs, the result you expected, and your browser/device when possible, plus a screenshot if you can."
   },
   "beforeYouEmailTitle": "Before you email",
   "beforeYouEmail": {
@@ -1492,7 +1492,7 @@
   },
   "whatHappensNextTitle": "What happens after you email us",
   "whatHappensNext": {
-    "n1": "We review your report and classify it as a bug, assumption mismatch, or clarification request.",
+    "n1": "Ethan Parker reviews your report and classifies it as a bug, assumption mismatch, or clarification request.",
     "n2": "If details are missing, we reply with a short follow-up checklist.",
     "n3": "When confirmed, we update the page and prioritize higher-impact fixes first."
   },
