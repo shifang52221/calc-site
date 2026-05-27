@@ -40,20 +40,51 @@ test("review noindex policy only suppresses the targeted weak guides and resourc
 });
 
 test("review noindex policy suppresses non-core calculators during AdSense review", () => {
-  assert.equal(isReviewNoindexCalculator("en", "deckMud"), false);
-  assert.equal(isReviewNoindexCalculator("en", "baseboardTrim"), false);
-  assert.equal(isReviewNoindexCalculator("en", "drywallTexture"), false);
-  assert.equal(isReviewNoindexCalculator("en", "tile"), false);
-  assert.equal(isReviewNoindexCalculator("en", "paint"), false);
+  const englishCoreCalculators = [
+    "deckMud",
+    "baseboardTrim",
+    "drywallTexture",
+    "tile",
+    "tileGrout",
+    "drywall",
+    "concrete",
+    "flooring",
+    "paint",
+  ];
+
+  for (const calculatorId of englishCoreCalculators) {
+    assert.equal(
+      isReviewNoindexCalculator("en", calculatorId),
+      false,
+      calculatorId,
+    );
+  }
 
   assert.equal(isReviewNoindexCalculator("en", "wallpaperRolls"), true);
   assert.equal(isReviewNoindexCalculator("en", "soilMix"), true);
-  assert.equal(isReviewNoindexCalculator("es", "deckMud"), true);
-  assert.equal(isReviewNoindexCalculator("zh-TW", "deckMud"), true);
+  assert.equal(isReviewNoindexCalculator("en", "asphaltDriveway"), true);
+
+  for (const locale of ["es", "zh-TW"] as const) {
+    for (const calculatorId of englishCoreCalculators) {
+      assert.equal(
+        isReviewNoindexCalculator(locale, calculatorId),
+        true,
+        `${locale}:${calculatorId}`,
+      );
+    }
+  }
 });
 
 test("reviewer signal policy targets only core review surfaces", () => {
   assert.equal(shouldRenderReviewerSignal("calculator", "en", "deckMud"), true);
+  assert.equal(
+    shouldRenderReviewerSignal("calculator", "en", "baseboardTrim"),
+    true,
+  );
+  assert.equal(
+    shouldRenderReviewerSignal("calculator", "en", "drywallTexture"),
+    true,
+  );
   assert.equal(shouldRenderReviewerSignal("calculator", "en", "tile"), true);
   assert.equal(
     shouldRenderReviewerSignal("calculator", "en", "wallpaperRolls"),
@@ -61,6 +92,14 @@ test("reviewer signal policy targets only core review surfaces", () => {
   );
   assert.equal(
     shouldRenderReviewerSignal("resource", "en", "deck-mud-coverage-chart"),
+    true,
+  );
+  assert.equal(
+    shouldRenderReviewerSignal("resource", "en", "baseboard-trim-waste-tips"),
+    true,
+  );
+  assert.equal(
+    shouldRenderReviewerSignal("resource", "en", "tile-project-planning-guide"),
     true,
   );
   assert.equal(
