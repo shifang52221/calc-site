@@ -1766,9 +1766,9 @@
  },
    "drywallTexture": {
     "metaTitle": "Drywall Texture Calculator (How Much Texture Do I Need?)",
-    "metaDescription": "Estimate drywall texture bags by square feet, passes, and coverage per bag. Works for knockdown, orange peel, and skip trowel with waste included.",
+    "metaDescription": "Estimate drywall texture bags by square feet, passes, texture type, and coverage per bag for knockdown, orange peel, skip trowel, and patch blending.",
   "title": "Drywall Texture Calculator",
-    "subtitle": "Estimate texture material needed. Adjust coats, coverage per bag, texture type, and waste.",
+    "subtitle": "Estimate texture material needed by area, passes, coverage per bag, texture type, test patch results, and waste.",
     "reviewNoteTitle": "Review note",
     "reviewNoteBody": "This estimate was reviewed for practical drywall-texture planning. Always verify texture type, pass count, and the exact coverage on your product label after a small test patch.",
     "reviewNoteLinkMethodology": "See methodology",
@@ -1794,9 +1794,9 @@
   "faqTitle": "FAQ",
   "faq": {
    "q1": "How do I estimate drywall texture?",
-   "a1": "Multiply area by coats/passes, divide by product coverage per bag, add waste, then round up to whole bags. This gives a practical estimate for how much texture to buy.",
+   "a1": "Multiply area by coats or passes, divide by product coverage per bag, add waste, then round up to whole bags. For repairs, include the blend area around the patch so the texture fades into the existing wall.",
    "q2": "What coverage per bag should I use?",
-   "a2": "Use the exact product label for your texture and method. Knockdown, orange peel, and skip trowel can have very different real-world coverage.",
+   "a2": "Use the exact product label for your texture and method, then sanity-check it with a small test patch if possible. Knockdown, orange peel, skip trowel, and popcorn/acoustic textures can have very different real-world coverage.",
    "q3": "How much waste should I add?",
    "a3": "5-15% is common. Spraying setup, overspray, sanding, and first-time application can push waste higher."
   }

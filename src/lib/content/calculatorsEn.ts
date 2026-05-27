@@ -521,10 +521,11 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
     drywallTexture: {
         quick: [
           "Measure total wall/ceiling area you want to texture (sq ft or m²).",
-          "Decide texture type and method (spray, hopper, trowel) before estimating coverage.",
-          "Choose coats/passes (some textures take multiple applications or a primer step).",
-          "Use the exact product label for coverage per bag/bucket and round up.",
-          "Add a buffer for overspray, practice, and touch-ups (often 10-20% for first-timers).",
+        "Decide texture type and method (spray, hopper, trowel) before estimating coverage.",
+        "Choose coats/passes (some textures take multiple applications or a primer step).",
+        "Use the exact product label for coverage per bag/bucket and round up.",
+        "Run a small test patch if matching matters; real coverage changes with nozzle, pressure, mix thickness, and knockdown timing.",
+        "Add a buffer for overspray, practice, and touch-ups (often 10-20% for first-timers).",
           "If you are blending a patch, include a wider blend zone around the repair area.",
           "Ceilings and tall walls usually need more material; plan a higher waste factor.",
           "Keep mix water and batch size consistent so coverage stays predictable.",
@@ -534,6 +535,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
         "Texture coverage varies a lot by the finish (knockdown, orange peel, skip trowel) and by application method (spray vs hand). The same bag can cover very different areas depending on how heavy you apply and how much you knock down.",
         "Waste is real: overspray, practice runs, hopper cleanout, and mixing losses can consume material that never ends up on the wall. Beginners typically need more buffer than experienced installers.",
         "The most reliable approach is to do a small test area (or a scrap board), measure what you used, then scale up. A quick test can prevent a large under-buy.",
+        "For patch blending, estimate more than the damaged area. A 2 ft x 2 ft repair may need texture feathered well beyond the patch so the transition disappears after primer and paint.",
         "If your finish needs multiple passes (or a heavy build), multiply your area by passes before converting to bags. A two-pass texture can be close to double the material.",
         "Priming and substrate condition matter. Porous patches and fresh drywall can drink material differently than sealed walls, so label coverage can shift in real rooms.",
         "Texture types notes (quick mapping): orange peel is usually a spray texture with lighter build; knockdown is sprayed heavier and then knocked down (often uses more material); skip trowel is applied with a trowel and is more labor-driven; popcorn/acoustic is a ceiling texture with its own products and coverage behavior (project dependent).",
@@ -556,6 +558,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
           "Round up and add a waste buffer for practice, overspray, and repairs.",
           "If you are matching an existing texture, add a blend zone around the patch (often 12-24 inches beyond the repair).",
           "Subtract large areas you will not texture (tile backsplashes, cabinets) if you want a tighter estimate.",
+          "For repairs, measure the patch plus the feathered blend zone, not just the hole or taped area.",
         ],
       assumptionsTitle: "Assumptions to double-check",
         assumptions: [
@@ -594,7 +597,7 @@ export const CALCULATOR_CONTENT_EN: Record<CalculatorId, CalculatorContentBlock>
           "Over-thinning the mix for easier spraying, then losing build and coverage.",
           "Skipping primer on glossy or stained surfaces and ending up with uneven texture.",
         ],
-        lastUpdated: "Last updated: Feb 2026",
+        lastUpdated: "Last updated: May 2026",
       },
     fence: {
       quick: [

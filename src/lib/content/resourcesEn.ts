@@ -2468,10 +2468,10 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
   },
   {
     slug: "drywall-texture-coverage-guide",
-    title: "Drywall texture coverage guide (bags, coats, and waste)",
+    title: "Drywall Texture Coverage Guide (Bags, Passes, and Test Patches)",
     description:
-      "A practical drywall texture guide: why coverage varies, how coats change material, and what increases waste.",
-    lastUpdated: "Last updated: Jan 2026",
+      "Plan drywall texture material by square feet, coats, texture type, product coverage, test patches, overspray, and repair blending waste.",
+    lastUpdated: "Last updated: May 2026",
     sections: [
       {
         heading: "Why coverage varies",
@@ -2479,6 +2479,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Texture type and tool (spray vs hopper vs trowel).",
           "Surface porosity and primer.",
           "Coat count and finish level expectations.",
+          "Nozzle size, air pressure, mix thickness, and knockdown timing.",
         ],
       },
       {
@@ -2522,12 +2523,14 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Practical workflow tip (keeps estimates reliable)",
         paragraphs: [
           "Do a small test wall or a large scrap board first. Measure how much material you used, then scale up. Even a quick test run can tell you whether you need one coat or two and whether your tool setup is wasting material.",
+          "For repairs, measure the patch plus the feathered blend zone. A small patch often needs a larger texture area so the edge disappears after primer and paint.",
         ],
       },
     ],
     related: [
       { label: "Drywall texture calculator", href: "/en/calculators/home-improvement/drywall-texture" },
       { label: "Drywall calculator", href: "/en/calculators/home-improvement/drywall" },
+      { label: "Methodology", href: "/en/methodology" },
     ],
   },
   {
