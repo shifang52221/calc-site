@@ -1010,20 +1010,20 @@
   }
  },
  "guideTileWaste": {
-  "metaTitle": "Tile waste percentage (overage): how much extra to buy",
-  "metaDescription": "Choose a tile waste percentage based on layout, cuts, and pattern matching. Includes box rounding and repair spares.",
-  "title": "Tile waste factor: how much extra to buy",
-  "subtitle": "Waste depends on cuts, layout, and room complexity - pick a safe overage before you order.",
+  "metaTitle": "Tile Waste Percentage Guide: 10%, 15%, or 20% Overage?",
+  "metaDescription": "Choose how much extra tile to buy for floors, shower walls, diagonal layouts, herringbone, niches, and box rounding before you order.",
+  "title": "Tile waste percentage: how much extra tile to buy",
+  "subtitle": "Compare 10%, 15%, and 20% overage for floors, shower walls, patterns, cuts, and box rounding before you order.",
   "intro": {
-   "p1": "Tile projects almost always require extra material: cuts, breakage, pattern matching, and future repairs all add up. Even with perfect area math, you will lose tiles to edge cuts, mistakes, and pieces that crack during cutting or handling.",
-   "p2": "A waste factor (overage) is the simplest way to avoid running short while still keeping costs under control. The right waste factor depends on layout complexity, tile size, and how many detailed features you have (niches, benches, borders, and plumbing penetrations). Box coverage and dye-lot matching also change what a safe order looks like."
+   "p1": "Tile projects almost always require extra material: perimeter cuts, breakage, pattern matching, box rounding, and future repairs all add up. Even with perfect area math, you will lose tiles to edge cuts, mistakes, and pieces that crack during cutting or handling.",
+   "p2": "A waste factor (overage) is the simplest way to avoid running short while still keeping costs under control. The right waste factor depends on layout complexity, tile size, and how many detailed features you have, including shower niches, benches, borders, outlets, and plumbing penetrations. Box coverage, dye lot, and caliber matching also change what a safe order looks like."
   },
   "stepsTitle": "Step-by-step: pick a waste factor",
   "steps": {
    "s1": "Start with the tile area you need (including walls, floors, or backsplashes). Use the planned tile coverage area, not just the room size, and include any feature walls or shower niches you will tile.",
    "s2": "Choose the layout and tile module (tile size + grout joint). Straight-lay usually wastes less than diagonal, herringbone, and other patterns that force more cutoffs and unusable offcuts.",
    "s3": "Consider room complexity: many corners, small rooms, niches, benches, borders, and plumbing penetrations increase waste because more tiles become small custom pieces.",
-   "s4": "Pick a waste factor that matches the risk: 10% is common for simple straight-lay, 15%+ for diagonal/patterns, and higher if you need strict pattern/vein matching (project dependent).",
+   "s4": "Pick a waste factor that matches the risk: 10% is common for simple straight-lay floors, 15% for diagonal layouts or cut-heavy rooms, and 20%+ for herringbone, shower walls with niches, or strict pattern/vein matching (project dependent).",
    "s5": "Convert to boxes: ordering area = tile area x (1 + waste), then divide by box coverage and round up. Consider an extra box for future repairs and dye-lot matching."
   },
   "tipsTitle": "Practical tips",
@@ -1045,8 +1045,8 @@
   "ctaBody": "Use our tile calculator and share a link that keeps your inputs.",
   "faqTitle": "FAQ",
   "faq": {
-   "q1": "Is 10% waste enough for tile?",
-   "a1": "Often yes for simple rooms with straight layouts and few obstacles. For diagonal layouts, patterns, many obstacles, large-format tile in small rooms, or strict pattern matching, plan 15% or more (project dependent).",
+   "q1": "Is 10% tile waste enough?",
+   "a1": "Often yes for simple straight-lay floors with few obstacles. For diagonal layouts, herringbone, shower walls, many outlets or plumbing cuts, large-format tile in small rooms, or strict pattern matching, plan 15% or more (project dependent).",
    "q2": "Should I buy extra tile for future repairs?",
    "a2": "Yes if you can. It's hard to match batch color later, and discontinued products are common. One extra box is often cheaper than trying to source a close match later.",
    "q3": "Does tile size affect waste?",

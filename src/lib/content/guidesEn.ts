@@ -94,9 +94,9 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
     ],
   },
   "tile-waste": {
-    title: "Improving tile waste estimates",
+    title: "Tile overage decision notes",
     paragraphs: [
-      "Tile waste depends on layout and room shape more than raw square footage. Diagonal patterns, herringbone, and lots of corners increase waste because more tiles are cut.",
+      "Tile waste depends on layout and room shape more than raw square footage. Simple straight-lay floors often start near 10% overage, while diagonal patterns, herringbone, shower walls, and lots of corners can move the safer range toward 15-20% or more.",
       "If you’re mixing field tile with mosaics, borders, or trim, estimate those separately—the box coverage and waste behavior are different.",
       "Box rounding matters. Even if your math says 10.2 boxes, you must buy 11, and that rounding can be the difference between a calm install and a mid-job shortage.",
       "Layout modules (tile + grout joint) affect where cuts land. A small shift in layout can turn a room full of sliver cuts into larger, reusable offcuts.",
@@ -105,9 +105,12 @@ export const GUIDE_EXTRA_CONTENT_EN: Partial<
       "Caliber and shade variation also matter. If your tile has lot-to-lot variation, ordering enough in one batch reduces blending issues and future mismatch risk.",
       "A practical strategy is to run a base estimate and a stress-case estimate. If both totals round to the same box count, your purchase risk is lower.",
       "That two-scenario check is especially useful for showers and backsplashes. A room that looks small on paper can still jump an entire box once niches, outlet cuts, and trim pieces are included.",
+      "Before you order, compare a base case and a high-risk case. If a 10% floor estimate and a 15% risk estimate round to the same box count, choose the safer order. If 20% adds one box for a shower wall with niches, that box may be cheaper than trying to match a dye lot later.",
     ],
     bullets: [
-      "Use a higher waste factor for patterns, niches, and many penetrations.",
+      "Use 10% only when the layout is simple and the supplier can still match stock if you need more.",
+      "Use 15%+ for diagonal layouts, large-format tile in small rooms, niches, outlets, and many penetrations.",
+      "Use 20%+ for herringbone, strict vein matching, shower walls with benches/niches, or hard-to-replace tile.",
       "Keep spare tiles for repairs (same dye lot when possible).",
       "Round up if tiles may be discontinued or hard to match later.",
       "Measure a few tiles from different boxes; real tile size can vary slightly and shift your layout lines.",

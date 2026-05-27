@@ -5480,36 +5480,45 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
   },
   {
     slug: "tile-project-planning-guide",
-    title: "Tile project planning guide (layout, overage, and materials list)",
+    title: "Tile Waste and Project Planning Guide (10%, 15%, 20% Overage)",
     description:
-      "A practical tile planning guide: how to choose an overage factor, avoid box-coverage mistakes, and build a complete materials list.",
-    lastUpdated: "Last updated: Feb 2026",
+      "Choose how much extra tile to buy with practical 10%, 15%, and 20% overage ranges, box rounding examples, layout risks, and a complete materials checklist.",
+    lastUpdated: "Last updated: May 2026",
     sections: [
       {
-        heading: "Start with layout (layout drives waste)",
+        heading: "Start with how much extra tile to buy",
         paragraphs: [
-          "Tile waste is mostly layout and cuts, not broken tiles. Straight layouts in open rectangles typically waste less than diagonal layouts, herringbone, or projects with many corners, niches, and penetrations.",
-          "If appearance matters, plan to buy enough from a consistent dye lot. That usually means choosing a realistic overage upfront instead of trying to top up later.",
+          "Most tile orders need more than the measured area. The extra tile covers perimeter cuts, layout offcuts, breakage, box rounding, and future repairs. A simple straight floor may be safe around 10% overage, while diagonal patterns, herringbone, shower walls, and niches often need 15-20% or more.",
+          "If appearance matters, plan to buy enough from a consistent dye lot and caliber. That usually means choosing a realistic waste percentage upfront instead of trying to top up later with a slightly different batch.",
         ],
+      },
+      {
+        heading: "Quick overage ranges",
+        paragraphs: [
+          "Use these ranges as a planning starting point, then adjust for your layout and supplier return policy.",
+        ],
+        table: {
+          columns: ["Install type", "Typical overage", "Notes"],
+          rows: [
+            ["Straight floor layout", "10%", "Increase for many corners or small rooms"],
+            ["Diagonal / patterns", "15-20%", "More cuts and harder-to-reuse offcuts"],
+            ["Shower walls with niches", "15-20%+", "Corners, plumbing, shelves, and trim add risk"],
+            ["Herringbone / complex layout", "15-25%", "Pattern matching and small cuts increase waste"],
+            ["Large format tile", "10-15%", "Fewer pieces, but breakage and layout shifts matter"],
+          ],
+        },
       },
       {
         heading: "Order timing and batch consistency",
         paragraphs: [
           "Tile batches can vary slightly. Ordering everything at once reduces dye-lot mismatch and speeds the job.",
+          "If your estimate lands close to the next box, one extra box is often safer than trying to match the tile later. This is especially true for discontinued styles, natural stone, and heavily veined porcelain.",
         ],
         bullets: [
-          "Buy trims, bullnose, and mosaics in the same batch when possible.",
-          "Keep at least one extra box for future repairs.",
+          "Buy trims, bullnose, mosaics, and edge profiles in the same batch when possible.",
+          "Keep at least one extra box for future repairs if the tile may be hard to match.",
+          "Record the dye lot, caliber, and product code before boxes are mixed on site.",
         ],
-        table: {
-          columns: ["Install type", "Typical overage", "Notes"],
-          rows: [
-            ["Straight floor layout", "10%", "Increase for many corners"],
-            ["Diagonal / patterns", "15–20%", "More cuts and waste"],
-            ["Walls with niches/penetrations", "15–25%", "Small cuts are hard to reuse"],
-            ["Large format tile", "10–15%", "Fewer pieces but breakage risk matters"],
-          ],
-        },
       },
       {
         heading: "Bathroom and kitchen tile waste (quick ranges)",
@@ -5527,6 +5536,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         paragraphs: [
           "If your estimate lands near a box boundary, one extra box can reduce risk and avoid dye-lot mismatch later.",
           "Extra boxes are especially useful for patterns, natural stone, and discontinued styles where matching later is difficult.",
+          "A quick check: if both a 10% and 15% overage calculation round to the same box count, the safer higher overage may not cost anything extra. If the higher case adds one box, compare that cost to the risk of a mid-job shortage.",
         ],
         bullets: [
           "Confirm return policy for unopened boxes before you buy extra.",
@@ -5552,6 +5562,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         paragraphs: [
           "Do not compute box coverage from tile size alone. Packaging varies by product, thickness, and pieces per carton. Use the label’s sq ft/sq m coverage per box and round up to whole boxes.",
           "If you are mixing field tile with mosaics, borders, or trim pieces, estimate those separately. Their coverage and waste behavior differ from field tile.",
+          "Apply the waste percentage before converting to boxes. For example, 120 sq ft at 15% overage is 138 sq ft. If the box covers 13.6 sq ft, the order is 138 / 13.6 = 10.15, so you buy 11 boxes.",
         ],
       },
       {
@@ -5623,6 +5634,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Buying tile based on calculated pieces-per-box instead of the label coverage.",
           "Underestimating cuts around toilets, cabinets, niches, and pipe penetrations.",
           "Skipping substrate prep and then trying to “fix it in thinset,” which usually creates lippage and weak spots.",
+          "Using one waste percentage for both open floors and shower walls even though wall niches, benches, and plumbing penetrations create more cut pieces.",
         ],
       },
     ],
@@ -5630,6 +5642,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
       { label: "Tile calculator", href: "/en/calculators/home-improvement/tile" },
       { label: "Tile guide", href: "/en/guides/home-improvement/tile" },
       { label: "Tile waste guide", href: "/en/guides/home-improvement/tile-waste" },
+      { label: "Methodology", href: "/en/methodology" },
       { label: "Tile grout guide", href: "/en/resources/tile-grout-selection-and-coverage-guide" },
       { label: "Tile waterproofing guide", href: "/en/resources/tile-waterproofing-and-membranes-guide" },
     ],
