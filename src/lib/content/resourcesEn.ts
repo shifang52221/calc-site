@@ -1879,25 +1879,41 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
   },
   {
     slug: "baseboard-trim-waste-tips",
-    title: "Baseboard and trim waste tips (miters, corners, and pieces)",
+    title: "Baseboard Trim Waste Tips (Linear Feet, Pieces, and Miters)",
     description:
-      "How corners and miter cuts drive waste, why piece length matters, and practical ways to plan trim purchases.",
-    lastUpdated: "Last updated: Feb 2026",
+      "Plan baseboard molding waste by linear feet, stock length, door openings, outside corners, scarf joints, and 8 ft vs 12 ft piece count.",
+    lastUpdated: "Last updated: May 2026",
     sections: [
       {
-        heading: "Why piece length matters",
+        heading: "Start with linear feet, then plan pieces",
         paragraphs: [
-          "Trim is often sold in fixed piece lengths. Even if your total linear feet are correct, you can still run short if you do not plan how those lengths break into pieces around corners and doors.",
+          "Baseboard trim starts as a linear-foot estimate, but most homeowners buy full molding pieces. A good plan checks both numbers: total run length after door deductions, and the number of 8 ft, 12 ft, or 16 ft pieces needed after waste.",
+          "Even if your total linear feet are correct, you can still run short if you do not plan how those lengths break into pieces around corners, door casings, closets, stair landings, and long visible walls.",
         ],
+      },
+      {
+        heading: "8 ft vs 12 ft baseboard pieces",
+        paragraphs: [
+          "Longer pieces reduce seams on visible walls, but they can be harder to transport and can create awkward offcuts in small rooms. Shorter pieces are easier to handle, but they need more seam planning.",
+        ],
+        table: {
+          columns: ["Stock length", "Best fit", "Watch out for"],
+          rows: [
+            ["8 ft", "Small rooms, closets, easier transport", "More seams on long walls"],
+            ["12 ft", "Living rooms, halls, fewer visible seams", "Harder handling and possible waste in short runs"],
+            ["16 ft", "Very long straight runs", "Transport, storage, and damage risk"],
+          ],
+        },
       },
       {
         heading: "Outside corners and scarf joints",
         paragraphs: [
-          "Outside corners and scarf joints create offcuts that cannot always be reused. Add a small buffer for cut loss.",
+          "Outside corners and scarf joints create offcuts that cannot always be reused. Add a small buffer for cut loss, especially when the room has many short wall runs.",
         ],
         bullets: [
           "Pre-plan long runs so you do not end with tiny pieces.",
           "Buy extra if you need continuous runs in visible areas.",
+          "Try to land scarf joints near studs for better fastening and less movement.",
         ],
       },
       {
@@ -1911,7 +1927,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
       {
         heading: "Linear feet to pieces (simple method)",
         paragraphs: [
-          "A simple planning method is: pieces needed ≈ (total linear feet ÷ piece length) × (1 + waste). Then round up to whole pieces. Waste depends on corners and short runs.",
+          "A simple planning method is: pieces needed = (total linear feet x (1 + waste)) / piece length. Then round up to whole pieces. Waste depends on corners, short runs, and whether offcuts can be reused.",
           "Example: if you need 180 linear feet and pieces are 16 ft, the minimum is 180/16 = 11.25 → 12 pieces. If your layout is cut-up, adding 10–15% can be safer (12 × 1.15 = 13.8 → 14 pieces).",
         ],
         bullets: [
@@ -1959,10 +1975,12 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
       {
         heading: "Ordering checklist",
         bullets: [
+          "Measure wall runs after deciding where baseboard stops at door casing.",
           "Confirm piece length and profile availability (some profiles only come in certain lengths).",
           "Decide on inside-corner method (miter vs cope) and outside corner returns (project dependent).",
           "Plan for transitions to door casings, fireplaces, and stair trim where runs break.",
           "Add extra for defects, damaged ends, and future repairs if matching later matters.",
+          "Estimate shoe molding, quarter round, and casing separately if they use a different profile.",
         ],
       },
       {
@@ -1976,6 +1994,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     ],
     related: [
       { label: "Baseboard & trim calculator", href: "/en/calculators/home-improvement/baseboard-trim" },
+      { label: "Methodology", href: "/en/methodology" },
       { label: "Flooring calculator (often related)", href: "/en/calculators/home-improvement/flooring" },
     ],
   },

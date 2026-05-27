@@ -2449,10 +2449,10 @@
   }
  },
   "baseboardTrim": {
-    "metaTitle": "Baseboard Calculator (Linear Feet, 8 ft / 12 ft Pieces, Waste)",
-    "metaDescription": "Calculate how much baseboard you need by wall length, door openings, waste, and stock length. Estimate linear feet and piece count before you buy trim.",
-    "title": "Baseboard Calculator",
-    "subtitle": "Calculate baseboard linear feet, 8 ft or 12 ft piece count, and waste before you buy trim.",
+    "metaTitle": "Baseboard Trim Calculator (Linear Feet, Pieces, Waste)",
+    "metaDescription": "Use this baseboard trim calculator to estimate linear feet, 8 ft or 12 ft molding pieces, door deductions, waste, and cost before buying trim.",
+    "title": "Baseboard Trim Calculator",
+    "subtitle": "Estimate baseboard linear feet, molding piece count, door openings, stock length, and waste before you buy trim.",
     "reviewNoteTitle": "Review note",
     "reviewNoteBody": "This estimate was reviewed for practical trim planning. Confirm door deductions, stock length strategy, and corner/joint layout before final purchasing so your piece count is realistic.",
     "reviewNoteLinkMethodology": "See methodology",
@@ -2485,10 +2485,10 @@
     "faq": {
      "q1": "Do I subtract doors for baseboard?",
      "a1": "Usually yes. Baseboard usually stops at door casing, so subtracting door openings gives a more accurate linear-feet estimate before you add waste.",
-     "q2": "What piece length should I choose?",
-     "a2": "Use the stock length you plan to buy, usually 8 ft or 12 ft pieces. Longer pieces reduce seams, but they are harder to transport. Piece count = total trim length (after waste) divided by piece length, rounded up.",
-     "q3": "How much waste should I add?",
-     "a3": "5-10% is common for simple rooms. Use more for many corners, short walls, scarf joints, lots of miter cuts, or first-time trim installs."
+     "q2": "Should I use 8 ft or 12 ft baseboard pieces?",
+     "a2": "Use the stock length you can actually buy and transport. 12 ft pieces can reduce seams on long visible walls, while 8 ft pieces are easier to handle and may waste less in small rooms. Piece count = total trim length after waste divided by piece length, rounded up.",
+     "q3": "How much waste should I add for baseboard trim?",
+     "a3": "5-10% is common for simple rooms. Use 12-15% or more for many corners, short walls, outside miters, scarf joints, stained molding, or first-time trim installs."
     }
    },
  "topsoilBags": {
