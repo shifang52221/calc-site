@@ -2,6 +2,11 @@
 import https from "node:https";
 import crypto from "node:crypto";
 
+import {
+  REVIEW_CRITICAL_PATHS,
+  evaluateCriticalReviewPage,
+} from "./adsense-audit-helpers.mjs";
+
 function fetchText(url) {
   return new Promise((resolve, reject) => {
     https
@@ -127,9 +132,11 @@ async function main() {
   const sitemapXml = await fetchText(sitemapUrl);
   const locs = parseSitemapLocs(sitemapXml);
   const urls = locs.slice(0, sample);
+  const siteOrigin = new URL(sitemapUrl).origin;
 
   const results = [];
   const byHash = new Map();
+  const criticalReviewPages = [];
 
   for (const url of urls) {
     try {
@@ -179,6 +186,25 @@ async function main() {
     .slice(0, 10)
     .map(([hash, list]) => ({ hash, count: list.length, urls: list.slice(0, 6) }));
 
+  for (const path of REVIEW_CRITICAL_PATHS) {
+    const url = new URL(path, siteOrigin).toString();
+    try {
+      const html = await fetchText(url);
+      const mainHtml = extractMainHtml(html);
+      const mainText = htmlToText(mainHtml);
+      const words = countWords(mainText);
+      criticalReviewPages.push(
+        evaluateCriticalReviewPage({ url, html, words, minWords }),
+      );
+    } catch (err) {
+      criticalReviewPages.push({
+        url,
+        error: err?.message ?? String(err),
+        issues: ["fetchError"],
+      });
+    }
+  }
+
   console.log(
     JSON.stringify(
       {
@@ -187,6 +213,10 @@ async function main() {
         thresholds: { minWords },
         thinPagesTop20: thin,
         duplicateGroupsTop10: duplicates,
+        criticalReviewPages,
+        criticalIssueCount: criticalReviewPages.filter(
+          (page) => page.issues?.length,
+        ).length,
       },
       null,
       2,

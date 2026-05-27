@@ -1,7 +1,5 @@
-import { routing } from "../i18n/routing.ts";
-
-const LOCALES = new Set<string>(routing.locales);
-const DEFAULT_LOCALE = routing.defaultLocale;
+const LOCALES = new Set<string>(["en", "es", "zh-TW"]);
+const DEFAULT_LOCALE = "en";
 
 const LOCALE_EXEMPT_PATHS = new Set([
   "/ads.txt",
