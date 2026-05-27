@@ -1682,9 +1682,9 @@
  },
   "deckMud": {
     "metaTitle": "Deck Mud Calculator (Square Feet, Coverage, Dry Pack for Shower Pans)",
-    "metaDescription": "Calculate dry pack mortar coverage, volume, and bag count from square feet and thickness. Estimate deck mud for shower pans and mortar beds with waste included.",
+    "metaDescription": "Calculate deck mud coverage, dry pack mortar volume, and bag count from square feet, average thickness, slope, and waste for shower pans or mud beds.",
     "title": "Deck Mud Calculator",
-    "subtitle": "Estimate deck mud coverage, dry pack volume, sand/cement split, and bag count from square feet, thickness, and waste.",
+    "subtitle": "Estimate deck mud coverage, dry pack volume, sand/cement split, and bag count from square feet, average thickness, slope, and waste.",
     "reviewNoteTitle": "Review note",
     "reviewNoteBody": "This estimate was checked for practical deck-mud planning. Use it as a planning baseline, then confirm drain system requirements, minimum mud thickness, and product yield on your label before buying.",
     "reviewNoteLinkMethodology": "See methodology",
@@ -1725,9 +1725,9 @@
      "q1": "What is deck mud?",
      "a1": "Deck mud (dry pack mortar) is a low-water sand-and-cement mix used to form mortar beds, especially for shower pans and tile underlayment.",
      "q2": "How do I calculate deck mud coverage (sq ft)?",
-     "a2": "Use volume math: volume (cu ft) = area (sq ft) x thickness (in) / 12. For sloped shower pans, estimate with average thickness, then add waste, divide by bag yield, and round up to whole bags.",
+    "a2": "Use volume math: volume (cu ft) = area (sq ft) x thickness (in) / 12. For sloped shower pans, estimate average thickness from the drain and perimeter, then add waste, divide by bag yield, and round up to whole bags.",
      "q3": "What mix ratio should I use for deck mud (dry pack)?",
-     "a3": "5:1 sand-to-cement by volume is a common starting point, while some setups use 4:1. Follow your waterproofing/drain system guidance and local practice for required thickness and ratio."
+    "a3": "5:1 sand-to-cement by volume is a common dry pack starting point, while some floor mud or mud bed setups use 4:1. Follow your waterproofing/drain system guidance and local practice for required thickness and ratio."
     }
    },
  "drywall": {

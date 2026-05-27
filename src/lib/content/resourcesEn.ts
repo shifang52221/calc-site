@@ -24,7 +24,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
     title: "Deck Mud Coverage Chart (Square Feet, Thickness, Bag Planning)",
     description:
       "Deck mud coverage chart with square-feet examples, 1 inch to 2 inch thickness math, and bag-planning tips for dry pack mortar and shower pans.",
-    lastUpdated: "Last updated: Feb 2026",
+    lastUpdated: "Last updated: May 2026",
     sections: [
         {
           heading: "Quick coverage table",
@@ -45,6 +45,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Quick volume rule (easy mental math)",
         paragraphs: [
           "A simple rule of thumb: 100 sq ft at 1 inch thickness is about 8.33 cubic feet. Scale that up or down by thickness. For example, 80 sq ft at 1.5 inches is 8.33 × 0.8 × 1.5 ≈ 10 cu ft.",
+          "For any square-foot area, the shortcut is: cubic feet = square feet x thickness in inches / 12. Add waste after that, then convert to bags using the label yield.",
         ],
       },
       {
@@ -67,6 +68,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Worked example (quick order)",
         paragraphs: [
           "Example: 40 sq ft at 1.25 inches: volume = 40 x (1.25/12) = 4.17 cu ft. Add 10% waste to about 4.6 cu ft.",
+          "If your dry pack or floor mud bag yields 0.5 cu ft, 4.6 / 0.5 = 9.2, so the order rounds to 10 bags. If your label yield is different, use the label number instead of a generic assumption.",
         ],
       },
       {
@@ -126,6 +128,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
           "Use average thickness. If you are correcting slope, measure high and low points and average them.",
           "Round up. Running short mid-bed is usually more expensive than a small buffer.",
           "Mix ratios vary by application and local practice; follow product and manufacturer guidance for critical installs.",
+          "Deck mud, dry pack mortar, floor mud, and mud bed estimates all start with the same area x thickness volume math, but system requirements still control product choice.",
         ],
       },
     ],
@@ -133,6 +136,10 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
       {
         label: "Deck mud calculator",
         href: "/en/calculators/home-improvement/deck-mud",
+      },
+      {
+        label: "Methodology",
+        href: "/en/methodology",
       },
       {
         label: "Drywall mud & tape calculator",
