@@ -26,12 +26,13 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
       "Deck mud coverage chart with square-feet examples, 1 inch to 2 inch thickness math, and bag-planning tips for dry pack mortar and shower pans.",
     lastUpdated: "Last updated: May 2026",
     sections: [
-        {
-          heading: "Quick coverage table",
-          paragraphs: [
+      {
+        heading: "Quick coverage table",
+        paragraphs: [
             "Deck mud (dry pack mortar) is usually estimated by volume: area × average thickness. The table below is a fast planning reference for common square-foot and thickness combinations.",
             "If you want a full bag-count estimate after checking the chart, run your numbers through the deck mud calculator to add waste, sand/cement split, and round-up logic before you buy material.",
-          ],
+            "People also search for floor mud calculator or 4 to 1 mud bed mix when they mean the same shower-pan planning math; the product name changes, but the area-thickness-yield calculation stays the same.",
+        ],
         table: {
           columns: ["Coverage", "1 inch thickness", "1.5 inches thickness", "2 inches thickness"],
           rows: [
@@ -96,7 +97,7 @@ export const RESOURCE_ARTICLES_EN: ResourceArticle[] = [
         heading: "Mix ratio and consistency (dry pack basics)",
         paragraphs: [
           "Deck mud (dry pack) is intentionally low-water and packable. The goal is a stable, shaped bed you can compact and screed flat or to slope.",
-          "Ratios vary by application and local practice, but many mixes start around 5:1 sand-to-cement by volume. Follow your waterproofing/system guidance for critical installs.",
+          "Ratios vary by application and local practice, but many mixes start around 5:1 sand-to-cement by volume, while some shower-pan recipes call for a 4:1 mud bed mix. Follow your waterproofing/system guidance for critical installs.",
         ],
         table: {
           columns: ["Ratio (by volume)", "Use note", "Reminder"],

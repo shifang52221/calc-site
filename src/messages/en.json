@@ -1690,10 +1690,10 @@
   }
  },
   "deckMud": {
-    "metaTitle": "Deck Mud Calculator (Square Feet, Coverage, Dry Pack for Shower Pans)",
-    "metaDescription": "Calculate deck mud coverage, dry pack mortar volume, and bag count from square feet, average thickness, slope, and waste for shower pans or mud beds.",
+    "metaTitle": "Deck Mud Calculator (Floor Mud, Coverage, 4 to 1 Mud Bed Mix)",
+    "metaDescription": "Calculate deck mud, floor mud, and dry pack mortar coverage from square feet, average thickness, slope, waste, and 4 to 1 or 5 to 1 mud bed mix ratios.",
     "title": "Deck Mud Calculator",
-    "subtitle": "Estimate deck mud coverage, dry pack volume, sand/cement split, and bag count from square feet, average thickness, slope, and waste.",
+    "subtitle": "Estimate deck mud or floor mud coverage, dry pack volume, 4:1 or 5:1 sand/cement split, and bag count from square feet, average thickness, slope, and waste.",
     "reviewNoteTitle": "Review note",
     "reviewNoteBody": "This estimate was checked for practical deck-mud planning. Use it as a planning baseline, then confirm drain system requirements, minimum mud thickness, and product yield on your label before buying.",
     "reviewNoteLinkMethodology": "See methodology",
@@ -2458,10 +2458,10 @@
   }
  },
   "baseboardTrim": {
-    "metaTitle": "Baseboard Trim Calculator (Linear Feet, Pieces, Waste)",
-    "metaDescription": "Use this baseboard trim calculator to estimate linear feet, 8 ft or 12 ft molding pieces, door deductions, waste, and cost before buying trim.",
+    "metaTitle": "Baseboard Trim Calculator (Base Trim, Molding, Linear Feet)",
+    "metaDescription": "Use this baseboard trim calculator or base trim calculator for baseboard molding: estimate linear feet, 8 ft or 12 ft pieces, door deductions, waste, and cost.",
     "title": "Baseboard Trim Calculator",
-    "subtitle": "Estimate baseboard linear feet, molding piece count, door openings, stock length, and waste before you buy trim.",
+    "subtitle": "Estimate baseboard linear feet, base trim piece count, molding stock length, door openings, and waste before you buy trim.",
     "reviewNoteTitle": "Review note",
     "reviewNoteBody": "This estimate was reviewed for practical trim planning. Confirm door deductions, stock length strategy, and corner/joint layout before final purchasing so your piece count is realistic.",
     "reviewNoteLinkMethodology": "See methodology",
