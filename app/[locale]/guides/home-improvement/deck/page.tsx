@@ -11,6 +11,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { ADSENSE_SLOTS } from "@/lib/adsense";
 import { GuideSeoJsonLd } from "@/components/GuideSeoJsonLd";
 import { GuideReferenceSection } from "@/components/GuideReferenceSection";
+import { isReviewVisibleRouteHref } from "@/lib/reviewPolicy";
 
 export async function generateMetadata({
   params,
@@ -39,6 +40,10 @@ export default async function DeckGuidePage({
   setRequestLocale(locale);
   const t = await getTranslations("guideDeck");
   const common = await getTranslations("guidesCommon");
+  const calculatorHref = routes.deck(locale);
+  const ctaHref = isReviewVisibleRouteHref(locale, calculatorHref)
+    ? calculatorHref
+    : routes.calculators(locale);
 
   const faq = [
     { q: t("faq.q1"), a: t("faq.a1") },
@@ -104,7 +109,7 @@ export default async function DeckGuidePage({
             </div>
           </div>
           <Link
-            href={routes.deck(locale)}
+            href={ctaHref}
             className="inline-flex items-center justify-center rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
           >
             {common("useCalculatorCta")}

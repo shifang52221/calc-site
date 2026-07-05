@@ -31,6 +31,27 @@ const REVIEW_FOCUS_RESOURCE_ORDER = [
 const REVIEW_CORE_CALCULATORS_EN = new Set<string>(REVIEW_FOCUS_CALCULATOR_ORDER);
 const REVIEW_CORE_GUIDES_EN = new Set<string>(REVIEW_FOCUS_GUIDE_ORDER);
 const REVIEW_CORE_RESOURCES_EN = new Set<string>(REVIEW_FOCUS_RESOURCE_ORDER);
+const REVIEW_VISIBLE_ROUTE_PATHS_EN = new Set<string>([
+  "/en/calculators/home-improvement/deck-mud",
+  "/en/calculators/home-improvement/baseboard-trim",
+  "/en/calculators/home-improvement/drywall-texture",
+  "/en/calculators/home-improvement/tile",
+  "/en/calculators/home-improvement/tile-grout",
+  "/en/calculators/home-improvement/drywall",
+  "/en/calculators/home-improvement/concrete",
+  "/en/calculators/home-improvement/flooring",
+  "/en/calculators/home-improvement/paint",
+  "/en/guides/home-improvement/tile-waste",
+  "/en/guides/home-improvement/tile",
+  "/en/guides/home-improvement/deck",
+  "/en/guides/home-improvement/drywall",
+  "/en/resources/deck-mud-coverage-chart",
+  "/en/resources/tile-project-planning-guide",
+  "/en/resources/baseboard-trim-waste-tips",
+  "/en/resources/drywall-materials-and-finishing-guide",
+  "/en/resources/paint-planning-complete-guide",
+  "/en/resources/roofing-materials-checklist-and-estimate",
+]);
 
 const REVIEW_NOINDEX_CALCULATORS_BY_LOCALE: Record<
   Locale,
@@ -190,6 +211,17 @@ export function isReviewVisibleGuide(locale: Locale, guideId: string) {
 
 export function isReviewVisibleResource(locale: Locale, slug: string) {
   return isIndexedReviewLocale(locale) && REVIEW_CORE_RESOURCES_EN.has(slug);
+}
+
+export function isReviewVisibleRouteHref(locale: Locale, href: string) {
+  if (!isIndexedReviewLocale(locale) || !href.startsWith("/")) {
+    return false;
+  }
+
+  const pathname = href.split(/[?#]/, 1)[0].replace(/\/+$/, "");
+  const normalizedPathname = pathname || "/";
+
+  return REVIEW_VISIBLE_ROUTE_PATHS_EN.has(normalizedPathname);
 }
 
 export function shouldRenderReviewerSignal(

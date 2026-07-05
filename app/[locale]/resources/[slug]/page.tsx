@@ -14,6 +14,7 @@ import { ReviewedBy } from "@/components/ReviewedBy";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/structuredData";
 import {
   isReviewNoindexResource,
+  isReviewVisibleRouteHref,
   shouldRenderReviewerSignal,
   shouldRenderReviewResourceEnhancements,
 } from "@/lib/reviewPolicy";
@@ -69,6 +70,12 @@ export default async function ResourceArticlePage({
   const article = getResourceArticles(locale).find((a) => a.slug === slug);
   if (!article) return notFound();
   const showEnhancements = shouldRenderReviewResourceEnhancements(locale, slug);
+  const related = article.related
+    ?.map((item) => ({
+      ...item,
+      href: localizeInternalHref(locale, item.href),
+    }))
+    .filter((item) => isReviewVisibleRouteHref(locale, item.href));
 
   const url = getLocalizedUrl(locale, `/resources/${slug}`);
   const breadcrumbs = [
@@ -154,16 +161,16 @@ export default async function ResourceArticlePage({
         </section>
       ))}
 
-      {showEnhancements && article.related?.length ? (
+      {showEnhancements && related?.length ? (
         <section className="grid gap-2 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
           <div className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
             {t("relatedTitle")}
           </div>
           <ul className="grid gap-2">
-            {article.related.map((r) => (
+            {related.map((r) => (
               <li key={r.href}>
                 <Link
-                  href={localizeInternalHref(locale, r.href)}
+                  href={r.href}
                   className="text-zinc-700 underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:text-zinc-300 dark:decoration-zinc-700 dark:hover:text-zinc-100"
                 >
                   {r.label}

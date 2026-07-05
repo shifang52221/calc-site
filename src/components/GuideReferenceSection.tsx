@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import type { Locale } from "@/i18n/routing";
 import type { GuideId } from "@/lib/guidesCatalog";
+import { isReviewVisibleRouteHref } from "@/lib/reviewPolicy";
 import { routes } from "@/lib/routes";
 
 type ReferenceTable = {
@@ -403,6 +404,13 @@ export function GuideReferenceSection({
   if (locale !== "en") return null;
   const block = REFERENCES_EN[guideId];
   if (!block) return null;
+  const calculatorHref =
+    block.calculatorHref && isReviewVisibleRouteHref(locale, block.calculatorHref(locale))
+      ? block.calculatorHref(locale)
+      : null;
+  const related = block.related?.filter((item) =>
+    isReviewVisibleRouteHref(locale, item.href),
+  );
 
   return (
     <section className="grid gap-3 rounded-xl border border-zinc-200 bg-white p-5 text-sm text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300">
@@ -478,20 +486,20 @@ export function GuideReferenceSection({
         </div>
 
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
-          {block.calculatorHref ? (
+          {calculatorHref ? (
             <Link
-              href={block.calculatorHref(locale)}
+              href={calculatorHref}
               className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-900 dark:decoration-zinc-700 dark:hover:text-zinc-100"
             >
               Use the calculator
             </Link>
           ) : null}
-          {block.related?.length ? (
+          {related?.length ? (
             <>
-              {block.calculatorHref ? (
+              {calculatorHref ? (
                 <span className="hidden sm:inline">|</span>
               ) : null}
-              {block.related.map((r, idx) => (
+              {related.map((r, idx) => (
                 <span key={r.href} className="flex flex-row items-center gap-2">
                   <Link
                     href={r.href}
@@ -499,7 +507,7 @@ export function GuideReferenceSection({
                   >
                     {r.label}
                   </Link>
-                  {idx < block.related!.length - 1 ? (
+                  {idx < related.length - 1 ? (
                     <span className="hidden sm:inline">|</span>
                   ) : null}
                 </span>

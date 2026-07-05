@@ -13,6 +13,7 @@ import {
   isReviewVisibleCalculator,
   isReviewVisibleGuide,
   isReviewVisibleResource,
+  isReviewVisibleRouteHref,
   sortGuideDefinitionsForReview,
   sortCalculatorsForReview,
   sortGuidesForReview,
@@ -286,6 +287,47 @@ test("review visibility exposes only focused guides and resources", () => {
     isReviewVisibleResource("zh-TW", "deck-mud-coverage-chart"),
     false,
   );
+});
+
+test("review visible route policy keeps deep related links inside the core review surface", () => {
+  assert.equal(
+    isReviewVisibleRouteHref("en", "/en/calculators/home-improvement/deck-mud"),
+    true,
+  );
+  assert.equal(
+    isReviewVisibleRouteHref("en", "/en/calculators/home-improvement/drywall"),
+    true,
+  );
+  assert.equal(
+    isReviewVisibleRouteHref("en", "/en/resources/deck-mud-coverage-chart"),
+    true,
+  );
+  assert.equal(
+    isReviewVisibleRouteHref("en", "/en/guides/home-improvement/tile-waste"),
+    true,
+  );
+
+  assert.equal(
+    isReviewVisibleRouteHref("en", "/en/calculators/home-improvement/deck"),
+    false,
+  );
+  assert.equal(
+    isReviewVisibleRouteHref("en", "/en/calculators/home-improvement/drywall-mud-tape"),
+    false,
+  );
+  assert.equal(
+    isReviewVisibleRouteHref("en", "/en/resources/tile-grout-selection-and-coverage-guide"),
+    false,
+  );
+  assert.equal(
+    isReviewVisibleRouteHref("en", "/en/guides/home-improvement/paint"),
+    false,
+  );
+  assert.equal(
+    isReviewVisibleRouteHref("es", "/es/calculators/home-improvement/deck-mud"),
+    false,
+  );
+  assert.equal(isReviewVisibleRouteHref("en", "https://example.com"), false);
 });
 
 test("review visible category chips exclude empty categories", () => {

@@ -9,11 +9,10 @@ import {
   type GuideId,
 } from "@/lib/guidesCatalog";
 import type { Locale } from "@/i18n/routing";
-import { sortGuideDefinitionsForReview } from "@/lib/reviewPolicy";
-
-function buildCategoryUrl(locale: Locale, categoryId: string) {
-  return `${routes.calculators(locale)}?category=${encodeURIComponent(categoryId)}`;
-}
+import {
+  sortReviewVisibleCalculators,
+  sortReviewVisibleGuides,
+} from "@/lib/reviewPolicy";
 
 export async function GuideRelatedSection({
   locale,
@@ -40,12 +39,15 @@ export async function GuideRelatedSection({
     (calculator) =>
       calculator.categoryId === guide.categoryId &&
       calculator.id !== guide.calculatorId,
+  );
+  const visibleRelatedCalculators = sortReviewVisibleCalculators(
+    relatedCalculators,
+    locale,
   ).slice(0, 6);
 
-  const relatedGuides = sortGuideDefinitionsForReview(
-    GUIDE_DEFINITIONS,
+  const relatedGuides = sortReviewVisibleGuides(
+    GUIDE_DEFINITIONS.filter((item) => item.categoryId === guide.categoryId),
     locale,
-    guide.categoryId,
   )
     .filter((item) => item.id !== guide.id)
     .slice(0, 6);
@@ -69,7 +71,7 @@ export async function GuideRelatedSection({
             {related("calculatorsTitle")}
           </div>
           <div className="grid gap-2">
-            {relatedCalculators.map((calculator) => (
+            {visibleRelatedCalculators.map((calculator) => (
               <Link
                 key={calculator.id}
                 href={calculator.href(locale)}
@@ -84,7 +86,7 @@ export async function GuideRelatedSection({
               </Link>
             ))}
             <Link
-              href={buildCategoryUrl(locale, guide.categoryId)}
+              href={routes.calculators(locale)}
               className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
             >
               {related("browseCategoryCalculators")}
