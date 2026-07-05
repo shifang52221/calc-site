@@ -6,7 +6,7 @@ import { normalizeLocale } from "@/i18n/locale";
 import { getAlternates } from "@/lib/seo";
 import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 import { getResourceArticles } from "@/lib/content/resourcesByLocale";
-import { sortResourcesForReview } from "@/lib/reviewPolicy";
+import { sortReviewVisibleResources } from "@/lib/reviewPolicy";
 
 export async function generateMetadata({
   params,
@@ -34,7 +34,7 @@ export default async function ResourcesIndexPage({
   const locale = normalizeLocale(rawLocale);
   setRequestLocale(locale);
   const t = await getTranslations("resourcesIndex");
-  const resources = sortResourcesForReview(
+  const resources = sortReviewVisibleResources(
     getResourceArticles(locale).filter((article) => !RESOURCE_REDIRECTS_EN[article.slug]),
     locale,
   );

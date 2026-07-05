@@ -3,14 +3,14 @@ import type { MetadataRoute } from "next";
 import { getSiteUrl } from "@/lib/site";
 import { getIndexedLocales } from "@/lib/seo";
 import { routes } from "@/lib/routes";
-import { CALCULATOR_CATEGORIES, CALCULATORS } from "@/lib/calculatorsCatalog";
+import { CALCULATORS } from "@/lib/calculatorsCatalog";
 import { GUIDE_DEFINITIONS } from "@/lib/guidesCatalog";
 import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 import { getResourceArticles } from "@/lib/content/resourcesByLocale";
 import {
-  isReviewNoindexCalculator,
-  isReviewNoindexGuide,
-  isReviewNoindexResource,
+  sortReviewVisibleCalculators,
+  sortReviewVisibleGuides,
+  sortReviewVisibleResources,
 } from "@/lib/reviewPolicy";
 
 export const dynamic = "force-static";
@@ -24,14 +24,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
   for (const locale of locales) {
-    const resourceArticles = getResourceArticles(locale).filter((article) => {
-      if (isReviewNoindexResource(locale, article.slug)) return false;
-      if (locale !== "en") return true;
-      return !Object.prototype.hasOwnProperty.call(
-        RESOURCE_REDIRECTS_EN,
-        article.slug,
-      );
-    });
+    const resourceArticles = sortReviewVisibleResources(
+      getResourceArticles(locale).filter((article) => {
+        if (locale !== "en") return true;
+        return !Object.prototype.hasOwnProperty.call(
+          RESOURCE_REDIRECTS_EN,
+          article.slug,
+        );
+      }),
+      locale,
+    );
     const urls: string[] = [
       `${baseUrl}${routes.home(locale)}`,
       `${baseUrl}${routes.privacy(locale)}`,
@@ -43,16 +45,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       `${baseUrl}${routes.resources(locale)}`,
       `${baseUrl}${routes.methodology(locale)}`,
       `${baseUrl}${routes.editorialPolicy(locale)}`,
-      ...CALCULATOR_CATEGORIES.map(
-        (category) =>
-          `${baseUrl}${routes.calculatorsCategory(locale, category.id)}`,
+      ...sortReviewVisibleCalculators(CALCULATORS, locale).map(
+        (calculator) => `${baseUrl}${calculator.href(locale)}`,
       ),
-      ...CALCULATORS.filter(
-        (calculator) => !isReviewNoindexCalculator(locale, calculator.id),
-      ).map((calculator) => `${baseUrl}${calculator.href(locale)}`),
-      ...GUIDE_DEFINITIONS.filter(
-        (guide) => !isReviewNoindexGuide(locale, guide.id),
-      ).map((guide) => `${baseUrl}${guide.href(locale)}`),
+      ...sortReviewVisibleGuides(GUIDE_DEFINITIONS, locale).map(
+        (guide) => `${baseUrl}${guide.href(locale)}`,
+      ),
       ...resourceArticles.map(
         (article) => `${baseUrl}${routes.resources(locale)}/${article.slug}`,
       ),

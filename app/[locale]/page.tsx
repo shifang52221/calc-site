@@ -5,13 +5,16 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routes } from "@/lib/routes";
 import { normalizeLocale } from "@/i18n/locale";
 import { getAlternates, getLocalizedUrl } from "@/lib/seo";
-import { CALCULATOR_CARDS } from "@/lib/calculatorsCatalog";
+import { CALCULATORS } from "@/lib/calculatorsCatalog";
 import { RESOURCE_ARTICLES_EN } from "@/lib/content/resourcesEn";
 import { RESOURCE_REDIRECTS_EN } from "@/lib/content/resourceRedirects";
 import { SITE_NAME } from "@/lib/site";
 import { SeoJsonLd } from "@/components/SeoJsonLd";
 import { organizationJsonLd, webSiteJsonLd } from "@/lib/structuredData";
-import { sortResourcesForReview } from "@/lib/reviewPolicy";
+import {
+  sortReviewVisibleCalculators,
+  sortReviewVisibleResources,
+} from "@/lib/reviewPolicy";
 
 export async function generateMetadata({
   params,
@@ -43,7 +46,7 @@ export default async function HomePage({
 
   const featuredResources =
     locale === "en"
-      ? sortResourcesForReview(
+      ? sortReviewVisibleResources(
           RESOURCE_ARTICLES_EN.filter(
             (article) =>
               !Object.prototype.hasOwnProperty.call(
@@ -54,6 +57,8 @@ export default async function HomePage({
           locale,
         ).slice(0, 6)
       : [];
+  const featuredCalculators =
+    locale === "en" ? sortReviewVisibleCalculators(CALCULATORS, locale) : [];
   const priorityTopics =
     locale === "en"
       ? [
@@ -225,36 +230,38 @@ export default async function HomePage({
         </section>
       ) : null}
 
-      <section className="grid gap-3">
-        <div className="flex items-end justify-between gap-3">
-          <div>
-            <h2 className="text-base font-semibold">{t("allTitle")}</h2>
-            <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
-              {t("allDescription")}
-            </p>
-          </div>
-          <Link
-            href={routes.calculators(locale)}
-            className="shrink-0 rounded-lg border border-zinc-200 bg-white px-3 py-2 text-sm font-medium text-zinc-900 hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:border-zinc-700"
-          >
-            {t("viewAllCta")}
-          </Link>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {CALCULATOR_CARDS.map((card) => (
+      {featuredCalculators.length ? (
+        <section className="grid gap-3">
+          <div className="flex items-end justify-between gap-3">
+            <div>
+              <h2 className="text-base font-semibold">{t("allTitle")}</h2>
+              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                {t("allDescription")}
+              </p>
+            </div>
             <Link
-              key={card.titleKey}
-              href={card.href(locale)}
-              className="rounded-xl border border-zinc-200 bg-white p-5 hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700"
+              href={routes.calculators(locale)}
+              className="shrink-0 rounded-lg border border-zinc-200 bg-white px-3 py-2 text-sm font-medium text-zinc-900 hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:border-zinc-700"
             >
-              <div className="font-semibold">{t(card.titleKey)}</div>
-              <div className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
-                {t(card.descriptionKey)}
-              </div>
+              {t("viewAllCta")}
             </Link>
-          ))}
-        </div>
-      </section>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredCalculators.map((card) => (
+              <Link
+                key={card.id}
+                href={card.href(locale)}
+                className="rounded-xl border border-zinc-200 bg-white p-5 hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700"
+              >
+                <div className="font-semibold">{t(card.titleKey)}</div>
+                <div className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+                  {t(card.descriptionKey)}
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
     </div>
   );
 }

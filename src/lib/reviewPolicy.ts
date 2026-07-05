@@ -171,6 +171,27 @@ export function isReviewNoindexResource(locale: Locale, slug: string) {
   return REVIEW_NOINDEX_RESOURCES_BY_LOCALE[locale].has(slug);
 }
 
+export function isIndexedReviewLocale(locale: Locale) {
+  return locale === "en";
+}
+
+export function isReviewVisibleCalculator(
+  locale: Locale,
+  calculatorId: string,
+) {
+  return (
+    isIndexedReviewLocale(locale) && REVIEW_CORE_CALCULATORS_EN.has(calculatorId)
+  );
+}
+
+export function isReviewVisibleGuide(locale: Locale, guideId: string) {
+  return isIndexedReviewLocale(locale) && REVIEW_CORE_GUIDES_EN.has(guideId);
+}
+
+export function isReviewVisibleResource(locale: Locale, slug: string) {
+  return isIndexedReviewLocale(locale) && REVIEW_CORE_RESOURCES_EN.has(slug);
+}
+
 export function shouldRenderReviewerSignal(
   kind: "calculator" | "guide" | "resource",
   locale: Locale,
@@ -216,12 +237,36 @@ export function sortCalculatorsForReview<T extends { id: string }>(
   );
 }
 
+export function sortReviewVisibleCalculators<T extends { id: string }>(
+  calculators: readonly T[],
+  locale: Locale = "en",
+) {
+  return sortByPriority(
+    calculators.filter((calculator) =>
+      isReviewVisibleCalculator(locale, calculator.id),
+    ),
+    (calculator) => calculator.id,
+    buildPriorityMap(REVIEW_FOCUS_CALCULATOR_ORDER),
+  );
+}
+
 export function sortGuidesForReview<T extends { id: string }>(
   guides: readonly T[],
   locale: Locale,
 ) {
   return sortByPriority(
     guides.filter((guide) => !isReviewNoindexGuide(locale, guide.id)),
+    (guide) => guide.id,
+    buildPriorityMap(REVIEW_FOCUS_GUIDE_ORDER),
+  );
+}
+
+export function sortReviewVisibleGuides<T extends { id: string }>(
+  guides: readonly T[],
+  locale: Locale,
+) {
+  return sortByPriority(
+    guides.filter((guide) => isReviewVisibleGuide(locale, guide.id)),
     (guide) => guide.id,
     buildPriorityMap(REVIEW_FOCUS_GUIDE_ORDER),
   );
@@ -249,4 +294,32 @@ export function sortResourcesForReview<T extends { slug: string }>(
     (resource) => resource.slug,
     buildPriorityMap(REVIEW_FOCUS_RESOURCE_ORDER),
   );
+}
+
+export function sortReviewVisibleResources<T extends { slug: string }>(
+  resources: readonly T[],
+  locale: Locale,
+) {
+  return sortByPriority(
+    resources.filter((resource) => isReviewVisibleResource(locale, resource.slug)),
+    (resource) => resource.slug,
+    buildPriorityMap(REVIEW_FOCUS_RESOURCE_ORDER),
+  );
+}
+
+export function filterReviewVisibleCategories<
+  TCategory extends { id: string },
+  TCalculator extends { id: string; categoryId: string },
+>(
+  categories: readonly TCategory[],
+  calculators: readonly TCalculator[],
+  locale: Locale,
+) {
+  const visibleCategoryIds = new Set(
+    calculators
+      .filter((calculator) => isReviewVisibleCalculator(locale, calculator.id))
+      .map((calculator) => calculator.categoryId),
+  );
+
+  return categories.filter((category) => visibleCategoryIds.has(category.id));
 }

@@ -1,4 +1,4 @@
-import { routing, type Locale } from "@/i18n/routing";
+import { routing, type Locale } from "../i18n/routing";
 
 export const SITE_NAME = "HomeDecorCalc";
 

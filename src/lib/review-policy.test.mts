@@ -8,9 +8,17 @@ import {
   shouldRenderReviewerSignal,
   shouldRenderReviewGuideEnhancements,
   shouldRenderReviewResourceEnhancements,
+  filterReviewVisibleCategories,
+  isIndexedReviewLocale,
+  isReviewVisibleCalculator,
+  isReviewVisibleGuide,
+  isReviewVisibleResource,
   sortGuideDefinitionsForReview,
   sortCalculatorsForReview,
   sortGuidesForReview,
+  sortReviewVisibleCalculators,
+  sortReviewVisibleGuides,
+  sortReviewVisibleResources,
   sortResourcesForReview,
 } from "./reviewPolicy.ts";
 
@@ -199,4 +207,101 @@ test("review enhancements are suppressed on noindex guides and resources", () =>
     shouldRenderReviewResourceEnhancements("en", "deck-mud-coverage-chart"),
     true,
   );
+});
+
+test("review visibility exposes only the focused English calculator surface", () => {
+  assert.equal(isIndexedReviewLocale("en"), true);
+  assert.equal(isIndexedReviewLocale("es"), false);
+  assert.equal(isIndexedReviewLocale("zh-TW"), false);
+
+  const visible = sortReviewVisibleCalculators(
+    [
+      { id: "wallpaperRolls" },
+      { id: "deckMud" },
+      { id: "baseboardTrim" },
+      { id: "mulch" },
+      { id: "drywallTexture" },
+      { id: "tile" },
+      { id: "paint" },
+    ],
+    "en",
+  ).map((calculator) => calculator.id);
+
+  assert.deepEqual(visible, [
+    "deckMud",
+    "baseboardTrim",
+    "drywallTexture",
+    "tile",
+    "paint",
+  ]);
+  assert.equal(isReviewVisibleCalculator("en", "deckMud"), true);
+  assert.equal(isReviewVisibleCalculator("en", "wallpaperRolls"), false);
+  assert.equal(isReviewVisibleCalculator("en", "mulch"), false);
+  assert.equal(isReviewVisibleCalculator("es", "deckMud"), false);
+});
+
+test("review visibility exposes only focused guides and resources", () => {
+  const guides = sortReviewVisibleGuides(
+    [
+      { id: "paint" },
+      { id: "tile-waste" },
+      { id: "drywall-ceiling" },
+      { id: "tile" },
+      { id: "deck" },
+      { id: "drywall" },
+    ],
+    "en",
+  ).map((guide) => guide.id);
+
+  assert.deepEqual(guides, ["tile-waste", "tile", "deck", "drywall"]);
+  assert.equal(isReviewVisibleGuide("en", "tile-waste"), true);
+  assert.equal(isReviewVisibleGuide("en", "paint"), false);
+  assert.equal(isReviewVisibleGuide("es", "tile-waste"), false);
+
+  const resources = sortReviewVisibleResources(
+    [
+      { slug: "material-overage-planning-guide" },
+      { slug: "deck-mud-coverage-chart" },
+      { slug: "tile-project-planning-guide" },
+      { slug: "baseboard-trim-waste-tips" },
+      { slug: "topsoil-coverage-chart" },
+    ],
+    "en",
+  ).map((resource) => resource.slug);
+
+  assert.deepEqual(resources, [
+    "deck-mud-coverage-chart",
+    "tile-project-planning-guide",
+    "baseboard-trim-waste-tips",
+  ]);
+  assert.equal(
+    isReviewVisibleResource("en", "deck-mud-coverage-chart"),
+    true,
+  );
+  assert.equal(
+    isReviewVisibleResource("en", "material-overage-planning-guide"),
+    false,
+  );
+  assert.equal(
+    isReviewVisibleResource("zh-TW", "deck-mud-coverage-chart"),
+    false,
+  );
+});
+
+test("review visible category chips exclude empty categories", () => {
+  const categories = filterReviewVisibleCategories(
+    [
+      { id: "walls-finishes" },
+      { id: "floors-tile" },
+      { id: "landscaping" },
+    ],
+    [
+      { id: "paint", categoryId: "walls-finishes" },
+      { id: "deckMud", categoryId: "floors-tile" },
+      { id: "mulch", categoryId: "landscaping" },
+    ],
+    "en",
+  ).map((category) => category.id);
+
+  assert.deepEqual(categories, ["walls-finishes", "floors-tile"]);
 });

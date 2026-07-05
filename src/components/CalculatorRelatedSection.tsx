@@ -9,6 +9,10 @@ import {
 import { GUIDE_DEFINITIONS } from "@/lib/guidesCatalog";
 import { routes } from "@/lib/routes";
 import type { Locale } from "@/i18n/routing";
+import {
+  sortReviewVisibleCalculators,
+  sortReviewVisibleGuides,
+} from "@/lib/reviewPolicy";
 
 function buildCategoryUrl(locale: Locale, categoryId: string) {
   return `${routes.calculators(locale)}?category=${encodeURIComponent(categoryId)}`;
@@ -35,21 +39,28 @@ export async function CalculatorRelatedSection({
     (item) => item.id === calculator.categoryId,
   );
 
-  const relatedCalculators = CALCULATORS.filter(
-    (item) =>
-      item.categoryId === calculator.categoryId && item.id !== calculator.id,
+  const relatedCalculators = sortReviewVisibleCalculators(
+    CALCULATORS.filter(
+      (item) =>
+        item.categoryId === calculator.categoryId && item.id !== calculator.id,
+    ),
+    locale,
   ).slice(0, 6);
 
-  const boundGuides = GUIDE_DEFINITIONS.filter(
-    (item) => item.calculatorId === calculator.id,
+  const boundGuides = sortReviewVisibleGuides(
+    GUIDE_DEFINITIONS.filter((item) => item.calculatorId === calculator.id),
+    locale,
   );
   const relatedGuides = [
     ...boundGuides,
-    ...GUIDE_DEFINITIONS.filter(
-      (item) =>
-        item.categoryId === calculator.categoryId &&
-        item.calculatorId !== calculator.id &&
-        !boundGuides.some((bound) => bound.id === item.id),
+    ...sortReviewVisibleGuides(
+      GUIDE_DEFINITIONS.filter(
+        (item) =>
+          item.categoryId === calculator.categoryId &&
+          item.calculatorId !== calculator.id &&
+          !boundGuides.some((bound) => bound.id === item.id),
+      ),
+      locale,
     ),
   ].slice(0, 6);
 

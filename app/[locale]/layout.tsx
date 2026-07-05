@@ -1,5 +1,6 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
 
 import { routing } from "@/i18n/routing";
 import { normalizeLocale } from "@/i18n/locale";
@@ -8,11 +9,25 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { CookieBanner } from "@/components/CookieBanner";
 import { AdSenseScript } from "@/components/AdSenseScript";
 import { ADSENSE_CLIENT } from "@/lib/adsense";
+import { getRobotsForLocale } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale: rawLocale } = await params;
+  const locale = normalizeLocale(rawLocale);
+
+  return {
+    robots: getRobotsForLocale(locale),
+  };
 }
 
 export default async function LocaleLayout({

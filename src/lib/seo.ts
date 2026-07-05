@@ -1,6 +1,7 @@
-import { getSiteUrl } from "@/lib/site";
-import type { Locale } from "@/i18n/routing";
-import { routing } from "@/i18n/routing";
+import { routing } from "../i18n/routing";
+import { getSiteUrl } from "./site";
+import type { Locale } from "../i18n/routing";
+import { getRobotsForIndexedLocales } from "./seoRobots";
 
 function normalizePathname(pathname: string) {
   if (!pathname) return "";
@@ -30,6 +31,10 @@ export function getLocalizedUrl(locale: Locale, pathname: string) {
   const baseUrl = getSiteUrl();
   const normalized = normalizePathname(pathname);
   return `${baseUrl}/${locale}${normalized}`.replace(/\/+$/, "");
+}
+
+export function getRobotsForLocale(locale: Locale) {
+  return getRobotsForIndexedLocales(locale, resolveIndexedLocales());
 }
 
 export function getAlternates(locale: Locale, pathname: string) {
