@@ -76,42 +76,66 @@ function getKnownPaths() {
   ];
 }
 
-function getMetaRobots(html) {
-  return [
-    ...html.matchAll(
-      /<meta\s+[^>]*name=["']robots["'][^>]*content=["']([^"']+)["'][^>]*>/gi,
-    ),
-  ]
-    .map((match) => match[1])
-    .join("|");
-}
-
 async function fetchPage(pathname) {
-  const response = await fetch(`${ORIGIN}${pathname}`, {
-    redirect: "manual",
-    headers: { "user-agent": "known-review-url-audit/1.0" },
-  });
-  const html = await response.text();
-  const metaRobots = getMetaRobots(html);
-  const xRobots = response.headers.get("x-robots-tag") || "";
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 10000);
 
-  return {
-    path: pathname,
-    status: response.status,
-    location: response.headers.get("location") || "",
-    noindex: /noindex/i.test(`${metaRobots}|${xRobots}`),
-    metaRobots,
-    xRobots,
-  };
+  try {
+    const response = await fetch(`${ORIGIN}${pathname}`, {
+      method: "HEAD",
+      redirect: "manual",
+      signal: controller.signal,
+      headers: { "user-agent": "known-review-url-audit/1.0" },
+    });
+    const xRobots = response.headers.get("x-robots-tag") || "";
+
+    return {
+      path: pathname,
+      status: response.status,
+      location: response.headers.get("location") || "",
+      noindex: /noindex/i.test(xRobots),
+      metaRobots: "",
+      xRobots,
+    };
+  } catch (error) {
+    return {
+      path: pathname,
+      status: 0,
+      location: "",
+      noindex: false,
+      metaRobots: "",
+      xRobots: "",
+      error: String(error?.message || error),
+    };
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
-const rows = [];
-for (const pathname of [...new Set(getKnownPaths())]) {
-  rows.push(await fetchPage(pathname));
+async function runWithConcurrency(items, limit, worker) {
+  const results = [];
+  let cursor = 0;
+
+  async function runNext() {
+    const index = cursor;
+    cursor += 1;
+    if (index >= items.length) return;
+    results[index] = await worker(items[index]);
+    await runNext();
+  }
+
+  await Promise.all(
+    Array.from({ length: Math.min(limit, items.length) }, () => runNext()),
+  );
+  return results;
 }
+
+const rows = await runWithConcurrency([...new Set(getKnownPaths())], 12, fetchPage);
 
 const failures = rows.filter((row) => {
-  if (row.status >= 300 && row.status < 400) return false;
+  if (row.status >= 300 && row.status < 400) {
+    return REVIEW_INDEXABLE_PATHS.has(row.path) ? true : !row.noindex;
+  }
   if (row.status !== 200) return true;
 
   const shouldIndex = REVIEW_INDEXABLE_PATHS.has(row.path);
@@ -130,6 +154,7 @@ console.log(
         noindex: row.noindex,
         metaRobots: row.metaRobots,
         xRobots: row.xRobots,
+        error: row.error,
         expected: REVIEW_INDEXABLE_PATHS.has(row.path) ? "index" : "noindex",
       })),
     },
