@@ -14,6 +14,7 @@ import {
   isReviewVisibleGuide,
   isReviewVisibleResource,
   isReviewVisibleRouteHref,
+  shouldNoindexKnownReviewPath,
   sortGuideDefinitionsForReview,
   sortCalculatorsForReview,
   sortGuidesForReview,
@@ -328,6 +329,39 @@ test("review visible route policy keeps deep related links inside the core revie
     false,
   );
   assert.equal(isReviewVisibleRouteHref("en", "https://example.com"), false);
+});
+
+test("known direct review URLs noindex everything outside the focused surface", () => {
+  assert.equal(shouldNoindexKnownReviewPath("/en"), false);
+  assert.equal(shouldNoindexKnownReviewPath("/en/about"), false);
+  assert.equal(shouldNoindexKnownReviewPath("/en/contact"), false);
+  assert.equal(
+    shouldNoindexKnownReviewPath("/en/calculators/home-improvement/deck-mud"),
+    false,
+  );
+  assert.equal(
+    shouldNoindexKnownReviewPath("/en/guides/home-improvement/tile-waste"),
+    false,
+  );
+  assert.equal(
+    shouldNoindexKnownReviewPath("/en/resources/deck-mud-coverage-chart"),
+    false,
+  );
+
+  assert.equal(
+    shouldNoindexKnownReviewPath("/en/calculators/home-improvement/deck"),
+    true,
+  );
+  assert.equal(
+    shouldNoindexKnownReviewPath("/en/guides/home-improvement/paint"),
+    true,
+  );
+  assert.equal(
+    shouldNoindexKnownReviewPath("/en/resources/material-overage-planning-guide"),
+    true,
+  );
+  assert.equal(shouldNoindexKnownReviewPath("/es"), true);
+  assert.equal(shouldNoindexKnownReviewPath("/zh-TW/resources"), true);
 });
 
 test("review visible category chips exclude empty categories", () => {

@@ -7,6 +7,7 @@ import {
   getCanonicalHostFromSiteUrl,
   resolveReviewRedirect,
 } from "./src/lib/urlPolicy";
+import { shouldNoindexKnownReviewPath } from "./src/lib/reviewPolicy";
 
 const intlMiddleware = createMiddleware(routing);
 
@@ -33,7 +34,12 @@ export default function middleware(request: NextRequest) {
     return NextResponse.redirect(redirect, 308);
   }
 
-  return intlMiddleware(request);
+  const response = intlMiddleware(request);
+  if (shouldNoindexKnownReviewPath(request.nextUrl.pathname)) {
+    response.headers.set("X-Robots-Tag", "noindex");
+  }
+
+  return response;
 }
 
 export const config = {

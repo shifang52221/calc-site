@@ -31,6 +31,18 @@ const REVIEW_FOCUS_RESOURCE_ORDER = [
 const REVIEW_CORE_CALCULATORS_EN = new Set<string>(REVIEW_FOCUS_CALCULATOR_ORDER);
 const REVIEW_CORE_GUIDES_EN = new Set<string>(REVIEW_FOCUS_GUIDE_ORDER);
 const REVIEW_CORE_RESOURCES_EN = new Set<string>(REVIEW_FOCUS_RESOURCE_ORDER);
+const REVIEW_STATIC_INDEXABLE_PATHS_EN = new Set<string>([
+  "/en",
+  "/en/about",
+  "/en/contact",
+  "/en/privacy",
+  "/en/terms",
+  "/en/methodology",
+  "/en/editorial-policy",
+  "/en/calculators",
+  "/en/guides",
+  "/en/resources",
+]);
 const REVIEW_VISIBLE_ROUTE_PATHS_EN = new Set<string>([
   "/en/calculators/home-improvement/deck-mud",
   "/en/calculators/home-improvement/baseboard-trim",
@@ -222,6 +234,38 @@ export function isReviewVisibleRouteHref(locale: Locale, href: string) {
   const normalizedPathname = pathname || "/";
 
   return REVIEW_VISIBLE_ROUTE_PATHS_EN.has(normalizedPathname);
+}
+
+function normalizeReviewPath(pathname: string) {
+  const normalized = pathname.startsWith("/") ? pathname : `/${pathname}`;
+  return (normalized.replace(/\/+$/, "") || "/").split(/[?#]/, 1)[0];
+}
+
+export function shouldNoindexKnownReviewPath(pathname: string) {
+  const normalizedPathname = normalizeReviewPath(pathname);
+  const locale = normalizedPathname.split("/").filter(Boolean)[0];
+
+  if (locale === "es" || locale === "zh-TW") {
+    return true;
+  }
+
+  if (locale !== "en") {
+    return false;
+  }
+
+  if (REVIEW_STATIC_INDEXABLE_PATHS_EN.has(normalizedPathname)) {
+    return false;
+  }
+
+  const isKnownReviewContentPath =
+    normalizedPathname.startsWith("/en/calculators/home-improvement/") ||
+    normalizedPathname.startsWith("/en/guides/home-improvement/") ||
+    normalizedPathname.startsWith("/en/resources/");
+
+  return (
+    isKnownReviewContentPath &&
+    !REVIEW_VISIBLE_ROUTE_PATHS_EN.has(normalizedPathname)
+  );
 }
 
 export function shouldRenderReviewerSignal(
